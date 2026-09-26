@@ -1,0 +1,84 @@
+{
+  "round": 4,
+  "branch": "nanoparticles",
+  "status": "passed",
+  "hypothesis": "NP-H4 size moments and distinct response weights alter count and held-out spectrum predictions",
+  "parameters": {
+    "core_diameters_nm": [
+      "40",
+      "60"
+    ],
+    "hydrodynamic_diameters_m": [
+      5.0000000000000004e-08,
+      7e-08
+    ],
+    "rho_kg_per_m3": 5000.0,
+    "mass_concentration_kg_per_m3": 0.001,
+    "eta_Pa_s": 0.001,
+    "T_K": 298.0
+  },
+  "exact_moments": {
+    "mean_core_diameter_nm": "50",
+    "mean_core_cube_nm3": "140000",
+    "cube_mean_core_nm3": "125000",
+    "naive_to_correct_count_ratio": "28/25"
+  },
+  "weights": {
+    "number": [
+      "1/2",
+      "1/2"
+    ],
+    "mass": [
+      "8/35",
+      "27/35"
+    ],
+    "conditional_susceptibility": [
+      "64/793",
+      "729/793"
+    ]
+  },
+  "number_concentration_correct_per_m3": 2728370453003920.0,
+  "number_concentration_naive_per_m3": 3055774907364390.5,
+  "tau_B_s": [
+    4.77232864164398e-05,
+    0.0001309526979267108
+  ],
+  "max_relative_spectral_residual": 0.6410206341603629,
+  "max_residual_frequency_Hz": 1000000.0,
+  "label_swap_relative_error": 0.0,
+  "monodisperse_relative_error": 0.0,
+  "rational_relative_error": 4.691437061991621e-16,
+  "checks": [
+    {
+      "name": "exact_moments_and_distinct_weights",
+      "passed": true
+    },
+    {
+      "name": "positive_normalizations_and_concentration_scaling",
+      "passed": true
+    },
+    {
+      "name": "DC_agreement_held_out_disagreement",
+      "passed": true
+    },
+    {
+      "name": "label_swap_and_monodisperse_controls",
+      "passed": true
+    },
+    {
+      "name": "combined_rational_response_control",
+      "passed": true
+    }
+  ],
+  "scope": "Conditional synthetic spheres with identical magnetization density and locked moments. No absolute susceptibility or actual particle operating regime inferred.",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "matplotlib": "3.10.8"
+  },
+  "hashes": {
+    "contract.md": "491a98acc05d99af408b745f75d2d28d7176a75416dc64eda8b51cffe80ec8d0",
+    "sources.md": "18303789f36b457ed69b3922f0c76cf07404368a436e2680443dfed4f1462140",
+    "solver.py": "55552dd0eb26433851ffcd3dcdc3b68f3df7f6f89a891da0a5e8d41df3d2f83b"
+  }
+}

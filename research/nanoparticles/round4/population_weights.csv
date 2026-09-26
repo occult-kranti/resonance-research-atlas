@@ -1,0 +1,3 @@
+core_diameter_nm_exact,hydrodynamic_diameter_m,number_weight_exact,mass_weight_exact,conditional_chi_weight_exact,tau_B_s
+40,5.0000000000000004e-08,1/2,8/35,64/793,4.77232864164398e-05
+60,7e-08,1/2,27/35,729/793,0.0001309526979267108

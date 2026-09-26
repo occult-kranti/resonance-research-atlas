@@ -1,0 +1,58 @@
+{
+  "origin_repository": "occult-kranti/brainwave_opensync",
+  "producer": "Actual NanoLab production renderer, source snapshot and standalone bundle",
+  "files": {
+    "assets/am.json": {
+      "sha256": "fd2fce0a536785ddbe5ddebdaab71a46abf351947726394c32d3b6acc949b5d7",
+      "bytes": 1978
+    },
+    "assets/am.wav": {
+      "sha256": "0fd5c54cd1b760a3a04c06d19cb9002e5742ca0862bf2b6a3195ab248ffec1f2",
+      "bytes": 384044
+    },
+    "assets/baseband.json": {
+      "sha256": "70a4b7c1166883956e5470dae1023663153d4ecd744c5a60ad5845dd42789cb3",
+      "bytes": 1624
+    },
+    "assets/baseband.wav": {
+      "sha256": "e2f8eafa54eaf10f2d415da99d3db5486af36af6f0e9b17b82145c81b6e27a60",
+      "bytes": 384044
+    },
+    "assets/carrier.json": {
+      "sha256": "271385ef3595453981b0526154e59af11f23458663c1f3a6c2c4c803cd6b7511",
+      "bytes": 1614
+    },
+    "assets/carrier.wav": {
+      "sha256": "9b30ce8c6d551229a8bce096e625410a561c4fc4bd0b88b25fd30f78d597d490",
+      "bytes": 384044
+    },
+    "assets/two-tone.json": {
+      "sha256": "71948d2926afc140c1fad4c85a7f6c7d9b3a7684ccf83c7808218e1dc9c1f387",
+      "bytes": 1814
+    },
+    "assets/two-tone.wav": {
+      "sha256": "d51b59134290a708c750fe3a8ab6051df60b0c82cb6f80f0bb769ff415cd41bc",
+      "bytes": 384044
+    },
+    "production/fft.ts": {
+      "sha256": "d3fe3d541042a04d159db7a6245381c76dd755f3edc36436e3cfb78fd485b2d4",
+      "bytes": 4731
+    },
+    "production/model.ts": {
+      "sha256": "e89efc064352a610230de80028c818033dc08d4f53b27c1c44daa4c394327293",
+      "bytes": 8533
+    },
+    "production/nanolab-model.mjs": {
+      "sha256": "3eef4e6854eb02eeaf2c9e88c2789b7f2ce9fb6f52172127c6426b09087b1bf3",
+      "bytes": 21853
+    },
+    "production/synth.ts": {
+      "sha256": "7ed20eeb55fb23540cb97636f63bbec7616729cdaa2ddacdc7da2f365e3ef6c1",
+      "bytes": 25377
+    },
+    "production/wav.ts": {
+      "sha256": "993188928d176cb9e9267f245d7e2a48e0b0a77887244ca0a1d92c936f5d918f",
+      "bytes": 3945
+    }
+  }
+}

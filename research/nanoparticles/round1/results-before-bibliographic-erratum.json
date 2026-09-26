@@ -1,0 +1,221 @@
+{
+  "round": 1,
+  "branch": "nanoparticles",
+  "hypothesis": "NP-H1, project hypothesis applying established Debye theory",
+  "status": "passed",
+  "parameters": {
+    "chi0": 0.02,
+    "tau_s": 1e-06,
+    "H_peak_A_per_m": 1.0,
+    "mu0_nominal_H_per_m": 1.2566370614359173e-06
+  },
+  "reference_frequency_Hz": 159154.94309189534,
+  "loss_peak_x": 1.0,
+  "power_at_x1_W_per_m3": 0.006283185307179586,
+  "power_model_limit_W_per_m3": 0.012566370614359173,
+  "limits": {
+    "low_cycle_ratio": 0.9999990000010002,
+    "low_power_ratio": 0.9999990000010002,
+    "high_power_plateau_ratio": 0.9999990000010001
+  },
+  "convergence": [
+    {
+      "x": 0.1,
+      "steps_per_cycle": 512,
+      "cycles": 60,
+      "settling_time_over_tau": 3707.0793312359556,
+      "exact_normalized_cycle_work": 0.3110487775831478,
+      "cycle_input_normalized": 0.3110487701388003,
+      "cycle_loss_normalized": 0.31104878555777304,
+      "loop_quadrature_normalized": 0.31104095719852803,
+      "cycle_storage_change_normalized": 1.1102230246251565e-16,
+      "HM_boundary_normalized": 1.1102230246251565e-16,
+      "max_all_run_budget_residual_normalized": 3.5354527092579247e-06,
+      "input_relative_error": 2.3933055082712375e-08,
+      "loss_relative_error": 2.5637860723651133e-08,
+      "loop_relative_error": 2.5141987956154852e-05
+    },
+    {
+      "x": 0.1,
+      "steps_per_cycle": 1024,
+      "cycles": 60,
+      "settling_time_over_tau": 3707.0793312359556,
+      "exact_normalized_cycle_work": 0.3110487775831478,
+      "cycle_input_normalized": 0.3110487771244905,
+      "cycle_loss_normalized": 0.3110487780649187,
+      "loop_quadrature_normalized": 0.3110468249877278,
+      "cycle_storage_change_normalized": 1.1102230246251565e-16,
+      "HM_boundary_normalized": 1.1102230246251565e-16,
+      "max_all_run_budget_residual_normalized": 2.1315755560635807e-07,
+      "input_relative_error": 1.474550976818522e-09,
+      "loss_relative_error": 1.5488596505479665e-09,
+      "loop_relative_error": 6.277457301681239e-06
+    },
+    {
+      "x": 0.1,
+      "steps_per_cycle": 2048,
+      "cycles": 60,
+      "settling_time_over_tau": 3707.0793312359556,
+      "exact_normalized_cycle_work": 0.3110487775831478,
+      "cycle_input_normalized": 0.3110487775546815,
+      "cycle_loss_normalized": 0.3110487776128146,
+      "loop_quadrature_normalized": 0.3110482895830064,
+      "cycle_storage_change_normalized": 0.0,
+      "HM_boundary_normalized": 0.0,
+      "max_all_run_budget_residual_normalized": 1.3085472261309405e-08,
+      "input_relative_error": 9.15171090078734e-11,
+      "loss_relative_error": 9.537658135769247e-11,
+      "loop_relative_error": 1.56888622163817e-06
+    },
+    {
+      "x": 1.0,
+      "steps_per_cycle": 512,
+      "cycles": 60,
+      "settling_time_over_tau": 370.7079331235956,
+      "exact_normalized_cycle_work": 1.5707963267948966,
+      "cycle_input_normalized": 1.5707963267229275,
+      "cycle_loss_normalized": 1.5707963274688979,
+      "loop_quadrature_normalized": 1.5707569002606427,
+      "cycle_storage_change_normalized": -5.551115123125783e-17,
+      "HM_boundary_normalized": -1.1102230246251565e-16,
+      "max_all_run_budget_residual_normalized": 4.505623962813843e-08,
+      "input_relative_error": 4.581695037137578e-11,
+      "loss_relative_error": 4.290825536828518e-10,
+      "loop_relative_error": 2.509971126190758e-05
+    },
+    {
+      "x": 1.0,
+      "steps_per_cycle": 1024,
+      "cycles": 60,
+      "settling_time_over_tau": 370.7079331235956,
+      "exact_normalized_cycle_work": 1.5707963267948966,
+      "cycle_input_normalized": 1.570796326790557,
+      "cycle_loss_normalized": 1.5707963268369411,
+      "loop_quadrature_normalized": 1.5707864701641538,
+      "cycle_storage_change_normalized": -5.551115123125783e-17,
+      "HM_boundary_normalized": -1.1102230246251565e-16,
+      "max_all_run_budget_residual_normalized": 2.803218990266032e-09,
+      "input_relative_error": 2.762700475312132e-12,
+      "loss_relative_error": 2.6766417335310216e-11,
+      "loop_relative_error": 6.274926019735722e-06
+    },
+    {
+      "x": 1.0,
+      "steps_per_cycle": 2048,
+      "cycles": 60,
+      "settling_time_over_tau": 370.7079331235956,
+      "exact_normalized_cycle_work": 1.5707963267948966,
+      "cycle_input_normalized": 1.5707963267943796,
+      "cycle_loss_normalized": 1.5707963267981455,
+      "loop_quadrature_normalized": 1.5707938626373732,
+      "cycle_storage_change_normalized": -2.220446049250313e-16,
+      "HM_boundary_normalized": -4.440892098500626e-16,
+      "max_all_run_budget_residual_normalized": 1.9254287053627195e-10,
+      "input_relative_error": 3.290813910420919e-13,
+      "loss_relative_error": 2.0683500488521857e-12,
+      "loop_relative_error": 1.5687314016012428e-06
+    },
+    {
+      "x": 10.0,
+      "steps_per_cycle": 512,
+      "cycles": 60,
+      "settling_time_over_tau": 37.070793312359555,
+      "exact_normalized_cycle_work": 0.3110487775831478,
+      "cycle_input_normalized": 0.31104877758358995,
+      "cycle_loss_normalized": 0.3110487775851496,
+      "loop_quadrature_normalized": 0.3110409704127161,
+      "cycle_storage_change_normalized": -1.0977546996415732e-18,
+      "HM_boundary_normalized": -1.1102230246251565e-16,
+      "max_all_run_budget_residual_normalized": 8.856559929881769e-11,
+      "input_relative_error": 1.4214694010130824e-12,
+      "loss_relative_error": 6.435606788441025e-12,
+      "loop_relative_error": 2.5099505268456264e-05
+    },
+    {
+      "x": 10.0,
+      "steps_per_cycle": 1024,
+      "cycles": 60,
+      "settling_time_over_tau": 37.070793312359555,
+      "exact_normalized_cycle_work": 0.3110487775831478,
+      "cycle_input_normalized": 0.31104877758315297,
+      "cycle_loss_normalized": 0.31104877758324534,
+      "loop_quadrature_normalized": 0.3110468257790694,
+      "cycle_storage_change_normalized": -7.386127300057499e-19,
+      "HM_boundary_normalized": -7.45931094670027e-17,
+      "max_all_run_budget_residual_normalized": 6.092903959142859e-12,
+      "input_relative_error": 1.6597194512770453e-14,
+      "loss_relative_error": 3.1356205117137297e-13,
+      "loop_relative_error": 6.2749131939386994e-06
+    },
+    {
+      "x": 10.0,
+      "steps_per_cycle": 2048,
+      "cycles": 60,
+      "settling_time_over_tau": 37.070793312359555,
+      "exact_normalized_cycle_work": 0.3110487775831478,
+      "cycle_input_normalized": 0.311048777583256,
+      "cycle_loss_normalized": 0.31104877758312455,
+      "loop_quadrature_normalized": 0.31104828963141146,
+      "cycle_storage_change_normalized": -8.402566836762659e-19,
+      "HM_boundary_normalized": -8.500145032286355e-17,
+      "max_all_run_budget_residual_normalized": 9.166001291305292e-13,
+      "input_relative_error": 3.4782722693967326e-13,
+      "loss_relative_error": 7.477660753603033e-14,
+      "loop_relative_error": 1.5687306027731293e-06
+    }
+  ],
+  "checks": [
+    {
+      "name": "frequency_scan_and_limits",
+      "passed": true
+    },
+    {
+      "name": "zero_and_weak_field_scaling_controls",
+      "passed": true
+    },
+    {
+      "name": "calibrated_phase_ratio",
+      "passed": true,
+      "relative_error": 4.472601531070693e-16
+    },
+    {
+      "name": "passive_periodic_budget_x_0.1",
+      "passed": true
+    },
+    {
+      "name": "independent_loop_convergence_x_0.1",
+      "passed": true
+    },
+    {
+      "name": "passive_periodic_budget_x_1",
+      "passed": true
+    },
+    {
+      "name": "independent_loop_convergence_x_1",
+      "passed": true
+    },
+    {
+      "name": "passive_periodic_budget_x_10",
+      "passed": true
+    },
+    {
+      "name": "independent_loop_convergence_x_10",
+      "passed": true
+    },
+    {
+      "name": "different_fixed_frequency_tau_scan",
+      "passed": true
+    }
+  ],
+  "scope": "Linear response synthetic normalization. Full x sweep is mathematical extrapolation, not real nanoparticle/high-frequency/body prediction.",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "matplotlib": "3.10.8"
+  },
+  "hashes": {
+    "contract.md": "84299226e57db6e87d48ccaaff7e93f3b21d2a416d5ebd4f7ac20cf54d93644b",
+    "sources.md": "3cb08af715f843f9c631f51fa2d7df11348a620091588c7d6685c804e0262af6",
+    "solver.py": "03f4808890c0ba14c2b584ea95a42b6dd3ff3d22ca38facbc6056dd4e3704453"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "computed_before_N2_results": true,
+  "method": "Independent integrating-factor convolution with scipy quad, no producer imports",
+  "points": [
+    {
+      "t_s": 10,
+      "theta_K": 0.4877057549928599,
+      "sensor_K": 0.18067944797745375,
+      "naive_power_W": 0.0722717791909815,
+      "naive_fraction_of_true_power": 0.3613588959549075
+    },
+    {
+      "t_s": 30,
+      "theta_K": 1.392920235749422,
+      "sensor_K": 0.966119757824583,
+      "naive_power_W": 0.1288159677099444,
+      "naive_fraction_of_true_power": 0.6440798385497221
+    },
+    {
+      "t_s": 60,
+      "theta_K": 2.5918177931828215,
+      "sensor_K": 2.2032180729170054,
+      "naive_power_W": 0.1468812048611337,
+      "naive_fraction_of_true_power": 0.7344060243056685
+    }
+  ],
+  "scaling_proof": "P/C and G/C determine stateODE; scaling(P,C,G) together preserves both, while independently known C breaks scaling",
+  "hypothesis": "Duration-dependence in naive inferred power can arise from stationary material+thermal/sensor transfer"
+}

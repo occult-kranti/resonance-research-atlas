@@ -1,0 +1,28 @@
+{
+  "round": 3,
+  "branch": "nanoparticles",
+  "status": "accepted",
+  "reviewDate": "2026-09-26",
+  "independent_methods": [
+    "Whole-domain positive-mixture derivative proof",
+    "Combined rational susceptibility comparison against every saved spectral row",
+    "Closed-form physical slope/intercept versus two-point linear solve",
+    "Pre-result independently frozen10Hz residual and fit predictions compared against outputs"
+  ],
+  "mixture_combined_rational_max_relative_error": 6.325003383163666e-16,
+  "physical_coefficient_max_relative_error": 5.551115123125783e-15,
+  "precomputed_heldout_residual_max_absolute_difference": 2.220446049250313e-16,
+  "whole_domain_proof": "For z=\u03c9\u00b2, \u03c4app=(a\u03c41+b\u03c42+z(a\u03c41\u03c42\u00b2+b\u03c42\u03c41\u00b2))/(a+b+z(a\u03c42\u00b2+b\u03c41\u00b2)); derivative numerator=\u2212ab(\u03c41+\u03c42)(\u03c41\u2212\u03c42)\u00b2. All tested coefficients positive; strictnegative for unequal times.",
+  "source_sha256": {
+    "contract.md": "9638b0009e8f23f7941bc752bd7ca4f6bdf9a538cbc46f7a0a0ef43ecd454ce3",
+    "sources.md": "28af4308766854a4b3fcac3b4fdfb950ee94691f4701083d388bf2225de75280",
+    "solver.py": "51642a4768af9aaa430c7fec8854316e6fcfba2d254969d400a478c8afc3e94d",
+    "results.json": "07cb140ef21f9474cd0795e21b337c195519a2ddf6fb0fb746d41a0d2353c947",
+    "response_spectra.csv": "e0105d53a34031f3fc21e2d0e7240a89aaf27045270e7beb0df68911c3f7326b",
+    "viscosity_predictions.csv": "2fe2fc858225548d5843fd3a8b8e7ca7659bd86adca9fcad0f0610146226f89d"
+  },
+  "scope": "Two distinct hypothetical population models; single-point rival has unknown amplitude. Known independent DC susceptibility may already discriminate at one complex point.",
+  "source_disagreement": "Goto2025 prose fpeak proportional to viscosity not used as directional evidence; derive explicit Brownian inverse scaling from time equation.",
+  "empirical_work": "No viscosity, immobilization, phase-reference or particle characterization performed.",
+  "next_reason": "Susceptibility mixture amplitudes do not establish particle number fractions; select mass/size-moment and response-weight calibration."
+}

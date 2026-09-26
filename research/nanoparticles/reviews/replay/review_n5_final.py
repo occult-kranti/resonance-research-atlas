@@ -1,0 +1,31 @@
+from pathlib import Path
+import gzip
+REVIEW = Path(__file__).resolve().parents[1]
+NANO = REVIEW.parent
+
+def csv_path(path):
+    return path if path.exists() else path.with_suffix(path.suffix + '.gz')
+
+def evidence_bytes(path):
+    if path.exists():
+        return path.read_bytes()
+    return gzip.decompress(path.with_suffix(path.suffix + '.gz').read_bytes())
+
+from pathlib import Path
+import wave,json,hashlib,math
+import numpy as np
+r=(NANO / 'round5');result=json.loads((r/'results.json').read_text());pre=json.loads((REVIEW / 'advisor-N5-precompute.json').read_text());inputs=json.loads((r/'inputs.json').read_text());N=4096;offset=32768;ns=np.arange(N)
+for f,m in inputs['files'].items():assert hashlib.sha256(evidence_bytes(r/f)).hexdigest()==m['sha256']
+s=np.genfromtxt(csv_path(r/'decoded_spectrum.csv'),delimiter=',',names=True,dtype=None,encoding='utf-8');errs=[]
+for kind in ['two-tone','am','baseband','carrier']:
+ with wave.open(str(r/'assets'/f'{kind}.wav'),'rb') as w:a=np.frombuffer(w.readframes(w.getnframes()),dtype='<i2').reshape(-1,2)[offset:offset+N,0].astype(float)/32768
+ for row in s[s['kind']==kind]:
+  k=int(row['bin']);scale=(1 if k==0 else 2)/N;basis=np.exp(-2j*np.pi*k*ns/N);raw=scale*np.dot(a,basis);quad=scale*np.dot(a*a,basis);H=1/(1+1j*float(row['frequency_Hz'])/200)
+  errs.extend([abs(abs(raw)-row['raw_peak_amplitude_FS']),abs(abs(raw*H)-row['linear_peak_amplitude_FS']),abs(abs(quad)-row['quadratic_peak_amplitude_FS2'])])
+preerr=[]
+for p,q in zip(pre['cases'],result['cases']):
+ preerr.extend([abs(p['interior_rms_FS']-q['interior_rms_FS']),abs(p['raw_line_amplitudes_FS']['2']-q['rate_line_raw_FS']),abs(p['quadratic_line_amplitudes_FS2']['2']-q['rate_line_squared_FS2']),abs(p['quadratic_line_amplitudes_FS2']['4']-q['twice_rate_squared_FS2']),abs(p['equal_RMS_quadratic_line_amplitudes_FS2']['2']-q['matched_quadratic_rate_amplitude_FS2'])])
+phaseerr=abs(pre['phase_flip_control']['beat_complex_reversal_absolute_error_FS2']-result['phase_control']['phase_reversal_error_FS2'])
+assert max(errs)<1e-12 and max(preerr)<1e-12 and phaseerr<1e-12
+out={'round':5,'branch':'nanoparticles','status':'accepted','final_round':True,'reviewDate':'2026-09-26','independent_methods':['Decoded actual WAV bytes with Python wave and verified export manifest SHA values','Direct complex dot-product projections across every stored spectral row, without FFT or producer imports','Orthogonal real sine/cosine reflection of the upper tone versus producer FFT sign flip','Pre-result frozen raw, squared, matched-RMS and phase values compared against producer output','Source inspection and analytic PCM error-bound/units check'],'direct_projection_vs_all_spectral_columns_max_absolute_error':max(errs),'precomputed_case_values_max_absolute_difference':max(preerr),'independent_phase_reflection_error_difference_FS2':phaseerr,'phase_reversal_residual_FS2':result['phase_control']['phase_reversal_error_FS2'],'source_sha256':{f:hashlib.sha256(evidence_bytes(r/f)).hexdigest() for f in ['contract.md','sources.md','inputs.json','regenerate_assets.mjs','solver.py','results.json','decoded_spectrum.csv','signal_comparison.csv']},'input_snapshot_sha256':{f:m['sha256'] for f,m in inputs['files'].items()},'scope':'Actual quiet audio exports plus mathematical LTI/quadratic observation operators. PCM quantization produces small components below declared comparison bounds; exact zeros are not required. FS and FS² are digital units, not force.','empirical_work':'No transducer calibration, pressure/velocity-gradient measurement, particle motion, magnetic field, treatment or metaphysical observation was performed.','novelty':'New project phase-witness and resource-matching protocol plus production-code integration; established modulation and nonlinear mixing principles.','decision':'Accept the bounded fifth round and stop. No sixth new research round selected.'}
+(REVIEW / 'replayed-N5-review.json').write_text(json.dumps(out,indent=2)+'\n');print(json.dumps({k:v for k,v in out.items() if 'error' in k or 'difference' in k or 'residual' in k},indent=2))

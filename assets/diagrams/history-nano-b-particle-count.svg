@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="950" viewBox="0 0 1400 950" role="img" aria-labelledby="title desc">
+<title id="title">Count particles with the mean volume</title>
+<desc id="desc">Synthetic, equal-number 40 / 60 nm spheres; common known density and measured mass concentration.. Proposed measurement logic; no apparatus built. Solid arrows show model or measurement dependence. Dashed arrows show a candidate process or proposed control.</desc>
+<defs><marker id="arr" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9" fill="#087b82"/></marker><marker id="arrgold" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9" fill="#ab6b13"/></marker></defs>
+<rect width="1400" height="950" fill="#f5f3ea"/>
+<text x="55" y="46" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" fill="#087b82" font-weight="700" text-anchor="start">HN-B  /  HISTORICAL CLUE → MODERN MEASUREMENT</text>
+<text x="55" y="98" font-family="DejaVu Sans,Arial,sans-serif" font-size="34" fill="#182e3e" font-weight="700" text-anchor="start">Count particles with the mean volume</text>
+<text x="55" y="133" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#486273" font-weight="400" text-anchor="start">Synthetic, equal-number 40 / 60 nm spheres; common known density and measured mass concentration.</text>
+<rect x="55" y="158" width="1290" height="43" rx="0" fill="#f7ecd5" stroke="#aac0c7" stroke-width="1.5"/>
+<text x="75" y="187" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#182e3e" font-weight="700" text-anchor="start">PROPOSAL · measurement design · apparatus not built · no empirical result shown</text>
+<rect x="55" y="225" width="360" height="223" rx="14" fill="#fffef8" stroke="#aac0c7" stroke-width="1.5"/>
+<text x="77" y="260" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" fill="#182e3e" font-weight="700" text-anchor="start">INPUT / number weighting</text>
+<text x="77" y="294" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#486273" font-weight="400" text-anchor="start">One 40 nm + one 60 nm sphere</text>
+<text x="77" y="323" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#486273" font-weight="400" text-anchor="start">μ = 50 nm; CV = 0.2</text>
+<circle cx="155" cy="385" r="24" fill="#087b82" fill-opacity="0.85"/>
+<circle cx="290" cy="385" r="36" fill="#087b82" fill-opacity="0.85"/>
+<text x="155" y="435" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" fill="#182e3e" font-weight="400" text-anchor="middle">40 nm</text>
+<text x="290" y="435" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" fill="#182e3e" font-weight="400" text-anchor="middle">60 nm</text>
+<rect x="480" y="225" width="865" height="96" rx="14" fill="#fffef8" stroke="#aac0c7" stroke-width="1.5"/>
+<text x="502" y="260" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" fill="#182e3e" font-weight="700" text-anchor="start">INDEPENDENT INPUTS</text>
+<text x="502" y="294" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#486273" font-weight="400" text-anchor="start">Cₘ [kg/m³ suspension] and material density ρ [kg/m³ material]</text>
+<rect x="480" y="355" width="405" height="170" rx="14" fill="#fffef8" stroke="#aac0c7" stroke-width="1.5"/>
+<text x="502" y="390" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" fill="#182e3e" font-weight="700" text-anchor="start">RIVAL / average then cube</text>
+<text x="502" y="424" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#486273" font-weight="400" text-anchor="start">μ³ = 125000 nm³</text>
+<text x="502" y="453" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#486273" font-weight="400" text-anchor="start">Vwrong = (π/6) μ³</text>
+<text x="502" y="482" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#486273" font-weight="400" text-anchor="start">nwrong = Cₘ / (ρ Vwrong)</text>
+<rect x="940" y="355" width="405" height="170" rx="14" fill="#e5f1ef" stroke="#aac0c7" stroke-width="1.5"/>
+<text x="962" y="390" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" fill="#182e3e" font-weight="700" text-anchor="start">MODEL / cube then average</text>
+<text x="962" y="424" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#486273" font-weight="400" text-anchor="start">E[d³] = 140000 nm³</text>
+<text x="962" y="453" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#486273" font-weight="400" text-anchor="start">Vmean = (π/6) E[d³]</text>
+<text x="962" y="482" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#486273" font-weight="400" text-anchor="start">n = Cₘ / (ρ Vmean)</text>
+<path d="M415,280 L480,280" fill="none" stroke="#087b82" stroke-width="2.8" marker-end="url(#arr)"/>
+<path d="M710,321 L710,355" fill="none" stroke="#087b82" stroke-width="2.8" marker-end="url(#arr)"/>
+<path d="M1140,321 L1140,355" fill="none" stroke="#087b82" stroke-width="2.8" marker-end="url(#arr)"/>
+<rect x="55" y="565" width="600" height="135" rx="14" fill="#fffef8" stroke="#aac0c7" stroke-width="1.5"/>
+<text x="77" y="600" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" fill="#182e3e" font-weight="700" text-anchor="start">OBSERVABLE / exact mass sum</text>
+<text x="77" y="634" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#486273" font-weight="400" text-anchor="start">nwrong / n = 140000 / 125000 = 1.12</text>
+<text x="77" y="663" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#486273" font-weight="400" text-anchor="start">Mean-diameter count is 12% too high.</text>
+<rect x="705" y="565" width="640" height="135" rx="14" fill="#e5f1ef" stroke="#aac0c7" stroke-width="1.5"/>
+<text x="727" y="600" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" fill="#182e3e" font-weight="700" text-anchor="start">CONTROL / zero-bias limit</text>
+<text x="727" y="634" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#486273" font-weight="400" text-anchor="start">Set every diameter equal: E[d³] = E[d]³</text>
+<text x="727" y="663" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#486273" font-weight="400" text-anchor="start">Audit density, shape and missed small particles.</text>
+<path d="M1140,525 L1140,565" fill="none" stroke="#087b82" stroke-width="2.8" marker-end="url(#arr)"/>
+<rect x="55" y="734" width="1290" height="80" rx="14" fill="#fffef8" stroke="#aac0c7" stroke-width="1.5"/>
+<text x="77" y="769" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" fill="#182e3e" font-weight="700" text-anchor="start">Units: n [m⁻³]; convert nm³ to m³ before combining with SI density.</text>
+<text x="55" y="847" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#182e3e" font-weight="700" text-anchor="start">Falsifier: estimator ratios must agree with summing individual masses; no real sample measured here.</text>
+<text x="55" y="885" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" fill="#486273" font-weight="400" text-anchor="start">Source: NH17 Farkas et al. 2025, Eqs.1–2 and5. This exact finite-population example reproduces a known bias.</text>
+<path d="M60,919 L102,919" fill="none" stroke="#087b82" stroke-width="2.8" marker-end="url(#arr)"/>
+<text x="116" y="925" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" fill="#486273" font-weight="400" text-anchor="start">model / measurement dependence</text>
+<path d="M600,919 L642,919" fill="none" stroke="#ab6b13" stroke-width="2.8" marker-end="url(#arrgold)" stroke-dasharray="8 6"/>
+<text x="658" y="925" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" fill="#486273" font-weight="400" text-anchor="start">candidate process / proposed control</text>
+</svg>

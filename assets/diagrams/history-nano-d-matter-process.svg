@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="950" viewBox="0 0 1400 950" role="img" aria-labelledby="title desc">
+<title id="title">One color change, several matter pathways</title>
+<desc id="desc">Elemental mass bookkeeping is separate from particle count, optical environment and chemical phase.. Proposed measurement logic; no apparatus built. Solid arrows show model or measurement dependence. Dashed arrows show a candidate process or proposed control.</desc>
+<defs><marker id="arr" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9" fill="#087b82"/></marker><marker id="arrgold" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9" fill="#ab6b13"/></marker></defs>
+<rect width="1400" height="950" fill="#f5f3ea"/>
+<text x="55" y="46" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" fill="#087b82" font-weight="700" text-anchor="start">HN-D  /  HISTORICAL CLUE → MODERN MEASUREMENT</text>
+<text x="55" y="98" font-family="DejaVu Sans,Arial,sans-serif" font-size="34" fill="#182e3e" font-weight="700" text-anchor="start">One color change, several matter pathways</text>
+<text x="55" y="133" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#486273" font-weight="400" text-anchor="start">Elemental mass bookkeeping is separate from particle count, optical environment and chemical phase.</text>
+<rect x="55" y="158" width="1290" height="43" rx="0" fill="#f7ecd5" stroke="#aac0c7" stroke-width="1.5"/>
+<text x="75" y="187" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#182e3e" font-weight="700" text-anchor="start">PROPOSAL · measurement design · apparatus not built · no empirical result shown</text>
+<rect x="55" y="220" width="1290" height="275" rx="14" fill="#e5f1ef" stroke="#aac0c7" stroke-width="1.5"/>
+<text x="77" y="255" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" fill="#182e3e" font-weight="700" text-anchor="start">SUSPENDED PARTICULATE ELEMENTAL MASS Mₚ [kg] — includes both populations below</text>
+<rect x="80" y="280" width="480" height="163" rx="14" fill="#fffef8" stroke="#aac0c7" stroke-width="1.5"/>
+<text x="102" y="315" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" fill="#182e3e" font-weight="700" text-anchor="start">Dispersed particle population</text>
+<text x="102" y="349" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#486273" font-weight="400" text-anchor="start">Entity count N · size distribution</text>
+<text x="102" y="378" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#486273" font-weight="400" text-anchor="start">Optical spectrum · phase unknown</text>
+<rect x="840" y="280" width="480" height="163" rx="14" fill="#fffef8" stroke="#aac0c7" stroke-width="1.5"/>
+<text x="862" y="315" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" fill="#182e3e" font-weight="700" text-anchor="start">Suspended cluster population</text>
+<text x="862" y="349" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#486273" font-weight="400" text-anchor="start">Fewer entities can contain equal mass</text>
+<text x="862" y="378" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#486273" font-weight="400" text-anchor="start">Cluster geometry alters response</text>
+<path d="M560,330 L840,330" fill="none" stroke="#ab6b13" stroke-width="2.8" marker-end="url(#arrgold)" stroke-dasharray="8 6"/>
+<text x="700.0" y="320.0" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" fill="#ab6b13" font-weight="400" text-anchor="middle">association</text>
+<path d="M840,397 L560,397" fill="none" stroke="#ab6b13" stroke-width="2.8" marker-end="url(#arrgold)" stroke-dasharray="8 6"/>
+<text x="700.0" y="422.0" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" fill="#ab6b13" font-weight="400" text-anchor="middle">dissociation</text>
+<rect x="80" y="555" width="480" height="137" rx="14" fill="#fffef8" stroke="#aac0c7" stroke-width="1.5"/>
+<text x="102" y="590" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" fill="#182e3e" font-weight="700" text-anchor="start">Dissolved elemental mass M_d [kg]</text>
+<text x="102" y="624" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#486273" font-weight="400" text-anchor="start">A separate chemical-speciation assay</text>
+<text x="102" y="653" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#486273" font-weight="400" text-anchor="start">Color alone cannot quantify this pool</text>
+<rect x="840" y="555" width="480" height="137" rx="14" fill="#fffef8" stroke="#aac0c7" stroke-width="1.5"/>
+<text x="862" y="590" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" fill="#182e3e" font-weight="700" text-anchor="start">Deposited elemental mass M_w [kg]</text>
+<text x="862" y="624" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#486273" font-weight="400" text-anchor="start">Collected or wall-associated particles</text>
+<text x="862" y="653" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#486273" font-weight="400" text-anchor="start">Not counted again inside Mₚ</text>
+<path d="M300,443 L300,555" fill="none" stroke="#ab6b13" stroke-width="2.8" marker-end="url(#arrgold)" stroke-dasharray="8 6"/>
+<text x="300.0" y="499.0" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" fill="#ab6b13" font-weight="400" text-anchor="middle">dissolution</text>
+<path d="M1080,443 L1080,555" fill="none" stroke="#ab6b13" stroke-width="2.8" marker-end="url(#arrgold)" stroke-dasharray="8 6"/>
+<text x="1080.0" y="499.0" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" fill="#ab6b13" font-weight="400" text-anchor="middle">settling</text>
+<rect x="55" y="730" width="1290" height="85" rx="14" fill="#fffef8" stroke="#aac0c7" stroke-width="1.5"/>
+<text x="77" y="765" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" fill="#182e3e" font-weight="700" text-anchor="start">OBSERVABLES: spectrum + independent count/size + dissolved fraction + recovered element mass</text>
+<text x="55" y="847" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#182e3e" font-weight="700" text-anchor="start">Control: medium-only and path-length blanks. Mₚ + M_d + M_w closes the stated element budget.</text>
+<text x="55" y="885" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" fill="#486273" font-weight="400" text-anchor="start">Sources: NH02 Newton separated fractions; NH04–NH05 Faraday color/state alternatives. Arrows are candidate processes.</text>
+<path d="M60,919 L102,919" fill="none" stroke="#087b82" stroke-width="2.8" marker-end="url(#arr)"/>
+<text x="116" y="925" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" fill="#486273" font-weight="400" text-anchor="start">model / measurement dependence</text>
+<path d="M600,919 L642,919" fill="none" stroke="#ab6b13" stroke-width="2.8" marker-end="url(#arrgold)" stroke-dasharray="8 6"/>
+<text x="658" y="925" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" fill="#486273" font-weight="400" text-anchor="start">candidate process / proposed control</text>
+</svg>

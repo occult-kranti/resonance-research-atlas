@@ -1,0 +1,137 @@
+{
+  "round": 3,
+  "branch": "nanoparticles",
+  "status": "passed",
+  "hypothesis": "NP-H3 held-out frequency and viscosity distinguish declared relaxation populations",
+  "parameters": {
+    "T_K": 298.0,
+    "kB_J_per_K": 1.380649e-23,
+    "diameter_hydrodynamic_m": 5e-08,
+    "tau_N_s": 0.001,
+    "chi0": 0.02
+  },
+  "fit": {
+    "slope_Hz_Pa_s": 3.334953542450704,
+    "intercept_Hz": 159.15494309189444,
+    "training_viscosities_Pa_s": [
+      0.001,
+      0.002
+    ],
+    "held_out_viscosities_Pa_s": [
+      0.005,
+      0.01
+    ]
+  },
+  "cases": [
+    {
+      "viscosity_Pa_s": 0.001,
+      "tau_B_s": 4.772328641643978e-05,
+      "tau_N_s": 0.001,
+      "tau_eff_s": 4.554951391761961e-05,
+      "f_eff_Hz": 3494.1084855425984,
+      "predicted_f_eff_Hz": 3494.1084855425984,
+      "tau_fit_s": 7.269177464237502e-05,
+      "chi0_fit": 0.011387613992832113,
+      "reference_complex_relative_error": 8.373561153896843e-17,
+      "max_held_out_relative_residual": 0.4303386938542461,
+      "single_tau_app_max_relative_error": 2.975339578942548e-16,
+      "mixture_rational_max_relative_error": 6.484787150874253e-16,
+      "mixture_tau_app_low_s": 0.0005229257758405515,
+      "mixture_tau_app_high_s": 4.988720378606991e-05,
+      "mixture_tau_app_in_bounds": true,
+      "mixture_tau_app_strictly_decreasing": true,
+      "analytic_derivative_negative": true
+    },
+    {
+      "viscosity_Pa_s": 0.002,
+      "tau_B_s": 9.544657283287955e-05,
+      "tau_N_s": 0.001,
+      "tau_eff_s": 8.71302856752292e-05,
+      "f_eff_Hz": 1826.6317143172464,
+      "predicted_f_eff_Hz": 1826.6317143172464,
+      "tau_fit_s": 0.00012484268004602292,
+      "chi0_fit": 0.012279302033383033,
+      "reference_complex_relative_error": 0.0,
+      "max_held_out_relative_residual": 0.38575605165253635,
+      "single_tau_app_max_relative_error": 3.110864850503236e-16,
+      "mixture_rational_max_relative_error": 5.088596365287293e-16,
+      "mixture_tau_app_low_s": 0.0005468404196257744,
+      "mixture_tau_app_high_s": 0.00010361272665655982,
+      "mixture_tau_app_in_bounds": true,
+      "mixture_tau_app_strictly_decreasing": true,
+      "analytic_derivative_negative": true
+    },
+    {
+      "viscosity_Pa_s": 0.005,
+      "tau_B_s": 0.00023861643208219888,
+      "tau_N_s": 0.001,
+      "tau_eff_s": 0.00019264755892271538,
+      "f_eff_Hz": 826.1456515820358,
+      "predicted_f_eff_Hz": 826.1456515820353,
+      "tau_fit_s": 0.00029516903997916193,
+      "chi0_fit": 0.0147661088991523,
+      "reference_complex_relative_error": 1.3837529670922308e-16,
+      "max_held_out_relative_residual": 0.2614255502037154,
+      "single_tau_app_max_relative_error": 2.81395253214824e-16,
+      "mixture_rational_max_relative_error": 5.815857209654933e-16,
+      "mixture_tau_app_low_s": 0.000618601022228478,
+      "mixture_tau_app_high_s": 0.00027963258621833465,
+      "mixture_tau_app_in_bounds": true,
+      "mixture_tau_app_strictly_decreasing": true,
+      "analytic_derivative_negative": true
+    },
+    {
+      "viscosity_Pa_s": 0.01,
+      "tau_B_s": 0.00047723286416439777,
+      "tau_N_s": 0.001,
+      "tau_eff_s": 0.00032305865631709077,
+      "f_eff_Hz": 492.65029733696554,
+      "predicted_f_eff_Hz": 492.65029733696485,
+      "tau_fit_s": 0.0005807227508972854,
+      "chi0_fit": 0.017862304785992874,
+      "reference_complex_relative_error": 0.0,
+      "max_held_out_relative_residual": 0.10668817028201161,
+      "single_tau_app_max_relative_error": 3.3560536183909923e-16,
+      "mixture_rational_max_relative_error": 7.552681922813625e-16,
+      "mixture_tau_app_low_s": 0.0007382189532282265,
+      "mixture_tau_app_high_s": 0.0005742076043746423,
+      "mixture_tau_app_in_bounds": true,
+      "mixture_tau_app_strictly_decreasing": true,
+      "analytic_derivative_negative": true
+    }
+  ],
+  "checks": [
+    {
+      "name": "Brownian_scaling_and_held_out_viscosity",
+      "passed": true,
+      "held_out_relative_error": 1.3845947724317223e-15
+    },
+    {
+      "name": "single_Debye_constant_tau_app",
+      "passed": true
+    },
+    {
+      "name": "mixture_bounds_monotonicity_and_independent_formula",
+      "passed": true
+    },
+    {
+      "name": "one_frequency_match_held_out_rejection",
+      "passed": true
+    },
+    {
+      "name": "equal_time_and_zero_response_controls",
+      "passed": true
+    }
+  ],
+  "scope": "Synthetic candidate populations, unknown rival amplitude at one-point fit; no actual particle mechanism inferred.",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "matplotlib": "3.10.8"
+  },
+  "hashes": {
+    "contract.md": "9638b0009e8f23f7941bc752bd7ca4f6bdf9a538cbc46f7a0a0ef43ecd454ce3",
+    "sources.md": "28af4308766854a4b3fcac3b4fdfb950ee94691f4701083d388bf2225de75280",
+    "solver.py": "51642a4768af9aaa430c7fec8854316e6fcfba2d254969d400a478c8afc3e94d"
+  }
+}

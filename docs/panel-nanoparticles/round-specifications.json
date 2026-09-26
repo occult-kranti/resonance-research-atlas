@@ -1,0 +1,92 @@
+{
+  "1": {
+    "title": "Cycle loss is not heating power",
+    "question": "Which maximum survives when the measured quantity and intervention are stated precisely?",
+    "rivals": [
+      "Drive amplitude or phase changes with frequency.",
+      "A mixture of relaxation times replaces the single-time closure."
+    ],
+    "falsifiers": [
+      "A calibrated susceptibility spectrum fails the single-time relation beyond declared uncertainty.",
+      "Positive cycle loss fails the independent passive energy budget."
+    ],
+    "sourceIds": [
+      "NANO-ROS2002",
+      "NH09"
+    ],
+    "modelId": "nano-debye",
+    "limitations": "Synthetic fixed parameters; no material, apparatus or clinical endpoint was measured."
+  },
+  "2": {
+    "title": "Thermometer lag distorts inferred power",
+    "question": "Can one constant power produce different finite-window estimates solely through sensor lag and heat loss?",
+    "rivals": [
+      "Absorbed power changes during the pulse.",
+      "Multiple thermal compartments or ambient drift invalidate the lumped model."
+    ],
+    "falsifiers": [
+      "Independently calibrated parameters fail to predict a held-out heating duration."
+    ],
+    "sourceIds": [
+      "NANO-SKIN2025",
+      "NANO-CAL2023"
+    ],
+    "modelId": "nano-thermal",
+    "limitations": "The reference thermal model does not identify all absolute parameters without an external calibration."
+  },
+  "3": {
+    "title": "One frequency can hide two particle populations",
+    "question": "Does a one-frequency match survive held-out frequencies and controlled viscosity changes?",
+    "rivals": [
+      "Instrument phase error creates apparent multiple relaxation times.",
+      "Aggregation or temperature drift changes the sample between viscosity conditions."
+    ],
+    "falsifiers": [
+      "A calibrated held-out response disagrees with the fitted single-time or parallel-rate model beyond tolerance."
+    ],
+    "sourceIds": [
+      "NANO-ROS2002",
+      "NANO-GOTO2025"
+    ],
+    "modelId": "",
+    "limitations": "A successful fit need not uniquely identify the microscopic relaxation mechanism."
+  },
+  "4": {
+    "title": "Response weights are not particle counts",
+    "question": "Can size-dependent response weighting corrupt a population inferred from an average diameter or spectral weight?",
+    "rivals": [
+      "The measured distribution is intensity-weighted rather than number-weighted.",
+      "Particle density, shape, magnetization or aggregation differs from the closure."
+    ],
+    "falsifiers": [
+      "The number-weighted mass sum disagrees with the selected moment formula.",
+      "A wrongly weighted spectral model fails held-out frequencies despite matching a calibration point."
+    ],
+    "sourceIds": [
+      "NH17",
+      "NANO-ROS2002"
+    ],
+    "modelId": "",
+    "limitations": "Declared spherical, equal-density and common-magnetization approximations; not a measured real suspension."
+  },
+  "5": {
+    "title": "A beat depends on the measurement channel",
+    "question": "What survives a linear channel, and what appears only when a detector squares the actual exported waveform?",
+    "rivals": [
+      "A source tone or sideband already lies at the chosen rate.",
+      "Finite windows, fades, leakage, transducer nonlinearities or unequal RMS confound the comparison."
+    ],
+    "falsifiers": [
+      "Actual WAV Fourier projections disagree with the frozen predicted components.",
+      "A declared linear channel creates a new component without an implemented nonlinear operation.",
+      "Equal-RMS or phase-reversal controls fail the claimed quadratic-detector prediction."
+    ],
+    "sourceIds": [
+      "NANO-PAVL2025",
+      "NANO-ZHANG2021",
+      "NH09"
+    ],
+    "modelId": "",
+    "limitations": "Digital amplitude and squared amplitude are not calibrated pressure, acoustic intensity, nanoparticle force or a clinical endpoint."
+  }
+}

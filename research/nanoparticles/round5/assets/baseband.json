@@ -1,0 +1,56 @@
+{
+  "format": "opensync-nano-audio",
+  "version": 1,
+  "renderer": "nanolab-v1",
+  "recipe": {
+    "kind": "baseband",
+    "carrierHz": 375,
+    "rateHz": 23.4375,
+    "durationSec": 2,
+    "gainDb": -24
+  },
+  "units": {
+    "samples": "dimensionless digital full-scale amplitude",
+    "frequency": "Hz",
+    "gain": "dBFS sample-amplitude ceiling"
+  },
+  "sampleRateHz": 48000,
+  "nyquistHz": 24000,
+  "framesPerChannel": 96000,
+  "actualDurationSec": 2,
+  "channels": "identical L/R (diotic)",
+  "masterGainDb": -24,
+  "samplePeakDbFs": -24.000000127289304,
+  "rmsDbFs": -27.148305703546846,
+  "edgeFadeSec": 0.05,
+  "wavEncoding": "PCM16 stereo",
+  "predictedLinesBeforeEdgeFades": [
+    {
+      "hz": 23.4375,
+      "amplitude": 0.06309573444801933,
+      "label": "Baseband"
+    }
+  ],
+  "analysis": {
+    "window": "periodic Hann, centered segment, coherent-gain corrected",
+    "fftSize": 65536,
+    "binSpacingHz": 0.732421875,
+    "observationSec": 1.3653333333333333,
+    "strongestBins": [
+      {
+        "hz": 23.4375,
+        "dbFs": -24.000000126839836
+      }
+    ],
+    "warning": "Window leakage broadens lines. FFT bins are not exact component frequencies or reconstructed true peaks."
+  },
+  "physicalCalibration": null,
+  "scope": "Digital audio/acoustic analogy only. No magnetic field, optical exposure, nanoparticle response, dose or treatment is specified.",
+  "source": {
+    "synthesis": "src/engine/synth.ts",
+    "adapter": "src/nanolab/model.ts",
+    "encoder": "src/engine/wav.ts"
+  },
+  "wavBytes": 384044,
+  "wavSha256": "e2f8eafa54eaf10f2d415da99d3db5486af36af6f0e9b17b82145c81b6e27a60"
+}

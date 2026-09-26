@@ -1,0 +1,74 @@
+{
+  "format": "opensync-nano-audio",
+  "version": 1,
+  "renderer": "nanolab-v1",
+  "recipe": {
+    "kind": "am",
+    "carrierHz": 375,
+    "rateHz": 23.4375,
+    "durationSec": 2,
+    "gainDb": -24
+  },
+  "units": {
+    "samples": "dimensionless digital full-scale amplitude",
+    "frequency": "Hz",
+    "gain": "dBFS sample-amplitude ceiling"
+  },
+  "sampleRateHz": 48000,
+  "nyquistHz": 24000,
+  "framesPerChannel": 96000,
+  "actualDurationSec": 2,
+  "channels": "identical L/R (diotic)",
+  "masterGainDb": -24,
+  "samplePeakDbFs": -24.020937572468107,
+  "rmsDbFs": -31.413530171855367,
+  "edgeFadeSec": 0.05,
+  "wavEncoding": "PCM16 stereo",
+  "predictedLinesBeforeEdgeFades": [
+    {
+      "hz": 351.5625,
+      "amplitude": 0.015773933612004833,
+      "label": "Lower sideband"
+    },
+    {
+      "hz": 375,
+      "amplitude": 0.031547867224009665,
+      "label": "Carrier"
+    },
+    {
+      "hz": 398.4375,
+      "amplitude": 0.015773933612004833,
+      "label": "Upper sideband"
+    }
+  ],
+  "analysis": {
+    "window": "periodic Hann, centered segment, coherent-gain corrected",
+    "fftSize": 65536,
+    "binSpacingHz": 0.732421875,
+    "observationSec": 1.3653333333333333,
+    "strongestBins": [
+      {
+        "hz": 375,
+        "dbFs": -30.020600040119454
+      },
+      {
+        "hz": 351.5625,
+        "dbFs": -36.04119995339908
+      },
+      {
+        "hz": 398.4375,
+        "dbFs": -36.04119995339908
+      }
+    ],
+    "warning": "Window leakage broadens lines. FFT bins are not exact component frequencies or reconstructed true peaks."
+  },
+  "physicalCalibration": null,
+  "scope": "Digital audio/acoustic analogy only. No magnetic field, optical exposure, nanoparticle response, dose or treatment is specified.",
+  "source": {
+    "synthesis": "src/engine/synth.ts",
+    "adapter": "src/nanolab/model.ts",
+    "encoder": "src/engine/wav.ts"
+  },
+  "wavBytes": 384044,
+  "wavSha256": "0fd5c54cd1b760a3a04c06d19cb9002e5742ca0862bf2b6a3195ab248ffec1f2"
+}

@@ -1,0 +1,12 @@
+{
+  "producer_python": "3.12.14",
+  "numpy": "2.3.5",
+  "matplotlib": "3.10.8",
+  "independent_reviewer_scipy": "1.17.0",
+  "node_audio_regeneration": "24.19.0",
+  "default_verifier": "Python standard library only",
+  "numeric_recomputation": "Python, numpy, matplotlib; node for actual WAV regeneration",
+  "review_replays": "See reviews/ for separate scripts; some use scipy",
+  "network_required_for_saved_evidence": false,
+  "random_sampling": "None in these five nanoparticle rounds"
+}

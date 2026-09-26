@@ -1,0 +1,117 @@
+{
+  "computed_before_N5_producer_results": true,
+  "method": "Pythonwave decoding and direct complex dot products, notFFT or producer imports",
+  "window": {
+    "N": 4096,
+    "start": 32768,
+    "sampleRate": 48000
+  },
+  "cases": [
+    {
+      "kind": "two-tone",
+      "wav_sha256": "d51b59134290a708c750fe3a8ab6051df60b0c82cb6f80f0bb769ff415cd41bc",
+      "interior_rms_FS": 0.031547087348333655,
+      "raw_line_amplitudes_FS": {
+        "2": 4.4282553892128017e-07,
+        "4": 2.446650317109559e-07,
+        "30": 2.3822173356469554e-07,
+        "31": 0.03154732424037483,
+        "32": 5.427364693549192e-08,
+        "33": 0.03154684800661958,
+        "34": 4.097950020777615e-08
+      },
+      "quadratic_line_amplitudes_FS2": {
+        "2": 0.0009952169826424211,
+        "4": 8.630191234874692e-09
+      },
+      "equal_RMS_quadratic_line_amplitudes_FS2": {
+        "2": 0.0003999993016526171,
+        "4": 3.4686611334386057e-09
+      }
+    },
+    {
+      "kind": "am",
+      "wav_sha256": "0fd5c54cd1b760a3a04c06d19cb9002e5742ca0862bf2b6a3195ab248ffec1f2",
+      "interior_rms_FS": 0.027320934312269386,
+      "raw_line_amplitudes_FS": {
+        "2": 3.9756957796485537e-07,
+        "4": 1.1450163917289904e-07,
+        "30": 0.015773429267460802,
+        "31": 9.219806626715042e-17,
+        "32": 0.031547343809854266,
+        "33": 1.878567177725401e-18,
+        "34": 0.01577437110621331
+      },
+      "quadratic_line_amplitudes_FS2": {
+        "2": 0.0009952506966223091,
+        "4": 0.0002488132799039328
+      },
+      "equal_RMS_quadratic_line_amplitudes_FS2": {
+        "2": 0.0005333365991901049,
+        "4": 0.00013333447440696278
+      }
+    },
+    {
+      "kind": "baseband",
+      "wav_sha256": "e2f8eafa54eaf10f2d415da99d3db5486af36af6f0e9b17b82145c81b6e27a60",
+      "interior_rms_FS": 0.04461442873668654,
+      "raw_line_amplitudes_FS": {
+        "2": 0.06309432898660439,
+        "4": 4.071508009543051e-07,
+        "30": 1.2912529988054542e-07,
+        "31": 7.131373169307828e-20,
+        "32": 4.139110874171787e-09,
+        "33": 6.56099564849506e-19,
+        "34": 3.655704569972887e-07
+      },
+      "quadratic_line_amplitudes_FS2": {
+        "2": 8.398048046562794e-08,
+        "4": 0.0019904341415769534
+      },
+      "equal_RMS_quadratic_line_amplitudes_FS2": {
+        "2": 1.687670555495855e-08,
+        "4": 0.0003999973654315293
+      }
+    },
+    {
+      "kind": "carrier",
+      "wav_sha256": "9b30ce8c6d551229a8bce096e625410a561c4fc4bd0b88b25fd30f78d597d490",
+      "interior_rms_FS": 0.04461537819392658,
+      "raw_line_amplitudes_FS": {
+        "2": 6.065574063289047e-19,
+        "4": 6.95364827353806e-19,
+        "30": 1.123938937193666e-16,
+        "31": 1.5201390448696862e-16,
+        "32": 0.06309567142562665,
+        "33": 1.3579820063180087e-17,
+        "34": 6.509931487076455e-17
+      },
+      "quadratic_line_amplitudes_FS2": {
+        "2": 1.2686833898779487e-19,
+        "4": 1.7390218055673678e-19
+      },
+      "equal_RMS_quadratic_line_amplitudes_FS2": {
+        "2": 4.168303064043113e-20,
+        "4": 3.6487944916843116e-20
+      }
+    }
+  ],
+  "phase_flip_control": {
+    "independent_method": "Orthogonal real sin/cos projection reflection, noFFT",
+    "mean_square_difference_FS2": -6.505213034913027e-19,
+    "beat_complex_reversal_absolute_error_FS2": 2.6915179442187423e-08,
+    "original_beat_phasor": [
+      0.0009952169826424211,
+      1.8395256052260506e-19
+    ],
+    "flipped_beat_phasor": [
+      -0.000995190067462979,
+      -3.8577118830058983e-19
+    ]
+  },
+  "source_sha256": {
+    "repos/brainwave_opensync/src/nanolab/model.ts": "e89efc064352a610230de80028c818033dc08d4f53b27c1c44daa4c394327293",
+    "repos/brainwave_opensync/src/engine/synth.ts": "7ed20eeb55fb23540cb97636f63bbec7616729cdaa2ddacdc7da2f365e3ef6c1",
+    "repos/brainwave_opensync/src/engine/wav.ts": "993188928d176cb9e9267f245d7e2a48e0b0a77887244ca0a1d92c936f5d918f"
+  }
+}

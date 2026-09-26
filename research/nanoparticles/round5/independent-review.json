@@ -1,0 +1,47 @@
+{
+  "round": 5,
+  "branch": "nanoparticles",
+  "status": "accepted",
+  "final_round": true,
+  "reviewDate": "2026-09-26",
+  "independent_methods": [
+    "Decoded actual WAV bytes with Python wave and verified export manifest SHA values",
+    "Direct complex dot-product projections across every stored spectral row, without FFT or producer imports",
+    "Orthogonal real sine/cosine reflection of the upper tone versus producer FFT sign flip",
+    "Pre-result frozen raw, squared, matched-RMS and phase values compared against producer output",
+    "Source inspection and analytic PCM error-bound/units check"
+  ],
+  "direct_projection_vs_all_spectral_columns_max_absolute_error": 1.5201390448696862e-16,
+  "precomputed_case_values_max_absolute_difference": 4.163336342344337e-17,
+  "independent_phase_reflection_error_difference_FS2": 8.673617379884035e-19,
+  "phase_reversal_residual_FS2": 2.691517944132006e-08,
+  "source_sha256": {
+    "contract.md": "3d24d4751e6bb4b0cddb1598b640c6db10c125cbaa19917553bc860f1a3ece14",
+    "sources.md": "b5a91edfdb964d27d347d5b0d440ec25861a67c36e4f984052187e5274f76c50",
+    "inputs.json": "a302d840e728e2ec17547890a2d9b9c04a8752c4567343d14d620ed5f6c2a3c1",
+    "regenerate_assets.mjs": "baed4bab272e1522f05b8981d333424ec8aef0c7bdd973e433845974300045be",
+    "solver.py": "8b8be0bb7d5ef2697e24d9ea40bdcea97c212c099dbc26d6190c73721a9d09fa",
+    "results.json": "026d55dc5924c8e96cf9b70e9349348781925c7a8636dd767b52f273bebe6c82",
+    "decoded_spectrum.csv": "8fe1c5130bdf6bb79d1531a68823ddfb38f80c1990eb30280cc08c664bb34ce0",
+    "signal_comparison.csv": "ce21c4d5b4098fd9c37ec203e71f1f90af4b8c7d8e0f98f71cd1e6dcb0c92108"
+  },
+  "input_snapshot_sha256": {
+    "assets/am.json": "fd2fce0a536785ddbe5ddebdaab71a46abf351947726394c32d3b6acc949b5d7",
+    "assets/am.wav": "0fd5c54cd1b760a3a04c06d19cb9002e5742ca0862bf2b6a3195ab248ffec1f2",
+    "assets/baseband.json": "70a4b7c1166883956e5470dae1023663153d4ecd744c5a60ad5845dd42789cb3",
+    "assets/baseband.wav": "e2f8eafa54eaf10f2d415da99d3db5486af36af6f0e9b17b82145c81b6e27a60",
+    "assets/carrier.json": "271385ef3595453981b0526154e59af11f23458663c1f3a6c2c4c803cd6b7511",
+    "assets/carrier.wav": "9b30ce8c6d551229a8bce096e625410a561c4fc4bd0b88b25fd30f78d597d490",
+    "assets/two-tone.json": "71948d2926afc140c1fad4c85a7f6c7d9b3a7684ccf83c7808218e1dc9c1f387",
+    "assets/two-tone.wav": "d51b59134290a708c750fe3a8ab6051df60b0c82cb6f80f0bb769ff415cd41bc",
+    "production/fft.ts": "d3fe3d541042a04d159db7a6245381c76dd755f3edc36436e3cfb78fd485b2d4",
+    "production/model.ts": "e89efc064352a610230de80028c818033dc08d4f53b27c1c44daa4c394327293",
+    "production/nanolab-model.mjs": "3eef4e6854eb02eeaf2c9e88c2789b7f2ce9fb6f52172127c6426b09087b1bf3",
+    "production/synth.ts": "7ed20eeb55fb23540cb97636f63bbec7616729cdaa2ddacdc7da2f365e3ef6c1",
+    "production/wav.ts": "993188928d176cb9e9267f245d7e2a48e0b0a77887244ca0a1d92c936f5d918f"
+  },
+  "scope": "Actual quiet audio exports plus mathematical LTI/quadratic observation operators. PCM quantization produces small components below declared comparison bounds; exact zeros are not required. FS and FS\u00b2 are digital units, not force.",
+  "empirical_work": "No transducer calibration, pressure/velocity-gradient measurement, particle motion, magnetic field, treatment or metaphysical observation was performed.",
+  "novelty": "New project phase-witness and resource-matching protocol plus production-code integration; established modulation and nonlinear mixing principles.",
+  "decision": "Accept the bounded fifth round and stop. No sixth new research round selected."
+}

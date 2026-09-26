@@ -1,0 +1,109 @@
+{
+  "round": 2,
+  "branch": "nanoparticles",
+  "hypothesis": "NP-H2 duration-dependent naive power can be thermometer-transfer artifact",
+  "status": "passed",
+  "parameters": {
+    "C_J_per_K": 4.0,
+    "G_W_per_K": 0.02,
+    "P_W": 0.2,
+    "sensor_time_s": 10.0,
+    "pulse_duration_s": 120.0
+  },
+  "duration_comparisons": [
+    {
+      "window_s": 10.0,
+      "specimen_rise_K": 0.4877057549928599,
+      "sensor_rise_K": 0.18067944797745317,
+      "naive_power_W": 0.07227177919098127,
+      "calibrated_power_W": 0.2
+    },
+    {
+      "window_s": 30.0,
+      "specimen_rise_K": 1.392920235749422,
+      "sensor_rise_K": 0.9661197578245828,
+      "naive_power_W": 0.12881596770994438,
+      "calibrated_power_W": 0.2
+    },
+    {
+      "window_s": 60.0,
+      "specimen_rise_K": 2.5918177931828215,
+      "sensor_rise_K": 2.2032180729170037,
+      "naive_power_W": 0.14688120486113357,
+      "calibrated_power_W": 0.2
+    }
+  ],
+  "convergence": [
+    {
+      "dt_s": 0.1,
+      "max_temperature_error_K": 1.627042944818413e-11
+    },
+    {
+      "dt_s": 0.05,
+      "max_temperature_error_K": 1.0196288258157438e-12
+    },
+    {
+      "dt_s": 0.025,
+      "max_temperature_error_K": 6.48925357893404e-14
+    }
+  ],
+  "scale_control": [
+    {
+      "factor": 0.5,
+      "max_trace_error_K": 0.0
+    },
+    {
+      "factor": 2.0,
+      "max_trace_error_K": 0.0
+    },
+    {
+      "factor": 10.0,
+      "max_trace_error_K": 0.0
+    }
+  ],
+  "branch_controls": [
+    {
+      "name": "equal_time_constants",
+      "max_error_K": 1.87960758069039e-13
+    },
+    {
+      "name": "zero_heat_leak",
+      "max_error_K": 2.753353101070388e-13
+    }
+  ],
+  "max_budget_residual_J": 2.3499396206716483e-08,
+  "checks": [
+    {
+      "name": "piecewise_ODE_exact_agreement",
+      "passed": true
+    },
+    {
+      "name": "independent_thermal_budget",
+      "passed": true,
+      "max_residual_J": 2.3499396206716483e-08
+    },
+    {
+      "name": "duration_artifact_and_calibrated_inverse",
+      "passed": true
+    },
+    {
+      "name": "scale_nonidentifiability_and_blank",
+      "passed": true
+    },
+    {
+      "name": "removable_limit_controls",
+      "passed": true
+    }
+  ],
+  "scope": "Synthetic lumped thermal + first-order sensor model, not nanoparticle or clinical measurements.",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "matplotlib": "3.10.8"
+  },
+  "hashes": {
+    "contract.md": "49357929fabca42787ba0ad3c6e2532fe73ec6513085faf1c9e445ac789486c0",
+    "sources.md": "f17ce49c36150437f52d0e1d06eb02ec139333a83273942c5eeb2f3f5f2c6956",
+    "solver.py": "1e01404b942f3e4080448c2172b219d3872c4598b9f137ae3fb5d6b87b6c9b2f"
+  }
+}

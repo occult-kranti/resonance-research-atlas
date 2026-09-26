@@ -28,6 +28,8 @@ Live browser checks verified the overview/source load, the dream journal and met
 
 ![Verified atlas overview](verification/atlas-756091e.jpg)
 
-## Separate repository status
+## Standalone baseline published
 
-The complete standalone atlas source and GitHub Actions workflow are prepared locally and preserved under the primary repository's `research-atlas/` directory. The requested new remote `occult-kranti/resonance-research-atlas` has not yet been created: the connector does not expose repository creation or Pages administration, and the browser requires sign-in. This is an access boundary, separate from the successfully published integrated site.
+After the user completed sign-in, the standalone repository was created and GitHub Pages was configured with Actions. Baseline commit `c3aa2c695478aadca9a8a1b0f63e86405a3c6c55` deployed successfully in [run 36279210133](https://github.com/occult-kranti/resonance-research-atlas/actions/runs/36279210133). Browser inspection verified the fully loaded six-round atlas at https://occult-kranti.github.io/resonance-research-atlas/ .
+
+The nanoparticle extension has a separate release record; the checks and revisions above describe the original integrated release, not its later changes.

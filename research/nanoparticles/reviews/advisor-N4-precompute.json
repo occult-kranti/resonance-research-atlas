@@ -1,0 +1,45 @@
+{
+  "computed_before_N4_results": true,
+  "method": "Exact Fraction finite-population moments and direct complex response, no producer modules",
+  "moment1_nm": "50",
+  "moment3_nm3": "140000",
+  "moment6_nm6": "25376000000",
+  "naive_count_ratio": "28/25",
+  "number_weights": [
+    "1/2",
+    "1/2"
+  ],
+  "mass_weights": [
+    "8/35",
+    "27/35"
+  ],
+  "susceptibility_weights": [
+    "64/793",
+    "729/793"
+  ],
+  "number_concentration_per_m3": 2728370453003920.5,
+  "tau_B_s": [
+    4.77232864164398e-05,
+    0.0001309526979267108
+  ],
+  "heldout_spectral_points": [
+    {
+      "frequency_Hz": 10,
+      "correct_chi_normalized_real": 0.9999370423824241,
+      "correct_chi_normalized_loss": 0.007805436868587332,
+      "naive_complex_relative_error": 0.0021926666637751215
+    },
+    {
+      "frequency_Hz": 1000,
+      "correct_chi_normalized_real": 0.6222259128969411,
+      "correct_chi_normalized_loss": 0.4732442716860419,
+      "naive_complex_relative_error": 0.20746636247751027
+    },
+    {
+      "frequency_Hz": 1000000.0,
+      "correct_chi_normalized_real": 2.255488767236697e-06,
+      "correct_chi_normalized_loss": 0.001386421562643694,
+      "naive_complex_relative_error": 0.6410206341603628
+    }
+  ]
+}

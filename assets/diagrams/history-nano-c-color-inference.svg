@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="950" viewBox="0 0 1400 950" role="img" aria-labelledby="title desc">
+<title id="title">Color does not uniquely identify a substance</title>
+<desc id="desc">Historical color clues become a modern inverse problem with explicit sample and instrument variables.. Proposed measurement logic; no apparatus built. Solid arrows show model or measurement dependence. Dashed arrows show a candidate process or proposed control.</desc>
+<defs><marker id="arr" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9" fill="#087b82"/></marker><marker id="arrgold" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9" fill="#ab6b13"/></marker></defs>
+<rect width="1400" height="950" fill="#f5f3ea"/>
+<text x="55" y="46" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" fill="#087b82" font-weight="700" text-anchor="start">HN-C  /  HISTORICAL CLUE → MODERN MEASUREMENT</text>
+<text x="55" y="98" font-family="DejaVu Sans,Arial,sans-serif" font-size="34" fill="#182e3e" font-weight="700" text-anchor="start">Color does not uniquely identify a substance</text>
+<text x="55" y="133" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#486273" font-weight="400" text-anchor="start">Historical color clues become a modern inverse problem with explicit sample and instrument variables.</text>
+<rect x="55" y="158" width="1290" height="43" rx="0" fill="#f7ecd5" stroke="#aac0c7" stroke-width="1.5"/>
+<text x="75" y="187" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#182e3e" font-weight="700" text-anchor="start">PROPOSAL · measurement design · apparatus not built · no empirical result shown</text>
+<rect x="55" y="225" width="395" height="180" rx="14" fill="#fffef8" stroke="#aac0c7" stroke-width="1.5"/>
+<text x="77" y="260" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#182e3e" font-weight="700" text-anchor="start">INPUT / specimen parameters</text>
+<text x="77" y="294" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#486273" font-weight="400" text-anchor="start">Size distribution [nm] · shape</text>
+<text x="77" y="323" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#486273" font-weight="400" text-anchor="start">Permittivity · medium index</text>
+<text x="77" y="352" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#486273" font-weight="400" text-anchor="start">Concentration [m⁻³] · path [m]</text>
+<rect x="510" y="225" width="350" height="180" rx="14" fill="#fffef8" stroke="#aac0c7" stroke-width="1.5"/>
+<text x="532" y="260" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#182e3e" font-weight="700" text-anchor="start">FORWARD OPTICAL MODEL</text>
+<text x="532" y="294" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#486273" font-weight="400" text-anchor="start">State its geometry and domain</text>
+<text x="532" y="323" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#486273" font-weight="400" text-anchor="start">Predicted spectrum vs λ [nm]</text>
+<text x="532" y="352" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" fill="#486273" font-weight="400" text-anchor="start">Separate transmission / reflection</text>
+<rect x="920" y="225" width="425" height="180" rx="14" fill="#fffef8" stroke="#aac0c7" stroke-width="1.5"/>
+<text x="942" y="260" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" fill="#182e3e" font-weight="700" text-anchor="start">OBSERVABLE / recorded signal</text>
+<text x="942" y="294" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#486273" font-weight="400" text-anchor="start">Illumination + detector response</text>
+<text x="942" y="323" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#486273" font-weight="400" text-anchor="start">Spectrum → channel values / RGB</text>
+<text x="942" y="352" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#486273" font-weight="400" text-anchor="start">An image is a projection</text>
+<path d="M450,305 L510,305" fill="none" stroke="#087b82" stroke-width="2.8" marker-end="url(#arr)"/>
+<path d="M860,305 L920,305" fill="none" stroke="#087b82" stroke-width="2.8" marker-end="url(#arr)"/>
+<rect x="55" y="445" width="600" height="196" rx="14" fill="#fffef8" stroke="#aac0c7" stroke-width="1.5"/>
+<text x="77" y="480" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" fill="#182e3e" font-weight="700" text-anchor="start">RIVAL PAIRS / fixed medium and frequency</text>
+<text x="77" y="514" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#486273" font-weight="400" text-anchor="start">Reduced response a³q; q = (εᵣ − 1)/(εᵣ + 2)</text>
+<text x="77" y="543" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#486273" font-weight="400" text-anchor="start">a = 20 nm, q = 1/4 → 2000 nm³</text>
+<text x="77" y="572" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#486273" font-weight="400" text-anchor="start">a = 40 nm, q = 1/32 → 2000 nm³</text>
+<text x="77" y="601" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#486273" font-weight="400" text-anchor="start">εᵣ = εparticle / εmedium; synthetic dipoles</text>
+<rect x="705" y="445" width="640" height="196" rx="14" fill="#e5f1ef" stroke="#aac0c7" stroke-width="1.5"/>
+<text x="727" y="480" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" fill="#182e3e" font-weight="700" text-anchor="start">PROPOSED DISCRIMINATING CONTROL</text>
+<text x="727" y="514" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#486273" font-weight="400" text-anchor="start">Independently measure size or material contrast.</text>
+<text x="727" y="543" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#486273" font-weight="400" text-anchor="start">An extra wavelength helps only if dispersion differs.</text>
+<text x="727" y="572" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#486273" font-weight="400" text-anchor="start">Duplicate channel: no new independent information.</text>
+<text x="727" y="601" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#486273" font-weight="400" text-anchor="start">Verify domain, absorption channel and calibration.</text>
+<path d="M655,540 L705,540" fill="none" stroke="#ab6b13" stroke-width="2.8" marker-end="url(#arrgold)" stroke-dasharray="8 6"/>
+<rect x="55" y="682" width="1290" height="131" rx="14" fill="#fffef8" stroke="#aac0c7" stroke-width="1.5"/>
+<text x="77" y="717" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" fill="#182e3e" font-weight="700" text-anchor="start">HISTORICAL CONTEXT / no retroactive attribution</text>
+<text x="77" y="751" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#486273" font-weight="400" text-anchor="start">Newton 1718: conditional size conjecture. Faraday 1857: mixture vs changed particle-state alternatives.</text>
+<text x="77" y="780" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#486273" font-weight="400" text-anchor="start">Neither a color nor this toy example identifies a historical compound or proves modern gold spectra.</text>
+<text x="55" y="847" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#182e3e" font-weight="700" text-anchor="start">Falsifier: the proposed control must separate the rival parameter sets within its calibrated uncertainty.</text>
+<text x="55" y="885" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" fill="#486273" font-weight="400" text-anchor="start">Sources: NH01 Newton; NH04 Faraday; NH19 NIST metrology. Modern optical forward law requires separate review.</text>
+<path d="M60,919 L102,919" fill="none" stroke="#087b82" stroke-width="2.8" marker-end="url(#arr)"/>
+<text x="116" y="925" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" fill="#486273" font-weight="400" text-anchor="start">model / measurement dependence</text>
+<path d="M600,919 L642,919" fill="none" stroke="#ab6b13" stroke-width="2.8" marker-end="url(#arrgold)" stroke-dasharray="8 6"/>
+<text x="658" y="925" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" fill="#486273" font-weight="400" text-anchor="start">candidate process / proposed control</text>
+</svg>

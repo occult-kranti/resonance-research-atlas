@@ -1,0 +1,39 @@
+{
+  "reviewDate": "2026-09-26",
+  "status": "passed",
+  "scope": "Portable replay-path verification of the same five research rounds; not additional rounds or independent agents",
+  "commands": [
+    {
+      "script": "replay/review_n1.py",
+      "sha256": "5414cc1005fd18ab372e5cde8cf1de09fbcee7416516c818c58554d4517ea7dc",
+      "exit_code": 0
+    },
+    {
+      "script": "replay/review_n2.py",
+      "sha256": "705fcc2c279ee19b3bd85e7db52b193e509625da69c407ef1f53b6b4513ab705",
+      "exit_code": 0
+    },
+    {
+      "script": "replay/review_n3.py",
+      "sha256": "c8887f59d695b82934ebac9e3446d88aef3b41e0a1c706ad635e310922bcde8e",
+      "exit_code": 0
+    },
+    {
+      "script": "replay/review_n4.py",
+      "sha256": "262eea62670c7c401a8b18858f8b5b91827ec1bd12a34d08b008fa2986708b76",
+      "exit_code": 0
+    },
+    {
+      "script": "replay/review_n5.py",
+      "sha256": "04ff658548254909a298c1c842ddb00046b4fa439fed5ebfb60e66058bbdc100",
+      "exit_code": 0
+    },
+    {
+      "script": "replay/review_n5_final.py",
+      "sha256": "74db2539dfbddff9057ac76f872a98228921c4d4e6f17255f2a75f83eedd2ae3",
+      "exit_code": 0
+    }
+  ],
+  "originals_preserved": true,
+  "frozen_precomputations_unchanged": true
+}

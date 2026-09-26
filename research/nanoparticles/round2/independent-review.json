@@ -1,0 +1,28 @@
+{
+  "round": 2,
+  "branch": "nanoparticles",
+  "status": "accepted",
+  "reviewDate": "2026-09-26",
+  "independent_methods": [
+    "Independent integrating-factor convolution frozen before producer results",
+    "Augmented3x3 matrix exponential with separate switch propagator compared against all saved trace points",
+    "Exact analytic heat-leak integral compared against producer quadrature",
+    "Algebraic scale-symmetry proof, with calibrated-capacity positive control"
+  ],
+  "independent_augmented_matrix_exponential_max_error_K": 8.881784197001252e-15,
+  "sampled_quadrature_heat_leak_vs_exact_integral_max_error_J": 2.3499396206716483e-08,
+  "independent_exact_thermal_budget_max_error_J": 7.105427357601002e-15,
+  "precomputed_convolution_vs_result_max_error_K": 1.7763568394002505e-15,
+  "source_sha256": {
+    "contract.md": "49357929fabca42787ba0ad3c6e2532fe73ec6513085faf1c9e445ac789486c0",
+    "sources.md": "f17ce49c36150437f52d0e1d06eb02ec139333a83273942c5eeb2f3f5f2c6956",
+    "solver.py": "1e01404b942f3e4080448c2172b219d3872c4598b9f137ae3fb5d6b87b6c9b2f",
+    "results.json": "abf40e6f969a938c97e5871bb5700e770ee3c5cd8aa536f05dd436ff80901787",
+    "thermal_trace.csv": "0731e5453241a092d962825fa1241b50f9223a26090b5f17adab57e77911effe",
+    "duration_comparison.csv": "f074e03b1b9d7512f0c631c1238699a329f35407790f1a1b4ca4e2950105fd70",
+    "convergence.csv": "5e6a738ad1007f300a75efa8d89c28f48cbaba7e17a6814d594a15ad46b3ef10"
+  },
+  "source_scope": "Skinner2025 inspected heating/cooling, blank, well-mixed limitation; our first-order sensor model is an explicit surrogate, no source-data fit",
+  "empirical_work": "None: resistor phantom, thermometer calibration, sample thermometry and uncertainty remain prospective",
+  "next_reason": "Calibrating heat input does not identify the particle relaxation mechanism; choose controlled viscosity/phase discrimination next"
+}

@@ -1,0 +1,30 @@
+{
+  "checks": {
+    "sweep_cycle_max_absolute_error_J_per_m3": 1.3234889800848443e-23,
+    "sweep_power_max_absolute_error_W_per_m3": 5.204170427930421e-18,
+    "dimensional_fW_max_relative_error": 5.335724832473013e-16
+  },
+  "cases": [
+    {
+      "x": 0.1,
+      "exact_from_rest_M_max_error_A_per_m": 1.853510400717795e-12,
+      "512_segment_saved_loop_relative_error": 2.509966853370127e-05,
+      "independent_sampled_budget_residual_J_per_m3": 7.31352367246025e-17,
+      "independent_sampled_input_relative_error": 9.229988995329563e-09
+    },
+    {
+      "x": 1.0,
+      "exact_from_rest_M_max_error_A_per_m": 8.326672684688674e-15,
+      "512_segment_saved_loop_relative_error": 2.5099513717985467e-05,
+      "independent_sampled_budget_residual_J_per_m3": 3.0193892818105425e-20,
+      "independent_sampled_input_relative_error": 2.7267077484793845e-13
+    },
+    {
+      "x": 10.0,
+      "exact_from_rest_M_max_error_A_per_m": 1.0213184464813452e-16,
+      "512_segment_saved_loop_relative_error": 2.5099512919291023e-05,
+      "independent_sampled_budget_residual_J_per_m3": -1.4868045923344096e-23,
+      "independent_sampled_input_relative_error": 5.662137425588298e-15
+    }
+  ]
+}

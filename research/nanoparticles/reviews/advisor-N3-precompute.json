@@ -1,0 +1,47 @@
+{
+  "computed_before_N3_results": true,
+  "independent_method": "Complex rational transfer evaluated directly; held-out10Hz and whole-domain mixture derivative proof",
+  "cases": [
+    {
+      "eta_Pa_s": 0.001,
+      "tauB_s": 4.772328641643978e-05,
+      "candidateA_feff_Hz": 3494.108485542598,
+      "one_point_tau_fit_s": 7.269177464237502e-05,
+      "one_point_chi0_fit": 0.011387613992832113,
+      "heldout_10Hz_relative_error": 0.4303386938542461,
+      "tauapp_low_frequency_limit_s": 0.0005238616432082199,
+      "tauapp_high_frequency_limit_s": 4.988717982880728e-05
+    },
+    {
+      "eta_Pa_s": 0.002,
+      "tauB_s": 9.544657283287955e-05,
+      "candidateA_feff_Hz": 1826.6317143172466,
+      "one_point_tau_fit_s": 0.00012484268004602292,
+      "one_point_chi0_fit": 0.012279302033383033,
+      "heldout_10Hz_relative_error": 0.3857560516525364,
+      "tauapp_low_frequency_limit_s": 0.0005477232864164398,
+      "tauapp_high_frequency_limit_s": 0.00010361270436077177
+    },
+    {
+      "eta_Pa_s": 0.005,
+      "tauB_s": 0.0002386164320821989,
+      "candidateA_feff_Hz": 826.1456515820358,
+      "one_point_tau_fit_s": 0.00029516903997916193,
+      "one_point_chi0_fit": 0.014766108899152296,
+      "heldout_10Hz_relative_error": 0.2614255502037156,
+      "tauapp_low_frequency_limit_s": 0.0006193082160410995,
+      "tauapp_high_frequency_limit_s": 0.00027963256993717946
+    },
+    {
+      "eta_Pa_s": 0.01,
+      "tauB_s": 0.0004772328641643978,
+      "candidateA_feff_Hz": 492.6502973369656,
+      "one_point_tau_fit_s": 0.0005807227508972855,
+      "one_point_chi0_fit": 0.017862304785992877,
+      "heldout_10Hz_relative_error": 0.10668817028201145,
+      "tauapp_low_frequency_limit_s": 0.0007386164320821989,
+      "tauapp_high_frequency_limit_s": 0.0005742075975906551
+    }
+  ],
+  "monotonic_proof": "For positive amplitudes a,b and z=omega\u00b2, d tau_app/dz=\u2212a b(tau1+tau2)(tau1\u2212tau2)\u00b2/[a+b+z(a tau2\u00b2+b tau1\u00b2)]\u00b2; strictlynegative iftimesdiffer"
+}

@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="950" viewBox="0 0 1400 950" role="img" aria-labelledby="title desc">
+<title id="title">Loss per cycle is not power per second</title>
+<desc id="desc">Declared weak-drive Debye model: fixed field amplitude, susceptibility and relaxation time.. Proposed measurement logic; no apparatus built. Solid arrows show model or measurement dependence. Dashed arrows show a candidate process or proposed control.</desc>
+<defs><marker id="arr" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9" fill="#087b82"/></marker><marker id="arrgold" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9" fill="#ab6b13"/></marker></defs>
+<rect width="1400" height="950" fill="#f5f3ea"/>
+<text x="55" y="46" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" fill="#087b82" font-weight="700" text-anchor="start">HN-A  /  HISTORICAL CLUE → MODERN MEASUREMENT</text>
+<text x="55" y="98" font-family="DejaVu Sans,Arial,sans-serif" font-size="34" fill="#182e3e" font-weight="700" text-anchor="start">Loss per cycle is not power per second</text>
+<text x="55" y="133" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#486273" font-weight="400" text-anchor="start">Declared weak-drive Debye model: fixed field amplitude, susceptibility and relaxation time.</text>
+<rect x="55" y="158" width="1290" height="43" rx="0" fill="#f7ecd5" stroke="#aac0c7" stroke-width="1.5"/>
+<text x="75" y="187" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#182e3e" font-weight="700" text-anchor="start">PROPOSAL · measurement design · apparatus not built · no empirical result shown</text>
+<rect x="55" y="225" width="360" height="160" rx="14" fill="#fffef8" stroke="#aac0c7" stroke-width="1.5"/>
+<text x="77" y="260" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#182e3e" font-weight="700" text-anchor="start">INPUT / declared conditions</text>
+<text x="77" y="294" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#486273" font-weight="400" text-anchor="start">H peak [A/m] · f [Hz]</text>
+<text x="77" y="323" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#486273" font-weight="400" text-anchor="start">χ₀ dimensionless · τ [s]</text>
+<text x="77" y="352" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#486273" font-weight="400" text-anchor="start">x = 2πfτ; sample volume basis</text>
+<rect x="480" y="225" width="365" height="160" rx="14" fill="#fffef8" stroke="#aac0c7" stroke-width="1.5"/>
+<text x="502" y="260" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" fill="#182e3e" font-weight="700" text-anchor="start">MODEL / phase lag</text>
+<text x="502" y="294" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#486273" font-weight="400" text-anchor="start">χ″ = χ₀x / (1 + x²)</text>
+<text x="502" y="323" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#486273" font-weight="400" text-anchor="start">w = πμ₀H²χ″ [J/m³]</text>
+<text x="502" y="352" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#486273" font-weight="400" text-anchor="start">p = f w [W/m³]</text>
+<rect x="910" y="225" width="435" height="160" rx="14" fill="#fffef8" stroke="#aac0c7" stroke-width="1.5"/>
+<text x="932" y="260" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" fill="#182e3e" font-weight="700" text-anchor="start">OBSERVABLE / two quantities</text>
+<text x="932" y="294" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#486273" font-weight="400" text-anchor="start">Cycle-loop area and average heat</text>
+<text x="932" y="323" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#486273" font-weight="400" text-anchor="start">Calibrate H at the sample</text>
+<text x="932" y="352" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#486273" font-weight="400" text-anchor="start">Do not substitute the drive dial</text>
+<path d="M415,305 L480,305" fill="none" stroke="#087b82" stroke-width="2.8" marker-end="url(#arr)"/>
+<path d="M845,305 L910,305" fill="none" stroke="#087b82" stroke-width="2.8" marker-end="url(#arr)"/>
+<rect x="55" y="418" width="620" height="270" rx="14" fill="#fffef8" stroke="#aac0c7" stroke-width="1.5"/>
+<text x="75" y="450" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" fill="#182e3e" font-weight="700" text-anchor="start">Loss shape: x / (1 + x²)</text>
+<path d="M112,478 V616 H642" fill="none" stroke="#486273" stroke-width="2"/>
+<polyline points="112.00,616.00 117.30,610.49 122.60,605.03 127.90,599.68 133.20,594.47 138.50,589.46 143.80,584.68 149.10,580.17 154.40,575.94 159.70,572.02 165.00,568.41 170.30,565.13 175.60,562.16 180.90,559.51 186.20,557.17 191.50,555.12 196.80,553.34 202.10,551.83 207.40,550.56 212.70,549.52 218.00,548.68 223.30,548.04 228.60,547.56 233.90,547.24 239.20,547.06 244.50,547.00 249.80,547.05 255.10,547.20 260.40,547.44 265.70,547.75 271.00,548.13 276.30,548.57 281.60,549.05 286.90,549.58 292.20,550.14 297.50,550.73 302.80,551.35 308.10,551.98 313.40,552.64 318.70,553.30 324.00,553.98 329.30,554.66 334.60,555.35 339.90,556.04 345.20,556.73 350.50,557.42 355.80,558.10 361.10,558.78 366.40,559.46 371.70,560.13 377.00,560.80 382.30,561.46 387.60,562.11 392.90,562.75 398.20,563.39 403.50,564.01 408.80,564.63 414.10,565.24 419.40,565.84 424.70,566.43 430.00,567.01 435.30,567.58 440.60,568.14 445.90,568.69 451.20,569.23 456.50,569.76 461.80,570.29 467.10,570.80 472.40,571.31 477.70,571.80 483.00,572.29 488.30,572.77 493.60,573.24 498.90,573.70 504.20,574.15 509.50,574.60 514.80,575.04 520.10,575.47 525.40,575.89 530.70,576.30 536.00,576.71 541.30,577.11 546.60,577.50 551.90,577.89 557.20,578.27 562.50,578.64 567.80,579.01 573.10,579.37 578.40,579.72 583.70,580.07 589.00,580.41 594.30,580.75 599.60,581.08 604.90,581.40 610.20,581.72 615.50,582.04 620.80,582.34 626.10,582.65 631.40,582.95 636.70,583.24 642.00,583.53" fill="none" stroke="#087b82" stroke-width="4"/>
+<text x="102" y="621" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" fill="#486273" font-weight="400" text-anchor="end">0</text>
+<text x="102" y="552.0" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" fill="#486273" font-weight="400" text-anchor="end">0.5</text>
+<text x="102" y="483" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" fill="#486273" font-weight="400" text-anchor="end">1</text>
+<text x="112.0" y="640" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" fill="#486273" font-weight="400" text-anchor="middle">0</text>
+<text x="244.5" y="640" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" fill="#486273" font-weight="400" text-anchor="middle">1</text>
+<text x="377.0" y="640" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" fill="#486273" font-weight="400" text-anchor="middle">2</text>
+<text x="509.5" y="640" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" fill="#486273" font-weight="400" text-anchor="middle">3</text>
+<text x="642.0" y="640" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" fill="#486273" font-weight="400" text-anchor="middle">4</text>
+<text x="660" y="640" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" fill="#486273" font-weight="400" text-anchor="end">x</text>
+<text x="75" y="675" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" fill="#486273" font-weight="400" text-anchor="start">Normalized per-cycle loss; peak at x = 1</text>
+<rect x="705" y="418" width="640" height="270" rx="14" fill="#fffef8" stroke="#aac0c7" stroke-width="1.5"/>
+<text x="725" y="450" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" fill="#182e3e" font-weight="700" text-anchor="start">Power shape: x² / (1 + x²)</text>
+<path d="M762,478 V616 H1312" fill="none" stroke="#486273" stroke-width="2"/>
+<polyline points="762.00,616.00 767.50,615.78 773.00,615.12 778.50,614.04 784.00,612.56 789.50,610.69 795.00,608.48 800.50,605.97 806.00,603.18 811.50,600.17 817.00,596.97 822.50,593.62 828.00,590.16 833.50,586.63 839.00,583.05 844.50,579.47 850.00,575.90 855.50,572.37 861.00,568.89 866.50,565.47 872.00,562.15 877.50,558.91 883.00,555.77 888.50,552.74 894.00,549.82 899.50,547.00 905.00,544.30 910.50,541.70 916.00,539.21 921.50,536.83 927.00,534.56 932.50,532.38 938.00,530.30 943.50,528.32 949.00,526.43 954.50,524.62 960.00,522.90 965.50,521.25 971.00,519.69 976.50,518.19 982.00,516.76 987.50,515.40 993.00,514.10 998.50,512.86 1004.00,511.68 1009.50,510.55 1015.00,509.47 1020.50,508.43 1026.00,507.45 1031.50,506.50 1037.00,505.60 1042.50,504.74 1048.00,503.91 1053.50,503.12 1059.00,502.36 1064.50,501.63 1070.00,500.93 1075.50,500.26 1081.00,499.62 1086.50,499.01 1092.00,498.41 1097.50,497.85 1103.00,497.30 1108.50,496.77 1114.00,496.27 1119.50,495.78 1125.00,495.32 1130.50,494.87 1136.00,494.43 1141.50,494.01 1147.00,493.61 1152.50,493.22 1158.00,492.85 1163.50,492.49 1169.00,492.14 1174.50,491.80 1180.00,491.47 1185.50,491.16 1191.00,490.86 1196.50,490.56 1202.00,490.28 1207.50,490.00 1213.00,489.74 1218.50,489.48 1224.00,489.23 1229.50,488.99 1235.00,488.75 1240.50,488.53 1246.00,488.31 1251.50,488.09 1257.00,487.89 1262.50,487.68 1268.00,487.49 1273.50,487.30 1279.00,487.12 1284.50,486.94 1290.00,486.76 1295.50,486.60 1301.00,486.43 1306.50,486.27 1312.00,486.12" fill="none" stroke="#087b82" stroke-width="4"/>
+<text x="752" y="621" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" fill="#486273" font-weight="400" text-anchor="end">0</text>
+<text x="752" y="552.0" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" fill="#486273" font-weight="400" text-anchor="end">0.5</text>
+<text x="752" y="483" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" fill="#486273" font-weight="400" text-anchor="end">1</text>
+<text x="762.0" y="640" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" fill="#486273" font-weight="400" text-anchor="middle">0</text>
+<text x="899.5" y="640" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" fill="#486273" font-weight="400" text-anchor="middle">1</text>
+<text x="1037.0" y="640" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" fill="#486273" font-weight="400" text-anchor="middle">2</text>
+<text x="1174.5" y="640" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" fill="#486273" font-weight="400" text-anchor="middle">3</text>
+<text x="1312.0" y="640" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" fill="#486273" font-weight="400" text-anchor="middle">4</text>
+<text x="1330" y="640" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" fill="#486273" font-weight="400" text-anchor="end">x</text>
+<text x="725" y="675" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" fill="#486273" font-weight="400" text-anchor="start">Normalized fixed-H power; monotone toward plateau</text>
+<rect x="55" y="715" width="1290" height="98" rx="14" fill="#e5f1ef" stroke="#aac0c7" stroke-width="1.5"/>
+<text x="77" y="750" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" fill="#182e3e" font-weight="700" text-anchor="start">CONTROL / rival explanation</text>
+<text x="77" y="784" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#486273" font-weight="400" text-anchor="start">Fixed-H vs resource-constrained drive · inert thermal blank · drift in H(f), τ(T), or the sensor</text>
+<text x="55" y="847" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#182e3e" font-weight="700" text-anchor="start">Falsifier: analytic derivative, units and p = f w must agree; a real peak can expose broken assumptions.</text>
+<text x="55" y="885" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" fill="#486273" font-weight="400" text-anchor="start">Source: NH22 Rosensweig 2002, selected §§2–3. Curves are exact declared functions, not measured data.</text>
+<path d="M60,919 L102,919" fill="none" stroke="#087b82" stroke-width="2.8" marker-end="url(#arr)"/>
+<text x="116" y="925" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" fill="#486273" font-weight="400" text-anchor="start">model / measurement dependence</text>
+<path d="M600,919 L642,919" fill="none" stroke="#ab6b13" stroke-width="2.8" marker-end="url(#arrgold)" stroke-dasharray="8 6"/>
+<text x="658" y="925" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" fill="#486273" font-weight="400" text-anchor="start">candidate process / proposed control</text>
+</svg>

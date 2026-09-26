@@ -1,0 +1,13 @@
+# N2 selected after N1 admission
+
+N1 is accepted within its synthetic Debye scope. Its field-induced power density does not specify a measured temperature trace. Select a thermal measurement model to improve the proposed experiment rather than interpreting an uncalibrated warming curve as a material property.
+
+Source preparation: Skinner et al. (2025), DOI 10.1021/acsnano.4c16452, author PDF https://www.np.phy.cam.ac.uk/wp-content/uploads/sites/50/2025/04/ACSNano25_SERSnanoheater.pdf . The advisor read the well-mixed limitation and Methods “Photothermal Properties of Clusters,” equations 6–8, including visually inspected PDF page 8. It describes heating/cooling, a blank, thermal equilibration and a measured cooling time. It is optical nanoparticle work, not validation of the present magnetic surrogate. A suspected equation-6 dimensional problem was an OCR-layout artifact: the time constant multiplies the full denominator, making the displayed units consistent. No source-error assertion is retained. Supplementary information and blank-energy implementation have not been read, so we do not reproduce its efficiency estimator.
+
+Independently derive C dθ/dt=P−Gθ with first-order thermometer τs dy/dt+y=θ. C is total thermal capacity J/K; G is conductance W/K; P is net added power W; θ,y are temperature rises K, and τs is seconds. Freeze synthetic C=4, G=0.02, P=0.2, τs=10, zero initial rises. This is a lumped well-mixed surrogate with constant parameters, not a microscopic hot-spot or tissue model.
+
+Writing a=C/G and b=τs, the ideal true temperature is θ=P/G(1−exp(−t/a)). For a≠b, y=P/G[1−(a exp(−t/a)−b exp(−t/b))/(a−b)]. The apparent estimate C y(t)/t loses both leakage and sensor dynamics. Scale transformation (P,C,G)→λ(P,C,G) leaves both θ and y unchanged. Thus an absolute power inference requires independently known capacity or another absolute energy calibration. The calibrated model is a positive control; the claim is not universal nonidentifiability.
+
+Project hypothesis NP-H2: pulse-duration dependent apparent absorption can arise solely from heat leakage and sensor response. Improvement: use paired durations, the same specimen, a carrier blank, a known-power resistor phantom and independently calibrated thermometer step response; fit the whole heating/cooling trace. A prospective falsifier is a reproducible corrected-power difference across durations beyond calibrated uncertainty, which would require revisiting time-varying absorption, gradients, mixing or the sensor model. No such empirical effect has yet been measured.
+
+N3 remains unselected until N2 execution and independent review. The measurement concept is nonclinical and does not prescribe nanoparticle synthesis or strong-field hardware.

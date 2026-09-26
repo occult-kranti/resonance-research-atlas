@@ -64,7 +64,8 @@ try {
   });
 
   await check('Planned tasks and actual round states are not conflated',()=>{
-    go('overview');assert.match($('#main').textContent,/PLANNED.*RECORDED|planned.*recorded/i);
+    go('overview');assert.match($('#main').textContent,/ORIGINAL RESEARCH ROUNDS/i);
+    assert.equal(window.document.querySelector('.stats .stat:last-child .value').textContent,'06');
     go('panel');assert.equal(window.document.querySelectorAll('.round-card').length,6);
     const columns=[...window.document.querySelectorAll('.roadmap-col')];
     const unstarted=columns.find(c=>c.textContent.includes('G10'));

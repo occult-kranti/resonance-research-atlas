@@ -1,0 +1,15 @@
+# N3 selected after N2 admission
+
+N2's thermal inference is accepted within its lumped model: the advisor independently checked every stored trace point using a matrix exponential and checked an exact heat integral. This calibrates heat input, but does not identify the particle's relaxation mechanism. N3 therefore changes the intervention: a viscosity series plus calibrated complex susceptibility and held-out frequencies.
+
+The advisor independently read Rosensweig (2002) relaxation sections and Goto et al. (2025), DOI 10.1039/D5NR00722D, introductory equations 2–3, section 3.3 and conclusion, from the author-manuscript mirror. The latter documents structure-dependent viscosity responses and limits on the simple effective-time interpretation. Its section-3.3 wording that peak frequency is “proportional” to viscosity conflicts with inverse scaling derived from its Brownian-time formula; it is not used as validation of a directional scaling claim. The source team is inspecting the figure. The actual empirical viscosity/immobilization precedent is prior art, not our invention.
+
+Freeze a hypothetical hydrodynamic sphere d_h=50 nm, T=298 K, viscosities 0.001, 0.002, 0.005 and 0.01 Pa s, an independently specified hypothetical Néel time τN=0.001 s, and total χ0=0.02. Brownian τB=πηd_h³/(2kBT) follows directly from 3ηV_h/(kBT). Core size, anisotropy and a measured material are not inferred from this hydrodynamic diameter.
+
+Candidate A is a single Debye component with parallel inverse rates, τeff^-1=τB^-1+τN^-1. It predicts f_eff=a/η+b with positive coefficients, so two viscosities determine a held-out prediction. Candidate B is a positive equal-susceptibility mixture of two independent populations with τB and τN. These are different physical interpretations, not equivalent formulas for one specimen.
+
+For any positive mixture, τ_app(ω)=χ''/(ωχ') is a weighted average of component times with weights a_i/(1+ω²τ_i²). With two distinct times and both amplitudes positive, it decreases strictly with positive frequency. A one-Debye fit can exactly match the complex response at a single calibration frequency by setting τfit=τ_app and χ0fit=χ'[1+(ωτfit)²]. Held-out frequencies can reject that fit. Equal component times provide a collapse control.
+
+Project hypothesis NP-H3: a combined held-out frequency/viscosity design distinguishes a calibrated single-time closure from a two-population rival in the benchmark. Improvement over a frequency-only proposal: independently measure phase and actual applied field, hold temperature fixed, measure viscosity and size/concentration, and include a matched immobilized reference. Immobilization or solvent changes may alter aggregation or anisotropy; failure of the simple model does not uniquely identify Brownian rotation or a new interaction. A phase-reference standard is required to distinguish instrument phase bias from a material mixture.
+
+No material data are fitted. No field-build, chemical synthesis or biological exposure is prescribed. N4 remains unselected until N3 review.

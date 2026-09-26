@@ -1,0 +1,37 @@
+{
+  "computed_before_producer_results": true,
+  "method": "Independent closed-form periodic solution and derivative signs; no producer module imported",
+  "nominal_mu0_H_per_m": 1.2566370614359173e-06,
+  "plateau_W_per_m3": 0.012566370614359173,
+  "loss_peak_frequency_Hz": 159154.94309189534,
+  "loss_peak_J_per_m3": 3.947841760435743e-08,
+  "points": [
+    {
+      "x": 0.1,
+      "chi_real": 0.019801980198019802,
+      "chi_loss": 0.0019801980198019802,
+      "cycle_J_per_m3": 7.817508436506422e-09,
+      "power_W_per_m3": 0.00012441951103325916
+    },
+    {
+      "x": 1,
+      "chi_real": 0.01,
+      "chi_loss": 0.01,
+      "cycle_J_per_m3": 3.947841760435743e-08,
+      "power_W_per_m3": 0.006283185307179587
+    },
+    {
+      "x": 10,
+      "chi_real": 0.00019801980198019803,
+      "chi_loss": 0.0019801980198019802,
+      "cycle_J_per_m3": 7.817508436506422e-09,
+      "power_W_per_m3": 0.012441951103325914
+    }
+  ],
+  "analytic": {
+    "M_from_rest": "chi0 H0/(1+x^2) [cos(omega t)+x sin(omega t)-exp(-t/tau)]",
+    "loss_derivative_sign": "d[x/(1+x^2)]/dx=(1-x^2)/(1+x^2)^2",
+    "power_derivative_sign": "d[x^2/(1+x^2)]/dx=2x/(1+x^2)^2>0 for x>0",
+    "apparent_tau_extension": "tau_app=chi_doubleprime/(omega chi_prime); constant for one Debye component"
+  }
+}

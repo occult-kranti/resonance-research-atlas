@@ -1,0 +1,56 @@
+{
+  "round": 1,
+  "branch": "nanoparticles",
+  "status": "accepted",
+  "reviewDate": "2026-09-26",
+  "reviewer": "separate advisor model agent; correlated model family, not human peer review",
+  "source_sha256": {
+    "contract.md": "84299226e57db6e87d48ccaaff7e93f3b21d2a416d5ebd4f7ac20cf54d93644b",
+    "bibliographic-erratum.md": "559553ec36fe8f5007391a08004537d1bab1f62e50604de6d3dc314ee0da7738",
+    "sources.md": "8412ab4f113ecce96c5bfdd7374f76bc53e8d7d97a42d14c93a638514319ff46",
+    "solver.py": "d172cd30dfd4e5247d34a8417f980f7d5f670cda1e8ac8e8caae80f55663417a",
+    "results.json": "9f2444c2dde8e824bf300b6fe53709bede69ec3c4c85965f35914d55cfe20ae2",
+    "frequency_sweep.csv": "feacb458ccfd28c5aa05a827e4ff3c9e64838cdb7b64fb1375b8dc1c8f60c8c4",
+    "final_cycles.csv": "8af7ab143d6bb00f9d765665db0c849d889d0e0a5579ced628ef0631ff333ee3",
+    "convergence.csv": "3cbb8b36a51fd79537091063c10c1195f6838e4ab12bd74c06e12c7e4f9130cd"
+  },
+  "independent_methods": [
+    "Closed-form from-rest ODE solution, without importing producer code",
+    "Direct cycle-work and power derivation plus derivative sign proofs over x>0",
+    "Independent sampled input/loss/storage budget from saved state and field",
+    "Full sweep comparison against separately evaluated formulas",
+    "Compared original and bibliography-corrected results: all non-hash fields identical"
+  ],
+  "checks": {
+    "sweep_cycle_max_absolute_error_J_per_m3": 1.3234889800848443e-23,
+    "sweep_power_max_absolute_error_W_per_m3": 5.204170427930421e-18,
+    "dimensional_fW_max_relative_error": 5.335724832473013e-16
+  },
+  "cases": [
+    {
+      "x": 0.1,
+      "exact_from_rest_M_max_error_A_per_m": 1.853510400717795e-12,
+      "512_segment_saved_loop_relative_error": 2.509966853370127e-05,
+      "independent_sampled_budget_residual_J_per_m3": 7.31352367246025e-17,
+      "independent_sampled_input_relative_error": 9.229988995329563e-09
+    },
+    {
+      "x": 1.0,
+      "exact_from_rest_M_max_error_A_per_m": 8.326672684688674e-15,
+      "512_segment_saved_loop_relative_error": 2.5099513717985467e-05,
+      "independent_sampled_budget_residual_J_per_m3": 3.0193892818105425e-20,
+      "independent_sampled_input_relative_error": 2.7267077484793845e-13
+    },
+    {
+      "x": 10.0,
+      "exact_from_rest_M_max_error_A_per_m": 1.0213184464813452e-16,
+      "512_segment_saved_loop_relative_error": 2.5099512919291023e-05,
+      "independent_sampled_budget_residual_J_per_m3": -1.4868045923344096e-23,
+      "independent_sampled_input_relative_error": 5.662137425588298e-15
+    }
+  ],
+  "admission_scope": "Synthetic fixed-parameter single-Debye passivity and loss/power distinction, not material identification",
+  "repair": "Frozen contract retained with wrong page numbers; bibliographic-erratum corrects370\u2013374; original metadata retained; no numerical change",
+  "prospective_extension": "Calibrated tau_app(f)=chi_loss/(omega chi_real) distinguishes single-time response from some mixtures; phase bias must be separately controlled",
+  "next_selected": "N2: heat leakage and thermometer lag confounding absorbed-power inference"
+}

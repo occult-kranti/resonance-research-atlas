@@ -1,0 +1,27 @@
+{
+  "round": 4,
+  "branch": "nanoparticles",
+  "status": "accepted",
+  "reviewDate": "2026-09-26",
+  "independent_methods": [
+    "Exact central-moment identity Ed\u00b3=mean\u00b3+3mean variance+thirdcentralmoment for symmetric40/60 population",
+    "Exact sixth-power ratio of susceptibility weights",
+    "Cancelled two-pole residual formula over every stored frequency",
+    "Pre-result count and selected spectral predictions compared"
+  ],
+  "residual_formula_max_absolute_error": 6.661338147750939e-16,
+  "number_concentration_relative_error": 2.220446049250313e-16,
+  "whole_domain_residual": "R(\u03c9)=|p\u2212q|\u03c9|\u03c42\u2212\u03c41|/sqrt(1+\u03c9\u00b2[q\u03c42+(1\u2212q)\u03c41]\u00b2), strictlyincreasingfor\u03c9>0 ifweights/timesdiffer; nofinite-grid extrapolation needed for monotonicity",
+  "high_frequency_residual_limit": 0.6410233734534874,
+  "source_sha256": {
+    "contract.md": "491a98acc05d99af408b745f75d2d28d7176a75416dc64eda8b51cffe80ec8d0",
+    "sources.md": "18303789f36b457ed69b3922f0c76cf07404368a436e2680443dfed4f1462140",
+    "solver.py": "55552dd0eb26433851ffcd3dcdc3b68f3df7f6f89a891da0a5e8d41df3d2f83b",
+    "results.json": "c681a552ce195985d70041d9e6c386ebb26650745779bb1f64ab3af7500a1490",
+    "weighted_response.csv": "c1d9f84bddf7886060573c6eed0fc084d208d2f915516c88b60149760833f781",
+    "population_weights.csv": "8bcd6f76350fc097cb7b2ac6ffaf8c999cdbfd86f5e53c809e24a8c2ff0d579b"
+  },
+  "source_scope": "NH17 arithmeticmeanvolumecorrection; ROS2002 diluteequilibriumLangevinweakfield weighting; core andhydrodynamicsize distinct; allmaterialparametershypothetical",
+  "empirical_work": "No mass, density, size-distribution, magnetization or sample spectral measurement performed.",
+  "next_reason": "Even corrected particle response requires a calibrated physical drive; select actual OpenSync waveform-to-linear/nonlinear-detector transfer audit."
+}

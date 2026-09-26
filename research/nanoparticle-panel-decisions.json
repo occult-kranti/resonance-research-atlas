@@ -1,0 +1,144 @@
+{
+  "program": "Nanoparticles, frequency and cross-channel measurement",
+  "reviewDate": "2026-09-26",
+  "status": "five_model_and_audio_rounds_accepted",
+  "plannedRounds": 5,
+  "completedRounds": 5,
+  "reviewer": "advisor model agent; separate producer and source reviewers, correlated model-family provenance, not human peer review",
+  "priorSixRounds": "preserved unchanged",
+  "noveltyStatus": "New project hypotheses and integrated controls built on checked prior art. No first-discovery claim or new physical law is asserted.",
+  "rounds": [
+    {
+      "round": 1,
+      "id": "N1",
+      "status": "accepted",
+      "scope": "Synthetic single-Debye relaxation with fixed susceptibility, relaxation time and peak field; cycle loss, mean power and an independent passive energy budget.",
+      "finding": "Loss per cycle peaks at ωτ = 1. At that point, power is half its 0.01256637 W/m³ asymptote and continues increasing with frequency in this fixed-parameter model.",
+      "nextReason": "Absorbed power does not by itself determine a finite-time thermometer trace; select heat-loss and sensor-lag inference.",
+      "sourceScope": [
+        "Rosensweig (2002), DOI 10.1016/S0304-8853(02)00706-0, sections 2–4; author-uploaded full text independently read."
+      ],
+      "review": "research/nanoparticles/round1/independent-review.json",
+      "projectHypothesis": "NP-H1: the loss-per-cycle maximum does not maximize power in a fixed-amplitude frequency sweep. Prospective NP-H1E: a calibrated apparent relaxation time can distinguish a single component from some mixtures.",
+      "designImprovement": "Measure actual field amplitude and phase, complex susceptibility and independent calorimetry; include a carrier blank. Do not optimize one spectral peak as if it were power.",
+      "novelty": "New project control and integration. Debye and polydispersion physics are established prior art.",
+      "empiricalWork": "No specimen, susceptibility calibration or calorimetry measurement was performed.",
+      "withheld": "Actual material response, human healing, metaphysical effects and source-free energy.",
+      "sourceIds": [
+        "NANO-ROS2002"
+      ]
+    },
+    {
+      "round": 2,
+      "id": "N2",
+      "status": "accepted",
+      "scope": "Lumped thermal first-law model and a first-order thermometer, with known and unknown calibration parameters.",
+      "finding": "A true 0.2 W input yields naive estimates of 0.07227, 0.12882 and 0.14688 W over 10, 30 and 60 seconds. The calibrated inverse recovers 0.2 W. Scaling power, capacity and conductance together leaves the trace unchanged.",
+      "nextReason": "A calibrated thermal trace still does not identify particle relaxation; select viscosity and complex-susceptibility discrimination.",
+      "sourceScope": [
+        "Skinner et al. (2025), DOI 10.1021/acsnano.4c16452; heating/cooling methods, blank and well-mixed limitation; PDF page 8 visually inspected."
+      ],
+      "review": "research/nanoparticles/round2/independent-review.json",
+      "projectHypothesis": "NP-H2: corrected power should remain constant across pulse durations if the apparent duration dependence comes entirely from thermal and sensor transfer.",
+      "designImprovement": "Use a known-power resistor phantom, carrier blank, independently measured sensor step response, complete heating/cooling trace and a held-out pulse duration.",
+      "novelty": "A project hypothesis and integrated calibration design built on established thermal balance and system identification.",
+      "empiricalWork": "No phantom, sensor, specimen or heat-loss uncertainty measurement was performed.",
+      "withheld": "Material-specific nanoparticle power, microscopic temperature and clinical benefit.",
+      "sourceIds": [
+        "NANO-SKIN2025"
+      ]
+    },
+    {
+      "round": 3,
+      "id": "N3",
+      "status": "accepted",
+      "scope": "Synthetic parallel-rate Debye response versus a positive two-population mixture, using controlled viscosity and calibrated complex frequency response.",
+      "finding": "A single Debye fit with free amplitude exactly matches the mixture at 1 kHz, yet differs by 43.0339% at the held-out 10 Hz point. Independent viscosity predictions and a whole-domain apparent-time proof agree.",
+      "nextReason": "Response weights are not particle number fractions; select size-moment correction and response-weight calibration.",
+      "sourceScope": [
+        "Rosensweig (2002), relaxation and weak-field susceptibility.",
+        "Goto et al. (2025), DOI 10.1039/D5NR00722D; introductory equations 2–3, section 3.3 and conclusion independently read."
+      ],
+      "sourceIds": [
+        "NANO-ROS2002",
+        "NANO-GOTO2025"
+      ],
+      "review": "research/nanoparticles/round3/independent-review.json",
+      "projectHypothesis": "NP-H3: held-out frequency and viscosity observations distinguish a calibrated single-time closure from a positive two-population rival.",
+      "designImprovement": "Use independent phase/field references, several viscosities, held-out frequencies, size/concentration checks and a matched immobilized reference. Fit the unknown amplitude only at the declared calibration point.",
+      "novelty": "A project-specific discrimination plan and executed held-out benchmark. Mixture physics and viscosity experiments are existing prior art.",
+      "empiricalWork": "No specimen, viscosity measurement, immobilization control or phase calibration was performed.",
+      "withheld": "A unique microscopic mechanism, number fractions from susceptibility amplitudes or actual particle identification. Independently known DC susceptibility can strengthen one-point discrimination."
+    },
+    {
+      "round": 4,
+      "id": "N4",
+      "status": "accepted",
+      "scope": "Exact mass/size-moment particle count and conditional magnetic susceptibility weighting, with separate core and hydrodynamic diameters.",
+      "finding": "The exact size-moment correction removes a 12% number overestimate. Equal-number 40/60 nm cores have conditional susceptibility weights 64/793 and 729/793. Replacing these with number weights changes the normalized response by 64.1021% at 1 MHz in this surrogate.",
+      "nextReason": "Correct material-response weighting still requires calibrated physical excitation; select an actual OpenSync waveform and transfer audit.",
+      "sourceScope": [
+        "Farkas et al. (2025), DOI 10.1021/acs.analchem.4c05990; NIST-hosted paper, PNC derivation/current practice and selected moment correction.",
+        "Rosensweig (2002), equilibrium weak-field initial susceptibility."
+      ],
+      "sourceIds": [
+        "NH17",
+        "NANO-ROS2002"
+      ],
+      "review": "research/nanoparticles/round4/independent-review.json",
+      "projectHypothesis": "NP-H4: independent mass and number-size characterization supplies weights that predict held-out spectral shape better than naive count weights under the stated assumptions.",
+      "designImprovement": "Measure number-weighted core size, mass, density and hydrodynamic size separately. Distinguish number, mass and susceptibility weights; use held-out frequencies and a monodisperse reference.",
+      "novelty": "Reproduction of a current NIST correction plus a project-specific conditional cross-channel benchmark; no discovery claim.",
+      "empiricalWork": "No physical size, count, mass or specimen-response measurement was performed.",
+      "withheld": "Validity for an arbitrary 40–60 nm material, intrinsic magnetization, absolute susceptibility and clinical efficacy."
+    },
+    {
+      "round": 5,
+      "id": "N5",
+      "status": "accepted",
+      "scope": "Actual OpenSync NanoLab PCM exports: coherent spectra, declared LTI transfer, an explicit quadratic detector, and phase/energy controls.",
+      "finding": "Actual PCM exports distinguish waveform components from quadratic detector output. The two-tone rate component is about 4.43×10^-7 FS, below the declared quantization bound; its squared signal has a rate component of 9.95×10^-4 FS². Reversing one tone preserves RMS and reverses that quadratic phase.",
+      "nextReason": "Stop after the fifth authorized round. Physical transfer calibration and particle measurements remain future empirical work.",
+      "sourceScope": [
+        "Actual OpenSync NanoLab adapter, synthesizer, WAV encoder and frozen export bytes; production source snapshots and SHA manifests.",
+        "Pavlič and Baasch (2025), DOI 10.1103/6l7z-bjzy: apparatus-specific acoustic radiation-potential and competing-force model.",
+        "Zhang et al. (2021), DOI 10.1038/s41467-021-24101-z: hybrid acoustoelectronic mechanism and shielding control."
+      ],
+      "sourceIds": [
+        "NANO-PAVL2025",
+        "NANO-ZHANG2021"
+      ],
+      "review": "research/nanoparticles/round5/independent-review.json",
+      "projectHypothesis": "NP-H5: a specified quadratic detector can produce a difference-frequency response whose phase reverses when one input tone is reversed, while mean-square input stays fixed.",
+      "designImprovement": "Use actual exported waveforms, an interior coherent window, quantization bounds, a calibrated witness channel, a one-tone phase reversal and equal-RMS controls. Separately measure line voltage, transducer transfer and any physical pressure/acceleration field.",
+      "novelty": "New project phase-witness and resource-matching protocol plus production-code integration; modulation and nonlinear mixing are established principles.",
+      "empiricalWork": "Audio files and code were executed. No transducer, pressure/velocity gradient, particle force, specimen motion or human effect was measured.",
+      "withheld": "Converting digital FS or FS² directly to acoustic pressure, magnetic field, nanoparticle force, healing or a metaphysical mechanism. Different parameter choices can already contain a component at the named rate."
+    }
+  ],
+  "stopDecision": "Exactly five new adaptive rounds are complete. No sixth round is selected.",
+  "disagreementsAndRepairs": [
+    {
+      "round": "N1",
+      "issue": "The frozen contract listed incorrect Rosensweig page numbers.",
+      "resolution": "Original contract and first result metadata retained; explicit bibliographic erratum records pages 370–374. Numerical outputs were unchanged."
+    },
+    {
+      "round": "N2",
+      "issue": "OCR made the location of a time constant in Skinner equation 6 ambiguous.",
+      "resolution": "Visual PDF inspection resolved the layout and showed dimensionally consistent units. No source-error claim is retained; the benchmark uses an independent first-law derivation."
+    },
+    {
+      "round": "N3",
+      "issue": "Goto manuscript prose describes peak frequency as proportional to viscosity, conflicting with inverse scaling derived from its Brownian-time equation.",
+      "resolution": "Do not use that phrase as directional evidence. The benchmark states its own model and derives its scaling; empirical structure-specific departures remain relevant."
+    },
+    {
+      "round": "N5",
+      "issue": "Equal peak gain is unequal RMS; quantized audio has small spurious components; some allowed parameter choices can have a source tone at the rate.",
+      "resolution": "Actual-byte tests include quantization bounds, equal-RMS and phase controls. Interface wording inspects component frequencies rather than making a universal absence claim."
+    }
+  ],
+  "empiricalBoundary": "N1–N4 are mathematical surrogate investigations; N5 analyzes actual generated audio bytes using specified mathematical detectors. No physical nanoparticle or human experiment was conducted.",
+  "reviewArtifacts": "research/nanoparticles/reviews/"
+}

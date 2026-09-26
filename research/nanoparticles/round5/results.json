@@ -1,0 +1,148 @@
+{
+  "round": 5,
+  "branch": "nanoparticles",
+  "final_round": true,
+  "status": "passed",
+  "hypothesis": "NP-H5 decoded spectrum, calibrated linear transfer and explicit nonlinear rate detection are distinct; phase witness tests mixing route",
+  "analysis": {
+    "sample_rate_Hz": 48000,
+    "segment_frames": 4096,
+    "start_frame": 32768,
+    "carrier_Hz": 375,
+    "rate_Hz": 23.4375,
+    "gain_FS": 0.06309573444801933,
+    "lti_corner_Hz": 200,
+    "equal_RMS_FS": 0.02
+  },
+  "cases": [
+    {
+      "kind": "two-tone",
+      "interior_rms_FS": 0.031547087348333655,
+      "rate_line_raw_FS": 4.428255389210518e-07,
+      "rate_line_linear_FS": 4.398158607468789e-07,
+      "rate_line_squared_FS2": 0.0009952169826424214,
+      "twice_rate_squared_FS2": 8.63019123457747e-09,
+      "quadratic_rate_complex_FS2": [
+        0.0009952169826424214,
+        1.6623021589865644e-20
+      ],
+      "raw_max_complex_error_FS": 1.0192173900760992e-06,
+      "linear_max_complex_error_FS": 4.6820207290207656e-07,
+      "quadratic_max_complex_error_FS2": 5.094374132198938e-08,
+      "rms_match_scale": 0.6339729490448955,
+      "matched_rms_FS": 0.02,
+      "matched_quadratic_rate_amplitude_FS2": 0.00039999930165261695,
+      "matched_quadratic_scaling_error_FS2": 5.421167990231237e-20
+    },
+    {
+      "kind": "am",
+      "interior_rms_FS": 0.027320934312269386,
+      "rate_line_raw_FS": 3.9756957796523765e-07,
+      "rate_line_linear_FS": 3.9486748340114894e-07,
+      "rate_line_squared_FS2": 0.0009952506966223091,
+      "twice_rate_squared_FS2": 0.0002488132799039325,
+      "quadratic_rate_complex_FS2": [
+        1.5408256219771146e-09,
+        -0.0009952506966211163
+      ],
+      "raw_max_complex_error_FS": 5.291990117765383e-07,
+      "linear_max_complex_error_FS": 3.9486748340114894e-07,
+      "quadratic_max_complex_error_FS2": 1.72985220114873e-08,
+      "rms_match_scale": 0.7320393867723011,
+      "matched_rms_FS": 0.02,
+      "matched_quadratic_rate_amplitude_FS2": 0.0005333365991901052,
+      "matched_quadratic_scaling_error_FS2": 1.2241239090019118e-21
+    },
+    {
+      "kind": "baseband",
+      "interior_rms_FS": 0.04461442873668654,
+      "rate_line_raw_FS": 0.06309432898660434,
+      "rate_line_linear_FS": 0.06266550632807245,
+      "rate_line_squared_FS2": 8.398048046558455e-08,
+      "twice_rate_squared_FS2": 0.0019904341415769525,
+      "quadratic_rate_complex_FS2": [
+        -3.2440989648564054e-24,
+        8.398048046558455e-08
+      ],
+      "raw_max_complex_error_FS": 1.4054614149855427e-06,
+      "linear_max_complex_error_FS": 1.395909150776507e-06,
+      "quadratic_max_complex_error_FS2": 1.0171119053416222e-07,
+      "rms_match_scale": 0.44828546652563,
+      "matched_rms_FS": 0.02,
+      "matched_quadratic_rate_amplitude_FS2": 1.6876705554946395e-08,
+      "matched_quadratic_scaling_error_FS2": 5.525567154720046e-22
+    },
+    {
+      "kind": "carrier",
+      "interior_rms_FS": 0.04461537819392658,
+      "rate_line_raw_FS": 0.0,
+      "rate_line_linear_FS": 0.0,
+      "rate_line_squared_FS2": 0.0,
+      "twice_rate_squared_FS2": 0.0,
+      "quadratic_rate_complex_FS2": [
+        0.0,
+        0.0
+      ],
+      "raw_max_complex_error_FS": 6.302239272115706e-08,
+      "linear_max_complex_error_FS": 2.96575965711927e-08,
+      "quadratic_max_complex_error_FS2": 0.0,
+      "rms_match_scale": 0.4482759265889753,
+      "matched_rms_FS": 0.02,
+      "matched_quadratic_rate_amplitude_FS2": 0.0,
+      "matched_quadratic_scaling_error_FS2": 0.0
+    }
+  ],
+  "phase_control": {
+    "original_rate_complex_FS2": [
+      0.0009952169826424214,
+      1.6623021589865644e-20
+    ],
+    "flipped_rate_complex_FS2": [
+      -0.00099519006746298,
+      -8.355653434347992e-20
+    ],
+    "phase_reversal_error_FS2": 2.691517944132006e-08,
+    "rms_change_FS": 0.0
+  },
+  "quantization": {
+    "sample_error_bound_FS": 3.0517578125e-05,
+    "raw_line_tolerance_FS": 6.103515625e-05,
+    "squared_derived_line_bound_FS2": 7.703978666635966e-06,
+    "squared_declared_tolerance_FS2": 1e-05
+  },
+  "checks": [
+    {
+      "name": "actual_production_hash_format_and_raw_complex_lines",
+      "passed": true
+    },
+    {
+      "name": "linear_filter_changes_gain_not_frequency",
+      "passed": true
+    },
+    {
+      "name": "quadratic_mixing_signed_line_controls",
+      "passed": true
+    },
+    {
+      "name": "equal_RMS_scaling_and_blank",
+      "passed": true
+    },
+    {
+      "name": "phase_witness_preserves_RMS_reverses_difference_signal",
+      "passed": true
+    }
+  ],
+  "scope": "Actual project audio bytes; mathematical detectors only. No transducer, magnetic field, nanoparticle force or human effect was measured.",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "matplotlib": "3.10.8"
+  },
+  "hashes": {
+    "contract.md": "3d24d4751e6bb4b0cddb1598b640c6db10c125cbaa19917553bc860f1a3ece14",
+    "sources.md": "b5a91edfdb964d27d347d5b0d440ec25861a67c36e4f984052187e5274f76c50",
+    "inputs.json": "a302d840e728e2ec17547890a2d9b9c04a8752c4567343d14d620ed5f6c2a3c1",
+    "regenerate_assets.mjs": "baed4bab272e1522f05b8981d333424ec8aef0c7bdd973e433845974300045be",
+    "solver.py": "8b8be0bb7d5ef2697e24d9ea40bdcea97c212c099dbc26d6190c73721a9d09fa"
+  }
+}

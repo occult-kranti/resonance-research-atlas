@@ -14,6 +14,9 @@
  * evidence: established | documented | preliminary | hypothesis | unsupported
  */
 export const LIGHT_SPEED = 299792458;
+// SI reference value adequate for this idealized model; the post-2019 SI
+// permeability is measured, not an exactly defined constant.
+export const VACUUM_PERMEABILITY_REFERENCE = 4 * Math.PI * 1e-7;
 
 function positive(value, name) {
   if (!Number.isFinite(value) || value <= 0) throw new RangeError(`${name} must be greater than zero.`);
@@ -73,4 +76,74 @@ export function binomialUpperTail(trials, hits, chance = .25) {
   }
   const maxLog = Math.max(...logs);
   return Math.min(1, Math.exp(maxLog + Math.log(logs.reduce((sum,l) => sum + Math.exp(l-maxLog), 0))));
+}
+
+/** Single-time Debye magnetic response, N1 synthetic contract.
+ * Susceptibility is dimensionless per total suspension volume. H is peak A/m,
+ * not RMS and not magnetic flux density B. This is not a material/dose model.
+ */
+export function magneticDebye({chi0=.02,tauS=1e-6,fieldPeakApm=1,frequencyHz=1/(2*Math.PI*1e-6)}={}) {
+  positive(tauS,'Relaxation time');
+  for(const [name,value] of [['Susceptibility',chi0],['Peak field',fieldPeakApm],['Frequency',frequencyHz]]) {
+    if(!Number.isFinite(value)||value<0)throw new RangeError(`${name} must be finite and nonnegative.`);
+  }
+  const x=2*Math.PI*frequencyHz*tauS;
+  if(!Number.isFinite(x))throw new RangeError('Frequency–time product is outside the supported numerical range.');
+  const inverse=x>1?1/x:null;
+  const realFactor=x>1?inverse**2/(1+inverse**2):1/(1+x*x);
+  const lossFactor=x>1?inverse/(1+inverse**2):x/(1+x*x);
+  const powerFactor=x>1?1/(1+inverse**2):x*x/(1+x*x);
+  const chiReal=chi0*realFactor,chiLoss=chi0*lossFactor;
+  const powerLimitWpm3=VACUUM_PERMEABILITY_REFERENCE*chi0*fieldPeakApm**2/(2*tauS);
+  const cycleEnergyJpm3=Math.PI*VACUUM_PERMEABILITY_REFERENCE*fieldPeakApm**2*chiLoss;
+  const result={x,chiReal,chiLoss,cycleEnergyJpm3,powerWpm3:powerLimitWpm3*powerFactor,
+    powerLimitWpm3,crossoverHz:1/(2*Math.PI*tauS),phaseLagRad:Math.atan(x)};
+  if(Object.values(result).some(value=>!Number.isFinite(value)))throw new RangeError('Parameters are outside the supported numerical range.');
+  return result;
+}
+
+/** Unit comparison only. Optical conversion assumes vacuum; no cross-channel
+ * mechanism, material response, biological effect or photon absorption inferred.
+ */
+export function frequencyChannels({audioHz=220,magneticHz=100000,opticalNm=500}={}) {
+  positive(audioHz,'Audio frequency');positive(magneticHz,'Magnetic-drive frequency');positive(opticalNm,'Vacuum wavelength');
+  const opticalHz=LIGHT_SPEED/(opticalNm*1e-9);
+  const result={audioHz,audioPeriodS:1/audioHz,magneticHz,magneticPeriodS:1/magneticHz,opticalNm,opticalHz,opticalPeriodS:1/opticalHz};
+  if(Object.values(result).some(value=>!Number.isFinite(value)||value<=0))throw new RangeError('Values are outside the supported numerical range.');
+  return result;
+}
+
+/** N2 synthetic lumped calorimeter: C*theta' = P-G*theta;
+ * sensorTau*y' + y = theta; zero initial temperature rise and constant P.
+ * All temperatures are rises in kelvin. No tissue or material model is fitted.
+ */
+export function thermalReadout({heatCapacityJpK=4,powerW=.2,conductanceWpK=.02,sensorTauS=10,timeS=60}={}) {
+  positive(heatCapacityJpK,'Heat capacity');
+  for(const [name,value] of [['Power',powerW],['Conductance',conductanceWpK],['Sensor time constant',sensorTauS],['Time',timeS]])if(!Number.isFinite(value)||value<0)throw new RangeError(`${name} must be finite and nonnegative.`);
+  let temperatureRiseK,sensorRiseK;
+  if(conductanceWpK===0) {
+    temperatureRiseK=powerW*timeS/heatCapacityJpK;
+    if(sensorTauS===0)sensorRiseK=temperatureRiseK;
+    else {
+      const z=timeS/sensorTauS;
+      const response=z<.001?sensorTauS*(z*z/2-z**3/6+z**4/24-z**5/120):timeS+sensorTauS*Math.expm1(-z);
+      sensorRiseK=powerW/heatCapacityJpK*response;
+    }
+  } else {
+    const thermalTauS=heatCapacityJpK/conductanceWpK,equilibriumK=powerW/conductanceWpK;
+    temperatureRiseK=-equilibriumK*Math.expm1(-timeS/thermalTauS);
+    if(sensorTauS===0)sensorRiseK=temperatureRiseK;
+    else if(Math.abs(thermalTauS-sensorTauS)<1e-6*Math.max(thermalTauS,sensorTauS)) {
+      const z=timeS/((thermalTauS+sensorTauS)/2);
+      const response=z<.001?z*z/2-z**3/3+z**4/8-z**5/30:-Math.expm1(-z)-z*Math.exp(-z);
+      sensorRiseK=equilibriumK*response;
+    } else {
+      sensorRiseK=equilibriumK*(thermalTauS*(-Math.expm1(-timeS/thermalTauS))-sensorTauS*(-Math.expm1(-timeS/sensorTauS)))/(thermalTauS-sensorTauS);
+    }
+  }
+  sensorRiseK=Math.max(0,sensorRiseK);
+  const result={temperatureRiseK,sensorRiseK,apparentPowerW:timeS>0?heatCapacityJpK*sensorRiseK/timeS:null,
+    thermalTauS:conductanceWpK>0?heatCapacityJpK/conductanceWpK:null,equilibriumK:conductanceWpK>0?powerW/conductanceWpK:null};
+  if(Object.values(result).some(value=>value!==null&&!Number.isFinite(value)))throw new RangeError('Parameters are outside the supported numerical range.');
+  return result;
 }

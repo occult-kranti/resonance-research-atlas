@@ -1,0 +1,106 @@
+{
+  "files": [
+    {
+      "file": "advisor-N1-independent-values.json",
+      "sha256": "f14437dc68675362c6d9ec944fb96facc67fe810be82d561bcb4de83d5400319",
+      "origin": "panel-nano/advisor-N1-independent-values.json",
+      "role": "Original selection/precompute artifact, byte-preserved"
+    },
+    {
+      "file": "advisor-N1-precompute.json",
+      "sha256": "f62f7c94b238db91ad76399be71de4b21afcd3fc334e18ec1aaa8e0ff25849f1",
+      "origin": "panel-nano/advisor-N1-precompute.json",
+      "role": "Original selection/precompute artifact, byte-preserved"
+    },
+    {
+      "file": "advisor-N1-selection.md",
+      "sha256": "905ed0f33f996a1e506381066584b43e25d351b21395c4dfc9ef84766a692eca",
+      "origin": "panel-nano/advisor-N1-selection.md",
+      "role": "Original selection/precompute artifact, byte-preserved"
+    },
+    {
+      "file": "advisor-N2-precompute.json",
+      "sha256": "6ab97543ce9d97b6d1e1e3973303d3d520fc2d71a7bc5d5e2c5620d037741502",
+      "origin": "panel-nano/advisor-N2-precompute.json",
+      "role": "Original selection/precompute artifact, byte-preserved"
+    },
+    {
+      "file": "advisor-N2-selection.md",
+      "sha256": "9ba984afbe9a656c5fc5ad4b0eb8f5f9b53c5ee8b099fc4cafc8f4853ebb4ea7",
+      "origin": "panel-nano/advisor-N2-selection.md",
+      "role": "Original selection/precompute artifact, byte-preserved"
+    },
+    {
+      "file": "advisor-N3-precompute.json",
+      "sha256": "25b260db6993befb1ab546854611d6b420d4075d81b93180a3254291a47967a9",
+      "origin": "panel-nano/advisor-N3-precompute.json",
+      "role": "Original selection/precompute artifact, byte-preserved"
+    },
+    {
+      "file": "advisor-N3-selection.md",
+      "sha256": "b7736faf2dce205fde8623a14cf0dd6d66e39fe30b5bd7b4d5f672e1f7f86f7c",
+      "origin": "panel-nano/advisor-N3-selection.md",
+      "role": "Original selection/precompute artifact, byte-preserved"
+    },
+    {
+      "file": "advisor-N4-precompute.json",
+      "sha256": "7567f42eef487ed7351634be921ecde29f81207190df5c21232d047c87ac8e0a",
+      "origin": "panel-nano/advisor-N4-precompute.json",
+      "role": "Original selection/precompute artifact, byte-preserved"
+    },
+    {
+      "file": "advisor-N4-selection.md",
+      "sha256": "e6bea4d2c3433e6a4e05f7e6427d38fd64619dc350f7cf401a5e5a572a541b79",
+      "origin": "panel-nano/advisor-N4-selection.md",
+      "role": "Original selection/precompute artifact, byte-preserved"
+    },
+    {
+      "file": "advisor-N5-precompute.json",
+      "sha256": "d2b139d302c6a0edb7f15b71abb5109a563ba583286f03749d4e4c12d3ed8531",
+      "origin": "panel-nano/advisor-N5-precompute.json",
+      "role": "Original selection/precompute artifact, byte-preserved"
+    },
+    {
+      "file": "advisor-N5-selection.md",
+      "sha256": "06ce06e5c2b995fbf3cdf151bb5b2da8ad63649a3d4967988995fee162ac5c40",
+      "origin": "panel-nano/advisor-N5-selection.md",
+      "role": "Original selection/precompute artifact, byte-preserved"
+    },
+    {
+      "file": "original-execution/review_n1.py",
+      "sha256": "7f1c18537b1b95a47ed13d20ce9f1dfb3867f99f83c8be771b41185cca42425b",
+      "origin": "panel-nano/review_n1.py",
+      "role": "Original executed reviewer script; historical workspace paths retained"
+    },
+    {
+      "file": "original-execution/review_n2.py",
+      "sha256": "b9de0a8dca42048ebe391fcc6890a3cb1d7a14050bac3e31ea5e133a025fbadb",
+      "origin": "panel-nano/review_n2.py",
+      "role": "Original executed reviewer script; historical workspace paths retained"
+    },
+    {
+      "file": "original-execution/review_n3.py",
+      "sha256": "4cc0bbe90eca9ee7a9296fda4fde7ed035155947f79c3439c62f8a0177f3c8d7",
+      "origin": "panel-nano/review_n3.py",
+      "role": "Original executed reviewer script; historical workspace paths retained"
+    },
+    {
+      "file": "original-execution/review_n4.py",
+      "sha256": "bf9e933c91653d9683faefd98333fafbe3459444ee8b9b7f35bd1d9145945bf5",
+      "origin": "panel-nano/review_n4.py",
+      "role": "Original executed reviewer script; historical workspace paths retained"
+    },
+    {
+      "file": "original-execution/review_n5_precompute.py",
+      "sha256": "3a3bfe7cbcdca7ee8cc0a9e4a8029faa69837eb68f3dc9241e2230100292726c",
+      "origin": "panel-nano/review_n5_precompute.py",
+      "role": "Original executed reviewer script; historical workspace paths retained"
+    },
+    {
+      "file": "original-execution/review_n5.py",
+      "sha256": "9667955f2862754cfa9fbf923d43fd538425ce21793bacf241a74e0f0c4d6fa0",
+      "origin": "panel-nano/review_n5.py",
+      "role": "Original executed final N5 reviewer script; historical workspace paths retained"
+    }
+  ]
+}
