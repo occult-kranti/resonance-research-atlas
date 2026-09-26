@@ -1,0 +1,310 @@
+{
+  "round": 5,
+  "status": "passed",
+  "alpha_exact": "1/20",
+  "seed": 20260926,
+  "replicates": 50000,
+  "model": "Ideal valid uniform null p-values; exact independent and perfectly correlated control families; not empirical claim data",
+  "results": [
+    {
+      "m": 1,
+      "dependence": "independent",
+      "rule": "uncorrected",
+      "exact_probability": "1/20",
+      "exact_rate": 0.05,
+      "discoveries": 2527,
+      "studies": 50000,
+      "simulated_rate": 0.05054,
+      "simulation_tolerance": 0.005868076606885378
+    },
+    {
+      "m": 1,
+      "dependence": "independent",
+      "rule": "Bonferroni",
+      "exact_probability": "1/20",
+      "exact_rate": 0.05,
+      "discoveries": 2527,
+      "studies": 50000,
+      "simulated_rate": 0.05054,
+      "simulation_tolerance": 0.005868076606885378
+    },
+    {
+      "m": 1,
+      "dependence": "duplicate",
+      "rule": "uncorrected",
+      "exact_probability": "1/20",
+      "exact_rate": 0.05,
+      "discoveries": 2615,
+      "studies": 50000,
+      "simulated_rate": 0.0523,
+      "simulation_tolerance": 0.005868076606885378
+    },
+    {
+      "m": 1,
+      "dependence": "duplicate",
+      "rule": "Bonferroni",
+      "exact_probability": "1/20",
+      "exact_rate": 0.05,
+      "discoveries": 2615,
+      "studies": 50000,
+      "simulated_rate": 0.0523,
+      "simulation_tolerance": 0.005868076606885378
+    },
+    {
+      "m": 5,
+      "dependence": "independent",
+      "rule": "uncorrected",
+      "exact_probability": "723901/3200000",
+      "exact_rate": 0.2262190625,
+      "discoveries": 11170,
+      "studies": 50000,
+      "simulated_rate": 0.2234,
+      "simulation_tolerance": 0.011246383155244932
+    },
+    {
+      "m": 5,
+      "dependence": "independent",
+      "rule": "Bonferroni",
+      "exact_probability": "490099501/10000000000",
+      "exact_rate": 0.0490099501,
+      "discoveries": 2437,
+      "studies": 50000,
+      "simulated_rate": 0.04874,
+      "simulation_tolerance": 0.005812904446101348
+    },
+    {
+      "m": 5,
+      "dependence": "duplicate",
+      "rule": "uncorrected",
+      "exact_probability": "1/20",
+      "exact_rate": 0.05,
+      "discoveries": 2615,
+      "studies": 50000,
+      "simulated_rate": 0.0523,
+      "simulation_tolerance": 0.005868076606885378
+    },
+    {
+      "m": 5,
+      "dependence": "duplicate",
+      "rule": "Bonferroni",
+      "exact_probability": "1/100",
+      "exact_rate": 0.01,
+      "discoveries": 568,
+      "studies": 50000,
+      "simulated_rate": 0.01136,
+      "simulation_tolerance": 0.002689831455354439
+    },
+    {
+      "m": 20,
+      "dependence": "independent",
+      "rule": "uncorrected",
+      "exact_probability": "67267626542454041806644399/104857600000000000000000000",
+      "exact_rate": 0.6415140775914577,
+      "discoveries": 31972,
+      "studies": 50000,
+      "simulated_rate": 0.63944,
+      "simulation_tolerance": 0.012887832428473567
+    },
+    {
+      "m": 20,
+      "dependence": "independent",
+      "rule": "Bonferroni",
+      "exact_probability": "536892899448968466063652354931790965677000929607999/10995116277760000000000000000000000000000000000000000",
+      "exact_rate": 0.04883012474683423,
+      "discoveries": 2406,
+      "studies": 50000,
+      "simulated_rate": 0.04812,
+      "simulation_tolerance": 0.005802813799363667
+    },
+    {
+      "m": 20,
+      "dependence": "duplicate",
+      "rule": "uncorrected",
+      "exact_probability": "1/20",
+      "exact_rate": 0.05,
+      "discoveries": 2615,
+      "studies": 50000,
+      "simulated_rate": 0.0523,
+      "simulation_tolerance": 0.005868076606885378
+    },
+    {
+      "m": 20,
+      "dependence": "duplicate",
+      "rule": "Bonferroni",
+      "exact_probability": "1/400",
+      "exact_rate": 0.0025,
+      "discoveries": 137,
+      "studies": 50000,
+      "simulated_rate": 0.00274,
+      "simulation_tolerance": 0.001359962686047638
+    },
+    {
+      "m": 100,
+      "dependence": "independent",
+      "rule": "uncorrected",
+      "exact_probability": "12601454378084042030523575063906938108460956060565090462201667126065898519103421943527150084237108785253828983344125567884359621999/12676506002282294014967032053760000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "exact_rate": 0.994079470779666,
+      "discoveries": 49725,
+      "studies": 50000,
+      "simulated_rate": 0.9945,
+      "simulation_tolerance": 0.0020785293582898812
+    },
+    {
+      "m": 100,
+      "dependence": "independent",
+      "rule": "Bonferroni",
+      "exact_probability": "61839127068927113320167407872532233091508999952220166574917217795711609901539491910204135762037201141003072770404551629405830281973601407777517645457602686002815623924795882459570056906910903595664885868164574400024678688076352887518751869205783011730658232479428003125435657562009427428483904454888750693455537901693580200199999/1267650600228229401496703205376000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "exact_rate": 0.04878246975767102,
+      "discoveries": 2417,
+      "studies": 50000,
+      "simulated_rate": 0.04834,
+      "simulation_tolerance": 0.005800136078800335
+    },
+    {
+      "m": 100,
+      "dependence": "duplicate",
+      "rule": "uncorrected",
+      "exact_probability": "1/20",
+      "exact_rate": 0.05,
+      "discoveries": 2615,
+      "studies": 50000,
+      "simulated_rate": 0.0523,
+      "simulation_tolerance": 0.005868076606885378
+    },
+    {
+      "m": 100,
+      "dependence": "duplicate",
+      "rule": "Bonferroni",
+      "exact_probability": "1/2000",
+      "exact_rate": 0.0005,
+      "discoveries": 25,
+      "studies": 50000,
+      "simulated_rate": 0.0005,
+      "simulation_tolerance": 0.0006198499812453111
+    }
+  ],
+  "checks": [
+    {
+      "name": "exact_probability_bounds_m_1",
+      "passed": true
+    },
+    {
+      "name": "subset_independent_m_1",
+      "passed": true
+    },
+    {
+      "name": "null_rate_independent_uncorrected_m_1",
+      "passed": true
+    },
+    {
+      "name": "null_rate_independent_Bonferroni_m_1",
+      "passed": true
+    },
+    {
+      "name": "subset_duplicate_m_1",
+      "passed": true
+    },
+    {
+      "name": "null_rate_duplicate_uncorrected_m_1",
+      "passed": true
+    },
+    {
+      "name": "null_rate_duplicate_Bonferroni_m_1",
+      "passed": true
+    },
+    {
+      "name": "exact_probability_bounds_m_5",
+      "passed": true
+    },
+    {
+      "name": "subset_independent_m_5",
+      "passed": true
+    },
+    {
+      "name": "null_rate_independent_uncorrected_m_5",
+      "passed": true
+    },
+    {
+      "name": "null_rate_independent_Bonferroni_m_5",
+      "passed": true
+    },
+    {
+      "name": "subset_duplicate_m_5",
+      "passed": true
+    },
+    {
+      "name": "null_rate_duplicate_uncorrected_m_5",
+      "passed": true
+    },
+    {
+      "name": "null_rate_duplicate_Bonferroni_m_5",
+      "passed": true
+    },
+    {
+      "name": "exact_probability_bounds_m_20",
+      "passed": true
+    },
+    {
+      "name": "subset_independent_m_20",
+      "passed": true
+    },
+    {
+      "name": "null_rate_independent_uncorrected_m_20",
+      "passed": true
+    },
+    {
+      "name": "null_rate_independent_Bonferroni_m_20",
+      "passed": true
+    },
+    {
+      "name": "subset_duplicate_m_20",
+      "passed": true
+    },
+    {
+      "name": "null_rate_duplicate_uncorrected_m_20",
+      "passed": true
+    },
+    {
+      "name": "null_rate_duplicate_Bonferroni_m_20",
+      "passed": true
+    },
+    {
+      "name": "exact_probability_bounds_m_100",
+      "passed": true
+    },
+    {
+      "name": "subset_independent_m_100",
+      "passed": true
+    },
+    {
+      "name": "null_rate_independent_uncorrected_m_100",
+      "passed": true
+    },
+    {
+      "name": "null_rate_independent_Bonferroni_m_100",
+      "passed": true
+    },
+    {
+      "name": "subset_duplicate_m_100",
+      "passed": true
+    },
+    {
+      "name": "null_rate_duplicate_uncorrected_m_100",
+      "passed": true
+    },
+    {
+      "name": "null_rate_duplicate_Bonferroni_m_100",
+      "passed": true
+    }
+  ],
+  "runtime": {
+    "numpy": "2.3.5"
+  },
+  "minima_archive": {
+    "path": "synthetic_minima.csv.gz",
+    "raw_sha256": "ffa6394c2eb5de4f130c53398d005990588ae8909b1db51db7b030a621c21415",
+    "gzip_sha256": "c38bd6832dbee9a804a0b3b17b227da7cafdde4de9c5400c1b17d77fe7ead8f8"
+  },
+  "contract_sha256": "1388d3c7a66c9c3d7190770de0e0e4ca73d757d9f1844e73793d60c80827bc50",
+  "solver_sha256": "31e2f56d5c67a6cfee70120c0c168e14cb8c074138bbd29183d7f0b93185ffcb"
+}

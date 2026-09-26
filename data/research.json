@@ -1,0 +1,2359 @@
+{
+  "meta": {
+    "title": "Resonance Research Atlas",
+    "subtitle": "Historical ideas. Explicit models. Observable tests.",
+    "updated": "2026-09-26",
+    "status": "Six adaptive investigations; computation and source review only"
+  },
+  "experiments": [
+    {
+      "id": "R1",
+      "title": "Resonance and complete energy accounting",
+      "domain": "Tesla · mechanics",
+      "status": "Executed; independent review accepted",
+      "evidence": "computed within model",
+      "summary": "Can passive resonance amplify displacement while every joule remains accounted for?",
+      "question": "Can passive resonance amplify displacement while every joule remains accounted for?",
+      "method": "Two coupled damped masses. Multiply the equation of motion by velocity and compare the exact energy identity with numerical quadrature.",
+      "prediction": "Zero input, zero coupling, damping, detuning and timestep refinement.",
+      "limitations": "Finite linear mechanical model only; not clinical efficacy, a physical prototype or a new law.",
+      "safety": "Computational investigation; no human exposure or hazardous chemical recreation.",
+      "sourceIds": [
+        "TES-1898",
+        "TES-1901"
+      ],
+      "modelId": "resonance",
+      "artifacts": [
+        {
+          "label": "Frozen contract",
+          "url": "research/round1/contract.md"
+        },
+        {
+          "label": "Numerical results",
+          "url": "research/round1/results.json"
+        },
+        {
+          "label": "Derivation and limits",
+          "url": "research/round1/interpretation.md"
+        },
+        {
+          "label": "Independent model-agent review",
+          "url": "research/round1/independent-review.json"
+        },
+        {
+          "label": "Controls",
+          "url": "research/round1/controls.svg"
+        },
+        {
+          "label": "Convergence",
+          "url": "research/round1/convergence.svg"
+        },
+        {
+          "label": "Energy Budget",
+          "url": "research/round1/energy_budget.svg"
+        }
+      ]
+    },
+    {
+      "id": "R2",
+      "title": "A peak is not a pole",
+      "domain": "Tesla · Schumann interpretation",
+      "status": "Executed; independent review accepted",
+      "evidence": "computed within model",
+      "summary": "Can changing the readout move a spectral maximum without changing the oscillator?",
+      "question": "Can changing the readout move a spectral maximum without changing the oscillator?",
+      "method": "Compare displacement and velocity transfer functions, source compensation and a calibrated positive control.",
+      "prediction": "Fixed poles; alternative source and detector; recover the pole only under declared calibration.",
+      "limitations": "A lossy single-mode surrogate, not an Earth–ionosphere propagation solver.",
+      "safety": "Computational investigation; no human exposure or hazardous chemical recreation.",
+      "sourceIds": [
+        "TES-1905",
+        "SR-2011",
+        "SR-2026"
+      ],
+      "modelId": "schumann",
+      "artifacts": [
+        {
+          "label": "Frozen contract",
+          "url": "research/round2/contract.md"
+        },
+        {
+          "label": "Numerical results",
+          "url": "research/round2/results.json"
+        },
+        {
+          "label": "Derivation and limits",
+          "url": "research/round2/interpretation.md"
+        },
+        {
+          "label": "Independent model-agent review",
+          "url": "research/round2/independent-review.json"
+        },
+        {
+          "label": "Measurement Peaks",
+          "url": "research/round2/measurement_peaks.svg"
+        }
+      ]
+    },
+    {
+      "id": "R3",
+      "title": "Decipherment needs an identifying measurement",
+      "domain": "Newton · alchemy",
+      "status": "Executed; independent review accepted",
+      "evidence": "computed within model",
+      "summary": "Can different compositions give identical observable signs?",
+      "question": "Can different compositions give identical observable signs?",
+      "method": "A synthetic linear observation map with two channels and three unknown relative amounts. Exhibit the entire nonnegative ambiguity family.",
+      "prediction": "Duplicate third assay versus an independent assay. Report domain dimension, rank and nullity.",
+      "limitations": "Synthetic components are not identified with Newton reagents; no historical compound is recovered.",
+      "safety": "Computational investigation; no human exposure or hazardous chemical recreation.",
+      "sourceIds": [
+        "H01",
+        "H02",
+        "H16"
+      ],
+      "modelId": "mixture",
+      "artifacts": [
+        {
+          "label": "Frozen contract",
+          "url": "research/round3/contract.md"
+        },
+        {
+          "label": "Numerical results",
+          "url": "research/round3/results.json"
+        },
+        {
+          "label": "Derivation and limits",
+          "url": "research/round3/interpretation.md"
+        },
+        {
+          "label": "Independent model-agent review",
+          "url": "research/round3/independent-review.json"
+        },
+        {
+          "label": "Composition Ambiguity",
+          "url": "research/round3/composition_ambiguity.svg"
+        }
+      ]
+    },
+    {
+      "id": "R4",
+      "title": "How independent is an added assay?",
+      "domain": "Newton · measurement design",
+      "status": "Executed; independent review accepted",
+      "evidence": "computed within model",
+      "summary": "Does formal full rank remain useful under measurement noise?",
+      "question": "Does formal full rank remain useful under measurement noise?",
+      "method": "Extend the previous inverse problem with controlled near-dependent assays and declared perturbation scales.",
+      "prediction": "Compare duplicate, nearly dependent and genuinely independent measurements.",
+      "limitations": "Toy measurement uncertainty does not calibrate a real spectrometer or historical manuscript.",
+      "safety": "Computational investigation; no human exposure or hazardous chemical recreation.",
+      "sourceIds": [
+        "H01",
+        "H13"
+      ],
+      "modelId": "mixture",
+      "artifacts": [
+        {
+          "label": "Frozen contract",
+          "url": "research/round4/contract.md"
+        },
+        {
+          "label": "Numerical results",
+          "url": "research/round4/results.json"
+        },
+        {
+          "label": "Derivation and limits",
+          "url": "research/round4/interpretation.md"
+        },
+        {
+          "label": "Independent model-agent review",
+          "url": "research/round4/independent-review.json"
+        },
+        {
+          "label": "Noise Amplification",
+          "url": "research/round4/noise_amplification.svg"
+        }
+      ]
+    },
+    {
+      "id": "R5",
+      "title": "Patterns selected after looking",
+      "domain": "Jung · prophecy · statistical controls",
+      "status": "Executed; independent review accepted",
+      "evidence": "computed within model",
+      "summary": "How does choosing the most striking result change a false-positive claim?",
+      "question": "How does choosing the most striking result change a false-positive claim?",
+      "method": "Freeze a search family and compare single-test and family-level null behavior with a prespecified correction.",
+      "prediction": "Report every tested candidate and failed match; separate exploratory selection from held-out assessment.",
+      "limitations": "Tests a declared statistical toy model, not all symbolic interpretation or the truth of a prophecy.",
+      "safety": "Computational investigation; no human exposure or hazardous chemical recreation.",
+      "sourceIds": [
+        "H04",
+        "H05",
+        "H13"
+      ],
+      "modelId": "selection",
+      "artifacts": [
+        {
+          "label": "Frozen contract",
+          "url": "research/round5/contract.md"
+        },
+        {
+          "label": "Numerical results",
+          "url": "research/round5/results.json"
+        },
+        {
+          "label": "Derivation and limits",
+          "url": "research/round5/interpretation.md"
+        },
+        {
+          "label": "Independent model-agent review",
+          "url": "research/round5/independent-review.json"
+        },
+        {
+          "label": "Selection Bias",
+          "url": "research/round5/selection_bias.svg"
+        }
+      ]
+    },
+    {
+      "id": "R6",
+      "title": "Lucid dreaming and astral-travel claims",
+      "domain": "Dream research · final session",
+      "status": "Executed; independent review accepted",
+      "evidence": "computed within model",
+      "summary": "Which observations distinguish dream awareness, an out-of-body report and correct hidden-target information?",
+      "question": "Which observations distinguish dream awareness, an out-of-body report and correct hidden-target information?",
+      "method": "Source-led normal-sleep observation protocol plus a fixed four-choice chance model for a separately preregistered target experiment.",
+      "prediction": "No feedback before recording; independent target handling; fixed trial count; no selective scoring or optional stopping.",
+      "limitations": "No human trial or astral travel is demonstrated. Laboratory dream communication does not establish extracorporeal perception.",
+      "safety": "Computational investigation; no human exposure or hazardous chemical recreation.",
+      "sourceIds": [
+        "DR-UBE2026",
+        "DREAM-2021",
+        "OBE-2007",
+        "DREAM-2026",
+        "DREAM-DATA-2025"
+      ],
+      "modelId": "dreams",
+      "artifacts": [
+        {
+          "label": "Frozen contract",
+          "url": "research/round6/contract.md"
+        },
+        {
+          "label": "Numerical results",
+          "url": "research/round6/results.json"
+        },
+        {
+          "label": "Derivation and limits",
+          "url": "research/round6/interpretation.md"
+        },
+        {
+          "label": "Independent model-agent review",
+          "url": "research/round6/independent-review.json"
+        },
+        {
+          "label": "Target Null Calibration",
+          "url": "research/round6/target_null_calibration.svg"
+        }
+      ]
+    },
+    {
+      "id": "P1",
+      "title": "Frequency-dependent coupling in an inert phantom",
+      "domain": "Tesla · proposed nonclinical study",
+      "status": "Protocol only; not executed",
+      "evidence": "hypothesis",
+      "summary": "Separate deposited energy and heating from a claim of healing.",
+      "question": "Does a preregistered load model predict changes in absorbed energy after accounting for accepted input power?",
+      "method": "Characterized inert phantom and instrument transfer model; source-off, dummy-load and heat-only controls.",
+      "prediction": "Normalized energy deposition should follow the stated coupling model; instrumentation artifacts must fail validity gates.",
+      "limitations": "A phantom has no clinical endpoint. Frequency-dependent absorption is not healing.",
+      "safety": "Computational/nonclinical specification only, with no human-exposure construction procedure.",
+      "sourceIds": [
+        "TES-1898",
+        "PH-FDA-MDDT",
+        "PH-SIMNIBS",
+        "PH-AE2026"
+      ],
+      "artifacts": [
+        {
+          "label": "Protocol and apparatus map",
+          "url": "docs/panel/tesla-phantom-protocol.md"
+        }
+      ]
+    },
+    {
+      "id": "P2",
+      "title": "Audit a purported reactionless device",
+      "domain": "Tesla · momentum / antigravity",
+      "status": "Next research candidate; not executed",
+      "evidence": "hypothesis",
+      "summary": "Include the apparatus, environment and fields in the momentum budget.",
+      "question": "Does measured thrust persist when ion flow, cables, vibration and external-field forces are controlled?",
+      "method": "Source and momentum audit of a concrete patent, then a complete mechanical or electromagnetic model.",
+      "prediction": "An internal-mass model conserves total momentum; atmospheric ion motion provides an alternative to gravity reduction.",
+      "limitations": "The selected NASA experiment and patent descriptions do not establish a blanket verdict on every device.",
+      "safety": "No high-voltage build instructions or human exposures.",
+      "sourceIds": [
+        "NASA-ACT2004",
+        "PAT-PAIS2018",
+        "PAT-2026"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "DR-UBE2026",
+      "title": "Facilitating unusual bodily experiences and out-of-body experiences across wakefulness and sleep: A high-density EEG and neurophenomenology study",
+      "author": "Primary journal article, author-uploaded published text on ResearchGate; title/DOI/date corroborated by PubMed indexed result",
+      "year": "2026-02-11",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41678848/",
+      "type": "Modern primary research",
+      "evidence": "preliminary",
+      "summary": "The study relates unusual bodily experiences to EEG and subjective reports. It separates eye signals from dream lucidity and discusses timing, state confounding and sleep-fragmentation limits. It does not report a concealed external-target accuracy test.",
+      "claim": "correlational electrophysiology and phenomenological reports",
+      "section": "Abstract; Introduction signal/lucidity distinction; Methods2.1,2.2 and selected2.7.4 preprocessing/segmentation; Discussion4.1 and4.4; conclusion.",
+      "readingDepth": "Selected substantial passages; raw data, full statistical code and supplements not independently analyzed.",
+      "verifiedAt": "2026-09-26",
+      "limitations": "No causal neural mechanism or extracorporeal information acquisition established by these selected results. Source induction procedure not adopted."
+    },
+    {
+      "id": "DREAM-2021",
+      "title": "Real-time dialogue between experimenters and dreamers during REM sleep",
+      "author": "primary empirical paper; author manuscript in PMC",
+      "year": "2021-02-18",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8162929/",
+      "type": "Modern primary research",
+      "evidence": "preliminary",
+      "summary": "Separate retrospective report, physiological verification and ordinary sensory communication.",
+      "claim": "primary empirical paper; author manuscript in PMC",
+      "section": "Summary, introduction and results through physiological-recording verification discussion",
+      "readingDepth": "selected full-text sections; supplement not reviewed",
+      "verifiedAt": "2026-09-26",
+      "limitations": "No raw recordings independently reanalyzed here."
+    },
+    {
+      "id": "OBE-2007",
+      "title": "The Experimental Induction of Out-of-Body Experiences",
+      "author": "primary empirical paper and supplement on author's institutional site",
+      "year": "2007-08-24",
+      "url": "https://www.neuro.ki.se/ehrsson/pdfs/Ehrsson-Science-2007-with-SOM.pdf",
+      "type": "Modern primary research",
+      "evidence": "preliminary",
+      "summary": "Operational body-location phenomenology and matched alternative explanations.",
+      "claim": "primary empirical paper and supplement on author's institutional site",
+      "section": "Main article; supplementary participant, measurement and synchrony/control methods through discussion",
+      "readingDepth": "main text and selected supporting methods/controls",
+      "verifiedAt": "2026-09-26",
+      "limitations": "No independent reanalysis of participant-level data."
+    },
+    {
+      "id": "DREAM-2026",
+      "title": "Individual traits and experiences predict the content of dreams",
+      "author": "primary observational research, Communications Psychology",
+      "year": "2026-04-28",
+      "url": "https://www.nature.com/articles/s44271-026-00447-2",
+      "type": "Modern primary research",
+      "evidence": "preliminary",
+      "summary": "Lock initial reports and keep later interpretation in separate fields.",
+      "claim": "primary observational research, Communications Psychology",
+      "section": "Abstract, limitations, data/code availability and metadata",
+      "readingDepth": "selected sections; methods/data not independently reproduced",
+      "verifiedAt": "2026-09-26",
+      "limitations": "Located Zenodo code/data not executed in this release."
+    },
+    {
+      "id": "DREAM-DATA-2025",
+      "title": "A dream EEG and mentation database",
+      "author": "primary data-resource publication",
+      "year": "2025",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12350935/",
+      "type": "Data or tool",
+      "evidence": "documented",
+      "summary": "Prospective public-data reanalysis lane.",
+      "claim": "primary data-resource publication",
+      "section": "Search/abstract-level record; detailed reopen intermittently blocked",
+      "readingDepth": "abstract/search record only",
+      "verifiedAt": "2026-09-26",
+      "limitations": "Inspect files, licensing/access terms, recordings and participant-level grouping before analysis."
+    },
+    {
+      "id": "H01",
+      "title": "Experiments — Portsmouth Add. MS.3973",
+      "author": "Isaac Newton",
+      "year": "Entries 1678–1696; electronic edition 2006",
+      "url": "https://newton.dlib.indiana.edu/text/ALCH00109/normalized",
+      "type": "Historical primary source",
+      "evidence": "documented",
+      "summary": "Newton recorded separations, weights, appearance, fusibility and failed mixtures",
+      "claim": "Primary manuscript in scholarly normalized transcription; editorial catalogue distinguished",
+      "section": "Metadata; f.1r Dec.10–16 1678; f.1v Dec.17–19 and following Jan.15 note (web lines 399–483)",
+      "readingDepth": "Selected transcribed entries; manuscript images not collated",
+      "verifiedAt": "2026-09-26",
+      "limitations": "Read diplomatic transcription/images; historical-unit and substance identification require specialist review"
+    },
+    {
+      "id": "H02",
+      "title": "Of Natures obvious laws & processes in vegetation — Dibner MS.1031B",
+      "author": "Isaac Newton",
+      "year": "Early Newton manuscript; electronic edition 2006",
+      "url": "https://newton.dlib.indiana.edu/text/ALCH00081/normalized",
+      "type": "Historical primary source",
+      "evidence": "documented",
+      "summary": "Historical mineral/living analogies and proposed hidden growth principle",
+      "claim": "Primary manuscript in scholarly normalized transcription",
+      "section": "Opening outline f.1r–1v; ff.5r–6r vegetation, texture, hidden-cause discussion; web lines 350–413 and 679–799",
+      "readingDepth": "Selected passages, not entire tract",
+      "verifiedAt": "2026-09-26",
+      "limitations": "Chronology, source comparison, images and full contextual reading"
+    },
+    {
+      "id": "H03",
+      "title": "Newton's Emerald Tablet transcription/translation — Keynes MS.28",
+      "author": "Hermetic text in Isaac Newton's manuscript",
+      "year": "Electronic edition June 2010",
+      "url": "https://newton.dlib.indiana.edu/text/ALCH00017/normalized",
+      "type": "Historical primary source",
+      "evidence": "documented",
+      "summary": "Historical above/below, separation and recombination motifs",
+      "claim": "Primary historical copy/translation of older text, not Newton's experimental report",
+      "section": "English text ff.2r–2v, web lines 366–405",
+      "readingDepth": "English passage and metadata; Latin material not fully translated",
+      "verifiedAt": "2026-09-26",
+      "limitations": "Relationship to source editions and Latin commentary"
+    },
+    {
+      "id": "H04",
+      "title": "Observations upon the Prophecies of Daniel, I.II: Of the Prophetic Language",
+      "author": "Isaac Newton",
+      "year": "1733 posthumous publication; electronic edition 2006",
+      "url": "https://www.newtonproject.ox.ac.uk/view/texts/normalized/THEM00196",
+      "type": "Historical primary source",
+      "evidence": "documented",
+      "summary": "Explicit mapping of natural-world symbols to political meanings",
+      "claim": "Primary published theological text in scholarly transcription",
+      "section": "Chapter I.II, pages 16–23, web lines 81–95",
+      "readingDepth": "Full short chapter body",
+      "verifiedAt": "2026-09-26",
+      "limitations": "Whole-book theological and editorial context not reviewed"
+    },
+    {
+      "id": "H05",
+      "title": "Fragments on the rise of the papacy and Revelation — Yahuda MS.7.3g",
+      "author": "Isaac Newton",
+      "year": "Post-1700 manuscript; current electronic transcription",
+      "url": "https://www.newtonproject.ox.ac.uk/view/texts/normalized/THEM00437",
+      "type": "Historical primary source",
+      "evidence": "hypothesis",
+      "summary": "Conditional 800+1260=2060 interpretation; allowance for a later end and rejection of rash date predictions",
+      "claim": "Primary theological manuscript in scholarly transcription",
+      "section": "ff.13r–14r insertion context and f.13v resumed 2060 calculation; web lines 318–331",
+      "readingDepth": "Selected contextual passage only; full 32,000-word document not read",
+      "verifiedAt": "2026-09-26",
+      "limitations": "Diplomatic and manuscript image collation; compare alternative chronologies elsewhere"
+    },
+    {
+      "id": "H06",
+      "title": "Wolfgang Pauli and Carl Gustav Jung",
+      "author": "ETH Library",
+      "year": "Undated exhibition, accessed 2026-09-26",
+      "url": "https://library.ethz.ch/en/collections-and-archives/platforms/virtual-exhibitions/wolfgang-pauli-and-modern-physics/wolfgang-pauli-and-carl-gustav-jung.html",
+      "type": "Historical primary source",
+      "evidence": "documented",
+      "summary": "Historical contact and interdisciplinary exchange",
+      "claim": "Institutional curatorial secondary account",
+      "section": "Entire short exhibit body, especially letters/physics/psychology paragraphs",
+      "readingDepth": "Exhibit read; no individual correspondence read",
+      "verifiedAt": "2026-09-26",
+      "limitations": "Read authenticated specific letters and editions"
+    },
+    {
+      "id": "H07",
+      "title": "The Pauli Letter Collection",
+      "author": "CERN Archives",
+      "year": "Current archive guide, accessed 2026-09-26",
+      "url": "https://archives.web.cern.ch/pauli_archive/guide/letters/",
+      "type": "Historical primary source",
+      "evidence": "documented",
+      "summary": "Where correspondence is preserved",
+      "claim": "Institutional archival finding aid",
+      "section": "Scope and related collections, especially ETH Jung correspondence location",
+      "readingDepth": "Finding aid only",
+      "verifiedAt": "2026-09-26",
+      "limitations": "Retrieve relevant ETH items"
+    },
+    {
+      "id": "H08",
+      "title": "Atom and Archetype sample",
+      "author": "Pauli/Jung correspondence, edited volume",
+      "year": "Published sample, edition to verify",
+      "url": "https://catdir.loc.gov/catdir/samples/prin031/2001016323.pdf",
+      "type": "Historical primary source",
+      "evidence": "hypothesis",
+      "summary": "No substantive claim admitted",
+      "claim": "Library of Congress-hosted publisher sample link",
+      "section": "None; open failed twice",
+      "readingDepth": "Unaccessed lead",
+      "verifiedAt": "2026-09-26",
+      "limitations": "Acquire lawful accessible sample or primary letters"
+    },
+    {
+      "id": "H09",
+      "title": "ETH Pauli archive entry point",
+      "author": "ETH archive",
+      "year": "Access attempted 2026-09-26",
+      "url": "https://pauli-archive.ethz.ch/",
+      "type": "Historical primary source",
+      "evidence": "hypothesis",
+      "summary": "No substantive claim admitted",
+      "claim": "Archive discovery route",
+      "section": "None; open failed",
+      "readingDepth": "Unaccessed lead",
+      "verifiedAt": "2026-09-26",
+      "limitations": "Use alternative current ETH catalogue routes"
+    },
+    {
+      "id": "H10",
+      "title": "On Gravity's role in Quantum State Reduction",
+      "author": "Roger Penrose",
+      "year": "May 1996; General Relativity and Gravitation 28, 581–600",
+      "url": "https://link.springer.com/article/10.1007/BF02105068",
+      "type": "Modern primary research",
+      "evidence": "hypothesis",
+      "summary": "Proposed gravity-related lifetime of order hbar/E_delta",
+      "claim": "Primary theoretical paper publisher page",
+      "section": "Abstract and publication metadata",
+      "readingDepth": "Abstract only; subscription body not accessed",
+      "verifiedAt": "2026-09-26",
+      "limitations": "Full derivation and subsequent model-specific experimental literature"
+    },
+    {
+      "id": "H11",
+      "title": "Underground test of gravity-related wave function collapse",
+      "author": "S. Donadi, K. Piscicchia, C. Curceanu, L. Diósi, M. Laubenstein, A. Bassi",
+      "year": "Published 2020-09-07; Nature Physics 17, 74–78 (2021)",
+      "url": "https://www.nature.com/articles/s41567-020-1008-4",
+      "type": "Modern primary research",
+      "evidence": "hypothesis",
+      "summary": "Authors report exclusion of the natural parameter-free version of their tested DP model",
+      "claim": "Primary experimental/theoretical paper",
+      "section": "Abstract and data/code availability returned by search",
+      "readingDepth": "Abstract and availability statements; detailed analysis not read",
+      "verifiedAt": "2026-09-26",
+      "limitations": "Read supplementary model assumptions and current later constraints"
+    },
+    {
+      "id": "H12",
+      "title": "Penrose on Spin Networks: authorized electronic primary papers",
+      "author": "Roger Penrose; hosting page John Baez",
+      "year": "1971/1972 papers; archive page date not stated",
+      "url": "https://math.ucr.edu/home/baez/penrose/",
+      "type": "Modern primary research",
+      "evidence": "hypothesis",
+      "summary": "Source route for future mathematical-geometry lens",
+      "claim": "University page says electronic republication authorized by Penrose",
+      "section": "Discovery page search excerpt only",
+      "readingDepth": "Primary papers located, not read",
+      "verifiedAt": "2026-09-26",
+      "limitations": "Read original definitions, figures and assumptions"
+    },
+    {
+      "id": "H13",
+      "title": "Cargo Cult Science",
+      "author": "Richard P. Feynman",
+      "year": "1974 Caltech commencement; Engineering and Science 37(7)",
+      "url": "https://calteches.library.caltech.edu/51/2/CargoCult.htm",
+      "type": "Historical primary source",
+      "evidence": "documented",
+      "summary": "Methodological lens of counterchecks and complete outcome reporting",
+      "claim": "Primary speech hosted by Caltech",
+      "section": "Web lines 25–58: invalidating details, new predictions, both outcomes, matched apparatus and maze controls",
+      "readingDepth": "Selected majority of methods portion; no claim of complete Feynman corpus",
+      "verifiedAt": "2026-09-26",
+      "limitations": "No unresolved issue for narrow methodological use"
+    },
+    {
+      "id": "H14",
+      "title": "The alchemists wrote in code on purpose, and the code has a name",
+      "author": "Reddit user; identity not collected",
+      "year": "2026-08-29 according to search excerpt",
+      "url": "https://www.reddit.com/r/alchemy/comments/1w1fboc/the_alchemists_wrote_in_code_on_purpose_and_the/",
+      "type": "Discourse lead",
+      "evidence": "unsupported",
+      "summary": "Modern discourse treats alchemical names as context-dependent codes",
+      "claim": "Fringe/cultural discourse, not scientific evidence",
+      "section": "Search excerpt on cover names",
+      "readingDepth": "Snippet only",
+      "verifiedAt": "2026-09-26",
+      "limitations": "Open full thread and trace claims to manuscripts"
+    },
+    {
+      "id": "H15",
+      "title": "Foundations of Newton's Alchemy or The Hunting of the Greene Lyon",
+      "author": "Reddit users; identities not collected",
+      "year": "2021 according to search result",
+      "url": "https://www.reddit.com/r/Jung/comments/qs47c9",
+      "type": "Discourse lead",
+      "evidence": "unsupported",
+      "summary": "An example of modern Jung/Newton/alchemical-symbol association",
+      "claim": "Fringe/cultural discourse",
+      "section": "Search excerpt; direct open failed",
+      "readingDepth": "Snippet only",
+      "verifiedAt": "2026-09-26",
+      "limitations": "Full thread and original book/primary references"
+    },
+    {
+      "id": "H16",
+      "title": "Chymistry of Isaac Newton: Grant Proposal",
+      "author": "Chymistry project / William R. Newman",
+      "year": "Early project proposal; page accessed 2026-09-26",
+      "url": "https://newton.dlib.indiana.edu/page/grant",
+      "type": "Historical primary source",
+      "evidence": "documented",
+      "summary": "Clavis attributed to a 1651 Starkey-to-Boyle letter; uncertainty in reconstructing experiments",
+      "claim": "Primary project historical-method statement",
+      "section": "Source attribution and Clavis paragraphs; replication and uncertainty paragraphs, web lines 307–328",
+      "readingDepth": "Selected body passages, not current progress census",
+      "verifiedAt": "2026-09-26",
+      "limitations": "Read 1987 scholarly demonstration and manuscript witness for complete attribution chain"
+    },
+    {
+      "id": "H17",
+      "title": "A Preliminary Reassessment of Newton’s Alchemy",
+      "author": "William R. Newman",
+      "year": "2014 colloquium paper filename; bibliographic status to verify",
+      "url": "https://history.duke.edu/sites/history.duke.edu/files/documents/Newman%20Colloquium%20Paper%202014.pdf",
+      "type": "Historical primary source",
+      "evidence": "documented",
+      "summary": "Clavis is Starkey material; author argues against a simple alchemy-to-immaterial-gravity story",
+      "claim": "Author research text hosted by Duke University",
+      "section": "Page 3 Clavis and gravity discussion; notes 6–7 on pages 30–31",
+      "readingDepth": "Selected passages, not complete 35-page paper",
+      "verifiedAt": "2026-09-26",
+      "limitations": "Full paper and competing scholarship"
+    },
+    {
+      "id": "H18",
+      "title": "Encoding Newton’s Alchemical Library: Integrating Traditional Bibliographic and Modern Computational Methods",
+      "author": "Meridith Beck Mink, Michelle Dalmau, Wallace Hooper, William R. Newman, James R. Voelkel, John A. Walsh",
+      "year": "Journal of the Text Encoding Initiative 11, 2020-02-18",
+      "url": "https://jawalsh.github.io/assets/pdf/mink_et_al_2019.pdf",
+      "type": "Historical primary source",
+      "evidence": "documented",
+      "summary": "Thousands of bibliographic citation occurrences; body discusses hundreds of texts",
+      "claim": "Primary digital-humanities research paper, author-hosted PDF",
+      "section": "Abstract and body pages 2–7, citation-count and bibliography methods",
+      "readingDepth": "Selected passages, not complete 27-page paper",
+      "verifiedAt": "2026-09-26",
+      "limitations": "Deduplicate actual bibliography for distinct work/edition census; abstract uses broader wording than body"
+    },
+    {
+      "id": "PH-FDA-MDDT",
+      "title": "Virtual MRI Safety Evaluations of Medical Devices — qualification summary",
+      "author": "FDA official qualification summary",
+      "year": null,
+      "url": "https://www.fda.gov/media/154181/download?attachment=",
+      "type": "Government record",
+      "evidence": "documented",
+      "summary": "Describes coupled electromagnetic and transient thermal phantom calculations, comparison with measured heating, and explicit MRI-context limits. It does not qualify the present project or establish clinical efficacy.",
+      "claim": "regulatory nonclinical tool validation in restricted context",
+      "section": "All four pages: mechanism, qualified context, validation, limitations and conclusion",
+      "readingDepth": "Qualification summary read; raw validation data not inspected",
+      "verifiedAt": "2026-09-26",
+      "limitations": "Our implementation, frequencies and geometry would need independent validation"
+    },
+    {
+      "id": "PH-SIMNIBS",
+      "title": "SimNIBS FAQ",
+      "author": "Official open-source project documentation",
+      "year": null,
+      "url": "https://simnibs.github.io/simnibs/build/html/faq.html",
+      "type": "Data or tool",
+      "evidence": "documented",
+      "summary": "Documents quasistatic scaling, field variables and units. In the stated low-frequency approximation, changing sinusoidal frequency alone does not supply a new spatial field distribution.",
+      "claim": "software model assumptions/documentation",
+      "section": "TACS quasi-static approximation, TMS dI/dt scaling, field representations and units",
+      "readingDepth": "Complete short FAQ read",
+      "verifiedAt": "2026-09-26",
+      "limitations": "Does not certify our solver; frequency dispersion must be independently modeled when applicable"
+    },
+    {
+      "id": "PH-AE2026",
+      "title": "Non-invasive in vivo acoustoelectric neuromodulation and its contribution to ultrasound stimulation",
+      "author": "Rintoul et al., Nature Communications 17,5073 (2026)",
+      "year": "2026-06-17",
+      "url": "https://www.nature.com/articles/s41467-026-73826-2",
+      "type": "Modern primary research",
+      "evidence": "preliminary",
+      "summary": "Describes acoustoelectric mixing and electrical coupling artifacts associated with ultrasound apparatus. We use it as a source for separating physical channels; reported neural outcomes are neither reproduced nor generalized.",
+      "claim": "primary experimental research with phantom and animal components",
+      "section": "Abstract, Introduction, opening Results subsection Acoustoelectric amplitude characterisation",
+      "readingDepth": "Selected primary paper sections; no independent numerical or experimental replication",
+      "verifiedAt": "2026-09-26",
+      "limitations": "Full methods and raw data not audited; no ultrasound or animal experiment proposed here"
+    },
+    {
+      "id": "TES-1898",
+      "title": "High Frequency Oscillators for Electro-therapeutic and Other Purposes",
+      "author": "Tesla-authored historical article reproduced by Tesla Universe",
+      "year": "1898-11-17",
+      "url": "https://teslauniverse.com/nikola-tesla/articles/high-frequency-oscillators-electro-therapeutic-and-other-purposes",
+      "type": "Historical primary source",
+      "evidence": "documented",
+      "summary": "Tesla described frequency-dependent electrical coupling, load-induced retuning and personal effects; he acknowledged uncertain therapeutic uses and risks. These are historical observations and proposals, not controlled clinical evidence for a universal healing frequency.",
+      "claim": "historical assertion, unverified therapeutic speculation",
+      "section": "Opening classification; synchronism/load capacitance; fatigue, burns, uncertainty; induction and condenser discussion (web lines18–26,54–74,93–118).",
+      "readingDepth": "Selected substantial passages of a modern historical transcription; original magazine facsimile not authenticated in this pass",
+      "verifiedAt": "2026-09-26",
+      "limitations": "Authenticate original scan; therapeutic claims lack controlled outcomes here"
+    },
+    {
+      "id": "TES-1905",
+      "title": "US787412A: Art of transmitting electrical energy through the natural mediums",
+      "author": "Primary patent text through Google Patents",
+      "year": "1905-04-18",
+      "url": "https://patents.google.com/patent/US787412A/en",
+      "type": "Patent proposal",
+      "evidence": "documented",
+      "summary": "The patent proposes a conducting-Earth stationary-wave mechanism, an odd-quarter-wave diameter condition and a lowest rate near six per second. This differs from the later Earth–ionosphere cavity model.",
+      "claim": "patent proposal",
+      "section": "Description: Earth-conductor assumptions and three resonance conditions, lines164–172",
+      "readingDepth": "Selected description, not complete patent or drawing audit",
+      "verifiedAt": "2026-09-26",
+      "limitations": "Global transmission efficiency not established by this record"
+    },
+    {
+      "id": "TES-1901",
+      "title": "US685957A: Apparatus for the utilization of radiant energy",
+      "author": "Primary patent text through Google Patents",
+      "year": "1901-11-05",
+      "url": "https://patents.google.com/patent/US685957A/en",
+      "type": "Patent proposal",
+      "evidence": "documented",
+      "summary": "The proposal charges a capacitor using an exposed plate and an external solar or artificial radiation source. Its historical particle explanation is not evidence of a source-free generator.",
+      "claim": "patent proposal",
+      "section": "Description and Fig.1–4 discussion, lines187–203",
+      "readingDepth": "Selected mechanism description; drawings described in text",
+      "verifiedAt": "2026-09-26",
+      "limitations": "Quantified efficiency and modern microscopic model not supplied by this selected reading"
+    },
+    {
+      "id": "SR-2011",
+      "title": "Observation of Schumann Resonances in the Earth's Ionosphere",
+      "author": "Simões, Pfaff, Freudenreich, NASA NTRS manuscript",
+      "year": "2011-01-01",
+      "url": "https://ntrs.nasa.gov/api/citations/20120000051/downloads/20120000051.pdf",
+      "type": "Modern primary research",
+      "evidence": "preliminary",
+      "summary": "The thin lossless shell has ω_l=c√[l(l+1)]/R. Finite conductivity and losses lower observed peaks. The manuscript distinguishes average ground values from its satellite observation and gives acquisition and spectral-processing details.",
+      "claim": "primary empirical research and model",
+      "section": "PDF pp.2–5: ideal cavity equation, measured peaks, instrument description, nighttime spectral analysis",
+      "readingDepth": "Selected primary manuscript pages; no raw satellite data reanalysis",
+      "verifiedAt": "2026-09-26",
+      "limitations": "Simplified surrogate is not a full Earth simulator"
+    },
+    {
+      "id": "SR-2026",
+      "title": "Deducing spatial characteristics of global thunderstorm activity using the observed Schumann resonance frequencies",
+      "author": "Koloskov, Hayakawa, Nickolaenko, Annales Geophysicae",
+      "year": "2026-09-18",
+      "url": "https://angeo.copernicus.org/articles/44/949/2026/",
+      "type": "Modern primary research",
+      "evidence": "preliminary",
+      "summary": "The authors explicitly distinguish forced spectral maxima from Helmholtz eigenvalues. They use multiple field/mode observations to infer source distance and extent, with site-specific calibration caveats.",
+      "claim": "peer-reviewed model/calibration research",
+      "section": "Abstract; §1 Introduction; calibration equations near end §3; §4 Conclusions; opening Appendix A",
+      "readingDepth": "Selected primary paper sections; not all derivations independently checked",
+      "verifiedAt": "2026-09-26",
+      "limitations": "Our surrogate cannot reproduce full inversion. Independent advisor reports apparent HTML Eq.(1) variable-definition inconsistency: X and Y both printed ln(df2H) although surrounding text defines vertical coordinate ln(W). Do not implement calibration before original PDF/author correction audit."
+    },
+    {
+      "id": "BIO-FDA",
+      "title": "Repetitive Transcranial Magnetic Stimulation Systems: Class II Special Controls Guidance",
+      "author": "FDA official device guidance",
+      "year": null,
+      "url": "https://www.fda.gov/medical-devices/guidance-documents-medical-devices-and-radiation-emitting-products/repetitive-transcranial-magnetic-stimulation-rtms-systems-class-ii-special-controls-guidance",
+      "type": "Government record",
+      "evidence": "documented",
+      "summary": "The specified output includes amplitude, pulse width, repetition frequency, train structure, coil geometry and induced field. A frequency alone does not characterize the exposure or establish efficacy.",
+      "claim": "regulatory/measurement framework",
+      "section": "§4 device description; §7–10 testing overview; Appendix A definitions",
+      "readingDepth": "Selected regulator document sections; not treatment advice",
+      "verifiedAt": "2026-09-26",
+      "limitations": "Do not transfer device-specific evidence to audio, Schumann generators or Tesla coils"
+    },
+    {
+      "id": "BIO-2024",
+      "title": "Connectivity-guided intermittent theta burst versus repetitive transcranial magnetic stimulation for treatment-resistant depression: a randomized controlled trial",
+      "author": "Morriss et al., Nature Medicine primary randomized trial",
+      "year": "2024-01-16",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38228914/",
+      "type": "Modern primary research",
+      "evidence": "preliminary",
+      "summary": "The trial compares two active stimulation approaches in 255 participants and reports no significant primary-outcome difference between arms. An active-versus-active result is not sham-controlled proof for generalized frequency healing.",
+      "claim": "clinical trial in specific devices/indication",
+      "section": "Abstract; conflict statement; selected figure captions",
+      "readingDepth": "Abstract-level clinical appraisal only; full methods not audited",
+      "verifiedAt": "2026-09-26",
+      "limitations": "Cannot generalize to other exposures or conditions"
+    },
+    {
+      "id": "BIO-2026",
+      "title": "Predicting the Outcome of rTMS Depression Therapy using EEG Signals and CNN",
+      "author": "Author preprint; conference presentation noted by authors",
+      "year": "2026-07-24",
+      "url": "https://arxiv.org/abs/2607.22776",
+      "type": "Modern primary research",
+      "evidence": "hypothesis",
+      "summary": "The authors report time-frequency EEG classification using private datasets. Its accuracy claim is not a causal treatment result and cannot be independently reproduced from the abstract.",
+      "claim": "unverified predictive-model report",
+      "section": "Abstract, comments and submission history",
+      "readingDepth": "Abstract only",
+      "verifiedAt": "2026-09-26",
+      "limitations": "Methods, data access and leakage controls need full audit; not admitted evidence of healing"
+    },
+    {
+      "id": "BIO-PSG2026",
+      "title": "PSG-IPA: A PolySomnoGraphic Inter-scorer Performance Assessment database",
+      "author": "Dataset owner documentation on PhysioNet",
+      "year": "2026-01-08",
+      "url": "https://physionet.org/content/psg-ipa/1.0.0/",
+      "type": "Data or tool",
+      "evidence": "documented",
+      "summary": "This release contains distinct EEG, EOG, EMG, ECG and respiratory channels with sampling rates and annotations. It supports channel-specific analysis. It has one-center and sample-size limitations; it does not measure one total human frequency.",
+      "claim": "public multichannel measurement resource",
+      "section": "Abstract, Methods, Data Description, Usage Notes, Ethics and License",
+      "readingDepth": "Dataset documentation read; data files not downloaded or analyzed",
+      "verifiedAt": "2026-09-26",
+      "limitations": "No raw-data analysis executed in round 1"
+    },
+    {
+      "id": "BIO-SLP1999",
+      "title": "MIT-BIH Polysomnographic Database",
+      "author": "Dataset documentation on PhysioNet",
+      "year": "1999-08-03",
+      "url": "https://physionet.org/content/slpdb/1.0.0/",
+      "type": "Data or tool",
+      "evidence": "documented",
+      "summary": "The documentation lists simultaneous ECG, EEG and respiration recordings with annotations and open-access terms. It is a fallback resource for transparent channel-specific spectral work.",
+      "claim": "public multichannel measurement resource",
+      "section": "Abstract, Data Description, access/license, file inventory",
+      "readingDepth": "Documentation only",
+      "verifiedAt": "2026-09-26",
+      "limitations": "No dataset values or clinical associations estimated here"
+    },
+    {
+      "id": "NASA-ACT2004",
+      "title": "Asymmetrical Capacitors for Propulsion",
+      "author": "Canning, Melcher, Winet, NASA contractor report",
+      "year": "2004-10-01",
+      "url": "https://ntrs.nasa.gov/api/citations/20040171929/downloads/20040171929.pdf",
+      "type": "Government record",
+      "evidence": "documented",
+      "summary": "The measured behavior was consistent with ions transferring momentum to surrounding gas. The conclusion did not find evidence requiring new force physics. This bounds the tested devices, not all conceivable propulsion.",
+      "claim": "controlled engineering experiment/report",
+      "section": "Catalogue abstract; report conclusion (PDF p.20, printed p.16; extracted index P19) and preceding electrostatic-model discussion",
+      "readingDepth": "Selected original report passages",
+      "verifiedAt": "2026-09-26",
+      "limitations": "No apparatus replication or raw-data reanalysis here"
+    },
+    {
+      "id": "PAT-PAIS2018",
+      "title": "US10144532B2: Craft using an inertial mass reduction device",
+      "author": "Pais patent; US Navy listed as assignee",
+      "year": "2018-12-04",
+      "url": "https://patents.google.com/patent/US10144532B2/en",
+      "type": "Patent proposal",
+      "evidence": "documented",
+      "summary": "The patent asserts inertial-mass reduction using resonant cavities and electromagnetic excitation. Assignment and grant establish record provenance, not a validated mass-reduction measurement.",
+      "claim": "government-assigned patent proposal",
+      "section": "Bibliography, summary, selected description, claims 1–4, citing-family list",
+      "readingDepth": "Patent claim/description audit; no demonstrated performance found in inspected sections",
+      "verifiedAt": "2026-09-26",
+      "limitations": "A reproducible quantitative mechanism and independent validation are not established here; live legal status not independently verified"
+    },
+    {
+      "id": "PAT-2026",
+      "title": "US12553420B2: Vehicle propulsion unit and the manner of its operation",
+      "author": "Radoslaw Ordutowski; individual assignee, not government",
+      "year": "2026-02-17",
+      "url": "https://patents.google.com/patent/US12553420B2/en",
+      "type": "Patent proposal",
+      "evidence": "hypothesis",
+      "summary": "A 2026 grant describes motor-controlled moving loads. It is an individual patent cited by the Pais page, not evidence of Navy validation or a successful reactionless drive.",
+      "claim": "recent patent proposal/lead",
+      "section": "Bibliography, abstract, opening description and classification",
+      "readingDepth": "Shallow patent-screening only; no full claims or mechanical derivation audit",
+      "verifiedAt": "2026-09-26",
+      "limitations": "Needs full mechanism audit; not claimed to be the latest patent across all offices"
+    },
+    {
+      "id": "FBI-CATALOG",
+      "title": "FBI Vault: Nikola Tesla",
+      "author": "Official FBI archive",
+      "year": null,
+      "url": "https://vault.fbi.gov/nikola-tesla",
+      "type": "Government record",
+      "evidence": "hypothesis",
+      "summary": "The archive lists three parts. Its existence establishes document availability, not validation of any hidden technology.",
+      "claim": "government custody/catalogue lead",
+      "section": "Catalogue; Part01 download wrapper",
+      "readingDepth": "Catalogue only; no scans read in this pass",
+      "verifiedAt": "2026-09-26",
+      "limitations": "Trump report quotation not verified against original scan here; retain as lead only"
+    },
+    {
+      "id": "FRINGE-SR",
+      "title": "Schumann resonance generators? r/Soulnexus",
+      "author": "Public user-generated discussion",
+      "year": null,
+      "url": "https://www.reddit.com/r/Soulnexus/comments/1lhcilq/schumann_resonance_generators/",
+      "type": "Discourse lead",
+      "evidence": "unsupported",
+      "summary": "Discussion associates a nearby oscillator with sleep/meditation effects and makes shielding claims. These are assertions to trace, not measured outcomes or validation.",
+      "claim": "fringe discourse lead",
+      "section": "Original post and first visible comments",
+      "readingDepth": "Short discourse sample only, no author profiling",
+      "verifiedAt": "2026-09-26",
+      "limitations": "No clinical evidence or source authentication supplied by thread; do not infer efficacy"
+    }
+  ],
+  "dreams": {
+    "summary": "Round 6 examines dream awareness, out-of-body reports and concealed-target claims as distinct endpoints. No human trial was performed.",
+    "sourceIds": [
+      "DR-UBE2026",
+      "DREAM-2021",
+      "OBE-2007",
+      "DREAM-2026",
+      "DREAM-DATA-2025"
+    ],
+    "protocol": [
+      "Keep an ordinary sleep schedule; choose one neutral intention to remember a dream.",
+      "On spontaneous waking, record the report before viewing prompts, targets or interpretations.",
+      "Record whether you knew you were dreaming and any sense of body location as separate observations.",
+      "Keep failed recall and uneventful nights; review the complete record without selecting only striking matches.",
+      "A concealed-target study needs a separate controlled protocol and independent target handling; this static site demonstrates the null only."
+    ],
+    "limitations": [
+      "No sleep deprivation, forced awakenings or stimulation schedule is prescribed.",
+      "A vivid or meaningful experience does not by itself verify information obtained outside the body.",
+      "Diary content remains on the device and is exported only on request."
+    ]
+  },
+  "history": [
+    {
+      "id": "N1",
+      "title": "Clavis: copied authority, not original authorship",
+      "person": "Newton / Starkey",
+      "summary": "The inherited dossier misattributed Clavis. Scholarly source criticism identifies it as part of Starkey’s letter to Boyle, copied by Newton. Authorship must be resolved before building an interpretation.",
+      "evidence": "documented",
+      "sourceIds": [
+        "H16",
+        "H17"
+      ]
+    },
+    {
+      "id": "N2",
+      "title": "Star, net, tree: compare mechanisms",
+      "person": "Newton",
+      "summary": "Crystalline facets, reticular alloy surfaces and branching growth need their own textual contexts and diagnostic measurements. A similar shape does not uniquely identify a composition or cause.",
+      "evidence": "hypothesis",
+      "sourceIds": [
+        "H01",
+        "H02",
+        "H16"
+      ]
+    },
+    {
+      "id": "N3",
+      "title": "Why 2060 appears in a manuscript",
+      "person": "Newton",
+      "summary": "The date follows a conditional theological chronology: 800 + 1260. The passage allows a later end and argues against rash date-setting; it is not a calibrated physical forecast.",
+      "evidence": "documented",
+      "sourceIds": [
+        "H05"
+      ]
+    },
+    {
+      "id": "T1",
+      "title": "Tesla’s electrotherapy observations",
+      "person": "Tesla",
+      "summary": "The historical lecture describes coupling, retuning, personal effects and uncertainty. Its useful engineering questions can be modeled without converting anecdote into clinical evidence.",
+      "evidence": "documented",
+      "sourceIds": [
+        "TES-1898"
+      ]
+    },
+    {
+      "id": "J1",
+      "title": "Symbols as a declared dictionary",
+      "person": "Jung / Pauli",
+      "summary": "Treat meaningful symbolic patterns as interpretations. Declare coding rules and preserve misses before testing an external predictive claim. Individual Jung–Pauli correspondence remains an incompletely accessed reading lead.",
+      "evidence": "hypothesis",
+      "sourceIds": [
+        "H06",
+        "H07",
+        "H08",
+        "H09"
+      ]
+    },
+    {
+      "id": "PEN",
+      "title": "Geometry and model-specific limits",
+      "person": "Penrose",
+      "summary": "Gravitational state-reduction proposals require an explicit model and model-specific experimental bounds. Abstract-level reading does not verify the full derivation, and these proposals do not define a universal human frequency.",
+      "evidence": "preliminary",
+      "sourceIds": [
+        "H10",
+        "H11",
+        "H12"
+      ]
+    },
+    {
+      "id": "FEY",
+      "title": "Publish the damaging control",
+      "person": "Feynman",
+      "summary": "Keep the duplicate-assay failure, source-off result and alternative explanations beside successful predictions. Repeated execution of one implementation is not independent reasoning.",
+      "evidence": "documented",
+      "sourceIds": [
+        "H13"
+      ]
+    }
+  ],
+  "rounds": [
+    {
+      "id": "R1",
+      "title": "Resonance and complete energy accounting",
+      "status": "Executed; independent review accepted",
+      "participants": [
+        "Advisor / independent skeptic",
+        "Research producer",
+        "Source researcher"
+      ],
+      "question": "Can passive resonance amplify displacement while every joule remains accounted for?",
+      "artifacts": [
+        {
+          "label": "Frozen contract",
+          "url": "research/round1/contract.md"
+        },
+        {
+          "label": "Numerical results",
+          "url": "research/round1/results.json"
+        },
+        {
+          "label": "Derivation and limits",
+          "url": "research/round1/interpretation.md"
+        },
+        {
+          "label": "Independent model-agent review",
+          "url": "research/round1/independent-review.json"
+        },
+        {
+          "label": "Controls",
+          "url": "research/round1/controls.svg"
+        },
+        {
+          "label": "Convergence",
+          "url": "research/round1/convergence.svg"
+        },
+        {
+          "label": "Energy Budget",
+          "url": "research/round1/energy_budget.svg"
+        }
+      ],
+      "findings": [
+        "Input work 0.0949329661 J accounts for storage 0.0151181762 J and dissipation 0.0798147903 J. Independent quadrature, matrix exponential and closed-form phasor checks agree."
+      ],
+      "decisions": [
+        "Finite linear passive two-mass mechanical model; exact energy identity plus finite-time numerical verification.",
+        "Finite linear mechanical model only; not clinical efficacy, a physical prototype or a new law."
+      ],
+      "next": [
+        "Energy closure does not identify what a spectral peak measures; select a measurement-map test."
+      ]
+    },
+    {
+      "id": "R2",
+      "title": "A peak is not a pole",
+      "status": "Executed; independent review accepted",
+      "participants": [
+        "Advisor / independent skeptic",
+        "Research producer",
+        "Source researcher"
+      ],
+      "question": "Can changing the readout move a spectral maximum without changing the oscillator?",
+      "artifacts": [
+        {
+          "label": "Frozen contract",
+          "url": "research/round2/contract.md"
+        },
+        {
+          "label": "Numerical results",
+          "url": "research/round2/results.json"
+        },
+        {
+          "label": "Derivation and limits",
+          "url": "research/round2/interpretation.md"
+        },
+        {
+          "label": "Independent model-agent review",
+          "url": "research/round2/independent-review.json"
+        },
+        {
+          "label": "Measurement Peaks",
+          "url": "research/round2/measurement_peaks.svg"
+        }
+      ],
+      "findings": [
+        "The same poles yield displacement peak 6.6133 Hz versus velocity peak 8 Hz in a selected case. Unknown forcing permits exact output ambiguity; calibrated known forcing recovers the parameters."
+      ],
+      "decisions": [
+        "Calibrated or uncalibrated damped-oscillator transfer/PSD surrogate; not an Earth or physiological model.",
+        "A lossy single-mode surrogate, not an Earth–ionosphere propagation solver."
+      ],
+      "next": [
+        "A sign need not identify a cause; test inherited alchemical visual-sign-to-composition inference."
+      ]
+    },
+    {
+      "id": "R3",
+      "title": "Decipherment needs an identifying measurement",
+      "status": "Executed; independent review accepted",
+      "participants": [
+        "Advisor / independent skeptic",
+        "Research producer",
+        "Source researcher"
+      ],
+      "question": "Can different compositions give identical observable signs?",
+      "artifacts": [
+        {
+          "label": "Frozen contract",
+          "url": "research/round3/contract.md"
+        },
+        {
+          "label": "Numerical results",
+          "url": "research/round3/results.json"
+        },
+        {
+          "label": "Derivation and limits",
+          "url": "research/round3/interpretation.md"
+        },
+        {
+          "label": "Independent model-agent review",
+          "url": "research/round3/independent-review.json"
+        },
+        {
+          "label": "Composition Ambiguity",
+          "url": "research/round3/composition_ambiguity.svg"
+        }
+      ],
+      "findings": [
+        "A continuous composition family has identical two-channel signals. Independent third assay restores rank 3; a duplicate leaves rank 2. Exact rational algebra and all stored fiber samples agree."
+      ],
+      "decisions": [
+        "Exact synthetic two-channel, three-component linear observation map with nonnegative relative amounts.",
+        "Synthetic components are not identified with Newton reagents; no historical compound is recovered."
+      ],
+      "next": [
+        "Noise-free uniqueness is insufficient; test near-duplicate assay conditioning and bounded errors."
+      ]
+    },
+    {
+      "id": "R4",
+      "title": "How independent is an added assay?",
+      "status": "Executed; independent review accepted",
+      "participants": [
+        "Advisor / independent skeptic",
+        "Research producer",
+        "Source researcher"
+      ],
+      "question": "Does formal full rank remain useful under measurement noise?",
+      "artifacts": [
+        {
+          "label": "Frozen contract",
+          "url": "research/round4/contract.md"
+        },
+        {
+          "label": "Numerical results",
+          "url": "research/round4/results.json"
+        },
+        {
+          "label": "Derivation and limits",
+          "url": "research/round4/interpretation.md"
+        },
+        {
+          "label": "Independent model-agent review",
+          "url": "research/round4/independent-review.json"
+        },
+        {
+          "label": "Noise Amplification",
+          "url": "research/round4/noise_amplification.svg"
+        }
+      ],
+      "findings": [
+        "Near-duplicate assay recovery amplifies c3 error to 2 delta/epsilon despite full rank. At delta=0.001 and epsilon=0.001 the exact bound is 2; independent third-channel bound is 0.001."
+      ],
+      "decisions": [
+        "Fixed synthetic assay scaling and separately bounded absolute channel errors; no clipping or hidden normalization.",
+        "Toy measurement uncertainty does not calibrate a real spectrometer or historical manuscript."
+      ],
+      "next": [
+        "Even stable measurements can be cherry-picked across many hypotheses; test familywise selection bias."
+      ]
+    },
+    {
+      "id": "R5",
+      "title": "Patterns selected after looking",
+      "status": "Executed; independent review accepted",
+      "participants": [
+        "Advisor / independent skeptic",
+        "Research producer",
+        "Source researcher"
+      ],
+      "question": "How does choosing the most striking result change a false-positive claim?",
+      "artifacts": [
+        {
+          "label": "Frozen contract",
+          "url": "research/round5/contract.md"
+        },
+        {
+          "label": "Numerical results",
+          "url": "research/round5/results.json"
+        },
+        {
+          "label": "Derivation and limits",
+          "url": "research/round5/interpretation.md"
+        },
+        {
+          "label": "Independent model-agent review",
+          "url": "research/round5/independent-review.json"
+        },
+        {
+          "label": "Selection Bias",
+          "url": "research/round5/selection_bias.svg"
+        }
+      ],
+      "findings": [
+        "Twenty independent nominal 5% tests produce at least one false positive with probability 64.1514%; Bonferroni gives 4.8830%. Duplicate correlated tests require different accounting."
+      ],
+      "decisions": [
+        "Ideal valid uniform null p-values under independent and perfectly correlated test families, with exact probabilities and a seeded illustration.",
+        "Tests a declared statistical toy model, not all symbolic interpretation or the truth of a prophecy."
+      ],
+      "next": [
+        "Apply dependence and selection control to the user-requested final dream/astral-information measurement question."
+      ]
+    },
+    {
+      "id": "R6",
+      "title": "Lucid dreaming and astral-travel claims",
+      "status": "Executed; independent review accepted",
+      "participants": [
+        "Advisor / independent skeptic",
+        "Research producer",
+        "Source researcher"
+      ],
+      "question": "Which observations distinguish dream awareness, an out-of-body report and correct hidden-target information?",
+      "artifacts": [
+        {
+          "label": "Frozen contract",
+          "url": "research/round6/contract.md"
+        },
+        {
+          "label": "Numerical results",
+          "url": "research/round6/results.json"
+        },
+        {
+          "label": "Derivation and limits",
+          "url": "research/round6/interpretation.md"
+        },
+        {
+          "label": "Independent model-agent review",
+          "url": "research/round6/independent-review.json"
+        },
+        {
+          "label": "Target Null Calibration",
+          "url": "research/round6/target_null_calibration.svg"
+        }
+      ],
+      "findings": [
+        "Fixed 40-trial cutoff is 16 hits, with exact null rejection 2.6244884%. Naive repeated looks raise crossing probability to 14.0373194%. Disclosed leakage raises detection without identifying an extraordinary mechanism."
+      ],
+      "decisions": [
+        "Synthetic four-category target-test calibration; no participant, dream-state, clinical or astral-travel observations.",
+        "No human trial or astral travel is demonstrated. Laboratory dream communication does not establish extracorporeal perception."
+      ],
+      "next": [
+        "Final focused session; subsequent human research remains unexecuted."
+      ]
+    }
+  ],
+  "roadmap": [
+    {
+      "id": "G1",
+      "title": "Resonance and complete energy accounting",
+      "status": "Executed; independent review accepted",
+      "owner": "Advisor + assigned researcher",
+      "dependsOn": [],
+      "detail": "Can passive resonance amplify displacement while every joule remains accounted for?"
+    },
+    {
+      "id": "G2",
+      "title": "A peak is not a pole",
+      "status": "Executed; independent review accepted",
+      "owner": "Advisor + assigned researcher",
+      "dependsOn": [
+        "G1"
+      ],
+      "detail": "Can changing the readout move a spectral maximum without changing the oscillator?"
+    },
+    {
+      "id": "G3",
+      "title": "Decipherment needs an identifying measurement",
+      "status": "Executed; independent review accepted",
+      "owner": "Advisor + assigned researcher",
+      "dependsOn": [
+        "G2"
+      ],
+      "detail": "Can different compositions give identical observable signs?"
+    },
+    {
+      "id": "G4",
+      "title": "How independent is an added assay?",
+      "status": "Executed; independent review accepted",
+      "owner": "Advisor + assigned researcher",
+      "dependsOn": [
+        "G3"
+      ],
+      "detail": "Does formal full rank remain useful under measurement noise?"
+    },
+    {
+      "id": "G5",
+      "title": "Patterns selected after looking",
+      "status": "Executed; independent review accepted",
+      "owner": "Advisor + assigned researcher",
+      "dependsOn": [
+        "G4"
+      ],
+      "detail": "How does choosing the most striking result change a false-positive claim?"
+    },
+    {
+      "id": "G6",
+      "title": "Lucid dreaming and astral-travel claims",
+      "status": "Executed; independent review accepted",
+      "owner": "Advisor + assigned researcher",
+      "dependsOn": [
+        "G5"
+      ],
+      "detail": "Which observations distinguish dream awareness, an out-of-body report and correct hidden-target information?"
+    },
+    {
+      "id": "G7",
+      "title": "Trace primary alchemical cover-names across manuscripts",
+      "status": "Planned",
+      "owner": "Historical source team",
+      "dependsOn": [
+        "G3",
+        "G4"
+      ],
+      "detail": "Collate original images, dated textual context and specialist modern reconstructions. Retain contradictory meanings; do not infer identity from a symbol alone."
+    },
+    {
+      "id": "G8",
+      "title": "Analyze a licensed multichannel physiological dataset",
+      "status": "Planned; no patient data analyzed",
+      "owner": "Measurement researcher",
+      "dependsOn": [
+        "G2",
+        "G4"
+      ],
+      "detail": "Freeze channels, time windows, sensor units, filtering, artifact exclusions and held-out prediction before analysis."
+    },
+    {
+      "id": "G9",
+      "title": "Complete source scans and patent-family audits",
+      "status": "Planned",
+      "owner": "Source researchers",
+      "dependsOn": [
+        "G1",
+        "G5"
+      ],
+      "detail": "Authenticate Tesla magazine facsimiles, inspect government scans and distinguish granted claims from performance records."
+    },
+    {
+      "id": "G10",
+      "title": "Independent external replication",
+      "status": "Not started",
+      "owner": "Qualified external reviewers",
+      "dependsOn": [
+        "G6"
+      ],
+      "detail": "Model-agent review is not human peer review or a performed biological experiment."
+    }
+  ],
+  "network": {
+    "nodes": [
+      {
+        "id": "DR-UBE2026",
+        "label": "Facilitating unusual bodily experiences and out-of-body experiences across wakefulness and sleep: A high-density EEG and neurophenomenology study",
+        "type": "source",
+        "summary": "The study relates unusual bodily experiences to EEG and subjective reports. It separates eye signals from dream lucidity and discusses timing, state confounding and sleep-fragmentation limits. It does not report a concealed external-target accuracy test.",
+        "sourceIds": [
+          "DR-UBE2026"
+        ]
+      },
+      {
+        "id": "DREAM-2021",
+        "label": "Real-time dialogue between experimenters and dreamers during REM sleep",
+        "type": "source",
+        "summary": "Separate retrospective report, physiological verification and ordinary sensory communication.",
+        "sourceIds": [
+          "DREAM-2021"
+        ]
+      },
+      {
+        "id": "OBE-2007",
+        "label": "The Experimental Induction of Out-of-Body Experiences",
+        "type": "source",
+        "summary": "Operational body-location phenomenology and matched alternative explanations.",
+        "sourceIds": [
+          "OBE-2007"
+        ]
+      },
+      {
+        "id": "DREAM-2026",
+        "label": "Individual traits and experiences predict the content of dreams",
+        "type": "source",
+        "summary": "Lock initial reports and keep later interpretation in separate fields.",
+        "sourceIds": [
+          "DREAM-2026"
+        ]
+      },
+      {
+        "id": "DREAM-DATA-2025",
+        "label": "A dream EEG and mentation database",
+        "type": "source",
+        "summary": "Prospective public-data reanalysis lane.",
+        "sourceIds": [
+          "DREAM-DATA-2025"
+        ]
+      },
+      {
+        "id": "H01",
+        "label": "Experiments — Portsmouth Add. MS.3973",
+        "type": "source",
+        "summary": "Newton recorded separations, weights, appearance, fusibility and failed mixtures",
+        "sourceIds": [
+          "H01"
+        ]
+      },
+      {
+        "id": "H02",
+        "label": "Of Natures obvious laws & processes in vegetation — Dibner MS.1031B",
+        "type": "source",
+        "summary": "Historical mineral/living analogies and proposed hidden growth principle",
+        "sourceIds": [
+          "H02"
+        ]
+      },
+      {
+        "id": "H03",
+        "label": "Newton's Emerald Tablet transcription/translation — Keynes MS.28",
+        "type": "source",
+        "summary": "Historical above/below, separation and recombination motifs",
+        "sourceIds": [
+          "H03"
+        ]
+      },
+      {
+        "id": "H04",
+        "label": "Observations upon the Prophecies of Daniel, I.II: Of the Prophetic Language",
+        "type": "source",
+        "summary": "Explicit mapping of natural-world symbols to political meanings",
+        "sourceIds": [
+          "H04"
+        ]
+      },
+      {
+        "id": "H05",
+        "label": "Fragments on the rise of the papacy and Revelation — Yahuda MS.7.3g",
+        "type": "source",
+        "summary": "Conditional 800+1260=2060 interpretation; allowance for a later end and rejection of rash date predictions",
+        "sourceIds": [
+          "H05"
+        ]
+      },
+      {
+        "id": "H06",
+        "label": "Wolfgang Pauli and Carl Gustav Jung",
+        "type": "source",
+        "summary": "Historical contact and interdisciplinary exchange",
+        "sourceIds": [
+          "H06"
+        ]
+      },
+      {
+        "id": "H07",
+        "label": "The Pauli Letter Collection",
+        "type": "source",
+        "summary": "Where correspondence is preserved",
+        "sourceIds": [
+          "H07"
+        ]
+      },
+      {
+        "id": "H08",
+        "label": "Atom and Archetype sample",
+        "type": "source",
+        "summary": "No substantive claim admitted",
+        "sourceIds": [
+          "H08"
+        ]
+      },
+      {
+        "id": "H09",
+        "label": "ETH Pauli archive entry point",
+        "type": "source",
+        "summary": "No substantive claim admitted",
+        "sourceIds": [
+          "H09"
+        ]
+      },
+      {
+        "id": "H10",
+        "label": "On Gravity's role in Quantum State Reduction",
+        "type": "source",
+        "summary": "Proposed gravity-related lifetime of order hbar/E_delta",
+        "sourceIds": [
+          "H10"
+        ]
+      },
+      {
+        "id": "H11",
+        "label": "Underground test of gravity-related wave function collapse",
+        "type": "source",
+        "summary": "Authors report exclusion of the natural parameter-free version of their tested DP model",
+        "sourceIds": [
+          "H11"
+        ]
+      },
+      {
+        "id": "H12",
+        "label": "Penrose on Spin Networks: authorized electronic primary papers",
+        "type": "source",
+        "summary": "Source route for future mathematical-geometry lens",
+        "sourceIds": [
+          "H12"
+        ]
+      },
+      {
+        "id": "H13",
+        "label": "Cargo Cult Science",
+        "type": "source",
+        "summary": "Methodological lens of counterchecks and complete outcome reporting",
+        "sourceIds": [
+          "H13"
+        ]
+      },
+      {
+        "id": "H14",
+        "label": "The alchemists wrote in code on purpose, and the code has a name",
+        "type": "source",
+        "summary": "Modern discourse treats alchemical names as context-dependent codes",
+        "sourceIds": [
+          "H14"
+        ]
+      },
+      {
+        "id": "H15",
+        "label": "Foundations of Newton's Alchemy or The Hunting of the Greene Lyon",
+        "type": "source",
+        "summary": "An example of modern Jung/Newton/alchemical-symbol association",
+        "sourceIds": [
+          "H15"
+        ]
+      },
+      {
+        "id": "H16",
+        "label": "Chymistry of Isaac Newton: Grant Proposal",
+        "type": "source",
+        "summary": "Clavis attributed to a 1651 Starkey-to-Boyle letter; uncertainty in reconstructing experiments",
+        "sourceIds": [
+          "H16"
+        ]
+      },
+      {
+        "id": "H17",
+        "label": "A Preliminary Reassessment of Newton’s Alchemy",
+        "type": "source",
+        "summary": "Clavis is Starkey material; author argues against a simple alchemy-to-immaterial-gravity story",
+        "sourceIds": [
+          "H17"
+        ]
+      },
+      {
+        "id": "H18",
+        "label": "Encoding Newton’s Alchemical Library: Integrating Traditional Bibliographic and Modern Computational Methods",
+        "type": "source",
+        "summary": "Thousands of bibliographic citation occurrences; body discusses hundreds of texts",
+        "sourceIds": [
+          "H18"
+        ]
+      },
+      {
+        "id": "PH-FDA-MDDT",
+        "label": "Virtual MRI Safety Evaluations of Medical Devices — qualification summary",
+        "type": "source",
+        "summary": "Describes coupled electromagnetic and transient thermal phantom calculations, comparison with measured heating, and explicit MRI-context limits. It does not qualify the present project or establish clinical efficacy.",
+        "sourceIds": [
+          "PH-FDA-MDDT"
+        ]
+      },
+      {
+        "id": "PH-SIMNIBS",
+        "label": "SimNIBS FAQ",
+        "type": "source",
+        "summary": "Documents quasistatic scaling, field variables and units. In the stated low-frequency approximation, changing sinusoidal frequency alone does not supply a new spatial field distribution.",
+        "sourceIds": [
+          "PH-SIMNIBS"
+        ]
+      },
+      {
+        "id": "PH-AE2026",
+        "label": "Non-invasive in vivo acoustoelectric neuromodulation and its contribution to ultrasound stimulation",
+        "type": "source",
+        "summary": "Describes acoustoelectric mixing and electrical coupling artifacts associated with ultrasound apparatus. We use it as a source for separating physical channels; reported neural outcomes are neither reproduced nor generalized.",
+        "sourceIds": [
+          "PH-AE2026"
+        ]
+      },
+      {
+        "id": "TES-1898",
+        "label": "High Frequency Oscillators for Electro-therapeutic and Other Purposes",
+        "type": "source",
+        "summary": "Tesla described frequency-dependent electrical coupling, load-induced retuning and personal effects; he acknowledged uncertain therapeutic uses and risks. These are historical observations and proposals, not controlled clinical evidence for a universal healing frequency.",
+        "sourceIds": [
+          "TES-1898"
+        ]
+      },
+      {
+        "id": "TES-1905",
+        "label": "US787412A: Art of transmitting electrical energy through the natural mediums",
+        "type": "source",
+        "summary": "The patent proposes a conducting-Earth stationary-wave mechanism, an odd-quarter-wave diameter condition and a lowest rate near six per second. This differs from the later Earth–ionosphere cavity model.",
+        "sourceIds": [
+          "TES-1905"
+        ]
+      },
+      {
+        "id": "TES-1901",
+        "label": "US685957A: Apparatus for the utilization of radiant energy",
+        "type": "source",
+        "summary": "The proposal charges a capacitor using an exposed plate and an external solar or artificial radiation source. Its historical particle explanation is not evidence of a source-free generator.",
+        "sourceIds": [
+          "TES-1901"
+        ]
+      },
+      {
+        "id": "SR-2011",
+        "label": "Observation of Schumann Resonances in the Earth's Ionosphere",
+        "type": "source",
+        "summary": "The thin lossless shell has ω_l=c√[l(l+1)]/R. Finite conductivity and losses lower observed peaks. The manuscript distinguishes average ground values from its satellite observation and gives acquisition and spectral-processing details.",
+        "sourceIds": [
+          "SR-2011"
+        ]
+      },
+      {
+        "id": "SR-2026",
+        "label": "Deducing spatial characteristics of global thunderstorm activity using the observed Schumann resonance frequencies",
+        "type": "source",
+        "summary": "The authors explicitly distinguish forced spectral maxima from Helmholtz eigenvalues. They use multiple field/mode observations to infer source distance and extent, with site-specific calibration caveats.",
+        "sourceIds": [
+          "SR-2026"
+        ]
+      },
+      {
+        "id": "BIO-FDA",
+        "label": "Repetitive Transcranial Magnetic Stimulation Systems: Class II Special Controls Guidance",
+        "type": "source",
+        "summary": "The specified output includes amplitude, pulse width, repetition frequency, train structure, coil geometry and induced field. A frequency alone does not characterize the exposure or establish efficacy.",
+        "sourceIds": [
+          "BIO-FDA"
+        ]
+      },
+      {
+        "id": "BIO-2024",
+        "label": "Connectivity-guided intermittent theta burst versus repetitive transcranial magnetic stimulation for treatment-resistant depression: a randomized controlled trial",
+        "type": "source",
+        "summary": "The trial compares two active stimulation approaches in 255 participants and reports no significant primary-outcome difference between arms. An active-versus-active result is not sham-controlled proof for generalized frequency healing.",
+        "sourceIds": [
+          "BIO-2024"
+        ]
+      },
+      {
+        "id": "BIO-2026",
+        "label": "Predicting the Outcome of rTMS Depression Therapy using EEG Signals and CNN",
+        "type": "source",
+        "summary": "The authors report time-frequency EEG classification using private datasets. Its accuracy claim is not a causal treatment result and cannot be independently reproduced from the abstract.",
+        "sourceIds": [
+          "BIO-2026"
+        ]
+      },
+      {
+        "id": "BIO-PSG2026",
+        "label": "PSG-IPA: A PolySomnoGraphic Inter-scorer Performance Assessment database",
+        "type": "source",
+        "summary": "This release contains distinct EEG, EOG, EMG, ECG and respiratory channels with sampling rates and annotations. It supports channel-specific analysis. It has one-center and sample-size limitations; it does not measure one total human frequency.",
+        "sourceIds": [
+          "BIO-PSG2026"
+        ]
+      },
+      {
+        "id": "BIO-SLP1999",
+        "label": "MIT-BIH Polysomnographic Database",
+        "type": "source",
+        "summary": "The documentation lists simultaneous ECG, EEG and respiration recordings with annotations and open-access terms. It is a fallback resource for transparent channel-specific spectral work.",
+        "sourceIds": [
+          "BIO-SLP1999"
+        ]
+      },
+      {
+        "id": "NASA-ACT2004",
+        "label": "Asymmetrical Capacitors for Propulsion",
+        "type": "source",
+        "summary": "The measured behavior was consistent with ions transferring momentum to surrounding gas. The conclusion did not find evidence requiring new force physics. This bounds the tested devices, not all conceivable propulsion.",
+        "sourceIds": [
+          "NASA-ACT2004"
+        ]
+      },
+      {
+        "id": "PAT-PAIS2018",
+        "label": "US10144532B2: Craft using an inertial mass reduction device",
+        "type": "source",
+        "summary": "The patent asserts inertial-mass reduction using resonant cavities and electromagnetic excitation. Assignment and grant establish record provenance, not a validated mass-reduction measurement.",
+        "sourceIds": [
+          "PAT-PAIS2018"
+        ]
+      },
+      {
+        "id": "PAT-2026",
+        "label": "US12553420B2: Vehicle propulsion unit and the manner of its operation",
+        "type": "source",
+        "summary": "A 2026 grant describes motor-controlled moving loads. It is an individual patent cited by the Pais page, not evidence of Navy validation or a successful reactionless drive.",
+        "sourceIds": [
+          "PAT-2026"
+        ]
+      },
+      {
+        "id": "FBI-CATALOG",
+        "label": "FBI Vault: Nikola Tesla",
+        "type": "source",
+        "summary": "The archive lists three parts. Its existence establishes document availability, not validation of any hidden technology.",
+        "sourceIds": [
+          "FBI-CATALOG"
+        ]
+      },
+      {
+        "id": "FRINGE-SR",
+        "label": "Schumann resonance generators? r/Soulnexus",
+        "type": "source",
+        "summary": "Discussion associates a nearby oscillator with sleep/meditation effects and makes shielding claims. These are assertions to trace, not measured outcomes or validation.",
+        "sourceIds": [
+          "FRINGE-SR"
+        ]
+      },
+      {
+        "id": "R1",
+        "label": "Resonance and complete energy accounting",
+        "type": "experiment",
+        "summary": "Finite linear mechanical model only; not clinical efficacy, a physical prototype or a new law.",
+        "sourceIds": [
+          "TES-1898",
+          "TES-1901"
+        ]
+      },
+      {
+        "id": "R2",
+        "label": "A peak is not a pole",
+        "type": "experiment",
+        "summary": "A lossy single-mode surrogate, not an Earth–ionosphere propagation solver.",
+        "sourceIds": [
+          "TES-1905",
+          "SR-2011",
+          "SR-2026"
+        ]
+      },
+      {
+        "id": "R3",
+        "label": "Decipherment needs an identifying measurement",
+        "type": "experiment",
+        "summary": "Synthetic components are not identified with Newton reagents; no historical compound is recovered.",
+        "sourceIds": [
+          "H01",
+          "H02",
+          "H16"
+        ]
+      },
+      {
+        "id": "R4",
+        "label": "How independent is an added assay?",
+        "type": "experiment",
+        "summary": "Toy measurement uncertainty does not calibrate a real spectrometer or historical manuscript.",
+        "sourceIds": [
+          "H01",
+          "H13"
+        ]
+      },
+      {
+        "id": "R5",
+        "label": "Patterns selected after looking",
+        "type": "experiment",
+        "summary": "Tests a declared statistical toy model, not all symbolic interpretation or the truth of a prophecy.",
+        "sourceIds": [
+          "H04",
+          "H05",
+          "H13"
+        ]
+      },
+      {
+        "id": "R6",
+        "label": "Lucid dreaming and astral-travel claims",
+        "type": "experiment",
+        "summary": "No human trial or astral travel is demonstrated. Laboratory dream communication does not establish extracorporeal perception.",
+        "sourceIds": [
+          "DR-UBE2026",
+          "DREAM-2021",
+          "OBE-2007",
+          "DREAM-2026",
+          "DREAM-DATA-2025"
+        ]
+      },
+      {
+        "id": "P1",
+        "label": "Frequency-dependent coupling in an inert phantom",
+        "type": "experiment",
+        "summary": "A phantom has no clinical endpoint. Frequency-dependent absorption is not healing.",
+        "sourceIds": [
+          "TES-1898",
+          "PH-FDA-MDDT",
+          "PH-SIMNIBS",
+          "PH-AE2026"
+        ]
+      },
+      {
+        "id": "P2",
+        "label": "Audit a purported reactionless device",
+        "type": "experiment",
+        "summary": "The selected NASA experiment and patent descriptions do not establish a blanket verdict on every device.",
+        "sourceIds": [
+          "NASA-ACT2004",
+          "PAT-PAIS2018",
+          "PAT-2026"
+        ]
+      },
+      {
+        "id": "history-N1",
+        "label": "Clavis: copied authority, not original authorship",
+        "type": "interpretation",
+        "summary": "The inherited dossier misattributed Clavis. Scholarly source criticism identifies it as part of Starkey’s letter to Boyle, copied by Newton. Authorship must be resolved before building an interpretation.",
+        "sourceIds": [
+          "H16",
+          "H17"
+        ]
+      },
+      {
+        "id": "history-N2",
+        "label": "Star, net, tree: compare mechanisms",
+        "type": "interpretation",
+        "summary": "Crystalline facets, reticular alloy surfaces and branching growth need their own textual contexts and diagnostic measurements. A similar shape does not uniquely identify a composition or cause.",
+        "sourceIds": [
+          "H01",
+          "H02",
+          "H16"
+        ]
+      },
+      {
+        "id": "history-N3",
+        "label": "Why 2060 appears in a manuscript",
+        "type": "interpretation",
+        "summary": "The date follows a conditional theological chronology: 800 + 1260. The passage allows a later end and argues against rash date-setting; it is not a calibrated physical forecast.",
+        "sourceIds": [
+          "H05"
+        ]
+      },
+      {
+        "id": "history-T1",
+        "label": "Tesla’s electrotherapy observations",
+        "type": "interpretation",
+        "summary": "The historical lecture describes coupling, retuning, personal effects and uncertainty. Its useful engineering questions can be modeled without converting anecdote into clinical evidence.",
+        "sourceIds": [
+          "TES-1898"
+        ]
+      },
+      {
+        "id": "history-J1",
+        "label": "Symbols as a declared dictionary",
+        "type": "interpretation",
+        "summary": "Treat meaningful symbolic patterns as interpretations. Declare coding rules and preserve misses before testing an external predictive claim. Individual Jung–Pauli correspondence remains an incompletely accessed reading lead.",
+        "sourceIds": [
+          "H06",
+          "H07",
+          "H08",
+          "H09"
+        ]
+      },
+      {
+        "id": "history-PEN",
+        "label": "Geometry and model-specific limits",
+        "type": "interpretation",
+        "summary": "Gravitational state-reduction proposals require an explicit model and model-specific experimental bounds. Abstract-level reading does not verify the full derivation, and these proposals do not define a universal human frequency.",
+        "sourceIds": [
+          "H10",
+          "H11",
+          "H12"
+        ]
+      },
+      {
+        "id": "history-FEY",
+        "label": "Publish the damaging control",
+        "type": "interpretation",
+        "summary": "Keep the duplicate-assay failure, source-off result and alternative explanations beside successful predictions. Repeated execution of one implementation is not independent reasoning.",
+        "sourceIds": [
+          "H13"
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "source": "TES-1898",
+        "target": "R1",
+        "type": "inspires",
+        "label": "Motivates a question; does not prove the result",
+        "sourceIds": [
+          "TES-1898"
+        ]
+      },
+      {
+        "source": "TES-1901",
+        "target": "R1",
+        "type": "inspires",
+        "label": "Motivates a question; does not prove the result",
+        "sourceIds": [
+          "TES-1901"
+        ]
+      },
+      {
+        "source": "TES-1905",
+        "target": "R2",
+        "type": "inspires",
+        "label": "Motivates a question; does not prove the result",
+        "sourceIds": [
+          "TES-1905"
+        ]
+      },
+      {
+        "source": "SR-2011",
+        "target": "R2",
+        "type": "inspires",
+        "label": "Motivates a question; does not prove the result",
+        "sourceIds": [
+          "SR-2011"
+        ]
+      },
+      {
+        "source": "SR-2026",
+        "target": "R2",
+        "type": "inspires",
+        "label": "Motivates a question; does not prove the result",
+        "sourceIds": [
+          "SR-2026"
+        ]
+      },
+      {
+        "source": "H01",
+        "target": "R3",
+        "type": "inspires",
+        "label": "Motivates a question; does not prove the result",
+        "sourceIds": [
+          "H01"
+        ]
+      },
+      {
+        "source": "H02",
+        "target": "R3",
+        "type": "inspires",
+        "label": "Motivates a question; does not prove the result",
+        "sourceIds": [
+          "H02"
+        ]
+      },
+      {
+        "source": "H16",
+        "target": "R3",
+        "type": "inspires",
+        "label": "Motivates a question; does not prove the result",
+        "sourceIds": [
+          "H16"
+        ]
+      },
+      {
+        "source": "H01",
+        "target": "R4",
+        "type": "inspires",
+        "label": "Motivates a question; does not prove the result",
+        "sourceIds": [
+          "H01"
+        ]
+      },
+      {
+        "source": "H13",
+        "target": "R4",
+        "type": "inspires",
+        "label": "Motivates a question; does not prove the result",
+        "sourceIds": [
+          "H13"
+        ]
+      },
+      {
+        "source": "H04",
+        "target": "R5",
+        "type": "inspires",
+        "label": "Motivates a question; does not prove the result",
+        "sourceIds": [
+          "H04"
+        ]
+      },
+      {
+        "source": "H05",
+        "target": "R5",
+        "type": "inspires",
+        "label": "Motivates a question; does not prove the result",
+        "sourceIds": [
+          "H05"
+        ]
+      },
+      {
+        "source": "H13",
+        "target": "R5",
+        "type": "inspires",
+        "label": "Motivates a question; does not prove the result",
+        "sourceIds": [
+          "H13"
+        ]
+      },
+      {
+        "source": "DR-UBE2026",
+        "target": "R6",
+        "type": "inspires",
+        "label": "Motivates a question; does not prove the result",
+        "sourceIds": [
+          "DR-UBE2026"
+        ]
+      },
+      {
+        "source": "DREAM-2021",
+        "target": "R6",
+        "type": "inspires",
+        "label": "Motivates a question; does not prove the result",
+        "sourceIds": [
+          "DREAM-2021"
+        ]
+      },
+      {
+        "source": "OBE-2007",
+        "target": "R6",
+        "type": "inspires",
+        "label": "Motivates a question; does not prove the result",
+        "sourceIds": [
+          "OBE-2007"
+        ]
+      },
+      {
+        "source": "DREAM-2026",
+        "target": "R6",
+        "type": "inspires",
+        "label": "Motivates a question; does not prove the result",
+        "sourceIds": [
+          "DREAM-2026"
+        ]
+      },
+      {
+        "source": "DREAM-DATA-2025",
+        "target": "R6",
+        "type": "inspires",
+        "label": "Motivates a question; does not prove the result",
+        "sourceIds": [
+          "DREAM-DATA-2025"
+        ]
+      },
+      {
+        "source": "TES-1898",
+        "target": "P1",
+        "type": "inspires",
+        "label": "Motivates a question; does not prove the result",
+        "sourceIds": [
+          "TES-1898"
+        ]
+      },
+      {
+        "source": "PH-FDA-MDDT",
+        "target": "P1",
+        "type": "inspires",
+        "label": "Motivates a question; does not prove the result",
+        "sourceIds": [
+          "PH-FDA-MDDT"
+        ]
+      },
+      {
+        "source": "PH-SIMNIBS",
+        "target": "P1",
+        "type": "inspires",
+        "label": "Motivates a question; does not prove the result",
+        "sourceIds": [
+          "PH-SIMNIBS"
+        ]
+      },
+      {
+        "source": "PH-AE2026",
+        "target": "P1",
+        "type": "inspires",
+        "label": "Motivates a question; does not prove the result",
+        "sourceIds": [
+          "PH-AE2026"
+        ]
+      },
+      {
+        "source": "NASA-ACT2004",
+        "target": "P2",
+        "type": "inspires",
+        "label": "Motivates a question; does not prove the result",
+        "sourceIds": [
+          "NASA-ACT2004"
+        ]
+      },
+      {
+        "source": "PAT-PAIS2018",
+        "target": "P2",
+        "type": "inspires",
+        "label": "Motivates a question; does not prove the result",
+        "sourceIds": [
+          "PAT-PAIS2018"
+        ]
+      },
+      {
+        "source": "PAT-2026",
+        "target": "P2",
+        "type": "inspires",
+        "label": "Motivates a question; does not prove the result",
+        "sourceIds": [
+          "PAT-2026"
+        ]
+      },
+      {
+        "source": "H16",
+        "target": "history-N1",
+        "type": "documents",
+        "label": "Source scope and reading depth remain applicable",
+        "sourceIds": [
+          "H16"
+        ]
+      },
+      {
+        "source": "H17",
+        "target": "history-N1",
+        "type": "documents",
+        "label": "Source scope and reading depth remain applicable",
+        "sourceIds": [
+          "H17"
+        ]
+      },
+      {
+        "source": "H01",
+        "target": "history-N2",
+        "type": "informs",
+        "label": "Source scope and reading depth remain applicable",
+        "sourceIds": [
+          "H01"
+        ]
+      },
+      {
+        "source": "H02",
+        "target": "history-N2",
+        "type": "informs",
+        "label": "Source scope and reading depth remain applicable",
+        "sourceIds": [
+          "H02"
+        ]
+      },
+      {
+        "source": "H16",
+        "target": "history-N2",
+        "type": "informs",
+        "label": "Source scope and reading depth remain applicable",
+        "sourceIds": [
+          "H16"
+        ]
+      },
+      {
+        "source": "H05",
+        "target": "history-N3",
+        "type": "documents",
+        "label": "Source scope and reading depth remain applicable",
+        "sourceIds": [
+          "H05"
+        ]
+      },
+      {
+        "source": "TES-1898",
+        "target": "history-T1",
+        "type": "documents",
+        "label": "Source scope and reading depth remain applicable",
+        "sourceIds": [
+          "TES-1898"
+        ]
+      },
+      {
+        "source": "H06",
+        "target": "history-J1",
+        "type": "informs",
+        "label": "Source scope and reading depth remain applicable",
+        "sourceIds": [
+          "H06"
+        ]
+      },
+      {
+        "source": "H07",
+        "target": "history-J1",
+        "type": "informs",
+        "label": "Source scope and reading depth remain applicable",
+        "sourceIds": [
+          "H07"
+        ]
+      },
+      {
+        "source": "H08",
+        "target": "history-J1",
+        "type": "informs",
+        "label": "Source scope and reading depth remain applicable",
+        "sourceIds": [
+          "H08"
+        ]
+      },
+      {
+        "source": "H09",
+        "target": "history-J1",
+        "type": "informs",
+        "label": "Source scope and reading depth remain applicable",
+        "sourceIds": [
+          "H09"
+        ]
+      },
+      {
+        "source": "H10",
+        "target": "history-PEN",
+        "type": "informs",
+        "label": "Source scope and reading depth remain applicable",
+        "sourceIds": [
+          "H10"
+        ]
+      },
+      {
+        "source": "H11",
+        "target": "history-PEN",
+        "type": "informs",
+        "label": "Source scope and reading depth remain applicable",
+        "sourceIds": [
+          "H11"
+        ]
+      },
+      {
+        "source": "H12",
+        "target": "history-PEN",
+        "type": "informs",
+        "label": "Source scope and reading depth remain applicable",
+        "sourceIds": [
+          "H12"
+        ]
+      },
+      {
+        "source": "H13",
+        "target": "history-FEY",
+        "type": "documents",
+        "label": "Source scope and reading depth remain applicable",
+        "sourceIds": [
+          "H13"
+        ]
+      },
+      {
+        "source": "R1",
+        "target": "R2",
+        "type": "motivates",
+        "label": "Unresolved limitation selects next investigation",
+        "sourceIds": []
+      },
+      {
+        "source": "R2",
+        "target": "R3",
+        "type": "motivates",
+        "label": "Unresolved limitation selects next investigation",
+        "sourceIds": []
+      },
+      {
+        "source": "R3",
+        "target": "R4",
+        "type": "motivates",
+        "label": "Unresolved limitation selects next investigation",
+        "sourceIds": []
+      },
+      {
+        "source": "R4",
+        "target": "R5",
+        "type": "motivates",
+        "label": "Unresolved limitation selects next investigation",
+        "sourceIds": []
+      },
+      {
+        "source": "R5",
+        "target": "R6",
+        "type": "motivates",
+        "label": "Unresolved limitation selects next investigation",
+        "sourceIds": []
+      }
+    ]
+  },
+  "projects": [
+    {
+      "name": "OpenSync · primary audio laboratory",
+      "url": "https://occult-kranti.github.io/brainwave_opensync/",
+      "role": "Presets, harmonic composition, analysis and shared audio safety controls.",
+      "status": "Existing app, extended in this release"
+    },
+    {
+      "name": "Open Sync · imported sound suite",
+      "url": "https://occult-kranti.github.io/brainwave_opensync/open-sync/",
+      "role": "Complete second application preserved under the primary deployment.",
+      "status": "Integrated subapp"
+    },
+    {
+      "name": "Resonant Vessels · corrected research",
+      "url": "projects/resonant-vessels/research-corrections.html",
+      "role": "Start with source corrections, then explore the amended original folios and concept plates.",
+      "status": "Corrected first-draft exhibit"
+    },
+    {
+      "name": "Historical astronomy & astrology workbench",
+      "url": "projects/astrology-sim-ant/index.html",
+      "role": "Astronomical calculations and historical interpretive systems. Calculation accuracy does not validate astrology predictions.",
+      "status": "Pinned complete import"
+    },
+    {
+      "name": "Newton–Tesla archive · original dossiers",
+      "url": "archive/newton-tesla-alchemy/README.md",
+      "role": "Original owner-supplied research, retained for comparison with this release’s corrections.",
+      "status": "Inherited source archive, not fully revalidated"
+    }
+  ]
+}

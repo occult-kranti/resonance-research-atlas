@@ -1,0 +1,51 @@
+{
+  "status": "verified",
+  "rounds": [
+    {
+      "round": 1,
+      "production_checks": 15,
+      "independent_review_bound": true,
+      "compressed_csv_files": 7,
+      "status": "verified"
+    },
+    {
+      "round": 2,
+      "production_checks": 10,
+      "independent_review_bound": true,
+      "compressed_csv_files": 2,
+      "status": "verified"
+    },
+    {
+      "round": 3,
+      "production_checks": 5,
+      "independent_review_bound": true,
+      "compressed_csv_files": 1,
+      "status": "verified"
+    },
+    {
+      "round": 4,
+      "production_checks": 7,
+      "independent_review_bound": true,
+      "compressed_csv_files": 1,
+      "status": "verified"
+    },
+    {
+      "round": 5,
+      "production_checks": 28,
+      "independent_review_bound": true,
+      "compressed_csv_files": 2,
+      "status": "verified"
+    },
+    {
+      "round": 6,
+      "production_checks": 7,
+      "independent_review_bound": true,
+      "compressed_csv_files": 3,
+      "status": "verified"
+    }
+  ],
+  "total_production_checks": 72,
+  "focused_round1_unit_tests": 4,
+  "regenerated": false,
+  "scope": "Source/result/review/archive binding; with --regenerate also reruns all existing production checks and the four focused tests. No new research round."
+}

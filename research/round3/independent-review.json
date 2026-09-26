@@ -1,0 +1,37 @@
+{
+  "reviewer": "advisor; independent minors/Leibniz determinant, exact analytic inverse; no producer RREF import",
+  "original_nonzero_2x2_minor": "1",
+  "independent_3x3_determinant": "1",
+  "duplicate_3x3_determinant": "0",
+  "ranks": [
+    2,
+    3,
+    2
+  ],
+  "domain_dimension": 3,
+  "nullities": [
+    1,
+    0,
+    1
+  ],
+  "kernel": [
+    -1,
+    -1,
+    1
+  ],
+  "A_times_kernel": [
+    0,
+    0
+  ],
+  "exact_inverse": "c3=y3; c1=y1-y3; c2=y2-y3",
+  "all_saved_fiber_records_exact": true,
+  "records_checked": 101,
+  "continuous_fiber_proof": "c1=1/5-t>=0 iff t<=1/5; c2=2/5-t>=0 iff t<=2/5; c3=3/10+t>=0 iff t>=-3/10, so intersection is [-3/10,1/5].",
+  "independent_known_total_caveat": "An independently known total amount is another independent assay for this model; absence of sum=1 is a model premise, not a universal chemistry claim.",
+  "source_sha256": {
+    "contract.md": "22a8d551a95c9591c21b790fdf27982590cf425615ae3c0bd249a9618b82b439",
+    "solver.py": "a2bc0e2d786fa1c0a710290dd85d37710c31324ef3c2eebed114d1549164d385",
+    "results.json": "e4db11788b3d500d74f584456a88e46d10f50d17067c28be23e790e201ee175a",
+    "composition_fiber.csv": "37d4b3eaa3d0e254d41d7a2e8dd97642681d7b37b5b2a0ba26a4b7976cdcabc5"
+  }
+}

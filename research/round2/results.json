@@ -1,0 +1,190 @@
+{
+  "round": 2,
+  "status": "passed",
+  "model": "x''+2 gamma x'+omega0^2 x=d; classical surrogate, not Earth or human",
+  "f0_Hz": 8.0,
+  "white_source_PSD_m2_per_s3": 1.0,
+  "frequency_grid": {
+    "min_Hz": 0,
+    "max_Hz": 20,
+    "step_Hz": 0.001,
+    "points": 20001
+  },
+  "cases": [
+    {
+      "gamma_per_s": 5.0,
+      "predicted_displacement_peak_Hz": 7.920447285631714,
+      "grid_displacement_peak_Hz": 7.92,
+      "predicted_velocity_peak_Hz": 8.0,
+      "grid_velocity_peak_Hz": 8.0,
+      "poles_per_s": [
+        [
+          -5.0,
+          50.01618464736065
+        ],
+        [
+          -5.0,
+          -50.01618464736065
+        ]
+      ]
+    },
+    {
+      "gamma_per_s": 20.0,
+      "predicted_displacement_peak_Hz": 6.613301994581258,
+      "grid_displacement_peak_Hz": 6.613,
+      "predicted_velocity_peak_Hz": 8.0,
+      "grid_velocity_peak_Hz": 8.0,
+      "poles_per_s": [
+        [
+          -20.0,
+          46.11527650008049
+        ],
+        [
+          -20.0,
+          -46.11527650008049
+        ]
+      ]
+    },
+    {
+      "gamma_per_s": 35.54306350526693,
+      "predicted_displacement_peak_Hz": 0.0,
+      "grid_displacement_peak_Hz": 0.0,
+      "predicted_velocity_peak_Hz": 8.0,
+      "grid_velocity_peak_Hz": 8.0,
+      "poles_per_s": [
+        [
+          -35.54306350526693,
+          35.54306350526693
+        ],
+        [
+          -35.54306350526693,
+          -35.54306350526693
+        ]
+      ]
+    },
+    {
+      "gamma_per_s": 40.0,
+      "predicted_displacement_peak_Hz": 0.0,
+      "grid_displacement_peak_Hz": 0.0,
+      "predicted_velocity_peak_Hz": 8.0,
+      "grid_velocity_peak_Hz": 8.0,
+      "poles_per_s": [
+        [
+          -40.0,
+          30.440412721887917
+        ],
+        [
+          -40.0,
+          -30.440412721887917
+        ]
+      ]
+    },
+    {
+      "gamma_per_s": 60.0,
+      "predicted_displacement_peak_Hz": 0.0,
+      "grid_displacement_peak_Hz": 0.0,
+      "predicted_velocity_peak_Hz": 8.0,
+      "grid_velocity_peak_Hz": 8.0,
+      "poles_per_s": [
+        [
+          -27.237502028674243,
+          0.0
+        ],
+        [
+          -92.76249797132576,
+          0.0
+        ]
+      ]
+    }
+  ],
+  "source_ambiguity": {
+    "model1": {
+      "f0_Hz": 8,
+      "gamma_per_s": 5
+    },
+    "model2": {
+      "f0_Hz": 10,
+      "gamma_per_s": 8
+    },
+    "max_relative_output_error": 2.1476769881085303e-16,
+    "source2_min": 0.33535833193112347,
+    "source2_max": 11.851444764074964
+  },
+  "known_source_recovery": {
+    "frequencies_Hz": [
+      1.0,
+      4.0,
+      8.0,
+      12.0,
+      18.0
+    ],
+    "synthetic_PSD_m2_s": [
+      1.615557232275713e-07,
+      2.736686281193747e-07,
+      3.9578587360288195e-06,
+      9.484804273084933e-08,
+      9.377628057455696e-09
+    ],
+    "inverse_polynomial_coefficients_SI": [
+      1.0,
+      -4953.237453357755,
+      6383802.190004401
+    ],
+    "recovered_f0_Hz": 8.000000000000005,
+    "recovered_gamma_per_s": 5.000000000000091,
+    "relative_f0_error": 6.661338147750939e-16,
+    "relative_gamma_error": 1.8118839761882553e-14
+  },
+  "checks": [
+    {
+      "name": "peak_prediction_gamma_5",
+      "passed": true
+    },
+    {
+      "name": "peak_prediction_gamma_20",
+      "passed": true
+    },
+    {
+      "name": "peak_prediction_gamma_35.5431",
+      "passed": true
+    },
+    {
+      "name": "peak_prediction_gamma_40",
+      "passed": true
+    },
+    {
+      "name": "peak_prediction_gamma_60",
+      "passed": true
+    },
+    {
+      "name": "measurement_transfer_identity",
+      "passed": true,
+      "observed": 8.673617379884035e-18
+    },
+    {
+      "name": "unknown_source_nonidentifiability",
+      "passed": true,
+      "max_relative_PSD_error": 2.1476769881085303e-16
+    },
+    {
+      "name": "review_added_real_source_PSD_evenness",
+      "passed": true
+    },
+    {
+      "name": "source_only_peak_shift",
+      "passed": true,
+      "white_peak_Hz": 7.92,
+      "colored_peak_Hz": 11.963000000000001
+    },
+    {
+      "name": "calibrated_known_source_recovery",
+      "passed": true
+    }
+  ],
+  "runtime": {
+    "numpy": "2.3.5"
+  },
+  "contract_sha256": "6774fe88c703dc7a0d3689f6cd65155940fbb945cb7c0472767e55bbcbeec3ab",
+  "clarification_sha256": "e5c0540eef7304234ba42f9177c06170a56a1407d52fd220d765187fa542e123",
+  "solver_sha256": "0409f43487d64729ebc2d3c6d0a6fc1fd899943571d0ab795784cb0da694ff20"
+}

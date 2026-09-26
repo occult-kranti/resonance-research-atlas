@@ -1,0 +1,22 @@
+{
+  "method": "gzip, mtime=0, empty original filename; verified exact decompression",
+  "reproduce": "Run solver.py, then python research/compress_evidence.py round2",
+  "files": [
+    {
+      "raw_filename": "source_ambiguity.csv",
+      "gzip_filename": "source_ambiguity.csv.gz",
+      "raw_bytes": 2182671,
+      "gzip_bytes": 605677,
+      "raw_sha256": "0ba127c818da43d96f399884909008b3df18480368785dead412145f0409a683",
+      "gzip_sha256": "94a62fd2d562eb3acdf7cabe6cd660c6e1acd69ce476dd11584f8dde783caaed"
+    },
+    {
+      "raw_filename": "spectra.csv",
+      "gzip_filename": "spectra.csv.gz",
+      "raw_bytes": 6692492,
+      "gzip_bytes": 2148161,
+      "raw_sha256": "aad8854d4c4e75e85c9d87a9740506170150f31aa57a8e319502028e0fa46701",
+      "gzip_sha256": "fb14e93ca3a47426d57c329b8a518afb8c4bc4e3e8465d7cdeba7eee52cfd884"
+    }
+  ]
+}

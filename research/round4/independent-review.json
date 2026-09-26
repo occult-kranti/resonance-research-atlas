@@ -1,0 +1,54 @@
+{
+  "reviewer": "advisor; independently derive inverse coefficients and absolute row-sum induced infinity norm",
+  "error_map": "Delta c1=(1+1/epsilon) eta1\u2212eta3/epsilon; Delta c2=eta2+eta1/epsilon\u2212eta3/epsilon; Delta c3=(eta3\u2212eta1)/epsilon",
+  "delta": "1/1000",
+  "cases": [
+    {
+      "epsilon": "1",
+      "inverse_row_sum_bounds": [
+        "3/1000",
+        "3/1000",
+        "1/500"
+      ],
+      "corner_extrema_match": true
+    },
+    {
+      "epsilon": "1/10",
+      "inverse_row_sum_bounds": [
+        "21/1000",
+        "21/1000",
+        "1/50"
+      ],
+      "corner_extrema_match": true
+    },
+    {
+      "epsilon": "1/100",
+      "inverse_row_sum_bounds": [
+        "201/1000",
+        "201/1000",
+        "1/5"
+      ],
+      "corner_extrema_match": true
+    },
+    {
+      "epsilon": "1/1000",
+      "inverse_row_sum_bounds": [
+        "2001/1000",
+        "2001/1000",
+        "2"
+      ],
+      "corner_extrema_match": true
+    }
+  ],
+  "independent_row_bounds": [
+    "1/500",
+    "1/500",
+    "1/1000"
+  ],
+  "completeness": "For independent per-channel errors in [-delta,delta], each linear coordinate maximum is delta times the sum of absolute row coefficients. Choose signs of eta matching each row; cube vertices attain all extrema.",
+  "source_sha256": {
+    "contract.md": "4d7c2b7bca94378ca10ae73e725a9f78bc63396e8782954e706acf4933233af5",
+    "solver.py": "985a237f5737fcefb2dca66909fa575214365932f9622f44e2435ef2f57ced66",
+    "results.json": "8d226ea52e35a6c5893aa6c8ca8cef9768f347f567f2b22a599b04cfe2d6d910"
+  }
+}

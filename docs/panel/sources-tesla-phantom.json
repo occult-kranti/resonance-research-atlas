@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.0",
+  "note": "Supplement to sources-tesla.json; inherited existing IDs are referenced by tesla-phantom-protocol.md.",
+  "additional_reading": [
+    {
+      "source_id": "BIO-FDA",
+      "sections_read_added": "Sections5 nonclinical analysis/test reporting;8 EMC; selected10 sham, hypotheses, endpoint and statistical design passages",
+      "web_ref": "turn28view4"
+    }
+  ],
+  "sources": [
+    {
+      "id": "PH-FDA-MDDT",
+      "title": "Virtual MRI Safety Evaluations of Medical Devices — qualification summary",
+      "url": "https://www.fda.gov/media/154181/download?attachment=",
+      "date": null,
+      "date_note": "Summary lists submission 2021-04-07; qualification publication date not established",
+      "version": "Tool Version 1.0; submission U210149",
+      "sections_read": "All four pages: mechanism, qualified context, validation, limitations and conclusion",
+      "reading_depth": "Qualification summary read; raw validation data not inspected",
+      "provenance": "FDA official qualification summary",
+      "claim_category": "regulatory nonclinical tool validation in restricted context",
+      "summary": "Describes coupled electromagnetic and transient thermal phantom calculations, comparison with measured heating, and explicit MRI-context limits. It does not qualify the present project or establish clinical efficacy.",
+      "model": "Maxwell field solution coupled to passive heat conduction",
+      "observable": "Temperature rise in defined phantom context",
+      "control": "Measured/simulated reference comparison, geometry and material scope",
+      "unresolved": "Our implementation, frequencies and geometry would need independent validation",
+      "web_ref": "turn27view1",
+      "accessed": "2026-09-26"
+    },
+    {
+      "id": "PH-SIMNIBS",
+      "title": "SimNIBS FAQ",
+      "url": "https://simnibs.github.io/simnibs/build/html/faq.html",
+      "date": null,
+      "date_note": "Undated live documentation read 2026-09-26",
+      "version": "4.6.0 documentation",
+      "sections_read": "TACS quasi-static approximation, TMS dI/dt scaling, field representations and units",
+      "reading_depth": "Complete short FAQ read",
+      "provenance": "Official open-source project documentation",
+      "claim_category": "software model assumptions/documentation",
+      "summary": "Documents quasistatic scaling, field variables and units. In the stated low-frequency approximation, changing sinusoidal frequency alone does not supply a new spatial field distribution.",
+      "model": "Linear quasistatic field solution scaled by current or dI/dt",
+      "observable": "Electric field vectors and units",
+      "control": "Assumption audit and independent analytic fixture",
+      "unresolved": "Does not certify our solver; frequency dispersion must be independently modeled when applicable",
+      "web_ref": "turn27view0",
+      "accessed": "2026-09-26"
+    },
+    {
+      "id": "PH-AE2026",
+      "title": "Non-invasive in vivo acoustoelectric neuromodulation and its contribution to ultrasound stimulation",
+      "url": "https://www.nature.com/articles/s41467-026-73826-2",
+      "doi": "10.1038/s41467-026-73826-2",
+      "date": "2026-06-17",
+      "sections_read": "Abstract, Introduction, opening Results subsection Acoustoelectric amplitude characterisation",
+      "reading_depth": "Selected primary paper sections; no independent numerical or experimental replication",
+      "provenance": "Rintoul et al., Nature Communications 17,5073 (2026)",
+      "claim_category": "primary experimental research with phantom and animal components",
+      "summary": "Describes acoustoelectric mixing and electrical coupling artifacts associated with ultrasound apparatus. We use it as a source for separating physical channels; reported neural outcomes are neither reproduced nor generalized.",
+      "model": "Multiplicative acoustic/electric interaction and apparatus pickup",
+      "observable": "Frequency components and spatial field distribution",
+      "control": "Separate physical input channels, independent calibration and artifact measurement",
+      "unresolved": "Full methods and raw data not audited; no ultrasound or animal experiment proposed here",
+      "web_ref": "turn27view3",
+      "accessed": "2026-09-26"
+    }
+  ]
+}

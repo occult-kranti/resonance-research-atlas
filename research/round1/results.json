@@ -1,0 +1,375 @@
+{
+  "round": 1,
+  "status": "passed",
+  "scope": "Classical passive mechanical analogy only; no empirical or clinical inference.",
+  "contract_sha256": "1e66586ee0f4ac4f740b07eeef57d90c8982583cb06356844fe7ceed295dc72d",
+  "solver_sha256": "c601bf5b6a416365c04bb9cc560d2feead47255375da6532c1c8b431897a3e59",
+  "test_source_sha256": "d7a8ef81f93eddf79da512cf856b04d22997bd6e863a1552e8c44c0b939cece7",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "parameters": {
+    "mass_kg": 1.0,
+    "ground_stiffness_N_per_m": 157.91367041742973,
+    "coupling_stiffness_N_per_m": 40.0,
+    "damping_kg_per_s": 0.4,
+    "force_N": 0.1,
+    "drive_Hz": 2.0
+  },
+  "duration_s": 20,
+  "baseline_dt_s": 0.002,
+  "undamped_modes_Hz": [
+    2.0,
+    2.4548775270564427
+  ],
+  "controls": {
+    "baseline": {
+      "initial_energy_J": 0.0,
+      "final_energy_J": 0.015118176158820716,
+      "input_work_J": 0.09493296614114781,
+      "dissipated_energy_J": 0.07981479029535342,
+      "endpoint_residual_J": 3.130263270811895e-10,
+      "max_abs_residual_J": 3.137434895217339e-10,
+      "endpoint_residual_scale_J": 0.09493296614114781,
+      "relative_endpoint_residual": 3.2973406373480115e-09,
+      "endpoint_state_SI": [
+        -0.009808838872628298,
+        -0.009721520211256371,
+        0.007771558498130146,
+        -0.007625851641099116
+      ]
+    },
+    "undriven_lossless": {
+      "initial_energy_J": 0.009895683520871487,
+      "final_energy_J": 0.009895682670804689,
+      "input_work_J": 0.0,
+      "dissipated_energy_J": 0.0,
+      "endpoint_residual_J": -8.500667982025423e-10,
+      "max_abs_residual_J": 8.500667982025423e-10,
+      "endpoint_residual_scale_J": 0.009895683520871487,
+      "relative_endpoint_residual": 8.590278745370377e-08,
+      "endpoint_state_SI": [
+        0.00908984175168191,
+        0.0009101580733127724,
+        -0.04436553298281547,
+        0.044365637968462164
+      ],
+      "relative_energy_drift": 8.590278745370377e-08,
+      "max_analytic_displacement_error_m": 1.5637935561979652e-08
+    },
+    "undriven_damped": {
+      "initial_energy_J": 0.009895683520871487,
+      "final_energy_J": 3.3423611394832587e-06,
+      "input_work_J": 0.0,
+      "dissipated_energy_J": 0.009892341198584795,
+      "endpoint_residual_J": 3.885279077631143e-11,
+      "max_abs_residual_J": 3.885346037957316e-11,
+      "endpoint_residual_scale_J": 0.009895683520871487,
+      "relative_endpoint_residual": 3.92623619120044e-09,
+      "endpoint_state_SI": [
+        0.00016839211089704633,
+        1.4578697561013003e-05,
+        -0.0007457825527547869,
+        0.0008190485779203033
+      ],
+      "maximum_step_energy_increase_J": -9.156794506919177e-12
+    },
+    "zero_coupling": {
+      "initial_energy_J": 0.0,
+      "final_energy_J": 0.0301169052059695,
+      "input_work_J": 0.1886435671524905,
+      "dissipated_energy_J": 0.15852666257115733,
+      "endpoint_residual_J": 6.246363148942891e-10,
+      "max_abs_residual_J": 6.260856832973616e-10,
+      "endpoint_residual_scale_J": 0.1886435671524905,
+      "relative_endpoint_residual": 3.311198597031208e-09,
+      "endpoint_state_SI": [
+        -0.01953035908388469,
+        0.0,
+        0.00014570685703082804,
+        0.0
+      ]
+    },
+    "zero_input_rest": {
+      "initial_energy_J": 0.0,
+      "final_energy_J": 0.0,
+      "input_work_J": 0.0,
+      "dissipated_energy_J": 0.0,
+      "endpoint_residual_J": 0.0,
+      "max_abs_residual_J": 0.0,
+      "endpoint_residual_scale_J": 1e-12,
+      "relative_endpoint_residual": 0.0,
+      "endpoint_state_SI": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "off_resonance": {
+      "initial_energy_J": 0.0,
+      "final_energy_J": 3.03619084176442e-05,
+      "input_work_J": 0.0003128157159991507,
+      "dissipated_energy_J": 0.0002824538161867817,
+      "endpoint_residual_J": 8.60527518383239e-12,
+      "max_abs_residual_J": 8.60527518383239e-12,
+      "endpoint_residual_scale_J": 0.0003128157159991507,
+      "relative_endpoint_residual": 2.7509088398409474e-08,
+      "endpoint_state_SI": [
+        -8.448715383309605e-06,
+        9.303218132118172e-10,
+        -0.007714830905710261,
+        0.001091362940613496
+      ],
+      "final_5s_rms_q1_m": 0.0002522020186838406,
+      "baseline_final_5s_rms_q1_m": 0.0068565066431514375
+    },
+    "lossless_reversal": {
+      "q_error_m": 2.3570585587495696e-10,
+      "v_error_m_per_s": 7.918064259815338e-10
+    },
+    "sign_reversal": {
+      "state_error_SI": 0.0,
+      "work_loss_error_J": 0.0,
+      "energy_error_J": 0.0
+    }
+  },
+  "convergence": [
+    {
+      "dt_s": 0.004,
+      "max_abs_budget_residual_J": 6.346538711232697e-10,
+      "endpoint_q_error_m": 4.832750731473591e-10,
+      "endpoint_v_error_m_per_s": 5.369286029214845e-07
+    },
+    {
+      "dt_s": 0.002,
+      "max_abs_budget_residual_J": 3.137434895217339e-10,
+      "endpoint_q_error_m": 4.300112069173375e-11,
+      "endpoint_v_error_m_per_s": 3.3415785022694634e-08
+    },
+    {
+      "dt_s": 0.001,
+      "max_abs_budget_residual_J": 3.055432296061866e-11,
+      "endpoint_q_error_m": 3.9664366846559886e-12,
+      "endpoint_v_error_m_per_s": 1.964761820031388e-09
+    },
+    {
+      "dt_s": 0.0005,
+      "max_abs_budget_residual_J": 2.251934749786244e-12,
+      "endpoint_q_error_m": 0.0,
+      "endpoint_v_error_m_per_s": 0.0
+    }
+  ],
+  "steady_state_checks": [
+    {
+      "frequency_Hz": 2.0,
+      "time_fit_amplitude_m": [
+        0.010005492029362493,
+        0.009927411854117128
+      ],
+      "exact_amplitude_m": [
+        0.010005685144758521,
+        0.009927606935323345
+      ],
+      "relative_amplitude_error": [
+        1.9300566951152592e-05,
+        1.96503757136768e-05
+      ],
+      "exact_mean_input_power_W": 0.006274576984955172,
+      "exact_mean_loss_power_W": 0.006274576984955171
+    },
+    {
+      "frequency_Hz": 3.5,
+      "time_fit_amplitude_m": [
+        0.00035683030768827935,
+        4.993582285643307e-05
+      ],
+      "exact_amplitude_m": [
+        0.00035683004492985865,
+        4.993557474737606e-05
+      ],
+      "relative_amplitude_error": [
+        7.363685441873818e-07,
+        4.968583184837198e-06
+      ],
+      "exact_mean_input_power_W": 1.2556586210766882e-05,
+      "exact_mean_loss_power_W": 1.2556586210766886e-05
+    }
+  ],
+  "sweep": {
+    "points_per_damping": 701,
+    "damping_kg_per_s": [
+      0.2,
+      0.4,
+      0.8,
+      2.0
+    ],
+    "range_Hz": [
+      0.5,
+      4
+    ],
+    "max_abs_mean_power_residual_W": 3.469446951953614e-18
+  },
+  "wrong_model_control": {
+    "omitted_dissipation_endpoint_residual_J": -0.07981478998232709,
+    "correct_endpoint_abs_residual_J": 3.130263270811895e-10,
+    "wrong_to_correct_abs_ratio": 254977882.2968637
+  },
+  "checks": [
+    {
+      "name": "baseline_energy_budget",
+      "passed": true,
+      "observed": 3.137434895217339e-10,
+      "criterion": "max absolute residual < 1e-6 J"
+    },
+    {
+      "name": "undriven_conservation",
+      "passed": true,
+      "observed": 8.590278745370377e-08,
+      "criterion": "relative drift < 1e-5"
+    },
+    {
+      "name": "analytic_normal_modes",
+      "passed": true,
+      "observed": 1.5637935561979652e-08,
+      "criterion": "maximum displacement error < 1e-7 m"
+    },
+    {
+      "name": "passive_decay",
+      "passed": true,
+      "observed": -9.156794506919177e-12,
+      "criterion": "maximum step increase <= 1e-12 J and final energy below initial"
+    },
+    {
+      "name": "zero_coupling_receiver",
+      "passed": true,
+      "observed": 0.0,
+      "criterion": "receiver displacement and velocity < 1e-14 in SI units"
+    },
+    {
+      "name": "zero_input_rest",
+      "passed": true,
+      "observed": 0.0,
+      "criterion": "all augmented states exactly zero"
+    },
+    {
+      "name": "off_resonance_control",
+      "passed": true,
+      "observed": {
+        "off_rms_m": 0.0002522020186838406,
+        "baseline_rms_m": 0.0068565066431514375
+      },
+      "criterion": "off resonance RMS < baseline RMS"
+    },
+    {
+      "name": "timestep_budget_convergence",
+      "passed": true,
+      "observed": [
+        6.346538711232697e-10,
+        3.137434895217339e-10,
+        3.055432296061866e-11,
+        2.251934749786244e-12
+      ],
+      "criterion": "strictly decreasing max closure residual with timestep refinement"
+    },
+    {
+      "name": "timestep_state_convergence",
+      "passed": true,
+      "observed": {
+        "q_errors_m": [
+          4.832750731473591e-10,
+          4.300112069173375e-11,
+          3.9664366846559886e-12,
+          0.0
+        ],
+        "v_errors_m_per_s": [
+          5.369286029214845e-07,
+          3.3415785022694634e-08,
+          1.964761820031388e-09,
+          0.0
+        ]
+      },
+      "criterion": "strictly decreasing endpoint errors against finest run"
+    },
+    {
+      "name": "lossless_time_reversal",
+      "passed": true,
+      "observed": {
+        "q_error_m": 2.3570585587495696e-10,
+        "v_error_m_per_s": 7.918064259815338e-10
+      },
+      "criterion": "max q and v errors < 1e-7 in respective SI units"
+    },
+    {
+      "name": "linear_sign_symmetry",
+      "passed": true,
+      "observed": {
+        "state_error_SI": 0.0,
+        "work_loss_error_J": 0.0,
+        "energy_error_J": 0.0
+      },
+      "criterion": "state negation and energy/work/loss agreement < 1e-12 in SI units"
+    },
+    {
+      "name": "steady_state_2_Hz",
+      "passed": true,
+      "observed": {
+        "frequency_Hz": 2.0,
+        "time_fit_amplitude_m": [
+          0.010005492029362493,
+          0.009927411854117128
+        ],
+        "exact_amplitude_m": [
+          0.010005685144758521,
+          0.009927606935323345
+        ],
+        "relative_amplitude_error": [
+          1.9300566951152592e-05,
+          1.96503757136768e-05
+        ],
+        "exact_mean_input_power_W": 0.006274576984955172,
+        "exact_mean_loss_power_W": 0.006274576984955171
+      },
+      "criterion": "both oscillator relative amplitude errors < 1e-3"
+    },
+    {
+      "name": "steady_state_3.5_Hz",
+      "passed": true,
+      "observed": {
+        "frequency_Hz": 3.5,
+        "time_fit_amplitude_m": [
+          0.00035683030768827935,
+          4.993582285643307e-05
+        ],
+        "exact_amplitude_m": [
+          0.00035683004492985865,
+          4.993557474737606e-05
+        ],
+        "relative_amplitude_error": [
+          7.363685441873818e-07,
+          4.968583184837198e-06
+        ],
+        "exact_mean_input_power_W": 1.2556586210766882e-05,
+        "exact_mean_loss_power_W": 1.2556586210766886e-05
+      },
+      "criterion": "both oscillator relative amplitude errors < 1e-3"
+    },
+    {
+      "name": "steady_mean_power_identity",
+      "passed": true,
+      "observed": 3.469446951953614e-18,
+      "criterion": "all values finite; dissipation >= 0; max power residual < 1e-12 W"
+    },
+    {
+      "name": "wrong_model_omitted_dissipation",
+      "passed": true,
+      "observed": {
+        "omitted_dissipation_endpoint_residual_J": -0.07981478998232709,
+        "correct_endpoint_abs_residual_J": 3.130263270811895e-10,
+        "wrong_to_correct_abs_ratio": 254977882.2968637
+      },
+      "criterion": "wrong residual > 1e-4 J and >1000 times correct residual"
+    }
+  ]
+}

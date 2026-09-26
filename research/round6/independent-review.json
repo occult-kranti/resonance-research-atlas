@@ -1,0 +1,30 @@
+{
+  "status": "accepted within exact synthetic target-test model",
+  "review_method": "Alternate integer weighted-string calculation frozen before producer result read, then source inspection and saved-output comparison. No producer functions imported.",
+  "checks": {
+    "contract_hash_matches_frozen_precompute": true,
+    "critical_hits_match": true,
+    "fixed_tail_exact_matches": true,
+    "optional_stop_exact_matches": true,
+    "all40_integer_path_counts_match_fraction_DP": true,
+    "all_leakage_power_exact_matches": true,
+    "synthetic_raw_hash_matches": true,
+    "synthetic_rows": 50000,
+    "fixed_count_recomputed": 1318,
+    "optional_count_recomputed": 6945,
+    "saved_counts_match_results": true
+  },
+  "source_sha256": {
+    "contract.md": "3fe9d8287e475da31cf2d23b0835d43f651c22097977c80a347a35b6df4f8a20",
+    "solver.py": "165d8694578366d1dd488bc47d7d64e61d360096e5dfbbd9cc3c3378aaf2c618",
+    "results.json": "add66d0ad558084e1135ddf28d490ba69679e43c613b556e1fe0ffef89405497",
+    "independent-precompute.json": "8b5dcc5efabafb2955cf487b1f09c5957d73767d645b4b7a6dfde70db7521b88"
+  },
+  "scope": "No dream, lucid-dream, body-location or astral-travel outcome was measured. No seventh research round selected.",
+  "final_revision_note": "Producer changed only plot x-limits to show all 0\u201340 hit counts and reran. Final exact null/optional/leakage values remain equal to independent precompute; all production checks pass. Original reviewed hashes retained above; final source hashes follow.",
+  "final_source_sha256": {
+    "contract.md": "3fe9d8287e475da31cf2d23b0835d43f651c22097977c80a347a35b6df4f8a20",
+    "solver.py": "9e893783ef5321dcebb9d09711966811ae2cc711db48f2d6a986ae75b295ad03",
+    "results.json": "08b72d1d2cc17f3d2f084df7b0dbbb1913bd379041ec08d4334f956ad6e6c69c"
+  }
+}

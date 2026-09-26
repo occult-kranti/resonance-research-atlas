@@ -1,0 +1,18 @@
+{
+  "reason": "Final plot now includes all 0\u201340 possible hit counts. Exact results equal independently frozen expected fractions; archive content and outcome counts were independently verified. Original review hash history retained.",
+  "current_source_sha256": {
+    "contract.md": "3fe9d8287e475da31cf2d23b0835d43f651c22097977c80a347a35b6df4f8a20",
+    "solver.py": "9e893783ef5321dcebb9d09711966811ae2cc711db48f2d6a986ae75b295ad03",
+    "results.json": "08b72d1d2cc17f3d2f084df7b0dbbb1913bd379041ec08d4334f956ad6e6c69c"
+  },
+  "initial_review_source_sha256": {
+    "contract.md": "3fe9d8287e475da31cf2d23b0835d43f651c22097977c80a347a35b6df4f8a20",
+    "solver.py": "165d8694578366d1dd488bc47d7d64e61d360096e5dfbbd9cc3c3378aaf2c618",
+    "results.json": "add66d0ad558084e1135ddf28d490ba69679e43c613b556e1fe0ffef89405497",
+    "independent-precompute.json": "8b5dcc5efabafb2955cf487b1f09c5957d73767d645b4b7a6dfde70db7521b88"
+  },
+  "contract_unchanged": true,
+  "independent_exact_results_unchanged": true,
+  "current_all_production_checks_pass": true,
+  "admission": "Accepted within exact synthetic model; current visual revision linked here."
+}

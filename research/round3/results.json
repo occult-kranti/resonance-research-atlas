@@ -1,0 +1,138 @@
+{
+  "round": 3,
+  "status": "passed",
+  "model": "Exact synthetic linear assays; relative amounts are not fractions",
+  "original_matrix": [
+    [
+      1,
+      0,
+      1
+    ],
+    [
+      0,
+      1,
+      1
+    ]
+  ],
+  "independent_matrix": [
+    [
+      1,
+      0,
+      1
+    ],
+    [
+      0,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "duplicate_matrix": [
+    [
+      1,
+      0,
+      1
+    ],
+    [
+      0,
+      1,
+      1
+    ],
+    [
+      1,
+      0,
+      1
+    ]
+  ],
+  "domain_dimension": 3,
+  "ranks": {
+    "original": 2,
+    "independent": 3,
+    "duplicate": 2
+  },
+  "nullities": {
+    "original": 1,
+    "independent": 0,
+    "duplicate": 1
+  },
+  "kernel": [
+    "-1",
+    "-1",
+    "1"
+  ],
+  "reference": [
+    "1/5",
+    "2/5",
+    "3/10"
+  ],
+  "original_signals": [
+    "1/2",
+    "7/10"
+  ],
+  "fiber_interval": [
+    "-3/10",
+    "1/5"
+  ],
+  "endpoints": [
+    [
+      "1/2",
+      "7/10",
+      "0"
+    ],
+    [
+      "0",
+      "1/5",
+      "1/2"
+    ]
+  ],
+  "endpoint_sums": [
+    "6/5",
+    "7/10"
+  ],
+  "original_rref": [
+    [
+      "1",
+      "0",
+      "1"
+    ],
+    [
+      "0",
+      "1",
+      "1"
+    ]
+  ],
+  "original_rectangular_singular_values": [
+    1.7320508075688774,
+    1.0
+  ],
+  "note": "A 2x3 matrix has only two returned singular values; both nonzero does not remove its one-dimensional kernel.",
+  "checks": [
+    {
+      "name": "exact_kernel_and_domain_rank",
+      "passed": true
+    },
+    {
+      "name": "nonnegative_equal_signal_fiber",
+      "passed": true
+    },
+    {
+      "name": "independent_assay_recovery",
+      "passed": true,
+      "numerical_error": 5.551115123125783e-17
+    },
+    {
+      "name": "duplicate_assay_remains_ambiguous",
+      "passed": true
+    },
+    {
+      "name": "no_hidden_sum_constraint",
+      "passed": true
+    }
+  ],
+  "contract_sha256": "22a8d551a95c9591c21b790fdf27982590cf425615ae3c0bd249a9618b82b439",
+  "solver_sha256": "a2bc0e2d786fa1c0a710290dd85d37710c31324ef3c2eebed114d1549164d385"
+}

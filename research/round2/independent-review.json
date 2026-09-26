@@ -1,0 +1,16 @@
+{
+  "sx_max_relative_error": 9.276118262991744e-16,
+  "sv_max_absolute_error": 8.673617379884035e-18,
+  "compensating_source_ratio_max_relative_error": 1.265377718723615e-15,
+  "independent_three_point_fit_held_out_relative_error": 9.672200932783104e-16,
+  "recovered_f0_Hz": 8.000000000000002,
+  "recovered_gamma_per_s": 5.0,
+  "displacement_derivative_sign_control": "dSx/dw=-4w(w\u00b2+2\u03b3\u00b2\u2212\u03c90\u00b2)/D\u00b2; gamma>=\u03c90/sqrt(2) implies negative derivative for w>0.",
+  "velocity_derivative_sign_control": "dSv/dw=2w(\u03c90\u2074\u2212w\u2074)/D\u00b2; for gamma>0 maximum occurs at \u03c90 regardless of damping.",
+  "source_sha256": {
+    "contract.md": "6774fe88c703dc7a0d3689f6cd65155940fbb945cb7c0472767e55bbcbeec3ab",
+    "contract-clarification.md": "e5c0540eef7304234ba42f9177c06170a56a1407d52fd220d765187fa542e123",
+    "solver.py": "0409f43487d64729ebc2d3c6d0a6fc1fd899943571d0ab795784cb0da694ff20",
+    "results.json": "7405b63ff1072202f8d57f05239ec8e4d3584d45b5c6f878935da8e597f0d323"
+  }
+}

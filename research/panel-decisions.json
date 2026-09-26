@@ -1,0 +1,70 @@
+{
+  "program": "Source-led resonance, alchemy inference and dream-method research",
+  "reviewDate": "2026-09-26",
+  "dateContext": "user local date, America/New_York",
+  "status": "six_model_rounds_accepted",
+  "reviewer": "advisor model agent; separate source/implementation agents share correlated model-family provenance, not human peer review",
+  "noveltyStatus": "New project integration, source corrections and reproducible teaching/measurement benchmarks; no new physical law, therapy, transmutation or metaphysical effect claimed.",
+  "rounds": [
+    {
+      "round": 1,
+      "status": "accepted",
+      "scope": "Finite linear passive two-mass mechanical model; exact energy identity plus finite-time numerical verification.",
+      "finding": "Input work 0.0949329661 J accounts for storage 0.0151181762 J and dissipation 0.0798147903 J. Independent quadrature, matrix exponential and closed-form phasor checks agree.",
+      "nextReason": "Energy closure does not identify what a spectral peak measures; select a measurement-map test.",
+      "withheld": "Human healing, source-free energy, Earth transfer, antigravity and universal-body-frequency conclusions.",
+      "review": "research/round1/independent-review.json",
+      "revisionReview": "research/round1/independent-review-revision.json"
+    },
+    {
+      "round": 2,
+      "status": "accepted",
+      "scope": "Calibrated or uncalibrated damped-oscillator transfer/PSD surrogate; not an Earth or physiological model.",
+      "finding": "The same poles yield displacement peak 6.6133 Hz versus velocity peak 8 Hz in a selected case. Unknown forcing permits exact output ambiguity; calibrated known forcing recovers the parameters.",
+      "nextReason": "A sign need not identify a cause; test inherited alchemical visual-sign-to-composition inference.",
+      "withheld": "Universal impossibility of spectral identification, a unique human frequency, or numerical reuse of the unresolved 2026 calibration formula.",
+      "review": "research/round2/independent-review.json",
+      "repair": "Original contract retained; a post-first-run even-PSD clarification and rerun are explicitly recorded."
+    },
+    {
+      "round": 3,
+      "status": "accepted",
+      "scope": "Exact synthetic two-channel, three-component linear observation map with nonnegative relative amounts.",
+      "finding": "A continuous composition family has identical two-channel signals. Independent third assay restores rank 3; a duplicate leaves rank 2. Exact rational algebra and all stored fiber samples agree.",
+      "nextReason": "Noise-free uniqueness is insufficient; test near-duplicate assay conditioning and bounded errors.",
+      "withheld": "Actual identification of Newton compounds or a theorem that an independently measured total amount cannot identify the example.",
+      "review": "research/round3/independent-review.json"
+    },
+    {
+      "round": 4,
+      "status": "accepted",
+      "scope": "Fixed synthetic assay scaling and separately bounded absolute channel errors; no clipping or hidden normalization.",
+      "finding": "Near-duplicate assay recovery amplifies c3 error to 2 delta/epsilon despite full rank. At delta=0.001 and epsilon=0.001 the exact bound is 2; independent third-channel bound is 0.001.",
+      "nextReason": "Even stable measurements can be cherry-picked across many hypotheses; test familywise selection bias.",
+      "withheld": "A universal ranking of real sensors or a physical chemical result.",
+      "review": "research/round4/independent-review.json"
+    },
+    {
+      "round": 5,
+      "status": "accepted",
+      "scope": "Ideal valid uniform null p-values under independent and perfectly correlated test families, with exact probabilities and a seeded illustration.",
+      "finding": "Twenty independent nominal 5% tests produce at least one false positive with probability 64.1514%; Bonferroni gives 4.8830%. Duplicate correlated tests require different accounting.",
+      "nextReason": "Apply dependence and selection control to the user-requested final dream/astral-information measurement question.",
+      "withheld": "Empirical false-discovery rates for an unexamined literature corpus or posterior probabilities of extraordinary claims.",
+      "review": "research/round5/independent-review.json"
+    },
+    {
+      "round": 6,
+      "status": "accepted",
+      "scope": "Synthetic four-category target-test calibration; no participant, dream-state, clinical or astral-travel observations.",
+      "finding": "Fixed 40-trial cutoff is 16 hits, with exact null rejection 2.6244884%. Naive repeated looks raise crossing probability to 14.0373194%. Disclosed leakage raises detection without identifying an extraordinary mechanism.",
+      "nextReason": "Six authorized adaptive rounds are complete. Stop research rounds; finish source repairs, integration and release verification.",
+      "withheld": "Evidence of astral travel, objective REM/lucidity from a browser timer, or genuine target concealment in a public static frontend.",
+      "review": "research/round6/independent-review.json",
+      "independentPrecompute": "research/round6/independent-precompute.json",
+      "revisionReview": "research/round6/independent-review-revision.json"
+    }
+  ],
+  "releaseGate": "Acceptance covers scientific model claims only. Source push, branch merge, site deployment and live verification have separate status.",
+  "inheritedCorpusReview": "Targeted correction-page/alchemy/B7 review complete. Final specific legacy wording repairs completed in experiments.html, roundtable.html, harmonics.html, tesla_files.html and research-corrections.html, including the magnetic-field-unit and distinct-Earth-model correction. Unrechecked table entries remain inherited assessments. Publication pins the final repaired source revision; no exhaustive corpus audit is claimed."
+}

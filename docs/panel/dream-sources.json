@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "scope": "Tesla/measurement researcher's supplement to advisor dream packet; no sixth-loop execution",
+  "sources": [
+    {
+      "id": "DR-UBE2026",
+      "title": "Facilitating unusual bodily experiences and out-of-body experiences across wakefulness and sleep: A high-density EEG and neurophenomenology study",
+      "authors": "Campillo-Ferrer et al.",
+      "doi": "10.1016/j.concog.2026.104002",
+      "date": "2026-02-11",
+      "issue_date": "2026-03",
+      "version": "Published journal version; Consciousness and Cognition 139,104002",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41678848/",
+      "publisher_url": "https://www.sciencedirect.com/science/article/pii/S1053810026000103",
+      "readable_author_copy": "https://www.researchgate.net/publication/400669426_Facilitating_unusual_bodily_experiences_and_out-of-body_experiences_across_wakefulness_and_sleep_A_high-density_EEG_and_neurophenomenology_study",
+      "repository_url": "https://repository.ubn.ru.nl/handle/2066/329555",
+      "accessed": "2026-09-26",
+      "provenance": "Primary journal article, author-uploaded published text on ResearchGate; title/DOI/date corroborated by PubMed indexed result",
+      "access_constraints": "Publisher and university repository fetch returned403; direct PubMed open returned verification screen; indexed PubMed metadata/abstract and author full text were accessible.",
+      "sections_read": "Abstract; Introduction signal/lucidity distinction; Methods2.1,2.2 and selected2.7.4 preprocessing/segmentation; Discussion4.1 and4.4; conclusion.",
+      "reading_depth": "Selected substantial passages; raw data, full statistical code and supplements not independently analyzed.",
+      "claim_category": "correlational electrophysiology and phenomenological reports",
+      "summary": "The study relates unusual bodily experiences to EEG and subjective reports. It separates eye signals from dream lucidity and discusses timing, state confounding and sleep-fragmentation limits. It does not report a concealed external-target accuracy test.",
+      "observable": "Reported experience, time markers, independently characterized sleep state and EEG features",
+      "control_needed_for_project": "Separate dream-awareness endpoint from externally concealed information accuracy; prevent artifacts, selection and leakage.",
+      "unresolved": "No causal neural mechanism or extracorporeal information acquisition established by these selected results. Source induction procedure not adopted.",
+      "web_refs": [
+        "turn38search0",
+        "turn39view1",
+        "turn40view0",
+        "turn40view1"
+      ]
+    }
+  ],
+  "related_sources_pending": "Advisor owns Konkoly2021/DREAM/targeted-lucidity/Ehrsson records and will merge its actual passage-level reading."
+}

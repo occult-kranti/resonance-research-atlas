@@ -1,0 +1,273 @@
+{
+  "reviewer": "advisor independent integer path-count calculation frozen before producer results read",
+  "method": "At each step, each surviving path has three wrong target extensions and one correct extension; remove paths with 20*integer_binomial_tail_numerator<=4**n. Divide surviving weighted strings by 4**n. No floating threshold comparison.",
+  "fixed_n": 40,
+  "cutoff": 16,
+  "fixed_null_probability": "7932029500407460395061/302231454903657293676544",
+  "fixed_null_probability_float": 0.026244884083742915,
+  "naive_optional_stop_probability": "42425194554584363630377/302231454903657293676544",
+  "naive_optional_stop_probability_float": 0.14037319367736986,
+  "leakage_controls": [
+    {
+      "lambda": "0",
+      "hit_probability": "1/4",
+      "rejection_probability": "7932029500407460395061/302231454903657293676544",
+      "rejection_probability_float": 0.026244884083742915
+    },
+    {
+      "lambda": "1/10",
+      "hit_probability": "13/40",
+      "rejection_probability": "119567269454718928211617010975915340664781679152782456592169233/604462909807314587353088000000000000000000000000000000000000000",
+      "rejection_probability_float": 0.19780745437769465
+    },
+    {
+      "lambda": "1/2",
+      "hit_probability": "5/8",
+      "rejection_probability": "331918694876317839929309844970703125/332306998946228968225951765070086144",
+      "rejection_probability_float": 0.9988314899441105
+    }
+  ],
+  "daily_path_counts": [
+    {
+      "n": 1,
+      "surviving_weighted_strings": "4",
+      "all_four_category_strings": "4",
+      "crossing_probability": "0"
+    },
+    {
+      "n": 2,
+      "surviving_weighted_strings": "16",
+      "all_four_category_strings": "16",
+      "crossing_probability": "0"
+    },
+    {
+      "n": 3,
+      "surviving_weighted_strings": "63",
+      "all_four_category_strings": "64",
+      "crossing_probability": "1/64"
+    },
+    {
+      "n": 4,
+      "surviving_weighted_strings": "252",
+      "all_four_category_strings": "256",
+      "crossing_probability": "1/64"
+    },
+    {
+      "n": 5,
+      "surviving_weighted_strings": "999",
+      "all_four_category_strings": "1024",
+      "crossing_probability": "25/1024"
+    },
+    {
+      "n": 6,
+      "surviving_weighted_strings": "3915",
+      "all_four_category_strings": "4096",
+      "crossing_probability": "181/4096"
+    },
+    {
+      "n": 7,
+      "surviving_weighted_strings": "15660",
+      "all_four_category_strings": "16384",
+      "crossing_probability": "181/4096"
+    },
+    {
+      "n": 8,
+      "surviving_weighted_strings": "62127",
+      "all_four_category_strings": "65536",
+      "crossing_probability": "3409/65536"
+    },
+    {
+      "n": 9,
+      "surviving_weighted_strings": "244215",
+      "all_four_category_strings": "262144",
+      "crossing_probability": "17929/262144"
+    },
+    {
+      "n": 10,
+      "surviving_weighted_strings": "976860",
+      "all_four_category_strings": "1048576",
+      "crossing_probability": "17929/262144"
+    },
+    {
+      "n": 11,
+      "surviving_weighted_strings": "3881196",
+      "all_four_category_strings": "4194304",
+      "crossing_probability": "78277/1048576"
+    },
+    {
+      "n": 12,
+      "surviving_weighted_strings": "15524784",
+      "all_four_category_strings": "16777216",
+      "crossing_probability": "78277/1048576"
+    },
+    {
+      "n": 13,
+      "surviving_weighted_strings": "61881165",
+      "all_four_category_strings": "67108864",
+      "crossing_probability": "5227699/67108864"
+    },
+    {
+      "n": 14,
+      "surviving_weighted_strings": "245538864",
+      "all_four_category_strings": "268435456",
+      "crossing_probability": "1431037/16777216"
+    },
+    {
+      "n": 15,
+      "surviving_weighted_strings": "982155456",
+      "all_four_category_strings": "1073741824",
+      "crossing_probability": "1431037/16777216"
+    },
+    {
+      "n": 16,
+      "surviving_weighted_strings": "3915558873",
+      "all_four_category_strings": "4294967296",
+      "crossing_probability": "379408423/4294967296"
+    },
+    {
+      "n": 17,
+      "surviving_weighted_strings": "15548900778",
+      "all_four_category_strings": "17179869184",
+      "crossing_probability": "815484203/8589934592"
+    },
+    {
+      "n": 18,
+      "surviving_weighted_strings": "62195603112",
+      "all_four_category_strings": "68719476736",
+      "crossing_probability": "815484203/8589934592"
+    },
+    {
+      "n": 19,
+      "surviving_weighted_strings": "248057349777",
+      "all_four_category_strings": "274877906944",
+      "crossing_probability": "26820557167/274877906944"
+    },
+    {
+      "n": 20,
+      "surviving_weighted_strings": "985998430530",
+      "all_four_category_strings": "1099511627776",
+      "crossing_probability": "56756598623/549755813888"
+    },
+    {
+      "n": 21,
+      "surviving_weighted_strings": "3943993722120",
+      "all_four_category_strings": "4398046511104",
+      "crossing_probability": "56756598623/549755813888"
+    },
+    {
+      "n": 22,
+      "surviving_weighted_strings": "15736342675905",
+      "all_four_category_strings": "17592186044416",
+      "crossing_probability": "1855843368511/17592186044416"
+    },
+    {
+      "n": 23,
+      "surviving_weighted_strings": "62605300013397",
+      "all_four_category_strings": "70368744177664",
+      "crossing_probability": "7763444164267/70368744177664"
+    },
+    {
+      "n": 24,
+      "surviving_weighted_strings": "250421200053588",
+      "all_four_category_strings": "281474976710656",
+      "crossing_probability": "7763444164267/70368744177664"
+    },
+    {
+      "n": 25,
+      "surviving_weighted_strings": "999521917717707",
+      "all_four_category_strings": "1125899906842624",
+      "crossing_probability": "126377989124917/1125899906842624"
+    },
+    {
+      "n": 26,
+      "surviving_weighted_strings": "3979510944516720",
+      "all_four_category_strings": "4503599627370496",
+      "crossing_probability": "32755542678361/281474976710656"
+    },
+    {
+      "n": 27,
+      "surviving_weighted_strings": "15918043778066880",
+      "all_four_category_strings": "18014398509481984",
+      "crossing_probability": "32755542678361/281474976710656"
+    },
+    {
+      "n": 28,
+      "surviving_weighted_strings": "63553807821664980",
+      "all_four_category_strings": "72057594037927936",
+      "crossing_probability": "2125946554065739/18014398509481984"
+    },
+    {
+      "n": 29,
+      "surviving_weighted_strings": "253196748665836785",
+      "all_four_category_strings": "288230376151711744",
+      "crossing_probability": "35033627485874959/288230376151711744"
+    },
+    {
+      "n": 30,
+      "surviving_weighted_strings": "1012786994663347140",
+      "all_four_category_strings": "1152921504606846976",
+      "crossing_probability": "35033627485874959/288230376151711744"
+    },
+    {
+      "n": 31,
+      "surviving_weighted_strings": "4044642272393622075",
+      "all_four_category_strings": "4611686018427387904",
+      "crossing_probability": "567043746033765829/4611686018427387904"
+    },
+    {
+      "n": 32,
+      "surviving_weighted_strings": "16122475250263474344",
+      "all_four_category_strings": "18446744073709551616",
+      "crossing_probability": "290533602930759659/2305843009213693952"
+    },
+    {
+      "n": 33,
+      "surviving_weighted_strings": "64130646966039659925",
+      "all_four_category_strings": "73786976294838206464",
+      "crossing_probability": "9656329328798546539/73786976294838206464"
+    },
+    {
+      "n": 34,
+      "surviving_weighted_strings": "256522587864158639700",
+      "all_four_category_strings": "295147905179352825856",
+      "crossing_probability": "9656329328798546539/73786976294838206464"
+    },
+    {
+      "n": 35,
+      "surviving_weighted_strings": "1024064054669686413357",
+      "all_four_category_strings": "1180591620717411303424",
+      "crossing_probability": "156527566047724890067/1180591620717411303424"
+    },
+    {
+      "n": 36,
+      "surviving_weighted_strings": "4079557935130736668077",
+      "all_four_category_strings": "4722366482869645213696",
+      "crossing_probability": "642808547738908545619/4722366482869645213696"
+    },
+    {
+      "n": 37,
+      "surviving_weighted_strings": "16318231740522946672308",
+      "all_four_category_strings": "18889465931478580854784",
+      "crossing_probability": "642808547738908545619/4722366482869645213696"
+    },
+    {
+      "n": 38,
+      "surviving_weighted_strings": "65169860581161641711862",
+      "all_four_category_strings": "75557863725914323419136",
+      "crossing_probability": "5194001572376340853637/37778931862957161709568"
+    },
+    {
+      "n": 39,
+      "surviving_weighted_strings": "259806260349072930046167",
+      "all_four_category_strings": "302231454903657293676544",
+      "crossing_probability": "42425194554584363630377/302231454903657293676544"
+    },
+    {
+      "n": 40,
+      "surviving_weighted_strings": "1039225041396291720184668",
+      "all_four_category_strings": "1208925819614629174706176",
+      "crossing_probability": "42425194554584363630377/302231454903657293676544"
+    }
+  ],
+  "contract_sha256": "3fe9d8287e475da31cf2d23b0835d43f651c22097977c80a347a35b6df4f8a20"
+}

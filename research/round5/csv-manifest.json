@@ -1,0 +1,22 @@
+{
+  "method": "gzip, mtime=0, empty original filename; verified exact decompression",
+  "reproduce": "Run solver.py, then python research/compress_evidence.py round5",
+  "files": [
+    {
+      "raw_filename": "familywise_rates.csv",
+      "gzip_filename": "familywise_rates.csv.gz",
+      "raw_bytes": 2492,
+      "gzip_bytes": 817,
+      "raw_sha256": "4e274837471b375853ce76ee289020bd1ba3f004a804b1ca9fc2bf5bd61e91da",
+      "gzip_sha256": "785d4c16c9a843ae115ecf73fb3bcf226eb66774bdd0cdfe97efc0449d50fcd2"
+    },
+    {
+      "raw_filename": "synthetic_minima.csv",
+      "gzip_filename": "synthetic_minima.csv.gz",
+      "raw_bytes": 5147204,
+      "gzip_bytes": 2135771,
+      "raw_sha256": "ffa6394c2eb5de4f130c53398d005990588ae8909b1db51db7b030a621c21415",
+      "gzip_sha256": "c38bd6832dbee9a804a0b3b17b227da7cafdde4de9c5400c1b17d77fe7ead8f8"
+    }
+  ]
+}

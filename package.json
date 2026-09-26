@@ -1,0 +1,14 @@
+{
+  "name": "resonance-research-atlas",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "test": "node tests/independent-review.mjs && node tests/independent-dom-review.mjs",
+    "build": "python3 scripts/build_site.py --output dist"
+  },
+  "devDependencies": {
+    "happy-dom": "20.14.0"
+  }
+}

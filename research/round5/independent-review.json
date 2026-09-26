@@ -1,0 +1,63 @@
+{
+  "reviewer": "advisor; independent inclusion-exclusion expansion and arbitrary-dependence union bound",
+  "alpha": "1/20",
+  "cases": [
+    {
+      "m": 1,
+      "uncorrected": {
+        "exact_inclusion_exclusion_equals_complement": true,
+        "probability": 0.05
+      },
+      "corrected": {
+        "exact_inclusion_exclusion_equals_complement": true,
+        "probability": 0.05
+      }
+    },
+    {
+      "m": 5,
+      "uncorrected": {
+        "exact_inclusion_exclusion_equals_complement": true,
+        "probability": 0.2262190625
+      },
+      "corrected": {
+        "exact_inclusion_exclusion_equals_complement": true,
+        "probability": 0.0490099501
+      }
+    },
+    {
+      "m": 20,
+      "uncorrected": {
+        "exact_inclusion_exclusion_equals_complement": true,
+        "probability": 0.6415140775914577
+      },
+      "corrected": {
+        "exact_inclusion_exclusion_equals_complement": true,
+        "probability": 0.04883012474683423
+      }
+    },
+    {
+      "m": 100,
+      "uncorrected": {
+        "exact_inclusion_exclusion_equals_complement": true,
+        "probability": 0.994079470779666
+      },
+      "corrected": {
+        "exact_inclusion_exclusion_equals_complement": true,
+        "probability": 0.04878246975767102
+      }
+    }
+  ],
+  "correlation_control": "If all m p-values equal one uniform variable U, uncorrected FWER=P(U<=alpha)=alpha and corrected FWER=P(U<=alpha/m)=alpha/m.",
+  "bonferroni_scope": "For valid marginal p-values, P(union_i {p_i<=alpha/m})<=sum_i alpha/m=alpha regardless of dependence.",
+  "source_sha256": {
+    "contract.md": "1388d3c7a66c9c3d7190770de0e0e4ca73d757d9f1844e73793d60c80827bc50",
+    "solver.py": "31e2f56d5c67a6cfee70120c0c168e14cb8c074138bbd29183d7f0b93185ffcb",
+    "results.json": "b6924185589df5b30ec75f2a76fbc754f921070314e3ccd16a9280a8e7f000b9"
+  },
+  "archive_validation": {
+    "raw_sha256_matches": true,
+    "rows": 50000,
+    "all_saved_threshold_counts_match": true,
+    "nested_minima_nonincreasing": true
+  }
+}

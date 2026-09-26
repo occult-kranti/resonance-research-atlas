@@ -1,0 +1,62 @@
+{
+  "method": "gzip, mtime=0, empty original filename; verified exact decompression",
+  "reproduce": "Run solver.py, then python research/compress_evidence.py round1",
+  "files": [
+    {
+      "raw_filename": "baseline.csv",
+      "gzip_filename": "baseline.csv.gz",
+      "raw_bytes": 2551413,
+      "gzip_bytes": 1038994,
+      "raw_sha256": "70d3102c883c9ed9a7c936a764838e362f479961cbb03db22ff9bf50502a5b52",
+      "gzip_sha256": "0d7fccae2d8020c6b5a0380752fb265160878bc250b0203dc33225b06dfd1554"
+    },
+    {
+      "raw_filename": "convergence.csv",
+      "gzip_filename": "convergence.csv.gz",
+      "raw_bytes": 335,
+      "gzip_bytes": 228,
+      "raw_sha256": "315ec52eef21df994fa33ea2377e6d6ebe53814ca7d218867358e68b7e4d6564",
+      "gzip_sha256": "22aecb74ce8b142b991dd5c895ec2ade9e780ae1bf8d86f950dd6cb40ac41882"
+    },
+    {
+      "raw_filename": "frequency_sweep.csv",
+      "gzip_filename": "frequency_sweep.csv.gz",
+      "raw_bytes": 389315,
+      "gzip_bytes": 109286,
+      "raw_sha256": "a65e043795a5f26e00fbc2da4b40204164f38a0cbe6a613a2d9d36938feecd08",
+      "gzip_sha256": "1838f5dfcdb8824ed898aab4a7e3387dd091355dc31d2f56fe5e0a06a2578d27"
+    },
+    {
+      "raw_filename": "off_resonance.csv",
+      "gzip_filename": "off_resonance.csv.gz",
+      "raw_bytes": 266354,
+      "gzip_bytes": 108333,
+      "raw_sha256": "1643bf0f7cfce6779424e1ad8d4eea55690e4a32d253bdde41902a02029cdf56",
+      "gzip_sha256": "4973388ea83a15d5aa0b1d3b75f1420cb9e4a452a00852017e3afc14db4eda63"
+    },
+    {
+      "raw_filename": "undriven_damped.csv",
+      "gzip_filename": "undriven_damped.csv.gz",
+      "raw_bytes": 202749,
+      "gzip_bytes": 83465,
+      "raw_sha256": "facb80516d656bdd75bdb630b53b1ccfea9801a9fa056e7af1e9b8cced066380",
+      "gzip_sha256": "04405c45718ebbfc33047f560614f73ea1af85324d13a494ed89b478d8701cef"
+    },
+    {
+      "raw_filename": "undriven_lossless.csv",
+      "gzip_filename": "undriven_lossless.csv.gz",
+      "raw_bytes": 159695,
+      "gzip_bytes": 61066,
+      "raw_sha256": "b06fc0d8c32ab272e66e55bc19b67b5eac4a9973734b3388eff72801a1b19ad6",
+      "gzip_sha256": "64b517de966aa2722a1ce0909bf51422f166d0c829b70d5a85d64b2c0f5877f3"
+    },
+    {
+      "raw_filename": "zero_coupling.csv",
+      "gzip_filename": "zero_coupling.csv.gz",
+      "raw_bytes": 212457,
+      "gzip_bytes": 85657,
+      "raw_sha256": "782643c0b295d82534bb0bfa523fc1169af1791cbbe5960668f2a1f750807440",
+      "gzip_sha256": "b70bf651ffca76ce9d15fccfa7d5f15562f90dca26127908552190ba96b6597a"
+    }
+  ]
+}

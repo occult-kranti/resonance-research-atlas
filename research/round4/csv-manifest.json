@@ -1,0 +1,14 @@
+{
+  "method": "gzip, mtime=0, empty original filename; verified exact decompression",
+  "reproduce": "Run solver.py, then python research/compress_evidence.py round4",
+  "files": [
+    {
+      "raw_filename": "noise_corners.csv",
+      "gzip_filename": "noise_corners.csv.gz",
+      "raw_bytes": 2457,
+      "gzip_bytes": 378,
+      "raw_sha256": "877d94f5fff57eb7824b681984100fadf12b6b14c5a776db917fecbf13c6c8dd",
+      "gzip_sha256": "3afce6741cf050b72aca1731333ca1e7dcfe2ab696c85791eca9a419c697cfc0"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "method": "gzip, mtime=0, empty original filename; verified exact decompression",
+  "reproduce": "Run solver.py, then python research/compress_evidence.py round6",
+  "files": [
+    {
+      "raw_filename": "binomial_null.csv",
+      "gzip_filename": "binomial_null.csv.gz",
+      "raw_bytes": 5461,
+      "gzip_bytes": 2013,
+      "raw_sha256": "435545114d63d5a515948c297272a5c836f4e4e66ce1b019a35b0a14defa8c86",
+      "gzip_sha256": "5bb51a587e56649035feb91877b0c3981acee4c65795fd76c1feb6822bcb861b"
+    },
+    {
+      "raw_filename": "stopping_boundaries.csv",
+      "gzip_filename": "stopping_boundaries.csv.gz",
+      "raw_bytes": 3865,
+      "gzip_bytes": 1370,
+      "raw_sha256": "0b223f68a3c3690c1069cb85f32a9288804588d5b909efab6843e67819a166f2",
+      "gzip_sha256": "997c93464b490702ab4b33b34ec0c76a1a3d2a51c5069031f399998b33e673b9"
+    },
+    {
+      "raw_filename": "synthetic_studies.csv",
+      "gzip_filename": "synthetic_studies.csv.gz",
+      "raw_bytes": 231480,
+      "gzip_bytes": 43457,
+      "raw_sha256": "ac7d23df227d74fc73705c860073ef5b6b141828690d3612c5f342e70a8fb249",
+      "gzip_sha256": "7288de0fdb1baee2699c1b18498c3a909603690a3f5141b14d80f74ee4c48d48"
+    }
+  ]
+}

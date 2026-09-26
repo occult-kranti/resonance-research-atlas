@@ -1,0 +1,14 @@
+{
+  "method": "gzip, mtime=0, empty original filename; verified exact decompression",
+  "reproduce": "Run solver.py, then python research/compress_evidence.py round3",
+  "files": [
+    {
+      "raw_filename": "composition_fiber.csv",
+      "gzip_filename": "composition_fiber.csv.gz",
+      "raw_bytes": 4991,
+      "gzip_bytes": 1311,
+      "raw_sha256": "37d4b3eaa3d0e254d41d7a2e8dd97642681d7b37b5b2a0ba26a4b7976cdcabc5",
+      "gzip_sha256": "347b3f4a64de2c6eb22e871772041c8ae58c2da2ee75bb25e2e4942eb529b230"
+    }
+  ]
+}

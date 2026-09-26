@@ -1,0 +1,100 @@
+{
+  "round": 6,
+  "status": "passed",
+  "final_round": true,
+  "scope": "Synthetic methodology benchmark only. No dream, lucid-dream or astral-travel observations.",
+  "n": 40,
+  "targets": 4,
+  "chance_probability_exact": "1/4",
+  "alpha_exact": "1/20",
+  "critical_hits": 16,
+  "fixed_false_positive_exact": "7932029500407460395061/302231454903657293676544",
+  "fixed_false_positive_rate": 0.026244884083742915,
+  "preceding_count_tail_exact": "16452648669623234136013/302231454903657293676544",
+  "preceding_count_tail": 0.05443724801863481,
+  "optional_stopping_false_positive_exact": "42425194554584363630377/302231454903657293676544",
+  "optional_stopping_false_positive_rate": 0.14037319367736986,
+  "exhaustive_12_trial_crossing_exact": "78277/1048576",
+  "leakage_controls": [
+    {
+      "lambda_exact": "0",
+      "hit_probability_exact": "1/4",
+      "hit_probability": 0.25,
+      "fixed_cutoff_detection_exact": "7932029500407460395061/302231454903657293676544",
+      "fixed_cutoff_detection": 0.026244884083742915
+    },
+    {
+      "lambda_exact": "1/10",
+      "hit_probability_exact": "13/40",
+      "hit_probability": 0.325,
+      "fixed_cutoff_detection_exact": "119567269454718928211617010975915340664781679152782456592169233/604462909807314587353088000000000000000000000000000000000000000",
+      "fixed_cutoff_detection": 0.19780745437769465
+    },
+    {
+      "lambda_exact": "1/2",
+      "hit_probability_exact": "5/8",
+      "hit_probability": 0.625,
+      "fixed_cutoff_detection_exact": "331918694876317839929309844970703125/332306998946228968225951765070086144",
+      "fixed_cutoff_detection": 0.9988314899441105
+    }
+  ],
+  "seed": 2026092606,
+  "simulations": [
+    {
+      "rule": "fixed_40",
+      "studies": 50000,
+      "discoveries": 1318,
+      "simulated_rate": 0.02636,
+      "exact_rate": 0.026244884083742915,
+      "tolerance": 0.004309566983168015
+    },
+    {
+      "rule": "naive_optional_stopping",
+      "studies": 50000,
+      "discoveries": 6945,
+      "simulated_rate": 0.1389,
+      "exact_rate": 0.14037319367736986,
+      "tolerance": 0.009341017290264701
+    }
+  ],
+  "checks": [
+    {
+      "name": "exact_probability_and_cutoff",
+      "passed": true
+    },
+    {
+      "name": "exact_DP_mass_and_binomial_reconstruction",
+      "passed": true
+    },
+    {
+      "name": "independent_12_trial_exhaustive_control",
+      "passed": true
+    },
+    {
+      "name": "optional_stopping_inflation",
+      "passed": true
+    },
+    {
+      "name": "disclosed_leakage_monotonicity",
+      "passed": true
+    },
+    {
+      "name": "synthetic_rate_fixed_40",
+      "passed": true
+    },
+    {
+      "name": "synthetic_rate_naive_optional_stopping",
+      "passed": true
+    }
+  ],
+  "synthetic_archive": {
+    "path": "synthetic_studies.csv.gz",
+    "raw_sha256": "ac7d23df227d74fc73705c860073ef5b6b141828690d3612c5f342e70a8fb249",
+    "gzip_sha256": "7288de0fdb1baee2699c1b18498c3a909603690a3f5141b14d80f74ee4c48d48"
+  },
+  "runtime": {
+    "numpy": "2.3.5"
+  },
+  "contract_sha256": "3fe9d8287e475da31cf2d23b0835d43f651c22097977c80a347a35b6df4f8a20",
+  "solver_sha256": "9e893783ef5321dcebb9d09711966811ae2cc711db48f2d6a986ae75b295ad03"
+}

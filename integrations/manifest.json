@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "projects": [
+    {
+      "name": "brainwave_opensync",
+      "url": "https://github.com/occult-kranti/brainwave_opensync",
+      "commit": "297b6d4add716d0fd9578d7b036cf2791850a44b",
+      "mode": "linked",
+      "role": "Primary deployed audio laboratory; integration built in this release"
+    },
+    {
+      "name": "open-sync",
+      "url": "https://github.com/occult-kranti/open-sync",
+      "commit": "02425613cd057406d92c4f3ee33b5fc54a493601",
+      "mode": "linked",
+      "role": "Complete imported sound suite hosted in brainwave_opensync/open-sync/"
+    },
+    {
+      "name": "newton-tesla-alchemy",
+      "url": "https://github.com/occult-kranti/newton-tesla-alchemy",
+      "commit": "1c7b9971b74aa14aeae426d40ba8eda0ae0d8644",
+      "mode": "archived-text",
+      "role": "User-requested imported dossiers; original assertions retained with separate corrections"
+    },
+    {
+      "name": "resonant-vessels",
+      "url": "https://github.com/occult-kranti/resonant-vessels",
+      "commit": "d404a4e3d3df7dae6f947271510831139cf1be10",
+      "mode": "snapshot",
+      "role": "Corrected source/inference exhibits with a source-review and process-discrimination ledger",
+      "original_commit": "e65c1974fc4f5f90ba4d584ccb3332199e171748"
+    },
+    {
+      "name": "astrology-sim-ant",
+      "url": "https://github.com/occult-kranti/astrology-sim-ant",
+      "commit": "3a3ce9953e47a078e659723a52187648f1f08486",
+      "mode": "snapshot",
+      "role": "Historical interpretive systems and astronomical calculators; no predictive-physics endorsement"
+    }
+  ]
+}
