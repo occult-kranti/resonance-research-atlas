@@ -64,13 +64,13 @@ def attach(data):
             rivals=spec.get('rivals',[]),falsifiers=spec.get('falsifiers',[]),method=d['scope'],
             findings=[d['finding']] if d.get('finding') else [],
             decisions=[x for x in [d.get('designImprovement'),d.get('novelty'),d.get('nextReason')] if x],
-            limitations=[x for x in [d.get('empiricalWork'),d.get('withheld'),spec.get('limitations')] if x],
+            limitations=[x for x in [d.get('empiricalWork'),('Not established: '+d['withheld']) if d.get('withheld') else None,spec.get('limitations')] if x],
             sourceIds=refs,artifacts=artifacts,modelId=spec.get('modelId','')))
     roadmap = [dict(id=r['id'],title=r['title'],status=r['status'],owner='Producer + independent advisor',
         dependsOn=[f'N{i}'] if i else [],detail=r['question']) for i,r in enumerate(rounds)]
     roadmap.extend([
         dict(id='NS',title='Historical and modern source lanes',status='Selected passages reviewed; incomplete leads retained',owner='Two source agents',dependsOn=[],detail='Primary manuscripts, empirical papers, patents and fringe-to-primary trails; publish reading depth and disagreements.'),
-        dict(id='NA',title='OpenSync digital calibration bench',status='Implemented; digital outputs only',owner='Audio coder + verification',dependsOn=['N1','N2'],detail='Compare two-tone, AM, baseband and carrier controls; measure rendered samples and export WAV plus manifest.'),
+        dict(id='NA',title='OpenSync digital calibration bench',status='Completed implementation; digital outputs only',owner='Audio coder + verification',dependsOn=['N1','N2'],detail='Compare two-tone, AM, baseband and carrier controls; measure rendered samples and export WAV plus manifest.'),
         dict(id='NH',title='Qualified sealed-reference measurements',status='Proposed; not performed',owner='Future laboratory collaborators',dependsOn=['N5'],detail='Select one falsifiable proposal, characterize its sample and apparatus, preregister uncertainty and acquire independent measurements.'),
         dict(id='NR',title='External replication and peer review',status='Not started',owner='Independent human researchers',dependsOn=['NH'],detail='Model-agent agreement is not external scientific replication.'),
     ])

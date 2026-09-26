@@ -3882,7 +3882,7 @@
         ],
         "limitations": [
           "No specimen, susceptibility calibration or calorimetry measurement was performed.",
-          "Actual material response, human healing, metaphysical effects and source-free energy.",
+          "Not established: Actual material response, human healing, metaphysical effects and source-free energy.",
           "Synthetic fixed parameters; no material, apparatus or clinical endpoint was measured."
         ],
         "sourceIds": [
@@ -3965,7 +3965,7 @@
         ],
         "limitations": [
           "No phantom, sensor, specimen or heat-loss uncertainty measurement was performed.",
-          "Material-specific nanoparticle power, microscopic temperature and clinical benefit.",
+          "Not established: Material-specific nanoparticle power, microscopic temperature and clinical benefit.",
           "The reference thermal model does not identify all absolute parameters without an external calibration."
         ],
         "sourceIds": [
@@ -4040,7 +4040,7 @@
         ],
         "limitations": [
           "No specimen, viscosity measurement, immobilization control or phase calibration was performed.",
-          "A unique microscopic mechanism, number fractions from susceptibility amplitudes or actual particle identification. Independently known DC susceptibility can strengthen one-point discrimination.",
+          "Not established: A unique microscopic mechanism, number fractions from susceptibility amplitudes or actual particle identification. Independently known DC susceptibility can strengthen one-point discrimination.",
           "A successful fit need not uniquely identify the microscopic relaxation mechanism."
         ],
         "sourceIds": [
@@ -4113,7 +4113,7 @@
         ],
         "limitations": [
           "No physical size, count, mass or specimen-response measurement was performed.",
-          "Validity for an arbitrary 40–60 nm material, intrinsic magnetization, absolute susceptibility and clinical efficacy.",
+          "Not established: Validity for an arbitrary 40–60 nm material, intrinsic magnetization, absolute susceptibility and clinical efficacy.",
           "Declared spherical, equal-density and common-magnetization approximations; not a measured real suspension."
         ],
         "sourceIds": [
@@ -4187,7 +4187,7 @@
         ],
         "limitations": [
           "Audio files and code were executed. No transducer, pressure/velocity gradient, particle force, specimen motion or human effect was measured.",
-          "Converting digital FS or FS² directly to acoustic pressure, magnetic field, nanoparticle force, healing or a metaphysical mechanism. Different parameter choices can already contain a component at the named rate.",
+          "Not established: Converting digital FS or FS² directly to acoustic pressure, magnetic field, nanoparticle force, healing or a metaphysical mechanism. Different parameter choices can already contain a component at the named rate.",
           "Digital amplitude and squared amplitude are not calibrated pressure, acoustic intensity, nanoparticle force or a clinical endpoint."
         ],
         "sourceIds": [
@@ -4335,7 +4335,7 @@
       {
         "id": "NA",
         "title": "OpenSync digital calibration bench",
-        "status": "Implemented; digital outputs only",
+        "status": "Completed implementation; digital outputs only",
         "owner": "Audio coder + verification",
         "dependsOn": [
           "N1",
@@ -4377,7 +4377,7 @@
         ],
         "limitations": [
           "No specimen, susceptibility calibration or calorimetry measurement was performed.",
-          "Actual material response, human healing, metaphysical effects and source-free energy.",
+          "Not established: Actual material response, human healing, metaphysical effects and source-free energy.",
           "Synthetic fixed parameters; no material, apparatus or clinical endpoint was measured."
         ]
       },
@@ -4393,7 +4393,7 @@
         ],
         "limitations": [
           "No phantom, sensor, specimen or heat-loss uncertainty measurement was performed.",
-          "Material-specific nanoparticle power, microscopic temperature and clinical benefit.",
+          "Not established: Material-specific nanoparticle power, microscopic temperature and clinical benefit.",
           "The reference thermal model does not identify all absolute parameters without an external calibration."
         ]
       }
