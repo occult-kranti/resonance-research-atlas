@@ -1,0 +1,112 @@
+{
+  "checks": [
+    {
+      "url": "https://occult-kranti.github.io/resonance-research-atlas/build-manifest.json",
+      "status": 200,
+      "bytes": 452,
+      "sha256": "0a0cb361b7b440c6d8f21629516a7595ab2ccdf214926e7ee52b38f5397a262a",
+      "source": "29b47397c40672c006b23e0de96c12c5a7a82d24"
+    },
+    {
+      "url": "https://occult-kranti.github.io/resonance-research-atlas/sound-lab/index.html",
+      "status": 200,
+      "bytes": 13506,
+      "sha256": "8dff725f42c2ddfff3fc705b7125e3e22af84d1984fb769b5bd7ca5b7fddd06f"
+    },
+    {
+      "url": "https://occult-kranti.github.io/resonance-research-atlas/research/panel-v3-decisions.json",
+      "status": 200,
+      "bytes": 51967,
+      "sha256": "fcb962f5d4a2d39d7c682ab4a31b6a0c5010456482e5c6a211c7a89c0c441c2c",
+      "acceptedReviews": 13
+    },
+    {
+      "url": "https://occult-kranti.github.io/brainwave_opensync/research/build-manifest.json",
+      "status": 200,
+      "bytes": 452,
+      "sha256": "2767179b64f02ab8c87ed6d553c60c07c1687a3032eac76a20967d5b50b800e6",
+      "source": "0d050e042b6729ff4754fb3e6175a48582ba1a21"
+    },
+    {
+      "url": "https://occult-kranti.github.io/brainwave_opensync/research/sound-lab/index.html",
+      "status": 200,
+      "bytes": 13506,
+      "sha256": "8dff725f42c2ddfff3fc705b7125e3e22af84d1984fb769b5bd7ca5b7fddd06f"
+    },
+    {
+      "url": "https://occult-kranti.github.io/brainwave_opensync/research/research/panel-v3-decisions.json",
+      "status": 200,
+      "bytes": 51967,
+      "sha256": "fcb962f5d4a2d39d7c682ab4a31b6a0c5010456482e5c6a211c7a89c0c441c2c",
+      "acceptedReviews": 13
+    }
+  ],
+  "deployments": {
+    "current": {
+      "branch": "master",
+      "commit": "0d050e042b6729ff4754fb3e6175a48582ba1a21",
+      "path": "/brainwave_opensync/"
+    },
+    "previous": {
+      "branch": "legacy-v2.5",
+      "commit": "2d1935714335cbb94c8f01ade62ed9e74ead1faf",
+      "path": "/brainwave_opensync/v2/"
+    },
+    "originalSuite": {
+      "repository": "occult-kranti/open-sync",
+      "commit": "02425613cd057406d92c4f3ee33b5fc54a493601",
+      "path": "/brainwave_opensync/open-sync/"
+    },
+    "research": {
+      "path": "/brainwave_opensync/research/"
+    }
+  },
+  "date": "2026-09-27",
+  "functionalCommits": [
+    {
+      "repo": "occult-kranti/resonance-research-atlas",
+      "branch": "main",
+      "commit": "29b47397c40672c006b23e0de96c12c5a7a82d24",
+      "tree": "5c65e31d44948e425f74a23139c5743c9ab3b7f2",
+      "parent": "e6baa620f2f8666957741cf12f40b769a6a808a0"
+    },
+    {
+      "repo": "occult-kranti/brainwave_opensync",
+      "branch": "master",
+      "commit": "0d050e042b6729ff4754fb3e6175a48582ba1a21",
+      "tree": "1d15b4fd4f10bb93d0e5bd0024cd661500f32062",
+      "parent": "1c7dcf26260f621557bc51dd3197d930e8c5044e"
+    }
+  ],
+  "githubActions": [
+    {
+      "repository": "occult-kranti/resonance-research-atlas",
+      "run": 36285234148,
+      "conclusion": "success"
+    },
+    {
+      "repository": "occult-kranti/brainwave_opensync",
+      "run": 36285233703,
+      "name": "CI",
+      "conclusion": "success"
+    },
+    {
+      "repository": "occult-kranti/brainwave_opensync",
+      "run": 36285233722,
+      "name": "Deploy to GitHub Pages",
+      "conclusion": "success"
+    },
+    {
+      "repository": "occult-kranti/brainwave_opensync",
+      "run": 36285442518,
+      "name": "Pages build and deployment",
+      "conclusion": "success"
+    }
+  ],
+  "browser": {
+    "existingScreenshot": "docs/verification/v3-sound-lab-29b47397.jpg",
+    "screenshotVisuallyInspected": true,
+    "freshInteractiveCheck": "Browser inventory call timed out; no additional interactive or mobile verification claimed."
+  },
+  "documentationCommit": "This evidence update does not change the deployed functional revision."
+}

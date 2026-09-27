@@ -41,9 +41,11 @@ The [advisor review](panel-v3/advisor-review.md) summarizes each accepted findin
 - [x] Three planning panels and final roadmap recorded.
 - [x] S1A–S5B executed and independently reviewed.
 - [x] B1–B3 executed and independently reviewed.
-- [x] Source ledgers and Bashar repository provenance prepared.
+- [x] Source ledgers and Bashar repository provenance published.
 - [x] Practical protocols, diagrams, deterministic 3D views and concept image available.
 - [x] Website controls and original research regression gates pass.
-- [ ] Both repositories pushed; both GitHub Pages releases verified.
+- [x] Both repositories pushed; both GitHub Pages releases verified.
 
 The detailed panel decision ledger is authoritative for loop status. Search passes, UI work, figure creation and deployment retries are not research loops.
+
+Deployment evidence is recorded in [v3-deployment.json](verification/v3-deployment.json). The deployed functional revisions are atlas `29b47397` and OpenSync `0d050e04`; later documentation-only commits preserve this distinction.
