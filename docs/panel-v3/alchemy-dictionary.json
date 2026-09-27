@@ -1,0 +1,303 @@
+{
+  "schema_version": "1.0",
+  "research_date": "2026-09-27",
+  "scope": "Interpretive dictionary for selected primary passages and explicitly labeled editorial reconstructions. It is not a chemical assay or a preparation guide.",
+  "display_notice": "A conventional symbol is a candidate reading. A primary passage must establish a literal substance before an element is assigned; compound, phase and purity still require measurement.",
+  "schema": {
+    "required": [
+      "id",
+      "term",
+      "symbols",
+      "historicalMeaning",
+      "modernCandidate",
+      "elements",
+      "mappingStatus",
+      "primaryContext",
+      "contextLimit",
+      "sourceIds",
+      "discriminatingAssay",
+      "actualSampleAssayed"
+    ],
+    "modernCandidate": "string or null; never use null as evidence of impossibility",
+    "elements": "candidate constituent symbols, not measured sample composition",
+    "mappingStatus": "explicit classification; no entry claims an assayed historical identity"
+  },
+  "entries": [
+    {
+      "id": "ALCH-Au",
+      "term": "Sun / gold",
+      "symbols": [
+        "☉"
+      ],
+      "historicalMeaning": "Conventional literal-metal reading",
+      "modernCandidate": "Au",
+      "elements": [
+        "Au"
+      ],
+      "mappingStatus": "conventional_mapping_context_pending",
+      "primaryContext": "Conventional guide checked; individual primary-manuscript occurrence not collated in this pass.",
+      "contextLimit": "Candidate only after the passage independently establishes the literal metal. This does not identify a compound, purity, phase or actual sample.",
+      "sourceIds": [
+        "V3-NEWTON-SYMBOLS"
+      ],
+      "discriminatingAssay": "Elemental analysis with a reference and blank; phase/speciation needs a different measurement.",
+      "actualSampleAssayed": false
+    },
+    {
+      "id": "ALCH-Ag",
+      "term": "Moon / silver",
+      "symbols": [
+        "☾"
+      ],
+      "historicalMeaning": "Conventional literal-metal reading",
+      "modernCandidate": "Ag",
+      "elements": [
+        "Ag"
+      ],
+      "mappingStatus": "conventional_mapping_context_pending",
+      "primaryContext": "Conventional guide checked; individual primary-manuscript occurrence not collated in this pass.",
+      "contextLimit": "Candidate only after the passage independently establishes the literal metal. This does not identify a compound, purity, phase or actual sample.",
+      "sourceIds": [
+        "V3-NEWTON-SYMBOLS"
+      ],
+      "discriminatingAssay": "Elemental analysis with a reference and blank; phase/speciation needs a different measurement.",
+      "actualSampleAssayed": false
+    },
+    {
+      "id": "ALCH-Fe",
+      "term": "Mars / iron",
+      "symbols": [
+        "♂"
+      ],
+      "historicalMeaning": "Conventional literal-metal reading",
+      "modernCandidate": "Fe",
+      "elements": [
+        "Fe"
+      ],
+      "mappingStatus": "conventional_mapping_context_pending",
+      "primaryContext": "Conventional guide checked; individual primary-manuscript occurrence not collated in this pass.",
+      "contextLimit": "Candidate only after the passage independently establishes the literal metal. This does not identify a compound, purity, phase or actual sample.",
+      "sourceIds": [
+        "V3-NEWTON-SYMBOLS"
+      ],
+      "discriminatingAssay": "Elemental analysis with a reference and blank; phase/speciation needs a different measurement.",
+      "actualSampleAssayed": false
+    },
+    {
+      "id": "ALCH-Cu",
+      "term": "Venus / copper",
+      "symbols": [
+        "♀"
+      ],
+      "historicalMeaning": "Conventional literal-metal reading",
+      "modernCandidate": "Cu",
+      "elements": [
+        "Cu"
+      ],
+      "mappingStatus": "conventional_mapping_context_pending",
+      "primaryContext": "Conventional guide checked; individual primary-manuscript occurrence not collated in this pass.",
+      "contextLimit": "Candidate only after the passage independently establishes the literal metal. This does not identify a compound, purity, phase or actual sample.",
+      "sourceIds": [
+        "V3-NEWTON-SYMBOLS"
+      ],
+      "discriminatingAssay": "Elemental analysis with a reference and blank; phase/speciation needs a different measurement.",
+      "actualSampleAssayed": false
+    },
+    {
+      "id": "ALCH-Sn",
+      "term": "Jupiter / tin",
+      "symbols": [
+        "♃"
+      ],
+      "historicalMeaning": "Conventional literal-metal reading",
+      "modernCandidate": "Sn",
+      "elements": [
+        "Sn"
+      ],
+      "mappingStatus": "conventional_mapping_context_pending",
+      "primaryContext": "Conventional guide checked; individual primary-manuscript occurrence not collated in this pass.",
+      "contextLimit": "Candidate only after the passage independently establishes the literal metal. This does not identify a compound, purity, phase or actual sample.",
+      "sourceIds": [
+        "V3-NEWTON-SYMBOLS"
+      ],
+      "discriminatingAssay": "Elemental analysis with a reference and blank; phase/speciation needs a different measurement.",
+      "actualSampleAssayed": false
+    },
+    {
+      "id": "ALCH-Pb",
+      "term": "Saturn / lead",
+      "symbols": [
+        "♄"
+      ],
+      "historicalMeaning": "Conventional literal-metal reading",
+      "modernCandidate": "Pb",
+      "elements": [
+        "Pb"
+      ],
+      "mappingStatus": "primary_context_required",
+      "primaryContext": "Index Chemicus Adrop names lead/Saturn, yet also lists other readings; Saturn elsewhere denotes aqua fortis.",
+      "contextLimit": "Candidate only after the passage independently establishes the literal metal. This does not identify a compound, purity, phase or actual sample.",
+      "sourceIds": [
+        "V3-NEWTON-INDEX",
+        "V3-NEWTON-SYMBOLS"
+      ],
+      "discriminatingAssay": "Elemental analysis with a reference and blank; phase/speciation needs a different measurement.",
+      "actualSampleAssayed": false
+    },
+    {
+      "id": "ALCH-Hg",
+      "term": "ordinary mercury / quicksilver",
+      "symbols": [
+        "☿"
+      ],
+      "historicalMeaning": "Conventional literal-metal reading",
+      "modernCandidate": "Hg",
+      "elements": [
+        "Hg"
+      ],
+      "mappingStatus": "conventional_mapping_context_pending",
+      "primaryContext": "Conventional guide checked; individual primary-manuscript occurrence not collated in this pass.",
+      "contextLimit": "Candidate only after the passage independently establishes the literal metal. This does not identify a compound, purity, phase or actual sample.",
+      "sourceIds": [
+        "V3-NEWTON-SYMBOLS"
+      ],
+      "discriminatingAssay": "Elemental analysis with a reference and blank; phase/speciation needs a different measurement.",
+      "actualSampleAssayed": false
+    },
+    {
+      "id": "ALCH-antimony",
+      "term": "antimony / regulus",
+      "symbols": [
+        "♁"
+      ],
+      "historicalMeaning": "Ore, refined metallic component or alloy",
+      "modernCandidate": "Stibnite Sb2S3 or antimony-rich regulus, depending on usage",
+      "elements": [
+        "Sb",
+        "S"
+      ],
+      "mappingStatus": "editorial_candidate_not_sample_identity",
+      "primaryContext": "No particular specimen or recipe chemically reconstructed here.",
+      "contextLimit": "The ore and refined material cannot be assigned the same formula; alloy composition remains unknown.",
+      "sourceIds": [
+        "V3-NEWTON-GLOSSARY"
+      ],
+      "discriminatingAssay": "Elemental composition plus independent phase measurement.",
+      "actualSampleAssayed": false
+    },
+    {
+      "id": "ALCH-arsenic",
+      "term": "arsenic",
+      "symbols": [],
+      "historicalMeaning": "Early-modern material term",
+      "modernCandidate": "Arsenic trioxide As2O3 in the glossary's usage",
+      "elements": [
+        "As",
+        "O"
+      ],
+      "mappingStatus": "editorial_candidate_not_sample_identity",
+      "primaryContext": "Glossary reconstruction; passage-specific confirmation pending.",
+      "contextLimit": "Do not substitute elemental As automatically.",
+      "sourceIds": [
+        "V3-NEWTON-GLOSSARY"
+      ],
+      "discriminatingAssay": "Composition and chemical-state/phase analysis by a qualified laboratory.",
+      "actualSampleAssayed": false
+    },
+    {
+      "id": "ALCH-vitriol",
+      "term": "vitriol",
+      "symbols": [
+        "🜖"
+      ],
+      "historicalMeaning": "Family of sulfate materials",
+      "modernCandidate": "Iron/copper sulfate family; exact salt, hydrate and mixture unresolved",
+      "elements": [
+        "Fe",
+        "Cu",
+        "S",
+        "O"
+      ],
+      "mappingStatus": "family_not_unique_formula",
+      "primaryContext": "Editorial symbol-guide family; no unique primary sample established.",
+      "contextLimit": "No fixed stoichiometry, hydration or purity follows from the word.",
+      "sourceIds": [
+        "V3-NEWTON-SYMBOLS"
+      ],
+      "discriminatingAssay": "Elemental ratios plus phase and hydration characterization.",
+      "actualSampleAssayed": false
+    },
+    {
+      "id": "ALCH-green-lion",
+      "term": "green lion / Adrop",
+      "symbols": [],
+      "historicalMeaning": "Multiple indexed material and symbolic readings",
+      "modernCandidate": null,
+      "elements": [],
+      "mappingStatus": "ambiguous_no_element_assignment",
+      "primaryContext": "Index Chemicus Adrop and Duenech entries.",
+      "contextLimit": "Green color or the name alone is not a chemical identity.",
+      "sourceIds": [
+        "V3-NEWTON-INDEX"
+      ],
+      "discriminatingAssay": "First specify the primary passage; independent sample observables would then constrain candidate identities.",
+      "actualSampleAssayed": false
+    },
+    {
+      "id": "ALCH-philosophical-mercury",
+      "term": "philosophical mercury / Mercurius noster",
+      "symbols": [
+        "☿"
+      ],
+      "historicalMeaning": "Context-dependent chymical role",
+      "modernCandidate": null,
+      "elements": [],
+      "mappingStatus": "ambiguous_no_element_assignment",
+      "primaryContext": "Index Chemicus separates several Mercurius entries.",
+      "contextLimit": "Neither elemental Hg nor a modern field is licensed by the term alone.",
+      "sourceIds": [
+        "V3-NEWTON-INDEX"
+      ],
+      "discriminatingAssay": "Passage-specific reconstruction before proposing any assay.",
+      "actualSampleAssayed": false
+    },
+    {
+      "id": "ALCH-operations",
+      "term": "distillation / calcination / rectification",
+      "symbols": [],
+      "historicalMeaning": "Operations and transformations",
+      "modernCandidate": null,
+      "elements": [],
+      "mappingStatus": "process_not_element",
+      "primaryContext": "Index's Ablutio Elementorum entry and editorial rectification entry.",
+      "contextLimit": "An operation name does not determine product identity.",
+      "sourceIds": [
+        "V3-NEWTON-INDEX",
+        "V3-NEWTON-GLOSSARY"
+      ],
+      "discriminatingAssay": "Compare independently measured composition before/after; no preparation is proposed.",
+      "actualSampleAssayed": false
+    },
+    {
+      "id": "ALCH-classical-elements",
+      "term": "earth / water / air / fire",
+      "symbols": [
+        "🜃",
+        "🜄",
+        "🜁",
+        "🜂"
+      ],
+      "historicalMeaning": "Historical elemental categories",
+      "modernCandidate": null,
+      "elements": [],
+      "mappingStatus": "historical_category_not_periodic_element",
+      "primaryContext": "Guide groups these separately from metals.",
+      "contextLimit": "Do not map the four categories directly to periodic-table elements or a quantum interaction.",
+      "sourceIds": [
+        "V3-NEWTON-SYMBOLS"
+      ],
+      "discriminatingAssay": "Requires an explicit measurable modern hypothesis first.",
+      "actualSampleAssayed": false
+    }
+  ]
+}

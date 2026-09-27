@@ -1,0 +1,45 @@
+{
+  "id": "S1A",
+  "sequence": 1,
+  "predecessor": {
+    "id": "P3",
+    "record": "docs/panel-v3/planning-panels.md",
+    "status": "completed_before_S1A_execution"
+  },
+  "checkerFunction": "review_s1a",
+  "checkerFunctionSHA256": "d5c65056748dfaef9de8ce0ea75d9543ff381c279ed841d6362c2fedad7df91e",
+  "status": "accepted_narrow",
+  "reviewer": "/root/advisor_v3 (correlated model agent; independent implementation/derivation, not human peer review)",
+  "reviewMethod": "Independent complex polynomial at every saved frequency; direct saved-error norm; explicit six-tap reconstruction; algebraic factorization proof.",
+  "independentChecks": {
+    "independent_polynomial_max_error": 3.14276109686972e-14,
+    "independent_saved_heldout_L2": 8.342888608107145e-16,
+    "zero_bins": [
+      1024,
+      3072,
+      5120,
+      7168
+    ],
+    "tap_identity_checked": true,
+    "factorization_proof": "Associativity: x*(d*e)=(x*d)*e=x*(d_alt*delta). This proves output equivalence for every finite x."
+  },
+  "acceptedClaim": "The noiseless known-FIR ratio recovers total transfer and predicts a held-out probe; exact alternative device/echo factorizations remain indistinguishable.",
+  "withheld": [
+    "Physical echo or material identification from total transfer",
+    "Pressure calibration",
+    "Empirical apparatus or biological effect"
+  ],
+  "nextDecision": "S1B: test reference cancellation under near-null sensitivity, bounded noise and path drift.",
+  "bindings": {
+    "research/sound-lab-v3/S1A/contract.json": "26b8b5ede645f18341807abd0613ac68afc2e62d6984f925b46c72f48ff7cbb3",
+    "research/sound-lab-v3/S1A/figure.svg": "66a94d6509b89642f3da299c9b565094fa1d32972f7fee5c0b61da6a508babb5",
+    "research/sound-lab-v3/S1A/impulse.csv": "1a93900fb4f1d16390461daa6a1e7b0076364c9e7206ca860f60f4560ce50b58",
+    "research/sound-lab-v3/S1A/manifest.json": "d130586a43c3fe3ad4f97ac0ab0e164a8f659791d7472578ce0a73507f9c0448",
+    "research/sound-lab-v3/S1A/probe_outputs.csv": "a09d3a699cdefbceb94ed9b1550f3773c0521c0184a7e8c39c037808016f3b15",
+    "research/sound-lab-v3/S1A/report.md": "27145943f3078a8a709d55da968d67da4d5a5ae2b7a565f6ae490e914a61649d",
+    "research/sound-lab-v3/S1A/response.csv": "0dcb3c3b2846f5fa1cc3f097dfbb937af026042feeeaf2ca66313b7d699fb0ea",
+    "research/sound-lab-v3/S1A/results.json": "43f77b24221a166b499b47e9ce082cf7de58df4725cc412b39d8b33737fca9bb",
+    "research/sound-lab-v3/S1A/run.py": "e7833507bae0ffc4d47ab60400798912bd3cd8723dca0f64e4fd198c6a8c97a5",
+    "research/sound-lab-v3/common.py": "25a627bb9616a8b04051fb8b4e46b747cf5ea732b0fb28fcb8c2c90baaf1d408"
+  }
+}

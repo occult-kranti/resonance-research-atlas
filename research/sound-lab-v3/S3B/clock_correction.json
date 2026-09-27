@@ -1,0 +1,7 @@
+{
+  "estimatedScale": 1.0020000003629423,
+  "knownFixtureScale": 1.002,
+  "conditionalIndependentReference_Hz": 1000,
+  "rule": "corrected_time=header_time/(known_reference_Hz/fitted_reference_Hz)",
+  "requiredPremise": "Reference frequency independently known; not established by this generated file"
+}

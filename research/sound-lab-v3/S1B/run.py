@@ -1,0 +1,19 @@
+from pathlib import Path
+import sys,json
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
+from common import *
+p=Path(__file__).parent;c=json.loads((p/'contract.json').read_text());a=c['parameters'];f=np.arange(100,3501);w=2*np.pi*f/8000
+D=.7+.2*np.exp(-1j*w)+.1*np.exp(-2j*w);H=D*(1+.98*np.exp(-40j*w));T=1-.3*np.exp(-4j*w);eta=.002*np.exp(1j*np.random.default_rng(103).uniform(-np.pi,np.pi,len(f)));Y=H*T+eta;mask=np.abs(H)>=.15;lam=.0004
+direct=Y/H;reg=Y*np.conj(H)/(np.abs(H)**2+lam);reg0=H*T*np.conj(H)/(np.abs(H)**2+lam);bias=-T*lam/(np.abs(H)**2+lam);moved=D*(1+.98*np.exp(-41j*w))/H
+metrics={'noiseless_max_error':float(np.max(np.abs(H*T/H-T))),'eligible_fraction':float(np.mean(mask)),'masked_noise_max_error':float(np.max(np.abs(direct[mask]-T[mask]))),'unmasked_noise_max_error':float(np.max(np.abs(direct-T))),'regularized_noise_max_error':float(np.max(np.abs(reg-reg0))),'regularized_bias_max':float(np.max(np.abs(bias))),'regularized_gain_max':float(np.max(np.abs(H)/(np.abs(H)**2+lam))),'bias_identity_error':float(np.max(np.abs(reg0-T-bias))),'moved_blank_false_change_max':float(np.max(np.abs(moved[mask]-1))),'minimum_H0_magnitude':float(np.min(np.abs(H)))}
+assert metrics['noiseless_max_error']<1e-12 and metrics['masked_noise_max_error']<=.002/.15+1e-12 and metrics['regularized_gain_max']<=25+1e-12 and metrics['bias_identity_error']<1e-12 and metrics['moved_blank_false_change_max']>.1
+csv(p/'response.csv',['frequency_Hz','H0_real','H0_imag','T_real','T_imag','eta_real','eta_imag','eligible','direct_real','direct_imag','regularized_real','regularized_imag','moved_blank_real','moved_blank_imag'],np.column_stack([f,H.real,H.imag,T.real,T.imag,eta.real,eta.imag,mask,direct.real,direct.imag,reg.real,reg.imag,moved.real,moved.imag]))
+fig,ax=plt.subplots(2,1,figsize=(9,6));ax[0].semilogy(f,np.abs(direct-T),label='Noise after unmasked division');ax[0].semilogy(f,np.abs(reg-T),label='Regularized total error (noise + bias)',alpha=.75);ax[0].axhline(.002/.15,color='black',ls=':',label='Eligible direct-error bound');ax[0].set(ylabel='Absolute relative-transfer error',title='Synthetic notch inversion trades noise for bias');ax[0].legend();ax[1].plot(f,np.abs(moved-1));ax[1].set(xlabel='Frequency (Hz)',ylabel='Blank apparent change |Q−1|',title='One-sample path change can imitate an object change');savefig(fig,p/'figure.svg')
+finish(p,metrics,'Reference division is exact only for the stable noiseless fixture; small path drift creates a false change, while regularization trades bounded noise for explicit bias.',[{'control':'Unmasked division','outcome':'unstable near notch'},{'control':'Moved blank','outcome':'false object signature'},{'control':'Regularization removes all error','outcome':'rejected; deterministic bias remains'}],'''# S1B — stability and sensitivity
+
+The saved complex transfer table implements four distinct synthetic cases. A stable noiseless blank is exactly one, and an object-only change returns its specified relative transfer. The masked bounded-noise error is below eta/.15. Removing the mask amplifies near-notch error. Regularization has gain no greater than 25, proved by h/(h²+lambda) ≤ 1/(2 sqrt(lambda)), but introduces the explicitly calculated bias.
+
+Moving only the synthetic echo by one sample produces an apparent object change although the object is absent. The .15 gate is specific to these normalized transfer fixtures. A physical reference-repeat check can reject unstable acquisitions but cannot prove that every unobserved part of the chain stayed fixed. Measurements must report excluded bins and the estimator's bias; never silently fill deep notches as measured response.
+
+Next question: can a free-decay observable reduce the dependence on unknown drive amplitude, and what receiver/overlapping-mode assumptions remain? No physical experiment has been run.
+''',['response.csv','figure.svg'])

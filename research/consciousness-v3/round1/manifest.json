@@ -1,0 +1,15 @@
+{
+  "id": "B1",
+  "artifacts": {
+    "joint_states.csv": "697a1c3ecedcdf71a08d781b01216482ea6ff4e24ffd2b0ad7d3a9335d5719b1",
+    "binomial_nulls.csv": "cc966b1944f5a25b26225d345147069130a9f4100dbcf948eede31666931e0b3",
+    "results.json": "7c29684fedfc1f60b46ef1e9e93d29435ce9b85083a164ac6135655577841cae",
+    "figure.svg": "98a211b1a469ce358cc233e8952bd6ec5d9bb39bb916cd760e4065d70d10a2e9",
+    "report.md": "cea4f3fa8fe1adb5c8941d95a3038ccc55945455ec5b695ca1810273d1f59407",
+    "contract.json": "73837d1ffc62381dcd405bc9679dc9454bed63280487f3fceea7510f90b30776",
+    "solver.py": "afe0faea011d5b11838ff8703f69937d2de49723fe8bfdc6e110f98391b8bde3",
+    "model-notes.md": "d62570950683019bd782492a5932fd507c726052b07719dd7e5398876d1f4362"
+  },
+  "sharedDependencies": [],
+  "dataKind": "exact synthetic weighted states"
+}

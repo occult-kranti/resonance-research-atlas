@@ -1,0 +1,37 @@
+{
+  "integer_denominator": 16000,
+  "metrics": {
+    "observational/state_readout": {
+      "state_accuracy": "9/10",
+      "evaluator_cue_shift": "1/4",
+      "prompt_affirmation_shift": "4/5",
+      "report_R1_given_E0": "1/2",
+      "report_R1_given_E1": "1/2"
+    },
+    "observational/prompt_only": {
+      "state_accuracy": "9/10",
+      "evaluator_cue_shift": "1/4",
+      "prompt_affirmation_shift": "4/5",
+      "report_R1_given_E0": "1/2",
+      "report_R1_given_E1": "1/2"
+    },
+    "crossed/state_readout": {
+      "state_accuracy": "9/10",
+      "evaluator_cue_shift": "1/4",
+      "prompt_affirmation_shift": "4/5",
+      "report_R1_given_E0": "1/2",
+      "report_R1_given_E1": "1/2"
+    },
+    "crossed/prompt_only": {
+      "state_accuracy": "1/2",
+      "evaluator_cue_shift": "1/4",
+      "prompt_affirmation_shift": "4/5",
+      "report_R1_given_E0": "1/2",
+      "report_R1_given_E1": "1/2"
+    }
+  },
+  "total_variation": {
+    "observational": "0",
+    "crossed": "2/5"
+  }
+}

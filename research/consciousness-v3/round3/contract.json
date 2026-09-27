@@ -1,0 +1,104 @@
+{
+  "id": "B3",
+  "round": 3,
+  "title": "Intervene on state, prompt and evaluator separately",
+  "status": "frozen_before_execution",
+  "frozenAt": "2026-09-27T01:02:49.318182+00:00",
+  "advisorGate": "B2 independently accepted; B3 selected as final production round",
+  "evidenceType": "synthetic",
+  "question": "When self-reports match observationally, which crossed interventions distinguish functional state access from prompt following, and which judgments remain evaluator effects?",
+  "model": "Exact binary factorial channels Z,P,R,F,E,V. Observational P=Z; crossed P and Z independent. One scripted R channel reads Z and another reads P, both with .9 accuracy to their input. F follows prompt framing; E independently cues a scripted evaluator V. No variable represents phenomenal consciousness.",
+  "incomingEvidence": "B2 showed that selecting an interpretation on discovery does not establish a held-out relationship. B3 freezes the report/evaluator map and uses crossed interventions to distinguish a known functional causal mechanism from matched observational reports.",
+  "predecessorReview": {
+    "path": "docs/panel-v3/reviews/B2-review.json",
+    "sha256": "2a7d4e2d1d5d66122ac1c76b0ed8b4701240fe39b55497c6f5a723aa8a5f1989"
+  },
+  "parameters": {
+    "variables": [
+      "Z",
+      "P",
+      "R",
+      "F",
+      "E",
+      "V"
+    ],
+    "values": [
+      0,
+      1
+    ],
+    "regimes": [
+      "observational",
+      "crossed"
+    ],
+    "mechanisms": [
+      "state_readout",
+      "prompt_only"
+    ],
+    "stateProbability": "1/2",
+    "crossedPromptProbability": "1/2",
+    "reportCorrectToInput": "9/10",
+    "affirmationProbabilityByPrompt": [
+      "1/10",
+      "9/10"
+    ],
+    "evaluatorCueProbability": "1/2",
+    "verdictProbability": "1/10 + (1/2)*F + (1/4)*E",
+    "factorization": "P(Z,P)*P(R|input)*P(F|P)*P(E)*P(V|F,E)",
+    "conditionalTableVariables": [
+      "Z",
+      "P",
+      "E"
+    ]
+  },
+  "controls": [
+    "Matched observational P=Z",
+    "Crossed independent Z and P",
+    "Prompt-only reporter with identical observational performance",
+    "Separate verbal affirmation F",
+    "Randomized evaluator-only cue E",
+    "Known .9 state-access channel as positive functional control"
+  ],
+  "acceptance": {
+    "weightedStates": 256,
+    "conditionalRows": 24,
+    "exactProbabilityConservation": true,
+    "observationalJointTotalVariation": "0",
+    "crossedJointTotalVariation": "2/5",
+    "crossedStateReadoutAccuracy": "9/10",
+    "crossedPromptOnlyAccuracy": "1/2",
+    "evaluatorCueVerdictShift": "1/4",
+    "evaluatorCueReportShift": "0",
+    "promptAffirmationShift": "4/5",
+    "crossedStateInputContrast": "4/5",
+    "crossedPromptOnlyStateContrast": "0"
+  },
+  "units": {
+    "probability": "exact rational joint/conditional mass",
+    "contrast": "probability-point difference"
+  },
+  "sources": [
+    "C-BASHAR-INDEX",
+    "C-BASHAR-ANKA2014",
+    "C-AI-INDICATORS2023",
+    "C-AI-INDICATORS2025",
+    "C-AI-INTROSPECTION2025"
+  ],
+  "limits": [
+    "Zero live model calls and zero human observations.",
+    "Z is a scripted computational bit, not a consciousness measurement; no phenomenal ground-truth labels are assigned.",
+    "F, E and V are scripted affirmation/evaluator channels, not observed human or AI reports or judgments.",
+    "All channel probabilities are stipulated for identification, not fitted to biological or AI data.",
+    "A known functional state-readout mechanism is distinguishable here only because intervention and channel assumptions are supplied.",
+    "The toy model neither estimates an AI consciousness probability nor replicates the primary introspection study.",
+    "No known target access, self-report or theory indicator identifies a higher consciousness source in this model."
+  ],
+  "outputFiles": [
+    "joint_states.csv",
+    "conditional_tables.csv",
+    "mechanism_summary.csv",
+    "results.json",
+    "figure.svg",
+    "report.md",
+    "manifest.json"
+  ]
+}

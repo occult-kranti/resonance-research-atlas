@@ -1,0 +1,55 @@
+{
+  "id": "S4A",
+  "sequence": 7,
+  "predecessor": {
+    "id": "S3B",
+    "reviewPath": "docs/panel-v3/reviews/S3B-review.json",
+    "reviewSHA256": "75f964e35fe41fbc606d0774c9ee423607ba9343bb52d5325eaf432b46472c13",
+    "status": "accepted_narrow"
+  },
+  "checkerFunction": "review_s4a",
+  "checkerFunctionSHA256": "e8b6cd6075bb5f3a16106d304459c412e4d567ae7fb3004e8aec2923deb2be6a",
+  "status": "accepted_narrow",
+  "reviewer": "/root/advisor_v3 (correlated model agent; independent implementation/derivation, not human peer review)",
+  "reviewMethod": "Independent whole-table wave polynomial, closed-form two-sample inverse, Gram/determinant derivation, exact all-position ambiguity and kernel proof.",
+  "independentChecks": {
+    "whole_table_polynomial_error": 4.577566798522237e-16,
+    "closed_form_A": [
+      1.0,
+      5.551115123125783e-17
+    ],
+    "closed_form_B": [
+      0.45890531237069304,
+      0.38653061234261454
+    ],
+    "domain_dimension_complex": 2,
+    "single_sample_rank": 1,
+    "single_sample_nullity": 1,
+    "kernel": [
+      1,
+      -1
+    ],
+    "two_sample_determinant": "2i",
+    "two_sample_Gram": "2I",
+    "proof": "Conjugate-swapping A,B conjugates p(x), preserving |p| for all x. Multiplying both by exp(i phi) also preserves |p|. At quarter wavelength, the explicit inverse recovers complex coefficients only with the assumed basis and phase reference."
+  },
+  "acceptedClaim": "Dense magnitude observations retain exact global-phase and conjugate-swap ambiguities; two quarter-wave-spaced complex samples recover coefficients only in the declared known-basis, shared-phase model.",
+  "withheld": [
+    "Unique material or source identity",
+    "A conjugate partner satisfying an independently fixed incident-direction/passivity constraint",
+    "Automatic phase reference across sequential phone recordings"
+  ],
+  "nextDecision": "S4B: test spatial inverse conditioning, explicit singular kernels and an independently held-out phase observation.",
+  "bindings": {
+    "research/sound-lab-v3/S4A/contract.json": "396c9a9846e212cff8232ae7fe7d3aad8c47110b79c85a73ba25974c129554a1",
+    "research/sound-lab-v3/S4A/figure.svg": "5a66921ef79685db7c40cb101cdb31a5a49f1ab0201021a9a5e91cc0ae79880a",
+    "research/sound-lab-v3/S4A/inverse_structure.json": "e2bb349aad9d1766e9eeaa57ea2cf3506f6c4bec433ccb62603375fa703fb3f7",
+    "research/sound-lab-v3/S4A/manifest.json": "d76d03c3c84c7ab020a2a72b334765345ebb6fb801dc6fe8b89acf933d4e459b",
+    "research/sound-lab-v3/S4A/observations.csv": "586da952204822da4c2082aaa29df4e7406daf9926277038c455b34da70b7d93",
+    "research/sound-lab-v3/S4A/report.md": "20434852ffa4b395cb082e59a48bd13b22e615b124cb1aa3df17b1942969d65c",
+    "research/sound-lab-v3/S4A/results.json": "293512816c014cccfb140bbf96f7de994e42c0800c9c0ed246ab31e6b40d2882",
+    "research/sound-lab-v3/S4A/run.py": "ccd72a77bb06365bff71a2be4ac90cb02fc6d7232b816e556b71634f52d4ba11",
+    "research/sound-lab-v3/S4A/spatial_response.csv": "b2c7aaa2752f8cee74a9b750190cdf842800897160191ea0af2c992daf23e134",
+    "research/sound-lab-v3/common.py": "25a627bb9616a8b04051fb8b4e46b747cf5ea732b0fb28fcb8c2c90baaf1d408"
+  }
+}

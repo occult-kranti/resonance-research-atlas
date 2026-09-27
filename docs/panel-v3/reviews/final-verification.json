@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "reviewCount": 13,
+  "orderedIds": [
+    "S1A",
+    "S1B",
+    "S2A",
+    "S2B",
+    "S3A",
+    "S3B",
+    "S4A",
+    "S4B",
+    "S5A",
+    "S5B",
+    "B1",
+    "B2",
+    "B3"
+  ],
+  "planningPanels": 3,
+  "soundRounds": 5,
+  "soundLoops": 10,
+  "laterRounds": 3,
+  "allArtifactBindings": "passed",
+  "allCheckerFunctionIdentities": "passed",
+  "predecessorChain": "passed",
+  "acceptedSourceIDsResolve": "passed",
+  "ledgerSHA256": "fcb962f5d4a2d39d7c682ab4a31b6a0c5010456482e5c6a211c7a89c0c441c2c",
+  "reviewerSourcePath": "docs/panel-v3/reviewer.py",
+  "reviewerSourceSHA256": "455a4a85dde1cc1779905700e109d46f6b831a6857da2c13e1a11f0248dfa75b",
+  "recordReviewSourcePath": "docs/panel-v3/record_review.py",
+  "recordReviewSourceSHA256": "45fd9904d34a47849f5351aba599d3e57aeeefe66fbdaac86b4c6b172fdded88",
+  "empiricalScope": "Generated files, synthetic models and software admission checks; no physical recordings, live model calls or human observations."
+}

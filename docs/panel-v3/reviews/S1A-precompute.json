@@ -1,0 +1,20 @@
+{
+  "id": "S1A",
+  "method": "Direct polynomial evaluation from 43 FIR taps, no producer solver imported",
+  "expected_transfer_at_dc": 1.6,
+  "echo_delay_s": 0.005,
+  "echo_comb_spacing_hz": 200.0,
+  "r1_zero_bins": [
+    1024,
+    3072,
+    5120,
+    7168
+  ],
+  "r1_zero_frequencies_hz": [
+    500.0,
+    1500.0,
+    2500.0,
+    3500.0
+  ],
+  "factorization_witness": "(d,e) and (d*e,delta) have identical convolution h; total transfer cannot distinguish them."
+}

@@ -1,0 +1,15 @@
+{
+  "id": "B3",
+  "artifacts": {
+    "contract.json": "e13ebbb92e04f4ccaf3f065c34963707292bc9a1e09663ea98e91722cdea9501",
+    "solver.py": "90a93e29605486d8d17dcfcd7e8f5edcbba32f55096fcc423dde8850d34892a6",
+    "joint_states.csv": "d50ad17746871066849d34230a84f77f2356a46338b9cf2aa92a1f1b362c0c56",
+    "conditional_tables.csv": "aa4669621bfe422ecb838cbdda6dd6f9ce7319ded56ed77ce0dbad51f3701b50",
+    "mechanism_summary.csv": "3a4a15a847cf9c0701976b85d53a44b2b2c88e005c68b91660fb6d00265f25a7",
+    "results.json": "add8ade01359cebf3c05d52a64a5bfaa5288c32b1046be2ee8971609a084983e",
+    "figure.svg": "bd722429cc59e0b4618733c6b45193fce3be5d18f7f7e4d3d1eeb0f422b028d5",
+    "report.md": "ec7d7440548ba8f2be7cd751a85b2be7937fd659842e46e1c421a5bb6bc5cf1d"
+  },
+  "sharedDependencies": [],
+  "dataKind": "exact scripted factorial joint probabilities"
+}

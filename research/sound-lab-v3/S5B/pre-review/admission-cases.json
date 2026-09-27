@@ -1,0 +1,53 @@
+[
+  {
+    "case": "complete",
+    "status": "complete_primary_set",
+    "eligibleTrials": 16,
+    "primaryContrast_per_s": 1.9999924047717514,
+    "allReasonsChecked": true
+  },
+  {
+    "case": "missing",
+    "status": "incomplete_primary_set",
+    "eligibleTrials": 15,
+    "primaryContrast_per_s": null,
+    "allReasonsChecked": true
+  },
+  {
+    "case": "invalid_trials",
+    "status": "incomplete_primary_set",
+    "eligibleTrials": 12,
+    "primaryContrast_per_s": null,
+    "allReasonsChecked": true
+  },
+  {
+    "case": "missing_metadata",
+    "status": "global_admission_rejected",
+    "reason": "Missing required metadata: gain_processing",
+    "eligibleTrials": 0,
+    "primaryContrast_per_s": null,
+    "allReasonsChecked": true
+  },
+  {
+    "case": "duplicate_id",
+    "status": "global_admission_rejected",
+    "reason": "Duplicate trial ID",
+    "eligibleTrials": 0,
+    "primaryContrast_per_s": null,
+    "allReasonsChecked": true
+  },
+  {
+    "case": "wrong_condition",
+    "status": "incomplete_primary_set",
+    "eligibleTrials": 15,
+    "primaryContrast_per_s": null,
+    "allReasonsChecked": true
+  },
+  {
+    "case": "wrong_impact",
+    "status": "incomplete_primary_set",
+    "eligibleTrials": 15,
+    "primaryContrast_per_s": null,
+    "allReasonsChecked": true
+  }
+]

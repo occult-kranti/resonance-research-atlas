@@ -1,0 +1,12 @@
+{
+  "id": "S1B",
+  "artifacts": {
+    "contract.json": "9b2d4a8ba8af5913ecbee166a4e6fa0a7d56c99aebc1432be011d95b15259301",
+    "run.py": "53c1b32ce2c5e24c5509aab3f39e476531b084ac004df64915359aa54347c33a",
+    "results.json": "294c6d604991a4d39b721744c7eae1064f203fd39e33590319a830252dd9583b",
+    "report.md": "96f331403ec000b26df737c7eaca336632b4dff75c0f84862e156f43562544b4",
+    "response.csv": "0ed6dafcdd2e02567ab1dafdb1684a837ea20257c8cc575a0d50cc5c14cad624",
+    "figure.svg": "c4662ad5b7b95e948c6251f27f23ddda096cd78f60d29da4a7a58443d582a589"
+  },
+  "commonSHA256": "25a627bb9616a8b04051fb8b4e46b747cf5ea732b0fb28fcb8c2c90baaf1d408"
+}

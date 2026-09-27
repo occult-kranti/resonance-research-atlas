@@ -1,0 +1,364 @@
+{
+  "status": "complete_primary_set",
+  "evidenceType": "synthetic_generated",
+  "scope": "Recorded-channel comparison. Metadata are caller declarations, not authentication or physical calibration.",
+  "planSHA256": "ce691ed80e1ccd5f7b3e915ab59420f08640847bfab33206e2ed42f0ad223db8",
+  "manifestSHA256": "f62b1d0dadfa56bb499041183bcdb0f2b6ab12d411b84115647fca5879dceb29",
+  "batchImplementationSHA256": "d3628a01300347bf6e1fd8dc3ae71eef1b417e81a1bfe99407cd08604e563b13",
+  "expectedTrials": 16,
+  "providedTrials": 16,
+  "eligibleTrials": 16,
+  "conditionCounts": {
+    "A": 8,
+    "B": 8
+  },
+  "missingTrialIDs": [],
+  "primaryContrast_per_s": 1.9999924047717514,
+  "descriptiveSurvivorContrast_per_s": 1.9999924047717514,
+  "descriptiveWarning": "For incomplete plans this survivor contrast is not the preregistered primary result.",
+  "metadata": {
+    "device": "deterministic PCM generator; no physical microphone",
+    "gain_processing": "declared S5A synthetic condition/order model",
+    "geometry": "synthetic waveform; proposed spoon bench not run",
+    "clock_reference": "declared exact8000Hz synthetic timebase",
+    "impact_alignment_rule": "fixture impact0; derived padded first trial impact1s"
+  },
+  "trials": [
+    {
+      "trial_id": "T01",
+      "condition_code": "A",
+      "order": 0,
+      "inputPath": "padded_T01.wav",
+      "eligible": true,
+      "flags": [],
+      "observedSourceSHA256": "029f9c919161f7f2e0c277daeed480aa97a1a9c7dfeaa62c79470276b38a3451",
+      "impact_time_s": 1.0,
+      "absoluteFitWindow_s": [
+        1.05,
+        1.8
+      ],
+      "fitStatus": "fit",
+      "sourceUnchanged": true,
+      "fit_json": "T01.json",
+      "fit_csv": "T01.csv",
+      "alpha_per_s": 4.000004461219956,
+      "frequency_Hz": 500.00000189963157,
+      "normalizedResidual": 0.0001554542317734728
+    },
+    {
+      "trial_id": "T02",
+      "condition_code": "B",
+      "order": 1,
+      "inputPath": "../S5A/balanced_effect/T02.wav",
+      "eligible": true,
+      "flags": [],
+      "observedSourceSHA256": "b9cede7cc2e4f0e2858c99b4fa6f642d07056e7f736ae58ec776e9c784a10350",
+      "impact_time_s": 0.0,
+      "absoluteFitWindow_s": [
+        0.05,
+        0.8
+      ],
+      "fitStatus": "fit",
+      "sourceUnchanged": true,
+      "fit_json": "T02.json",
+      "fit_csv": "T02.csv",
+      "alpha_per_s": 5.919978992688822,
+      "frequency_Hz": 499.99999682083245,
+      "normalizedResidual": 0.00028170630060310486
+    },
+    {
+      "trial_id": "T03",
+      "condition_code": "B",
+      "order": 2,
+      "inputPath": "../S5A/balanced_effect/T03.wav",
+      "eligible": true,
+      "flags": [],
+      "observedSourceSHA256": "958e21af84346d8542428b73bc734d7919fd51b89f2b619f7f7a59279f7eafff",
+      "impact_time_s": 0.0,
+      "absoluteFitWindow_s": [
+        0.05,
+        0.8
+      ],
+      "fitStatus": "fit",
+      "sourceUnchanged": true,
+      "fit_json": "T03.json",
+      "fit_csv": "T03.csv",
+      "alpha_per_s": 5.839982257118373,
+      "frequency_Hz": 499.9999907120419,
+      "normalizedResidual": 0.00019396160228637568
+    },
+    {
+      "trial_id": "T04",
+      "condition_code": "A",
+      "order": 3,
+      "inputPath": "../S5A/balanced_effect/T04.wav",
+      "eligible": true,
+      "flags": [],
+      "observedSourceSHA256": "f5205c953c9d7d84c1496148a9b81f9b03976311d30e3050a5072a1850a84ed8",
+      "impact_time_s": 0.0,
+      "absoluteFitWindow_s": [
+        0.05,
+        0.8
+      ],
+      "fitStatus": "fit",
+      "sourceUnchanged": true,
+      "fit_json": "T04.json",
+      "fit_csv": "T04.csv",
+      "alpha_per_s": 3.7599455087745244,
+      "frequency_Hz": 499.99999533777446,
+      "normalizedResidual": 0.00021078156730976457
+    },
+    {
+      "trial_id": "T05",
+      "condition_code": "B",
+      "order": 4,
+      "inputPath": "../S5A/balanced_effect/T05.wav",
+      "eligible": true,
+      "flags": [],
+      "observedSourceSHA256": "cbfade37480ed4279f508dba71403cdd425799182c320497585c42369628fb45",
+      "impact_time_s": 0.0,
+      "absoluteFitWindow_s": [
+        0.05,
+        0.8
+      ],
+      "fitStatus": "fit",
+      "sourceUnchanged": true,
+      "fit_json": "T05.json",
+      "fit_csv": "T05.csv",
+      "alpha_per_s": 5.679987699402426,
+      "frequency_Hz": 500.00000481815243,
+      "normalizedResidual": 0.0001995570103869451
+    },
+    {
+      "trial_id": "T06",
+      "condition_code": "A",
+      "order": 5,
+      "inputPath": "../S5A/balanced_effect/T06.wav",
+      "eligible": true,
+      "flags": [],
+      "observedSourceSHA256": "0b34ba8df3e8a10e511eb03c95d00bd5fbc4e5956acffb64b2ad7891e4d7fb4b",
+      "impact_time_s": 0.0,
+      "absoluteFitWindow_s": [
+        0.05,
+        0.8
+      ],
+      "fitStatus": "fit",
+      "sourceUnchanged": true,
+      "fit_json": "T06.json",
+      "fit_csv": "T06.csv",
+      "alpha_per_s": 3.600008486146164,
+      "frequency_Hz": 500.00000123448945,
+      "normalizedResidual": 0.00024638137871060216
+    },
+    {
+      "trial_id": "T07",
+      "condition_code": "A",
+      "order": 6,
+      "inputPath": "../S5A/balanced_effect/T07.wav",
+      "eligible": true,
+      "flags": [],
+      "observedSourceSHA256": "4414b6120d7363b4423c86b8e2e725f97f10a4331316fdf2cc99cb2a51547beb",
+      "impact_time_s": 0.0,
+      "absoluteFitWindow_s": [
+        0.05,
+        0.8
+      ],
+      "fitStatus": "fit",
+      "sourceUnchanged": true,
+      "fit_json": "T07.json",
+      "fit_csv": "T07.csv",
+      "alpha_per_s": 3.5200272699935433,
+      "frequency_Hz": 499.9999994336945,
+      "normalizedResidual": 0.00014290974572909237
+    },
+    {
+      "trial_id": "T08",
+      "condition_code": "B",
+      "order": 7,
+      "inputPath": "../S5A/balanced_effect/T08.wav",
+      "eligible": true,
+      "flags": [],
+      "observedSourceSHA256": "b0a4f4233ebd0b414041d3e6c26495237f71c77945591c6c80a06ff6f6b54103",
+      "impact_time_s": 0.0,
+      "absoluteFitWindow_s": [
+        0.05,
+        0.8
+      ],
+      "fitStatus": "fit",
+      "sourceUnchanged": true,
+      "fit_json": "T08.json",
+      "fit_csv": "T08.csv",
+      "alpha_per_s": 5.440003664169524,
+      "frequency_Hz": 500.00001170488457,
+      "normalizedResidual": 0.00019459032893852734
+    },
+    {
+      "trial_id": "T09",
+      "condition_code": "A",
+      "order": 8,
+      "inputPath": "../S5A/balanced_effect/T09.wav",
+      "eligible": true,
+      "flags": [],
+      "observedSourceSHA256": "b1df9c4bc3cdcd76e5cc5399b007927706a668dffb3a5ed0731b984f5db4a2f0",
+      "impact_time_s": 0.0,
+      "absoluteFitWindow_s": [
+        0.05,
+        0.8
+      ],
+      "fitStatus": "fit",
+      "sourceUnchanged": true,
+      "fit_json": "T09.json",
+      "fit_csv": "T09.csv",
+      "alpha_per_s": 3.3600142652628553,
+      "frequency_Hz": 499.9999994081918,
+      "normalizedResidual": 0.0001596211049517287
+    },
+    {
+      "trial_id": "T10",
+      "condition_code": "B",
+      "order": 9,
+      "inputPath": "../S5A/balanced_effect/T10.wav",
+      "eligible": true,
+      "flags": [],
+      "observedSourceSHA256": "f4ac1756fd23c408ead5158a03b6508b5b61d087d51f83bce224b6a657cf0bc2",
+      "impact_time_s": 0.0,
+      "absoluteFitWindow_s": [
+        0.05,
+        0.8
+      ],
+      "fitStatus": "fit",
+      "sourceUnchanged": true,
+      "fit_json": "T10.json",
+      "fit_csv": "T10.csv",
+      "alpha_per_s": 5.280028383829413,
+      "frequency_Hz": 500.0000034541212,
+      "normalizedResidual": 0.0001894883332973879
+    },
+    {
+      "trial_id": "T11",
+      "condition_code": "B",
+      "order": 10,
+      "inputPath": "../S5A/balanced_effect/T11.wav",
+      "eligible": true,
+      "flags": [],
+      "observedSourceSHA256": "6031f2da27de27c4a3d27d753926283237bf8257468e4a557fe143919785ad29",
+      "impact_time_s": 0.0,
+      "absoluteFitWindow_s": [
+        0.05,
+        0.8
+      ],
+      "fitStatus": "fit",
+      "sourceUnchanged": true,
+      "fit_json": "T11.json",
+      "fit_csv": "T11.csv",
+      "alpha_per_s": 5.200023919297782,
+      "frequency_Hz": 499.9999942492042,
+      "normalizedResidual": 0.00019770937646637165
+    },
+    {
+      "trial_id": "T12",
+      "condition_code": "A",
+      "order": 11,
+      "inputPath": "../S5A/balanced_effect/T12.wav",
+      "eligible": true,
+      "flags": [],
+      "observedSourceSHA256": "101afe7c8317614c78faf56d80102b39a7bb09e174a9603a577ba3b411d6f31b",
+      "impact_time_s": 0.0,
+      "absoluteFitWindow_s": [
+        0.05,
+        0.8
+      ],
+      "fitStatus": "fit",
+      "sourceUnchanged": true,
+      "fit_json": "T12.json",
+      "fit_csv": "T12.csv",
+      "alpha_per_s": 3.1200235289956466,
+      "frequency_Hz": 500.00000350969384,
+      "normalizedResidual": 0.00012564062348825812
+    },
+    {
+      "trial_id": "T13",
+      "condition_code": "B",
+      "order": 12,
+      "inputPath": "../S5A/balanced_effect/T13.wav",
+      "eligible": true,
+      "flags": [],
+      "observedSourceSHA256": "1f25ea4cb4ccc6b7a6debaf9abca544a0967c47ca7fe37a67ed42c30172d4c79",
+      "impact_time_s": 0.0,
+      "absoluteFitWindow_s": [
+        0.05,
+        0.8
+      ],
+      "fitStatus": "fit",
+      "sourceUnchanged": true,
+      "fit_json": "T13.json",
+      "fit_csv": "T13.csv",
+      "alpha_per_s": 5.039999105572361,
+      "frequency_Hz": 499.9999940014902,
+      "normalizedResidual": 0.00018017046803211762
+    },
+    {
+      "trial_id": "T14",
+      "condition_code": "A",
+      "order": 13,
+      "inputPath": "../S5A/balanced_effect/T14.wav",
+      "eligible": true,
+      "flags": [],
+      "observedSourceSHA256": "2cae11b809e7e1deed3c5b3f2f060033209b057815ca5a6ee0923a2de635e9e3",
+      "impact_time_s": 0.0,
+      "absoluteFitWindow_s": [
+        0.05,
+        0.8
+      ],
+      "fitStatus": "fit",
+      "sourceUnchanged": true,
+      "fit_json": "T14.json",
+      "fit_csv": "T14.csv",
+      "alpha_per_s": 2.9600354849849273,
+      "frequency_Hz": 500.00000357424886,
+      "normalizedResidual": 0.0002185546867772082
+    },
+    {
+      "trial_id": "T15",
+      "condition_code": "A",
+      "order": 14,
+      "inputPath": "../S5A/balanced_effect/T15.wav",
+      "eligible": true,
+      "flags": [],
+      "observedSourceSHA256": "0c0d83d89bb5b67c0ad8d37a898fdbecb6496bb6782c699b0c377fbd3023b69a",
+      "impact_time_s": 0.0,
+      "absoluteFitWindow_s": [
+        0.05,
+        0.8
+      ],
+      "fitStatus": "fit",
+      "sourceUnchanged": true,
+      "fit_json": "T15.json",
+      "fit_csv": "T15.csv",
+      "alpha_per_s": 2.8799927501726073,
+      "frequency_Hz": 500.0000009384649,
+      "normalizedResidual": 0.0001283157683825187
+    },
+    {
+      "trial_id": "T16",
+      "condition_code": "B",
+      "order": 15,
+      "inputPath": "../S5A/balanced_effect/T16.wav",
+      "eligible": true,
+      "flags": [],
+      "observedSourceSHA256": "daaef11ca674f8bf3f25bc0c51f240bdff03b2d4cb247f75802bd5b01ebe48f5",
+      "impact_time_s": 0.0,
+      "absoluteFitWindow_s": [
+        0.05,
+        0.8
+      ],
+      "fitStatus": "fit",
+      "sourceUnchanged": true,
+      "fit_json": "T16.json",
+      "fit_csv": "T16.csv",
+      "alpha_per_s": 4.799986971645531,
+      "frequency_Hz": 500.0000100644968,
+      "normalizedResidual": 0.00020270578919218037
+    }
+  ]
+}

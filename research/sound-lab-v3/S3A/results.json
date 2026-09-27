@@ -1,0 +1,38 @@
+{
+  "id": "S3A",
+  "round": 3,
+  "title": "Preserve the original recording during analysis",
+  "status": "executed_pending_review",
+  "evidenceType": "actualbytes",
+  "question": "Can a versioned importer preserve source evidence while giving equivalent WAV and CSV analysis?",
+  "finding": "The protected version rejects source collisions, existing outputs, invalid CSV channel and symlink collisions while preserving equivalent valid WAV/CSV analysis.",
+  "metrics": {
+    "valid_trace_max_difference_FS": 0.0,
+    "valid_alpha_difference_per_s": 0.0,
+    "valid_frequency_difference_Hz": 0.0,
+    "rejected_cases": 4,
+    "protected_sources": 4,
+    "protected_sentinels": 4
+  },
+  "failedControls": [
+    {
+      "control": "Historical direct CLI",
+      "outcome": "retained for reproduction only; input-collision and channel defects repaired by versioned wrapper"
+    }
+  ],
+  "limits": [
+    "File integrity is not source authenticity or acoustic calibration",
+    "Original S2A/S2B fitter and results remain frozen",
+    "Low residuals retain the exact S2B physical ambiguity",
+    "User-supplied recording provenance is declared, not independently verified"
+  ],
+  "sources": [
+    "V3-W3C-CAPTURE"
+  ],
+  "contractSHA256": "50edeb39d806519683c1f8da23e748432fd8436cd6e64f9490889e2b5abf1c7e",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "matplotlib": "3.10.8"
+  }
+}

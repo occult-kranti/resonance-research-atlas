@@ -1,0 +1,15 @@
+{
+  "id": "B2",
+  "artifacts": {
+    "contract.json": "66c6b180d46d5fe93e2dd719dfebca020d542719b98050c9c32a77a1dc8aca58",
+    "solver.py": "3ac95d3f2c5eb50ce972d807853c0f6e1ae530e209193da0fc5f644e9f0d4cb6",
+    "assignments.csv": "a5dc85e8ab6c6ee60d742365a4eb3e43b43cd45fbf1946f19aec018e1a12af02",
+    "score_distribution.csv": "f4cc957c73604f09d019dbf98373560cc9050ea5812654c50962b8652fed584d",
+    "discovery_holdout.csv": "5f06d388d609d6c0a2359d3fe2ebc85c9a6a0aff2edf59b2cb370a033a7a4465",
+    "results.json": "2a25d946863fdadd03854aad62d8b05a29d7084849f9590f087d58bf80881fc4",
+    "figure.svg": "8a746e769026179052d7df26f0b05b500439ed80a2c9d6efdb59bade266e5d55",
+    "report.md": "c0a80154f8f208414b9c27bed5c24c291e1ba4a2c550ec39fc63730e57702677"
+  },
+  "sharedDependencies": [],
+  "dataKind": "exact synthetic finite assignments and weighted pairs"
+}

@@ -1,0 +1,50 @@
+{
+  "id": "S2B",
+  "round": 2,
+  "title": "A good decay fit can still describe recording gain",
+  "status": "executed_pending_review",
+  "evidenceType": "actualbytes",
+  "question": "Which model failures can residuals and window changes detect, and which remain exactly ambiguous?",
+  "finding": "Nearby modes and noise can raise residuals, but exponential recording gain is byte-identical to a different decay and passes the same fit checks.",
+  "metrics": {
+    "ambiguity_prequantization_max_FS": 5.551115123125783e-17,
+    "ambiguous_PCM_identical": true,
+    "gain_drift_apparent_alpha_per_s": 1.999999616438241,
+    "overlap_alpha_early_per_s": 4.165378124271129,
+    "overlap_alpha_late_per_s": 3.7176503698881183,
+    "overlap_residual_early": 0.45606892529745285,
+    "noise_residual_late": 0.04446423532506546,
+    "flagged_fits": 2,
+    "fits_total": 10
+  },
+  "failedControls": [
+    {
+      "control": "Gain drift versus true alpha2",
+      "outcome": "exact observational ambiguity"
+    },
+    {
+      "control": "Single-mode overlap fit",
+      "outcome": "model mismatch flagged"
+    },
+    {
+      "control": "All low-residual fits are intrinsic damping",
+      "outcome": "rejected by byte-identical gain-drift counterexample"
+    }
+  ],
+  "limits": [
+    "Generated WAV bytes are not recorded physical data",
+    "Residual/window checks can reject some failures but cannot certify intrinsic damping",
+    "Exact exponential gain is a counterexample, not a claimed universal AGC law",
+    "Multiple modal contributions, support and microphone dynamics remain physical alternatives"
+  ],
+  "sources": [
+    "V3-FEYN23",
+    "V3-W3C-CAPTURE"
+  ],
+  "contractSHA256": "732f628b96932a9212a8308a93269fe0372ccbcdb73c4872539ec39203e51927",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "matplotlib": "3.10.8"
+  }
+}

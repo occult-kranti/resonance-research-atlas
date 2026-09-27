@@ -1,0 +1,71 @@
+{
+  "id": "S2A",
+  "sequence": 3,
+  "predecessor": {
+    "id": "S1B",
+    "reviewPath": "docs/panel-v3/reviews/S1B-review.json",
+    "reviewSHA256": "5c1b18432eb9ada5371c21b180a84d14ed11a4f4e75adda0e97d905c4f435235",
+    "status": "accepted_narrow"
+  },
+  "checkerFunction": "review_s2a",
+  "checkerFunctionSHA256": "e4f7fec134400e0bb744cf9f9cec5006b075301dc13d6ec25eeae88708f721e9",
+  "status": "accepted_narrow",
+  "reviewer": "/root/advisor_v3 (correlated model agent; independent implementation/derivation, not human peer review)",
+  "reviewMethod": "Independent PCM decoding and pointwise quantization bound, cycle-shift decay regression, zero-crossing frequency estimate and saved residual norm.",
+  "independentChecks": {
+    "independent_estimators": [
+      {
+        "case": 0,
+        "cycle_shift_alpha_per_s": 3.999830730034494,
+        "zero_crossing_frequency_Hz": 500.0,
+        "residual_recomputed": 0.0003491425522215834,
+        "max_PCM_quantization_error": 1.5257912480857658e-05
+      },
+      {
+        "case": 1,
+        "cycle_shift_alpha_per_s": 4.000108434335776,
+        "zero_crossing_frequency_Hz": 500.00018629581666,
+        "residual_recomputed": 0.0001873932535847031,
+        "max_PCM_quantization_error": 1.525867767414031e-05
+      },
+      {
+        "case": 2,
+        "cycle_shift_alpha_per_s": 4.000173278260191,
+        "zero_crossing_frequency_Hz": 500.0001656805263,
+        "residual_recomputed": 0.00012479678595495155,
+        "max_PCM_quantization_error": 1.525814389653421e-05
+      }
+    ],
+    "silent_and_97_sample_clipping_rejections_verified": true,
+    "proof": "With a 16-sample period y[n+16]=exp(-4*16/8000)y[n]; constant gain and phase cancel in the ratio, whereas time-varying gain need not."
+  },
+  "acceptedClaim": "One shared WAV importer/local fitter recovers the declared 500 Hz, 4 s^-1 decay across generated PCM gain/phase cases; silent and clipped files are rejected.",
+  "withheld": [
+    "Physical tap recordings",
+    "Intrinsic material damping",
+    "Global identification of arbitrary audio from a local fit"
+  ],
+  "nextDecision": "S2B: test mode overlap, noise and exact exponential-gain/decay ambiguity using the same frozen importer.",
+  "bindings": {
+    "research/sound-lab-v3/S2A/case0.wav": "a698b311d05ac17cfe49e858c8d8cb391fa115028954be7e7f9aa6f395dc05ee",
+    "research/sound-lab-v3/S2A/case1.wav": "73caf8874be4162fd9d8e286ba591e9580012ad20795f5702dbc2945f8f9a635",
+    "research/sound-lab-v3/S2A/case2.wav": "2a6ebabc46852472fc3949cd66d48eb34d7ef7445fffdefe0fe62f43eac50d38",
+    "research/sound-lab-v3/S2A/case3.wav": "78f82cd49af869013e8ec414a15d71f5f4f2ec8d006b6a0c50527c91eaa7a85f",
+    "research/sound-lab-v3/S2A/case4.wav": "f75ce19b6055163f7cf34fb3a36a67025d9bc5eb01485b2700c2f01465954c81",
+    "research/sound-lab-v3/S2A/contract.json": "5bc07ebfe83014412fc43e840bba62569909b6be7526053bba15490ab54718d0",
+    "research/sound-lab-v3/S2A/figure.svg": "6d6daee41a8b9211f38f26ed57b50f5e5b258d805db885a1578205bbc783678c",
+    "research/sound-lab-v3/S2A/fit0.csv": "4cb1c8da5abea4880c99d812939b9d4b7d8479c231065694ff5496ea942744c7",
+    "research/sound-lab-v3/S2A/fit1.csv": "130c83c21c506fdb3a52d6ae9b43e8483fc04306ce343977ef5851e12680a44d",
+    "research/sound-lab-v3/S2A/fit2.csv": "2722fe9a8cc112ecd014730e3422f5b677e6816e79bea229a92d8769024d3de4",
+    "research/sound-lab-v3/S2A/fit3.csv": "25b7ad5abbd253d14465c84099c446dc75ae528d34d5ebc07012d52cb411259c",
+    "research/sound-lab-v3/S2A/fit4.csv": "26d256ec6d00cb7b45b85aadfe98f324aaa88af2ead14ef3eea3d881051ba579",
+    "research/sound-lab-v3/S2A/fits.csv": "3376552e3f67330cdebc05661167a603d9dc68e70f40a07e8ba966f1c0b95d76",
+    "research/sound-lab-v3/S2A/intake_results.json": "20ba520d8afa98ae4cec022f5b7995a4c320d1e9df64a127dcd069d7920990b7",
+    "research/sound-lab-v3/S2A/manifest.json": "610ecae4106c041ef06e2e73c7167be1872de47875be4951c010351a7054a664",
+    "research/sound-lab-v3/S2A/report.md": "dc9e337d9946a6ffb52410991105e30fc4ef6171ffdaab1dc30a5ac32b4fc326",
+    "research/sound-lab-v3/S2A/results.json": "de38f74360560c41c4b766a7eb2f23f52f4607bb924ce7fba2b18fe3488db1b4",
+    "research/sound-lab-v3/S2A/run.py": "0965e46b3ecd674453dfd14223ad93772d6e4e0cd076da61dd9ae0768cde064d",
+    "research/sound-lab-v3/fit_recording.py": "d1f0ad5fadd5e225c9d3feb3ca79d36d583dc62b5ab331c9ae6f351fb1d78137",
+    "research/sound-lab-v3/common.py": "25a627bb9616a8b04051fb8b4e46b747cf5ea732b0fb28fcb8c2c90baaf1d408"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "id": "S3B",
+  "round": 3,
+  "title": "The time axis is a calibration premise",
+  "status": "executed_pending_review",
+  "evidenceType": "actualbytes",
+  "question": "Can identical samples yield different absolute decay and frequency under different clock labels?",
+  "finding": "A wrong timebase changes fitted frequency and decay together without changing samples; an independently known reference can correct this synthetic clock error.",
+  "metrics": {
+    "apparent_frequency_Hz": 499.0019960514766,
+    "apparent_alpha_per_s": 3.992026003459423,
+    "correct_time_frequency_Hz": 500.000000047513,
+    "correct_time_alpha_per_s": 4.000010515434883,
+    "reference_estimated_clock_scale": 1.0020000003629423,
+    "reference_corrected_frequency_Hz": 500.000000228622,
+    "reference_corrected_alpha_per_s": 4.000010516883766,
+    "reference_boundary_flag": true,
+    "invalid_cases_rejected": 4,
+    "identical_amplitudes": true
+  },
+  "failedControls": [
+    {
+      "control": "Wrong header with low residual",
+      "outcome": "accepted file format but wrong absolute physical parameters"
+    },
+    {
+      "control": "Constant reference alpha\u22480",
+      "outcome": "search-bound flag retained"
+    },
+    {
+      "control": "Malformed time/channel/window/amplitude",
+      "outcome": "four cases rejected without modifying raw input"
+    }
+  ],
+  "limits": [
+    "Generated PCM and timestamp fixtures are not a physical clock measurement",
+    "Independent reference frequency is an additional assumption; a same-clock generated tone is circular calibration",
+    "Header sample rate and reported device settings do not independently certify true sampling time",
+    "A constant reference tone reaches alpha0 search boundary; that flag is retained"
+  ],
+  "sources": [
+    "V3-FARINA2000",
+    "V3-W3C-CAPTURE"
+  ],
+  "contractSHA256": "53abd3e96cc9676df860f2c79306899964b44279732d79eee328cd96a20bf26b",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "matplotlib": "3.10.8"
+  }
+}

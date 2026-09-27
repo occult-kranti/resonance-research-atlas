@@ -28,6 +28,7 @@ jobs:
           npm test
           python3 research/verify_rounds.py
           python3 research/nanoparticles/verify.py
+          python3 scripts/verify_continuation.py
       - name: Assemble immutable source snapshots
         run: python3 scripts/build_site.py --output dist
       - uses: actions/configure-pages@v5

@@ -1,0 +1,98 @@
+[
+  {
+    "trial_id": "T01",
+    "condition_code": "A",
+    "maxPrequantizationDifference_FS": 0.0,
+    "PCMidentical": true
+  },
+  {
+    "trial_id": "T02",
+    "condition_code": "B",
+    "maxPrequantizationDifference_FS": 5.551115123125783e-17,
+    "PCMidentical": true
+  },
+  {
+    "trial_id": "T03",
+    "condition_code": "B",
+    "maxPrequantizationDifference_FS": 5.551115123125783e-17,
+    "PCMidentical": true
+  },
+  {
+    "trial_id": "T04",
+    "condition_code": "A",
+    "maxPrequantizationDifference_FS": 4.163336342344337e-17,
+    "PCMidentical": true
+  },
+  {
+    "trial_id": "T05",
+    "condition_code": "B",
+    "maxPrequantizationDifference_FS": 5.551115123125783e-17,
+    "PCMidentical": true
+  },
+  {
+    "trial_id": "T06",
+    "condition_code": "A",
+    "maxPrequantizationDifference_FS": 2.7755575615628914e-17,
+    "PCMidentical": true
+  },
+  {
+    "trial_id": "T07",
+    "condition_code": "A",
+    "maxPrequantizationDifference_FS": 5.551115123125783e-17,
+    "PCMidentical": true
+  },
+  {
+    "trial_id": "T08",
+    "condition_code": "B",
+    "maxPrequantizationDifference_FS": 8.326672684688674e-17,
+    "PCMidentical": true
+  },
+  {
+    "trial_id": "T09",
+    "condition_code": "A",
+    "maxPrequantizationDifference_FS": 5.551115123125783e-17,
+    "PCMidentical": true
+  },
+  {
+    "trial_id": "T10",
+    "condition_code": "B",
+    "maxPrequantizationDifference_FS": 5.551115123125783e-17,
+    "PCMidentical": true
+  },
+  {
+    "trial_id": "T11",
+    "condition_code": "B",
+    "maxPrequantizationDifference_FS": 5.551115123125783e-17,
+    "PCMidentical": true
+  },
+  {
+    "trial_id": "T12",
+    "condition_code": "A",
+    "maxPrequantizationDifference_FS": 5.551115123125783e-17,
+    "PCMidentical": true
+  },
+  {
+    "trial_id": "T13",
+    "condition_code": "B",
+    "maxPrequantizationDifference_FS": 5.551115123125783e-17,
+    "PCMidentical": true
+  },
+  {
+    "trial_id": "T14",
+    "condition_code": "A",
+    "maxPrequantizationDifference_FS": 2.7755575615628914e-17,
+    "PCMidentical": true
+  },
+  {
+    "trial_id": "T15",
+    "condition_code": "A",
+    "maxPrequantizationDifference_FS": 5.551115123125783e-17,
+    "PCMidentical": true
+  },
+  {
+    "trial_id": "T16",
+    "condition_code": "B",
+    "maxPrequantizationDifference_FS": 5.551115123125783e-17,
+    "PCMidentical": true
+  }
+]

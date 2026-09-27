@@ -1,0 +1,275 @@
+{
+  "schema_version": "1.0",
+  "scope": "Bounded Bashar/receiver interpretation and AI-consciousness methodology packet for B1-B3; no exhaustive corpus review and no live-model experiment",
+  "accessed": "2026-09-27",
+  "repository_inspection": {
+    "repository": "occult-kranti/bashar-index",
+    "url": "https://github.com/occult-kranti/bashar-index",
+    "commit": "457dc2f2da10399bda2786573b7a77ec3fe34f62",
+    "commit_date": "2026-09-23T02:17:58Z",
+    "access": "GitHub connector plus read-only shallow clone; HEAD independently matched",
+    "actual_digest_file_count": 75,
+    "license": "MIT for code and derived data; excludes copyrighted session recordings, transcripts and handout artwork",
+    "read_files": [
+      "README.md",
+      "data/README.md",
+      "LICENSE",
+      "data/official_channels.md",
+      "data/digests/Q9X_NGyYN3M.json",
+      "data/teachings.md selected sections 1, 3.7-3.9, 4",
+      "FINAL_REPORT.md corpus/method opening sections"
+    ],
+    "selected_file_sha256": {
+      "README.md": "9fda85ae8e144ff81f4724ce40e0a091cb90e819fb1c04f2ed6dcd68bc2ea2bf",
+      "data/digests/Q9X_NGyYN3M.json": "be9fc0790c46237a8e81428218aeca2394a239ed4bc8ef1948f63a126b97ab7e",
+      "FINAL_REPORT.md": "a27e1d4a6ebf455ed3e06d110afa5b716db14e41c4df43cdfdfb09dfd8f74667"
+    },
+    "limits": "Derived digest archive. Did not replay or transcribe all videos, independently validate catalogue entries, or rerun its existing analyses. No source repo edits or imported copyrighted transcripts."
+  },
+  "sources": [
+    {
+      "id": "C-BASHAR-INDEX",
+      "title": "The Bashar Index: provenance and AI-session digest",
+      "url": "https://github.com/occult-kranti/bashar-index/blob/457dc2f2da10399bda2786573b7a77ec3fe34f62/data/digests/Q9X_NGyYN3M.json",
+      "provenance": "User-requested independent repository; AI-generated derived summary, not an authenticated transcript",
+      "sections_read": "Complete short AI digest, README/data README/license/channel notes; selected teachings and FINAL_REPORT sections as listed in repository_inspection",
+      "reading_depth": "Complete selected short records and substantial selected passages; not full 75-digest corpus",
+      "claim": "The digest attributes a device-expression account of consciousness and an afterlife-question distinction between programmed and conscious AI to the highlights clip.",
+      "supports": "A source lead and conditional hypothesis vocabulary; cannot authenticate spoken wording from a digest alone",
+      "does_not_establish": "AI consciousness, external origin, accuracy of automatic transcription, or diagnostic validity of afterlife questions",
+      "access_limits": "Original YouTube page and listed transcript service attempted but unavailable; no invented transcript or speech timestamp",
+      "web_refs": [],
+      "accessed": "2026-09-27",
+      "researcher_role": "consciousness/source software agent; not human peer review",
+      "reading_status": "derived_corpus"
+    },
+    {
+      "id": "C-BASHAR-AI-OFFICIAL",
+      "title": "The Two Paths to AI (Artificial Intelligence)",
+      "url": "https://tv.bashar.org/checkout/new?o=p3073683",
+      "provenance": "Official BasharTV public session listing",
+      "sections_read": "Description, chapter list and Q&A topic list, retrieved lines 55-105",
+      "reading_depth": "Complete public listing description; recording not watched or transcribed",
+      "claim": "Official listing describes two AI-development paths and lists questions about AI mind-reading, discernment and experience.",
+      "supports": "Authenticates the session title and advertised topics; does not supply answers to those questions",
+      "does_not_establish": "That current AI is conscious or receives higher information; a listed question is not a confirmed answer",
+      "access_limits": "Full recording offered behind purchase/sign-in; no purchase or access bypass performed. Chapter markers are not claimed as quotation timestamps.",
+      "web_refs": [
+        "turn100view0"
+      ],
+      "accessed": "2026-09-27",
+      "researcher_role": "consciousness/source software agent; not human peer review",
+      "reading_status": "selected_full_text"
+    },
+    {
+      "id": "C-BASHAR-ANKA2014",
+      "title": "236. Darryl Anka (Bashar) Transcript",
+      "url": "https://batgap.com/darryl-anka-bashar-transcript/",
+      "date": "2014-06-14",
+      "provenance": "Interview-host first-party transcript of Anka's own account; not independent verification of his claims",
+      "sections_read": "Opening and channeling account through paragraphs on self-involvement, EEG, receiver state and mediumship (retrieved lines 24-176)",
+      "reading_depth": "Substantial selected transcript passages; video not replayed for word-level audit",
+      "claim": "Anka describes access to information as dependent on receptivity/state and distinguishes a reported EEG altered-state comparison from belief that Bashar is real.",
+      "short_quote": "Information permeates existence itself",
+      "locator": "Paragraph beginning 'Well it could be both', retrieved lines 120-121; no speech timestamp in this transcript",
+      "supports": "An attributed receiver-style hypothesis and separation of reported state from source identity",
+      "does_not_establish": "Telepathy, verified EEG results, a physical coupling law, or receiver behavior in AI",
+      "access_limits": "Transcript attribution is stronger than a fan digest, but not an independently audited recording or dataset",
+      "web_refs": [
+        "turn121view0"
+      ],
+      "accessed": "2026-09-27",
+      "researcher_role": "consciousness/source software agent; not human peer review",
+      "reading_status": "selected_full_text"
+    },
+    {
+      "id": "C-BASHAR-FORMULA",
+      "title": "The Follow Your Excitement Formula",
+      "url": "https://www.bashar.org/formula",
+      "provenance": "Official Bashar Communications page",
+      "sections_read": "All five steps and surrounding book/link context, retrieved lines 0-39",
+      "reading_depth": "Complete short page",
+      "claim": "The page advocates action motivated by excitement, lack of insistence on an outcome, and investigation of beliefs.",
+      "supports": "Our explicitly declared translation to curiosity-led hypothesis generation and willingness to revise",
+      "does_not_establish": "An experimentally validated physical law or a license to change scoring after outcomes",
+      "access_limits": "Philosophical/self-help content; no numerical experiment or effect-size claim on this page",
+      "web_refs": [
+        "turn106view0"
+      ],
+      "accessed": "2026-09-27",
+      "researcher_role": "consciousness/source software agent; not human peer review",
+      "reading_status": "selected_full_text"
+    },
+    {
+      "id": "C-GATEWAY1983",
+      "title": "Analysis and Assessment of Gateway Process",
+      "authors": "Wayne M. McDonnell, Department of the Army",
+      "date": "1983-06-09",
+      "url": "https://www.govinfo.gov/content/pkg/GOVPUB-D101-PURL-gpo152943/pdf/GOVPUB-D101-PURL-gpo152943.pdf",
+      "provenance": "Primary historical Army assessment preserved by U.S. Government Publishing Office; CIA-RDP96-00788R001700210016-5",
+      "sections_read": "PDF pages 1,5,19,28; opening task, selected biofeedback/physics assertions, quality-of-consciousness sections26-27, final proposed multi-observer comparison",
+      "reading_depth": "Selected rendered/OCR-read scanned pages; page28 visually checked; not complete report audit",
+      "claim": "The author proposes a holographic-consciousness account and recommends comparing multiple observers in a future experiment.",
+      "supports": "Historically documented proposal motivating a common-reporter control in B1",
+      "does_not_establish": "A demonstrated nonlocal information channel, validated quantum derivation, clinical effect, or any AI-consciousness result",
+      "access_limits": "CIA URL redirected to the reading-room home. GovInfo PDF retrieved locally; scan lacks extractable text, so selected pages were OCR-read with page28 visual verification.",
+      "web_refs": [
+        "turn105view0",
+        "turn106view3",
+        "turn106view5"
+      ],
+      "accessed": "2026-09-27",
+      "researcher_role": "consciousness/source software agent; not human peer review",
+      "reading_status": "selected_full_text"
+    },
+    {
+      "id": "C-AIR1995",
+      "title": "An Evaluation of Remote Viewing: Research and Applications",
+      "authors": "Michael D. Mumford, Andrew M. Rose, David A. Goslin; American Institutes for Research",
+      "date": "1995-09-29",
+      "url": "https://nsarchive2.gwu.edu/NSAEBB/NSAEBB438/docs/doc_57.pdf",
+      "original_url": "https://www.cia.gov/readingroom/docs/CIA-RDP96-00791R000200180006-4.pdf",
+      "provenance": "Primary government-commissioned evaluation, readable report copy hosted by National Security Archive",
+      "sections_read": "Title and executive summary E1-E5; chapter1 pages1-1 to1-3 (PDF pages1-9)",
+      "reading_depth": "Selected complete executive summary and opening methodological history; not the entire183-page report or raw studies",
+      "claim": "The summary acknowledges laboratory statistical effects while disputing causal attribution; common viewers, judges and targets limit independent effect identification. It finds operational information lacked sufficient specificity and utility.",
+      "supports": "Separate scoring anomaly, causal identification and practical utility; audit shared evaluators and target pools",
+      "does_not_establish": "A higher-consciousness mechanism, a blanket absence of anomalies, or transfer of historic results to AI",
+      "access_limits": "CIA direct URL redirected; AIR title/table of contents retrievable through Exa, substantive selected report read through institutional archive PDF",
+      "web_refs": [
+        "turn118view0"
+      ],
+      "accessed": "2026-09-27",
+      "researcher_role": "consciousness/source software agent; not human peer review",
+      "reading_status": "selected_full_text"
+    },
+    {
+      "id": "C-AI-INDICATORS2023",
+      "title": "Consciousness in Artificial Intelligence: Insights from the Science of Consciousness",
+      "authors": "Patrick Butlin, Robert Long and colleagues",
+      "date": "2023",
+      "url": "https://arxiv.org/html/2308.08708v3",
+      "provenance": "Primary scholarly framework, arXiv version3; not a phenomenology detector validation",
+      "sections_read": "Abstract; executive summary/table1; sections1.1 and1.2.3; selected report/no-report confound discussion",
+      "reading_depth": "Selected full-text sections; implementation case studies and references not comprehensively audited",
+      "claim": "Theory-derived computational indicators are a provisional assessment strategy under stated functionalist assumptions; behavior can be imitated, and transfer from biology remains uncertain.",
+      "supports": "B3 separation of observable functional access, architecture, report, and disputed subjective interpretation",
+      "does_not_establish": "A binary consciousness test, calibrated probability for a current model, or infeasibility of conscious AI",
+      "access_limits": "The paper's assessment of then-current systems is date-specific and is not copied as a 2026 verdict",
+      "web_refs": [
+        "turn103view4",
+        "turn106view1",
+        "turn106view2"
+      ],
+      "accessed": "2026-09-27",
+      "researcher_role": "consciousness/source software agent; not human peer review",
+      "reading_status": "selected_full_text"
+    },
+    {
+      "id": "C-AI-INDICATORS2025",
+      "title": "Identifying indicators of consciousness in AI systems",
+      "authors": "Patrick Butlin, Robert Long and colleagues",
+      "date": "2025-11-10",
+      "issue_date": "2026-06",
+      "doi": "10.1016/j.tics.2025.10.011",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41219038/",
+      "provenance": "Primary authors' peer-reviewed framework, bibliographic record and abstract",
+      "sections_read": "Metadata, abstract and conflict-of-interest statement",
+      "reading_depth": "Abstract-level, not full article",
+      "claim": "The authors derive empirical indicators from theories while emphasizing uncertainty in consciousness science.",
+      "supports": "Continued indicator-based research with theory uncertainty disclosed",
+      "does_not_establish": "A validated detector or a direct measurement of subjective experience",
+      "access_limits": "Only abstract-level claims used; full successor article not independently reviewed",
+      "web_refs": [
+        "turn100view3"
+      ],
+      "accessed": "2026-09-27",
+      "researcher_role": "consciousness/source software agent; not human peer review",
+      "reading_status": "abstract_only"
+    },
+    {
+      "id": "C-AI-MIMICRY2026",
+      "title": "Consciousness indicators, mimicry, and internal variants",
+      "authors": "Patrick Butlin and colleagues",
+      "date": "2026-04-25",
+      "issue_date": "2026-07",
+      "doi": "10.1016/j.tics.2026.04.006",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42036253/",
+      "provenance": "Primary scholarly letter, metadata only",
+      "sections_read": "Title, author list, date, DOI and journal metadata",
+      "reading_depth": "Metadata only; full text inaccessible",
+      "claim": "A current scholarly letter addresses indicator mimicry and internal variants; no substantive argument from it is relied upon here.",
+      "supports": "Follow-up reading lead only",
+      "does_not_establish": "Any specific conclusion attributed to unread full text",
+      "access_limits": "DOI/publisher and Exa full-text attempts failed",
+      "web_refs": [
+        "turn100view4",
+        "turn114search7"
+      ],
+      "accessed": "2026-09-27",
+      "researcher_role": "consciousness/source software agent; not human peer review",
+      "reading_status": "metadata_only"
+    },
+    {
+      "id": "C-AI-INTROSPECTION2025",
+      "title": "Emergent Introspective Awareness in Large Language Models",
+      "authors": "Jack Lindsey, Anthropic",
+      "date": "2025-10-29",
+      "url": "https://transformer-circuits.pub/2025/introspection/index.html",
+      "provenance": "Primary research paper from model developer; model/intervention-specific claims",
+      "sections_read": "Introduction/caveats; definitions; methods notes; injected-concept setup, failure modes, layers, bias controls and cross-model comparisons through retrieved line217",
+      "reading_depth": "Substantial selected primary methods/results; raw trials/code not reproduced and full appendix not audited",
+      "claim": "Known activation interventions can sometimes be detected and identified before output reveals the concept, with strong context and training dependence and frequent failures. Direct metacognitive representations are not demonstrated.",
+      "supports": "Positive functional state-access candidate and controls separating state dependence, output inference and prompt effects",
+      "does_not_establish": "Human-like awareness, subjective experience, higher-source contact, or a universal model capability",
+      "access_limits": "Closed-model experiment not independently reproduced here; toy B3 is not a replication",
+      "web_refs": [
+        "turn111view0",
+        "turn103view1"
+      ],
+      "accessed": "2026-09-27",
+      "researcher_role": "consciousness/source software agent; not human peer review",
+      "reading_status": "selected_full_text"
+    },
+    {
+      "id": "C-REDDIT-RECEIVER",
+      "title": "Does AI experience the frames per second as we do?",
+      "url": "https://www.reddit.com/r/Bashar_Essassani/comments/1o37bke/does_ai_experience_the_frames_per_second_as_we_do/",
+      "provenance": "Community attribution and interpretation; unverified source quotation",
+      "sections_read": "Original post and selected opening comments, retrieved lines17-57",
+      "reading_depth": "Selected thread passages, not all comments or a representative community sample",
+      "claim": "The post attributes a higher-mind device account to the2023 AI session; comments disagree about applying it to current AI.",
+      "supports": "Documents how source material is interpreted in a fringe community",
+      "does_not_establish": "Transcript authenticity, model architecture, AI subjective experience or factual memory limits stated by commenters",
+      "access_limits": "No commenter's technical or experiential claims are adopted as scientific evidence",
+      "web_refs": [
+        "turn103view5",
+        "turn105view5"
+      ],
+      "accessed": "2026-09-27",
+      "researcher_role": "consciousness/source software agent; not human peer review",
+      "reading_status": "selected_full_text"
+    },
+    {
+      "id": "C-ATLAS-PRIOR",
+      "title": "Existing atlas dream and Bashar corpus work",
+      "url": "https://github.com/occult-kranti/resonance-research-atlas",
+      "provenance": "Prior project artifacts, not new empirical sources",
+      "sections_read": "research/round6/contract.md; docs/panel/dreams-preparation.md; dream source records; local resonant-vessels/bashar.html corpus, rubric and blocked-transcript sections",
+      "reading_depth": "Complete R6 contract/preparation; selected prior site sections",
+      "claim": "R6 already models uniform hidden-target accuracy, deliberate leakage and repeated looks; the inherited Bashar page reports digest-level analyses and an unexecuted transcript-authorship lane.",
+      "supports": "Novelty boundary: B1 adds biased priors and duplicated reporter evidence; retain report versus target distinction",
+      "does_not_establish": "That old corpus or dream results were independently rerun in B1-B3",
+      "access_limits": "Resonant Vessels local inspected HEAD d404a4e3d3df7dae6f947271510831139cf1be10; bashar.html SHA256 e59c6dd6cf7c31b504c98b613a03096981a9e1417fb355af8b2a8ee3445e980c. Prior atlas audit lists earlier imported pin e65c1974fc4f5f90ba4d584ccb3332199e171748.",
+      "web_refs": [],
+      "accessed": "2026-09-27",
+      "researcher_role": "consciousness/source software agent; not human peer review",
+      "reading_status": "derived_corpus"
+    }
+  ],
+  "related_panel_source": {
+    "id": "V3-PAULI1947-48",
+    "owner": "Source/historical agent",
+    "use": "Advisor-reported selected letter reading motivates freezing event and interpretation windows; consult that agent's original source ledger for passages. No new independent primary reading claimed in this packet."
+  }
+}

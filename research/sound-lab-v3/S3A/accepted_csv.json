@@ -1,0 +1,44 @@
+{
+  "inputSHA256": "93e8d1452b62ededd7a42867aa41e1085a53ff8b9a048709cea7c4600fc65dd8",
+  "sampleRate_Hz": 8000.000000000881,
+  "samples": 16000,
+  "channels": 1,
+  "channel": 0,
+  "duration_s": 1.9999999999997797,
+  "samplePeak_FS": 0.100006103515625,
+  "clippedSamples": 0,
+  "window_s": [
+    0.05,
+    0.8
+  ],
+  "windowRMS_FS": 0.023617104782673027,
+  "model": "single exponential cosine+sin+offset",
+  "evidenceType": "synthetic_generated",
+  "scope": "Recorded-channel local fit; no material identity or physical measurement provenance assumed",
+  "status": "fit",
+  "flags": [],
+  "alpha_per_s": 4.000033449363301,
+  "frequency_Hz": 500.0000051101872,
+  "gain_at_window_start_FS": 0.0818729679329244,
+  "phase_at_window_start_rad": -2.709927648626432e-06,
+  "offset_FS": -5.605871665081375e-08,
+  "normalizedResidual": 0.0003491425522215834,
+  "optimizerSuccess": true,
+  "optimizerEvaluations": 7,
+  "bounds": {
+    "alpha_per_s": [
+      0,
+      20
+    ],
+    "frequency_Hz": [
+      450.0,
+      550.0
+    ]
+  },
+  "inputProvenance": "Declared by caller; not authenticated by this tool",
+  "intakeVersion": 2,
+  "intakeSHA256": "5d06f8300d7a23dff82955ff96ec37ff771cf907556c5b0444a3d2f447b88272",
+  "historicalFitterSHA256": "d1f0ad5fadd5e225c9d3feb3ca79d36d583dc62b5ab331c9ae6f351fb1d78137",
+  "rawInputPreserved": true,
+  "outputPolicy": "Exclusive creation; existing files and source collisions rejected"
+}

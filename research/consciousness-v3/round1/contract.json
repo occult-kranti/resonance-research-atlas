@@ -1,0 +1,128 @@
+{
+  "id": "B1",
+  "round": 1,
+  "title": "Agreement is not additional information",
+  "status": "frozen_before_execution",
+  "frozenAt": "2026-09-27T00:51:16.661582+00:00",
+  "advisorGate": "All ten sound loops independently accepted; advisor released B1 only",
+  "evidenceType": "synthetic",
+  "question": "Can target-prior imbalance and common reporters mimic corroboration, and does a second report add target information?",
+  "model": "Exact P(T,A,B), T,A,B in {0,1,2,3}. L(r|t)=lambda*1[r=t]+(1-lambda)/4. The conditional receiver map with kappa=lambda equals the ordinary leak map by construction.",
+  "incomingEvidence": "S5A condition-linked gain and S5B metadata show that matching observations and declared labels do not identify mechanism or custody. B1 examines the analogous prior/common-reporter/leak ambiguity. Original R6 covered uniform target hits and optional stopping, not this joint-information map.",
+  "predecessorReview": {
+    "path": "docs/panel-v3/reviews/S5B-review.json",
+    "sha256": "cb0ffdc3412304e636d980e997a43ba8c70ad4da4b182379325d6df1cdaf2d8d"
+  },
+  "parameters": {
+    "biasedPrior": [
+      "11/20",
+      "3/20",
+      "3/20",
+      "3/20"
+    ],
+    "balancedPrior": [
+      "1/4",
+      "1/4",
+      "1/4",
+      "1/4"
+    ],
+    "lambda": "1/10",
+    "kappa": "1/10",
+    "n": 80,
+    "alpha": "1/20",
+    "binomialNulls": [
+      "1/4",
+      "11/20",
+      "37/100"
+    ],
+    "scenarios": [
+      {
+        "id": "biased_majority",
+        "prior": "biased",
+        "reporter": "A=B=0"
+      },
+      {
+        "id": "balanced_majority",
+        "prior": "balanced",
+        "reporter": "A=B=0"
+      },
+      {
+        "id": "biased_common_random",
+        "prior": "biased",
+        "reporter": "U~biased prior independent of T; A=B=U"
+      },
+      {
+        "id": "balanced_independent_null",
+        "prior": "balanced",
+        "reporter": "A,B independently uniform; both independent of T"
+      },
+      {
+        "id": "balanced_copied_leak",
+        "prior": "balanced",
+        "reporter": "A~L(.|T); B=A; ordinary target leak"
+      },
+      {
+        "id": "balanced_independent_leaks",
+        "prior": "balanced",
+        "reporter": "A,B conditionally independent given T; each L(.|T); ordinary target leaks"
+      },
+      {
+        "id": "hypothetical_receiver_copy",
+        "prior": "balanced",
+        "reporter": "Exactly copied-leak map with conditional kappa label; no distinct identified mechanism"
+      }
+    ]
+  },
+  "controls": [
+    "Balanced prior",
+    "Constant and common-random target-blind reporters",
+    "Independent uniform reporters",
+    "Copied ordinary leak",
+    "Independent ordinary leaks",
+    "Identical conditional receiver distribution",
+    "Correct versus incorrect null prior"
+  ],
+  "acceptance": {
+    "completeJointRows": 448,
+    "binomialRows": 243,
+    "exactPmfConservation": true,
+    "exactTargetMarginals": true,
+    "noPathFactorization": true,
+    "noPathMutualInformation_bits": 0,
+    "copiedConditionalInformation_bits": 0,
+    "independentLeakConditionalInformationPositive": true,
+    "chainRuleTolerance_bits": 1e-12,
+    "receiverLeakExactEquality": true,
+    "cutoffAndPredecessorQualification": true,
+    "wrongBaselineRejectionGreaterThanCalibrated": true
+  },
+  "units": {
+    "information": "bits",
+    "probability": "dimensionless",
+    "count": "synthetic weighted states or trials in declared model"
+  },
+  "sources": [
+    "C-BASHAR-ANKA2014",
+    "C-BASHAR-AI-OFFICIAL",
+    "C-BASHAR-INDEX",
+    "C-GATEWAY1983",
+    "C-AIR1995",
+    "C-ATLAS-PRIOR"
+  ],
+  "limits": [
+    "No-path independence is imposed by the synthetic model, not established about reality.",
+    "Zero live model calls and zero human observations.",
+    "Consciousness alone does not predict concealed-target knowledge.",
+    "Receiver and ordinary-leak distributions are equal by construction; positive scores do not identify a higher source.",
+    "Known IID priors and n80 apply to this model, not the proposed balanced-block human study.",
+    "Exact model probabilities carry structural assumptions; numeric information values use floating-point logarithms."
+  ],
+  "outputFiles": [
+    "joint_states.csv",
+    "binomial_nulls.csv",
+    "results.json",
+    "figure.svg",
+    "report.md",
+    "manifest.json"
+  ]
+}

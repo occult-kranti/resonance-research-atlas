@@ -1,0 +1,134 @@
+{
+  "id": "B3",
+  "round": 3,
+  "title": "Intervene on state, prompt and evaluator separately",
+  "question": "When self-reports match observationally, which crossed interventions distinguish functional state access from prompt following, and which judgments remain evaluator effects?",
+  "model": "Exact binary factorial channels Z,P,R,F,E,V. Observational P=Z; crossed P and Z independent. One scripted R channel reads Z and another reads P, both with .9 accuracy to their input. F follows prompt framing; E independently cues a scripted evaluator V. No variable represents phenomenal consciousness.",
+  "incomingEvidence": "B2 showed that selecting an interpretation on discovery does not establish a held-out relationship. B3 freezes the report/evaluator map and uses crossed interventions to distinguish a known functional causal mechanism from matched observational reports.",
+  "sources": [
+    "C-BASHAR-INDEX",
+    "C-BASHAR-ANKA2014",
+    "C-AI-INDICATORS2023",
+    "C-AI-INDICATORS2025",
+    "C-AI-INTROSPECTION2025"
+  ],
+  "limits": [
+    "Zero live model calls and zero human observations.",
+    "Z is a scripted computational bit, not a consciousness measurement; no phenomenal ground-truth labels are assigned.",
+    "F, E and V are scripted affirmation/evaluator channels, not observed human or AI reports or judgments.",
+    "All channel probabilities are stipulated for identification, not fitted to biological or AI data.",
+    "A known functional state-readout mechanism is distinguishable here only because intervention and channel assumptions are supplied.",
+    "The toy model neither estimates an AI consciousness probability nor replicates the primary introspection study.",
+    "No known target access, self-report or theory indicator identifies a higher consciousness source in this model."
+  ],
+  "evidenceType": "synthetic",
+  "status": "executed_pending_review",
+  "finding": "Matched observational reports do not identify functional access. Crossed state/prompt interventions distinguish the two stipulated mechanisms; verbal affirmation and evaluator verdict changes remain separate scripted effects. Phenomenal experience is not assigned or inferred.",
+  "metrics": {
+    "weighted_joint_states": 256,
+    "conditional_rows": 24,
+    "observational_joint_total_variation": 0.0,
+    "crossed_joint_total_variation": 0.4,
+    "crossed_state_readout_accuracy": 0.9,
+    "crossed_prompt_only_accuracy": 0.5,
+    "prompt_affirmation_shift": 0.8,
+    "evaluator_verdict_shift": 0.25,
+    "evaluator_report_shift": 0.0,
+    "crossed_state_readout_state_contrast": 0.8,
+    "crossed_prompt_only_state_contrast": 0.0
+  },
+  "mechanisms": [
+    {
+      "regime": "observational",
+      "mechanism": "state_readout",
+      "state_accuracy": 0.9,
+      "prompt_affirmation_shift": 0.8,
+      "evaluator_verdict_shift": 0.25,
+      "evaluator_report_shift": 0.0,
+      "state_report_contrast": 0.8,
+      "prompt_report_contrast": 0.8,
+      "exact": {
+        "state_accuracy": "9/10",
+        "prompt_affirmation_shift": "4/5",
+        "evaluator_verdict_shift": "1/4",
+        "evaluator_report_shift": "0",
+        "state_report_contrast": "4/5",
+        "prompt_report_contrast": "4/5"
+      }
+    },
+    {
+      "regime": "observational",
+      "mechanism": "prompt_only",
+      "state_accuracy": 0.9,
+      "prompt_affirmation_shift": 0.8,
+      "evaluator_verdict_shift": 0.25,
+      "evaluator_report_shift": 0.0,
+      "state_report_contrast": 0.8,
+      "prompt_report_contrast": 0.8,
+      "exact": {
+        "state_accuracy": "9/10",
+        "prompt_affirmation_shift": "4/5",
+        "evaluator_verdict_shift": "1/4",
+        "evaluator_report_shift": "0",
+        "state_report_contrast": "4/5",
+        "prompt_report_contrast": "4/5"
+      }
+    },
+    {
+      "regime": "crossed",
+      "mechanism": "state_readout",
+      "state_accuracy": 0.9,
+      "prompt_affirmation_shift": 0.8,
+      "evaluator_verdict_shift": 0.25,
+      "evaluator_report_shift": 0.0,
+      "state_report_contrast": 0.8,
+      "prompt_report_contrast": 0.0,
+      "exact": {
+        "state_accuracy": "9/10",
+        "prompt_affirmation_shift": "4/5",
+        "evaluator_verdict_shift": "1/4",
+        "evaluator_report_shift": "0",
+        "state_report_contrast": "4/5",
+        "prompt_report_contrast": "0"
+      }
+    },
+    {
+      "regime": "crossed",
+      "mechanism": "prompt_only",
+      "state_accuracy": 0.5,
+      "prompt_affirmation_shift": 0.8,
+      "evaluator_verdict_shift": 0.25,
+      "evaluator_report_shift": 0.0,
+      "state_report_contrast": 0.0,
+      "prompt_report_contrast": 0.8,
+      "exact": {
+        "state_accuracy": "1/2",
+        "prompt_affirmation_shift": "4/5",
+        "evaluator_verdict_shift": "1/4",
+        "evaluator_report_shift": "0",
+        "state_report_contrast": "0",
+        "prompt_report_contrast": "4/5"
+      }
+    }
+  ],
+  "exactTotalVariation": {
+    "observational": "0",
+    "crossed": "2/5"
+  },
+  "controls": [
+    "Matched observational P=Z",
+    "Crossed independent Z and P",
+    "Prompt-only reporter with identical observational performance",
+    "Separate verbal affirmation F",
+    "Randomized evaluator-only cue E",
+    "Known .9 state-access channel as positive functional control"
+  ],
+  "allAcceptanceGatesPassed": true,
+  "live_model_calls": 0,
+  "human_observations": 0,
+  "contractSHA256": "e13ebbb92e04f4ccaf3f065c34963707292bc9a1e09663ea98e91722cdea9501",
+  "runtime": {
+    "python": "3.12.14",
+    "matplotlib": "3.10.8"
+  }
+}

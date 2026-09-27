@@ -1,0 +1,43 @@
+{
+  "id": "S1A",
+  "round": 1,
+  "title": "A recording-chain peak is not a material identity",
+  "status": "executed_pending_review",
+  "evidenceType": "synthetic",
+  "question": "Can a known-input complex ratio recover the total transfer while leaving its physical factorization ambiguous?",
+  "finding": "Total complex transfer is recovered to numerical precision; two distinct device/echo factorizations give exactly the same output.",
+  "metrics": {
+    "total_transfer_max_complex_error": 3.114494141552546e-14,
+    "heldout_relative_L2": 8.342888608107146e-16,
+    "superposition_relative_L2": 1.206758362039764e-16,
+    "factorization_relative_L2": 0.0,
+    "declared_echo_delay_s": 0.005,
+    "declared_comb_spacing_Hz": 200.0,
+    "inverse_H_zero_bins": 4,
+    "input_X_excluded_bins": 0,
+    "impulse_max_error": 5.551115123125783e-17
+  },
+  "failedControls": [
+    {
+      "control": "Infer physical echo from total response alone",
+      "outcome": "rejected",
+      "reason": "d_alt=d*e and e_alt=delta is an exact output-equivalent counterexample"
+    }
+  ],
+  "limits": [
+    "Known synthetic d permits a conditional echo calculation only",
+    "No physical apparatus recorded",
+    "Single-path labels and physical echo parameters are not identified by total H",
+    "Exact noiseless finite FIR exercise; no device, pressure, material or biological validation"
+  ],
+  "sources": [
+    "V3-FARINA2000",
+    "V3-SMITH-COMB"
+  ],
+  "contractSHA256": "26b8b5ede645f18341807abd0613ac68afc2e62d6984f925b46c72f48ff7cbb3",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "matplotlib": "3.10.8"
+  }
+}

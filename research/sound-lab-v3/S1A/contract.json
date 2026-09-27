@@ -1,0 +1,14 @@
+{
+  "id": "S1A", "round": 1, "title": "A recording-chain peak is not a material identity",
+  "status": "frozen_before_execution", "advisorGate": "P3 /root/advisor_v3 2026-09-27",
+  "evidenceType": "synthetic", "question": "Can a known-input complex ratio recover the total transfer while leaving its physical factorization ambiguous?",
+  "model": "y=d*e*x; d=[0.7,0.2,0.1]; e=delta[n]+0.6 delta[n-40]; * means linear convolution",
+  "parameters": {"sampleRate_Hz":8000,"probeSamples":8192,"nfft":16384,"seedA":101,"seedB":102,"probeStd_FS":0.01,"band_Hz":[100,3500],"inputMaskFraction":1e-8,"inverseHMask":1e-10},
+  "units": {"x":"normalized full-scale digital amplitude, FS","y":"normalized digital amplitude, FS","H":"FS/FS","delay":"s","frequency":"Hz"},
+  "estimator": "Direct complex ratio FFT(y)/FFT(x), only on excited bins. No coherence or H1 averaging claim.",
+  "controls": ["Independent seed-B probe predicted from seed-A response", "Superposition", "r=0 removes echo component", "r=1 transfer zeros: identify and exclude from inverse-H, independently of input-X mask", "Alternative d_alt=d*e and e_alt=delta produces identical outputs"],
+  "acceptance": {"maxComplexError":1e-10,"heldoutRelativeL2":1e-10,"superpositionRelativeL2":1e-12,"factorizationRelativeL2":1e-12},
+  "sources": ["V3-FARINA2000","V3-SMITH-COMB"],
+  "limits": ["Known synthetic d permits a conditional echo calculation only", "No physical apparatus recorded", "Single-path labels and physical echo parameters are not identified by total H", "Exact noiseless finite FIR exercise; no device, pressure, material or biological validation"],
+  "incomingEvidence": "N5 distinguished actual WAV arithmetic and nonlinear observation operators. P2 identified physical factorization ambiguity and invalid single-record coherence language."
+}

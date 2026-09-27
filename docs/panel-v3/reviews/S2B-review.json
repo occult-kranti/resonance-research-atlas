@@ -1,0 +1,67 @@
+{
+  "id": "S2B",
+  "sequence": 4,
+  "predecessor": {
+    "id": "S2A",
+    "reviewPath": "docs/panel-v3/reviews/S2A-review.json",
+    "reviewSHA256": "0402ccf831c6f51698424e831f0dc9c65c6c6427ecb8bd5417b47589785cdbbf",
+    "status": "accepted_narrow"
+  },
+  "checkerFunction": "review_s2b",
+  "checkerFunctionSHA256": "7ca9fda9ddb7cf94ba7bfbf9c01d798328fa1f4bf045347fc1366a7874573116",
+  "status": "accepted_narrow",
+  "reviewer": "/root/advisor_v3 (correlated model agent; independent implementation/derivation, not human peer review)",
+  "reviewMethod": "Exact all-time gain identity, PCM byte comparison, independent cycle-shift decay and all ten raw residual norms.",
+  "independentChecks": {
+    "PCM_identity": true,
+    "independent_cycle_shift_alpha": 1.9999678223820878,
+    "residuals_independently_recounted": [
+      0.00017466757155726076,
+      0.0003659111123399337,
+      0.45606892529745285,
+      0.6293318470427879,
+      0.00011338254158032878,
+      0.00017358617172854752,
+      0.00011338254158032878,
+      0.00017358617172854752,
+      0.021194444364918786,
+      0.044464235325065465
+    ],
+    "flagged_count": 2,
+    "proof": "For all real t, exp(2t)*[.2 exp(-4t) cos(1000pi t)]=.2 exp(-2t)cos(1000pi t). Identical samples force identical outcomes for every deterministic recording-only estimator."
+  },
+  "acceptedClaim": "The fixture detects overlapping modes through large residuals, but exponential gain and a different decay generate byte-identical recordings; a low residual cannot resolve that ambiguity.",
+  "withheld": [
+    "Every bad recording is caught by the 5% fixture flag",
+    "Intrinsic damping identified from an uncalibrated record",
+    "Exponential gain as a universal phone-AGC model"
+  ],
+  "nextDecision": "S3A: add spatial complex observations; distinguish magnitude-only ambiguity from known-basis coefficient recovery.",
+  "bindings": {
+    "research/sound-lab-v3/S2B/clean.wav": "1e70c6eaadafe2e260f130698c6a7e921d530990cdef54a201eb5e0a1ae43dc7",
+    "research/sound-lab-v3/S2B/clean_0.csv": "a51cb36c2fc65e8ccf2267304563be0a5e4b61ab871ca171b551543e32c016fa",
+    "research/sound-lab-v3/S2B/clean_1.csv": "c3d0155ceccd3d301657b890e3882c1b4d195d352b2515385859a3cc71ba7ebb",
+    "research/sound-lab-v3/S2B/contract.json": "732f628b96932a9212a8308a93269fe0372ccbcdb73c4872539ec39203e51927",
+    "research/sound-lab-v3/S2B/figure.svg": "8fc0c7448fcf20018015d4f15cf95e76d5037669afcb1f94ce006f2c04c3db5f",
+    "research/sound-lab-v3/S2B/fits.csv": "45812eeecc6666a68effe315dd48181e875057c4884de4ff4ac9516a8f1a6409",
+    "research/sound-lab-v3/S2B/gain_drift.wav": "29ace0f51bd7fb52066c3c60c1d765233fb49914ed4099c5f11dc6314d0a71f8",
+    "research/sound-lab-v3/S2B/gain_drift_0.csv": "1cf1f9148776cff48303b036fa4eb0c28ac0d491965ce0f56549f2317b150557",
+    "research/sound-lab-v3/S2B/gain_drift_1.csv": "75e5d04a4fbf61e12c99e2d3a79c320388ecabe47815cb6a54ea3c0fe3cc3010",
+    "research/sound-lab-v3/S2B/intake_results.json": "6bb22457e2424b0bcfd2f9e99a06001b049eda80cfe87dd7eca898e66f5f1be6",
+    "research/sound-lab-v3/S2B/manifest.json": "54f37282633026eae0a6713c26dc5e3ede19e4265e4e4d8dbd52d19c75c52b58",
+    "research/sound-lab-v3/S2B/noise.wav": "a027c2a06e51252b16f005d40c68bf39b3c6f73626bdb90eeb01498f46b35ff5",
+    "research/sound-lab-v3/S2B/noise_0.csv": "d5ce7b56f2a2e29b5f610e9d9a6205e8c063e33c6c596c210783f6422c017079",
+    "research/sound-lab-v3/S2B/noise_1.csv": "cb3c8f26802d911a008d5809c18f3de5970c549dd3ad41492fec5fe36e97b8a8",
+    "research/sound-lab-v3/S2B/overlap.wav": "c4962d3df16628b4a7501e3947d604634f786ea1fd15c46e17de4dfbe9ee5ac6",
+    "research/sound-lab-v3/S2B/overlap_0.csv": "9a2d9d201cf64abdf6362fbdfa38b2864e52ac318b1d876285f8b531dabf5780",
+    "research/sound-lab-v3/S2B/overlap_1.csv": "e338235435f0caa5f138b50ecc1ab2b08b542fe00e3270fb7bce8d802338a71b",
+    "research/sound-lab-v3/S2B/report.md": "f8d10633e92c0abafdb4296ec3a94d0ded66805b4985eb45eba24498dcdb9b39",
+    "research/sound-lab-v3/S2B/results.json": "026e713ca82778c5f73145e298bac277a209ac839b203ca75735b090c02ad931",
+    "research/sound-lab-v3/S2B/run.py": "21fa8a60954235623b0124288fddeee2b5490a4643e36a82c21fc93b05f7217b",
+    "research/sound-lab-v3/S2B/true_alpha2.wav": "29ace0f51bd7fb52066c3c60c1d765233fb49914ed4099c5f11dc6314d0a71f8",
+    "research/sound-lab-v3/S2B/true_alpha2_0.csv": "1cf1f9148776cff48303b036fa4eb0c28ac0d491965ce0f56549f2317b150557",
+    "research/sound-lab-v3/S2B/true_alpha2_1.csv": "75e5d04a4fbf61e12c99e2d3a79c320388ecabe47815cb6a54ea3c0fe3cc3010",
+    "research/sound-lab-v3/fit_recording.py": "d1f0ad5fadd5e225c9d3feb3ca79d36d583dc62b5ab331c9ae6f351fb1d78137",
+    "research/sound-lab-v3/common.py": "25a627bb9616a8b04051fb8b4e46b747cf5ea732b0fb28fcb8c2c90baaf1d408"
+  }
+}

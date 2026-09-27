@@ -1,0 +1,248 @@
+{
+  "id": "B1",
+  "round": 1,
+  "title": "Agreement is not additional information",
+  "question": "Can target-prior imbalance and common reporters mimic corroboration, and does a second report add target information?",
+  "model": "Exact P(T,A,B), T,A,B in {0,1,2,3}. L(r|t)=lambda*1[r=t]+(1-lambda)/4. The conditional receiver map with kappa=lambda equals the ordinary leak map by construction.",
+  "incomingEvidence": "S5A condition-linked gain and S5B metadata show that matching observations and declared labels do not identify mechanism or custody. B1 examines the analogous prior/common-reporter/leak ambiguity. Original R6 covered uniform target hits and optional stopping, not this joint-information map.",
+  "sources": [
+    "C-BASHAR-ANKA2014",
+    "C-BASHAR-AI-OFFICIAL",
+    "C-BASHAR-INDEX",
+    "C-GATEWAY1983",
+    "C-AIR1995",
+    "C-ATLAS-PRIOR"
+  ],
+  "limits": [
+    "No-path independence is imposed by the synthetic model, not established about reality.",
+    "Zero live model calls and zero human observations.",
+    "Consciousness alone does not predict concealed-target knowledge.",
+    "Receiver and ordinary-leak distributions are equal by construction; positive scores do not identify a higher source.",
+    "Known IID priors and n80 apply to this model, not the proposed balanced-block human study.",
+    "Exact model probabilities carry structural assumptions; numeric information values use floating-point logarithms."
+  ],
+  "evidenceType": "synthetic",
+  "status": "executed_pending_review",
+  "finding": "Biased agreeing reporters can carry zero target information. A copied informative report adds zero conditional information; an independent informative report adds some. The conditional receiver and ordinary leak remain observationally identical.",
+  "metrics": {
+    "weighted_joint_states": 448,
+    "binomial_states": 243,
+    "biased_majority_hit_rate": 0.55,
+    "biased_majority_agreement": 1.0,
+    "biased_majority_target_information_bits": 0.0,
+    "biased_common_random_hit_rate": 0.37,
+    "copied_leak_target_information_bits": 0.020414189482053487,
+    "copied_leak_added_information_bits": 0.0,
+    "independent_leak_added_information_bits": 0.020199203097989234,
+    "incorrect_uniform_cutoff": 27,
+    "biased_majority_wrong_baseline_rejection": 0.9999590175010924,
+    "common_random_wrong_baseline_rejection": 0.7619489695483855,
+    "receiver_leak_total_variation": 0.0,
+    "max_information_chain_error_bits": 1.3877787807814457e-17
+  },
+  "scenarios": [
+    {
+      "id": "biased_majority",
+      "targetPrior": [
+        "11/20",
+        "3/20",
+        "3/20",
+        "3/20"
+      ],
+      "hit_A_exact": "11/20",
+      "hit_A": 0.55,
+      "hit_B_exact": "11/20",
+      "hit_B": 0.55,
+      "agreement_exact": "1",
+      "agreement": 1.0,
+      "no_path_by_construction": true,
+      "I_T_A_bits": 0.0,
+      "I_T_B_bits": 0.0,
+      "I_T_AB_bits": 0.0,
+      "I_T_B_given_A_bits": 0.0,
+      "chain_error_bits": 0.0
+    },
+    {
+      "id": "balanced_majority",
+      "targetPrior": [
+        "1/4",
+        "1/4",
+        "1/4",
+        "1/4"
+      ],
+      "hit_A_exact": "1/4",
+      "hit_A": 0.25,
+      "hit_B_exact": "1/4",
+      "hit_B": 0.25,
+      "agreement_exact": "1",
+      "agreement": 1.0,
+      "no_path_by_construction": true,
+      "I_T_A_bits": 0.0,
+      "I_T_B_bits": 0.0,
+      "I_T_AB_bits": 0.0,
+      "I_T_B_given_A_bits": 0.0,
+      "chain_error_bits": 0.0
+    },
+    {
+      "id": "biased_common_random",
+      "targetPrior": [
+        "11/20",
+        "3/20",
+        "3/20",
+        "3/20"
+      ],
+      "hit_A_exact": "37/100",
+      "hit_A": 0.37,
+      "hit_B_exact": "37/100",
+      "hit_B": 0.37,
+      "agreement_exact": "1",
+      "agreement": 1.0,
+      "no_path_by_construction": true,
+      "I_T_A_bits": 0.0,
+      "I_T_B_bits": 0.0,
+      "I_T_AB_bits": 0.0,
+      "I_T_B_given_A_bits": 0.0,
+      "chain_error_bits": 0.0
+    },
+    {
+      "id": "balanced_independent_null",
+      "targetPrior": [
+        "1/4",
+        "1/4",
+        "1/4",
+        "1/4"
+      ],
+      "hit_A_exact": "1/4",
+      "hit_A": 0.25,
+      "hit_B_exact": "1/4",
+      "hit_B": 0.25,
+      "agreement_exact": "1/4",
+      "agreement": 0.25,
+      "no_path_by_construction": true,
+      "I_T_A_bits": 0.0,
+      "I_T_B_bits": 0.0,
+      "I_T_AB_bits": 0.0,
+      "I_T_B_given_A_bits": 0.0,
+      "chain_error_bits": 0.0
+    },
+    {
+      "id": "balanced_copied_leak",
+      "targetPrior": [
+        "1/4",
+        "1/4",
+        "1/4",
+        "1/4"
+      ],
+      "hit_A_exact": "13/40",
+      "hit_A": 0.325,
+      "hit_B_exact": "13/40",
+      "hit_B": 0.325,
+      "agreement_exact": "1",
+      "agreement": 1.0,
+      "no_path_by_construction": false,
+      "I_T_A_bits": 0.020414189482053487,
+      "I_T_B_bits": 0.020414189482053487,
+      "I_T_AB_bits": 0.020414189482053487,
+      "I_T_B_given_A_bits": 0.0,
+      "chain_error_bits": 0.0
+    },
+    {
+      "id": "balanced_independent_leaks",
+      "targetPrior": [
+        "1/4",
+        "1/4",
+        "1/4",
+        "1/4"
+      ],
+      "hit_A_exact": "13/40",
+      "hit_A": 0.325,
+      "hit_B_exact": "13/40",
+      "hit_B": 0.325,
+      "agreement_exact": "103/400",
+      "agreement": 0.2575,
+      "no_path_by_construction": false,
+      "I_T_A_bits": 0.020414189482053487,
+      "I_T_B_bits": 0.020414189482053487,
+      "I_T_AB_bits": 0.040613392580042734,
+      "I_T_B_given_A_bits": 0.020199203097989234,
+      "chain_error_bits": 1.3877787807814457e-17
+    },
+    {
+      "id": "hypothetical_receiver_copy",
+      "targetPrior": [
+        "1/4",
+        "1/4",
+        "1/4",
+        "1/4"
+      ],
+      "hit_A_exact": "13/40",
+      "hit_A": 0.325,
+      "hit_B_exact": "13/40",
+      "hit_B": 0.325,
+      "agreement_exact": "1",
+      "agreement": 1.0,
+      "no_path_by_construction": false,
+      "I_T_A_bits": 0.020414189482053487,
+      "I_T_B_bits": 0.020414189482053487,
+      "I_T_AB_bits": 0.020414189482053487,
+      "I_T_B_given_A_bits": 0.0,
+      "chain_error_bits": 0.0
+    }
+  ],
+  "calibratedNulls": [
+    {
+      "null_p_exact": "1/4",
+      "critical_hits": 27,
+      "rejection_exact": "18227548219219623647696128536387748277708767753/365375409332725729550921208179070754913983135744",
+      "rejection_probability": 0.04988717837499807,
+      "preceding_tail_exact": "29403343496532054481402792854680040116098789393/365375409332725729550921208179070754913983135744"
+    },
+    {
+      "null_p_exact": "11/20",
+      "critical_hits": 52,
+      "rejection_exact": "1358497595574858837198783357012169975813750748363277922648413777395154931629329726962749803368217861203/30223145490365729367654400000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "rejection_probability": 0.04494891493037708,
+      "preceding_tail_exact": "2151991471364476556819895699741259646101037843166328027252764714198232064474594731972914172370907881443/30223145490365729367654400000000000000000000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "null_p_exact": "37/100",
+      "critical_hits": 38,
+      "rejection_exact": "35059560859947216211999528242792631765515874112342315296247727515977664446590931378374568947283507959715763164541342444438953775851705171566933413959682087761/1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "rejection_probability": 0.035059560859947214,
+      "preceding_tail_exact": "56436799009124362804311634124860053937012999835652026740539904724892113592872504130493709491493508617254647288431376780942203889301740309211512968612565693601/1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+    }
+  ],
+  "incorrectBaseline": {
+    "11/20": {
+      "assumed_null_p_exact": "1/4",
+      "actual_null_p_exact": "11/20",
+      "wrong_cutoff": 27,
+      "rejection_exact": "30221906870338684513767588991458718247998394912210636918378617803217964221247095907214405448778568532297/30223145490365729367654400000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "rejection_probability": 0.9999590175010924
+    },
+    "37/100": {
+      "assumed_null_p_exact": "1/4",
+      "actual_null_p_exact": "37/100",
+      "wrong_cutoff": 27,
+      "rejection_exact": "1904872423870963757111849058846705148066286686486306099142920544206158727820143923028852518569874865724730845208942231542838012535728651691390235632905266903497/2500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "rejection_probability": 0.7619489695483855
+    }
+  },
+  "controls": [
+    "Balanced prior",
+    "Constant and common-random target-blind reporters",
+    "Independent uniform reporters",
+    "Copied ordinary leak",
+    "Independent ordinary leaks",
+    "Identical conditional receiver distribution",
+    "Correct versus incorrect null prior"
+  ],
+  "allAcceptanceGatesPassed": true,
+  "live_model_calls": 0,
+  "human_observations": 0,
+  "contractSHA256": "73837d1ffc62381dcd405bc9679dc9454bed63280487f3fceea7510f90b30776",
+  "runtime": {
+    "python": "3.12.14",
+    "matplotlib": "3.10.8"
+  }
+}

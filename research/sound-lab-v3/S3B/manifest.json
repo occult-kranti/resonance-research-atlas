@@ -1,0 +1,31 @@
+{
+  "id": "S3B",
+  "artifacts": {
+    "contract.json": "53abd3e96cc9676df860f2c79306899964b44279732d79eee328cd96a20bf26b",
+    "run.py": "0c7dc247434f193a3341b16f25d6a239490478300564e65e68a2c97f67ff763f",
+    "results.json": "35629ac07e41d53496bb87acd8841357e96e0e11e874515fd6a4e95e2d3f09e5",
+    "report.md": "f9f625f594b3986db21c614dad0c582a50d01f3c245f8131e62b2ff6bc951b48",
+    "wrong_header.wav": "f229e0f436fd5fc6348f0de157b67ea541aa9620d53d94d2821719ad6c6972cb",
+    "correct_time.csv": "e1ce22cd421e1acddabb750df25c086ab5856757847191ee14e65b395882ed6e",
+    "null8000.wav": "1e70c6eaadafe2e260f130698c6a7e921d530990cdef54a201eb5e0a1ae43dc7",
+    "reference.wav": "a04217638944f47426db947dcc496e42ec5c2171beb391b98c1f1c2d1c7f7834",
+    "reference_corrected.csv": "d5212db2667015a6f19ff8f14c4463b67110cee3fa76ac5307b786d696266a1f",
+    "null8000_wav_fit.csv": "a51cb36c2fc65e8ccf2267304563be0a5e4b61ab871ca171b551543e32c016fa",
+    "wrong_header_wav_fit.csv": "3539d916c66d1771263a1a43c17f9d9e2dbd1adb8a297cf0ac29e52954e05211",
+    "correct_time_csv_fit.csv": "7a0eeff4dd94b490e5be216720d74c42000db6f0cfa4632b3489bca898d24ca6",
+    "reference_corrected_csv_fit.csv": "c76f465fc020c4f083dbc658b67b86577a7ac4b8bdd5553006fc9ef640e9b0e3",
+    "intake_results.json": "0d7610a8201d83699ca94b9615d391023090dd83822394689db89b5905bd3945",
+    "clock_correction.json": "f40c20f007ae8ee6199de854a14fc2ff34cef4e664268b794041df268e3341d2",
+    "fits.csv": "4bd0cdc8c5d7943ecba14b83687657bd94e06bec16615dcc4e8b42880e735c22",
+    "figure.svg": "1d1c3e696bf3a0bbc703a943df9182b75fc12151c5f3f5eaae6f636307fb35e4",
+    "run-attempt1.py.txt": "aa5e709d4be16ace7305cc65db86715d35911543a925e4206a44ce5f9f2f45cc",
+    "failure-log.md": "ec399f853d841a0ba4e92dd86f52fb88422faa57711b6b8bb6576c6e9e5c42ce",
+    "run-before-review.py.txt": "34d314ac098757ef6fb78fb6bfe4bf84482aa2cb1016dcd9d69d1e7f594bab83",
+    "results-before-review.json": "35629ac07e41d53496bb87acd8841357e96e0e11e874515fd6a4e95e2d3f09e5",
+    "intake-results-before-review.json": "8cde96e3a6fdf4730a544c370b7540040a1372d56f3ccff3e1a543d7fd5fb497",
+    "manifest-before-review.json": "0193d2bd7a94300cdc74b4a19045f207f2cc00c3b95c0a0a9907cb926477bddf",
+    "../fit_recording.py": "d1f0ad5fadd5e225c9d3feb3ca79d36d583dc62b5ab331c9ae6f351fb1d78137",
+    "../intake_v2.py": "5d06f8300d7a23dff82955ff96ec37ff771cf907556c5b0444a3d2f447b88272"
+  },
+  "commonSHA256": "25a627bb9616a8b04051fb8b4e46b747cf5ea732b0fb28fcb8c2c90baaf1d408"
+}

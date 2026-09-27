@@ -1,0 +1,109 @@
+{
+  "date": "2026-09-27",
+  "stage": "Local release validation; publication evidence is recorded separately",
+  "mainApplication": {
+    "command": "npm run check",
+    "passed": true,
+    "testFiles": 85,
+    "tests": 1157,
+    "checks": [
+      "ESLint",
+      "TypeScript",
+      "Vitest",
+      "production build"
+    ],
+    "changedApplicationFiles": [
+      "src/pages/Projects.tsx",
+      "src/pages/NanoLab.tsx",
+      "src/nanolab/__tests__/page.test.tsx"
+    ]
+  },
+  "atlas": {
+    "existingModelAndDOMGates": 24,
+    "newSoundLabBehaviorGates": 5,
+    "finalNewUIGatesPassed": true,
+    "originalModelAndDataBytesUnchanged": true,
+    "fullPinnedSnapshotBuildPassed": true,
+    "originalBoundProductionChecks": 72,
+    "nanoparticleBoundProductionChecks": 30,
+    "earlierResearchVerification": "Artifact/source/review integrity checks; earlier producers were not regenerated in this continuation.",
+    "integratedNewUIBehaviorGatesPassed": true,
+    "integrationRepair": "Node fixture resolver now uses the module root rather than assuming a checkout directory name; all five gates pass in both locations."
+  },
+  "soundReplay": {
+    "status": "passed",
+    "loopsVerified": 10,
+    "reviewedLoops": 10,
+    "loops": [
+      {
+        "id": "S1A",
+        "boundArtifacts": 8,
+        "manifestSHA256": "d130586a43c3fe3ad4f97ac0ab0e164a8f659791d7472578ce0a73507f9c0448"
+      },
+      {
+        "id": "S1B",
+        "boundArtifacts": 6,
+        "manifestSHA256": "c63b7e223f7579244d64c08867c04b523376ad54a964165238c2811ddc2a4dee"
+      },
+      {
+        "id": "S2A",
+        "boundArtifacts": 18,
+        "manifestSHA256": "610ecae4106c041ef06e2e73c7167be1872de47875be4951c010351a7054a664"
+      },
+      {
+        "id": "S2B",
+        "boundArtifacts": 23,
+        "manifestSHA256": "54f37282633026eae0a6713c26dc5e3ede19e4265e4e4d8dbd52d19c75c52b58"
+      },
+      {
+        "id": "S3A",
+        "boundArtifacts": 14,
+        "manifestSHA256": "1c808253744b9169c4884a3daa4ac2c08054f53ddc06076d90b8936ce372ecdf"
+      },
+      {
+        "id": "S3B",
+        "boundArtifacts": 25,
+        "manifestSHA256": "b6f97bad22c2d3bb2580c192f49fd1ac9c463d91477a0284bf7c4a65c36bd4ae"
+      },
+      {
+        "id": "S4A",
+        "boundArtifacts": 8,
+        "manifestSHA256": "d76d03c3c84c7ab020a2a72b334765345ebb6fb801dc6fe8b89acf933d4e459b"
+      },
+      {
+        "id": "S4B",
+        "boundArtifacts": 9,
+        "manifestSHA256": "1f931069c7ea93889ab5041339b364e25aba37e6409abc5af12544646d87669e"
+      },
+      {
+        "id": "S5A",
+        "boundArtifacts": 79,
+        "manifestSHA256": "1440b3132ea5180e6539bc8a0e70b691cee1a40b04af6ade1e0d1092044cc054"
+      },
+      {
+        "id": "S5B",
+        "boundArtifacts": 57,
+        "manifestSHA256": "cf8e6192ad7223c0d813703c97eca31cb2f1fadde8d222285a69113025e09c5f"
+      }
+    ],
+    "scope": "Byte reproducibility and contract binding; independent scientific reviews live in docs/panel-v3/reviews."
+  },
+  "consciousness": {
+    "reviewedRounds": 3,
+    "boundProducerArtifacts": 24,
+    "producerFullByteIdenticalReplayPassed": true,
+    "rootCompleteReviewBindingCheckPassed": true
+  },
+  "releaseGate": {
+    "planningPanels": 3,
+    "acceptedReviews": 13,
+    "uniqueReviewedArtifacts": 276,
+    "setupEntries": 9,
+    "passed": true
+  },
+  "limits": [
+    "Local DOM checks are not visual browser inspection.",
+    "Generated PCM and scripted probability models are not physical measurements or live-AI experiments.",
+    "No mobile viewport or physical audio calibration is claimed."
+  ]
+}

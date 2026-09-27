@@ -36,6 +36,13 @@
       "commit": "3a3ce9953e47a078e659723a52187648f1f08486",
       "mode": "snapshot",
       "role": "Historical interpretive systems and astronomical calculators; no predictive-physics endorsement"
+    },
+    {
+      "name": "bashar-index",
+      "url": "https://github.com/occult-kranti/bashar-index",
+      "commit": "457dc2f2da10399bda2786573b7a77ec3fe34f62",
+      "mode": "linked",
+      "role": "Source-audited perspective index; AI-generated transcript digests are not verified verbatim speech. See docs/panel-v3/bashar-perspective.md."
     }
   ]
 }

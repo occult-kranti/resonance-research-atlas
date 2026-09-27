@@ -1,0 +1,98 @@
+{
+  "id": "B2",
+  "round": 2,
+  "title": "Freeze the correspondence before the holdout",
+  "status": "frozen_before_execution",
+  "frozenAt": "2026-09-27T00:58:32.848365+00:00",
+  "advisorGate": "B1 independently accepted; B2 finite candidate selected; B3 held",
+  "evidenceType": "synthetic",
+  "question": "How much apparent correspondence arises from selecting among four correlated semantic scoring rules, and does that selection survive an independent balanced holdout?",
+  "model": "Exact uniform distribution over 2520 permutations of balanced target labels. Four cyclic scoring matrices use 2 for an exact shifted label, 1 for either adjacent cyclic label, 0 for the opposite. Reports are fixed. The best discovery mapping is frozen before a fresh independent holdout.",
+  "incomingEvidence": "B1 demonstrated prior and common-reporter ambiguity despite high scores. Balancing targets removes that particular advantage; B2 tests remaining flexibility in how correspondence is scored. The Pauli event-window example motivates fixed scoring/window boundaries but supplies no statistical evidence for this model.",
+  "predecessorReview": {
+    "path": "docs/panel-v3/reviews/B1-review.json",
+    "sha256": "680bfe9661740ecbd2ddd2be9a41c34a899fee2ef5566c9d8a326b41386a49ca"
+  },
+  "parameters": {
+    "n": 8,
+    "reports": [
+      0,
+      0,
+      1,
+      1,
+      2,
+      2,
+      3,
+      3
+    ],
+    "targetCounts": [
+      2,
+      2,
+      2,
+      2
+    ],
+    "shifts": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "scoreByCyclicDistance": [
+      2,
+      1,
+      0,
+      1
+    ],
+    "fixedShift": 0,
+    "selectedShiftTieRule": "lowest integer shift attaining maximum discovery score",
+    "alpha": "1/20",
+    "holdout": "independent uniform draw from the same 2520 balanced assignments",
+    "positiveControlShift": 2
+  },
+  "controls": [
+    "Precommitted fixed mapping m=0",
+    "Retrospective maximum with naive fixed-rule tail",
+    "Exact maximum-statistic tail",
+    "Independent holdout with discovery mapping frozen",
+    "Known inserted cyclic correspondence m=2"
+  ],
+  "acceptance": {
+    "assignments": 2520,
+    "exactProbabilityConservation": true,
+    "scoreSymmetryAcrossShifts": true,
+    "maxCorrectedSizeAtMostAlpha": true,
+    "naiveSelectedSizeGreaterThanFixedAchievedSize": true,
+    "selectedDiscoveryMeanGreaterThanFixedMean": true,
+    "holdoutMeanEqualsNullMean": 8,
+    "knownMappingScore": 16,
+    "noAdjustmentForDiscreteConservatism": true
+  },
+  "units": {
+    "score": "sum of eight 0/1/2 point matches",
+    "probability": "exact count divided by finite sample-space size"
+  },
+  "sources": [
+    "C-BASHAR-ANKA2014",
+    "C-BASHAR-FORMULA",
+    "C-AIR1995",
+    "C-ATLAS-PRIOR",
+    "V3-PAULI1947-48"
+  ],
+  "limits": [
+    "Finite cyclic labels are a methodology toy, not an embedding model or measured human synchronicity.",
+    "Zero live model calls and zero human observations.",
+    "The null targets and holdout independence are imposed by construction.",
+    "The proposed positive H-MEANING hypothesis requires an independently frozen dictionary/window and reproducible held-out excess; unrestricted retrospective interpretation is nonidentifying.",
+    "Discrete tests may be conservative; parameters are not tuned to force nominal-alpha exceedance.",
+    "The known-map positive control is inserted ordinary correspondence, not higher-source contact."
+  ],
+  "outputFiles": [
+    "assignments.csv",
+    "score_distribution.csv",
+    "discovery_holdout.csv",
+    "results.json",
+    "figure.svg",
+    "report.md",
+    "manifest.json"
+  ]
+}

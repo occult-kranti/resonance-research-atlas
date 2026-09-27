@@ -1,0 +1,50 @@
+{
+  "id": "B3",
+  "sequence": 13,
+  "predecessor": {
+    "id": "B2",
+    "reviewPath": "docs/panel-v3/reviews/B2-review.json",
+    "reviewSHA256": "2a7d4e2d1d5d66122ac1c76b0ed8b4701240fe39b55497c6f5a723aa8a5f1989",
+    "status": "accepted_narrow"
+  },
+  "checkerFunction": "review_b3",
+  "checkerFunctionSHA256": "19614204fcce3675b5b42d21bd96ec3b1dff3f2f36de91c10ab6ef02d740b600",
+  "status": "accepted_narrow",
+  "reviewer": "/root/advisor_v3 (correlated model agent; independent implementation/derivation, not human peer review)",
+  "reviewMethod": "Independent denominator-16000 integer enumeration, exact conditional tables and contrasts, observational/crossed total variation and channel marginalization.",
+  "independentChecks": {
+    "exact_weighted_joint_states_checked": 256,
+    "exact_conditional_rows_checked": 24,
+    "integer_denominator": 16000,
+    "total_variation_exact": {
+      "observational": "0",
+      "crossed": "2/5"
+    },
+    "crossed_state_accuracy_exact": {
+      "state_readout": "9/10",
+      "prompt_only": "1/2"
+    },
+    "evaluator_cue_verdict_shift_exact": "1/4",
+    "prompt_affirmation_shift_exact": "4/5",
+    "proof": "When P=Z the two report channels coincide on all observed cells. Crossed independent P,Z exposes their off-diagonal difference. Summing the stipulated evaluator channel changes V by1/4 under E while the R marginal is unchanged. These are functional channel identities, without a phenomenal-consciousness variable or observed AI/human judgments."
+  },
+  "acceptedClaim": "Crossed state/prompt observations distinguish the two stipulated functional mechanisms that coincide observationally; scripted affirmation and evaluator effects remain separate from state-access accuracy.",
+  "withheld": [
+    "Actual AI or human introspection results",
+    "Phenomenal-consciousness labels or probabilities",
+    "Measured evaluator bias",
+    "A functional state-readout identifying a higher consciousness source"
+  ],
+  "nextDecision": "STOP after B3: all13 authorized computational reviews are complete; no further research round selected. Physical and live-AI follow-ups remain proposals.",
+  "bindings": {
+    "research/consciousness-v3/round3/conditional_tables.csv": "aa4669621bfe422ecb838cbdda6dd6f9ce7319ded56ed77ce0dbad51f3701b50",
+    "research/consciousness-v3/round3/contract.json": "e13ebbb92e04f4ccaf3f065c34963707292bc9a1e09663ea98e91722cdea9501",
+    "research/consciousness-v3/round3/figure.svg": "bd722429cc59e0b4618733c6b45193fce3be5d18f7f7e4d3d1eeb0f422b028d5",
+    "research/consciousness-v3/round3/joint_states.csv": "d50ad17746871066849d34230a84f77f2356a46338b9cf2aa92a1f1b362c0c56",
+    "research/consciousness-v3/round3/manifest.json": "8bc81723587c027ec9ccd1b42c4b25b18ba1aeb29ec8b602163807fae9184df3",
+    "research/consciousness-v3/round3/mechanism_summary.csv": "3a4a15a847cf9c0701976b85d53a44b2b2c88e005c68b91660fb6d00265f25a7",
+    "research/consciousness-v3/round3/report.md": "ec7d7440548ba8f2be7cd751a85b2be7937fd659842e46e1c421a5bb6bc5cf1d",
+    "research/consciousness-v3/round3/results.json": "add8ade01359cebf3c05d52a64a5bfaa5288c32b1046be2ee8971609a084983e",
+    "research/consciousness-v3/round3/solver.py": "90a93e29605486d8d17dcfcd7e8f5edcbba32f55096fcc423dde8850d34892a6"
+  }
+}

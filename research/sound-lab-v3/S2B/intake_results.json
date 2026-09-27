@@ -1,0 +1,396 @@
+[
+  {
+    "inputSHA256": "1e70c6eaadafe2e260f130698c6a7e921d530990cdef54a201eb5e0a1ae43dc7",
+    "sampleRate_Hz": 8000.0,
+    "samples": 16000,
+    "channels": 1,
+    "channel": 0,
+    "duration_s": 2.0,
+    "samplePeak_FS": 0.20001220703125,
+    "clippedSamples": 0,
+    "window_s": [
+      0.05,
+      0.8
+    ],
+    "windowRMS_FS": 0.04723446937054843,
+    "model": "single exponential cosine+sin+offset",
+    "evidenceType": "actualbytes_generated_PCM",
+    "scope": "Recorded-channel local fit; no material identity or physical measurement provenance assumed",
+    "status": "fit",
+    "flags": [],
+    "alpha_per_s": 3.9999894006679817,
+    "frequency_Hz": 499.99999954672126,
+    "gain_at_window_start_FS": 0.1637459567726736,
+    "phase_at_window_start_rad": -1.6585616783191817e-06,
+    "offset_FS": 1.0168554874546269e-07,
+    "normalizedResidual": 0.0001746675715572608,
+    "optimizerSuccess": true,
+    "optimizerEvaluations": 7,
+    "bounds": {
+      "alpha_per_s": [
+        0,
+        20
+      ],
+      "frequency_Hz": [
+        450,
+        550
+      ]
+    },
+    "case": "clean"
+  },
+  {
+    "inputSHA256": "1e70c6eaadafe2e260f130698c6a7e921d530990cdef54a201eb5e0a1ae43dc7",
+    "sampleRate_Hz": 8000.0,
+    "samples": 16000,
+    "channels": 1,
+    "channel": 0,
+    "duration_s": 2.0,
+    "samplePeak_FS": 0.20001220703125,
+    "clippedSamples": 0,
+    "window_s": [
+      0.2,
+      1.2
+    ],
+    "windowRMS_FS": 0.022473980936236673,
+    "model": "single exponential cosine+sin+offset",
+    "evidenceType": "actualbytes_generated_PCM",
+    "scope": "Recorded-channel local fit; no material identity or physical measurement provenance assumed",
+    "status": "fit",
+    "flags": [],
+    "alpha_per_s": 3.9999611882312527,
+    "frequency_Hz": 499.9999987711251,
+    "gain_at_window_start_FS": 0.08986556330064545,
+    "phase_at_window_start_rad": -1.929043827364864e-07,
+    "offset_FS": 4.259055776488156e-09,
+    "normalizedResidual": 0.00036591111233993365,
+    "optimizerSuccess": true,
+    "optimizerEvaluations": 8,
+    "bounds": {
+      "alpha_per_s": [
+        0,
+        20
+      ],
+      "frequency_Hz": [
+        450,
+        550
+      ]
+    },
+    "case": "clean"
+  },
+  {
+    "inputSHA256": "c4962d3df16628b4a7501e3947d604634f786ea1fd15c46e17de4dfbe9ee5ac6",
+    "sampleRate_Hz": 8000.0,
+    "samples": 16000,
+    "channels": 1,
+    "channel": 0,
+    "duration_s": 2.0,
+    "samplePeak_FS": 0.260009765625,
+    "clippedSamples": 0,
+    "window_s": [
+      0.05,
+      0.8
+    ],
+    "windowRMS_FS": 0.054131657656856125,
+    "model": "single exponential cosine+sin+offset",
+    "evidenceType": "actualbytes_generated_PCM",
+    "scope": "Recorded-channel local fit; no material identity or physical measurement provenance assumed",
+    "status": "fit_with_flags",
+    "flags": [
+      "single_mode_residual_over_5_percent"
+    ],
+    "alpha_per_s": 4.165378124271129,
+    "frequency_Hz": 500.0479962741886,
+    "gain_at_window_start_FS": 0.17035742662080933,
+    "phase_at_window_start_rad": -0.06568582804231063,
+    "offset_FS": 6.830065496436859e-07,
+    "normalizedResidual": 0.45606892529745285,
+    "optimizerSuccess": true,
+    "optimizerEvaluations": 8,
+    "bounds": {
+      "alpha_per_s": [
+        0,
+        20
+      ],
+      "frequency_Hz": [
+        450,
+        550
+      ]
+    },
+    "case": "overlap"
+  },
+  {
+    "inputSHA256": "c4962d3df16628b4a7501e3947d604634f786ea1fd15c46e17de4dfbe9ee5ac6",
+    "sampleRate_Hz": 8000.0,
+    "samples": 16000,
+    "channels": 1,
+    "channel": 0,
+    "duration_s": 2.0,
+    "samplePeak_FS": 0.260009765625,
+    "clippedSamples": 0,
+    "window_s": [
+      0.2,
+      1.2
+    ],
+    "windowRMS_FS": 0.027990703778233508,
+    "model": "single exponential cosine+sin+offset",
+    "evidenceType": "actualbytes_generated_PCM",
+    "scope": "Recorded-channel local fit; no material identity or physical measurement provenance assumed",
+    "status": "fit_with_flags",
+    "flags": [
+      "single_mode_residual_over_5_percent"
+    ],
+    "alpha_per_s": 3.7176503698881183,
+    "frequency_Hz": 500.04894610401584,
+    "gain_at_window_start_FS": 0.08386172036278065,
+    "phase_at_window_start_rad": -0.08064043407041137,
+    "offset_FS": -9.846772448109537e-06,
+    "normalizedResidual": 0.6293318470427879,
+    "optimizerSuccess": true,
+    "optimizerEvaluations": 9,
+    "bounds": {
+      "alpha_per_s": [
+        0,
+        20
+      ],
+      "frequency_Hz": [
+        450,
+        550
+      ]
+    },
+    "case": "overlap"
+  },
+  {
+    "inputSHA256": "29ace0f51bd7fb52066c3c60c1d765233fb49914ed4099c5f11dc6314d0a71f8",
+    "sampleRate_Hz": 8000.0,
+    "samples": 16000,
+    "channels": 1,
+    "channel": 0,
+    "duration_s": 2.0,
+    "samplePeak_FS": 0.20001220703125,
+    "clippedSamples": 0,
+    "window_s": [
+      0.05,
+      0.8
+    ],
+    "windowRMS_FS": 0.072034978182238,
+    "model": "single exponential cosine+sin+offset",
+    "evidenceType": "actualbytes_generated_PCM",
+    "scope": "Recorded-channel local fit; no material identity or physical measurement provenance assumed",
+    "status": "fit",
+    "flags": [],
+    "alpha_per_s": 1.999999616438241,
+    "frequency_Hz": 500.0000001035923,
+    "gain_at_window_start_FS": 0.18096721541486838,
+    "phase_at_window_start_rad": -1.5743570649596841e-06,
+    "offset_FS": 1.272687412639795e-07,
+    "normalizedResidual": 0.00011338254158032878,
+    "optimizerSuccess": true,
+    "optimizerEvaluations": 8,
+    "bounds": {
+      "alpha_per_s": [
+        0,
+        20
+      ],
+      "frequency_Hz": [
+        450,
+        550
+      ]
+    },
+    "case": "gain_drift"
+  },
+  {
+    "inputSHA256": "29ace0f51bd7fb52066c3c60c1d765233fb49914ed4099c5f11dc6314d0a71f8",
+    "sampleRate_Hz": 8000.0,
+    "samples": 16000,
+    "channels": 1,
+    "channel": 0,
+    "duration_s": 2.0,
+    "samplePeak_FS": 0.20001220703125,
+    "clippedSamples": 0,
+    "window_s": [
+      0.2,
+      1.2
+    ],
+    "windowRMS_FS": 0.0469743577013054,
+    "model": "single exponential cosine+sin+offset",
+    "evidenceType": "actualbytes_generated_PCM",
+    "scope": "Recorded-channel local fit; no material identity or physical measurement provenance assumed",
+    "status": "fit",
+    "flags": [],
+    "alpha_per_s": 1.9999843500153383,
+    "frequency_Hz": 500.0000033451637,
+    "gain_at_window_start_FS": 0.13406323169332152,
+    "phase_at_window_start_rad": -6.37633261299755e-06,
+    "offset_FS": 1.1232653244335428e-07,
+    "normalizedResidual": 0.00017358617172854752,
+    "optimizerSuccess": true,
+    "optimizerEvaluations": 8,
+    "bounds": {
+      "alpha_per_s": [
+        0,
+        20
+      ],
+      "frequency_Hz": [
+        450,
+        550
+      ]
+    },
+    "case": "gain_drift"
+  },
+  {
+    "inputSHA256": "29ace0f51bd7fb52066c3c60c1d765233fb49914ed4099c5f11dc6314d0a71f8",
+    "sampleRate_Hz": 8000.0,
+    "samples": 16000,
+    "channels": 1,
+    "channel": 0,
+    "duration_s": 2.0,
+    "samplePeak_FS": 0.20001220703125,
+    "clippedSamples": 0,
+    "window_s": [
+      0.05,
+      0.8
+    ],
+    "windowRMS_FS": 0.072034978182238,
+    "model": "single exponential cosine+sin+offset",
+    "evidenceType": "actualbytes_generated_PCM",
+    "scope": "Recorded-channel local fit; no material identity or physical measurement provenance assumed",
+    "status": "fit",
+    "flags": [],
+    "alpha_per_s": 1.999999616438241,
+    "frequency_Hz": 500.0000001035923,
+    "gain_at_window_start_FS": 0.18096721541486838,
+    "phase_at_window_start_rad": -1.5743570649596841e-06,
+    "offset_FS": 1.272687412639795e-07,
+    "normalizedResidual": 0.00011338254158032878,
+    "optimizerSuccess": true,
+    "optimizerEvaluations": 8,
+    "bounds": {
+      "alpha_per_s": [
+        0,
+        20
+      ],
+      "frequency_Hz": [
+        450,
+        550
+      ]
+    },
+    "case": "true_alpha2"
+  },
+  {
+    "inputSHA256": "29ace0f51bd7fb52066c3c60c1d765233fb49914ed4099c5f11dc6314d0a71f8",
+    "sampleRate_Hz": 8000.0,
+    "samples": 16000,
+    "channels": 1,
+    "channel": 0,
+    "duration_s": 2.0,
+    "samplePeak_FS": 0.20001220703125,
+    "clippedSamples": 0,
+    "window_s": [
+      0.2,
+      1.2
+    ],
+    "windowRMS_FS": 0.0469743577013054,
+    "model": "single exponential cosine+sin+offset",
+    "evidenceType": "actualbytes_generated_PCM",
+    "scope": "Recorded-channel local fit; no material identity or physical measurement provenance assumed",
+    "status": "fit",
+    "flags": [],
+    "alpha_per_s": 1.9999843500153383,
+    "frequency_Hz": 500.0000033451637,
+    "gain_at_window_start_FS": 0.13406323169332152,
+    "phase_at_window_start_rad": -6.37633261299755e-06,
+    "offset_FS": 1.1232653244335428e-07,
+    "normalizedResidual": 0.00017358617172854752,
+    "optimizerSuccess": true,
+    "optimizerEvaluations": 8,
+    "bounds": {
+      "alpha_per_s": [
+        0,
+        20
+      ],
+      "frequency_Hz": [
+        450,
+        550
+      ]
+    },
+    "case": "true_alpha2"
+  },
+  {
+    "inputSHA256": "a027c2a06e51252b16f005d40c68bf39b3c6f73626bdb90eeb01498f46b35ff5",
+    "sampleRate_Hz": 8000.0,
+    "samples": 16000,
+    "channels": 1,
+    "channel": 0,
+    "duration_s": 2.0,
+    "samplePeak_FS": 0.2005615234375,
+    "clippedSamples": 0,
+    "window_s": [
+      0.05,
+      0.8
+    ],
+    "windowRMS_FS": 0.04727736524808985,
+    "model": "single exponential cosine+sin+offset",
+    "evidenceType": "actualbytes_generated_PCM",
+    "scope": "Recorded-channel local fit; no material identity or physical measurement provenance assumed",
+    "status": "fit",
+    "flags": [],
+    "alpha_per_s": 4.000484298658512,
+    "frequency_Hz": 499.99964147941915,
+    "gain_at_window_start_FS": 0.1638678891976713,
+    "phase_at_window_start_rad": 0.0003302544099961386,
+    "offset_FS": -2.7982483298686974e-05,
+    "normalizedResidual": 0.021194444364918786,
+    "optimizerSuccess": true,
+    "optimizerEvaluations": 7,
+    "bounds": {
+      "alpha_per_s": [
+        0,
+        20
+      ],
+      "frequency_Hz": [
+        450,
+        550
+      ]
+    },
+    "case": "noise"
+  },
+  {
+    "inputSHA256": "a027c2a06e51252b16f005d40c68bf39b3c6f73626bdb90eeb01498f46b35ff5",
+    "sampleRate_Hz": 8000.0,
+    "samples": 16000,
+    "channels": 1,
+    "channel": 0,
+    "duration_s": 2.0,
+    "samplePeak_FS": 0.2005615234375,
+    "clippedSamples": 0,
+    "window_s": [
+      0.2,
+      1.2
+    ],
+    "windowRMS_FS": 0.02251630236414932,
+    "model": "single exponential cosine+sin+offset",
+    "evidenceType": "actualbytes_generated_PCM",
+    "scope": "Recorded-channel local fit; no material identity or physical measurement provenance assumed",
+    "status": "fit",
+    "flags": [],
+    "alpha_per_s": 4.006307452123145,
+    "frequency_Hz": 500.0000120002764,
+    "gain_at_window_start_FS": 0.09001673725666938,
+    "phase_at_window_start_rad": -0.0003560801581969526,
+    "offset_FS": -2.7019958043475796e-05,
+    "normalizedResidual": 0.04446423532506546,
+    "optimizerSuccess": true,
+    "optimizerEvaluations": 8,
+    "bounds": {
+      "alpha_per_s": [
+        0,
+        20
+      ],
+      "frequency_Hz": [
+        450,
+        550
+      ]
+    },
+    "case": "noise"
+  }
+]

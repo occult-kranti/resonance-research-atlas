@@ -1,0 +1,20 @@
+{
+  "id": "S3A",
+  "artifacts": {
+    "contract.json": "50edeb39d806519683c1f8da23e748432fd8436cd6e64f9490889e2b5abf1c7e",
+    "run.py": "7c264e81ec786912e514f70b9b6bc2ddda61f0611a10aaec3963e56846a63aa1",
+    "results.json": "23070a524c0eb4b7d55ac145bed1bb1f6563912bbeefecb55962912e7e8c12b5",
+    "report.md": "e3149d4352e4182622787249afc34388a8aa387da5666475117b9c681675b049",
+    "source.csv": "93e8d1452b62ededd7a42867aa41e1085a53ff8b9a048709cea7c4600fc65dd8",
+    "accepted_wav.json": "45f054f40e56bb90c3cc288849a5fd1797f287c4463a8a28de0118f7a43e8a56",
+    "accepted_wav.csv": "e7ed3de3db1abbe28fb1212cdbeb923453e247026a73101edf6e4bba61ee495a",
+    "accepted_csv.json": "7fe740720287e38b3ff0fbd8d17cc69a07ae14b3738e9cedb9042cebf0b18522",
+    "accepted_csv.csv": "e7ed3de3db1abbe28fb1212cdbeb923453e247026a73101edf6e4bba61ee495a",
+    "admission_cases.json": "80eefc3008324a582c1148858bad026a9e18dbf0e4944c8a2f1468badc5f4638",
+    "admission.csv": "ae53959f8506123f51e15c42ae08999d97e4996ad6ccb894ff324478becbf267",
+    "figure.svg": "51a64cfeb1bd9328ff460ca6d1c2a2e3a92e6721c8d3d86ee22489eed2842364",
+    "../fit_recording.py": "d1f0ad5fadd5e225c9d3feb3ca79d36d583dc62b5ab331c9ae6f351fb1d78137",
+    "../intake_v2.py": "5d06f8300d7a23dff82955ff96ec37ff771cf907556c5b0444a3d2f447b88272"
+  },
+  "commonSHA256": "25a627bb9616a8b04051fb8b4e46b747cf5ea732b0fb28fcb8c2c90baaf1d408"
+}

@@ -1,0 +1,561 @@
+{
+  "schemaVersion": 1,
+  "program": "Low-material sound measurements",
+  "status": "completed_reviewed_narrow",
+  "loops": [
+    {
+      "id": "S1A",
+      "round": 1,
+      "title": "A recording-chain peak is not a material identity",
+      "status": "accepted_narrow",
+      "evidenceType": "synthetic",
+      "question": "Can a known-input complex ratio recover the total transfer while leaving its physical factorization ambiguous?",
+      "finding": "Total complex transfer is recovered to numerical precision; two distinct device/echo factorizations give exactly the same output.",
+      "metrics": {
+        "total_transfer_max_complex_error": 3.114494141552546e-14,
+        "heldout_relative_L2": 8.342888608107146e-16,
+        "superposition_relative_L2": 1.206758362039764e-16,
+        "factorization_relative_L2": 0.0,
+        "declared_echo_delay_s": 0.005,
+        "declared_comb_spacing_Hz": 200.0,
+        "inverse_H_zero_bins": 4,
+        "input_X_excluded_bins": 0,
+        "impulse_max_error": 5.551115123125783e-17
+      },
+      "limits": [
+        "Known synthetic d permits a conditional echo calculation only",
+        "No physical apparatus recorded",
+        "Single-path labels and physical echo parameters are not identified by total H",
+        "Exact noiseless finite FIR exercise; no device, pressure, material or biological validation"
+      ],
+      "sources": [
+        "V3-FARINA2000",
+        "V3-SMITH-COMB"
+      ],
+      "contractPath": "research/sound-lab-v3/S1A/contract.json",
+      "resultsPath": "research/sound-lab-v3/S1A/results.json",
+      "reportPath": "research/sound-lab-v3/S1A/report.md",
+      "figurePaths": [
+        "research/sound-lab-v3/S1A/figure.svg"
+      ],
+      "rawPaths": [
+        "research/sound-lab-v3/S1A/response.csv",
+        "research/sound-lab-v3/S1A/probe_outputs.csv",
+        "research/sound-lab-v3/S1A/impulse.csv"
+      ],
+      "protocolPath": "research/sound-lab-v3/protocol.md",
+      "producerStatus": "executed_pending_review",
+      "reviewPath": "docs/panel-v3/reviews/S1A-review.json",
+      "reviewedFinding": "The noiseless known-FIR ratio recovers total transfer and predicts a held-out probe; exact alternative device/echo factorizations remain indistinguishable."
+    },
+    {
+      "id": "S1B",
+      "round": 1,
+      "title": "Reference cancellation needs a stable, sensitive chain",
+      "status": "accepted_narrow",
+      "evidenceType": "synthetic",
+      "question": "How do a near-notch and one-sample path change break reference division?",
+      "finding": "Reference division is exact only for the stable noiseless fixture; small path drift creates a false change, while regularization trades bounded noise for explicit bias.",
+      "metrics": {
+        "noiseless_max_error": 4.545902364027965e-16,
+        "eligible_fraction": 0.9311967068509261,
+        "masked_noise_max_error": 0.013328498443604338,
+        "unmasked_noise_max_error": 0.17982534875354192,
+        "regularized_noise_max_error": 0.04999995397180092,
+        "regularized_bias_max": 0.9834996986562441,
+        "regularized_gain_max": 24.99997698590046,
+        "bias_identity_error": 7.813354239747122e-16,
+        "moved_blank_false_change_max": 6.868324734872373,
+        "minimum_H0_magnitude": 0.011121902522992373
+      },
+      "limits": [
+        "A .15 sensitivity mask is fixture-specific, not a universal physical stability threshold",
+        "Regularization bounds noise gain but adds bias",
+        "No room, object, microphone or speaker measured",
+        "Reference similarity flags changes but does not certify a stable physical chain"
+      ],
+      "sources": [
+        "V3-FARINA2000",
+        "V3-SMITH-COMB"
+      ],
+      "contractPath": "research/sound-lab-v3/S1B/contract.json",
+      "resultsPath": "research/sound-lab-v3/S1B/results.json",
+      "reportPath": "research/sound-lab-v3/S1B/report.md",
+      "figurePaths": [
+        "research/sound-lab-v3/S1B/figure.svg"
+      ],
+      "rawPaths": [
+        "research/sound-lab-v3/S1B/response.csv"
+      ],
+      "protocolPath": "research/sound-lab-v3/protocol.md",
+      "producerStatus": "executed_pending_review",
+      "reviewPath": "docs/panel-v3/reviews/S1B-review.json",
+      "reviewedFinding": "Reference cancellation in the declared stable fixture is exact; a one-sample path change mimics an object change, while regularization bounds noise at the cost of calculable bias."
+    },
+    {
+      "id": "S2A",
+      "round": 2,
+      "title": "Fit decay from a file, independently of strike gain",
+      "status": "accepted_narrow",
+      "evidenceType": "actualbytes",
+      "question": "Can one shared recording importer recover a declared single-mode decay from quantized WAV at different gains and phases?",
+      "finding": "The shared WAV importer and local fit recover the declared decay across gain/phase cases; silence and clipped recordings are rejected.",
+      "metrics": {
+        "max_alpha_error_per_s": 3.3449363301407686e-05,
+        "max_frequency_error_Hz": 5.110187203172245e-06,
+        "max_normalized_residual": 0.0003491425522215834,
+        "silence_rejected": true,
+        "clipping_rejected": true,
+        "clipped_sample_count": 97
+      },
+      "limits": [
+        "actualbytes means generated and decoded PCM WAV, not a microphone recording",
+        "Local optimization depends on supplied nominal frequency and the declared single-mode model",
+        "Fitted decay describes the recorded channel, not intrinsic material damping",
+        "Quantization-only fixtures do not validate arbitrary device recordings"
+      ],
+      "sources": [
+        "V3-FEYN23",
+        "V3-W3C-CAPTURE"
+      ],
+      "contractPath": "research/sound-lab-v3/S2A/contract.json",
+      "resultsPath": "research/sound-lab-v3/S2A/results.json",
+      "reportPath": "research/sound-lab-v3/S2A/report.md",
+      "figurePaths": [
+        "research/sound-lab-v3/S2A/figure.svg"
+      ],
+      "rawPaths": [
+        "research/sound-lab-v3/S2A/case0.wav",
+        "research/sound-lab-v3/S2A/fit0.csv",
+        "research/sound-lab-v3/S2A/case1.wav",
+        "research/sound-lab-v3/S2A/fit1.csv",
+        "research/sound-lab-v3/S2A/case2.wav",
+        "research/sound-lab-v3/S2A/fit2.csv",
+        "research/sound-lab-v3/S2A/case3.wav",
+        "research/sound-lab-v3/S2A/fit3.csv",
+        "research/sound-lab-v3/S2A/case4.wav",
+        "research/sound-lab-v3/S2A/fit4.csv",
+        "research/sound-lab-v3/S2A/fits.csv"
+      ],
+      "protocolPath": "research/sound-lab-v3/protocol.md",
+      "producerStatus": "executed_pending_review",
+      "reviewPath": "docs/panel-v3/reviews/S2A-review.json",
+      "reviewedFinding": "One shared WAV importer/local fitter recovers the declared 500 Hz, 4 s^-1 decay across generated PCM gain/phase cases; silent and clipped files are rejected."
+    },
+    {
+      "id": "S2B",
+      "round": 2,
+      "title": "A good decay fit can still describe recording gain",
+      "status": "accepted_narrow",
+      "evidenceType": "actualbytes",
+      "question": "Which model failures can residuals and window changes detect, and which remain exactly ambiguous?",
+      "finding": "Nearby modes and noise can raise residuals, but exponential recording gain is byte-identical to a different decay and passes the same fit checks.",
+      "metrics": {
+        "ambiguity_prequantization_max_FS": 5.551115123125783e-17,
+        "ambiguous_PCM_identical": true,
+        "gain_drift_apparent_alpha_per_s": 1.999999616438241,
+        "overlap_alpha_early_per_s": 4.165378124271129,
+        "overlap_alpha_late_per_s": 3.7176503698881183,
+        "overlap_residual_early": 0.45606892529745285,
+        "noise_residual_late": 0.04446423532506546,
+        "flagged_fits": 2,
+        "fits_total": 10
+      },
+      "limits": [
+        "Generated WAV bytes are not recorded physical data",
+        "Residual/window checks can reject some failures but cannot certify intrinsic damping",
+        "Exact exponential gain is a counterexample, not a claimed universal AGC law",
+        "Multiple modal contributions, support and microphone dynamics remain physical alternatives"
+      ],
+      "sources": [
+        "V3-FEYN23",
+        "V3-W3C-CAPTURE"
+      ],
+      "contractPath": "research/sound-lab-v3/S2B/contract.json",
+      "resultsPath": "research/sound-lab-v3/S2B/results.json",
+      "reportPath": "research/sound-lab-v3/S2B/report.md",
+      "figurePaths": [
+        "research/sound-lab-v3/S2B/figure.svg"
+      ],
+      "rawPaths": [
+        "research/sound-lab-v3/S2B/clean.wav",
+        "research/sound-lab-v3/S2B/clean_0.csv",
+        "research/sound-lab-v3/S2B/clean_1.csv",
+        "research/sound-lab-v3/S2B/overlap.wav",
+        "research/sound-lab-v3/S2B/overlap_0.csv",
+        "research/sound-lab-v3/S2B/overlap_1.csv",
+        "research/sound-lab-v3/S2B/gain_drift.wav",
+        "research/sound-lab-v3/S2B/gain_drift_0.csv",
+        "research/sound-lab-v3/S2B/gain_drift_1.csv",
+        "research/sound-lab-v3/S2B/true_alpha2.wav",
+        "research/sound-lab-v3/S2B/true_alpha2_0.csv",
+        "research/sound-lab-v3/S2B/true_alpha2_1.csv",
+        "research/sound-lab-v3/S2B/noise.wav",
+        "research/sound-lab-v3/S2B/noise_0.csv",
+        "research/sound-lab-v3/S2B/noise_1.csv",
+        "research/sound-lab-v3/S2B/fits.csv"
+      ],
+      "protocolPath": "research/sound-lab-v3/protocol.md",
+      "producerStatus": "executed_pending_review",
+      "reviewPath": "docs/panel-v3/reviews/S2B-review.json",
+      "reviewedFinding": "The fixture detects overlapping modes through large residuals, but exponential gain and a different decay generate byte-identical recordings; a low residual cannot resolve that ambiguity."
+    },
+    {
+      "id": "S3A",
+      "round": 3,
+      "title": "Preserve the original recording during analysis",
+      "status": "accepted_narrow",
+      "evidenceType": "actualbytes",
+      "question": "Can a versioned importer preserve source evidence while giving equivalent WAV and CSV analysis?",
+      "finding": "The protected version rejects source collisions, existing outputs, invalid CSV channel and symlink collisions while preserving equivalent valid WAV/CSV analysis.",
+      "metrics": {
+        "valid_trace_max_difference_FS": 0.0,
+        "valid_alpha_difference_per_s": 0.0,
+        "valid_frequency_difference_Hz": 0.0,
+        "rejected_cases": 4,
+        "protected_sources": 4,
+        "protected_sentinels": 4
+      },
+      "limits": [
+        "File integrity is not source authenticity or acoustic calibration",
+        "Original S2A/S2B fitter and results remain frozen",
+        "Low residuals retain the exact S2B physical ambiguity",
+        "User-supplied recording provenance is declared, not independently verified"
+      ],
+      "sources": [
+        "V3-W3C-CAPTURE"
+      ],
+      "contractPath": "research/sound-lab-v3/S3A/contract.json",
+      "resultsPath": "research/sound-lab-v3/S3A/results.json",
+      "reportPath": "research/sound-lab-v3/S3A/report.md",
+      "figurePaths": [
+        "research/sound-lab-v3/S3A/figure.svg"
+      ],
+      "rawPaths": [
+        "research/sound-lab-v3/S3A/source.csv",
+        "research/sound-lab-v3/S3A/accepted_wav.csv",
+        "research/sound-lab-v3/S3A/accepted_csv.csv",
+        "research/sound-lab-v3/S3A/admission.csv"
+      ],
+      "protocolPath": "research/sound-lab-v3/protocol.md",
+      "producerStatus": "executed_pending_review",
+      "reviewPath": "docs/panel-v3/reviews/S3A-review.json",
+      "reviewedFinding": "A versioned intake preserves raw files and existing outputs, rejects invalid CSV channels and source/symlink collisions, and gives identical decoded WAV/CSV traces."
+    },
+    {
+      "id": "S3B",
+      "round": 3,
+      "title": "The time axis is a calibration premise",
+      "status": "accepted_narrow",
+      "evidenceType": "actualbytes",
+      "question": "Can identical samples yield different absolute decay and frequency under different clock labels?",
+      "finding": "A wrong timebase changes fitted frequency and decay together without changing samples; an independently known reference can correct this synthetic clock error.",
+      "metrics": {
+        "apparent_frequency_Hz": 499.0019960514766,
+        "apparent_alpha_per_s": 3.992026003459423,
+        "correct_time_frequency_Hz": 500.000000047513,
+        "correct_time_alpha_per_s": 4.000010515434883,
+        "reference_estimated_clock_scale": 1.0020000003629423,
+        "reference_corrected_frequency_Hz": 500.000000228622,
+        "reference_corrected_alpha_per_s": 4.000010516883766,
+        "reference_boundary_flag": true,
+        "invalid_cases_rejected": 4,
+        "identical_amplitudes": true
+      },
+      "limits": [
+        "Generated PCM and timestamp fixtures are not a physical clock measurement",
+        "Independent reference frequency is an additional assumption; a same-clock generated tone is circular calibration",
+        "Header sample rate and reported device settings do not independently certify true sampling time",
+        "A constant reference tone reaches alpha0 search boundary; that flag is retained"
+      ],
+      "sources": [
+        "V3-FARINA2000",
+        "V3-W3C-CAPTURE"
+      ],
+      "contractPath": "research/sound-lab-v3/S3B/contract.json",
+      "resultsPath": "research/sound-lab-v3/S3B/results.json",
+      "reportPath": "research/sound-lab-v3/S3B/report.md",
+      "figurePaths": [
+        "research/sound-lab-v3/S3B/figure.svg"
+      ],
+      "rawPaths": [
+        "research/sound-lab-v3/S3B/wrong_header.wav",
+        "research/sound-lab-v3/S3B/correct_time.csv",
+        "research/sound-lab-v3/S3B/null8000.wav",
+        "research/sound-lab-v3/S3B/reference.wav",
+        "research/sound-lab-v3/S3B/reference_corrected.csv",
+        "research/sound-lab-v3/S3B/null8000_wav_fit.csv",
+        "research/sound-lab-v3/S3B/wrong_header_wav_fit.csv",
+        "research/sound-lab-v3/S3B/correct_time_csv_fit.csv",
+        "research/sound-lab-v3/S3B/reference_corrected_csv_fit.csv",
+        "research/sound-lab-v3/S3B/fits.csv"
+      ],
+      "protocolPath": "research/sound-lab-v3/protocol.md",
+      "producerStatus": "executed_pending_review",
+      "reviewPath": "docs/panel-v3/reviews/S3B-review.json",
+      "reviewedFinding": "Identical samples give proportionally different absolute frequency and decay under a changed timebase; an independently known reference conditionally fixes the scale. The repaired timestamp test now exercises timestamp validation."
+    },
+    {
+      "id": "S4A",
+      "round": 4,
+      "title": "A spatial magnitude map loses phase and direction",
+      "status": "accepted_narrow",
+      "evidenceType": "synthetic",
+      "question": "What changes when a magnitude map is replaced by independent phase-referenced spatial samples?",
+      "finding": "Dense magnitude samples retain exact phase/direction ambiguities; two appropriately spaced complex samples recover the declared model coefficients with a shared phase reference.",
+      "metrics": {
+        "magnitude_partner_max_error": 0.0,
+        "common_phase_magnitude_max_error": 1.7763568394002505e-15,
+        "single_complex_domain_dimension": 2,
+        "single_complex_rank": 1,
+        "single_complex_nullity": 1,
+        "kernel_residual": 0.0,
+        "two_sample_rank": 2,
+        "two_sample_nullity": 0,
+        "two_sample_condition": 1.0000000000000004,
+        "two_sample_coefficient_error": 5.551115123125783e-17,
+        "wavelength_m": 0.686,
+        "quarter_wavelength_m": 0.1715,
+        "coefficient_ratio_original": 0.6,
+        "coefficient_ratio_partner": 1.6666666666666665
+      },
+      "limits": [
+        "One-dimensional two-traveling-wave model is assumed, not a measured room",
+        "Conjugate-swap reverses larger traveling coefficient; known incident direction and passivity may exclude it",
+        "Complex samples require common phase reference; sequential phone recordings do not automatically provide one",
+        "Recovered coefficients do not identify material, source mechanism or three-dimensional boundaries"
+      ],
+      "sources": [
+        "V3-FEYN49",
+        "V3-FEYN23"
+      ],
+      "contractPath": "research/sound-lab-v3/S4A/contract.json",
+      "resultsPath": "research/sound-lab-v3/S4A/results.json",
+      "reportPath": "research/sound-lab-v3/S4A/report.md",
+      "figurePaths": [
+        "research/sound-lab-v3/S4A/figure.svg"
+      ],
+      "rawPaths": [
+        "research/sound-lab-v3/S4A/spatial_response.csv",
+        "research/sound-lab-v3/S4A/observations.csv"
+      ],
+      "protocolPath": "research/sound-lab-v3/protocol.md",
+      "producerStatus": "executed_pending_review",
+      "reviewPath": "docs/panel-v3/reviews/S4A-review.json",
+      "reviewedFinding": "Dense magnitude observations retain exact global-phase and conjugate-swap ambiguities; two quarter-wave-spaced complex samples recover coefficients only in the declared known-basis, shared-phase model."
+    },
+    {
+      "id": "S4B",
+      "round": 4,
+      "title": "Spacing and a withheld position test the spatial inverse",
+      "status": "accepted_narrow",
+      "evidenceType": "synthetic",
+      "question": "When does a second spatial sample add stable information, and can a withheld sample expose phase drift?",
+      "finding": "Near-degenerate spacing amplifies bounded noise; a two-point fit hides channel-specific phase drift that a withheld third point reveals.",
+      "metrics": {
+        "worst_fullrank_condition": 318.30883898555044,
+        "quarterwave_condition": 1.0000000000000002,
+        "worst_coefficient_L2_error": 0.159155204891585,
+        "quarterwave_coefficient_L2_error": 0.0007071067811865044,
+        "singular_cases_not_inverted": 2,
+        "two_sample_fit_residual": 5.551115123125783e-17,
+        "heldout_phase_drift_error": 0.023507904525623263,
+        "three_sample_residual_L2": 0.0166225987015542,
+        "global_phase_residual_L2": 4.1910000110727263e-16
+      },
+      "limits": [
+        "One-dimensional known-c model and common phase reference assumed",
+        "Half-wavelength singular cases are not inverted",
+        "A third sample can reject this mismatch but cannot certify every physical assumption",
+        "Noise direction is constructed worst case; not a phone error distribution"
+      ],
+      "sources": [
+        "V3-FEYN49",
+        "V3-FEYN23"
+      ],
+      "contractPath": "research/sound-lab-v3/S4B/contract.json",
+      "resultsPath": "research/sound-lab-v3/S4B/results.json",
+      "reportPath": "research/sound-lab-v3/S4B/report.md",
+      "figurePaths": [
+        "research/sound-lab-v3/S4B/figure.svg"
+      ],
+      "rawPaths": [
+        "research/sound-lab-v3/S4B/noise_observations.csv",
+        "research/sound-lab-v3/S4B/phase_observations.csv",
+        "research/sound-lab-v3/S4B/conditioning.csv"
+      ],
+      "protocolPath": "research/sound-lab-v3/protocol.md",
+      "producerStatus": "executed_pending_review",
+      "reviewPath": "docs/panel-v3/reviews/S4B-review.json",
+      "reviewedFinding": "Spatial inverse conditioning depends on separation; a two-point exact fit can hide channel phase drift while an independent withheld point exposes this declared mismatch."
+    },
+    {
+      "id": "S5A",
+      "round": 5,
+      "title": "Counterbalance the household comparison before recording",
+      "status": "accepted_narrow",
+      "evidenceType": "actualbytes",
+      "question": "Does a balanced trial order remove a declared recording drift, and which condition-linked rival remains?",
+      "finding": "Balanced order cancels the declared linear recording drift in positive and null fixtures; a condition-linked gain rival remains byte-identical.",
+      "metrics": {
+        "blocked_effect_contrast_per_s": 1.3600118176897875,
+        "blocked_null_contrast_per_s": -0.6399804674200866,
+        "balanced_effect_contrast_per_s": 1.9999924047620392,
+        "balanced_null_contrast_per_s": -1.0901747931502115e-05,
+        "max_trial_alpha_error_per_s": 5.449122547540597e-05,
+        "trials_fitted": 64,
+        "rival_identical_trials": 16,
+        "rival_max_difference_FS": 8.326672684688674e-17
+      },
+      "limits": [
+        "All64trialWAVs and rival are generated fixtures, not spoon measurements",
+        "Fixed counterbalance cancels this linear order term, not arbitrary drift",
+        "Condition-linked nuisance is not removed by trial order",
+        "Public demo condition key is not blinded; future masked analysis requires separate custody",
+        "Recorded-channel contrast is not intrinsic material damping"
+      ],
+      "sources": [
+        "V3-W3C-CAPTURE",
+        "V3-FEYN23"
+      ],
+      "contractPath": "research/sound-lab-v3/S5A/contract.json",
+      "resultsPath": "research/sound-lab-v3/S5A/results.json",
+      "reportPath": "research/sound-lab-v3/S5A/report.md",
+      "figurePaths": [
+        "research/sound-lab-v3/S5A/figure.svg"
+      ],
+      "rawPaths": [
+        "research/sound-lab-v3/S5A/blocked_effect/T01.wav",
+        "research/sound-lab-v3/S5A/blocked_effect/T02.wav",
+        "research/sound-lab-v3/S5A/blocked_effect/T03.wav",
+        "research/sound-lab-v3/S5A/blocked_effect/T04.wav",
+        "research/sound-lab-v3/S5A/blocked_effect/T05.wav",
+        "research/sound-lab-v3/S5A/blocked_effect/T06.wav",
+        "research/sound-lab-v3/S5A/blocked_effect/T07.wav",
+        "research/sound-lab-v3/S5A/blocked_effect/T08.wav",
+        "research/sound-lab-v3/S5A/blocked_effect/T09.wav",
+        "research/sound-lab-v3/S5A/blocked_effect/T10.wav",
+        "research/sound-lab-v3/S5A/blocked_effect/T11.wav",
+        "research/sound-lab-v3/S5A/blocked_effect/T12.wav",
+        "research/sound-lab-v3/S5A/blocked_effect/T13.wav",
+        "research/sound-lab-v3/S5A/blocked_effect/T14.wav",
+        "research/sound-lab-v3/S5A/blocked_effect/T15.wav",
+        "research/sound-lab-v3/S5A/blocked_effect/T16.wav",
+        "research/sound-lab-v3/S5A/blocked_null/T01.wav",
+        "research/sound-lab-v3/S5A/blocked_null/T02.wav",
+        "research/sound-lab-v3/S5A/blocked_null/T03.wav",
+        "research/sound-lab-v3/S5A/blocked_null/T04.wav",
+        "research/sound-lab-v3/S5A/blocked_null/T05.wav",
+        "research/sound-lab-v3/S5A/blocked_null/T06.wav",
+        "research/sound-lab-v3/S5A/blocked_null/T07.wav",
+        "research/sound-lab-v3/S5A/blocked_null/T08.wav",
+        "research/sound-lab-v3/S5A/blocked_null/T09.wav",
+        "research/sound-lab-v3/S5A/blocked_null/T10.wav",
+        "research/sound-lab-v3/S5A/blocked_null/T11.wav",
+        "research/sound-lab-v3/S5A/blocked_null/T12.wav",
+        "research/sound-lab-v3/S5A/blocked_null/T13.wav",
+        "research/sound-lab-v3/S5A/blocked_null/T14.wav",
+        "research/sound-lab-v3/S5A/blocked_null/T15.wav",
+        "research/sound-lab-v3/S5A/blocked_null/T16.wav",
+        "research/sound-lab-v3/S5A/balanced_effect/T01.wav",
+        "research/sound-lab-v3/S5A/balanced_effect/T02.wav",
+        "research/sound-lab-v3/S5A/balanced_effect/T03.wav",
+        "research/sound-lab-v3/S5A/balanced_effect/T04.wav",
+        "research/sound-lab-v3/S5A/balanced_effect/T05.wav",
+        "research/sound-lab-v3/S5A/balanced_effect/T06.wav",
+        "research/sound-lab-v3/S5A/balanced_effect/T07.wav",
+        "research/sound-lab-v3/S5A/balanced_effect/T08.wav",
+        "research/sound-lab-v3/S5A/balanced_effect/T09.wav",
+        "research/sound-lab-v3/S5A/balanced_effect/T10.wav",
+        "research/sound-lab-v3/S5A/balanced_effect/T11.wav",
+        "research/sound-lab-v3/S5A/balanced_effect/T12.wav",
+        "research/sound-lab-v3/S5A/balanced_effect/T13.wav",
+        "research/sound-lab-v3/S5A/balanced_effect/T14.wav",
+        "research/sound-lab-v3/S5A/balanced_effect/T15.wav",
+        "research/sound-lab-v3/S5A/balanced_effect/T16.wav",
+        "research/sound-lab-v3/S5A/balanced_null/T01.wav",
+        "research/sound-lab-v3/S5A/balanced_null/T02.wav",
+        "research/sound-lab-v3/S5A/balanced_null/T03.wav",
+        "research/sound-lab-v3/S5A/balanced_null/T04.wav",
+        "research/sound-lab-v3/S5A/balanced_null/T05.wav",
+        "research/sound-lab-v3/S5A/balanced_null/T06.wav",
+        "research/sound-lab-v3/S5A/balanced_null/T07.wav",
+        "research/sound-lab-v3/S5A/balanced_null/T08.wav",
+        "research/sound-lab-v3/S5A/balanced_null/T09.wav",
+        "research/sound-lab-v3/S5A/balanced_null/T10.wav",
+        "research/sound-lab-v3/S5A/balanced_null/T11.wav",
+        "research/sound-lab-v3/S5A/balanced_null/T12.wav",
+        "research/sound-lab-v3/S5A/balanced_null/T13.wav",
+        "research/sound-lab-v3/S5A/balanced_null/T14.wav",
+        "research/sound-lab-v3/S5A/balanced_null/T15.wav",
+        "research/sound-lab-v3/S5A/balanced_null/T16.wav",
+        "research/sound-lab-v3/S5A/condition_rival.wav",
+        "research/sound-lab-v3/S5A/trial-template.csv",
+        "research/sound-lab-v3/S5A/trial-fits.csv",
+        "research/sound-lab-v3/S5A/example-fit.csv"
+      ],
+      "protocolPath": "research/sound-lab-v3/protocol.md",
+      "producerStatus": "executed_pending_review",
+      "reviewPath": "docs/panel-v3/reviews/S5A-review.json",
+      "reviewedFinding": "Balanced ABBA/BAAB order cancels the declared linear acquisition drift in positive and zero-effect generated tap fixtures; it does not distinguish an exactly equivalent condition-linked gain rival."
+    },
+    {
+      "id": "S5B",
+      "round": 5,
+      "title": "Run the full plan and report every exclusion",
+      "status": "accepted_narrow",
+      "evidenceType": "actualbytes",
+      "question": "Can a strict batch workflow preserve evidence, align impacts, and withhold a primary result for an incomplete plan?",
+      "finding": "The complete planned set produces its synthetic recorded-channel contrast; missing, rejected or mismatched trials withhold the primary result while preserving all raw files.",
+      "metrics": {
+        "complete_primary_contrast_per_s": 1.9999924047717514,
+        "complete_eligible_trials": 16,
+        "aligned_first_trial_alpha_per_s": 4.000004461219956,
+        "aligned_fit_window_start_s": 1.05,
+        "wrong_impact_rejected": true,
+        "incomplete_primary_results_withheld": 4,
+        "global_admission_rejections": 6,
+        "raw_files_preserved": 19,
+        "existing_output_preserved": true
+      },
+      "limits": [
+        "Complete dryrun is generated data, not an executed physical bench",
+        "Declared metadata and hashes establish neither authenticity nor physical calibration",
+        "Any surviving-trial contrast from an incomplete set is descriptive only",
+        "Recorded-channel effects retain the exact condition-linked gain rival fromS5A",
+        "No added research loop follows this final sound review"
+      ],
+      "sources": [
+        "V3-W3C-CAPTURE",
+        "V3-FEYN23",
+        "V3-FARINA2000"
+      ],
+      "contractPath": "research/sound-lab-v3/S5B/contract.json",
+      "resultsPath": "research/sound-lab-v3/S5B/results.json",
+      "reportPath": "research/sound-lab-v3/S5B/report.md",
+      "figurePaths": [
+        "research/sound-lab-v3/S5B/figure.svg",
+        "research/sound-lab-v3/S5B/pre-review/figure.svg"
+      ],
+      "rawPaths": [
+        "research/sound-lab-v3/S5B/padded_T01.wav",
+        "research/sound-lab-v3/S5B/example-aligned-fit.csv",
+        "research/sound-lab-v3/S5B/admission.csv",
+        "research/sound-lab-v3/S5B/pre-review/admission.csv",
+        "research/sound-lab-v3/S5B/pre-review/example-aligned-fit.csv",
+        "research/sound-lab-v3/S5B/pre-review/padded_T01.wav"
+      ],
+      "protocolPath": "research/sound-lab-v3/protocol.md",
+      "producerStatus": "executed_pending_review",
+      "reviewPath": "docs/panel-v3/reviews/S5B-review.json",
+      "reviewedFinding": "The complete generated-file plan yields its declared recorded-channel contrast; impact alignment is exercised, raw files are preserved, and incomplete or malformed plans cannot produce a primary result."
+    }
+  ],
+  "completedLoops": 10,
+  "requiredLoops": 10,
+  "empiricalBoundary": "Generated simulations and WAV bytes only; no physical apparatus or participant measurements.",
+  "intakePath": "research/sound-lab-v3/intake_v2.py",
+  "batchIntakePath": "research/sound-lab-v3/batch_intake.py",
+  "preregistrationPath": "research/sound-lab-v3/S5A/preregistration.json",
+  "batchExampleManifestPath": "research/sound-lab-v3/S5B/complete-manifest.json"
+}

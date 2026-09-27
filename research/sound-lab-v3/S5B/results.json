@@ -1,0 +1,52 @@
+{
+  "id": "S5B",
+  "round": 5,
+  "title": "Run the full plan and report every exclusion",
+  "status": "executed_pending_review",
+  "evidenceType": "actualbytes",
+  "question": "Can a strict batch workflow preserve evidence, align impacts, and withhold a primary result for an incomplete plan?",
+  "finding": "The complete planned set produces its synthetic recorded-channel contrast; missing, rejected or mismatched trials withhold the primary result while preserving all raw files.",
+  "metrics": {
+    "complete_primary_contrast_per_s": 1.9999924047717514,
+    "complete_eligible_trials": 16,
+    "aligned_first_trial_alpha_per_s": 4.000004461219956,
+    "aligned_fit_window_start_s": 1.05,
+    "wrong_impact_rejected": true,
+    "incomplete_primary_results_withheld": 4,
+    "global_admission_rejections": 6,
+    "raw_files_preserved": 19,
+    "existing_output_preserved": true
+  },
+  "failedControls": [
+    {
+      "control": "Wrong zero impact on padded file",
+      "outcome": "rejected as silence; correct1s impact restores fit"
+    },
+    {
+      "control": "Incomplete survivors substituted for primary",
+      "outcome": "prevented; primary contrast null"
+    },
+    {
+      "control": "Existing output directory",
+      "outcome": "refused without overwrite"
+    }
+  ],
+  "limits": [
+    "Complete dryrun is generated data, not an executed physical bench",
+    "Declared metadata and hashes establish neither authenticity nor physical calibration",
+    "Any surviving-trial contrast from an incomplete set is descriptive only",
+    "Recorded-channel effects retain the exact condition-linked gain rival fromS5A",
+    "No added research loop follows this final sound review"
+  ],
+  "sources": [
+    "V3-W3C-CAPTURE",
+    "V3-FEYN23",
+    "V3-FARINA2000"
+  ],
+  "contractSHA256": "ae7307a65bc25c0c133e3760c3d9881922d41dfd1fc57ee3bd7035eaadb86108",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "matplotlib": "3.10.8"
+  }
+}

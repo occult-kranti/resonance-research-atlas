@@ -1,0 +1,46 @@
+{
+  "field": "complex",
+  "domainDimension": 2,
+  "singleObservation": {
+    "rank": 1,
+    "nullity": 1,
+    "kernelWitness": [
+      [
+        1,
+        0
+      ],
+      [
+        -1,
+        0
+      ]
+    ]
+  },
+  "twoObservations": {
+    "rank": 2,
+    "nullity": 0,
+    "positions_m": [
+      0,
+      0.1715
+    ]
+  },
+  "coefficients": [
+    [
+      1.0,
+      0.0
+    ],
+    [
+      0.4589053123706931,
+      0.3865306123426146
+    ]
+  ],
+  "partnerCoefficients": [
+    [
+      0.4589053123706931,
+      -0.3865306123426146
+    ],
+    [
+      1.0,
+      -0.0
+    ]
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "studyType": "synthetic dryrun and proposed household protocol",
+  "physicalStudyRun": false,
+  "primaryObservable": "B-minus-A mean recorded-channel amplitude-decay rate",
+  "orderedTrials": [
+    {
+      "trial_id": "T01",
+      "order": 0,
+      "condition_code": "A",
+      "block": 0,
+      "nominal_frequency_Hz": 500,
+      "tap_time_s": 0,
+      "fit_start_after_tap_s": 0.05,
+      "fit_stop_after_tap_s": 0.8
+    },
+    {
+      "trial_id": "T02",
+      "order": 1,
+      "condition_code": "B",
+      "block": 0,
+      "nominal_frequency_Hz": 500,
+      "tap_time_s": 0,
+      "fit_start_after_tap_s": 0.05,
+      "fit_stop_after_tap_s": 0.8
+    },
+    {
+      "trial_id": "T03",
+      "order": 2,
+      "condition_code": "B",
+      "block": 0,
+      "nominal_frequency_Hz": 500,
+      "tap_time_s": 0,
+      "fit_start_after_tap_s": 0.05,
+      "fit_stop_after_tap_s": 0.8
+    },
+    {
+      "trial_id": "T04",
+      "order": 3,
+      "condition_code": "A",
+      "block": 0,
+      "nominal_frequency_Hz": 500,
+      "tap_time_s": 0,
+      "fit_start_after_tap_s": 0.05,
+      "fit_stop_after_tap_s": 0.8
+    },
+    {
+      "trial_id": "T05",
+      "order": 4,
+      "condition_code": "B",
+      "block": 1,
+      "nominal_frequency_Hz": 500,
+      "tap_time_s": 0,
+      "fit_start_after_tap_s": 0.05,
+      "fit_stop_after_tap_s": 0.8
+    },
+    {
+      "trial_id": "T06",
+      "order": 5,
+      "condition_code": "A",
+      "block": 1,
+      "nominal_frequency_Hz": 500,
+      "tap_time_s": 0,
+      "fit_start_after_tap_s": 0.05,
+      "fit_stop_after_tap_s": 0.8
+    },
+    {
+      "trial_id": "T07",
+      "order": 6,
+      "condition_code": "A",
+      "block": 1,
+      "nominal_frequency_Hz": 500,
+      "tap_time_s": 0,
+      "fit_start_after_tap_s": 0.05,
+      "fit_stop_after_tap_s": 0.8
+    },
+    {
+      "trial_id": "T08",
+      "order": 7,
+      "condition_code": "B",
+      "block": 1,
+      "nominal_frequency_Hz": 500,
+      "tap_time_s": 0,
+      "fit_start_after_tap_s": 0.05,
+      "fit_stop_after_tap_s": 0.8
+    },
+    {
+      "trial_id": "T09",
+      "order": 8,
+      "condition_code": "A",
+      "block": 2,
+      "nominal_frequency_Hz": 500,
+      "tap_time_s": 0,
+      "fit_start_after_tap_s": 0.05,
+      "fit_stop_after_tap_s": 0.8
+    },
+    {
+      "trial_id": "T10",
+      "order": 9,
+      "condition_code": "B",
+      "block": 2,
+      "nominal_frequency_Hz": 500,
+      "tap_time_s": 0,
+      "fit_start_after_tap_s": 0.05,
+      "fit_stop_after_tap_s": 0.8
+    },
+    {
+      "trial_id": "T11",
+      "order": 10,
+      "condition_code": "B",
+      "block": 2,
+      "nominal_frequency_Hz": 500,
+      "tap_time_s": 0,
+      "fit_start_after_tap_s": 0.05,
+      "fit_stop_after_tap_s": 0.8
+    },
+    {
+      "trial_id": "T12",
+      "order": 11,
+      "condition_code": "A",
+      "block": 2,
+      "nominal_frequency_Hz": 500,
+      "tap_time_s": 0,
+      "fit_start_after_tap_s": 0.05,
+      "fit_stop_after_tap_s": 0.8
+    },
+    {
+      "trial_id": "T13",
+      "order": 12,
+      "condition_code": "B",
+      "block": 3,
+      "nominal_frequency_Hz": 500,
+      "tap_time_s": 0,
+      "fit_start_after_tap_s": 0.05,
+      "fit_stop_after_tap_s": 0.8
+    },
+    {
+      "trial_id": "T14",
+      "order": 13,
+      "condition_code": "A",
+      "block": 3,
+      "nominal_frequency_Hz": 500,
+      "tap_time_s": 0,
+      "fit_start_after_tap_s": 0.05,
+      "fit_stop_after_tap_s": 0.8
+    },
+    {
+      "trial_id": "T15",
+      "order": 14,
+      "condition_code": "A",
+      "block": 3,
+      "nominal_frequency_Hz": 500,
+      "tap_time_s": 0,
+      "fit_start_after_tap_s": 0.05,
+      "fit_stop_after_tap_s": 0.8
+    },
+    {
+      "trial_id": "T16",
+      "order": 15,
+      "condition_code": "B",
+      "block": 3,
+      "nominal_frequency_Hz": 500,
+      "tap_time_s": 0,
+      "fit_start_after_tap_s": 0.05,
+      "fit_stop_after_tap_s": 0.8
+    }
+  ],
+  "expectedPrimaryTrialCount": 16,
+  "allTrialsRetained": true,
+  "excludedTrialsReported": true,
+  "frequency_Hz": 500,
+  "fitWindowAfterTap_s": [
+    0.05,
+    0.8
+  ],
+  "scope": "A future actual study must create a separate preregistration after an independent pilot chooses its mode/window; never overwrite this synthetic plan",
+  "conditionKeyPublic": true,
+  "controls": [
+    "silence baseline",
+    "untouched/touch support comparison",
+    "unchanged-position repeat",
+    "recording gain settings",
+    "clock/reference provenance"
+  ],
+  "decisionRule": "Report descriptive contrast with every exclusion; no material or biological causal conclusion from the contrast alone"
+}

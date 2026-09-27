@@ -1,0 +1,314 @@
+{
+  "schemaVersion": 1,
+  "generatedBy": "assets/sound-lab-v3/generate_setups.py",
+  "empiricalBoundary": "Geometry and information-flow drawings are proposals. Synthetic computations and generated imagery are labeled separately; no physical apparatus, target study, specimen assay or physiological measurement was performed.",
+  "entries": [
+    {
+      "id": "S1-bench-plan",
+      "kind": "vector apparatus plan",
+      "title": "Speaker, movable card and phone: proposed bench",
+      "file": "assets/sound-lab-v3/s1-bench-plan.svg",
+      "alt": "Top view: ordinary speaker at (0,0) m and phone microphone at (0.50,0) m, with a nominal 0.90 m wide movable card at y=0.60 m. Direct and illustrative reflected paths connect source to microphone. Separate digital output, speaker and room, and phone readout blocks show unknown factors.",
+      "caption": "Unbuilt nominal setup for the S1 total-transfer question. Record no-card, card, no-card at fixed marks, then a separate 1 cm phone displacement and restoration control; document gain mode, geometry and room state. A card's reflection strength depends on wavelength and has not been measured. No physical 5 ms delay is asserted.",
+      "units": "metres (m); positions relative to speaker S",
+      "coordinates": {
+        "speaker": [
+          0,
+          0,
+          0.75
+        ],
+        "phone_microphone": [
+          0.5,
+          0,
+          0.75
+        ],
+        "tabletop_z": 0.63,
+        "card_plane_y": 0.6,
+        "card_x_span": [
+          -0.2,
+          0.7
+        ],
+        "card_z_span": [
+          0.63,
+          1.05
+        ]
+      },
+      "materials": [
+        "ordinary small speaker",
+        "recording phone",
+        "stiff card",
+        "table and books or cardboard positioning jigs",
+        "tape measure or marked paper",
+        "playback device and audio-output cable"
+      ],
+      "sourceIds": [
+        "V3-SMITH-COMB",
+        "V3-W3C-CAPTURE"
+      ],
+      "hypothesisIds": [
+        "S1A"
+      ],
+      "status": "proposed, unbuilt; no physical measurements",
+      "physicalApparatusBuilt": false,
+      "physicalMeasurementClaimed": false
+    },
+    {
+      "id": "S1-identifiability",
+      "kind": "exact vector inference diagram",
+      "title": "S1 synthetic total-transfer ambiguity",
+      "file": "assets/sound-lab-v3/s1-identifiability.svg",
+      "alt": "Two exact factorisations of the identical synthetic transfer: device d with three taps and acoustic e with a 40-sample delayed branch; or device d convolved with e and acoustic identity. Both yield the same total H. A source, device, air plus card, readout chain is proposed for a future physical audit.",
+      "caption": "S1A is an exact synthetic computation: Y/X determines total H but does not uniquely attribute a delayed branch to the room. The model's 5 ms delay is not a measured physical reflection.",
+      "units": "milliseconds (ms), synthetic model only",
+      "coordinates": null,
+      "sourceIds": [
+        "V3-FARINA2000",
+        "V3-SMITH-COMB"
+      ],
+      "hypothesisIds": [
+        "S1A"
+      ],
+      "status": "computed model illustration; physical audit unbuilt",
+      "physicalApparatusBuilt": false,
+      "physicalMeasurementClaimed": false
+    },
+    {
+      "id": "S1-bench-3d",
+      "kind": "deterministic 3D geometry render",
+      "title": "Proposed speaker, card and phone geometry",
+      "file": "assets/sound-lab-v3/s1-bench-3d.png",
+      "alt": "Three-dimensional metre-axis drawing of speaker and phone on short supports, 0.50 m apart at height 0.75 m, facing a stiff card at y=0.60 m. A solid direct ray and dashed illustrative specular ray are geometry only.",
+      "caption": "Deterministic geometry from nominal coordinates; not a photograph or evidence of a built apparatus. The ray does not establish card reflectance or an isolated recorded echo.",
+      "units": "metres (m)",
+      "coordinates": {
+        "speaker": [
+          0,
+          0,
+          0.75
+        ],
+        "phone_microphone": [
+          0.5,
+          0,
+          0.75
+        ],
+        "tabletop_z": 0.63,
+        "card_plane_y": 0.6,
+        "card_x_span": [
+          -0.2,
+          0.7
+        ],
+        "card_z_span": [
+          0.63,
+          1.05
+        ]
+      },
+      "sourceIds": [
+        "V3-SMITH-COMB"
+      ],
+      "hypothesisIds": [
+        "S1A"
+      ],
+      "status": "proposed, unbuilt; no physical measurements",
+      "physicalApparatusBuilt": false,
+      "physicalMeasurementClaimed": false
+    },
+    {
+      "id": "alchemy-chemical-identity",
+      "kind": "historical and chemical identity vector plate",
+      "title": "Alchemy terms and modern candidate identities",
+      "file": "assets/sound-lab-v3/alchemy-chemical-identity.svg",
+      "alt": "Five context-dependent mappings: the conventional solar sign can indicate gold Au in literal context; Saturn can indicate lead Pb when a passage establishes it, but also means something else elsewhere; antimony may be sulfide ore or metallic regulus, arsenic often trioxide, and vitriol iron or copper sulfate family. Every candidate is unassayed.",
+      "caption": "Newton Chymistry's primary manuscript index and its separate editorial symbols/glossary support conditional readings, not universal symbol decoding. The guide's conventional solar symbol has not been checked against a particular manuscript in this plate. Actual sample identity, phase and isotopes need independent analysis; no sample or preparation is supplied.",
+      "units": "chemical symbols/formulae; no physical scale",
+      "coordinates": null,
+      "sourceIds": [
+        "V3-NEWTON-INDEX",
+        "V3-NEWTON-SYMBOLS",
+        "V3-NEWTON-GLOSSARY"
+      ],
+      "mappingFile": "docs/panel-v3/alchemy-dictionary.json",
+      "hypothesisIds": [
+        "alchemy-identity"
+      ],
+      "status": "source-grounded candidate mapping; no specimen or assay",
+      "physicalApparatusBuilt": false,
+      "physicalMeasurementClaimed": false
+    },
+    {
+      "id": "B1-blind-target-flow",
+      "kind": "exact vector information-custody protocol",
+      "title": "Human and AI concealed-target protocol",
+      "file": "assets/sound-lab-v3/b1-blind-target-flow.svg",
+      "alt": "Three lanes: an independent offline custodian shuffles 80 concealed four-symbol targets in twenty balanced blocks and distributes trial IDs plus salted commitments; a human and target-blind AI lock independent timestamped guesses without seeing one another; only after all reports freeze does the analyst receive targets and salts to verify and score. Separate disclosed positive control is excluded.",
+      "caption": "Proposed, unrun human/AI information-access test. Four neutral categories are each used once within each concealed block. A shared category/prompt prior can make reporters agree without target information. The actual analysis needs an exact within-block randomization test; a salted hash is an integrity aid, not a replacement for independent custody. No consciousness apparatus or effect is claimed.",
+      "units": "80 main trials; 20 blocks \u00d7 4 categories; UTC timestamps",
+      "coordinates": {
+        "lanes": [
+          "independent custodian",
+          "human and AI target-blind stations",
+          "analyst after all response records freeze"
+        ],
+        "physicalSeparation": "distinct custody and station devices or opaque target envelopes; no specified metre spacing"
+      },
+      "materials": [
+        "independent offline laptop or opaque envelopes",
+        "four neutral symbol cards",
+        "participant form and clock",
+        "separate target-blind AI interface",
+        "response export and sealed target log"
+      ],
+      "sourceIds": [
+        "C-BASHAR-ANKA2014",
+        "C-GATEWAY1983",
+        "C-AIR1995",
+        "C-AI-INDICATORS2023"
+      ],
+      "hypothesisIds": [
+        "B1",
+        "B2",
+        "B3"
+      ],
+      "protocolFile": "research/consciousness-v3/human-ai-protocol.md",
+      "status": "proposed protocol only; zero participants or live AI trials",
+      "physicalApparatusBuilt": false,
+      "physicalMeasurementClaimed": false
+    },
+    {
+      "id": "S2-spoon-plan",
+      "kind": "vector apparatus side elevation",
+      "title": "Suspended spoon and noncontact microphone",
+      "file": "assets/sound-lab-v3/s2-spoon-plan.svg",
+      "alt": "Side elevation of a spoon suspended from loose thread below a crossbar 0.42 m above a padded table. Bowl center at 0.12 m; phone microphone 0.20 m horizontally away at the same height. Pencil eraser provides a gentle tap, then is withdrawn; recording includes quiet pre-roll and ringdown, five repeats, a light-touch control and return references.",
+      "caption": "Unbuilt low-material ringdown candidate for S2. Preserve at least one second before and two seconds after each impact, all takes and clipping flags; record impact time and choose a stated post-impact fit window. The touched spoon changes loading and boundary conditions. S2's generated-PCM single-mode fit does not establish a real spoon's material damping.",
+      "units": "metres (m); seconds (s)",
+      "coordinates": {
+        "spoon_bowl": [
+          0,
+          0,
+          0.12
+        ],
+        "phone_microphone": [
+          0.2,
+          0,
+          0.12
+        ],
+        "crossbar_center": [
+          0,
+          0,
+          0.42
+        ],
+        "padded_tabletop_z": 0
+      },
+      "materials": [
+        "unbroken metal or wooden spoon",
+        "cotton thread",
+        "books and short crossbar",
+        "padded table",
+        "phone recording WAV",
+        "pencil with eraser",
+        "tape measure"
+      ],
+      "sourceIds": [
+        "V3-FEYN23",
+        "V3-W3C-CAPTURE"
+      ],
+      "hypothesisIds": [
+        "S2A",
+        "S2B"
+      ],
+      "protocolFile": "research/sound-lab-v3/protocol.md",
+      "status": "proposed, unbuilt; synthetic S2 model separate",
+      "physicalApparatusBuilt": false,
+      "physicalMeasurementClaimed": false
+    },
+    {
+      "id": "S2-spoon-3d",
+      "kind": "deterministic 3D geometry render",
+      "title": "Suspended spoon and phone geometry",
+      "file": "assets/sound-lab-v3/s2-spoon-3d.png",
+      "alt": "Three-dimensional metre-axis drawing of a spoon on thread below a crossbar supported by books above padded tabletop, an eraser-tipped pencil nearby, and a phone microphone 0.20 m from the bowl with a dashed noncontact acoustic path.",
+      "caption": "Deterministic render of the nominal, unbuilt S2 setup; not a photograph of a tap or evidence for a mode or decay constant. The eraser is withdrawn after the gentle tap and the phone stays fixed for touch and reference controls.",
+      "units": "metres (m)",
+      "coordinates": {
+        "spoon_bowl": [
+          0,
+          0,
+          0.12
+        ],
+        "phone_microphone": [
+          0.2,
+          0,
+          0.12
+        ],
+        "crossbar_center": [
+          0,
+          0,
+          0.42
+        ],
+        "padded_tabletop_z": 0
+      },
+      "sourceIds": [
+        "V3-FEYN23"
+      ],
+      "hypothesisIds": [
+        "S2A",
+        "S2B"
+      ],
+      "status": "proposed, unbuilt; no physical measurements",
+      "physicalApparatusBuilt": false,
+      "physicalMeasurementClaimed": false
+    },
+    {
+      "id": "S3B-clock-reference",
+      "kind": "exact vector sample and timing-flow plan",
+      "title": "Sample clock and corrected-time reference",
+      "file": "assets/sound-lab-v3/s3b-clock-reference.svg",
+      "alt": "The identical 16032 generated PCM16 samples fork into a WAV carrying a false 8000 hertz header and a corrected-time CSV with timestamps n divided by 8016 seconds. Fits shift from 499.001996 hertz and 3.992016 inverse seconds to the fixture's 500 hertz and 4 inverse seconds. A separate proposed independent 1000-hertz timing reference is conditional and unmeasured.",
+      "caption": "S3B frozen model prediction: wrong declared sample rate changes inferred frequency and decay without changing sample amplitudes. The corrected axis is known only because the fixture constructs samples at 8016 samples/s. A real recorder would need a genuinely external verified time reference; a same-clock file is circular. The 8000 Hz null and invalid-input refusals are controls, not hardware results. A constant calibration tone may fit at the \u03b1 = 0 boundary, which must remain flagged.",
+      "units": "sample index n; sample rate Hz; time s; decay s\u207b\u00b9",
+      "coordinates": {
+        "sample_indices": [
+          0,
+          16031
+        ],
+        "sample_count": 16032,
+        "header_time_s": "n/8000",
+        "fixture_time_s": "n/8016",
+        "conditional_external_reference_Hz": 1000
+      },
+      "materials": [
+        "generated PCM16 WAV",
+        "header metadata",
+        "corrected-time CSV",
+        "immutable source file",
+        "conditional independently timed 1000 Hz reference source for future hardware check"
+      ],
+      "sourceIds": [
+        "V3-FARINA2000",
+        "V3-W3C-CAPTURE"
+      ],
+      "hypothesisIds": [
+        "S3B"
+      ],
+      "contractFile": "research/sound-lab-v3/S3B/contract.json",
+      "status": "exact synthetic fixture; independent physical reference only proposed, not measured",
+      "physicalApparatusBuilt": false,
+      "physicalMeasurementClaimed": false
+    },
+    {
+      "id": "sound-bench-concept",
+      "kind": "generated concept image",
+      "title": "Possible tabletop sound-lab components",
+      "file": "assets/sound-lab-v3/concept.png",
+      "alt": "Illustrative tabletop scene with speaker, board, phones, a laptop, a metal bowl and soft mallet. The board is pictured between speaker and phone, unlike the separately specified side-reflector geometry.",
+      "caption": "Generated visual concept only. Component placement, cables, screen waveforms and board orientation are not the experiment specification or observed data. Use the dimensioned vector plans for the proposed setups.",
+      "units": "none; image not dimensioned",
+      "coordinates": null,
+      "sourceIds": [],
+      "hypothesisIds": [],
+      "status": "illustrative generation; not dimensioned, built or measured",
+      "physicalApparatusBuilt": false,
+      "physicalMeasurementClaimed": false
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "id": "S4B",
+  "round": 4,
+  "title": "Spacing and a withheld position test the spatial inverse",
+  "status": "executed_pending_review",
+  "evidenceType": "synthetic",
+  "question": "When does a second spatial sample add stable information, and can a withheld sample expose phase drift?",
+  "finding": "Near-degenerate spacing amplifies bounded noise; a two-point fit hides channel-specific phase drift that a withheld third point reveals.",
+  "metrics": {
+    "worst_fullrank_condition": 318.30883898555044,
+    "quarterwave_condition": 1.0000000000000002,
+    "worst_coefficient_L2_error": 0.159155204891585,
+    "quarterwave_coefficient_L2_error": 0.0007071067811865044,
+    "singular_cases_not_inverted": 2,
+    "two_sample_fit_residual": 5.551115123125783e-17,
+    "heldout_phase_drift_error": 0.023507904525623263,
+    "three_sample_residual_L2": 0.0166225987015542,
+    "global_phase_residual_L2": 4.1910000110727263e-16
+  },
+  "failedControls": [
+    {
+      "control": "Zero and half-wavelength inverse",
+      "outcome": "not performed; rank1/nullity1"
+    },
+    {
+      "control": "Two-point residual certifies phase stability",
+      "outcome": "rejected by heldout sample"
+    },
+    {
+      "control": "Global phase rotation",
+      "outcome": "consistent; not falsely treated as channel mismatch"
+    }
+  ],
+  "limits": [
+    "One-dimensional known-c model and common phase reference assumed",
+    "Half-wavelength singular cases are not inverted",
+    "A third sample can reject this mismatch but cannot certify every physical assumption",
+    "Noise direction is constructed worst case; not a phone error distribution"
+  ],
+  "sources": [
+    "V3-FEYN49",
+    "V3-FEYN23"
+  ],
+  "contractSHA256": "db0704506343bb3aa133e558c112fdc545590565d21db51c21064fd07d58eb5d",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "matplotlib": "3.10.8"
+  }
+}

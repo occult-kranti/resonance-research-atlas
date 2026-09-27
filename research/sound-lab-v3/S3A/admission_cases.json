@@ -1,0 +1,50 @@
+[
+  {
+    "case": "source_collision",
+    "returncode": 2,
+    "error": {
+      "status": "rejected",
+      "reason": "Output collides with original input; raw evidence is protected"
+    },
+    "sourceSHA256Before": "93e8d1452b62ededd7a42867aa41e1085a53ff8b9a048709cea7c4600fc65dd8",
+    "sourceSHA256After": "93e8d1452b62ededd7a42867aa41e1085a53ff8b9a048709cea7c4600fc65dd8",
+    "sourceUnchanged": true,
+    "sentinelUnchanged": true
+  },
+  {
+    "case": "existing_output",
+    "returncode": 2,
+    "error": {
+      "status": "rejected",
+      "reason": "Output already exists; choose a new output prefix"
+    },
+    "sourceSHA256Before": "93e8d1452b62ededd7a42867aa41e1085a53ff8b9a048709cea7c4600fc65dd8",
+    "sourceSHA256After": "93e8d1452b62ededd7a42867aa41e1085a53ff8b9a048709cea7c4600fc65dd8",
+    "sourceUnchanged": true,
+    "sentinelUnchanged": true
+  },
+  {
+    "case": "CSV_channel",
+    "returncode": 2,
+    "error": {
+      "status": "rejected",
+      "reason": "CSV has only channel zero"
+    },
+    "sourceSHA256Before": "93e8d1452b62ededd7a42867aa41e1085a53ff8b9a048709cea7c4600fc65dd8",
+    "sourceSHA256After": "93e8d1452b62ededd7a42867aa41e1085a53ff8b9a048709cea7c4600fc65dd8",
+    "sourceUnchanged": true,
+    "sentinelUnchanged": true
+  },
+  {
+    "case": "symlink_collision",
+    "returncode": 2,
+    "error": {
+      "status": "rejected",
+      "reason": "Output collides with original input; raw evidence is protected"
+    },
+    "sourceSHA256Before": "93e8d1452b62ededd7a42867aa41e1085a53ff8b9a048709cea7c4600fc65dd8",
+    "sourceSHA256After": "93e8d1452b62ededd7a42867aa41e1085a53ff8b9a048709cea7c4600fc65dd8",
+    "sourceUnchanged": true,
+    "sentinelUnchanged": true
+  }
+]

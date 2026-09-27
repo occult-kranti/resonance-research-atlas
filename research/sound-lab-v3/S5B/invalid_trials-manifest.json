@@ -1,0 +1,140 @@
+{
+  "evidenceType": "synthetic_generated",
+  "metadata": {
+    "device": "deterministic PCM generator; no physical microphone",
+    "gain_processing": "declared S5A synthetic condition/order model",
+    "geometry": "synthetic waveform; proposed spoon bench not run",
+    "clock_reference": "declared exact8000Hz synthetic timebase",
+    "impact_alignment_rule": "fixture impact0; derived padded first trial impact1s"
+  },
+  "trials": [
+    {
+      "trial_id": "T01",
+      "order": 0,
+      "condition_code": "A",
+      "path": "../S2A/case3.wav",
+      "source_sha256": "78f82cd49af869013e8ec414a15d71f5f4f2ec8d006b6a0c50527c91eaa7a85f",
+      "impact_time_s": 0
+    },
+    {
+      "trial_id": "T02",
+      "order": 1,
+      "condition_code": "B",
+      "path": "../S2A/case4.wav",
+      "source_sha256": "f75ce19b6055163f7cf34fb3a36a67025d9bc5eb01485b2700c2f01465954c81",
+      "impact_time_s": 0
+    },
+    {
+      "trial_id": "T03",
+      "order": 2,
+      "condition_code": "B",
+      "path": "../S2B/overlap.wav",
+      "source_sha256": "c4962d3df16628b4a7501e3947d604634f786ea1fd15c46e17de4dfbe9ee5ac6",
+      "impact_time_s": 0
+    },
+    {
+      "trial_id": "T04",
+      "order": 3,
+      "condition_code": "A",
+      "path": "../S5A/balanced_effect/T04.wav",
+      "source_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "impact_time_s": 0
+    },
+    {
+      "trial_id": "T05",
+      "order": 4,
+      "condition_code": "B",
+      "path": "../S5A/balanced_effect/T05.wav",
+      "source_sha256": "cbfade37480ed4279f508dba71403cdd425799182c320497585c42369628fb45",
+      "impact_time_s": 0
+    },
+    {
+      "trial_id": "T06",
+      "order": 5,
+      "condition_code": "A",
+      "path": "../S5A/balanced_effect/T06.wav",
+      "source_sha256": "0b34ba8df3e8a10e511eb03c95d00bd5fbc4e5956acffb64b2ad7891e4d7fb4b",
+      "impact_time_s": 0
+    },
+    {
+      "trial_id": "T07",
+      "order": 6,
+      "condition_code": "A",
+      "path": "../S5A/balanced_effect/T07.wav",
+      "source_sha256": "4414b6120d7363b4423c86b8e2e725f97f10a4331316fdf2cc99cb2a51547beb",
+      "impact_time_s": 0
+    },
+    {
+      "trial_id": "T08",
+      "order": 7,
+      "condition_code": "B",
+      "path": "../S5A/balanced_effect/T08.wav",
+      "source_sha256": "b0a4f4233ebd0b414041d3e6c26495237f71c77945591c6c80a06ff6f6b54103",
+      "impact_time_s": 0
+    },
+    {
+      "trial_id": "T09",
+      "order": 8,
+      "condition_code": "A",
+      "path": "../S5A/balanced_effect/T09.wav",
+      "source_sha256": "b1df9c4bc3cdcd76e5cc5399b007927706a668dffb3a5ed0731b984f5db4a2f0",
+      "impact_time_s": 0
+    },
+    {
+      "trial_id": "T10",
+      "order": 9,
+      "condition_code": "B",
+      "path": "../S5A/balanced_effect/T10.wav",
+      "source_sha256": "f4ac1756fd23c408ead5158a03b6508b5b61d087d51f83bce224b6a657cf0bc2",
+      "impact_time_s": 0
+    },
+    {
+      "trial_id": "T11",
+      "order": 10,
+      "condition_code": "B",
+      "path": "../S5A/balanced_effect/T11.wav",
+      "source_sha256": "6031f2da27de27c4a3d27d753926283237bf8257468e4a557fe143919785ad29",
+      "impact_time_s": 0
+    },
+    {
+      "trial_id": "T12",
+      "order": 11,
+      "condition_code": "A",
+      "path": "../S5A/balanced_effect/T12.wav",
+      "source_sha256": "101afe7c8317614c78faf56d80102b39a7bb09e174a9603a577ba3b411d6f31b",
+      "impact_time_s": 0
+    },
+    {
+      "trial_id": "T13",
+      "order": 12,
+      "condition_code": "B",
+      "path": "../S5A/balanced_effect/T13.wav",
+      "source_sha256": "1f25ea4cb4ccc6b7a6debaf9abca544a0967c47ca7fe37a67ed42c30172d4c79",
+      "impact_time_s": 0
+    },
+    {
+      "trial_id": "T14",
+      "order": 13,
+      "condition_code": "A",
+      "path": "../S5A/balanced_effect/T14.wav",
+      "source_sha256": "2cae11b809e7e1deed3c5b3f2f060033209b057815ca5a6ee0923a2de635e9e3",
+      "impact_time_s": 0
+    },
+    {
+      "trial_id": "T15",
+      "order": 14,
+      "condition_code": "A",
+      "path": "../S5A/balanced_effect/T15.wav",
+      "source_sha256": "0c0d83d89bb5b67c0ad8d37a898fdbecb6496bb6782c699b0c377fbd3023b69a",
+      "impact_time_s": 0
+    },
+    {
+      "trial_id": "T16",
+      "order": 15,
+      "condition_code": "B",
+      "path": "../S5A/balanced_effect/T16.wav",
+      "source_sha256": "daaef11ca674f8bf3f25bc0c51f240bdff03b2d4cb247f75802bd5b01ebe48f5",
+      "impact_time_s": 0
+    }
+  ]
+}

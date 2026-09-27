@@ -1,0 +1,260 @@
+{
+  "fits": [
+    {
+      "inputSHA256": "1e70c6eaadafe2e260f130698c6a7e921d530990cdef54a201eb5e0a1ae43dc7",
+      "sampleRate_Hz": 8000.0,
+      "samples": 16000,
+      "channels": 1,
+      "channel": 0,
+      "duration_s": 2.0,
+      "samplePeak_FS": 0.20001220703125,
+      "clippedSamples": 0,
+      "window_s": [
+        0.05,
+        0.8
+      ],
+      "windowRMS_FS": 0.04723446937054843,
+      "model": "single exponential cosine+sin+offset",
+      "evidenceType": "synthetic_generated",
+      "scope": "Recorded-channel local fit; no material identity or physical measurement provenance assumed",
+      "status": "fit",
+      "flags": [],
+      "alpha_per_s": 3.9999894006679817,
+      "frequency_Hz": 499.99999954672126,
+      "gain_at_window_start_FS": 0.1637459567726736,
+      "phase_at_window_start_rad": -1.6585616783191817e-06,
+      "offset_FS": 1.0168554874546269e-07,
+      "normalizedResidual": 0.0001746675715572608,
+      "optimizerSuccess": true,
+      "optimizerEvaluations": 7,
+      "bounds": {
+        "alpha_per_s": [
+          0,
+          20
+        ],
+        "frequency_Hz": [
+          450,
+          550
+        ]
+      },
+      "inputProvenance": "Declared by caller; not authenticated by this tool",
+      "intakeVersion": 2,
+      "intakeSHA256": "5d06f8300d7a23dff82955ff96ec37ff771cf907556c5b0444a3d2f447b88272",
+      "historicalFitterSHA256": "d1f0ad5fadd5e225c9d3feb3ca79d36d583dc62b5ab331c9ae6f351fb1d78137",
+      "rawInputPreserved": true,
+      "outputPolicy": "Exclusive creation; existing files and source collisions rejected"
+    },
+    {
+      "inputSHA256": "f229e0f436fd5fc6348f0de157b67ea541aa9620d53d94d2821719ad6c6972cb",
+      "sampleRate_Hz": 8000.0,
+      "samples": 16032,
+      "channels": 1,
+      "channel": 0,
+      "duration_s": 2.004,
+      "samplePeak_FS": 0.20001220703125,
+      "clippedSamples": 0,
+      "window_s": [
+        0.05,
+        0.8
+      ],
+      "windowRMS_FS": 0.04731452725860331,
+      "model": "single exponential cosine+sin+offset",
+      "evidenceType": "synthetic_generated",
+      "scope": "Recorded-channel local fit; no material identity or physical measurement provenance assumed",
+      "status": "fit",
+      "flags": [],
+      "alpha_per_s": 3.992026003459423,
+      "frequency_Hz": 499.0019960514766,
+      "gain_at_window_start_FS": 0.16381212360927794,
+      "phase_at_window_start_rad": -0.3135291864928609,
+      "offset_FS": 2.835384644053949e-08,
+      "normalizedResidual": 0.00018510951806393955,
+      "optimizerSuccess": true,
+      "optimizerEvaluations": 7,
+      "bounds": {
+        "alpha_per_s": [
+          0,
+          20
+        ],
+        "frequency_Hz": [
+          450,
+          550
+        ]
+      },
+      "inputProvenance": "Declared by caller; not authenticated by this tool",
+      "intakeVersion": 2,
+      "intakeSHA256": "5d06f8300d7a23dff82955ff96ec37ff771cf907556c5b0444a3d2f447b88272",
+      "historicalFitterSHA256": "d1f0ad5fadd5e225c9d3feb3ca79d36d583dc62b5ab331c9ae6f351fb1d78137",
+      "rawInputPreserved": true,
+      "outputPolicy": "Exclusive creation; existing files and source collisions rejected"
+    },
+    {
+      "inputSHA256": "e1ce22cd421e1acddabb750df25c086ab5856757847191ee14e65b395882ed6e",
+      "sampleRate_Hz": 8015.999999998897,
+      "samples": 16032,
+      "channels": 1,
+      "channel": 0,
+      "duration_s": 2.0000000000002753,
+      "samplePeak_FS": 0.20001220703125,
+      "clippedSamples": 0,
+      "window_s": [
+        0.05,
+        0.8
+      ],
+      "windowRMS_FS": 0.047225224764860074,
+      "model": "single exponential cosine+sin+offset",
+      "evidenceType": "synthetic_generated",
+      "scope": "Recorded-channel local fit; no material identity or physical measurement provenance assumed",
+      "status": "fit",
+      "flags": [],
+      "alpha_per_s": 4.000010515434883,
+      "frequency_Hz": 500.000000047513,
+      "gain_at_window_start_FS": 0.16374675847772327,
+      "phase_at_window_start_rad": 3.0291612671379465e-06,
+      "offset_FS": 3.361908375048e-08,
+      "normalizedResidual": 0.00018548210031379302,
+      "optimizerSuccess": true,
+      "optimizerEvaluations": 7,
+      "bounds": {
+        "alpha_per_s": [
+          0,
+          20
+        ],
+        "frequency_Hz": [
+          450,
+          550
+        ]
+      },
+      "inputProvenance": "Declared by caller; not authenticated by this tool",
+      "intakeVersion": 2,
+      "intakeSHA256": "5d06f8300d7a23dff82955ff96ec37ff771cf907556c5b0444a3d2f447b88272",
+      "historicalFitterSHA256": "d1f0ad5fadd5e225c9d3feb3ca79d36d583dc62b5ab331c9ae6f351fb1d78137",
+      "rawInputPreserved": true,
+      "outputPolicy": "Exclusive creation; existing files and source collisions rejected"
+    },
+    {
+      "inputSHA256": "d5212db2667015a6f19ff8f14c4463b67110cee3fa76ac5307b786d696266a1f",
+      "sampleRate_Hz": 8016.000002905952,
+      "samples": 16032,
+      "channels": 1,
+      "channel": 0,
+      "duration_s": 1.999999999274962,
+      "samplePeak_FS": 0.20001220703125,
+      "clippedSamples": 0,
+      "window_s": [
+        0.05,
+        0.8
+      ],
+      "windowRMS_FS": 0.047225224764860074,
+      "model": "single exponential cosine+sin+offset",
+      "evidenceType": "synthetic_generated",
+      "scope": "Recorded-channel local fit; no material identity or physical measurement provenance assumed",
+      "status": "fit",
+      "flags": [],
+      "alpha_per_s": 4.000010516883766,
+      "frequency_Hz": 500.000000228622,
+      "gain_at_window_start_FS": 0.16374675846586095,
+      "phase_at_window_start_rad": 3.0860583211742883e-06,
+      "offset_FS": 3.361908373067387e-08,
+      "normalizedResidual": 0.00018548210031333899,
+      "optimizerSuccess": true,
+      "optimizerEvaluations": 7,
+      "bounds": {
+        "alpha_per_s": [
+          0,
+          20
+        ],
+        "frequency_Hz": [
+          450,
+          550
+        ]
+      },
+      "inputProvenance": "Declared by caller; not authenticated by this tool",
+      "intakeVersion": 2,
+      "intakeSHA256": "5d06f8300d7a23dff82955ff96ec37ff771cf907556c5b0444a3d2f447b88272",
+      "historicalFitterSHA256": "d1f0ad5fadd5e225c9d3feb3ca79d36d583dc62b5ab331c9ae6f351fb1d78137",
+      "rawInputPreserved": true,
+      "outputPolicy": "Exclusive creation; existing files and source collisions rejected"
+    }
+  ],
+  "reference": {
+    "inputSHA256": "a04217638944f47426db947dcc496e42ec5c2171beb391b98c1f1c2d1c7f7834",
+    "sampleRate_Hz": 8000.0,
+    "samples": 16032,
+    "channels": 1,
+    "channel": 0,
+    "duration_s": 2.004,
+    "samplePeak_FS": 0.100006103515625,
+    "clippedSamples": 0,
+    "window_s": [
+      0.05,
+      0.8
+    ],
+    "windowRMS_FS": 0.07070986692216949,
+    "model": "single exponential cosine+sin+offset",
+    "evidenceType": "synthetic_generated",
+    "scope": "Recorded-channel local fit; no material identity or physical measurement provenance assumed",
+    "status": "fit_with_flags",
+    "flags": [
+      "near_search_bound"
+    ],
+    "alpha_per_s": 3.4108150883986117e-06,
+    "frequency_Hz": 998.0039916544732,
+    "gain_at_window_start_FS": 0.09999907607974791,
+    "phase_at_window_start_rad": -0.6270635125775577,
+    "offset_FS": -7.963849736870222e-09,
+    "normalizedResidual": 0.00012769566226078174,
+    "optimizerSuccess": true,
+    "optimizerEvaluations": 30,
+    "bounds": {
+      "alpha_per_s": [
+        0,
+        20
+      ],
+      "frequency_Hz": [
+        950,
+        1050
+      ]
+    },
+    "inputProvenance": "Declared by caller; not authenticated by this tool",
+    "intakeVersion": 2,
+    "intakeSHA256": "5d06f8300d7a23dff82955ff96ec37ff771cf907556c5b0444a3d2f447b88272",
+    "historicalFitterSHA256": "d1f0ad5fadd5e225c9d3feb3ca79d36d583dc62b5ab331c9ae6f351fb1d78137",
+    "rawInputPreserved": true,
+    "outputPolicy": "Exclusive creation; existing files and source collisions rejected"
+  },
+  "invalidCases": [
+    {
+      "case": "nonuniform",
+      "rejected": true,
+      "reason": "Output collides with original input; raw evidence is protected",
+      "sourceSHA256Before": "477efa8091329b98a9cd6752c2c376509639419bde08b25bb212b40280469d7d",
+      "sourceSHA256After": "477efa8091329b98a9cd6752c2c376509639419bde08b25bb212b40280469d7d",
+      "sourceUnchanged": true
+    },
+    {
+      "case": "nonfinite",
+      "rejected": true,
+      "reason": "Empty/nonfinite recording",
+      "sourceSHA256Before": "9296ee4bb986c75638f00e2dc0e6e9b2012326e3b3ac92078c23bb0d20109b4f",
+      "sourceSHA256After": "9296ee4bb986c75638f00e2dc0e6e9b2012326e3b3ac92078c23bb0d20109b4f",
+      "sourceUnchanged": true
+    },
+    {
+      "case": "negative_window",
+      "rejected": true,
+      "reason": "Invalid fit window/bound",
+      "sourceSHA256Before": "f229e0f436fd5fc6348f0de157b67ea541aa9620d53d94d2821719ad6c6972cb",
+      "sourceSHA256After": "f229e0f436fd5fc6348f0de157b67ea541aa9620d53d94d2821719ad6c6972cb",
+      "sourceUnchanged": true
+    },
+    {
+      "case": "unavailable_channel",
+      "rejected": true,
+      "reason": "Channel unavailable",
+      "sourceSHA256Before": "f229e0f436fd5fc6348f0de157b67ea541aa9620d53d94d2821719ad6c6972cb",
+      "sourceSHA256After": "f229e0f436fd5fc6348f0de157b67ea541aa9620d53d94d2821719ad6c6972cb",
+      "sourceUnchanged": true
+    }
+  ]
+}

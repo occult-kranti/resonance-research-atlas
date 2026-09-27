@@ -1,0 +1,14 @@
+{
+  "id": "S1A",
+  "artifacts": {
+    "contract.json": "26b8b5ede645f18341807abd0613ac68afc2e62d6984f925b46c72f48ff7cbb3",
+    "run.py": "e7833507bae0ffc4d47ab60400798912bd3cd8723dca0f64e4fd198c6a8c97a5",
+    "results.json": "43f77b24221a166b499b47e9ce082cf7de58df4725cc412b39d8b33737fca9bb",
+    "report.md": "27145943f3078a8a709d55da968d67da4d5a5ae2b7a565f6ae490e914a61649d",
+    "response.csv": "0dcb3c3b2846f5fa1cc3f097dfbb937af026042feeeaf2ca66313b7d699fb0ea",
+    "probe_outputs.csv": "a09d3a699cdefbceb94ed9b1550f3773c0521c0184a7e8c39c037808016f3b15",
+    "impulse.csv": "1a93900fb4f1d16390461daa6a1e7b0076364c9e7206ca860f60f4560ce50b58",
+    "figure.svg": "66a94d6509b89642f3da299c9b565094fa1d32972f7fee5c0b61da6a508babb5"
+  },
+  "commonSHA256": "25a627bb9616a8b04051fb8b4e46b747cf5ea732b0fb28fcb8c2c90baaf1d408"
+}

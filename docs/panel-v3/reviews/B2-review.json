@@ -1,0 +1,47 @@
+{
+  "id": "B2",
+  "sequence": 12,
+  "predecessor": {
+    "id": "B1",
+    "reviewPath": "docs/panel-v3/reviews/B1-review.json",
+    "reviewSHA256": "680bfe9661740ecbd2ddd2be9a41c34a899fee2ef5566c9d8a326b41386a49ca",
+    "status": "accepted_narrow"
+  },
+  "checkerFunction": "review_b2",
+  "checkerFunctionSHA256": "05e38ac073bd39a852ca869e3b4806e572a502ea9eee7203423ff6707f2a9dca",
+  "status": "accepted_narrow",
+  "reviewer": "/root/advisor_v3 (correlated model agent; independent implementation/derivation, not human peer review)",
+  "reviewMethod": "Independent exhaustive product-space enumeration filtered to balanced targets, exact scoring tails and independently factored discovery/holdout pair multiplicities.",
+  "independentChecks": {
+    "assignments_exhaustively_checked": 2520,
+    "weighted_independent_pairs_checked": 6350400,
+    "exact_rejection_rates": {
+      "fixed_rule": "17/2520",
+      "post_selected_naive": "17/630",
+      "max_calibrated": "17/630"
+    },
+    "exact_discovery_mean": "1084/105",
+    "exact_holdout_mean": "8",
+    "positive_corrected_tail": "1/630",
+    "proof": "The independent balanced holdout has the same fixed-rule distribution for every selected cyclic shift. Thus discovery selection changes the maximum distribution but not the untouched holdout mean. At alpha=.05 discreteness makes naive-selected and max-calibrated decisions coincide; neither exceeds nominal .05 in this fixture."
+  },
+  "acceptedClaim": "Choosing the best cyclic scoring rule raises the discovery score and its achieved rejection rate relative to a fixed rule; an independent holdout returns to mean8. In this discrete fixture, naive-selected and max-calibrated rejection rates coincide below nominal5%.",
+  "withheld": [
+    "An empirical semantic or synchronicity effect",
+    "Nominal-alpha exceedance in this particular fixture",
+    "A known-map positive control establishing a higher source",
+    "Unrestricted retrospective interpretation identifying a mechanism"
+  ],
+  "nextDecision": "B3: freeze crossed state/prompt interventions with scripted report and evaluator-cue channels; test functional state access without phenomenal ground-truth labels.",
+  "bindings": {
+    "research/consciousness-v3/round2/assignments.csv": "a5dc85e8ab6c6ee60d742365a4eb3e43b43cd45fbf1946f19aec018e1a12af02",
+    "research/consciousness-v3/round2/contract.json": "66c6b180d46d5fe93e2dd719dfebca020d542719b98050c9c32a77a1dc8aca58",
+    "research/consciousness-v3/round2/discovery_holdout.csv": "5f06d388d609d6c0a2359d3fe2ebc85c9a6a0aff2edf59b2cb370a033a7a4465",
+    "research/consciousness-v3/round2/figure.svg": "8a746e769026179052d7df26f0b05b500439ed80a2c9d6efdb59bade266e5d55",
+    "research/consciousness-v3/round2/manifest.json": "4bd25e348506e1eb6fb99c5ce00e728ecd4c5eb4bf32be6a1a95bd36a62611d0",
+    "research/consciousness-v3/round2/report.md": "c0a80154f8f208414b9c27bed5c24c291e1ba4a2c550ec39fc63730e57702677",
+    "research/consciousness-v3/round2/results.json": "2a25d946863fdadd03854aad62d8b05a29d7084849f9590f087d58bf80881fc4",
+    "research/consciousness-v3/round2/score_distribution.csv": "f4cc957c73604f09d019dbf98373560cc9050ea5812654c50962b8652fed584d",
+    "research/consciousness-v3/round2/solver.py": "3ac95d3f2c5eb50ce972d807853c0f6e1ae530e209193da0fc5f644e9f0d4cb6"
+  }
+}

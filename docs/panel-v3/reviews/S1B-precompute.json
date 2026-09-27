@@ -1,0 +1,11 @@
+{
+  "id": "S1B",
+  "reviewMethod": "Analytic rational complex transfer and AM-GM bound, no producer solver",
+  "reference_min_magnitude": 0.01112190252299188,
+  "fixture_masked_bins": 234,
+  "moved_blank_max_error": 96.11695747952739,
+  "regularized_gain_max": 24.99997698590046,
+  "global_gain_bound": 25,
+  "masked_noise_bound": 0.013333333333333334,
+  "bias_identity": "Q_lambda-T=-T*lambda/(|H|^2+lambda)+eta*conj(H)/(|H|^2+lambda)"
+}

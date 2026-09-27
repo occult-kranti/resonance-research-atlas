@@ -1,0 +1,88 @@
+{
+  "id": "B2",
+  "round": 2,
+  "title": "Freeze the correspondence before the holdout",
+  "question": "How much apparent correspondence arises from selecting among four correlated semantic scoring rules, and does that selection survive an independent balanced holdout?",
+  "model": "Exact uniform distribution over 2520 permutations of balanced target labels. Four cyclic scoring matrices use 2 for an exact shifted label, 1 for either adjacent cyclic label, 0 for the opposite. Reports are fixed. The best discovery mapping is frozen before a fresh independent holdout.",
+  "incomingEvidence": "B1 demonstrated prior and common-reporter ambiguity despite high scores. Balancing targets removes that particular advantage; B2 tests remaining flexibility in how correspondence is scored. The Pauli event-window example motivates fixed scoring/window boundaries but supplies no statistical evidence for this model.",
+  "sources": [
+    "C-BASHAR-ANKA2014",
+    "C-BASHAR-FORMULA",
+    "C-AIR1995",
+    "C-ATLAS-PRIOR",
+    "V3-PAULI1947-48"
+  ],
+  "limits": [
+    "Finite cyclic labels are a methodology toy, not an embedding model or measured human synchronicity.",
+    "Zero live model calls and zero human observations.",
+    "The null targets and holdout independence are imposed by construction.",
+    "The proposed positive H-MEANING hypothesis requires an independently frozen dictionary/window and reproducible held-out excess; unrestricted retrospective interpretation is nonidentifying.",
+    "Discrete tests may be conservative; parameters are not tuned to force nominal-alpha exceedance.",
+    "The known-map positive control is inserted ordinary correspondence, not higher-source contact."
+  ],
+  "evidenceType": "synthetic",
+  "status": "executed_pending_review",
+  "finding": "Selecting a correspondence rule increases discovery scores and rejection relative to the fixed rule. Exact maximum calibration controls the declared finite null; a frozen discovery mapping returns to the null mean on independent holdout.",
+  "metrics": {
+    "balanced_assignments": 2520,
+    "independent_discovery_holdout_pairs": 6350400,
+    "fixed_rule_rejection": 0.006746031746031746,
+    "naive_selected_rejection": 0.026984126984126985,
+    "max_corrected_rejection": 0.026984126984126985,
+    "holdout_rejection": 0.006746031746031746,
+    "fixed_rule_mean_score": 8.0,
+    "selected_discovery_mean_score": 10.323809523809524,
+    "holdout_mean_score": 8.0,
+    "selection_optimism_points": 2.323809523809524,
+    "positive_control_score": 16,
+    "positive_control_corrected_p": 0.0015873015873015873
+  },
+  "exactResults": {
+    "fixed_rejection": "17/2520",
+    "naive_selected_rejection": "17/630",
+    "max_corrected_rejection": "17/630",
+    "holdout_rejection": "17/2520",
+    "discovery_mean": "1084/105",
+    "holdout_mean": "8"
+  },
+  "selectedShiftCounts": {
+    "0": 1073,
+    "1": 541,
+    "3": 365,
+    "2": 541
+  },
+  "positiveControl": {
+    "targets": [
+      2,
+      2,
+      3,
+      3,
+      0,
+      0,
+      1,
+      1
+    ],
+    "scores": [
+      0,
+      8,
+      16,
+      8
+    ],
+    "correctedPExact": "1/630"
+  },
+  "controls": [
+    "Precommitted fixed mapping m=0",
+    "Retrospective maximum with naive fixed-rule tail",
+    "Exact maximum-statistic tail",
+    "Independent holdout with discovery mapping frozen",
+    "Known inserted cyclic correspondence m=2"
+  ],
+  "allAcceptanceGatesPassed": true,
+  "live_model_calls": 0,
+  "human_observations": 0,
+  "contractSHA256": "66c6b180d46d5fe93e2dd719dfebca020d542719b98050c9c32a77a1dc8aca58",
+  "runtime": {
+    "python": "3.12.14",
+    "matplotlib": "3.10.8"
+  }
+}

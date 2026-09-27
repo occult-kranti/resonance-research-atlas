@@ -1,0 +1,43 @@
+{
+  "id": "S1B",
+  "sequence": 2,
+  "predecessor": {
+    "id": "S1A",
+    "reviewPath": "docs/panel-v3/reviews/S1A-review.json",
+    "reviewSHA256": "031df1011c43da22de7ccb3188eb67dc2142fec6a4230098da7c064ebcd2fe85",
+    "status": "accepted_narrow"
+  },
+  "checkerFunction": "review_s1b",
+  "checkerFunctionSHA256": "f571a1f8e14f08d0bc070e159f97f53a89a3f2726fac3fdd1dd75f0cea1343fa",
+  "status": "accepted_narrow",
+  "reviewer": "/root/advisor_v3 (correlated model agent; independent implementation/derivation, not human peer review)",
+  "reviewMethod": "Independent per-frequency complex rational formula, exact error decomposition and global regularization bound; raw-table checks.",
+  "independentChecks": {
+    "independent_formula_max_error": 1.2913594257943629e-13,
+    "excluded_bins": 234,
+    "masked_noise_error": 0.013328498443604423,
+    "unmasked_noise_error": 0.17982534875354972,
+    "regularized_noise_bound_attained": 0.049999953971800924,
+    "regularized_bias_max": 0.9834996986562234,
+    "moved_blank_masked_max": 6.868324734872397,
+    "moved_blank_unmasked_max": 96.11695747952739,
+    "proof": "(a-sqrt(lambda))^2>=0 implies a/(a^2+lambda)<=1/(2sqrt(lambda)); error separates exact bias and bounded-noise term."
+  },
+  "acceptedClaim": "Reference cancellation in the declared stable fixture is exact; a one-sample path change mimics an object change, while regularization bounds noise at the cost of calculable bias.",
+  "withheld": [
+    "A universal physical stability or sensitivity threshold",
+    "A recovered material transfer in an uncontrolled room",
+    "Regularization as removal of uncertainty"
+  ],
+  "nextDecision": "S2A: investigate gain-independent single-mode decay from generated PCM and provide recorded-file intake.",
+  "bindings": {
+    "research/sound-lab-v3/S1B/contract.json": "9b2d4a8ba8af5913ecbee166a4e6fa0a7d56c99aebc1432be011d95b15259301",
+    "research/sound-lab-v3/S1B/figure.svg": "c4662ad5b7b95e948c6251f27f23ddda096cd78f60d29da4a7a58443d582a589",
+    "research/sound-lab-v3/S1B/manifest.json": "c63b7e223f7579244d64c08867c04b523376ad54a964165238c2811ddc2a4dee",
+    "research/sound-lab-v3/S1B/report.md": "96f331403ec000b26df737c7eaca336632b4dff75c0f84862e156f43562544b4",
+    "research/sound-lab-v3/S1B/response.csv": "0ed6dafcdd2e02567ab1dafdb1684a837ea20257c8cc575a0d50cc5c14cad624",
+    "research/sound-lab-v3/S1B/results.json": "294c6d604991a4d39b721744c7eae1064f203fd39e33590319a830252dd9583b",
+    "research/sound-lab-v3/S1B/run.py": "53c1b32ce2c5e24c5509aab3f39e476531b084ac004df64915359aa54347c33a",
+    "research/sound-lab-v3/common.py": "25a627bb9616a8b04051fb8b4e46b747cf5ea732b0fb28fcb8c2c90baaf1d408"
+  }
+}

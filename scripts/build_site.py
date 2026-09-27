@@ -13,7 +13,7 @@ def build(output, source_root=None, skip_projects=False):
     if output == ROOT or ROOT.is_relative_to(output):
         raise ValueError('Output must not contain the authored source directory')
     output.mkdir(parents=True,exist_ok=True)
-    allow=['index.html','styles.css','app.js','models.js','assets','data','docs','research','archive','integrations','README.md','LICENSE']
+    allow=['index.html','styles.css','app.js','models.js','sound-lab','assets','data','docs','research','archive','integrations','README.md','LICENSE']
     for name in allow:
         src=ROOT/name
         if not src.exists(): continue

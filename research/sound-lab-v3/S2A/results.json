@@ -1,0 +1,43 @@
+{
+  "id": "S2A",
+  "round": 2,
+  "title": "Fit decay from a file, independently of strike gain",
+  "status": "executed_pending_review",
+  "evidenceType": "actualbytes",
+  "question": "Can one shared recording importer recover a declared single-mode decay from quantized WAV at different gains and phases?",
+  "finding": "The shared WAV importer and local fit recover the declared decay across gain/phase cases; silence and clipped recordings are rejected.",
+  "metrics": {
+    "max_alpha_error_per_s": 3.3449363301407686e-05,
+    "max_frequency_error_Hz": 5.110187203172245e-06,
+    "max_normalized_residual": 0.0003491425522215834,
+    "silence_rejected": true,
+    "clipping_rejected": true,
+    "clipped_sample_count": 97
+  },
+  "failedControls": [
+    {
+      "control": "Silent WAV",
+      "outcome": "rejected"
+    },
+    {
+      "control": "Clipped full file",
+      "outcome": "rejected even when fit window is below clipping"
+    }
+  ],
+  "limits": [
+    "actualbytes means generated and decoded PCM WAV, not a microphone recording",
+    "Local optimization depends on supplied nominal frequency and the declared single-mode model",
+    "Fitted decay describes the recorded channel, not intrinsic material damping",
+    "Quantization-only fixtures do not validate arbitrary device recordings"
+  ],
+  "sources": [
+    "V3-FEYN23",
+    "V3-W3C-CAPTURE"
+  ],
+  "contractSHA256": "5bc07ebfe83014412fc43e840bba62569909b6be7526053bba15490ab54718d0",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "matplotlib": "3.10.8"
+  }
+}

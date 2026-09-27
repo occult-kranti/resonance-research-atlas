@@ -1,0 +1,5 @@
+regime,mechanism,state_accuracy_exact,prompt_affirmation_shift_exact,evaluator_verdict_shift_exact,evaluator_report_shift_exact,state_report_contrast_exact,prompt_report_contrast_exact
+observational,state_readout,9/10,4/5,1/4,0,4/5,4/5
+observational,prompt_only,9/10,4/5,1/4,0,4/5,4/5
+crossed,state_readout,9/10,4/5,1/4,0,4/5,0
+crossed,prompt_only,1/2,4/5,1/4,0,0,4/5

@@ -1,0 +1,11 @@
+# Precise setup diagram brief
+
+For the diagram agent; IDs B1–B3. Use deterministic SVG, visible labels, explicit information arrows and a protocol-only badge. Never draw a measurable higher-consciousness field, antenna, portal, soul sensor or signal amplitude for the conditional metaphysical premise.
+
+**Main information-custody diagram:** three vertical lanes, custodian / two independent response stations / analyst. Top-left: offline randomization into four neutral symbols; arrow to salted target commitment and opaque target store. Only trial ID plus hash moves to the response stations. Two boxes, human and AI, each receive the four labels, each output a timestamped locked guess; a shared prompt/training-prior cloud can connect to both, labeled ordinary common cause. No target arrow enters either station during the concealed phase. Both locked records enter a frozen-response store. Only after freeze does target-plus-salt join the analyst. Analyst verifies commitments, scores all planned trials, then reports exact accuracy, disagreement and additional-information diagnostics. A separate lower dashed orange path explicitly discloses target to an ordinary positive-control response; its data do not enter the concealed-phase count.
+
+**B1 inset:** T → A and T → B arrows only in deliberate leak control. In no-access control, shared prior U → A and U → B; T has no route to A/B. Agreement does not imply a T path. Label exact joint-distribution model, not physical network measurements.
+
+**B2 inset:** separate discovery report/target pairs choose one of a finite list of score matrices; freeze arrow ends at selected matrix; independent holdout pairs are scored once. Red dashed forbidden arrow from holdout outcomes back to metric selection. Target balancing belongs to randomization box. Labels must follow final contract if advisor changes the candidate.
+
+**B3 inset:** known state Z and prompt P feed a scripted reporter R in a model; compare a state-aware generator with a prompt-only one under crossed interventions. Evaluator cue E reaches only the evaluator, showing how verdict changes can arise without report changes. A grey latent 'subjective experience?' node has no measured indicator and no calibrated arrow; caption says deliberately unidentified in synthetic model. Labels must follow final contract.

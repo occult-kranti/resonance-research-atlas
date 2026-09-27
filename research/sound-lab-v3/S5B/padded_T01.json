@@ -1,0 +1,8 @@
+{
+  "derivedFrom": "../S5A/balanced_effect/T01.wav",
+  "originalSHA256": "c7f4c8c0527f798bdb6c499b995d0785f1a0e7d3a554f2d0f82f1bae04385987",
+  "operation": "prepend exactly8000 zero PCM16 samples; original samples unchanged",
+  "sampleRate_Hz": 8000,
+  "impact_time_s": 1,
+  "evidenceType": "synthetic_generated"
+}

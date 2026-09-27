@@ -1,0 +1,51 @@
+{
+  "id": "S4A",
+  "round": 4,
+  "title": "A spatial magnitude map loses phase and direction",
+  "status": "executed_pending_review",
+  "evidenceType": "synthetic",
+  "question": "What changes when a magnitude map is replaced by independent phase-referenced spatial samples?",
+  "finding": "Dense magnitude samples retain exact phase/direction ambiguities; two appropriately spaced complex samples recover the declared model coefficients with a shared phase reference.",
+  "metrics": {
+    "magnitude_partner_max_error": 0.0,
+    "common_phase_magnitude_max_error": 1.7763568394002505e-15,
+    "single_complex_domain_dimension": 2,
+    "single_complex_rank": 1,
+    "single_complex_nullity": 1,
+    "kernel_residual": 0.0,
+    "two_sample_rank": 2,
+    "two_sample_nullity": 0,
+    "two_sample_condition": 1.0000000000000004,
+    "two_sample_coefficient_error": 5.551115123125783e-17,
+    "wavelength_m": 0.686,
+    "quarter_wavelength_m": 0.1715,
+    "coefficient_ratio_original": 0.6,
+    "coefficient_ratio_partner": 1.6666666666666665
+  },
+  "failedControls": [
+    {
+      "control": "Infer traveling direction or material from magnitude map alone",
+      "outcome": "rejected without additional directional/boundary premises"
+    },
+    {
+      "control": "Treat a single positive singular value as injectivity",
+      "outcome": "rejected: domain2,rank1,nullity1 with kernel[1,-1]"
+    }
+  ],
+  "limits": [
+    "One-dimensional two-traveling-wave model is assumed, not a measured room",
+    "Conjugate-swap reverses larger traveling coefficient; known incident direction and passivity may exclude it",
+    "Complex samples require common phase reference; sequential phone recordings do not automatically provide one",
+    "Recovered coefficients do not identify material, source mechanism or three-dimensional boundaries"
+  ],
+  "sources": [
+    "V3-FEYN49",
+    "V3-FEYN23"
+  ],
+  "contractSHA256": "396c9a9846e212cff8232ae7fe7d3aad8c47110b79c85a73ba25974c129554a1",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "matplotlib": "3.10.8"
+  }
+}

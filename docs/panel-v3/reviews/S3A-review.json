@@ -1,0 +1,52 @@
+{
+  "id": "S3A",
+  "sequence": 5,
+  "predecessor": {
+    "id": "S2B",
+    "reviewPath": "docs/panel-v3/reviews/S2B-review.json",
+    "reviewSHA256": "5468ed5191215d13b7a7b639f6bafc9da5be9b39dc43be138e366e8dc0d296b3",
+    "status": "accepted_narrow"
+  },
+  "checkerFunction": "review_s3a",
+  "checkerFunctionSHA256": "4c5f1be25d32cd4ecb7cd1ec856c7ee8463960d65546e1800923b41b966cc47c",
+  "status": "accepted_narrow",
+  "reviewer": "/root/advisor_v3 (correlated model agent; independent implementation/derivation, not human peer review)",
+  "reviewMethod": "Independent actual CLI processes in a separate temporary directory; adversarial path/channel cases, before/after hashes, valid-fit and decoded-trace identity.",
+  "independentChecks": {
+    "independent_CLI_cases": {
+      "source_collision_rejected": true,
+      "existing_output_preserved": true,
+      "invalid_csv_channel_rejected": true,
+      "symlink_collision_rejected": true,
+      "valid_analysis_preserved_raw": true,
+      "provenance_remains_unverified": true
+    },
+    "accepted_WAV_CSV_trace_byte_identity": true,
+    "scope": "Integrity and channel admission of declared files; neither source authenticity nor physical calibration."
+  },
+  "acceptedClaim": "A versioned intake preserves raw files and existing outputs, rejects invalid CSV channels and source/symlink collisions, and gives identical decoded WAV/CSV traces.",
+  "withheld": [
+    "Source authenticity from a hash",
+    "Acoustic calibration from file integrity",
+    "Safety of using the old frozen CLI as a current entry point"
+  ],
+  "nextDecision": "S3B: test timebase metadata and clock-scale ambiguity using identical PCM samples with declared versus corrected times.",
+  "bindings": {
+    "research/sound-lab-v3/S3A/accepted_csv.csv": "e7ed3de3db1abbe28fb1212cdbeb923453e247026a73101edf6e4bba61ee495a",
+    "research/sound-lab-v3/S3A/accepted_csv.json": "7fe740720287e38b3ff0fbd8d17cc69a07ae14b3738e9cedb9042cebf0b18522",
+    "research/sound-lab-v3/S3A/accepted_wav.csv": "e7ed3de3db1abbe28fb1212cdbeb923453e247026a73101edf6e4bba61ee495a",
+    "research/sound-lab-v3/S3A/accepted_wav.json": "45f054f40e56bb90c3cc288849a5fd1797f287c4463a8a28de0118f7a43e8a56",
+    "research/sound-lab-v3/S3A/admission.csv": "ae53959f8506123f51e15c42ae08999d97e4996ad6ccb894ff324478becbf267",
+    "research/sound-lab-v3/S3A/admission_cases.json": "80eefc3008324a582c1148858bad026a9e18dbf0e4944c8a2f1468badc5f4638",
+    "research/sound-lab-v3/S3A/contract.json": "50edeb39d806519683c1f8da23e748432fd8436cd6e64f9490889e2b5abf1c7e",
+    "research/sound-lab-v3/S3A/figure.svg": "51a64cfeb1bd9328ff460ca6d1c2a2e3a92e6721c8d3d86ee22489eed2842364",
+    "research/sound-lab-v3/S3A/manifest.json": "1c808253744b9169c4884a3daa4ac2c08054f53ddc06076d90b8936ce372ecdf",
+    "research/sound-lab-v3/S3A/report.md": "e3149d4352e4182622787249afc34388a8aa387da5666475117b9c681675b049",
+    "research/sound-lab-v3/S3A/results.json": "23070a524c0eb4b7d55ac145bed1bb1f6563912bbeefecb55962912e7e8c12b5",
+    "research/sound-lab-v3/S3A/run.py": "7c264e81ec786912e514f70b9b6bc2ddda61f0611a10aaec3963e56846a63aa1",
+    "research/sound-lab-v3/S3A/source.csv": "93e8d1452b62ededd7a42867aa41e1085a53ff8b9a048709cea7c4600fc65dd8",
+    "research/sound-lab-v3/fit_recording.py": "d1f0ad5fadd5e225c9d3feb3ca79d36d583dc62b5ab331c9ae6f351fb1d78137",
+    "research/sound-lab-v3/intake_v2.py": "5d06f8300d7a23dff82955ff96ec37ff771cf907556c5b0444a3d2f447b88272",
+    "research/sound-lab-v3/common.py": "25a627bb9616a8b04051fb8b4e46b747cf5ea732b0fb28fcb8c2c90baaf1d408"
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "files": [
+    {
+      "path": "S5B/padded_T01.wav",
+      "sha256": "029f9c919161f7f2e0c277daeed480aa97a1a9c7dfeaa62c79470276b38a3451",
+      "unchanged": true
+    },
+    {
+      "path": "S5A/balanced_effect/T02.wav",
+      "sha256": "b9cede7cc2e4f0e2858c99b4fa6f642d07056e7f736ae58ec776e9c784a10350",
+      "unchanged": true
+    },
+    {
+      "path": "S5A/balanced_effect/T03.wav",
+      "sha256": "958e21af84346d8542428b73bc734d7919fd51b89f2b619f7f7a59279f7eafff",
+      "unchanged": true
+    },
+    {
+      "path": "S5A/balanced_effect/T04.wav",
+      "sha256": "f5205c953c9d7d84c1496148a9b81f9b03976311d30e3050a5072a1850a84ed8",
+      "unchanged": true
+    },
+    {
+      "path": "S5A/balanced_effect/T05.wav",
+      "sha256": "cbfade37480ed4279f508dba71403cdd425799182c320497585c42369628fb45",
+      "unchanged": true
+    },
+    {
+      "path": "S5A/balanced_effect/T06.wav",
+      "sha256": "0b34ba8df3e8a10e511eb03c95d00bd5fbc4e5956acffb64b2ad7891e4d7fb4b",
+      "unchanged": true
+    },
+    {
+      "path": "S5A/balanced_effect/T07.wav",
+      "sha256": "4414b6120d7363b4423c86b8e2e725f97f10a4331316fdf2cc99cb2a51547beb",
+      "unchanged": true
+    },
+    {
+      "path": "S5A/balanced_effect/T08.wav",
+      "sha256": "b0a4f4233ebd0b414041d3e6c26495237f71c77945591c6c80a06ff6f6b54103",
+      "unchanged": true
+    },
+    {
+      "path": "S5A/balanced_effect/T09.wav",
+      "sha256": "b1df9c4bc3cdcd76e5cc5399b007927706a668dffb3a5ed0731b984f5db4a2f0",
+      "unchanged": true
+    },
+    {
+      "path": "S5A/balanced_effect/T10.wav",
+      "sha256": "f4ac1756fd23c408ead5158a03b6508b5b61d087d51f83bce224b6a657cf0bc2",
+      "unchanged": true
+    },
+    {
+      "path": "S5A/balanced_effect/T11.wav",
+      "sha256": "6031f2da27de27c4a3d27d753926283237bf8257468e4a557fe143919785ad29",
+      "unchanged": true
+    },
+    {
+      "path": "S5A/balanced_effect/T12.wav",
+      "sha256": "101afe7c8317614c78faf56d80102b39a7bb09e174a9603a577ba3b411d6f31b",
+      "unchanged": true
+    },
+    {
+      "path": "S5A/balanced_effect/T13.wav",
+      "sha256": "1f25ea4cb4ccc6b7a6debaf9abca544a0967c47ca7fe37a67ed42c30172d4c79",
+      "unchanged": true
+    },
+    {
+      "path": "S5A/balanced_effect/T14.wav",
+      "sha256": "2cae11b809e7e1deed3c5b3f2f060033209b057815ca5a6ee0923a2de635e9e3",
+      "unchanged": true
+    },
+    {
+      "path": "S5A/balanced_effect/T15.wav",
+      "sha256": "0c0d83d89bb5b67c0ad8d37a898fdbecb6496bb6782c699b0c377fbd3023b69a",
+      "unchanged": true
+    },
+    {
+      "path": "S5A/balanced_effect/T16.wav",
+      "sha256": "daaef11ca674f8bf3f25bc0c51f240bdff03b2d4cb247f75802bd5b01ebe48f5",
+      "unchanged": true
+    },
+    {
+      "path": "S2A/case3.wav",
+      "sha256": "78f82cd49af869013e8ec414a15d71f5f4f2ec8d006b6a0c50527c91eaa7a85f",
+      "unchanged": true
+    },
+    {
+      "path": "S2A/case4.wav",
+      "sha256": "f75ce19b6055163f7cf34fb3a36a67025d9bc5eb01485b2700c2f01465954c81",
+      "unchanged": true
+    },
+    {
+      "path": "S2B/overlap.wav",
+      "sha256": "c4962d3df16628b4a7501e3947d604634f786ea1fd15c46e17de4dfbe9ee5ac6",
+      "unchanged": true
+    }
+  ]
+}

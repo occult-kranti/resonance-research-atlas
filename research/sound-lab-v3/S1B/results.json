@@ -1,0 +1,51 @@
+{
+  "id": "S1B",
+  "round": 1,
+  "title": "Reference cancellation needs a stable, sensitive chain",
+  "status": "executed_pending_review",
+  "evidenceType": "synthetic",
+  "question": "How do a near-notch and one-sample path change break reference division?",
+  "finding": "Reference division is exact only for the stable noiseless fixture; small path drift creates a false change, while regularization trades bounded noise for explicit bias.",
+  "metrics": {
+    "noiseless_max_error": 4.545902364027965e-16,
+    "eligible_fraction": 0.9311967068509261,
+    "masked_noise_max_error": 0.013328498443604338,
+    "unmasked_noise_max_error": 0.17982534875354192,
+    "regularized_noise_max_error": 0.04999995397180092,
+    "regularized_bias_max": 0.9834996986562441,
+    "regularized_gain_max": 24.99997698590046,
+    "bias_identity_error": 7.813354239747122e-16,
+    "moved_blank_false_change_max": 6.868324734872373,
+    "minimum_H0_magnitude": 0.011121902522992373
+  },
+  "failedControls": [
+    {
+      "control": "Unmasked division",
+      "outcome": "unstable near notch"
+    },
+    {
+      "control": "Moved blank",
+      "outcome": "false object signature"
+    },
+    {
+      "control": "Regularization removes all error",
+      "outcome": "rejected; deterministic bias remains"
+    }
+  ],
+  "limits": [
+    "A .15 sensitivity mask is fixture-specific, not a universal physical stability threshold",
+    "Regularization bounds noise gain but adds bias",
+    "No room, object, microphone or speaker measured",
+    "Reference similarity flags changes but does not certify a stable physical chain"
+  ],
+  "sources": [
+    "V3-FARINA2000",
+    "V3-SMITH-COMB"
+  ],
+  "contractSHA256": "9b2d4a8ba8af5913ecbee166a4e6fa0a7d56c99aebc1432be011d95b15259301",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "matplotlib": "3.10.8"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "id": "B1",
+  "sequence": 11,
+  "predecessor": {
+    "id": "S5B",
+    "reviewPath": "docs/panel-v3/reviews/S5B-review.json",
+    "reviewSHA256": "cb0ffdc3412304e636d980e997a43ba8c70ad4da4b182379325d6df1cdaf2d8d",
+    "status": "accepted_narrow"
+  },
+  "checkerFunction": "review_b1",
+  "checkerFunctionSHA256": "b2c2ff45bf7ecb603819c5d358de94890bd2fb2eb5099f3250d069aa1b76865b",
+  "status": "accepted_narrow",
+  "reviewer": "/root/advisor_v3 (correlated model agent; independent implementation/derivation, not human peer review)",
+  "reviewMethod": "Independent integer-count joint construction, entropy identities and exact combinatorial binomial masses/tails; IID clarification retained without altering frozen contract/results.",
+  "independentChecks": {
+    "exact_joint_states_checked": 448,
+    "exact_binomial_masses_and_tails_checked": 243,
+    "information_entropy_formula_max_error_bits": 8.604228440844963e-16,
+    "integer_denominator": 6400,
+    "cutoffs": {
+      "1/4": 27,
+      "11/20": 52,
+      "37/100": 38
+    },
+    "wrong_baseline_rejection": {
+      "1/4": 0.04988717837499807,
+      "11/20": 0.9999590175010924,
+      "37/100": 0.7619489695483855
+    },
+    "proof": "Integer weights over6400 exactly determine the single-trial joint law. B=A makes conditional added information zero; informative conditionally independent reports add information. Relabeling the identical copied-leak distribution as a receiver does not identify its cause. Binomial tails assume independent repeated trials."
+  },
+  "acceptedClaim": "Prior-biased agreeing reporters can contain zero target information; copied reports add no conditional information, while independent informative reports do. An identically specified receiver and ordinary leak remain observationally equivalent.",
+  "withheld": [
+    "Measured AI or human behavior",
+    "AI consciousness predicting concealed-target knowledge",
+    "A positive score identifying a higher source",
+    "IID binomial calibration for a study-level shared latent or a balanced-block target design"
+  ],
+  "nextDecision": "B2: freeze a finite balanced randomization and scoring family; compare prespecified, post-selected and max-calibrated scores with an untouched holdout.",
+  "bindings": {
+    "research/consciousness-v3/round1/binomial_nulls.csv": "cc966b1944f5a25b26225d345147069130a9f4100dbcf948eede31666931e0b3",
+    "research/consciousness-v3/round1/contract.json": "73837d1ffc62381dcd405bc9679dc9454bed63280487f3fceea7510f90b30776",
+    "research/consciousness-v3/round1/figure.svg": "98a211b1a469ce358cc233e8952bd6ec5d9bb39bb916cd760e4065d70d10a2e9",
+    "research/consciousness-v3/round1/joint_states.csv": "697a1c3ecedcdf71a08d781b01216482ea6ff4e24ffd2b0ad7d3a9335d5719b1",
+    "research/consciousness-v3/round1/manifest.json": "369cc705dfadf877730b84e696db804d69ec9e06a2d6194d1bb4929a953980b8",
+    "research/consciousness-v3/round1/model-notes.md": "d62570950683019bd782492a5932fd507c726052b07719dd7e5398876d1f4362",
+    "research/consciousness-v3/round1/report.md": "cea4f3fa8fe1adb5c8941d95a3038ccc55945455ec5b695ca1810273d1f59407",
+    "research/consciousness-v3/round1/results.json": "7c29684fedfc1f60b46ef1e9e93d29435ce9b85083a164ac6135655577841cae",
+    "research/consciousness-v3/round1/solver.py": "afe0faea011d5b11838ff8703f69937d2de49723fe8bfdc6e110f98391b8bde3"
+  }
+}

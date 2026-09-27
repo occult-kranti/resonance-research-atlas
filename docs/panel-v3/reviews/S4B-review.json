@@ -1,0 +1,42 @@
+{
+  "id": "S4B",
+  "sequence": 8,
+  "predecessor": {
+    "id": "S4A",
+    "reviewPath": "docs/panel-v3/reviews/S4A-review.json",
+    "reviewSHA256": "9a62a662449aeb33a18417be3cedb202349165ce17c4a533fc86bc0b421385a9",
+    "status": "accepted_narrow"
+  },
+  "checkerFunction": "review_s4b",
+  "checkerFunctionSHA256": "d01c827ed4a4f101dda911be224e0de17a78381c4f2b36df9ded83dc72db2f78",
+  "status": "accepted_narrow",
+  "reviewer": "/root/advisor_v3 (correlated model agent; independent implementation/derivation, not human peer review)",
+  "reviewMethod": "Analytic Gram singular values and noise bound, raw noise norms, independent withheld-position identity and least-squares residual formula.",
+  "independentChecks": {
+    "singular_cases_with_kernel_not_inverted": 2,
+    "worst_case_noise_error_identity_max_error": 5.169475958410885e-16,
+    "independent_heldout_error": 0.023507904525623232,
+    "independent_three_sample_residual": 0.0166225987015542,
+    "proof": "Gram eigenvalues are 2 +/- 2|cos(theta)|. At the withheld eighth wavelength, p_h=(p_0+p_quarter)/sqrt(2); a drift delta only at the second point causes heldout error |delta|/sqrt(2) and least-squares residual |delta|/2."
+  },
+  "acceptedClaim": "Spatial inverse conditioning depends on separation; a two-point exact fit can hide channel phase drift while an independent withheld point exposes this declared mismatch.",
+  "withheld": [
+    "Phase calibration of an ordinary phone",
+    "A third channel certifying every model assumption",
+    "Worst-case noise as an empirical microphone distribution"
+  ],
+  "nextDecision": "S5A: choose a feasible scalar sound bench with interleaved support/reference observations; test finite-order drift cancellation before a complete recorded-file dry run.",
+  "bindings": {
+    "research/sound-lab-v3/S4B/cases.json": "f014bd3e441983e08bb9c158754d5423f472bc6c61b59426b6c4ff5e7d79eab8",
+    "research/sound-lab-v3/S4B/conditioning.csv": "c4d8c821c4f212f8ca0c8ba7ed2b2db7a016f80356abcbea17a10a228f6dcac5",
+    "research/sound-lab-v3/S4B/contract.json": "db0704506343bb3aa133e558c112fdc545590565d21db51c21064fd07d58eb5d",
+    "research/sound-lab-v3/S4B/figure.svg": "74dcb6e20350150803a450ba769b7fc51c766d9ef7a70bad95ba5661822447d9",
+    "research/sound-lab-v3/S4B/manifest.json": "1f931069c7ea93889ab5041339b364e25aba37e6409abc5af12544646d87669e",
+    "research/sound-lab-v3/S4B/noise_observations.csv": "4f69187724a00fc27b21b8ee6c43adb0a64250b68b01d788add4e50333f0d7f4",
+    "research/sound-lab-v3/S4B/phase_observations.csv": "fd37d647774b143236fa71dadc90c2dea5dd7577b8813cc029ba2454a2d027d9",
+    "research/sound-lab-v3/S4B/report.md": "bec9196ad33ab270728ac6618a30eb20f4be96b452f3bf4c59dbbdd32604d4b4",
+    "research/sound-lab-v3/S4B/results.json": "6864b5015057c0370d87eb9cc222dc173bca8e820a25961be0734e809e57962b",
+    "research/sound-lab-v3/S4B/run.py": "1b1caf456e7fc5ffe7ff880d7132d1a2137a0ba96aa297b490d90f7ea08232c7",
+    "research/sound-lab-v3/common.py": "25a627bb9616a8b04051fb8b4e46b747cf5ea732b0fb28fcb8c2c90baaf1d408"
+  }
+}

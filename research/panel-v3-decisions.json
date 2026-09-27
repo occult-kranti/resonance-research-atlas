@@ -1,0 +1,1000 @@
+{
+  "program": "Low-material sound, then conditional consciousness protocol audits",
+  "date": "2026-09-27",
+  "status": "completed_13_narrow_computational_reviews",
+  "provenance": {
+    "advisor": "/root/advisor_v3",
+    "producers": [
+      "/root/acoustic_lab_v3",
+      "/root/consciousness_lab_v3"
+    ],
+    "source_researcher": "/root/historical_sources_v3",
+    "independence": "Separate model agents and separately derived checks; correlated model family, not human peer review or historical-person participation."
+  },
+  "frozen_prior_programs": [
+    "original six rounds",
+    "nanoparticle five rounds"
+  ],
+  "planningPanels": [
+    {
+      "id": "P1",
+      "status": "completed",
+      "question": "Source and low-material feasibility submissions",
+      "record": "docs/panel-v3/planning-panels.md"
+    },
+    {
+      "id": "P2",
+      "status": "completed",
+      "question": "Actual skeptical challenges and participant refinements",
+      "record": "docs/panel-v3/planning-panels.md"
+    },
+    {
+      "id": "P3",
+      "status": "completed",
+      "question": "Selected S1A and froze one-loop execution gate",
+      "record": "docs/panel-v3/planning-panels.md"
+    }
+  ],
+  "soundRoundsRequired": 5,
+  "soundLoopsRequired": 10,
+  "laterRoundsRequired": 3,
+  "reviews": [
+    {
+      "id": "S1A",
+      "sequence": 1,
+      "predecessor": {
+        "id": "P3",
+        "record": "docs/panel-v3/planning-panels.md",
+        "status": "completed_before_S1A_execution"
+      },
+      "round": 1,
+      "title": "A recording-chain peak is not a material identity",
+      "status": "accepted_narrow",
+      "evidenceType": "synthetic",
+      "question": "Can a known-input complex ratio recover the total transfer while leaving its physical factorization ambiguous?",
+      "finding": "The noiseless known-FIR ratio recovers total transfer and predicts a held-out probe; exact alternative device/echo factorizations remain indistinguishable.",
+      "scope": "y=d*e*x; d=[0.7,0.2,0.1]; e=delta[n]+0.6 delta[n-40]; * means linear convolution",
+      "withheld": [
+        "Physical echo or material identification from total transfer",
+        "Pressure calibration",
+        "Empirical apparatus or biological effect"
+      ],
+      "incomingEvidence": "N5 distinguished actual WAV arithmetic and nonlinear observation operators. P2 identified physical factorization ambiguity and invalid single-record coherence language.",
+      "nextDecision": "S1B: test reference cancellation under near-null sensitivity, bounded noise and path drift.",
+      "metrics": {
+        "total_transfer_max_complex_error": 3.114494141552546e-14,
+        "heldout_relative_L2": 8.342888608107146e-16,
+        "superposition_relative_L2": 1.206758362039764e-16,
+        "factorization_relative_L2": 0.0,
+        "declared_echo_delay_s": 0.005,
+        "declared_comb_spacing_Hz": 200.0,
+        "inverse_H_zero_bins": 4,
+        "input_X_excluded_bins": 0,
+        "impulse_max_error": 5.551115123125783e-17
+      },
+      "sources": [
+        "V3-FARINA2000",
+        "V3-SMITH-COMB"
+      ],
+      "contractPath": "research/sound-lab-v3/S1A/contract.json",
+      "resultsPath": "research/sound-lab-v3/S1A/results.json",
+      "reviewPath": "docs/panel-v3/reviews/S1A-review.json",
+      "reportPath": "research/sound-lab-v3/S1A/report.md",
+      "figurePaths": [
+        "research/sound-lab-v3/S1A/figure.svg"
+      ],
+      "rawPaths": [
+        "research/sound-lab-v3/S1A/impulse.csv",
+        "research/sound-lab-v3/S1A/probe_outputs.csv",
+        "research/sound-lab-v3/S1A/response.csv"
+      ],
+      "resultSHA256": "43f77b24221a166b499b47e9ce082cf7de58df4725cc412b39d8b33737fca9bb",
+      "contractSHA256": "26b8b5ede645f18341807abd0613ac68afc2e62d6984f925b46c72f48ff7cbb3",
+      "independentChecks": {
+        "independent_polynomial_max_error": 3.14276109686972e-14,
+        "independent_saved_heldout_L2": 8.342888608107145e-16,
+        "zero_bins": [
+          1024,
+          3072,
+          5120,
+          7168
+        ],
+        "tap_identity_checked": true,
+        "factorization_proof": "Associativity: x*(d*e)=(x*d)*e=x*(d_alt*delta). This proves output equivalence for every finite x."
+      }
+    },
+    {
+      "id": "S1B",
+      "sequence": 2,
+      "predecessor": {
+        "id": "S1A",
+        "reviewPath": "docs/panel-v3/reviews/S1A-review.json",
+        "reviewSHA256": "031df1011c43da22de7ccb3188eb67dc2142fec6a4230098da7c064ebcd2fe85",
+        "status": "accepted_narrow"
+      },
+      "round": 1,
+      "title": "Reference cancellation needs a stable, sensitive chain",
+      "status": "accepted_narrow",
+      "evidenceType": "synthetic",
+      "question": "How do a near-notch and one-sample path change break reference division?",
+      "finding": "Reference cancellation in the declared stable fixture is exact; a one-sample path change mimics an object change, while regularization bounds noise at the cost of calculable bias.",
+      "scope": "H0=D(1+0.98 exp(-40iw)); D=.7+.2 exp(-iw)+.1 exp(-2iw); T=1-.3 exp(-4iw); Y=H0*T+eta",
+      "withheld": [
+        "A universal physical stability or sensitivity threshold",
+        "A recovered material transfer in an uncontrolled room",
+        "Regularization as removal of uncertainty"
+      ],
+      "incomingEvidence": "S1A total-transfer recovery did not identify factorization; practical comparison requires shared stable chain and nonzero sensitivity.",
+      "nextDecision": "S2A: investigate gain-independent single-mode decay from generated PCM and provide recorded-file intake.",
+      "metrics": {
+        "noiseless_max_error": 4.545902364027965e-16,
+        "eligible_fraction": 0.9311967068509261,
+        "masked_noise_max_error": 0.013328498443604338,
+        "unmasked_noise_max_error": 0.17982534875354192,
+        "regularized_noise_max_error": 0.04999995397180092,
+        "regularized_bias_max": 0.9834996986562441,
+        "regularized_gain_max": 24.99997698590046,
+        "bias_identity_error": 7.813354239747122e-16,
+        "moved_blank_false_change_max": 6.868324734872373,
+        "minimum_H0_magnitude": 0.011121902522992373
+      },
+      "sources": [
+        "V3-FARINA2000",
+        "V3-SMITH-COMB"
+      ],
+      "contractPath": "research/sound-lab-v3/S1B/contract.json",
+      "resultsPath": "research/sound-lab-v3/S1B/results.json",
+      "reviewPath": "docs/panel-v3/reviews/S1B-review.json",
+      "reportPath": "research/sound-lab-v3/S1B/report.md",
+      "figurePaths": [
+        "research/sound-lab-v3/S1B/figure.svg"
+      ],
+      "rawPaths": [
+        "research/sound-lab-v3/S1B/response.csv"
+      ],
+      "resultSHA256": "294c6d604991a4d39b721744c7eae1064f203fd39e33590319a830252dd9583b",
+      "contractSHA256": "9b2d4a8ba8af5913ecbee166a4e6fa0a7d56c99aebc1432be011d95b15259301",
+      "independentChecks": {
+        "independent_formula_max_error": 1.2913594257943629e-13,
+        "excluded_bins": 234,
+        "masked_noise_error": 0.013328498443604423,
+        "unmasked_noise_error": 0.17982534875354972,
+        "regularized_noise_bound_attained": 0.049999953971800924,
+        "regularized_bias_max": 0.9834996986562234,
+        "moved_blank_masked_max": 6.868324734872397,
+        "moved_blank_unmasked_max": 96.11695747952739,
+        "proof": "(a-sqrt(lambda))^2>=0 implies a/(a^2+lambda)<=1/(2sqrt(lambda)); error separates exact bias and bounded-noise term."
+      }
+    },
+    {
+      "id": "S2A",
+      "sequence": 3,
+      "predecessor": {
+        "id": "S1B",
+        "reviewPath": "docs/panel-v3/reviews/S1B-review.json",
+        "reviewSHA256": "5c1b18432eb9ada5371c21b180a84d14ed11a4f4e75adda0e97d905c4f435235",
+        "status": "accepted_narrow"
+      },
+      "round": 2,
+      "title": "Fit decay from a file, independently of strike gain",
+      "status": "accepted_narrow",
+      "evidenceType": "actualbytes",
+      "question": "Can one shared recording importer recover a declared single-mode decay from quantized WAV at different gains and phases?",
+      "finding": "One shared WAV importer/local fitter recovers the declared 500 Hz, 4 s^-1 decay across generated PCM gain/phase cases; silent and clipped files are rejected.",
+      "scope": "y(t)=g exp(-alpha t) cos(2pi f t+phase); fit exp(-alpha t)[A cos(2pi ft)+B sin(2pi ft)]+offset by variable projection",
+      "withheld": [
+        "Physical tap recordings",
+        "Intrinsic material damping",
+        "Global identification of arbitrary audio from a local fit"
+      ],
+      "incomingEvidence": "S1B exposed drive-chain instability; a free-decay rate can cancel constant gain but receiver dynamics and multiple modes remain unresolved.",
+      "nextDecision": "S2B: test mode overlap, noise and exact exponential-gain/decay ambiguity using the same frozen importer.",
+      "metrics": {
+        "max_alpha_error_per_s": 3.3449363301407686e-05,
+        "max_frequency_error_Hz": 5.110187203172245e-06,
+        "max_normalized_residual": 0.0003491425522215834,
+        "silence_rejected": true,
+        "clipping_rejected": true,
+        "clipped_sample_count": 97
+      },
+      "sources": [
+        "V3-FEYN23",
+        "V3-W3C-CAPTURE"
+      ],
+      "contractPath": "research/sound-lab-v3/S2A/contract.json",
+      "resultsPath": "research/sound-lab-v3/S2A/results.json",
+      "reviewPath": "docs/panel-v3/reviews/S2A-review.json",
+      "reportPath": "research/sound-lab-v3/S2A/report.md",
+      "figurePaths": [
+        "research/sound-lab-v3/S2A/figure.svg"
+      ],
+      "rawPaths": [
+        "research/sound-lab-v3/S2A/fit4.csv",
+        "research/sound-lab-v3/S2A/fit1.csv",
+        "research/sound-lab-v3/S2A/fit0.csv",
+        "research/sound-lab-v3/S2A/fit3.csv",
+        "research/sound-lab-v3/S2A/fits.csv",
+        "research/sound-lab-v3/S2A/fit2.csv"
+      ],
+      "resultSHA256": "de38f74360560c41c4b766a7eb2f23f52f4607bb924ce7fba2b18fe3488db1b4",
+      "contractSHA256": "5bc07ebfe83014412fc43e840bba62569909b6be7526053bba15490ab54718d0",
+      "independentChecks": {
+        "independent_estimators": [
+          {
+            "case": 0,
+            "cycle_shift_alpha_per_s": 3.999830730034494,
+            "zero_crossing_frequency_Hz": 500.0,
+            "residual_recomputed": 0.0003491425522215834,
+            "max_PCM_quantization_error": 1.5257912480857658e-05
+          },
+          {
+            "case": 1,
+            "cycle_shift_alpha_per_s": 4.000108434335776,
+            "zero_crossing_frequency_Hz": 500.00018629581666,
+            "residual_recomputed": 0.0001873932535847031,
+            "max_PCM_quantization_error": 1.525867767414031e-05
+          },
+          {
+            "case": 2,
+            "cycle_shift_alpha_per_s": 4.000173278260191,
+            "zero_crossing_frequency_Hz": 500.0001656805263,
+            "residual_recomputed": 0.00012479678595495155,
+            "max_PCM_quantization_error": 1.525814389653421e-05
+          }
+        ],
+        "silent_and_97_sample_clipping_rejections_verified": true,
+        "proof": "With a 16-sample period y[n+16]=exp(-4*16/8000)y[n]; constant gain and phase cancel in the ratio, whereas time-varying gain need not."
+      }
+    },
+    {
+      "id": "S2B",
+      "sequence": 4,
+      "predecessor": {
+        "id": "S2A",
+        "reviewPath": "docs/panel-v3/reviews/S2A-review.json",
+        "reviewSHA256": "0402ccf831c6f51698424e831f0dc9c65c6c6427ecb8bd5417b47589785cdbbf",
+        "status": "accepted_narrow"
+      },
+      "round": 2,
+      "title": "A good decay fit can still describe recording gain",
+      "status": "accepted_narrow",
+      "evidenceType": "actualbytes",
+      "question": "Which model failures can residuals and window changes detect, and which remain exactly ambiguous?",
+      "finding": "The fixture detects overlapping modes through large residuals, but exponential gain and a different decay generate byte-identical recordings; a low residual cannot resolve that ambiguity.",
+      "scope": "Base=.2 exp(-4t)cos(2pi500t); overlap adds .06exp(-1.5t)cos(2pi512t); gain-drift multiplies base by exp(2t); alternate physical decay is .2exp(-2t)cos(2pi500t)",
+      "withheld": [
+        "Every bad recording is caught by the 5% fixture flag",
+        "Intrinsic damping identified from an uncalibrated record",
+        "Exponential gain as a universal phone-AGC model"
+      ],
+      "incomingEvidence": "S2A gained amplitude/phase robustness only under a single-mode, fixed-gain model. S1B already showed shared-chain assumptions can fail.",
+      "nextDecision": "S3A: add spatial complex observations; distinguish magnitude-only ambiguity from known-basis coefficient recovery.",
+      "metrics": {
+        "ambiguity_prequantization_max_FS": 5.551115123125783e-17,
+        "ambiguous_PCM_identical": true,
+        "gain_drift_apparent_alpha_per_s": 1.999999616438241,
+        "overlap_alpha_early_per_s": 4.165378124271129,
+        "overlap_alpha_late_per_s": 3.7176503698881183,
+        "overlap_residual_early": 0.45606892529745285,
+        "noise_residual_late": 0.04446423532506546,
+        "flagged_fits": 2,
+        "fits_total": 10
+      },
+      "sources": [
+        "V3-FEYN23",
+        "V3-W3C-CAPTURE"
+      ],
+      "contractPath": "research/sound-lab-v3/S2B/contract.json",
+      "resultsPath": "research/sound-lab-v3/S2B/results.json",
+      "reviewPath": "docs/panel-v3/reviews/S2B-review.json",
+      "reportPath": "research/sound-lab-v3/S2B/report.md",
+      "figurePaths": [
+        "research/sound-lab-v3/S2B/figure.svg"
+      ],
+      "rawPaths": [
+        "research/sound-lab-v3/S2B/noise_1.csv",
+        "research/sound-lab-v3/S2B/overlap_1.csv",
+        "research/sound-lab-v3/S2B/gain_drift_1.csv",
+        "research/sound-lab-v3/S2B/noise_0.csv",
+        "research/sound-lab-v3/S2B/gain_drift_0.csv",
+        "research/sound-lab-v3/S2B/true_alpha2_0.csv",
+        "research/sound-lab-v3/S2B/true_alpha2_1.csv",
+        "research/sound-lab-v3/S2B/clean_1.csv",
+        "research/sound-lab-v3/S2B/clean_0.csv",
+        "research/sound-lab-v3/S2B/fits.csv",
+        "research/sound-lab-v3/S2B/overlap_0.csv"
+      ],
+      "resultSHA256": "026e713ca82778c5f73145e298bac277a209ac839b203ca75735b090c02ad931",
+      "contractSHA256": "732f628b96932a9212a8308a93269fe0372ccbcdb73c4872539ec39203e51927",
+      "independentChecks": {
+        "PCM_identity": true,
+        "independent_cycle_shift_alpha": 1.9999678223820878,
+        "residuals_independently_recounted": [
+          0.00017466757155726076,
+          0.0003659111123399337,
+          0.45606892529745285,
+          0.6293318470427879,
+          0.00011338254158032878,
+          0.00017358617172854752,
+          0.00011338254158032878,
+          0.00017358617172854752,
+          0.021194444364918786,
+          0.044464235325065465
+        ],
+        "flagged_count": 2,
+        "proof": "For all real t, exp(2t)*[.2 exp(-4t) cos(1000pi t)]=.2 exp(-2t)cos(1000pi t). Identical samples force identical outcomes for every deterministic recording-only estimator."
+      }
+    },
+    {
+      "id": "S3A",
+      "sequence": 5,
+      "predecessor": {
+        "id": "S2B",
+        "reviewPath": "docs/panel-v3/reviews/S2B-review.json",
+        "reviewSHA256": "5468ed5191215d13b7a7b639f6bafc9da5be9b39dc43be138e366e8dc0d296b3",
+        "status": "accepted_narrow"
+      },
+      "round": 3,
+      "title": "Preserve the original recording during analysis",
+      "status": "accepted_narrow",
+      "evidenceType": "actualbytes",
+      "question": "Can a versioned importer preserve source evidence while giving equivalent WAV and CSV analysis?",
+      "finding": "A versioned intake preserves raw files and existing outputs, rejects invalid CSV channels and source/symlink collisions, and gives identical decoded WAV/CSV traces.",
+      "scope": "Protected filesystem admission around the frozen S2A single-mode fitter; this is software/metrology verification, not new physics",
+      "withheld": [
+        "Source authenticity from a hash",
+        "Acoustic calibration from file integrity",
+        "Safety of using the old frozen CLI as a current entry point"
+      ],
+      "incomingEvidence": "Root review identified historical CLI raw-CSV overwrite risk and ignored CSV channel argument. Advisor replaced the unexecuted geometry candidate with this practical defect repair.",
+      "nextDecision": "S3B: test timebase metadata and clock-scale ambiguity using identical PCM samples with declared versus corrected times.",
+      "metrics": {
+        "valid_trace_max_difference_FS": 0.0,
+        "valid_alpha_difference_per_s": 0.0,
+        "valid_frequency_difference_Hz": 0.0,
+        "rejected_cases": 4,
+        "protected_sources": 4,
+        "protected_sentinels": 4
+      },
+      "sources": [
+        "V3-W3C-CAPTURE"
+      ],
+      "contractPath": "research/sound-lab-v3/S3A/contract.json",
+      "resultsPath": "research/sound-lab-v3/S3A/results.json",
+      "reviewPath": "docs/panel-v3/reviews/S3A-review.json",
+      "reportPath": "research/sound-lab-v3/S3A/report.md",
+      "figurePaths": [
+        "research/sound-lab-v3/S3A/figure.svg"
+      ],
+      "rawPaths": [
+        "research/sound-lab-v3/S3A/admission.csv",
+        "research/sound-lab-v3/S3A/accepted_wav.csv",
+        "research/sound-lab-v3/S3A/source.csv",
+        "research/sound-lab-v3/S3A/accepted_csv.csv"
+      ],
+      "resultSHA256": "23070a524c0eb4b7d55ac145bed1bb1f6563912bbeefecb55962912e7e8c12b5",
+      "contractSHA256": "50edeb39d806519683c1f8da23e748432fd8436cd6e64f9490889e2b5abf1c7e",
+      "independentChecks": {
+        "independent_CLI_cases": {
+          "source_collision_rejected": true,
+          "existing_output_preserved": true,
+          "invalid_csv_channel_rejected": true,
+          "symlink_collision_rejected": true,
+          "valid_analysis_preserved_raw": true,
+          "provenance_remains_unverified": true
+        },
+        "accepted_WAV_CSV_trace_byte_identity": true,
+        "scope": "Integrity and channel admission of declared files; neither source authenticity nor physical calibration."
+      }
+    },
+    {
+      "id": "S3B",
+      "sequence": 6,
+      "predecessor": {
+        "id": "S3A",
+        "reviewPath": "docs/panel-v3/reviews/S3A-review.json",
+        "reviewSHA256": "40b9e7acb98d910b4f6cf7da590dc185f2ee91d926cdf43b385158f9c65c1b70",
+        "status": "accepted_narrow"
+      },
+      "round": 3,
+      "title": "The time axis is a calibration premise",
+      "status": "accepted_narrow",
+      "evidenceType": "actualbytes",
+      "question": "Can identical samples yield different absolute decay and frequency under different clock labels?",
+      "finding": "Identical samples give proportionally different absolute frequency and decay under a changed timebase; an independently known reference conditionally fixes the scale. The repaired timestamp test now exercises timestamp validation.",
+      "scope": "t_true=n/8016; t_header=n/8000; f_apparent=f_true*8000/8016; alpha_apparent=alpha_true*8000/8016",
+      "withheld": [
+        "Actual phone-clock calibration",
+        "A same-clock tone as an independent reference",
+        "Low residual as proof of correct physical time",
+        "An untested nonuniform-time control from the preserved first attempt"
+      ],
+      "incomingEvidence": "S3A preserved sample bytes but treats header/timestamp timing as input. S2B established low residuals cannot certify physical interpretation.",
+      "nextDecision": "S4A: test what an additional phase-referenced spatial observation can identify in a declared 1D wave model.",
+      "metrics": {
+        "apparent_frequency_Hz": 499.0019960514766,
+        "apparent_alpha_per_s": 3.992026003459423,
+        "correct_time_frequency_Hz": 500.000000047513,
+        "correct_time_alpha_per_s": 4.000010515434883,
+        "reference_estimated_clock_scale": 1.0020000003629423,
+        "reference_corrected_frequency_Hz": 500.000000228622,
+        "reference_corrected_alpha_per_s": 4.000010516883766,
+        "reference_boundary_flag": true,
+        "invalid_cases_rejected": 4,
+        "identical_amplitudes": true
+      },
+      "sources": [
+        "V3-FARINA2000",
+        "V3-W3C-CAPTURE"
+      ],
+      "contractPath": "research/sound-lab-v3/S3B/contract.json",
+      "resultsPath": "research/sound-lab-v3/S3B/results.json",
+      "reviewPath": "docs/panel-v3/reviews/S3B-review.json",
+      "reportPath": "research/sound-lab-v3/S3B/report.md",
+      "figurePaths": [
+        "research/sound-lab-v3/S3B/figure.svg"
+      ],
+      "rawPaths": [
+        "research/sound-lab-v3/S3B/correct_time.csv",
+        "research/sound-lab-v3/S3B/correct_time_csv_fit.csv",
+        "research/sound-lab-v3/S3B/wrong_header_wav_fit.csv",
+        "research/sound-lab-v3/S3B/reference_corrected_csv_fit.csv",
+        "research/sound-lab-v3/S3B/null8000_wav_fit.csv",
+        "research/sound-lab-v3/S3B/reference_corrected.csv",
+        "research/sound-lab-v3/S3B/fits.csv"
+      ],
+      "resultSHA256": "35629ac07e41d53496bb87acd8841357e96e0e11e874515fd6a4e95e2d3f09e5",
+      "contractSHA256": "53abd3e96cc9676df860f2c79306899964b44279732d79eee328cd96a20bf26b",
+      "independentChecks": {
+        "same_amplitudes": true,
+        "time_axis_max_error_s": 0.0,
+        "analytic_apparent_frequency_Hz": 499.001996007984,
+        "analytic_apparent_alpha_per_s": 3.992015968063872,
+        "independent_reference_zero_crossing_Hz": 998.0035592007741,
+        "independent_nonuniform_gate_exercised": true,
+        "proof": "Samples depend only on alpha/Fs_actual and f/Fs_actual. Scaling (alpha,f,Fs_actual) together leaves every sample unchanged. A timebase or independent frequency reference fixes this scale only by adding a premise."
+      }
+    },
+    {
+      "id": "S4A",
+      "sequence": 7,
+      "predecessor": {
+        "id": "S3B",
+        "reviewPath": "docs/panel-v3/reviews/S3B-review.json",
+        "reviewSHA256": "75f964e35fe41fbc606d0774c9ee423607ba9343bb52d5325eaf432b46472c13",
+        "status": "accepted_narrow"
+      },
+      "round": 4,
+      "title": "A spatial magnitude map loses phase and direction",
+      "status": "accepted_narrow",
+      "evidenceType": "synthetic",
+      "question": "What changes when a magnitude map is replaced by independent phase-referenced spatial samples?",
+      "finding": "Dense magnitude observations retain exact global-phase and conjugate-swap ambiguities; two quarter-wave-spaced complex samples recover coefficients only in the declared known-basis, shared-phase model.",
+      "scope": "p(x)=A exp(-ikx)+B exp(ikx); k=2pi f/c; partner coefficients(B*,A*) give conjugate p; global phase multiplies p without changing magnitude",
+      "withheld": [
+        "Unique material or source identity",
+        "A conjugate partner satisfying an independently fixed incident-direction/passivity constraint",
+        "Automatic phase reference across sequential phone recordings"
+      ],
+      "incomingEvidence": "S2B/S3B scalar fits required gain/timebase premises. This loop adds an independent spatial/phase observable instead of another scalar fit.",
+      "nextDecision": "S4B: test spatial inverse conditioning, explicit singular kernels and an independently held-out phase observation.",
+      "metrics": {
+        "magnitude_partner_max_error": 0.0,
+        "common_phase_magnitude_max_error": 1.7763568394002505e-15,
+        "single_complex_domain_dimension": 2,
+        "single_complex_rank": 1,
+        "single_complex_nullity": 1,
+        "kernel_residual": 0.0,
+        "two_sample_rank": 2,
+        "two_sample_nullity": 0,
+        "two_sample_condition": 1.0000000000000004,
+        "two_sample_coefficient_error": 5.551115123125783e-17,
+        "wavelength_m": 0.686,
+        "quarter_wavelength_m": 0.1715,
+        "coefficient_ratio_original": 0.6,
+        "coefficient_ratio_partner": 1.6666666666666665
+      },
+      "sources": [
+        "V3-FEYN49",
+        "V3-FEYN23"
+      ],
+      "contractPath": "research/sound-lab-v3/S4A/contract.json",
+      "resultsPath": "research/sound-lab-v3/S4A/results.json",
+      "reviewPath": "docs/panel-v3/reviews/S4A-review.json",
+      "reportPath": "research/sound-lab-v3/S4A/report.md",
+      "figurePaths": [
+        "research/sound-lab-v3/S4A/figure.svg"
+      ],
+      "rawPaths": [
+        "research/sound-lab-v3/S4A/spatial_response.csv",
+        "research/sound-lab-v3/S4A/observations.csv"
+      ],
+      "resultSHA256": "293512816c014cccfb140bbf96f7de994e42c0800c9c0ed246ab31e6b40d2882",
+      "contractSHA256": "396c9a9846e212cff8232ae7fe7d3aad8c47110b79c85a73ba25974c129554a1",
+      "independentChecks": {
+        "whole_table_polynomial_error": 4.577566798522237e-16,
+        "closed_form_A": [
+          1.0,
+          5.551115123125783e-17
+        ],
+        "closed_form_B": [
+          0.45890531237069304,
+          0.38653061234261454
+        ],
+        "domain_dimension_complex": 2,
+        "single_sample_rank": 1,
+        "single_sample_nullity": 1,
+        "kernel": [
+          1,
+          -1
+        ],
+        "two_sample_determinant": "2i",
+        "two_sample_Gram": "2I",
+        "proof": "Conjugate-swapping A,B conjugates p(x), preserving |p| for all x. Multiplying both by exp(i phi) also preserves |p|. At quarter wavelength, the explicit inverse recovers complex coefficients only with the assumed basis and phase reference."
+      }
+    },
+    {
+      "id": "S4B",
+      "sequence": 8,
+      "predecessor": {
+        "id": "S4A",
+        "reviewPath": "docs/panel-v3/reviews/S4A-review.json",
+        "reviewSHA256": "9a62a662449aeb33a18417be3cedb202349165ce17c4a533fc86bc0b421385a9",
+        "status": "accepted_narrow"
+      },
+      "round": 4,
+      "title": "Spacing and a withheld position test the spatial inverse",
+      "status": "accepted_narrow",
+      "evidenceType": "synthetic",
+      "question": "When does a second spatial sample add stable information, and can a withheld sample expose phase drift?",
+      "finding": "Spatial inverse conditioning depends on separation; a two-point exact fit can hide channel phase drift while an independent withheld point exposes this declared mismatch.",
+      "scope": "M(x)=[exp(-ikx),exp(ikx)]; singular values sqrt(2\u00b12|cos(kDelta)|); norm-bounded noise eta U_min gives coefficient error eta/sigma_min",
+      "withheld": [
+        "Phase calibration of an ordinary phone",
+        "A third channel certifying every model assumption",
+        "Worst-case noise as an empirical microphone distribution"
+      ],
+      "incomingEvidence": "S4A ideal quarter-wave inversion succeeded, but actual positions/phase/noise determine whether its extra channel is informative.",
+      "nextDecision": "S5A: choose a feasible scalar sound bench with interleaved support/reference observations; test finite-order drift cancellation before a complete recorded-file dry run.",
+      "metrics": {
+        "worst_fullrank_condition": 318.30883898555044,
+        "quarterwave_condition": 1.0000000000000002,
+        "worst_coefficient_L2_error": 0.159155204891585,
+        "quarterwave_coefficient_L2_error": 0.0007071067811865044,
+        "singular_cases_not_inverted": 2,
+        "two_sample_fit_residual": 5.551115123125783e-17,
+        "heldout_phase_drift_error": 0.023507904525623263,
+        "three_sample_residual_L2": 0.0166225987015542,
+        "global_phase_residual_L2": 4.1910000110727263e-16
+      },
+      "sources": [
+        "V3-FEYN49",
+        "V3-FEYN23"
+      ],
+      "contractPath": "research/sound-lab-v3/S4B/contract.json",
+      "resultsPath": "research/sound-lab-v3/S4B/results.json",
+      "reviewPath": "docs/panel-v3/reviews/S4B-review.json",
+      "reportPath": "research/sound-lab-v3/S4B/report.md",
+      "figurePaths": [
+        "research/sound-lab-v3/S4B/figure.svg"
+      ],
+      "rawPaths": [
+        "research/sound-lab-v3/S4B/phase_observations.csv",
+        "research/sound-lab-v3/S4B/noise_observations.csv",
+        "research/sound-lab-v3/S4B/conditioning.csv"
+      ],
+      "resultSHA256": "6864b5015057c0370d87eb9cc222dc173bca8e820a25961be0734e809e57962b",
+      "contractSHA256": "db0704506343bb3aa133e558c112fdc545590565d21db51c21064fd07d58eb5d",
+      "independentChecks": {
+        "singular_cases_with_kernel_not_inverted": 2,
+        "worst_case_noise_error_identity_max_error": 5.169475958410885e-16,
+        "independent_heldout_error": 0.023507904525623232,
+        "independent_three_sample_residual": 0.0166225987015542,
+        "proof": "Gram eigenvalues are 2 +/- 2|cos(theta)|. At the withheld eighth wavelength, p_h=(p_0+p_quarter)/sqrt(2); a drift delta only at the second point causes heldout error |delta|/sqrt(2) and least-squares residual |delta|/2."
+      }
+    },
+    {
+      "id": "S5A",
+      "sequence": 9,
+      "predecessor": {
+        "id": "S4B",
+        "reviewPath": "docs/panel-v3/reviews/S4B-review.json",
+        "reviewSHA256": "79e1f0c1082362d74fd2297c98a49930878dd276e470fac36ba0f12e67543daf",
+        "status": "accepted_narrow"
+      },
+      "round": 5,
+      "title": "Counterbalance the household comparison before recording",
+      "status": "accepted_narrow",
+      "evidenceType": "actualbytes",
+      "question": "Does a balanced trial order remove a declared recording drift, and which condition-linked rival remains?",
+      "finding": "Balanced ABBA/BAAB order cancels the declared linear acquisition drift in positive and zero-effect generated tap fixtures; it does not distinguish an exactly equivalent condition-linked gain rival.",
+      "scope": "alpha_recorded=4+Delta*B-.08*j; amplitude g exp(-alpha_recorded*t)cos(2pi500t); rival intrinsicDelta0 plus condition-linked gain exp(-2B*t) has identical samples toDelta2",
+      "withheld": [
+        "A physical spoon measurement",
+        "Intrinsic material change from the fitted contrast",
+        "Protection against arbitrary drift or condition-linked nuisance",
+        "Public demo labels providing blinding"
+      ],
+      "incomingEvidence": "S4B complex inversion needed phase hardware absent from an ordinary-phone bench. Final round prioritizes a preregistered spoon-support comparison and reproducible data intake.",
+      "nextDecision": "S5B: validate the complete manifest-driven recording dry run, retaining excluded trials and withholding the primary contrast when the planned comparison is incomplete.",
+      "metrics": {
+        "blocked_effect_contrast_per_s": 1.3600118176897875,
+        "blocked_null_contrast_per_s": -0.6399804674200866,
+        "balanced_effect_contrast_per_s": 1.9999924047620392,
+        "balanced_null_contrast_per_s": -1.0901747931502115e-05,
+        "max_trial_alpha_error_per_s": 5.449122547540597e-05,
+        "trials_fitted": 64,
+        "rival_identical_trials": 16,
+        "rival_max_difference_FS": 8.326672684688674e-17
+      },
+      "sources": [
+        "V3-W3C-CAPTURE",
+        "V3-FEYN23"
+      ],
+      "contractPath": "research/sound-lab-v3/S5A/contract.json",
+      "resultsPath": "research/sound-lab-v3/S5A/results.json",
+      "reviewPath": "docs/panel-v3/reviews/S5A-review.json",
+      "reportPath": "research/sound-lab-v3/S5A/report.md",
+      "figurePaths": [
+        "research/sound-lab-v3/S5A/figure.svg"
+      ],
+      "rawPaths": [
+        "research/sound-lab-v3/S5A/trial-template.csv",
+        "research/sound-lab-v3/S5A/trial-fits.csv",
+        "research/sound-lab-v3/S5A/example-fit.csv"
+      ],
+      "resultSHA256": "1e0f7b25662a368e56a9d745d0a0f723aee5f25fcfb0193049e056a9ca5482b4",
+      "contractSHA256": "5feab4c934533c61bb39875aa2eab96bd8fd8dd9827974db026ea61fecd2d194",
+      "independentChecks": {
+        "independent_cycle_rate_max_error_per_s": 0.0004068947287203528,
+        "all_64_PCM_quantization_max_error": 1.5258776246453165e-05,
+        "order_mean_differences_B_minus_A": {
+          "blocked_effect": 8.0,
+          "blocked_null": 8.0,
+          "balanced_effect": 0.0,
+          "balanced_null": 0.0
+        },
+        "recounted_contrasts_per_s": {
+          "blocked_effect": 1.3600118176897884,
+          "blocked_null": -0.6399804674200866,
+          "balanced_effect": 1.9999924047620392,
+          "balanced_null": -1.0901747931502115e-05
+        },
+        "saved_rival_byte_identity": true,
+        "proof": "The contrast equals Delta - .08*(mean order_B-mean order_A): gaps8 and0 yield blocked bias-.64 and balanced zero. Multiplying a Delta=0 signal by exp(-2*B*t) gives the Delta=2 signal identically, so order balance cannot remove that condition-linked rival."
+      }
+    },
+    {
+      "id": "S5B",
+      "sequence": 10,
+      "predecessor": {
+        "id": "S5A",
+        "reviewPath": "docs/panel-v3/reviews/S5A-review.json",
+        "reviewSHA256": "d57be1f2e2e75a4e4a4b3b7e22babdf89479f8925bd3a434c13e101481e6289c",
+        "status": "accepted_narrow"
+      },
+      "round": 5,
+      "title": "Run the full plan and report every exclusion",
+      "status": "accepted_narrow",
+      "evidenceType": "actualbytes",
+      "question": "Can a strict batch workflow preserve evidence, align impacts, and withhold a primary result for an incomplete plan?",
+      "finding": "The complete generated-file plan yields its declared recorded-channel contrast; impact alignment is exercised, raw files are preserved, and incomplete or malformed plans cannot produce a primary result.",
+      "scope": "Frozen trial IDs/order/condition, required declared acquisition metadata, SHA-256 admission, impact-relative single-mode fits through unchanged intake_v2; only all planned eligible trials produce primary contrast",
+      "withheld": [
+        "A physical bench study",
+        "Metadata or hashes authenticating acoustic calibration",
+        "An incomplete survivor contrast substituted for the locked primary",
+        "Sound effects implying consciousness or a metaphysical source"
+      ],
+      "incomingEvidence": "S5A balanced order corrected only declared order drift. The final workflow must preserve every raw trial and avoid silently replacing incomplete preregistered results with selected survivors.",
+      "nextDecision": "B1: after the completed sound program, freeze exact reporter/prior/leak joint distributions and test apparent independent corroboration.",
+      "metrics": {
+        "complete_primary_contrast_per_s": 1.9999924047717514,
+        "complete_eligible_trials": 16,
+        "aligned_first_trial_alpha_per_s": 4.000004461219956,
+        "aligned_fit_window_start_s": 1.05,
+        "wrong_impact_rejected": true,
+        "incomplete_primary_results_withheld": 4,
+        "global_admission_rejections": 6,
+        "raw_files_preserved": 19,
+        "existing_output_preserved": true
+      },
+      "sources": [
+        "V3-W3C-CAPTURE",
+        "V3-FEYN23",
+        "V3-FARINA2000"
+      ],
+      "contractPath": "research/sound-lab-v3/S5B/contract.json",
+      "resultsPath": "research/sound-lab-v3/S5B/results.json",
+      "reviewPath": "docs/panel-v3/reviews/S5B-review.json",
+      "reportPath": "research/sound-lab-v3/S5B/report.md",
+      "figurePaths": [
+        "research/sound-lab-v3/S5B/figure.svg"
+      ],
+      "rawPaths": [
+        "research/sound-lab-v3/S5B/admission.csv",
+        "research/sound-lab-v3/S5B/example-aligned-fit.csv"
+      ],
+      "resultSHA256": "daddf1aa01e5f82a2964691bf603580a8fbdf321bc85676f8885eeb4ad84c865",
+      "contractSHA256": "ae7307a65bc25c0c133e3760c3d9881922d41dfd1fc57ee3bd7035eaadb86108",
+      "independentChecks": {
+        "independent_complete_contrast_per_s": 1.9999924047717514,
+        "all_19_raw_hashes_verified": true,
+        "padded_samples_exact_and_absolute_window_checked": true,
+        "four_incomplete_primary_results_withheld": true,
+        "existing_output_preserved_independently": true,
+        "independent_pre_output_plan_rejections": {
+          "empty": "Plan must contain at least one trial",
+          "A_only": "Plan must contain both A and B conditions"
+        },
+        "repair": "Initial S5B empty/one-condition-plan admission was rejected during review; original evidence and implementation are retained under pre-review/."
+      }
+    },
+    {
+      "id": "B1",
+      "sequence": 11,
+      "predecessor": {
+        "id": "S5B",
+        "reviewPath": "docs/panel-v3/reviews/S5B-review.json",
+        "reviewSHA256": "cb0ffdc3412304e636d980e997a43ba8c70ad4da4b182379325d6df1cdaf2d8d",
+        "status": "accepted_narrow"
+      },
+      "round": 1,
+      "title": "Agreement is not additional information",
+      "status": "accepted_narrow",
+      "evidenceType": "synthetic",
+      "question": "Can target-prior imbalance and common reporters mimic corroboration, and does a second report add target information?",
+      "finding": "Prior-biased agreeing reporters can contain zero target information; copied reports add no conditional information, while independent informative reports do. An identically specified receiver and ordinary leak remain observationally equivalent.",
+      "scope": "Exact P(T,A,B), T,A,B in {0,1,2,3}. L(r|t)=lambda*1[r=t]+(1-lambda)/4. The conditional receiver map with kappa=lambda equals the ordinary leak map by construction.",
+      "withheld": [
+        "Measured AI or human behavior",
+        "AI consciousness predicting concealed-target knowledge",
+        "A positive score identifying a higher source",
+        "IID binomial calibration for a study-level shared latent or a balanced-block target design"
+      ],
+      "incomingEvidence": "S5A condition-linked gain and S5B metadata show that matching observations and declared labels do not identify mechanism or custody. B1 examines the analogous prior/common-reporter/leak ambiguity. Original R6 covered uniform target hits and optional stopping, not this joint-information map.",
+      "nextDecision": "B2: freeze a finite balanced randomization and scoring family; compare prespecified, post-selected and max-calibrated scores with an untouched holdout.",
+      "metrics": {
+        "weighted_joint_states": 448,
+        "binomial_states": 243,
+        "biased_majority_hit_rate": 0.55,
+        "biased_majority_agreement": 1.0,
+        "biased_majority_target_information_bits": 0.0,
+        "biased_common_random_hit_rate": 0.37,
+        "copied_leak_target_information_bits": 0.020414189482053487,
+        "copied_leak_added_information_bits": 0.0,
+        "independent_leak_added_information_bits": 0.020199203097989234,
+        "incorrect_uniform_cutoff": 27,
+        "biased_majority_wrong_baseline_rejection": 0.9999590175010924,
+        "common_random_wrong_baseline_rejection": 0.7619489695483855,
+        "receiver_leak_total_variation": 0.0,
+        "max_information_chain_error_bits": 1.3877787807814457e-17
+      },
+      "sources": [
+        "C-BASHAR-ANKA2014",
+        "C-BASHAR-AI-OFFICIAL",
+        "C-BASHAR-INDEX",
+        "C-GATEWAY1983",
+        "C-AIR1995",
+        "C-ATLAS-PRIOR"
+      ],
+      "contractPath": "research/consciousness-v3/round1/contract.json",
+      "resultsPath": "research/consciousness-v3/round1/results.json",
+      "reviewPath": "docs/panel-v3/reviews/B1-review.json",
+      "reportPath": "research/consciousness-v3/round1/report.md",
+      "figurePaths": [
+        "research/consciousness-v3/round1/figure.svg"
+      ],
+      "rawPaths": [
+        "research/consciousness-v3/round1/joint_states.csv",
+        "research/consciousness-v3/round1/binomial_nulls.csv"
+      ],
+      "resultSHA256": "7c29684fedfc1f60b46ef1e9e93d29435ce9b85083a164ac6135655577841cae",
+      "contractSHA256": "73837d1ffc62381dcd405bc9679dc9454bed63280487f3fceea7510f90b30776",
+      "independentChecks": {
+        "exact_joint_states_checked": 448,
+        "exact_binomial_masses_and_tails_checked": 243,
+        "information_entropy_formula_max_error_bits": 8.604228440844963e-16,
+        "integer_denominator": 6400,
+        "cutoffs": {
+          "1/4": 27,
+          "11/20": 52,
+          "37/100": 38
+        },
+        "wrong_baseline_rejection": {
+          "1/4": 0.04988717837499807,
+          "11/20": 0.9999590175010924,
+          "37/100": 0.7619489695483855
+        },
+        "proof": "Integer weights over6400 exactly determine the single-trial joint law. B=A makes conditional added information zero; informative conditionally independent reports add information. Relabeling the identical copied-leak distribution as a receiver does not identify its cause. Binomial tails assume independent repeated trials."
+      }
+    },
+    {
+      "id": "B2",
+      "sequence": 12,
+      "predecessor": {
+        "id": "B1",
+        "reviewPath": "docs/panel-v3/reviews/B1-review.json",
+        "reviewSHA256": "680bfe9661740ecbd2ddd2be9a41c34a899fee2ef5566c9d8a326b41386a49ca",
+        "status": "accepted_narrow"
+      },
+      "round": 2,
+      "title": "Freeze the correspondence before the holdout",
+      "status": "accepted_narrow",
+      "evidenceType": "synthetic",
+      "question": "How much apparent correspondence arises from selecting among four correlated semantic scoring rules, and does that selection survive an independent balanced holdout?",
+      "finding": "Choosing the best cyclic scoring rule raises the discovery score and its achieved rejection rate relative to a fixed rule; an independent holdout returns to mean8. In this discrete fixture, naive-selected and max-calibrated rejection rates coincide below nominal5%.",
+      "scope": "Exact uniform distribution over 2520 permutations of balanced target labels. Four cyclic scoring matrices use 2 for an exact shifted label, 1 for either adjacent cyclic label, 0 for the opposite. Reports are fixed. The best discovery mapping is frozen before a fresh independent holdout.",
+      "withheld": [
+        "An empirical semantic or synchronicity effect",
+        "Nominal-alpha exceedance in this particular fixture",
+        "A known-map positive control establishing a higher source",
+        "Unrestricted retrospective interpretation identifying a mechanism"
+      ],
+      "incomingEvidence": "B1 demonstrated prior and common-reporter ambiguity despite high scores. Balancing targets removes that particular advantage; B2 tests remaining flexibility in how correspondence is scored. The Pauli event-window example motivates fixed scoring/window boundaries but supplies no statistical evidence for this model.",
+      "nextDecision": "B3: freeze crossed state/prompt interventions with scripted report and evaluator-cue channels; test functional state access without phenomenal ground-truth labels.",
+      "metrics": {
+        "balanced_assignments": 2520,
+        "independent_discovery_holdout_pairs": 6350400,
+        "fixed_rule_rejection": 0.006746031746031746,
+        "naive_selected_rejection": 0.026984126984126985,
+        "max_corrected_rejection": 0.026984126984126985,
+        "holdout_rejection": 0.006746031746031746,
+        "fixed_rule_mean_score": 8.0,
+        "selected_discovery_mean_score": 10.323809523809524,
+        "holdout_mean_score": 8.0,
+        "selection_optimism_points": 2.323809523809524,
+        "positive_control_score": 16,
+        "positive_control_corrected_p": 0.0015873015873015873
+      },
+      "sources": [
+        "C-BASHAR-ANKA2014",
+        "C-BASHAR-FORMULA",
+        "C-AIR1995",
+        "C-ATLAS-PRIOR",
+        "V3-PAULI1947-48"
+      ],
+      "contractPath": "research/consciousness-v3/round2/contract.json",
+      "resultsPath": "research/consciousness-v3/round2/results.json",
+      "reviewPath": "docs/panel-v3/reviews/B2-review.json",
+      "reportPath": "research/consciousness-v3/round2/report.md",
+      "figurePaths": [
+        "research/consciousness-v3/round2/figure.svg"
+      ],
+      "rawPaths": [
+        "research/consciousness-v3/round2/score_distribution.csv",
+        "research/consciousness-v3/round2/discovery_holdout.csv",
+        "research/consciousness-v3/round2/assignments.csv"
+      ],
+      "resultSHA256": "2a25d946863fdadd03854aad62d8b05a29d7084849f9590f087d58bf80881fc4",
+      "contractSHA256": "66c6b180d46d5fe93e2dd719dfebca020d542719b98050c9c32a77a1dc8aca58",
+      "independentChecks": {
+        "assignments_exhaustively_checked": 2520,
+        "weighted_independent_pairs_checked": 6350400,
+        "exact_rejection_rates": {
+          "fixed_rule": "17/2520",
+          "post_selected_naive": "17/630",
+          "max_calibrated": "17/630"
+        },
+        "exact_discovery_mean": "1084/105",
+        "exact_holdout_mean": "8",
+        "positive_corrected_tail": "1/630",
+        "proof": "The independent balanced holdout has the same fixed-rule distribution for every selected cyclic shift. Thus discovery selection changes the maximum distribution but not the untouched holdout mean. At alpha=.05 discreteness makes naive-selected and max-calibrated decisions coincide; neither exceeds nominal .05 in this fixture."
+      }
+    },
+    {
+      "id": "B3",
+      "sequence": 13,
+      "predecessor": {
+        "id": "B2",
+        "reviewPath": "docs/panel-v3/reviews/B2-review.json",
+        "reviewSHA256": "2a7d4e2d1d5d66122ac1c76b0ed8b4701240fe39b55497c6f5a723aa8a5f1989",
+        "status": "accepted_narrow"
+      },
+      "round": 3,
+      "title": "Intervene on state, prompt and evaluator separately",
+      "status": "accepted_narrow",
+      "evidenceType": "synthetic",
+      "question": "When self-reports match observationally, which crossed interventions distinguish functional state access from prompt following, and which judgments remain evaluator effects?",
+      "finding": "Crossed state/prompt observations distinguish the two stipulated functional mechanisms that coincide observationally; scripted affirmation and evaluator effects remain separate from state-access accuracy.",
+      "scope": "Exact binary factorial channels Z,P,R,F,E,V. Observational P=Z; crossed P and Z independent. One scripted R channel reads Z and another reads P, both with .9 accuracy to their input. F follows prompt framing; E independently cues a scripted evaluator V. No variable represents phenomenal consciousness.",
+      "withheld": [
+        "Actual AI or human introspection results",
+        "Phenomenal-consciousness labels or probabilities",
+        "Measured evaluator bias",
+        "A functional state-readout identifying a higher consciousness source"
+      ],
+      "incomingEvidence": "B2 showed that selecting an interpretation on discovery does not establish a held-out relationship. B3 freezes the report/evaluator map and uses crossed interventions to distinguish a known functional causal mechanism from matched observational reports.",
+      "nextDecision": "STOP after B3: all13 authorized computational reviews are complete; no further research round selected. Physical and live-AI follow-ups remain proposals.",
+      "metrics": {
+        "weighted_joint_states": 256,
+        "conditional_rows": 24,
+        "observational_joint_total_variation": 0.0,
+        "crossed_joint_total_variation": 0.4,
+        "crossed_state_readout_accuracy": 0.9,
+        "crossed_prompt_only_accuracy": 0.5,
+        "prompt_affirmation_shift": 0.8,
+        "evaluator_verdict_shift": 0.25,
+        "evaluator_report_shift": 0.0,
+        "crossed_state_readout_state_contrast": 0.8,
+        "crossed_prompt_only_state_contrast": 0.0
+      },
+      "sources": [
+        "C-BASHAR-INDEX",
+        "C-BASHAR-ANKA2014",
+        "C-AI-INDICATORS2023",
+        "C-AI-INDICATORS2025",
+        "C-AI-INTROSPECTION2025"
+      ],
+      "contractPath": "research/consciousness-v3/round3/contract.json",
+      "resultsPath": "research/consciousness-v3/round3/results.json",
+      "reviewPath": "docs/panel-v3/reviews/B3-review.json",
+      "reportPath": "research/consciousness-v3/round3/report.md",
+      "figurePaths": [
+        "research/consciousness-v3/round3/figure.svg"
+      ],
+      "rawPaths": [
+        "research/consciousness-v3/round3/joint_states.csv",
+        "research/consciousness-v3/round3/conditional_tables.csv",
+        "research/consciousness-v3/round3/mechanism_summary.csv"
+      ],
+      "resultSHA256": "add8ade01359cebf3c05d52a64a5bfaa5288c32b1046be2ee8971609a084983e",
+      "contractSHA256": "e13ebbb92e04f4ccaf3f065c34963707292bc9a1e09663ea98e91722cdea9501",
+      "independentChecks": {
+        "exact_weighted_joint_states_checked": 256,
+        "exact_conditional_rows_checked": 24,
+        "integer_denominator": 16000,
+        "total_variation_exact": {
+          "observational": "0",
+          "crossed": "2/5"
+        },
+        "crossed_state_accuracy_exact": {
+          "state_readout": "9/10",
+          "prompt_only": "1/2"
+        },
+        "evaluator_cue_verdict_shift_exact": "1/4",
+        "prompt_affirmation_shift_exact": "4/5",
+        "proof": "When P=Z the two report channels coincide on all observed cells. Crossed independent P,Z exposes their off-diagonal difference. Summing the stipulated evaluator channel changes V by1/4 under E while the R marginal is unchanged. These are functional channel identities, without a phenomenal-consciousness variable or observed AI/human judgments."
+      }
+    }
+  ],
+  "empiricalBoundary": "No physical apparatus, biological measurement, consciousness measurement or metaphysical connection is established by synthetic work.",
+  "completionRule": "Exactly 3 actual planning panels, then S1A-S5B in sequential reviewed gates, then B1-B3; no extra research loop.",
+  "nextAuthorized": "STOP after B3: all13 authorized computational reviews are complete; no further research round selected. Physical and live-AI follow-ups remain proposals.",
+  "completedSoundLoops": 10,
+  "completedLaterRounds": 3,
+  "decisionAmendments": [
+    {
+      "id": "A1",
+      "afterReview": "S2B",
+      "prior": "S3A: spatial complex observations and magnitude-only ambiguity",
+      "changedTo": "S3A: evidence-preserving versioned recording intake",
+      "reason": "Coordinator identified source-CSV overwrite risk and silently ignored CSV channel; the practical recording path required repair before release. Spatial candidate remains unexecuted.",
+      "recordPath": "docs/panel-v3/planning-panels.md",
+      "reviewPreservation": "The hash-bound S2B review retains its original next-question suggestion; this amendment records the subsequent change.",
+      "subsequentDisposition": "Spatial candidate was unexecuted at amendment A1; it was subsequently selected and reviewed as S4A/S4B after the S3 prerequisites."
+    }
+  ],
+  "completedSoundRounds": 5,
+  "soundStopDecision": "S1A-S5B: exactly five rounds with two sequential reviewed loops each. No further sound research loop selected.",
+  "completedPlanningPanels": 3,
+  "completedReviews": 13,
+  "reviewerSourcePath": "docs/panel-v3/reviewer.py",
+  "reviewerSourceSHA256": "455a4a85dde1cc1779905700e109d46f6b831a6857da2c13e1a11f0248dfa75b",
+  "recordReviewSourcePath": "docs/panel-v3/record_review.py",
+  "recordReviewSourceSHA256": "45fd9904d34a47849f5351aba599d3e57aeeefe66fbdaac86b4c6b172fdded88",
+  "stopDecision": "Exactly three actual planning panels, ten sequential sound loops and three later conditional rounds complete. No further research round selected.",
+  "sourceLedgerBindings": {
+    "docs/panel-v3/sources-history.json": "c6eb44f95c2733b1717d2d799e2ee004725f53183052e802b69300036bb7f69b",
+    "docs/panel-v3/sources-modern.json": "a37d2be6bb00baae9f6aace42d8c54379bafaf08d0d47816eb5b8b993f3f1331",
+    "docs/panel-v3/sources-consciousness.json": "cfd086bc3c207fafa393c9a16a2a7050d8b95984d7c1704d5d8a5432d83f65f1",
+    "research/sound-lab-v3/sources.json": "8895baccab234504433ee99e8e62b3a7f2efc3b4122ae6e3bcf4d25cd32ce8bb"
+  },
+  "reportPath": "docs/panel-v3/advisor-review.md",
+  "roadmapPath": "docs/panel-v3/next-gates.md",
+  "finalDocumentBindings": {
+    "docs/panel-v3/planning-panels.md": "0f3bd854f135c2522c1a7c2183d89f85222f1c2027d2cd67ff837d6753c4b81d",
+    "docs/panel-v3/advisor-review.md": "716ada006c9e52616c7ac49294cf7a07f8492f6dc893c132b00ac1fac83dcf02",
+    "docs/panel-v3/next-gates.md": "90979aaf797d37794e8ab3eed0ee1b43e2f1b3e0f01813fe9366f7ce026ead83"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "id": "S4B",
+  "analytic_singular_values": "sqrt(2 +/- 2 abs(cos(2 pi separation/lambda)))",
+  "quarterwave_heldout_relation": "p(lambda/8)=(p(0)+p(lambda/4))/sqrt(2)",
+  "predicted_phase_drift_heldout_error": 0.023507904525623336,
+  "predicted_three_channel_least_squares_residual_L2": 0.016622598701554192,
+  "phase_error_rad": 0.05,
+  "noise_L2": 0.001
+}

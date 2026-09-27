@@ -1,0 +1,24 @@
+{
+  "studyType": "synthetic dryrun and proposed household protocol",
+  "physicalStudyRun": false,
+  "primaryObservable": "B-minus-A mean recorded-channel amplitude-decay rate",
+  "orderedTrials": [],
+  "expectedPrimaryTrialCount": 0,
+  "allTrialsRetained": true,
+  "excludedTrialsReported": true,
+  "frequency_Hz": 500,
+  "fitWindowAfterTap_s": [
+    0.05,
+    0.8
+  ],
+  "scope": "A future actual study must create a separate preregistration after an independent pilot chooses its mode/window; never overwrite this synthetic plan",
+  "conditionKeyPublic": true,
+  "controls": [
+    "silence baseline",
+    "untouched/touch support comparison",
+    "unchanged-position repeat",
+    "recording gain settings",
+    "clock/reference provenance"
+  ],
+  "decisionRule": "Report descriptive contrast with every exclusion; no material or biological causal conclusion from the contrast alone"
+}

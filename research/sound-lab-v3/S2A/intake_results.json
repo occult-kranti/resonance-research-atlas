@@ -1,0 +1,160 @@
+[
+  {
+    "inputSHA256": "a698b311d05ac17cfe49e858c8d8cb391fa115028954be7e7f9aa6f395dc05ee",
+    "sampleRate_Hz": 8000.0,
+    "samples": 16000,
+    "channels": 1,
+    "channel": 0,
+    "duration_s": 2.0,
+    "samplePeak_FS": 0.100006103515625,
+    "clippedSamples": 0,
+    "window_s": [
+      0.05,
+      0.8
+    ],
+    "windowRMS_FS": 0.023617104782673027,
+    "model": "single exponential cosine+sin+offset",
+    "evidenceType": "actualbytes_generated_PCM",
+    "scope": "Recorded-channel local fit; no material identity or physical measurement provenance assumed",
+    "status": "fit",
+    "flags": [],
+    "alpha_per_s": 4.000033449363301,
+    "frequency_Hz": 500.0000051101872,
+    "gain_at_window_start_FS": 0.0818729679329244,
+    "phase_at_window_start_rad": -2.709927648626432e-06,
+    "offset_FS": -5.605871665081375e-08,
+    "normalizedResidual": 0.0003491425522215834,
+    "optimizerSuccess": true,
+    "optimizerEvaluations": 7,
+    "bounds": {
+      "alpha_per_s": [
+        0,
+        20
+      ],
+      "frequency_Hz": [
+        450,
+        550
+      ]
+    }
+  },
+  {
+    "inputSHA256": "73caf8874be4162fd9d8e286ba591e9580012ad20795f5702dbc2945f8f9a635",
+    "sampleRate_Hz": 8000.0,
+    "samples": 16000,
+    "channels": 1,
+    "channel": 0,
+    "duration_s": 2.0,
+    "samplePeak_FS": 0.19635009765625,
+    "clippedSamples": 0,
+    "window_s": [
+      0.05,
+      0.8
+    ],
+    "windowRMS_FS": 0.047191857614438205,
+    "model": "single exponential cosine+sin+offset",
+    "evidenceType": "actualbytes_generated_PCM",
+    "scope": "Recorded-channel local fit; no material identity or physical measurement provenance assumed",
+    "status": "fit",
+    "flags": [],
+    "alpha_per_s": 4.0000180499791425,
+    "frequency_Hz": 499.99999940694084,
+    "gain_at_window_start_FS": 0.1637467679758599,
+    "phase_at_window_start_rad": 0.9999981484458172,
+    "offset_FS": -3.645738285472771e-08,
+    "normalizedResidual": 0.0001873932535847031,
+    "optimizerSuccess": true,
+    "optimizerEvaluations": 7,
+    "bounds": {
+      "alpha_per_s": [
+        0,
+        20
+      ],
+      "frequency_Hz": [
+        450,
+        550
+      ]
+    }
+  },
+  {
+    "inputSHA256": "2a6ebabc46852472fc3949cd66d48eb34d7ef7445fffdefe0fe62f43eac50d38",
+    "sampleRate_Hz": 8000.0,
+    "samples": 16000,
+    "channels": 1,
+    "channel": 0,
+    "duration_s": 2.0,
+    "samplePeak_FS": 0.299346923828125,
+    "clippedSamples": 0,
+    "window_s": [
+      0.05,
+      0.8
+    ],
+    "windowRMS_FS": 0.07085449971187231,
+    "model": "single exponential cosine+sin+offset",
+    "evidenceType": "actualbytes_generated_PCM",
+    "scope": "Recorded-channel local fit; no material identity or physical measurement provenance assumed",
+    "status": "fit",
+    "flags": [],
+    "alpha_per_s": 4.000003174930554,
+    "frequency_Hz": 499.99999939394445,
+    "gain_at_window_start_FS": 0.24561875372676648,
+    "phase_at_window_start_rad": 1.9999974420689568,
+    "offset_FS": 3.5262479805801056e-08,
+    "normalizedResidual": 0.00012479678595495155,
+    "optimizerSuccess": true,
+    "optimizerEvaluations": 7,
+    "bounds": {
+      "alpha_per_s": [
+        0,
+        20
+      ],
+      "frequency_Hz": [
+        450,
+        550
+      ]
+    }
+  },
+  {
+    "inputSHA256": "78f82cd49af869013e8ec414a15d71f5f4f2ec8d006b6a0c50527c91eaa7a85f",
+    "sampleRate_Hz": 8000.0,
+    "samples": 16000,
+    "channels": 1,
+    "channel": 0,
+    "duration_s": 2.0,
+    "samplePeak_FS": 0.0,
+    "clippedSamples": 0,
+    "window_s": [
+      0.05,
+      0.8
+    ],
+    "windowRMS_FS": 0.0,
+    "model": "single exponential cosine+sin+offset",
+    "evidenceType": "actualbytes_generated_PCM",
+    "scope": "Recorded-channel local fit; no material identity or physical measurement provenance assumed",
+    "status": "rejected",
+    "flags": [
+      "silence_or_insufficient_signal"
+    ]
+  },
+  {
+    "inputSHA256": "f75ce19b6055163f7cf34fb3a36a67025d9bc5eb01485b2700c2f01465954c81",
+    "sampleRate_Hz": 8000.0,
+    "samples": 16000,
+    "channels": 1,
+    "channel": 0,
+    "duration_s": 2.0,
+    "samplePeak_FS": 1.0,
+    "clippedSamples": 97,
+    "window_s": [
+      0.05,
+      0.8
+    ],
+    "windowRMS_FS": 0.28340656591900554,
+    "model": "single exponential cosine+sin+offset",
+    "evidenceType": "actualbytes_generated_PCM",
+    "scope": "Recorded-channel local fit; no material identity or physical measurement provenance assumed",
+    "status": "rejected",
+    "flags": [
+      "full_file_clipping"
+    ]
+  }
+]

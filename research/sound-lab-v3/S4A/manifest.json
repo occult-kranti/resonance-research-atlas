@@ -1,0 +1,14 @@
+{
+  "id": "S4A",
+  "artifacts": {
+    "contract.json": "396c9a9846e212cff8232ae7fe7d3aad8c47110b79c85a73ba25974c129554a1",
+    "run.py": "ccd72a77bb06365bff71a2be4ac90cb02fc6d7232b816e556b71634f52d4ba11",
+    "results.json": "293512816c014cccfb140bbf96f7de994e42c0800c9c0ed246ab31e6b40d2882",
+    "report.md": "20434852ffa4b395cb082e59a48bd13b22e615b124cb1aa3df17b1942969d65c",
+    "spatial_response.csv": "b2c7aaa2752f8cee74a9b750190cdf842800897160191ea0af2c992daf23e134",
+    "observations.csv": "586da952204822da4c2082aaa29df4e7406daf9926277038c455b34da70b7d93",
+    "inverse_structure.json": "e2bb349aad9d1766e9eeaa57ea2cf3506f6c4bec433ccb62603375fa703fb3f7",
+    "figure.svg": "5a66921ef79685db7c40cb101cdb31a5a49f1ab0201021a9a5e91cc0ae79880a"
+  },
+  "commonSHA256": "25a627bb9616a8b04051fb8b4e46b747cf5ea732b0fb28fcb8c2c90baaf1d408"
+}

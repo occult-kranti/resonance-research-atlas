@@ -1,0 +1,46 @@
+{
+  "id": "S5A",
+  "round": 5,
+  "title": "Counterbalance the household comparison before recording",
+  "status": "executed_pending_review",
+  "evidenceType": "actualbytes",
+  "question": "Does a balanced trial order remove a declared recording drift, and which condition-linked rival remains?",
+  "finding": "Balanced order cancels the declared linear recording drift in positive and null fixtures; a condition-linked gain rival remains byte-identical.",
+  "metrics": {
+    "blocked_effect_contrast_per_s": 1.3600118176897875,
+    "blocked_null_contrast_per_s": -0.6399804674200866,
+    "balanced_effect_contrast_per_s": 1.9999924047620392,
+    "balanced_null_contrast_per_s": -1.0901747931502115e-05,
+    "max_trial_alpha_error_per_s": 5.449122547540597e-05,
+    "trials_fitted": 64,
+    "rival_identical_trials": 16,
+    "rival_max_difference_FS": 8.326672684688674e-17
+  },
+  "failedControls": [
+    {
+      "control": "Blocked zero-effect null",
+      "outcome": "false contrast near\u2212.64/s"
+    },
+    {
+      "control": "Condition-linked gain rival",
+      "outcome": "not removed by counterbalance; all16PCMsignals identical"
+    }
+  ],
+  "limits": [
+    "All64trialWAVs and rival are generated fixtures, not spoon measurements",
+    "Fixed counterbalance cancels this linear order term, not arbitrary drift",
+    "Condition-linked nuisance is not removed by trial order",
+    "Public demo condition key is not blinded; future masked analysis requires separate custody",
+    "Recorded-channel contrast is not intrinsic material damping"
+  ],
+  "sources": [
+    "V3-W3C-CAPTURE",
+    "V3-FEYN23"
+  ],
+  "contractSHA256": "5feab4c934533c61bb39875aa2eab96bd8fd8dd9827974db026ea61fecd2d194",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "matplotlib": "3.10.8"
+  }
+}

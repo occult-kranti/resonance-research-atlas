@@ -1,0 +1,74 @@
+{
+  "joint_counts_denominator": 6400,
+  "scenarios": {
+    "1": {
+      "hit_A": 0.55,
+      "agreement": 1.0,
+      "I_T_A": 0.0,
+      "I_T_AB": 0.0,
+      "CMI_T_B_given_A": 0.0
+    },
+    "2": {
+      "hit_A": 0.25,
+      "agreement": 1.0,
+      "I_T_A": 0.0,
+      "I_T_AB": 0.0,
+      "CMI_T_B_given_A": 0.0
+    },
+    "3": {
+      "hit_A": 0.37,
+      "agreement": 1.0,
+      "I_T_A": 0.0,
+      "I_T_AB": 0.0,
+      "CMI_T_B_given_A": 0.0
+    },
+    "4": {
+      "hit_A": 0.25,
+      "agreement": 0.25,
+      "I_T_A": 0.0,
+      "I_T_AB": 0.0,
+      "CMI_T_B_given_A": 0.0
+    },
+    "5": {
+      "hit_A": 0.325,
+      "agreement": 1.0,
+      "I_T_A": 0.020414189482053757,
+      "I_T_AB": 0.020414189482053757,
+      "CMI_T_B_given_A": 0.0
+    },
+    "6": {
+      "hit_A": 0.325,
+      "agreement": 0.2575,
+      "I_T_A": 0.020414189482053757,
+      "I_T_AB": 0.040613392580043595,
+      "CMI_T_B_given_A": 0.020199203097989837
+    },
+    "7": {
+      "hit_A": 0.325,
+      "agreement": 1.0,
+      "I_T_A": 0.020414189482053757,
+      "I_T_AB": 0.020414189482053757,
+      "CMI_T_B_given_A": 0.0
+    }
+  },
+  "binomial": {
+    "1/4": {
+      "cutoff": 27,
+      "achieved_size": 0.04988717837499807,
+      "tail_at_wrong_quarter_cutoff": 0.04988717837499807,
+      "integer_mass_sum": true
+    },
+    "11/20": {
+      "cutoff": 52,
+      "achieved_size": 0.04494891493037708,
+      "tail_at_wrong_quarter_cutoff": 0.9999590175010924,
+      "integer_mass_sum": true
+    },
+    "37/100": {
+      "cutoff": 38,
+      "achieved_size": 0.035059560859947214,
+      "tail_at_wrong_quarter_cutoff": 0.7619489695483855,
+      "integer_mass_sum": true
+    }
+  }
+}
