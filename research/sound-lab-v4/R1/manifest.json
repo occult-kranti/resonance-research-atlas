@@ -1,0 +1,20 @@
+{
+  "id": "R1",
+  "artifacts": {
+    "contract.json": "43a52ae1d69d5dfdd76118465d78019eeb592cf2791dca0a1f63f3192b4b225a",
+    "run.py": "af4b87c3cbc38045de9672606d895ca74a969b877db81055c6a8097e2ce8998d",
+    "results.json": "92117fb3c393a5941cd79548da81fc83b8a599a45601bce867a558e8928a8224",
+    "report.md": "b32a79cd2742672463590aa6b4c8d29202f6eaeed8f9c123927d769b71fac4a7",
+    "common_beta0.wav": "9c5605ebd42f5e9b7ba42a60c0c9b83e86d669d5eac1e7ce0f91f6f18827c770",
+    "common_beta1.wav": "8717a0f18b30c5438b5f0a24554ed9c5388159326e8d3a3bf278d858365eb63e",
+    "common_beta2.wav": "3e44a83d68b56156c6b99712045cdb99a63c1f28b6aa897a239a925b92b8d4c4",
+    "differential_gain.wav": "757cfc10bd661cae0eb15c6aa8923142e02555405e4a24f6690b28cdea90b5dc",
+    "unstable_reference.wav": "757cfc10bd661cae0eb15c6aa8923142e02555405e4a24f6690b28cdea90b5dc",
+    "zero_reference.wav": "c59b548e459d7931129add2a8e7e5fd02a411c4248af86167be11b1ed168466c",
+    "fit-results.csv": "2f8f7d42cdf5450d762c2687f31aa23b9d374687a5fcd5dd275b0e028c0f5796",
+    "case-results.json": "000c423688edb4756f34ed99dd879a0736b8dc41a3fc21a9c1beed3406f96abd",
+    "identifiability.json": "4355069866bdf2338fba20b4ad25e9e69e9d16d691f6cee3fa1945fa9f46b016",
+    "figure.svg": "d097a3448c6d710a0f1cbce3edce6c5356125cef0edb73600fd124cb84324eb0"
+  },
+  "commonSHA256": "001dcd61b2499d85d4af5444a70ee771e969026519a2cccdb565e553933501c7"
+}

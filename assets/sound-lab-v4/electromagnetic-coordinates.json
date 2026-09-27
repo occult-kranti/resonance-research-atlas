@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "status": "proposed/unbuilt; no physical measurements",
+  "coordinateUnit": "m",
+  "displayDimensionUnit": "cm in magnetic SVG; m in 3D axes",
+  "generator": "scripts/render_electromagnetic_v4.py",
+  "soundGeometryDependency": "scripts/render_apparatus_v4.py",
+  "electrical": {
+    "topology": "isolated source -> series current sensor -> Rinternal -> L -> C -> Rload -> source return",
+    "contractPath": "docs/panel-v4/contracts/R3.json",
+    "parameterOrigin": "frozen electrical R3 simulation, not a hardware kit",
+    "Rinternal_ohm": 1,
+    "L_H": 0.01,
+    "C_F": 0.0001,
+    "Rload_ohm": 4,
+    "sourcePeak_V": 1,
+    "sourceAngularFrequency_rad_s": 1000,
+    "sourceOffMeaning": "zero ideal source voltage while the series circuit remains closed, not an open switch",
+    "voltageObservations": [
+      "source positive node minus return",
+      "capacitor incoming-current node minus outgoing node",
+      "load incoming-current node minus return"
+    ],
+    "currentSign": "leaves source positive terminal; enters positive terminal of each passive element",
+    "idealBudget": "integral(vs*i dt) = integral(Rload*i^2 dt) + integral(Rinternal*i^2 dt) + delta(0.5*L*i^2 + 0.5*C*Vc^2)",
+    "instrumentAssumption": "high-impedance differential voltage probes and same synchronized series current; real instrument losses/loading excluded from fixture"
+  },
+  "variableInductanceModel": {
+    "contractPath": "docs/panel-v4/contracts/R4.json",
+    "status": "analytic schematic of stipulated model; not the permanent-magnet apparatus",
+    "L_H": "0.01 + 0.1*z_m",
+    "I_A": 0.2,
+    "R_ohm": 5,
+    "zSpan_m": [
+      0,
+      0.02
+    ],
+    "duration_s": 0.2,
+    "prescribedTrajectory_m": "0.01*(1-cos(pi*t/0.2))",
+    "force_N": 0.002,
+    "storageChange_J": 4e-05,
+    "mechanicalWork_J": 4e-05,
+    "forceAndWorkMeasured": false
+  },
+  "magnetic": {
+    "frame": "tabletop z=0; 1m x .65m plan",
+    "testCenter_m": [
+      0.36,
+      0.3,
+      0.074
+    ],
+    "magnetCenter_m": [
+      0.36,
+      0.3,
+      0.161
+    ],
+    "testTop_m": 0.078,
+    "magnetBottom_m": 0.158,
+    "magnetTop_m": 0.164,
+    "airGap_m": 0.08,
+    "testRadius_m": 0.015,
+    "magnetRadius_m": 0.015,
+    "balanceFootprint_m": {
+      "origin": [
+        0.24,
+        0.19,
+        0.015
+      ],
+      "size": [
+        0.24,
+        0.22,
+        0.045
+      ]
+    },
+    "panTop_m": 0.07,
+    "externalSupportFootprint_m": {
+      "origin": [
+        0.645,
+        0.225,
+        0
+      ],
+      "size": [
+        0.13,
+        0.15,
+        0.015
+      ]
+    },
+    "standHeight_m": 0.275,
+    "observable": "change in apparent support force, not direct gravity measurement",
+    "contactModel": "N = mg - Fmag provided N >= 0",
+    "externalReaction": "magnet experiences opposite magnetic force; off-balance stand carries that reaction to the tabletop",
+    "limitations": [
+      "balance instrument may respond directly to field",
+      "common table transmits vibration",
+      "all hardware geometry is unoptimized",
+      "no quantitative mapping to a solenoid L(x) model",
+      "no magnetic field or force simulation implied by drawing",
+      "no lift or antigravity demonstrated"
+    ]
+  }
+}

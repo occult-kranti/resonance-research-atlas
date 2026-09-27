@@ -1,0 +1,40 @@
+{
+  "method": "Independent exact matrix-eigenfunction states plus Simpson quadrature; no producer solver import.",
+  "sourceWaveform": "sin(1000t) V through 10 periods, then zero",
+  "maxChargeDifference_C": 4.710831334395205e-15,
+  "maxCurrentDifference_A": 3.243502688654587e-12,
+  "sourceWork_J": 0.005883185268073582,
+  "loadWork_J": 0.0047065481939942855,
+  "internalLoss_J": 0.0011766370484985714,
+  "finalStoredEnergy_J": 2.5885173754889036e-11,
+  "independentClosureResidual_J": -3.044478731617506e-13,
+  "sourceOffLoadWork_J": 0.00016000001065785382,
+  "sourceOffExactEnergyPartition_J": 0.00016000001049547947,
+  "chargedDischargeLoadWork_J": 4.000000004059356e-05,
+  "chargedDischargeExactPartition_J": 3.9999999999999996e-05,
+  "phasors": {
+    "omega1000_R5": {
+      "capacitorVoltageGain": 2.0,
+      "capacitorRealPower_W": 0.0,
+      "capacitorApparentPower_VA": 0.2,
+      "sourceRealPower_W": 0.1,
+      "loadRealPower_W": 0.08000000000000002
+    },
+    "omega500_R5": {
+      "capacitorVoltageGain": 1.2649110640673518,
+      "capacitorRealPower_W": 1.734723475976807e-18,
+      "capacitorApparentPower_VA": 0.04,
+      "sourceRealPower_W": 0.009999999999999998,
+      "loadRealPower_W": 0.007999999999999998
+    },
+    "omega1000_R10": {
+      "capacitorVoltageGain": 1.0,
+      "capacitorRealPower_W": 0.0,
+      "capacitorApparentPower_VA": 0.05,
+      "sourceRealPower_W": 0.05,
+      "loadRealPower_W": 0.020000000000000004
+    }
+  },
+  "scriptSHA256": "d9cd762d178a343a8a16fb90fa4558ea6089c739edb7f6d0d3207918a585fdcb",
+  "producerCSV_SHA256": "4e8b551184e6e368642d287cc44dfaab6d4c362d93734335402e35ee16764a3b"
+}

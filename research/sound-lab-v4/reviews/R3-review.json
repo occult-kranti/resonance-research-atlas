@@ -1,0 +1,48 @@
+{
+  "id": "R3",
+  "domain": "electricity_and_magnetic_storage",
+  "reviewedAt": "2026-09-27T02:12:22.427263+00:00",
+  "reviewer": "/root/skeptic",
+  "verdict": "accepted_narrow",
+  "manifestSHA256": "dc36fc1c8efabac23cddf446d1ee717449d3556a16b581fa428a471b4d8bc687",
+  "contractSHA256": "a3219ed5e845d945827e83e6d2edbe4138b5408d4de11ed4f7743c955127015d",
+  "independentScriptSHA256": "d9cd762d178a343a8a16fb90fa4558ea6089c739edb7f6d0d3207918a585fdcb",
+  "independentResultsSHA256": "1c9a597fdf15d69055db13c783e317b355b2fd5a1c7aba46073e59e4fa992701",
+  "artifactBindingsChecked": 15,
+  "acceptedClaim": "The specified passive lumped RLC circuit has capacitor voltage gain2 at resonance, positive source-off load work from initial storage, and a closed signed energy budget. Reactive apparent power is not mean real power.",
+  "independentMethod": "Independent exact matrix-eigenfunction solution for q,I and Simpson sampled-power integration; analytic source-off resistor partition and complex phasors. Producer numerical solver was not imported.",
+  "checks": {
+    "allManifestBindings": true,
+    "exactFrozenContractCopy": true,
+    "stateComparedToIndependentExactSolution": true,
+    "independentEnergyClosure": true,
+    "sourceOffStoragePartition": true,
+    "chargedDischargePartition": true,
+    "phasorRealReactiveDistinction": true,
+    "quadratureRefinement": true,
+    "zeroStateSourceOffControl": true
+  },
+  "maxChargeDifference_C": 4.710831334395205e-15,
+  "maxCurrentDifference_A": 3.243502688654587e-12,
+  "independentClosureResidual_J": -3.044478731617506e-13,
+  "limitations": [
+    "A finite lumped linear simulation is not hardware calibration, empirical overunity testing or a proof about every electrical device.",
+    "Source off means ideal source voltage set to zero while the series loop remains closed; opening a physical switch would change this model.",
+    "Source waveform is sine starting at zero, stated explicitly in producer report.",
+    "Inductance/capacitance are constant here; moving geometry would add mechanical work and require a different boundary.",
+    "Numerical closure tolerance is not measurement uncertainty."
+  ],
+  "sourceChecks": [
+    {
+      "url": "https://www.feynmanlectures.caltech.edu/II_17.html",
+      "read": "sections17-6 through17-8",
+      "supports": "Inductor energy, mutual energy and source-work requirements when geometry changes."
+    },
+    {
+      "url": "https://www.feynmanlectures.caltech.edu/II_22.html",
+      "read": "section22-1 and22-8",
+      "supports": "Linear ideal impedance assumptions and power supplied by external sources."
+    }
+  ],
+  "nextQuestion": "For a prescribed moving-inductance geometry at fixed current, does including electrical source work, resistive heat, field energy and mechanical work repair the wrong sign from an isolated field-energy gradient, and can an ordinary even-in-current force reduce a supported load with unchanged g?"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "R2",
+  "reviewedAt": "2026-09-27T02:02:28.263889+00:00",
+  "reviewer": "/root/skeptic",
+  "verdict": "accepted_narrow",
+  "manifestSHA256": "3da6f3ccc38c6aa15c5b68e5edfa405b0cce53e910c05ad09daa8306cb0dbbac",
+  "contractSHA256": "b286306b2044dfc44eb8719266d1615155d48c7122827ca7efc48b3870a8c362",
+  "independentScriptSHA256": "1c9ebce6474fb2c480556b304fb7a50803d96b0f17cd616d917ea836def0c7aa",
+  "independentResultsSHA256": "1f40c1e2943f127e53712cac1923acfb1beb484be053db641b53a8945c41fd08",
+  "artifactBindingsChecked": 9,
+  "acceptedClaim": "For fixed times and strictly positive supplied amplitude-error boxes, monotonic logs and linear OLS weights yield exact box endpoints. Explicit absolute nuisance bounds widen the contrast; absent bounds withhold a physical-alpha interval.",
+  "independentMethod": "Enumerated every one of 256 original-amplitude box corners on a nonuniform four-time grid, checked 13 malformed-input controls and independently checked the supplied 128 observation realizations against their declared errors.",
+  "checks": {
+    "allManifestBindings": true,
+    "exactFrozenContractCopy": true,
+    "all256Corners": true,
+    "endpointErrorWithin1eMinus10": true,
+    "thirteenMalformedInputsRejected": true,
+    "wholeWindowFloorWithheld": true,
+    "unknownNuisancePhysicalIntervalWithheld": true,
+    "all128ObservedErrorsWithinDeclaredBounds": true,
+    "all128ReportedIntervalsContainModelTruth": true,
+    "systematicWidthIncrease1p3": true
+  },
+  "endpointError_per_s": 8.881784197001252e-16,
+  "limitations": [
+    "This is deterministic interval arithmetic, not a confidence interval or an empirical coverage claim.",
+    "The supplied envelope-error guarantee does not follow from a recorded waveform, an AGC setting or a low residual.",
+    "A physical-alpha interpretation also assumes a single exponential, shared physical time and stated valid nuisance budgets.",
+    "The retained out-of-budget counterexample excludes true alpha; nominal width cannot compensate for a false bound.",
+    "The finite engineering ranges in these fixtures do not verify overflow behavior for arbitrary floating-point magnitudes."
+  ],
+  "nextQuestion": "Can a practical one-microphone extraction or independently measured external impulse response invalidate the separated, single-exponential envelope assumptions before applying these conditional bounds?"
+}

@@ -1,0 +1,141 @@
+{
+  "id": 19371528,
+  "metadata": {
+    "title": "UPV_RIR_DB: Multichannel Room Impulse Response Dataset Measured at Universitat Politècnica de València",
+    "doi": "10.5281/zenodo.19371528",
+    "publication_date": "2026-04-01",
+    "creators": [
+      {
+        "name": "García Gamborino, Jesús",
+        "affiliation": "Universitat Politècnica de València"
+      },
+      {
+        "name": "Fuster, Laura",
+        "affiliation": "Universitat Politècnica de València",
+        "orcid": "0000-0003-2633-0449"
+      },
+      {
+        "name": "De la Prida, Daniel",
+        "affiliation": "Universidad Politécnica de Madrid",
+        "orcid": "0000-0002-4386-5544"
+      },
+      {
+        "name": "Azpicueta-Ruiz, Luis A.",
+        "affiliation": "Universidad Carlos III Madrid",
+        "orcid": "0000-0002-2458-0914"
+      },
+      {
+        "name": "Piñero, Gema",
+        "affiliation": "Universitat Politècnica de València",
+        "orcid": "0000-0002-8719-8106"
+      }
+    ],
+    "version": "0.2",
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    }
+  },
+  "files": [
+    {
+      "id": "d6b66bba-2b70-4937-950c-7afe4f9ea85e",
+      "key": "README.md",
+      "size": 9915,
+      "checksum": "md5:4a8d7c1a8eff47791606f5df27e981ff",
+      "links": {
+        "self": "https://zenodo.org/api/records/19371528/files/README.md/content"
+      }
+    },
+    {
+      "id": "685596da-753f-408a-aaf6-e800526c2605",
+      "key": "Master_coordinates.xlsx",
+      "size": 219400,
+      "checksum": "md5:3eb215fafa7e4b0ddb3e766f62b82850",
+      "links": {
+        "self": "https://zenodo.org/api/records/19371528/files/Master_coordinates.xlsx/content"
+      }
+    },
+    {
+      "id": "5dbc274e-96ff-4cc6-87b3-6ac0cc2283f5",
+      "key": "calibrations.zip",
+      "size": 12419994,
+      "checksum": "md5:fb89b9b3c0316910010f5325a6816b86",
+      "links": {
+        "self": "https://zenodo.org/api/records/19371528/files/calibrations.zip/content"
+      }
+    },
+    {
+      "id": "bfb29935-4f57-43b8-9178-15fab3f5fb06",
+      "key": "config.zip",
+      "size": 1500,
+      "checksum": "md5:e19bdc66187de7e3a577afbb6fbfb05d",
+      "links": {
+        "self": "https://zenodo.org/api/records/19371528/files/config.zip/content"
+      }
+    },
+    {
+      "id": "88076ef2-a811-420b-9156-8dbc61800775",
+      "key": "Room_Teleco_4P13_mat.zip",
+      "size": 1164626163,
+      "checksum": "md5:3210c750061167d4b2744406beb806db",
+      "links": {
+        "self": "https://zenodo.org/api/records/19371528/files/Room_Teleco_4P13_mat.zip/content"
+      }
+    },
+    {
+      "id": "63fa4199-6d33-4717-9d51-3abb6d90a75b",
+      "key": "Room_iTEAM_8G4C_mat.zip",
+      "size": 323751737,
+      "checksum": "md5:3ff0762754eb3d038e57e4ee9a66ae9a",
+      "links": {
+        "self": "https://zenodo.org/api/records/19371528/files/Room_iTEAM_8G4C_mat.zip/content"
+      }
+    },
+    {
+      "id": "8d8c6d5e-7885-4fb1-b65b-be5a957569da",
+      "key": "Room_Teleco_4D26_mat.zip",
+      "size": 804398223,
+      "checksum": "md5:fd4c785a1d274065cb240ce3da8566da",
+      "links": {
+        "self": "https://zenodo.org/api/records/19371528/files/Room_Teleco_4D26_mat.zip/content"
+      }
+    }
+  ],
+  "links": {
+    "self": "https://zenodo.org/api/records/19371528",
+    "self_html": "https://zenodo.org/records/19371528",
+    "preview_html": "https://zenodo.org/records/19371528?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.19371528",
+    "self_doi": "https://doi.org/10.5281/zenodo.19371528",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.19371528",
+    "reserve_doi": "https://zenodo.org/api/records/19371528/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/19051415",
+    "parent_html": "https://zenodo.org/records/19051415",
+    "parent_doi": "https://doi.org/10.5281/zenodo.19051415",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.19051415",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:19371528/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:19371528/sequence/default",
+    "files": "https://zenodo.org/api/records/19371528/files",
+    "media_files": "https://zenodo.org/api/records/19371528/media-files",
+    "archive": "https://zenodo.org/api/records/19371528/files-archive",
+    "archive_media": "https://zenodo.org/api/records/19371528/media-files-archive",
+    "latest": "https://zenodo.org/api/records/19371528/versions/latest",
+    "latest_html": "https://zenodo.org/records/19371528/latest",
+    "versions": "https://zenodo.org/api/records/19371528/versions",
+    "draft": "https://zenodo.org/api/records/19371528/draft",
+    "access_links": "https://zenodo.org/api/records/19371528/access/links",
+    "access_grants": "https://zenodo.org/api/records/19371528/access/grants",
+    "access_users": "https://zenodo.org/api/records/19371528/access/users",
+    "access_request": "https://zenodo.org/api/records/19371528/access/request",
+    "access": "https://zenodo.org/api/records/19371528/access",
+    "communities": "https://zenodo.org/api/records/19371528/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/19371528/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/19371528/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/19371528/file-modification",
+    "quota_increase": "https://zenodo.org/api/records/19371528/quota-increase",
+    "requests": "https://zenodo.org/api/records/19371528/requests"
+  }
+}

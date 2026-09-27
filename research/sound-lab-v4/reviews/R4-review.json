@@ -1,0 +1,49 @@
+{
+  "id": "R4",
+  "domain": "magnetism_and_electromechanics",
+  "reviewedAt": "2026-09-27T02:18:21.213453+00:00",
+  "reviewer": "/root/skeptic",
+  "verdict": "accepted_narrow",
+  "manifestSHA256": "7cf287da2d17fadc99099520be617e96aa07d4f601f94c6fe4b01844c392e38d",
+  "contractSHA256": "2b0be2bdb3b561f08c031773f7810a991e4fcf30ba12ec94228e4851b55f95be",
+  "independentScriptSHA256": "934117c3aa370725c7afeb9bfe5b60c6c2e4f7d0950608724bc236fb44310bb1",
+  "independentResultsSHA256": "0ddfbf1f548d15573bd6973df0fd716fd9d1133858cbae751fa8e003c002f4bc",
+  "artifactBindingsChecked": 14,
+  "acceptedClaim": "In the declared linear-inductance prescribed-path model, maintained current supplies both field-energy increase and mechanical work. The 2mN ordinary upward magnetic force reduces a separately supported 1g test-pan indication with g unchanged and survives current reversal.",
+  "independentMethod": "Complex-step coenergy derivatives with relative target/stator coordinate, exact endpoint work, Simpson sampled-power integration, fixed-flux derivative and contact-domain attack.",
+  "checks": {
+    "allManifestBindings": true,
+    "exactFrozenContractCopy": true,
+    "independentEnergyClosure": true,
+    "coenergyForceSign": true,
+    "fixedFluxBoundary": true,
+    "currentAndPathReversals": true,
+    "quadratureRefinement": true,
+    "zeroCurrentAndGradient": true,
+    "equalOppositeInternalReaction": true,
+    "commonSupportSumUnchanged": true,
+    "invalidContactWithholdsMass": true
+  },
+  "independentClosureResidual_J": 8.465450562766819e-16,
+  "netInternalForce_N": 0.0,
+  "limitations": [
+    "L(z) is a supplied finite-domain model, not a measured coil geometry.",
+    "The motion is prescribed; free dynamics, mechanical stage work and a moved load gravitational potential are not solved.",
+    "Static one-pan reduction assumes reaction support outside that pan. The independently derived complete static support sum cancels internal force only within the relative-coordinate model.",
+    "External fields, leads, heating, buoyancy and dynamic/field momentum remain possible measurement channels outside this model.",
+    "Current-even force is not a gravity identifier. No hardware, levitation or gravity change was measured."
+  ],
+  "sourceChecks": [
+    {
+      "url": "https://www.feynmanlectures.caltech.edu/II_17.html",
+      "read": "section17-8 particularly source work in fixed-current coil force",
+      "supports": "A field-energy-only gradient omits maintained-current source work."
+    },
+    {
+      "url": "https://www.oiml.org/en/files/pdf_r/r111-1-e04.pdf",
+      "read": "2004 edition section2.2 and B.6.1",
+      "supports": "Balance indications include nongravitational interactions; metrology source does not validate this hypothetical coil."
+    }
+  ],
+  "nextQuestion": "Can paired target/stator support readings, opposite-current averages and multiple known masses separate a stipulated common gravity-like parameter from internal forces and mass-independent external offset, while explicitly retaining the exact mass-proportional calibration/thermal bias rival and complete deterministic force-error budget?"
+}

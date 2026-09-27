@@ -1,0 +1,30 @@
+{
+  "method": "Complex-step independent fixed-current/fixed-flux derivatives, exact endpoint work and Simpson integration; explicit relative-coordinate reaction.",
+  "sourceWork_J": 0.0400800000000017,
+  "exactSourceWork_J": 0.040080000000000005,
+  "mechanicalWork_J": 4.000000000084558e-05,
+  "exactMechanicalWork_J": 4.000000000000001e-05,
+  "magneticEnergyChange_J": 4.0000000000000024e-05,
+  "exactMagneticEnergyChange_J": 4.000000000000001e-05,
+  "energyClosureResidual_J": 8.465450562766819e-16,
+  "targetForce_N": 0.0020000000000000005,
+  "statorReaction_N": -0.0020000000000000005,
+  "netInternalMagneticForce_N": 0.0,
+  "fixedFluxForceMaxError_N": 6.505213034913027e-19,
+  "fixedFluxWork_J": 3.33333333341566e-05,
+  "fixedFluxReleasedEnergy_J": 3.333333333333332e-05,
+  "testSupport_N": 0.00780665,
+  "statorSupport_N": 0.982665,
+  "commonScaleSupport_N": 0.99047165,
+  "unchangedTotalWeight_N": 0.99047165,
+  "failedContactControl": {
+    "gravitationalAcceleration_m_per_s2": 9.80665,
+    "trueMass_kg": 0.001,
+    "upwardMagneticForce_N": 0.02,
+    "normalForce_N": -0.01019335,
+    "contactRegime": "contact_model_invalid",
+    "indicatedMass_kg": null
+  },
+  "reactionLimit": "Static relative-coordinate model with both supports included; omitted external fields, cables, radiated momentum and dynamics still require their own boundary.",
+  "scriptSHA256": "934117c3aa370725c7afeb9bfe5b60c6c2e4f7d0950608724bc236fb44310bb1"
+}

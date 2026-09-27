@@ -1,0 +1,68 @@
+{
+  "id": "R1",
+  "title": "A simultaneous reference can identify common gain drift",
+  "frozenAt": "2026-09-27T01:55:28.815837+00:00",
+  "status": "frozen_before_production",
+  "incomingEvidence": "v3 S2B/S5A: exp(beta t) acquisition gain is exactly confounded with a shifted physical decay in a lone channel.",
+  "question": "Under a shared scalar exponential acquisition gain, does a nondecaying simultaneous reference identify the target decay, and which physically different rival still survives?",
+  "evidenceType": "synthetic_envelopes_and_generated_PCM_not_physical_recordings",
+  "model": {
+    "target": "x_s(t)=A_s exp((-alpha+beta_s)t) cos(2 pi f_s t + phi_s)",
+    "reference": "x_r(t)=A_r exp(beta_r t) cos(2 pi f_r t + phi_r)",
+    "sharedGainPremise": "beta_s=beta_r=beta; independently stable reference amplitude before receiver",
+    "time_s": [
+      0,
+      1.0
+    ],
+    "sampleRate_Hz": 8000,
+    "targetFrequency_Hz": 500,
+    "referenceFrequency_Hz": 1000,
+    "targetAlpha_per_s": 4,
+    "commonBeta_per_s": [
+      0,
+      1,
+      2
+    ],
+    "amplitudes_FS": [
+      0.2,
+      0.05
+    ],
+    "quantization": "signed_PCM16",
+    "observation": "ideal separated channels followed by generated stereo PCM; this is not a one-microphone spectral separation claim"
+  },
+  "observable": {
+    "targetLogSlope_per_s": "beta_s-alpha",
+    "referenceLogSlope_per_s": "beta_r",
+    "correctedAlpha_per_s": "referenceLogSlope-targetLogSlope"
+  },
+  "controls": [
+    "no-gain beta=0",
+    "common-gain beta=1 and2",
+    "differential gain beta_s=2,beta_r=1: expected corrected alpha=3",
+    "unstable reference: true reference alpha_r=1 with shared beta=2 gives same corrected bias",
+    "zero reference must withhold correction"
+  ],
+  "acceptance": {
+    "analyticIdentityAbsoluteTolerance_per_s": 1e-10,
+    "PCMCorrectedAlphaAbsoluteError_per_s": 0.02,
+    "differentialRivalExpectedBias_per_s": -1,
+    "rivalTolerance_per_s": 0.02,
+    "rank": {
+      "singleChannel": 1,
+      "twoChannelSharedGain": 2
+    },
+    "explicitKernelWitnessRequired": true,
+    "rawHashesRequired": true
+  },
+  "falsifier": "Valid common-gain PCM fixtures exceed correction tolerance, or a claimed universal correction admits unstable/differential reference as identified intrinsic damping.",
+  "claimCeiling": "Conditional parameter recovery in a stipulated shared-gain model and a implementable recording witness proposal; no calibrated material damping or physical result.",
+  "sources": [
+    "V4-W3C-CAPTURE",
+    "V4-SEAGCNET2026"
+  ],
+  "producer": "/root/coder",
+  "reviewer": "/root/skeptic",
+  "advisor": "/root/advisor",
+  "loopA": "Producer executes frozen model and reports artifacts; no next-round execution.",
+  "loopB": "Independent skeptic derives rank/kernel and reruns adversarial controls; producer repairs if needed; advisor admits narrowly then selects next question."
+}

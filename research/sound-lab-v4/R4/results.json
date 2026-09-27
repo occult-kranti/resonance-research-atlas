@@ -1,0 +1,71 @@
+{
+  "id": "R4",
+  "round": 4,
+  "title": "Magnetic support force needs source and mechanical work",
+  "status": "executed_pending_review",
+  "evidenceType": "synthetic_SI_electromechanical_model",
+  "question": "Does a prescribed moving inductance yield an even-in-current upward force and smaller support reading while full electrical/field/mechanical energy still closes with unchanged g?",
+  "finding": "A 2 mN upward magnetic force reduces a 1 g pan indication with unchanged gravity; maintained-current source work supplies both field-energy increase and mechanical work.",
+  "metrics": {
+    "upwardForce_N": 0.0020000000000000005,
+    "sourceWork_J": 0.04007999958876605,
+    "fieldEnergyIncrease_J": 4.0000000000000024e-05,
+    "mechanicalWork_J": 3.999979438303027e-05,
+    "jouleLoss_J": 0.04000000000000001,
+    "finestMaxClosureResidual_J": 2.0561698871324197e-10,
+    "coarsestMaxClosureResidual_J": 3.2899222304760833e-09,
+    "finestClosedFormTermError_J": 4.112339566098022e-10,
+    "forceCoenergyDerivativeError_N": 4.384947266400374e-15,
+    "currentReversalForceDifference_N": 0.0,
+    "wrongFixedCurrentForce_N": -0.0020000000000043854,
+    "wrongForceBudgetResidual_J": 7.999958876613034e-05,
+    "fixedFluxMechanicalWork_J": 3.333315913004061e-05,
+    "fixedFluxFieldEnergyChange_J": -3.333333333333332e-05,
+    "fixedFluxMaxClosureResidual_J": 1.7420329271439737e-10,
+    "fixedFluxForceDerivativeError_N": 1.3567727670527052e-13,
+    "normalForce_N": 0.00780665,
+    "indicatedMass_kg": 0.0007960567574044144,
+    "unchangedGravity_m_per_s2": 9.80665
+  },
+  "controls": [
+    {
+      "control": "minus fixed-current field gradient",
+      "outcome": "wrong force sign and failed source-inclusive budget"
+    },
+    {
+      "control": "current reversal",
+      "outcome": "ordinary support survives because force depends on I\u00b2"
+    },
+    {
+      "control": "prescribed path",
+      "outcome": "motion is input, not a free-levitation prediction"
+    }
+  ],
+  "checks": {
+    "energyClosure": true,
+    "closedFormTerms": true,
+    "coenergyDerivative": true,
+    "currentReversal": true,
+    "zeroCurrentForce": true,
+    "zeroGradientForce": true,
+    "positiveInductance": true,
+    "refinement": true,
+    "reversePathWorkSign": true,
+    "fixedFluxBudget": true,
+    "fixedFluxDerivative": true,
+    "gravityUnchangedContactPositive": true,
+    "wrongSignFailureRetained": true
+  },
+  "producerChecksPassed": true,
+  "limits": [
+    "Conditional prescribed-path magnetic actuator model and support-force counterexample; L(z) not measured, motion not predicted by free dynamics, no hardware or antigravity result."
+  ],
+  "contractSHA256": "2b0be2bdb3b561f08c031773f7810a991e4fcf30ba12ec94228e4851b55f95be",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8"
+  },
+  "domain": "magnetism_and_electromechanics"
+}

@@ -1,0 +1,94 @@
+{
+  "id": "R5",
+  "title": "Which observations could identify a gravity-like change?",
+  "domain": "gravity_claim_identifiability",
+  "frozenAt": "2026-09-27T02:19:40.579033+00:00",
+  "status": "frozen_before_production",
+  "predecessor": {
+    "id": "R4B",
+    "reviewPath": "research/sound-lab-v4/reviews/R4-review.json",
+    "reviewSHA256": "732eeb29781628dea062a1e0ede143f96119e5961045960eb7971a520f4ec2de"
+  },
+  "incomingEvidence": "R4B independently verified equal/opposite test/stator forces and common-scale cancellation. It recommends paired supports, polarity and mass variation, with a mass-proportional bias kernel retained.",
+  "question": "Can paired-support and polarity-averaged observations across known masses recover a deliberately injected common acceleration change under a constant-bias model, and what exact rival still prevents an empirical gravity identification?",
+  "evidenceType": "synthetic_force_observations_with_injected_model_deformation",
+  "model": {
+    "testMasses_kg": [
+      0.005,
+      0.015,
+      0.025,
+      0.035
+    ],
+    "statorMass_kg": 0.1,
+    "baseline_g_m_per_s2": 9.80665,
+    "currentSigns": [
+      -1,
+      1
+    ],
+    "currentMagnitude_A": 0.2,
+    "internalMagneticForce_N": 0.002,
+    "externalOddLeadForce_N": 0.0003,
+    "testEvenBias_N": 0.0002,
+    "statorEvenBias_N": 0.0003,
+    "null_delta_g_m_per_s2": 0,
+    "injected_delta_g_m_per_s2": -0.02,
+    "meaningOfDeltaG": "Stipulated common change of downward acceleration acting on BOTH weighed subassemblies; hypothetical model deformation, not observed gravity modification.",
+    "testContrast_N": "D_test(m,p)=m*delta_g-F_internal+p*F_external_odd+B_test",
+    "statorContrast_N": "D_stator(m,p)=M*delta_g+F_internal+B_stator",
+    "pairedPolarityObservable_N": "S(m)=mean_over_p[D_test(m,p)+D_stator(m,p)]=(m+M)*delta_g+B_even",
+    "observationPremises": [
+      "static contact/support",
+      "paired supports measured contemporaneously",
+      "all mutual reaction included",
+      "polarity conditions share the same evenbias",
+      "bias sum is mass-independent in the two-parameter identifying model",
+      "known calibrated masses and force conversion"
+    ],
+    "fit": "OLS S versus total mass with intercept; keep rank/nullity/kernel for all compared models"
+  },
+  "boundedError": {
+    "perBaselineSubtractedSupportContrast_N": 2e-06,
+    "meaning": "Supplied deterministic total error of each contrast, already including its baseline subtraction; not instrument performance measured here",
+    "pairedPolarityWorstCase_N": 4e-06,
+    "slopeWeights_per_kg": [
+      -30,
+      -10,
+      10,
+      30
+    ],
+    "delta_gWorstCase_m_per_s2": 0.00032,
+    "requirement": "Do not reduce worst-case error by sqrt(n). Interval is deterministic under bounds."
+  },
+  "controls": [
+    "ordinary-force null with 2mN internalforce and externaloddleadforce recoversdelta_g0",
+    "injectedcommon acceleration\u2212.02m/s\u00b2 recovers correctly and conditionalinterval excludes0",
+    "singlemass repeated designs remainrank1/domain2 with kernel(1,-totalmass); no identifieddelta_g",
+    "fourdistinctmasses give rank2/domain2 underconstantbias model",
+    "128 bounded per-support error realizations: true slope contained in deterministicinterval",
+    "construct bound-saturating adversarial errors and attain\u00b1.00032m/s\u00b2 slopeerror",
+    "exact mass-proportionalbias rival c*m andc*M withdelta_g0,c=\u2212.02 produces every same pairedsupport record as gravityinjection",
+    "expandedmodel S=(m+M)(delta_g+c)+B hasrank2/domain3,nullity1,kernel(1,0,-1); unknownmassbias bound withholds unconditionalgravityinterval",
+    "currentpolarity by itself doesnot removeeven internalforce inonepan",
+    "malformed nonfinite/negative masses or negative/nonfinite errorbounds reject; contactloss cannot be presentedas statics"
+  ],
+  "acceptance": {
+    "noiselessRecoveryAbsolute_m_per_s2": 1e-10,
+    "nullRecoveryAbsolute_m_per_s2": 1e-10,
+    "sameObservationRivalAbsolute_N": 1e-14,
+    "kernelResidualTolerance": 1e-12,
+    "worstCaseBoundAttainmentTolerance_m_per_s2": 1e-12,
+    "all128CoverageRequired": true,
+    "noUnknownSystematicGravityAdmission": true
+  },
+  "falsifier": "An in-bound error escapes its interval, an unknown mass-scaledbias is reportedas removed, or injectedmodeltruth is mislabeled measured antigravity.",
+  "claimCeiling": "A prospective identifying design for a stipulated two-parameter force model plus an exact nonidentifiability counterexample. No actual support readings, sensitivity demonstration, new force, or changed gravity.",
+  "sources": [
+    "V4-EM-TAJMAR2024",
+    "V4-FEYNMAN-INDUCTION"
+  ],
+  "producer": "/root/coder",
+  "reviewer": "/root/skeptic",
+  "advisor": "/root/advisor",
+  "loopA": "Execute null and injected positive controls, paired-force/mass design and bounded errors.",
+  "loopB": "Independently derive inverse ranks/error extrema, verify exact ordinary-biasrival, admit only conditionaldesign; stop authorized research after verdict."
+}

@@ -1,0 +1,19 @@
+{
+  "id": "R5",
+  "artifacts": {
+    "contract.json": "13bac9d954a1b64e303779f7c34eb7fd679ebea07e828a8d1fef1e870c4433e8",
+    "run.py": "2855b089af6b5b209a2a3b1bf7bc828cd18b09c7e737c5ba0682f5170690961e",
+    "results.json": "fd40b74b930277957a1f382794f40094cc625246779ff77f257251e9f707afe5",
+    "report.md": "f0d0145b5fd51ef52063d82813d32c8cb012679deed35b8ab8aa489320187217",
+    "ordinary-null.csv": "f87e90d88496455595b64881e742ba56c0276178d0aae41d26eecb511e2b8fc7",
+    "injected-model.csv": "94cd8e6e6794faea2538be238c0a70e9c43be499ad8290f5988baa9761a223ad",
+    "mass-bias-rival.csv": "023f8148c0f7968bf96f3cbd2f031828f89e6d1390fc96f5189428b2ffcfbb26",
+    "bounded-realizations.csv": "1345b6d3ae5e5c4650864428ad0169721acceb082088f8f61eafef92517332ec",
+    "individual-errors.csv": "098d44d3aba8c5867a10a81f1c61e318f47b0364dbd1e3e65a68d6600d15c5fa",
+    "identifiability.json": "d231bfbba6d6b0e7a5dcae2550932116d28574bbbdb4d9463277d0c1751bb179",
+    "case-results.json": "1066c758dd07b809098fc6265cc118569582d646421e87b85add8da93041d56e",
+    "figure.svg": "a1ece6e443bd6302f657ae4090144ab48e9a077f02efdf837fe9e2abba04bd29",
+    "repair-log.md": "39d00631b519e48b33d09ee3130dae035f462705950419da2eaae8fc1669bfb9"
+  },
+  "commonSHA256": "001dcd61b2499d85d4af5444a70ee771e969026519a2cccdb565e553933501c7"
+}

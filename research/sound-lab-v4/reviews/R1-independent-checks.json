@@ -1,0 +1,148 @@
+{
+  "method": "Independent signed carrier-maxima regression; no producer code import",
+  "models": {
+    "single_channel": {
+      "matrix": [
+        [
+          -1,
+          1
+        ]
+      ],
+      "domainDimension": 2,
+      "rank": 1,
+      "nullity": 1,
+      "kernelWitness": [
+        1,
+        1
+      ],
+      "kernelResidual": 0.0
+    },
+    "shared_gain": {
+      "matrix": [
+        [
+          -1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "domainDimension": 2,
+      "rank": 2,
+      "nullity": 0,
+      "kernelWitness": null,
+      "kernelResidual": null
+    },
+    "differential_gain": {
+      "matrix": [
+        [
+          -1,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "domainDimension": 3,
+      "rank": 2,
+      "nullity": 1,
+      "kernelWitness": [
+        1,
+        1,
+        0
+      ],
+      "kernelResidual": 0.0
+    },
+    "unstable_reference": {
+      "matrix": [
+        [
+          -1,
+          0,
+          1
+        ],
+        [
+          0,
+          -1,
+          1
+        ]
+      ],
+      "domainDimension": 3,
+      "rank": 2,
+      "nullity": 1,
+      "kernelWitness": [
+        1,
+        1,
+        1
+      ],
+      "kernelResidual": 0.0
+    }
+  },
+  "exactRivals": {
+    "different_alpha_differential_gain_PCM_identical": true,
+    "different_alpha_unstable_reference_PCM_identical": true,
+    "baseline_alpha_per_s": 4,
+    "rival_alpha_per_s": 5
+  },
+  "nonexponentialSharedGainRatioAlpha_per_s": 4.000000000000001,
+  "decodedFiles": {
+    "R1/common_beta0.wav": {
+      "sha256": "9c5605ebd42f5e9b7ba42a60c0c9b83e86d669d5eac1e7ce0f91f6f18827c770",
+      "sampleRate_Hz": 8000,
+      "samples": 8000,
+      "maxAbsPCM": 6553,
+      "targetSlope_per_s": -3.999833570287131,
+      "referenceSlope_per_s": -1.0806302147291004e-16,
+      "correctedAlpha_per_s": 3.999833570287131
+    },
+    "R1/common_beta1.wav": {
+      "sha256": "8717a0f18b30c5438b5f0a24554ed9c5388159326e8d3a3bf278d858365eb63e",
+      "sampleRate_Hz": 8000,
+      "samples": 8000,
+      "maxAbsPCM": 6553,
+      "targetSlope_per_s": -3.000067316112083,
+      "referenceSlope_per_s": 1.0000252400811283,
+      "correctedAlpha_per_s": 4.000092556193211
+    },
+    "R1/common_beta2.wav": {
+      "sha256": "3e44a83d68b56156c6b99712045cdb99a63c1f28b6aa897a239a925b92b8d4c4",
+      "sampleRate_Hz": 8000,
+      "samples": 8000,
+      "maxAbsPCM": 12094,
+      "targetSlope_per_s": -2.0000104947114625,
+      "referenceSlope_per_s": 2.000002484468583,
+      "correctedAlpha_per_s": 4.000012979180045
+    },
+    "R1/differential_gain.wav": {
+      "sha256": "757cfc10bd661cae0eb15c6aa8923142e02555405e4a24f6690b28cdea90b5dc",
+      "sampleRate_Hz": 8000,
+      "samples": 8000,
+      "maxAbsPCM": 6553,
+      "targetSlope_per_s": -2.0000104947114625,
+      "referenceSlope_per_s": 1.0000252400811283,
+      "correctedAlpha_per_s": 3.000035734792591
+    },
+    "R1/unstable_reference.wav": {
+      "sha256": "757cfc10bd661cae0eb15c6aa8923142e02555405e4a24f6690b28cdea90b5dc",
+      "sampleRate_Hz": 8000,
+      "samples": 8000,
+      "maxAbsPCM": 6553,
+      "targetSlope_per_s": -2.0000104947114625,
+      "referenceSlope_per_s": 1.0000252400811283,
+      "correctedAlpha_per_s": 3.000035734792591
+    },
+    "R1/zero_reference.wav": {
+      "sha256": "c59b548e459d7931129add2a8e7e5fd02a411c4248af86167be11b1ed168466c",
+      "sampleRate_Hz": 8000,
+      "samples": 8000,
+      "maxAbsPCM": 6553,
+      "targetSlope_per_s": -2.0000104947114625,
+      "referenceSlope_per_s": null,
+      "correctedAlpha_per_s": null
+    }
+  },
+  "scriptSHA256": "81a5289a534c8eaff67ffe78dfd7b4af628d0f61506845b8ebae9d1f10954f6b"
+}

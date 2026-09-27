@@ -1,0 +1,10 @@
+{
+  "control": "upper saturated bounded errors",
+  "interval": [
+    -0.01999999999999997,
+    -0.019359999999999968
+  ],
+  "true_delta_g": -0.02,
+  "strictContainment": false,
+  "reason": "floating roundoff excludes true lower endpoint; theoretical bound is unchanged"
+}

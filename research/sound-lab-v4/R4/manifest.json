@@ -1,0 +1,20 @@
+{
+  "id": "R4",
+  "artifacts": {
+    "contract.json": "2b0be2bdb3b561f08c031773f7810a991e4fcf30ba12ec94228e4851b55f95be",
+    "run.py": "0365591268dc0db2495cec25db06b2b94a6b0e891715c5e9dcb01e5369bd6ebc",
+    "results.json": "e974a5a4098964afa26dfddbf99c1921b1ae69e601097b9f76191d206b4a0da2",
+    "report.md": "c43026909f75913dcd948973d9b7028b1abb3861103b80092d11f01bf7c02ce0",
+    "nominal.csv": "506e8ad160d1910bb08ada8bff274ff692769ff5a5247a0b130e6b3cc618c105",
+    "reversed_current.csv": "d72aca26542e5612a77c8bec3da0af636a8cb4076f6a86fcdbac4011f2ba6ff3",
+    "zero_current.csv": "516e4a19d5e86e33a979c3d0accead5b60ab5ad10f639f84c5bbb31d1e19e0d7",
+    "zero_gradient.csv": "3f44bfd4d1c73796ab9277e7a86b06098588df6dcdd829accbd659c5a0b42bde",
+    "reversed_path.csv": "a17b070ecea562778ac2d56ab162ba793aa4a270120a91d8d1dc77e9d10d4fe9",
+    "fixed-flux.csv": "3193df1369f002c828eedb8c3c2cfb60a6145965f5e7a4abe39ff95e973c7b48",
+    "convergence.csv": "cd44d7763097a58f23b2db442e68c99df03b3e07ca0d19cc6e5301ace69993b4",
+    "case-results.json": "ae76c01e1a8e0d0f13704ef88faf727cf029597dde33128c0aa136cc49e3b6a3",
+    "readout.json": "61183a4aceed4e92feda8284b177475fc2b17334e968df8e1d2786a2e1cabd13",
+    "figure.svg": "1b37e3f06b5d3f4b26e5fb7faadfc07f97dde8b1b0f21cce8ff6b3f111adf03e"
+  },
+  "commonSHA256": "001dcd61b2499d85d4af5444a70ee771e969026519a2cccdb565e553933501c7"
+}

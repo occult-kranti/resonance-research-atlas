@@ -1,0 +1,10 @@
+{
+  "generatorSha256": "8e5954d33b7c61201c5a04aa1a647f716d1d603e9bf1f5163477d33c7da3d669",
+  "filesSha256": {
+    "apparatus-coordinates.json": "7d9e84f01cb97b928a7366d2ed713091bb94ddf6cfbe10060649b8b0ff0b1a6f",
+    "dual-channel-3d.png": "883e979cd3445aad73e2dfb48839935bb8b664a6251ab6df4f5199affb218848",
+    "dual-channel-plan.svg": "7982120a7cc4e404dfa0f2735516b378d3b75e6ad72d46d5477c59b6ed0beabc",
+    "phone-witness-3d.png": "831a231b26c4f98c4992de13080cc62bae4fe17bf6519a2a07c6f654098c89b4",
+    "phone-witness-plan.svg": "3663e2496265e5a264d00cfc3802314e088cca6feb535a29752a339832d0e242"
+  }
+}

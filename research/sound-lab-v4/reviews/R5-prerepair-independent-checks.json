@@ -1,0 +1,222 @@
+{
+  "method": "Independent raw support equations, direct rank/kernel derivation and all65536 bounded-error vertices; producer API separately attacked.",
+  "slopeWeights_per_kg": [
+    -30.000000000000004,
+    -10.00000000000001,
+    9.999999999999982,
+    30.000000000000004
+  ],
+  "rivalMaxRawObservationDifference_N": 0.0,
+  "independentlyInferredSlope_m_per_s2": -0.01999999999999996,
+  "identifyingModel": {
+    "domainDimension": 2,
+    "rank": 2,
+    "nullity": 0
+  },
+  "expandedModel": {
+    "domainDimension": 3,
+    "rank": 2,
+    "nullity": 1,
+    "kernel": [
+      1,
+      0,
+      -1
+    ],
+    "residual": 0.0
+  },
+  "singleMassModel": {
+    "domainDimension": 2,
+    "rank": 1,
+    "nullity": 1,
+    "kernel": [
+      1.0,
+      -0.10500000000000001
+    ]
+  },
+  "exhaustiveErrorVertices": 65536,
+  "slopeErrorExtrema_m_per_s2": [
+    -0.00031999999999999997,
+    0.00031999999999999997
+  ],
+  "baseAPI": {
+    "domainDimension": 2,
+    "rank": 2,
+    "nullity": 0,
+    "totalMasses_kg": [
+      0.10500000000000001,
+      0.115,
+      0.125,
+      0.135
+    ],
+    "pairedPolarityObservable_N": [
+      -0.0015999999999999999,
+      -0.0018,
+      -0.002,
+      -0.0022
+    ],
+    "slope_m_per_s2": -0.01999999999999996,
+    "intercept_N": 0.0004999999999999952,
+    "conditionalSlopeInterval_m_per_s2": [
+      -0.02031999999999996,
+      -0.019679999999999958
+    ],
+    "physicalGravityInterval_m_per_s2": null,
+    "status": "conditional_slope_only_unknown_mass_bias",
+    "slopeWeights_per_kg": [
+      -30.000000000000004,
+      -10.00000000000001,
+      9.999999999999982,
+      30.000000000000004
+    ],
+    "pairedWorstCaseError_N": 4e-06,
+    "slopeWorstCaseError_m_per_s2": 0.00031999999999999997
+  },
+  "saturatingAPI": {
+    "domainDimension": 2,
+    "rank": 2,
+    "nullity": 0,
+    "totalMasses_kg": [
+      0.10500000000000001,
+      0.115,
+      0.125,
+      0.135
+    ],
+    "pairedPolarityObservable_N": [
+      -0.0016039999999999997,
+      -0.0018039999999999998,
+      -0.0019960000000000004,
+      -0.002196
+    ],
+    "slope_m_per_s2": -0.01967999999999997,
+    "intercept_N": 0.00046159999999999626,
+    "conditionalSlopeInterval_m_per_s2": [
+      -0.01999999999999997,
+      -0.019359999999999968
+    ],
+    "physicalGravityInterval_m_per_s2": null,
+    "status": "conditional_slope_only_unknown_mass_bias",
+    "slopeWeights_per_kg": [
+      -30.000000000000004,
+      -10.00000000000001,
+      9.999999999999982,
+      30.000000000000004
+    ],
+    "pairedWorstCaseError_N": 4e-06,
+    "slopeWorstCaseError_m_per_s2": 0.00031999999999999997
+  },
+  "boundedBiasAPI": {
+    "domainDimension": 2,
+    "rank": 2,
+    "nullity": 0,
+    "totalMasses_kg": [
+      0.10500000000000001,
+      0.115,
+      0.125,
+      0.135
+    ],
+    "pairedPolarityObservable_N": [
+      -0.0015999999999999999,
+      -0.0018,
+      -0.002,
+      -0.0022
+    ],
+    "slope_m_per_s2": -0.01999999999999996,
+    "intercept_N": 0.0004999999999999952,
+    "conditionalSlopeInterval_m_per_s2": [
+      -0.02031999999999996,
+      -0.019679999999999958
+    ],
+    "physicalGravityInterval_m_per_s2": [
+      -0.05031999999999996,
+      0.010320000000000041
+    ],
+    "status": "conditional_physical_interval_under_supplied_mass_bias_bound",
+    "slopeWeights_per_kg": [
+      -30.000000000000004,
+      -10.00000000000001,
+      9.999999999999982,
+      30.000000000000004
+    ],
+    "pairedWorstCaseError_N": 4e-06,
+    "slopeWorstCaseError_m_per_s2": 0.00031999999999999997
+  },
+  "singleMassAPI": {
+    "domainDimension": 2,
+    "rank": 1,
+    "nullity": 1,
+    "totalMasses_kg": [
+      0.10500000000000001,
+      0.10500000000000001,
+      0.10500000000000001,
+      0.10500000000000001
+    ],
+    "pairedPolarityObservable_N": [
+      -0.0015999999999999999,
+      -0.0015999999999999999,
+      -0.0015999999999999999,
+      -0.0015999999999999999
+    ],
+    "slope_m_per_s2": null,
+    "intercept_N": null,
+    "conditionalSlopeInterval_m_per_s2": null,
+    "physicalGravityInterval_m_per_s2": null,
+    "status": "withheld_rank"
+  },
+  "contactLossAPI": {
+    "domainDimension": 2,
+    "rank": 2,
+    "nullity": 0,
+    "totalMasses_kg": [
+      0.10500000000000001,
+      0.115,
+      0.125,
+      0.135
+    ],
+    "pairedPolarityObservable_N": [
+      -0.09970000000000001,
+      -0.0018,
+      -0.002,
+      -0.0022
+    ],
+    "slope_m_per_s2": null,
+    "intercept_N": null,
+    "conditionalSlopeInterval_m_per_s2": null,
+    "physicalGravityInterval_m_per_s2": null,
+    "status": "withheld_contact_loss_or_uncertainty"
+  },
+  "malformedInputs": {
+    "negative_mass": {
+      "rejected": true,
+      "reason": "finite observations and strictly positive masses required"
+    },
+    "nonfinite_mass": {
+      "rejected": true,
+      "reason": "finite observations and strictly positive masses required"
+    },
+    "negative_error": {
+      "rejected": true,
+      "reason": "finite nonnegative support-contrast error bound required"
+    },
+    "nonfinite_error": {
+      "rejected": true,
+      "reason": "finite nonnegative support-contrast error bound required"
+    },
+    "negative_bias_bound": {
+      "rejected": true,
+      "reason": "finite nonnegative mass-bias bound or None required"
+    },
+    "nonfinite_bias_bound": {
+      "rejected": true,
+      "reason": "finite nonnegative mass-bias bound or None required"
+    },
+    "malformed_shape": {
+      "rejected": true,
+      "reason": "one-dimensional masses and N by 2 paired polarity arrays required"
+    },
+    "nonfinite_force": {
+      "rejected": true,
+      "reason": "finite observations and strictly positive masses required"
+    }
+  },
+  "scriptSHA256": "3082e88632fa0971d35b2e78c632aa2a54ccf9ffb761d00d5439f8ba72c4bbab"
+}

@@ -1,0 +1,13 @@
+{
+  "asset": "assets/sound-lab-v4/magnetic-balance-concept.png",
+  "method": "built-in image_gen",
+  "kind": "generated concept illustration",
+  "status": "proposed apparatus; not a photograph, measurement or calibrated geometry",
+  "prompt": "Use case: stylized-concept. Asset type: illustrative concept for an electricity and magnetism research bench, separate from exact diagrams. Physically plausible refined 3D product render on warm cream tabletop, forest-green accents: a small round steel disk lies flat directly ON the weighing pan of a small digital bench balance. A small permanent block magnet is held securely several centimeters ABOVE this disk by a horizontal arm and nonmagnetic wooden stand. Both feet of the stand are on the tabletop entirely outside and independent of the balance. There is a clearly visible air gap between magnet and disk, while disk is visibly resting on the pan, not hovering. Add a simple ruler next to gap and paper log with pencil. Balance display is blank dark glass, no numbers, no fake measurements. The purpose is to visualize an ordinary magnetic-attraction control arrangement, not antigravity. Complete apparatus in elevated three-quarter view, soft daylight, realistic wood steel and plastic materials, precise restrained editorial museum exhibit aesthetic. No people, wires, coils, sparks, glowing fields, wave lines, arrows, labels, equations, text, brands, supernatural motifs, levitation or numerical results. No claim an experiment happened. Landscape 1536x1024.",
+  "limitations": [
+    "Illustrative scale housing and pan materials have no guaranteed magnetic neutrality.",
+    "Actual scale interference must be tested with blanks and source-distance controls.",
+    "The steel specimen remains in contact with the pan; no levitation is depicted.",
+    "Use deterministic force diagrams and the frozen model for signs and physical boundaries."
+  ]
+}

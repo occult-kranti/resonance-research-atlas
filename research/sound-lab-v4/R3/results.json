@@ -1,0 +1,68 @@
+{
+  "id": "R3",
+  "round": 3,
+  "title": "Electrical voltage gain is not net energy gain",
+  "status": "executed_pending_review",
+  "evidenceType": "synthetic_SI_circuit_simulation",
+  "question": "Can an electrically resonant circuit show capacitor voltage amplification and source-off load work while its complete source/storage/loss budget remains passive?",
+  "finding": "The capacitor approaches twice the source voltage while signed input work closes the energy budget; source-off load work is released storage, and reactive VA is not real power.",
+  "metrics": {
+    "resonantVoltageGain": 2.0000019770305784,
+    "offResonanceVoltageGain": 1.2648746173061156,
+    "strongerResistanceVoltageGain": 1.0000000000005282,
+    "finestMaxEnergyResidual_J": 2.3995251582139415e-09,
+    "finestNormalizedResidual": 4.078615662811925e-07,
+    "coarsestMaxEnergyResidual_J": 3.8357474335670716e-08,
+    "sourceWork_J": 0.005883185268208463,
+    "loadWork_J": 0.004706548193803746,
+    "internalLoss_J": 0.0011766370484509365,
+    "finalStoredEnergy_J": 2.588517389031323e-11,
+    "sourceOffLoadWork_J": 0.00016000001045452916,
+    "sourceOffStoredEnergyReleased_J": 0.0002000000131200098,
+    "wrongOmittedStorageSurplus_J": 0.00020000001306816144,
+    "correctSourceOffClosure_J": 5.1848363926895735e-14,
+    "chargedDischargeLoadWork_J": 3.999999999013282e-05,
+    "chargedDischargeInputWork_J": 0.0,
+    "capacitorMeanRealPower_W": 0.0,
+    "capacitorApparentPower_VA": 0.2,
+    "zeroStateMaxAbs": 0.0
+  },
+  "controls": [
+    {
+      "control": "omit source-off initial storage",
+      "outcome": "false positive surplus retained"
+    },
+    {
+      "control": "capacitor apparent power as watts",
+      "outcome": "positive VA but zero mean real power"
+    },
+    {
+      "control": "initially charged source-off circuit",
+      "outcome": "load work supplied by initial capacitor energy"
+    }
+  ],
+  "checks": {
+    "energyClosure": true,
+    "quadratureRefinement": true,
+    "voltageGain": true,
+    "capacitorRealPowerZero": true,
+    "reactiveVANotRealWatts": true,
+    "zeroState": true,
+    "dischargeFromInitialStorage": true,
+    "strongerResistanceReducesGain": true,
+    "sourceOffPositiveLoad": true,
+    "passiveLoadLoss": true
+  },
+  "producerChecksPassed": true,
+  "limits": [
+    "Known lumped passive circuit model and demonstrated accounting/readout counterexamples; no physical device, overunity, gravitational effect or circuit-component calibration."
+  ],
+  "contractSHA256": "a3219ed5e845d945827e83e6d2edbe4138b5408d4de11ed4f7743c955127015d",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8"
+  },
+  "domain": "electricity_and_magnetic_storage"
+}

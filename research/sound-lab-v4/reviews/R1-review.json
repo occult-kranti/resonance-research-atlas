@@ -1,0 +1,43 @@
+{
+  "id": "R1",
+  "reviewedAt": "2026-09-27T01:58:23.799916+00:00",
+  "reviewer": "/root/skeptic",
+  "verdict": "accepted_narrow",
+  "manifestSHA256": "7f63f2962fb43de74ca5e9f8550baeca40681c1866feee09bdbea2a3dd63affe",
+  "contractSHA256": "43a52ae1d69d5dfdd76118465d78019eeb592cf2791dca0a1f63f3192b4b225a",
+  "independentScriptSHA256": "81a5289a534c8eaff67ffe78dfd7b4af628d0f61506845b8ebae9d1f10954f6b",
+  "independentResultsSHA256": "6926ff9415f912c8a27477848be049071acda5757c253fae2b0066c880597ca5",
+  "artifactBindingsChecked": 14,
+  "independentMethod": "PCM decoded with wave; signed carrier-maxima log regression; explicit observation matrices and exact PCM rivals. No producer numerical module imported.",
+  "acceptedClaim": "Given known stable reference, separated channels, physical-time premise and common scalar gain, slope difference identifies target amplitude decay in the finite synthetic model.",
+  "checks": {
+    "allManifestBindings": true,
+    "exactFrozenContractCopy": true,
+    "independentPCMWithinFrozenTolerance": true,
+    "zeroReferenceWithheld": true,
+    "rankNullityKernel": true,
+    "differentAlphaExactPCMRivals": true,
+    "nonexponentialCommonGainRatioControl": true
+  },
+  "maximumIndependentRecoveryError_per_s": 0.00016642971286895403,
+  "limitations": [
+    "Reference stability and shared gain are premises, not identified from corrected residuals.",
+    "Differential gain or unstable reference restores a nontrivial kernel; exact same-PCM examples with alpha 4 and 5 per second were executed.",
+    "The two channels already separate the signals; a one-microphone decomposition is not demonstrated.",
+    "Generated stereo PCM and digital full scale are not measured pressure, physical damping or energy.",
+    "No noise coverage or empirical calibration threshold was established."
+  ],
+  "sourceChecks": [
+    {
+      "url": "https://www.w3.org/TR/mediacapture-streams/",
+      "read": "autoGainControl capability and constrainable property entries",
+      "supports": "Controls/reporting exist; they do not establish calibrated acoustic response."
+    },
+    {
+      "url": "https://arxiv.org/html/2606.25959v1",
+      "read": "sections 2 through 2.2.2",
+      "supports": "A concrete speech-processing architecture uses time-frequency operations. This does not establish that a given capture device obeys that architecture or a scalar gain law."
+    }
+  ],
+  "nextQuestion": "How should a repeatable low-material pilot distinguish a practically usable slope difference from noisy or model-mismatched reference estimates, without treating uncertainty under the shared model as a bound on unmeasured differential gain?"
+}

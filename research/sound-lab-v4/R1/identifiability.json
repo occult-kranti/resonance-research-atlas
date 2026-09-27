@@ -1,0 +1,99 @@
+{
+  "singleChannel": {
+    "parameterOrder": [
+      "alpha",
+      "beta"
+    ],
+    "matrix": [
+      [
+        -1,
+        1
+      ]
+    ],
+    "kernelWitness": [
+      1,
+      1
+    ],
+    "domainDimension": 2,
+    "rank": 1,
+    "nullity": 1,
+    "kernelResidual": 0.0
+  },
+  "sharedGain": {
+    "parameterOrder": [
+      "alpha",
+      "beta"
+    ],
+    "matrix": [
+      [
+        -1,
+        1
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "kernelWitness": null,
+    "domainDimension": 2,
+    "rank": 2,
+    "nullity": 0,
+    "kernelResidual": null
+  },
+  "differentialGain": {
+    "parameterOrder": [
+      "alpha",
+      "beta_target",
+      "beta_reference"
+    ],
+    "matrix": [
+      [
+        -1,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "kernelWitness": [
+      1,
+      1,
+      0
+    ],
+    "domainDimension": 3,
+    "rank": 2,
+    "nullity": 1,
+    "kernelResidual": 0.0
+  },
+  "unstableReference": {
+    "parameterOrder": [
+      "alpha",
+      "alpha_reference",
+      "beta"
+    ],
+    "matrix": [
+      [
+        -1,
+        0,
+        1
+      ],
+      [
+        0,
+        -1,
+        1
+      ]
+    ],
+    "kernelWitness": [
+      1,
+      1,
+      1
+    ],
+    "domainDimension": 3,
+    "rank": 2,
+    "nullity": 1,
+    "kernelResidual": 0.0
+  }
+}

@@ -1,5 +1,9 @@
 # Research program and parallel work map
 
+## Current continuation
+
+The latest user-directed priority is electricity, magnetism and antigravity claims. The [V4 roadmap](panel-v4/roadmap-v4.md) and [ten-loop decision ledger](../research/panel-v4-decisions.json) govern that continuation. Two accepted sound rounds are preserved as a checkpoint; the remaining three rounds follow the change of focus. The [scope amendment](continuation-v4.md) explains the parked, unadmitted sound experiment. The program below is the preserved baseline roadmap, not a claim that newer work has not occurred.
+
 This release completes a finite six-loop computational program. It does not complete all historical reading, perform a human trial or establish extraordinary physical effects. The final acceptance decisions and remaining gaps are in `panel-final-review.md` and `../research/panel-decisions.json`.
 
 ## Workstreams and responsibility

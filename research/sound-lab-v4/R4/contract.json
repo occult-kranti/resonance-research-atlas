@@ -1,0 +1,74 @@
+{
+  "id": "R4",
+  "title": "Magnetic support force needs source and mechanical work",
+  "domain": "magnetism_and_electromechanics",
+  "frozenAt": "2026-09-27T02:13:43.422988+00:00",
+  "status": "frozen_before_production",
+  "predecessor": {
+    "id": "R3B",
+    "reviewPath": "research/sound-lab-v4/reviews/R3-review.json",
+    "reviewSHA256": "82231e637d0806af710675656620600fd557714ef933e9420f6495e2654da780"
+  },
+  "incomingEvidence": "R3B closed the static-component circuit budget. The reviewer selects motion-dependent inductance because field energy alone omits maintained-current source work and gives the wrong force sign.",
+  "question": "Does a prescribed moving inductance yield an even-in-current upward force and smaller support reading while full electrical/field/mechanical energy still closes with unchanged g?",
+  "evidenceType": "synthetic_SI_electromechanical_model",
+  "model": {
+    "L0_H": 0.01,
+    "Lgradient_H_per_m": 0.1,
+    "R_ohm": 5,
+    "current_A": 0.2,
+    "pathStart_m": 0,
+    "pathStop_m": 0.02,
+    "duration_s": 0.2,
+    "path": "z(t)=z0+(z1-z0)*(1-cos(pi*t/T))/2; positive z increases inductance and is defined upward",
+    "inductance": "L(z)=L0+Lgradient*z; valid only on declared finite interval",
+    "sourceVoltage_V": "v=R I+d(L I)/dt=R I+I Lgradient zdot at maintained current",
+    "magneticEnergy_J": "U=0.5 L(z) I^2",
+    "force_N": "Fz=+0.5 I^2 Lgradient from fixed-current coenergy/source-inclusive balance",
+    "mechanicalWork_J": "integral Fz zdot dt",
+    "sourceWork_J": "integral v I dt",
+    "jouleLoss_J": "R I^2 T",
+    "closure": "Wsource=Delta Umagnetic+Wmechanical+Wjoule",
+    "timeSamples": [
+      101,
+      201,
+      401
+    ],
+    "staticReadout": {
+      "testMass_kg": 0.001,
+      "g_m_per_s2": 9.80665,
+      "normalForce_N": "N=m g-Fz; contact only if N>=0",
+      "indicatedMass_kg": "N/g using unchanged calibrated g"
+    }
+  },
+  "controls": [
+    "current reversal I=-0.2A: same induced-force sign and same energy terms",
+    "zero current gives zero magnetic force/work",
+    "zero inductance gradient gives zero magnetic force and motion work",
+    "reverse prescribed path keeps force sign but reverses mechanical/field changes; energy balance still holds",
+    "wrong force -dU/dz at fixed I has opposite sign when source work is omitted; retain as failed boundary model",
+    "ideal lossless fixed-flux control R=0, lambda=L0*I0 held constant: U=lambda^2/(2L), F=-dU/dz at fixedlambda matches positiveforce and mechanical work=-DeltaU; not a household implementation claim",
+    "check normalForce positive; do not call reduced pan reading changedgravity or freelevitation"
+  ],
+  "acceptance": {
+    "finestEnergyClosureAbs_J": 1e-08,
+    "closedFormEnergyTermErrorAbs_J": 1e-08,
+    "forceDerivativeAbsError_N": 1e-10,
+    "reversalForceDifferenceAbs_N": 1e-12,
+    "zeroForceAbs_N": 1e-12,
+    "positiveInductanceEverywhere": true,
+    "refinementRequired": true,
+    "staticGravityUnchangedRequired": true
+  },
+  "falsifier": "Source-inclusive energy fails closure/refinement, force disagrees with fixed-current coenergy, or ordinary even-in-current support force is treated as evidence that g changed.",
+  "claimCeiling": "Conditional prescribed-path magnetic actuator model and support-force counterexample; L(z) not measured, motion not predicted by free dynamics, no hardware or antigravity result.",
+  "sources": [
+    "V4-FEYNMAN-INDUCTION",
+    "V4-EM-TAJMAR2024"
+  ],
+  "producer": "/root/coder",
+  "reviewer": "/root/skeptic",
+  "advisor": "/root/advisor",
+  "loopA": "Execute prescribed-path source/field/mechanical energy and support-force controls.",
+  "loopB": "Independent fixed-current/fixed-flux derivation, source-work sign, reversal and contact checks; select final gravity-parameter discriminator from remaining ambiguity."
+}

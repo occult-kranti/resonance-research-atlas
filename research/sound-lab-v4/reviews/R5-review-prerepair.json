@@ -1,0 +1,16 @@
+{
+  "id": "R5",
+  "reviewedAt": "2026-09-27T02:23:57.722117+00:00",
+  "reviewer": "/root/skeptic",
+  "verdict": "repair_required_numerical_endpoint",
+  "manifestSHA256": "4db761d46ba35999dbdb3ade9b767f319b0c02bd4d1aae2fe5279531cd4acc28",
+  "contractSHA256": "13bac9d954a1b64e303779f7c34eb7fd679ebea07e828a8d1fef1e870c4433e8",
+  "failure": "An exactly bound-saturating in-model observation excludes the true slope under strict endpoint comparison because the computed lower endpoint rounds upward.",
+  "trueSlope_m_per_s2": -0.02,
+  "reportedLowerEndpoint_m_per_s2": -0.01999999999999997,
+  "endpointExclusion_m_per_s2": 3.122502256758253e-17,
+  "mathematicalModelStatus": "Exact 65536-vertex enumeration confirms the theoretical +/-0.00032 bound; this is a numerical presentation/containment defect, not evidence against the force model.",
+  "requestedRepair": "Explicit outward numerical padding, separate from theoretical error budget, and strict containment controls at both saturation endpoints. Retain pre-repair artifacts.",
+  "independentResultsSHA256": "27088e54e11cc7738be7a9562a001b0125263a4338da366bb6658c4eb5d549a1",
+  "independentScriptSHA256": "3082e88632fa0971d35b2e78c632aa2a54ccf9ffb761d00d5439f8ba72c4bbab"
+}

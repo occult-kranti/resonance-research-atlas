@@ -1,0 +1,15 @@
+{
+  "id": "R2",
+  "artifacts": {
+    "contract.json": "b286306b2044dfc44eb8719266d1615155d48c7122827ca7efc48b3870a8c362",
+    "run.py": "04ac67c2da3653c3cf77a467c11d790b0f8f92929c638ca1017dac200dd38e2a",
+    "results.json": "98d70869a6c0a50144e6ef38dc2c6deda441d2917c463729aee3050222a4b6c3",
+    "report.md": "a16d1036056ca065501faf122eb32efdd72ff2e1fcbcc34e7ff9ac451114781e",
+    "base-envelopes.csv": "3a41451af12b4fd463e116f3b2d62f73d7948c92179ac6493c773144d61db783",
+    "in-bound-trials.csv": "01fe617b8eced0402cc2b1354b25f7499cbd8c22904502bcb286e149a09fdff1",
+    "observation-realizations.csv": "6aac5651988545b0b63b64e63c7ce7719a7785abc569b7008778a27e29b6d87a",
+    "controls.json": "5d66246e7e1aaab9c8c9e089acd0aaf3ab85e4a6983a3c47c9eda6d91107f4a9",
+    "figure.svg": "6a966d0d7ae95b2e73d50d7e9ba41bfb649d104b64049a5db6749bacc8b9fc6d"
+  },
+  "commonSHA256": "001dcd61b2499d85d4af5444a70ee771e969026519a2cccdb565e553933501c7"
+}

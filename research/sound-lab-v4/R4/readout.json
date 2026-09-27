@@ -1,0 +1,19 @@
+{
+  "nominal": {
+    "gravitationalAcceleration_m_per_s2": 9.80665,
+    "trueMass_kg": 0.001,
+    "upwardMagneticForce_N": 0.0020000000000000005,
+    "normalForce_N": 0.00780665,
+    "contactRegime": "supported_contact",
+    "indicatedMass_kg": 0.0007960567574044144
+  },
+  "reversed_current": {
+    "gravitationalAcceleration_m_per_s2": 9.80665,
+    "trueMass_kg": 0.001,
+    "upwardMagneticForce_N": 0.0020000000000000005,
+    "normalForce_N": 0.00780665,
+    "contactRegime": "supported_contact",
+    "indicatedMass_kg": 0.0007960567574044144
+  },
+  "interpretation": "External upward support changes the normal force with g fixed; external support/reaction boundary remains to be tested."
+}

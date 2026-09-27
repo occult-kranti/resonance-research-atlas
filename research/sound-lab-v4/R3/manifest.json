@@ -1,0 +1,21 @@
+{
+  "id": "R3",
+  "artifacts": {
+    "contract.json": "a3219ed5e845d945827e83e6d2edbe4138b5408d4de11ed4f7743c955127015d",
+    "run.py": "958ee6be04a80661ad654c2e63a66382e6d92483e65a3fb53a4c573c0e63f4ca",
+    "results.json": "446b8b5f91da461c6633d349560a73188e3a7bd73a8d7a8f33e59d178c51d574",
+    "report.md": "5c4cddf042cd95c2a19b426b5bb8525c9197e3e32080d06a0bc920defd0730c9",
+    "baseline-100.csv.gz": "8047864c0b9bea2892b0785e7eab318939eb0458c1c9b2900735404badc4dc2d",
+    "baseline-200.csv.gz": "9e65a857f639f155fc4325df974238e3331551806b2e4defff85cefe7d3775b0",
+    "baseline-400.csv.gz": "4e8b551184e6e368642d287cc44dfaab6d4c362d93734335402e35ee16764a3b",
+    "charged-discharge.csv.gz": "c268b3376b93e850f643ed21b8be6b83af892d3bb0c7e86fb5e93220290a2449",
+    "zero.csv.gz": "d84e9b7cb386790ae4d4439207955ddaaadc8df4d3470ebd44ad494ad889d70b",
+    "off-resonance.csv.gz": "76e6dd5d963fdb7c15d1c766a7b99a77d8021a9f660f30c0dedc86e17a353dca",
+    "stronger-resistance.csv.gz": "6965890e65fabf6d14cee900b295af8783b1225f222cc16b1e74ab2969b47141",
+    "convergence.csv": "0189db1998081c28fc70f71b7bc22d39b1db1754dae0f398dc1e0e38ba67dd71",
+    "case-results.json": "c0793890951183f918cc8b3ca7600a4bcdb9c719f7cf64693eaf8e3c77ca16d5",
+    "phasors.json": "7300f2fe45191db84313b6eb88fd579af8dbdbe8c110fc8c98a6e10d67dc18c5",
+    "figure.svg": "f3419728dd62a58319726e2590a7c54dcfd8ef8c3d3c170a544f4fd9a384b5d2"
+  },
+  "commonSHA256": "001dcd61b2499d85d4af5444a70ee771e969026519a2cccdb565e553933501c7"
+}

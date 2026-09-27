@@ -1,0 +1,47 @@
+{
+  "id": "R5",
+  "domain": "gravity_claim_identifiability",
+  "reviewedAt": "2026-09-27T02:25:47.189902+00:00",
+  "reviewer": "/root/skeptic",
+  "verdict": "accepted_narrow",
+  "manifestSHA256": "8d5450f56bdef45542a72cc00a7317aa5e2d2d11f6752f3f9e79578b964981be",
+  "contractSHA256": "13bac9d954a1b64e303779f7c34eb7fd679ebea07e828a8d1fef1e870c4433e8",
+  "independentScriptSHA256": "8c323ae97db1d31ba3446ea9e3183cc2ea77bc02c4121b6c5d9875a915525528",
+  "independentResultsSHA256": "674ddfaaad243ca4d16357d6567fad796a9059cc3d88c46a6aadc6f6b37536d9",
+  "artifactBindingsChecked": 13,
+  "acceptedClaim": "Under the specified static two-parameter model, paired support/polarity observations across known masses identify a deliberately injected acceleration-like slope and constant bias. A mass-proportional ordinary bias exactly reproduces all raw observations, preventing empirical gravity identification without an independent bound.",
+  "independentMethod": "Enumerated all65536 error-box vertices, independently constructed raw rival equations and ranks/kernels, checked128 saved error realizations, attacked8 malformed inputs/contact/singlemass, and strictly tested both saturated endpoints after repair.",
+  "checks": {
+    "allManifestBindings": true,
+    "exactFrozenContractCopy": true,
+    "prerepairEvidencePreserved": true,
+    "all65536ErrorVertices": true,
+    "all128SavedRealizationsWithinBoundsAndCovered": true,
+    "exactRawObservationRival": true,
+    "rankNullityKernel": true,
+    "unknownMassBiasPhysicalGravityWithheld": true,
+    "singleMassWithheld": true,
+    "contactLossWithheld": true,
+    "malformedInputsRejected": true,
+    "bothSaturatedEndpointIntervalsStrictlyContainTruth": true
+  },
+  "theoreticalErrorHalfwidth_m_per_s2": 0.00032,
+  "numericalOutwardPadding_m_per_s2": 1e-12,
+  "repair": {
+    "failureReviewPath": "research/sound-lab-v4/reviews/R5-review-prerepair.json",
+    "failureReviewSHA256": "0a26e6301b643ce5987b23696e06662217503a366fdc29c32189a1225e81c024",
+    "prerepairManifestSHA256": "4db761d46ba35999dbdb3ade9b767f319b0c02bd4d1aae2fe5279531cd4acc28",
+    "repairedManifestSHA256": "8d5450f56bdef45542a72cc00a7317aa5e2d2d11f6752f3f9e79578b964981be",
+    "originalEndpointExclusion_m_per_s2": 3.122502256758253e-17,
+    "scope": "Numerical outward padding only; frozen model/contract and theoretical bound unchanged."
+  },
+  "limitations": [
+    "Injected delta_g is a hypothetical shared model deformation, not an observed anomaly or proposed new force law.",
+    "Known calibration, simultaneous supports, common static g and mass/polarity-independent even bias are premises.",
+    "The expanded inverse has domain3, rank2, nullity1, kernel(1,0,-1); repeating the same readout cannot resolve it.",
+    "The2microN support bound is supplied, not measured detector sensitivity.",
+    "The1e-12 numerical guard is tested on these finite fixtures and is not a universal floating-point enclosure certificate.",
+    "External fields, thermal/mass-correlated drift, electrostatic forces, air motion, leads and real apparatus calibration remain unresolved empirical channels."
+  ],
+  "nextQuestion": "No sixth round authorized. Future work must independently characterize a physical force/measurement channel whose predictions differ between common acceleration change and mass-proportional bias before acquiring or interpreting real support data."
+}

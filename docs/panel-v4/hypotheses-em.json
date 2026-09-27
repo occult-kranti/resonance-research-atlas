@@ -1,0 +1,124 @@
+{
+  "active_focus": "electricity, magnetism, and antigravity claim discrimination",
+  "ranking_basis": "Discriminatory value per material and measurement burden, updated after user EM steering; not probabilities of truth or completed experiments.",
+  "hypotheses": [
+    {
+      "id": "V4-EM-H1",
+      "rank": 1,
+      "title": "Electrical resonance changes amplitude and phase while preserving a complete energy budget",
+      "theory": "A passive lumped circuit moves energy between fields and dissipates resistance loss.",
+      "inspiration": "Tesla source/load apparatus descriptions and established electrical resonance.",
+      "model": "W_in=Δ(0.5 L I²+0.5 C Vc²)+∫R I²dt+W_load for the declared fixed-parameter circuit.",
+      "rival": "Incomplete time windows, sign mistakes, current/voltage channel skew or uncounted source/initial energy produce apparent excess.",
+      "observable": "Signed instantaneous power, integrated joules, endpoint stored energy and residual as time step shrinks.",
+      "control": "Source-off decay, known added resistance, phase/skew adversary, nonzero initial energy and held-out integration resolution.",
+      "materials": "Simulation first; optional current-limited low-voltage source, resistor, inductor, capacitor and synchronized voltage/current logging.",
+      "falsifier": "A claimed excess collapses under complete accounting; a model fails if a calibrated residual exceeds its predeclared uncertainty.",
+      "novelty_status": "Established conservation exercise, not a new energy source.",
+      "sources": [
+        "V4-FEYNMAN-ELECTRICAL",
+        "V4-MIT-ENERGY",
+        "V4-EM-TESLA-RADIANT"
+      ],
+      "status": "Active source recommendation; numerical execution belongs to advisor ledger"
+    },
+    {
+      "id": "V4-EM-H2",
+      "rank": 2,
+      "title": "Motion-dependent inductance exchanges source energy with field energy and mechanical work",
+      "theory": "A linear lossless magnetic constitutive model with L(z) has a force obtained from magnetic coenergy at fixed current.",
+      "inspiration": "Tesla source/load boundary and current force-metrology requirements.",
+      "model": "v=R I+L dI/dt+I(dL/dz)zdot; Fz=0.5 I² dL/dz. Hence vI−RI²=d(0.5LI²)/dt+Fz zdot.",
+      "rival": "Omitting motional back-emf or treating fixed-current coenergy as fixed-flux energy doubles or changes the inferred work.",
+      "observable": "Voltage/current/position work integrals and independently differentiated force; force is even under I reversal in this specific model.",
+      "control": "Reverse motion/current separately, source-off, fixed-position and zero-gradient cases; finite-difference force check.",
+      "materials": "Simulation; later a low-voltage coil, constrained moving core, position readout and calibrated force gauge.",
+      "falsifier": "An omitted-term variant fails closure while the complete model converges; parity alone cannot identify gravity change.",
+      "novelty_status": "Standard electromechanics applied to a transparent counterexample.",
+      "sources": [
+        "V4-MIT-ENERGY",
+        "V4-EM-TAJMAR2024"
+      ],
+      "status": "Prospective R4 candidate; assumptions exclude hysteresis/saturation/unknown permanent bias"
+    },
+    {
+      "id": "V4-EM-H3",
+      "rank": 3,
+      "title": "An apparent weight change can be ordinary lift or interaction with the source support",
+      "theory": "A scale senses support force; magnetic force on a sample can alter its reading without changing gravitational acceleration.",
+      "inspiration": "Diamagnetic levitation experiments and steady-field null studies.",
+      "model": "N=m g−Fmag,z for the sample; include the source reaction in the complete supported system. A separately characterized weakly magnetic witness adds information on g only within its coupling bounds.",
+      "rival": "Thermal drift, lead forces, induced magnetic response, electrostatic pickup and source support outside the weighed boundary.",
+      "observable": "Sample/source support forces, field gradient, reference response and all-run null distribution.",
+      "control": "Independent support/reaction witness, move source versus sample, matched heating, current reversal, sample swap and blinded order.",
+      "materials": "Simulation first; later magnet/coil, nonmagnetic stand, scale/force sensor and optical position reference.",
+      "falsifier": "A gravity-only attribution fails when signal tracks susceptibility/geometry or cancels with the source reaction; unresolved residual remains unresolved.",
+      "novelty_status": "Measurement-design hypothesis, not proof of antigravity.",
+      "sources": [
+        "V4-EM-GRAPHITE2024",
+        "V4-EM-TAJMAR2024",
+        "V4-EM-NASA2004"
+      ],
+      "status": "Active R5 candidate; no measured force or gravity result in this lane"
+    },
+    {
+      "id": "V4-EM-H4",
+      "rank": 4,
+      "title": "Magnetic levitation stability has testable ordinary stiffness and damping",
+      "theory": "Static diamagnetism and rotating-magnet stabilization have different restoring-force and dissipative mechanisms.",
+      "inspiration": "2024 graphite resonators and2025 rotating-field levitation.",
+      "model": "Linearize declared Fmag(z)−mg near an equilibrium, or integrate gravity+dipole torque+inertia with a driven source.",
+      "rival": "Unmodeled air damping, image scale/parallax, finite magnet geometry or phase aliasing.",
+      "observable": "Equilibrium position, small-displacement stiffness, amplitude-dependent frequency and loss.",
+      "control": "Geometry variation, independent optical scale, stationary-source and no-gradient limits.",
+      "materials": "Simulation is cheapest; stationary contained magnets plus pre-cut graphite for a later qualitative demonstration.",
+      "falsifier": "A proposed model fails to predict withheld equilibrium/stability changes within declared approximation error.",
+      "novelty_status": "Established magnetic lift; a good model benchmark, not gravity cancellation.",
+      "sources": [
+        "V4-EM-GRAPHITE2024",
+        "V4-EM-ROTATION2025",
+        "V4-EM-MAGPYLIB"
+      ],
+      "status": "Secondary priority; no exposed high-speed magnet prototype selected"
+    },
+    {
+      "id": "V4-EM-H5",
+      "rank": 5,
+      "title": "A proposed asymmetric electrostatic force needs the full momentum boundary",
+      "theory": "For a closed apparatus, partial surface forces are insufficient; include all electrodes, power supply, field momentum and environment.",
+      "inspiration": "Buhler/Aurigema patent claims, bounded against NASA gas-force observations.",
+      "model": "In a static isolated model, closed-surface Maxwell-stress flux accounts for total electromagnetic force; external walls or gas can exchange momentum.",
+      "rival": "Ion wind, leakage, cable reaction, chamber attraction, thermal outgassing and numerical boundary truncation.",
+      "observable": "Closed versus partial force integral, dependence on wall distance and gas nuisance, measured detection threshold.",
+      "control": "Enlarge numerical boundary, include return electrode/source, reverse geometry and make matched-heat dummy.",
+      "materials": "Electrostatic simulation/document review only at this stage.",
+      "falsifier": "A putative isolated thrust vanishes when omitted surfaces or external momentum are included; any surviving residual requires independent calibrated data.",
+      "novelty_status": "Claim audit; the patent is not independent performance evidence.",
+      "sources": [
+        "V4-EM-BUHLER-PATENT",
+        "V4-EM-NASA2004",
+        "V4-EM-TAJMAR2024"
+      ],
+      "status": "Unselected high-voltage hardware; no validated extraordinary model"
+    },
+    {
+      "id": "V4-EM-H6",
+      "rank": 6,
+      "title": "A cavity-induced material change is a different claim from gravity change or net generated work",
+      "theory": "Material phase observables, mechanical force and usable work require separate measurements and models.",
+      "inspiration": "2026 NbSe2 primary abstract surfaced by a fringe research-log lead.",
+      "model": "Track transition temperature separately from a closed energy or force budget; no cross-domain implication is assumed.",
+      "rival": "Sample variation, geometry/calibration changes or overinterpretation of a materials result as a propulsion result.",
+      "observable": "Reproduced transition curve and specified control geometry, then separately measured force/work if claimed.",
+      "control": "Read full methods, retain same-device controls and resolve abstract percentage inconsistency before numerical reuse.",
+      "materials": "Document review; cryogenic THz equipment exceeds least-material priority.",
+      "falsifier": "A transition shift alone cannot identify an added force or net delivered energy; each stronger hypothesis needs its own falsifiable prediction.",
+      "novelty_status": "Current primary lead, abstract-only; no replication or new theory in this project.",
+      "sources": [
+        "V4-EM-NBSE2-ABSTRACT2026",
+        "V4-EM-FRINGE-LOG"
+      ],
+      "status": "Parked; not an antigravity experiment"
+    }
+  ]
+}

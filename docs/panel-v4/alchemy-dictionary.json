@@ -1,0 +1,392 @@
+{
+  "schema_version": "1.0",
+  "research_date": "2026-09-27",
+  "scope": "Context-dependent candidate dictionary; no recipes, assays or transmutation claim.",
+  "display_notice": "Candidate interpretation. No historical sample assayed. A symbol is not a chemical measurement.",
+  "entries": [
+    {
+      "id": "V4-ALCH-gold",
+      "term": "Sun / Sol",
+      "symbols": [
+        "☉"
+      ],
+      "historicalMeaning": "Gold; a disguised principle is also possible.",
+      "modernCandidate": "Au",
+      "elements": [
+        "Au"
+      ],
+      "mappingStatus": "conventional_candidate",
+      "primaryContext": "Selected Newton notebook folios 65r–67r inform material-versus-product distinction; this does not confirm every listed occurrence.",
+      "contextLimit": "Candidate interpretation only. Formula is modern notation, not a measured historical composition. Impurities, phase and isotope ratios remain unknown.",
+      "sourceIds": [
+        "V4-NEWTON-GLOSSARY",
+        "V4-NEWTON-NOTEBOOK"
+      ],
+      "discriminatingAssay": "Compare passage context first; then independent elemental and phase reference data if a characterized sample exists. No tasting, heating or hazardous preparation.",
+      "actualSampleAssayed": false
+    },
+    {
+      "id": "V4-ALCH-silver",
+      "term": "Moon / Luna",
+      "symbols": [
+        "☾"
+      ],
+      "historicalMeaning": "Silver or a context-specific antimony name.",
+      "modernCandidate": "Ag; sometimes Sb-bearing material",
+      "elements": [
+        "Ag",
+        "Sb"
+      ],
+      "mappingStatus": "ambiguous_deckname",
+      "primaryContext": "Selected Newton notebook folios 65r–67r inform material-versus-product distinction; this does not confirm every listed occurrence.",
+      "contextLimit": "Candidate interpretation only. Formula is modern notation, not a measured historical composition. Impurities, phase and isotope ratios remain unknown.",
+      "sourceIds": [
+        "V4-NEWTON-GLOSSARY",
+        "V4-NEWTON-NOTEBOOK"
+      ],
+      "discriminatingAssay": "Compare passage context first; then independent elemental and phase reference data if a characterized sample exists. No tasting, heating or hazardous preparation.",
+      "actualSampleAssayed": false
+    },
+    {
+      "id": "V4-ALCH-iron",
+      "term": "Mars",
+      "symbols": [
+        "♂"
+      ],
+      "historicalMeaning": "Iron or a symbolic role in a product.",
+      "modernCandidate": "Fe; Sb-bearing regulus in some passages",
+      "elements": [
+        "Fe",
+        "Sb"
+      ],
+      "mappingStatus": "ambiguous_deckname",
+      "primaryContext": "Selected Newton notebook folios 65r–67r inform material-versus-product distinction; this does not confirm every listed occurrence.",
+      "contextLimit": "Candidate interpretation only. Formula is modern notation, not a measured historical composition. Impurities, phase and isotope ratios remain unknown.",
+      "sourceIds": [
+        "V4-NEWTON-GLOSSARY",
+        "V4-NEWTON-NOTEBOOK"
+      ],
+      "discriminatingAssay": "Compare passage context first; then independent elemental and phase reference data if a characterized sample exists. No tasting, heating or hazardous preparation.",
+      "actualSampleAssayed": false
+    },
+    {
+      "id": "V4-ALCH-copper",
+      "term": "Venus",
+      "symbols": [
+        "♀"
+      ],
+      "historicalMeaning": "Copper or a disguised silver reading.",
+      "modernCandidate": "Cu; sometimes Ag",
+      "elements": [
+        "Cu",
+        "Ag"
+      ],
+      "mappingStatus": "ambiguous_deckname",
+      "primaryContext": "Selected Newton notebook folios 65r–67r inform material-versus-product distinction; this does not confirm every listed occurrence.",
+      "contextLimit": "Candidate interpretation only. Formula is modern notation, not a measured historical composition. Impurities, phase and isotope ratios remain unknown.",
+      "sourceIds": [
+        "V4-NEWTON-GLOSSARY",
+        "V4-NEWTON-NOTEBOOK"
+      ],
+      "discriminatingAssay": "Compare passage context first; then independent elemental and phase reference data if a characterized sample exists. No tasting, heating or hazardous preparation.",
+      "actualSampleAssayed": false
+    },
+    {
+      "id": "V4-ALCH-tin",
+      "term": "Jupiter / tin",
+      "symbols": [
+        "♃"
+      ],
+      "historicalMeaning": "Literal-metal candidate.",
+      "modernCandidate": "Sn",
+      "elements": [
+        "Sn"
+      ],
+      "mappingStatus": "conventional_candidate",
+      "primaryContext": "Selected Newton notebook folios 65r–67r inform material-versus-product distinction; this does not confirm every listed occurrence.",
+      "contextLimit": "Candidate interpretation only. Formula is modern notation, not a measured historical composition. Impurities, phase and isotope ratios remain unknown.",
+      "sourceIds": [
+        "V4-NEWTON-GLOSSARY",
+        "V4-NEWTON-NOTEBOOK"
+      ],
+      "discriminatingAssay": "Compare passage context first; then independent elemental and phase reference data if a characterized sample exists. No tasting, heating or hazardous preparation.",
+      "actualSampleAssayed": false
+    },
+    {
+      "id": "V4-ALCH-lead",
+      "term": "Saturn",
+      "symbols": [
+        "♄"
+      ],
+      "historicalMeaning": "Lead or stibnite, passage dependent.",
+      "modernCandidate": "Pb; sometimes Sb2S3",
+      "elements": [
+        "Pb",
+        "Sb",
+        "S"
+      ],
+      "mappingStatus": "ambiguous_deckname",
+      "primaryContext": "Selected Newton notebook folios 65r–67r inform material-versus-product distinction; this does not confirm every listed occurrence.",
+      "contextLimit": "Candidate interpretation only. Formula is modern notation, not a measured historical composition. Impurities, phase and isotope ratios remain unknown.",
+      "sourceIds": [
+        "V4-NEWTON-GLOSSARY",
+        "V4-NEWTON-NOTEBOOK"
+      ],
+      "discriminatingAssay": "Compare passage context first; then independent elemental and phase reference data if a characterized sample exists. No tasting, heating or hazardous preparation.",
+      "actualSampleAssayed": false
+    },
+    {
+      "id": "V4-ALCH-mercury",
+      "term": "Vulgar mercury / sophic mercury",
+      "symbols": [
+        "☿"
+      ],
+      "historicalMeaning": "A literal substance and a theoretical principle differ.",
+      "modernCandidate": "Hg only for vulgar mercury; sophic identity unresolved",
+      "elements": [
+        "Hg"
+      ],
+      "mappingStatus": "ambiguous_principle",
+      "primaryContext": "Selected Newton notebook folios 65r–67r inform material-versus-product distinction; this does not confirm every listed occurrence.",
+      "contextLimit": "Candidate interpretation only. Formula is modern notation, not a measured historical composition. Impurities, phase and isotope ratios remain unknown.",
+      "sourceIds": [
+        "V4-NEWTON-GLOSSARY",
+        "V4-NEWTON-NOTEBOOK"
+      ],
+      "discriminatingAssay": "Compare passage context first; then independent elemental and phase reference data if a characterized sample exists. No tasting, heating or hazardous preparation.",
+      "actualSampleAssayed": false
+    },
+    {
+      "id": "V4-ALCH-sulfur",
+      "term": "Sulfur",
+      "symbols": [
+        "🜍"
+      ],
+      "historicalMeaning": "Literal sulfur differs from a Paracelsian principle.",
+      "modernCandidate": "S when literal; principle unresolved",
+      "elements": [
+        "S"
+      ],
+      "mappingStatus": "ambiguous_principle",
+      "primaryContext": "Selected Newton notebook folios 65r–67r inform material-versus-product distinction; this does not confirm every listed occurrence.",
+      "contextLimit": "Candidate interpretation only. Formula is modern notation, not a measured historical composition. Impurities, phase and isotope ratios remain unknown.",
+      "sourceIds": [
+        "V4-NEWTON-GLOSSARY",
+        "V4-NEWTON-NOTEBOOK"
+      ],
+      "discriminatingAssay": "Compare passage context first; then independent elemental and phase reference data if a characterized sample exists. No tasting, heating or hazardous preparation.",
+      "actualSampleAssayed": false
+    },
+    {
+      "id": "V4-ALCH-stibnite",
+      "term": "Stibium / antimony ore",
+      "symbols": [
+        "♁"
+      ],
+      "historicalMeaning": "Mineral candidate; not refined metal.",
+      "modernCandidate": "Sb2S3",
+      "elements": [
+        "Sb",
+        "S"
+      ],
+      "mappingStatus": "editorial_compound_candidate",
+      "primaryContext": "Selected Newton notebook folios 65r–67r inform material-versus-product distinction; this does not confirm every listed occurrence.",
+      "contextLimit": "Candidate interpretation only. Formula is modern notation, not a measured historical composition. Impurities, phase and isotope ratios remain unknown.",
+      "sourceIds": [
+        "V4-NEWTON-GLOSSARY",
+        "V4-NEWTON-NOTEBOOK"
+      ],
+      "discriminatingAssay": "Compare passage context first; then independent elemental and phase reference data if a characterized sample exists. No tasting, heating or hazardous preparation.",
+      "actualSampleAssayed": false
+    },
+    {
+      "id": "V4-ALCH-regulus",
+      "term": "Regulus / martial regulus",
+      "symbols": [
+        "🜰"
+      ],
+      "historicalMeaning": "Product category, not guaranteed pure Sb.",
+      "modernCandidate": "Sb-rich metal or alloy; no fixed formula",
+      "elements": [
+        "Sb"
+      ],
+      "mappingStatus": "mixture_candidate",
+      "primaryContext": "Selected Newton notebook folios 65r–67r inform material-versus-product distinction; this does not confirm every listed occurrence.",
+      "contextLimit": "Candidate interpretation only. Formula is modern notation, not a measured historical composition. Impurities, phase and isotope ratios remain unknown.",
+      "sourceIds": [
+        "V4-NEWTON-GLOSSARY",
+        "V4-NEWTON-NOTEBOOK"
+      ],
+      "discriminatingAssay": "Compare passage context first; then independent elemental and phase reference data if a characterized sample exists. No tasting, heating or hazardous preparation.",
+      "actualSampleAssayed": false
+    },
+    {
+      "id": "V4-ALCH-vermilion",
+      "term": "Vermilion / cinnabar",
+      "symbols": [],
+      "historicalMeaning": "Sulfide candidate.",
+      "modernCandidate": "HgS",
+      "elements": [
+        "Hg",
+        "S"
+      ],
+      "mappingStatus": "editorial_compound_candidate",
+      "primaryContext": "Selected Newton notebook folios 65r–67r inform material-versus-product distinction; this does not confirm every listed occurrence.",
+      "contextLimit": "Candidate interpretation only. Formula is modern notation, not a measured historical composition. Impurities, phase and isotope ratios remain unknown.",
+      "sourceIds": [
+        "V4-NEWTON-GLOSSARY",
+        "V4-NEWTON-NOTEBOOK"
+      ],
+      "discriminatingAssay": "Compare passage context first; then independent elemental and phase reference data if a characterized sample exists. No tasting, heating or hazardous preparation.",
+      "actualSampleAssayed": false
+    },
+    {
+      "id": "V4-ALCH-litharge",
+      "term": "Litharge",
+      "symbols": [],
+      "historicalMeaning": "Oxide candidate.",
+      "modernCandidate": "PbO",
+      "elements": [
+        "Pb",
+        "O"
+      ],
+      "mappingStatus": "editorial_compound_candidate",
+      "primaryContext": "Selected Newton notebook folios 65r–67r inform material-versus-product distinction; this does not confirm every listed occurrence.",
+      "contextLimit": "Candidate interpretation only. Formula is modern notation, not a measured historical composition. Impurities, phase and isotope ratios remain unknown.",
+      "sourceIds": [
+        "V4-NEWTON-GLOSSARY",
+        "V4-NEWTON-NOTEBOOK"
+      ],
+      "discriminatingAssay": "Compare passage context first; then independent elemental and phase reference data if a characterized sample exists. No tasting, heating or hazardous preparation.",
+      "actualSampleAssayed": false
+    },
+    {
+      "id": "V4-ALCH-ammoniac",
+      "term": "Sal ammoniac",
+      "symbols": [
+        "🜹"
+      ],
+      "historicalMeaning": "Dominant-component candidate.",
+      "modernCandidate": "NH4Cl",
+      "elements": [
+        "N",
+        "H",
+        "Cl"
+      ],
+      "mappingStatus": "editorial_compound_candidate",
+      "primaryContext": "Selected Newton notebook folios 65r–67r inform material-versus-product distinction; this does not confirm every listed occurrence.",
+      "contextLimit": "Candidate interpretation only. Formula is modern notation, not a measured historical composition. Impurities, phase and isotope ratios remain unknown.",
+      "sourceIds": [
+        "V4-NEWTON-GLOSSARY",
+        "V4-NEWTON-NOTEBOOK"
+      ],
+      "discriminatingAssay": "Compare passage context first; then independent elemental and phase reference data if a characterized sample exists. No tasting, heating or hazardous preparation.",
+      "actualSampleAssayed": false
+    },
+    {
+      "id": "V4-ALCH-tartar",
+      "term": "Salt of tartar",
+      "symbols": [],
+      "historicalMeaning": "Dominant-component candidate.",
+      "modernCandidate": "K2CO3",
+      "elements": [
+        "K",
+        "C",
+        "O"
+      ],
+      "mappingStatus": "editorial_compound_candidate",
+      "primaryContext": "Selected Newton notebook folios 65r–67r inform material-versus-product distinction; this does not confirm every listed occurrence.",
+      "contextLimit": "Candidate interpretation only. Formula is modern notation, not a measured historical composition. Impurities, phase and isotope ratios remain unknown.",
+      "sourceIds": [
+        "V4-NEWTON-GLOSSARY",
+        "V4-NEWTON-NOTEBOOK"
+      ],
+      "discriminatingAssay": "Compare passage context first; then independent elemental and phase reference data if a characterized sample exists. No tasting, heating or hazardous preparation.",
+      "actualSampleAssayed": false
+    },
+    {
+      "id": "V4-ALCH-niter",
+      "term": "Niter / saltpeter",
+      "symbols": [
+        "🜕"
+      ],
+      "historicalMeaning": "Material or hypothetical atmospheric principle.",
+      "modernCandidate": "KNO3 when literal; volatile-niter identity unresolved",
+      "elements": [
+        "K",
+        "N",
+        "O"
+      ],
+      "mappingStatus": "ambiguous_principle",
+      "primaryContext": "Selected Newton notebook folios 65r–67r inform material-versus-product distinction; this does not confirm every listed occurrence.",
+      "contextLimit": "Candidate interpretation only. Formula is modern notation, not a measured historical composition. Impurities, phase and isotope ratios remain unknown.",
+      "sourceIds": [
+        "V4-NEWTON-GLOSSARY",
+        "V4-NEWTON-NOTEBOOK"
+      ],
+      "discriminatingAssay": "Compare passage context first; then independent elemental and phase reference data if a characterized sample exists. No tasting, heating or hazardous preparation.",
+      "actualSampleAssayed": false
+    },
+    {
+      "id": "V4-ALCH-vitriol",
+      "term": "Vitriol of Mars / Venus",
+      "symbols": [
+        "🜖"
+      ],
+      "historicalMeaning": "Sulfate family; colour alone insufficient.",
+      "modernCandidate": "FeSO4 / CuSO4, hydration unresolved",
+      "elements": [
+        "Fe",
+        "Cu",
+        "S",
+        "O",
+        "H"
+      ],
+      "mappingStatus": "family_candidate",
+      "primaryContext": "Selected Newton notebook folios 65r–67r inform material-versus-product distinction; this does not confirm every listed occurrence.",
+      "contextLimit": "Candidate interpretation only. Formula is modern notation, not a measured historical composition. Impurities, phase and isotope ratios remain unknown.",
+      "sourceIds": [
+        "V4-NEWTON-GLOSSARY",
+        "V4-NEWTON-NOTEBOOK"
+      ],
+      "discriminatingAssay": "Compare passage context first; then independent elemental and phase reference data if a characterized sample exists. No tasting, heating or hazardous preparation.",
+      "actualSampleAssayed": false
+    },
+    {
+      "id": "V4-ALCH-stone",
+      "term": "Philosophers’ stone",
+      "symbols": [],
+      "historicalMeaning": "Historical goal or symbolic object, passage dependent.",
+      "modernCandidate": "No single defensible formula",
+      "elements": [],
+      "mappingStatus": "unresolved",
+      "primaryContext": "Selected Newton notebook folios 65r–67r inform material-versus-product distinction; this does not confirm every listed occurrence.",
+      "contextLimit": "Candidate interpretation only. Formula is modern notation, not a measured historical composition. Impurities, phase and isotope ratios remain unknown.",
+      "sourceIds": [
+        "V4-NEWTON-GLOSSARY",
+        "V4-NEWTON-NOTEBOOK"
+      ],
+      "discriminatingAssay": "Compare passage context first; then independent elemental and phase reference data if a characterized sample exists. No tasting, heating or hazardous preparation.",
+      "actualSampleAssayed": false
+    },
+    {
+      "id": "V4-ALCH-bismuth",
+      "term": "Tinglas / bismuth",
+      "symbols": [],
+      "historicalMeaning": "Notebook explicitly compares bismuth-containing products.",
+      "modernCandidate": "Bi candidate, sample composition unverified",
+      "elements": [
+        "Bi"
+      ],
+      "mappingStatus": "primary_name_context",
+      "primaryContext": "Selected Newton notebook folios 65r–67r inform material-versus-product distinction; this does not confirm every listed occurrence.",
+      "contextLimit": "Candidate interpretation only. Formula is modern notation, not a measured historical composition. Impurities, phase and isotope ratios remain unknown.",
+      "sourceIds": [
+        "V4-NEWTON-GLOSSARY",
+        "V4-NEWTON-NOTEBOOK"
+      ],
+      "discriminatingAssay": "Compare passage context first; then independent elemental and phase reference data if a characterized sample exists. No tasting, heating or hazardous preparation.",
+      "actualSampleAssayed": false
+    }
+  ]
+}

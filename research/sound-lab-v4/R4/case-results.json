@@ -1,0 +1,87 @@
+{
+  "nominal": {
+    "magnetic_energy_J": 0.00024000000000000006,
+    "source_work_J": 0.04007999958876605,
+    "mechanical_work_J": 3.999979438303027e-05,
+    "joule_loss_J": 0.04000000000000001,
+    "delta_magnetic_energy_J": 4.0000000000000024e-05,
+    "maxClosureResidual_J": 2.0561698871324197e-10,
+    "force_N": 0.0020000000000000005,
+    "minimumInductance_H": 0.01,
+    "exact": {
+      "delta_magnetic_energy_J": 4.000000000000001e-05,
+      "mechanical_work_J": 4.000000000000001e-05,
+      "joule_loss_J": 0.04000000000000001,
+      "source_work_J": 0.040080000000000005
+    },
+    "maxClosedFormTermError_J": 4.112339566098022e-10
+  },
+  "reversed_current": {
+    "magnetic_energy_J": 0.00024000000000000006,
+    "source_work_J": 0.04007999958876605,
+    "mechanical_work_J": 3.999979438303027e-05,
+    "joule_loss_J": 0.04000000000000001,
+    "delta_magnetic_energy_J": 4.0000000000000024e-05,
+    "maxClosureResidual_J": 2.0561698871324197e-10,
+    "force_N": 0.0020000000000000005,
+    "minimumInductance_H": 0.01,
+    "exact": {
+      "delta_magnetic_energy_J": 4.000000000000001e-05,
+      "mechanical_work_J": 4.000000000000001e-05,
+      "joule_loss_J": 0.04000000000000001,
+      "source_work_J": 0.040080000000000005
+    },
+    "maxClosedFormTermError_J": 4.112339566098022e-10
+  },
+  "zero_current": {
+    "magnetic_energy_J": 0.0,
+    "source_work_J": 0.0,
+    "mechanical_work_J": 0.0,
+    "joule_loss_J": 0.0,
+    "delta_magnetic_energy_J": 0.0,
+    "maxClosureResidual_J": 0.0,
+    "force_N": 0.0,
+    "minimumInductance_H": 0.01,
+    "exact": {
+      "delta_magnetic_energy_J": 0.0,
+      "mechanical_work_J": 0.0,
+      "joule_loss_J": 0.0,
+      "source_work_J": 0.0
+    },
+    "maxClosedFormTermError_J": 0.0
+  },
+  "zero_gradient": {
+    "magnetic_energy_J": 0.00020000000000000004,
+    "source_work_J": 0.0400000000000001,
+    "mechanical_work_J": 0.0,
+    "joule_loss_J": 0.04000000000000001,
+    "delta_magnetic_energy_J": 0.0,
+    "maxClosureResidual_J": 1.5265566588595902e-16,
+    "force_N": 0.0,
+    "minimumInductance_H": 0.01,
+    "exact": {
+      "delta_magnetic_energy_J": 0.0,
+      "mechanical_work_J": 0.0,
+      "joule_loss_J": 0.04000000000000001,
+      "source_work_J": 0.04000000000000001
+    },
+    "maxClosedFormTermError_J": 9.020562075079397e-17
+  },
+  "reversed_path": {
+    "magnetic_energy_J": 0.00020000000000000004,
+    "source_work_J": 0.039920000411233926,
+    "mechanical_work_J": -3.999979438303027e-05,
+    "joule_loss_J": 0.04000000000000001,
+    "delta_magnetic_energy_J": -4.0000000000000024e-05,
+    "maxClosureResidual_J": 2.0561694707987854e-10,
+    "force_N": 0.0020000000000000005,
+    "minimumInductance_H": 0.01,
+    "exact": {
+      "delta_magnetic_energy_J": -4.000000000000001e-05,
+      "mechanical_work_J": -4.000000000000001e-05,
+      "joule_loss_J": 0.04000000000000001,
+      "source_work_J": 0.03992000000000001
+    },
+    "maxClosedFormTermError_J": 4.112339149764388e-10
+  }
+}

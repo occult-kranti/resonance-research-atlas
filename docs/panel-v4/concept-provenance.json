@@ -1,0 +1,13 @@
+{
+  "asset": "assets/sound-lab-v4/tabletop-concept.png",
+  "method": "built-in image_gen",
+  "kind": "generated concept illustration",
+  "status": "proposed setup, not to scale, no physical experiment pictured",
+  "prompt": "Use case: stylized-concept. Asset type: illustrative apparatus concept for a source-led acoustics research website, separate from exact scientific diagrams. Create a polished physically plausible 3D product-render wide view of a complete inexpensive tabletop sound observation setup on a warm cream tabletop: an empty plain stainless steel bowl centered on a small cork pad, a light wooden tapper resting next to it; a recording smartphone in a small matte forest-green stand facing the bowl, microphone area unobstructed; a compact battery speaker off to the side on a separate small cork pad, a second simple playback phone beside the speaker with a visible audio cable joining those two; a small ruler and paper placement marks on table. Bowl and recording phone separate with reasonable space. Oblique elevated perspective, soft daylight, realistic metal and cork material, refined editorial scientific museum aesthetic, restrained warm cream and dark green. Objects fully visible, no people, no mystical motifs, no glowing fields, no waves, no measurements, no explanatory labels or arrows, no text or brands, no invented data or screens with plots. It is concept art, not a dimensioned schematic or photograph of an executed experiment. 1536x1024 landscape composition.",
+  "limitations": [
+    "Geometry is illustrative; authoritative nominal coordinates are in the deterministic diagrams.",
+    "The playback phone built-in speaker can replace the separate speaker.",
+    "A visible ruler in generated art is not a calibrated dimension.",
+    "No scientific result is derived from this image."
+  ]
+}

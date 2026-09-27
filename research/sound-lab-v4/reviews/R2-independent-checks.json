@@ -1,0 +1,94 @@
+{
+  "method": "All 256 box corners independently evaluated from covariance regression; API guards attacked separately.",
+  "bruteForceInterval_per_s": [
+    3.992280970290799,
+    4.007738741579217
+  ],
+  "reportedInterval_per_s": [
+    3.992280970290798,
+    4.007738741579217
+  ],
+  "maximumEndpointDiscrepancy_per_s": 8.881784197001252e-16,
+  "physicalWidthIncrease_per_s": 1.3000000000000003,
+  "malformedInputChecks": {
+    "negative_error": {
+      "rejected": true,
+      "reason": "finite nonnegative scalar or matching error bound required"
+    },
+    "nan_error": {
+      "rejected": true,
+      "reason": "finite nonnegative scalar or matching error bound required"
+    },
+    "infinite_error": {
+      "rejected": true,
+      "reason": "finite nonnegative scalar or matching error bound required"
+    },
+    "error_shape": {
+      "rejected": true,
+      "reason": "finite nonnegative scalar or matching error bound required"
+    },
+    "target_shape": {
+      "rejected": true,
+      "reason": "matching one-dimensional time and channel arrays required"
+    },
+    "reference_shape": {
+      "rejected": true,
+      "reason": "matching one-dimensional time and channel arrays required"
+    },
+    "constant_times": {
+      "rejected": true,
+      "reason": "strictly increasing physical times required"
+    },
+    "duplicate_times": {
+      "rejected": true,
+      "reason": "strictly increasing physical times required"
+    },
+    "nonfinite_times": {
+      "rejected": true,
+      "reason": "finite time and samples required"
+    },
+    "negative_reference_budget": {
+      "rejected": true,
+      "reason": "physical nuisance bounds must be nonnegative finite scalars or None"
+    },
+    "nan_reference_budget": {
+      "rejected": true,
+      "reason": "physical nuisance bounds must be nonnegative finite scalars or None"
+    },
+    "infinite_differential_budget": {
+      "rejected": true,
+      "reason": "physical nuisance bounds must be nonnegative finite scalars or None"
+    },
+    "nonfinite_target": {
+      "rejected": true,
+      "reason": "finite time and samples required"
+    }
+  },
+  "unknownBound": {
+    "status": "contrast_only_unknown_systematic_bound",
+    "contrast_interval_per_s": [
+      3.992280970290798,
+      4.007738741579217
+    ],
+    "physical_alpha_interval_per_s": null,
+    "weights_per_s": [
+      -0.6659505907626206,
+      -0.4081632653061224,
+      0.02148227712137488,
+      1.0526315789473681
+    ]
+  },
+  "floor": {
+    "status": "withheld_at_error_floor",
+    "contrast_interval_per_s": null,
+    "physical_alpha_interval_per_s": null,
+    "weights_per_s": null
+  },
+  "zeroReference": {
+    "status": "withheld_at_error_floor",
+    "contrast_interval_per_s": null,
+    "physical_alpha_interval_per_s": null,
+    "weights_per_s": null
+  },
+  "scriptSHA256": "1c9ebce6474fb2c480556b304fb7a50803d96b0f17cd616d917ea836def0c7aa"
+}

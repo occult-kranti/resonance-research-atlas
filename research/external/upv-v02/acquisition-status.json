@@ -1,0 +1,16 @@
+{
+  "status": "metadata_only_acquisition_blocked",
+  "source_record": 19371528,
+  "version": "0.2",
+  "license": "CC-BY-4.0",
+  "selected_archive": "Room_iTEAM_8G4C_mat.zip",
+  "archive_bytes": 323751737,
+  "archive_publisher_md5": "3ff0762754eb3d038e57e4ee9a66ae9a",
+  "frozen_member": "Room_iTEAM_8G4C_mat/RC1/SC1/AR/AR_RC1_SC1_Z03_RIR.mat",
+  "selection_rule": "First lexicographic RIR member in smallest room archive; first source and first receiver after axis metadata confirmation. Chosen before outcomes.",
+  "mat_acquired": false,
+  "source_mat_sha256": null,
+  "channel_extracted": false,
+  "error": "network approval was cancelled before a decision was returned",
+  "evidence": "Metadata API and v0.1 ZIP central directory read; selected v0.2 payload acquisition aborted. No further retry after abort."
+}

@@ -1,0 +1,60 @@
+{
+  "id": "R3",
+  "round": 3,
+  "title": "Separate a reference from one recorded channel",
+  "status": "executed_pending_review",
+  "evidenceType": "synthetic_model",
+  "question": "Can fixed-frequency short-block harmonic regression separate a target and pilot in generated mono PCM, and can its rank/conditioning gate reject collisions?",
+  "finding": "Known separated tones can be extracted from the generated mono signal; coincident or poorly conditioned frequencies withhold correction, and within-block evolution remains a separate error.",
+  "metrics": {
+    "smoothCorrectedAlpha_per_s": 3.9984133870707197,
+    "smoothAlphaAbsError_per_s": 0.0015866129292803066,
+    "smoothMaxEnvelopeRelativeError": 0.0028475812638362186,
+    "exactBlockMaxAmplitudeError_FS": 1.3439022917720311e-05,
+    "exactBlockCorrectedAlpha_per_s": 3.999982961020952,
+    "boundedNoiseCorrectedAlpha_per_s": 3.998382806091593,
+    "boundedNoiseActualMax_FS": 9.994507977086811e-05,
+    "nominalCondition": 1.0000000000000002,
+    "collisionRank": 2,
+    "collisionNullity": 2,
+    "collisionKernelResidual": 0.0,
+    "collisionCorrection": null,
+    "nearCollisionCondition": 28.043266487907047,
+    "nearCollisionDiagnosticAlpha_per_s": 3.9154253301843562,
+    "nearCollisionCorrection": null
+  },
+  "controls": [
+    {
+      "control": "frequency collision",
+      "outcome": "rank-deficient: correction withheld"
+    },
+    {
+      "control": "near collision",
+      "outcome": "condition above gate: correction withheld"
+    },
+    {
+      "control": "smooth envelopes",
+      "outcome": "within-block discrepancy retained explicitly"
+    }
+  ],
+  "checks": {
+    "nominalRecovery": true,
+    "exactBlockAmplitude": true,
+    "nominalRankCondition": true,
+    "collisionKernel": true,
+    "collisionWithheld": true,
+    "nearCollisionWithheld": true,
+    "noiseBound": true
+  },
+  "producerChecksPassed": true,
+  "limits": [
+    "Finite generated mono-fixture extraction at known frequencies under stated window and condition gate; no arbitrary-audio mode discovery, physical witness validation, or empirical envelope-error bound."
+  ],
+  "contractSHA256": "54b3ec6223280506cc80ba327cbe4fd41cb77648692f3db4cdd3ee2e952dbaeb",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8"
+  }
+}

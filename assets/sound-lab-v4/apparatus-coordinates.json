@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "coordinateUnit": "m",
+  "displayDimensionUnit": "cm",
+  "status": "proposed, unbuilt; no physical measurements",
+  "generatedBy": "scripts/render_apparatus_v4.py",
+  "coordinateFrame": "tabletop upper surface z=0; x across 1.00 m width; y along 0.70 m depth",
+  "tabletop": {
+    "extent_m": [
+      1,
+      0.7
+    ],
+    "z_m": 0
+  },
+  "bowl": {
+    "rimCenter_m": [
+      0.32,
+      0.26,
+      0.08
+    ],
+    "outerRadius_m": 0.07,
+    "height_m": 0.07,
+    "supportThickness_m": 0.01,
+    "wallThicknessIllustration_m": 0.004,
+    "note": "generic revolved drawing, not a particular material or measured specimen"
+  },
+  "sampleMicrophonePort_m": [
+    0.59,
+    0.26,
+    0.08
+  ],
+  "pilotEmittingPort_m": [
+    0.59,
+    0.61,
+    0.08
+  ],
+  "optionalMonitorPort_m": [
+    0.59,
+    0.53,
+    0.08
+  ],
+  "dimensions_m": {
+    "nearestBowlRimToSampleMicrophone": 0.2,
+    "pilotToSampleMicrophone": 0.35,
+    "pilotToMonitor": 0.08
+  },
+  "alternatives": [
+    {
+      "id": "phone-witness",
+      "files": [
+        "phone-witness-plan.svg",
+        "phone-witness-3d.png"
+      ],
+      "parts": [
+        "intact metal bowl",
+        "soft support",
+        "pencil eraser",
+        "recording phone",
+        "second phone with speaker for pilot",
+        "stable supports and marked ruler"
+      ],
+      "recording": "one microphone records target plus reference; mono separation not validated by R1",
+      "optionalSubstitution": "An available small speaker/player can replace the pilot phone; no purchase is required by this proposal."
+    },
+    {
+      "id": "dual-channel",
+      "files": [
+        "dual-channel-plan.svg",
+        "dual-channel-3d.png"
+      ],
+      "parts": [
+        "same bowl, pilot and soft supports",
+        "sample microphone",
+        "source-monitor microphone",
+        "stable low microphone stands",
+        "two analogue cables",
+        "two-input recorder with common sampling clock"
+      ],
+      "recording": "two input tracks, neither ideal separated nor proven to share gain; cross-talk and processing must be characterized"
+    }
+  ],
+  "r1ClaimBoundary": "R1 ideal separated stereo fixtures do not establish mono extraction, source stability, common hardware gain or intrinsic damping.",
+  "signalConnectorMeaning": "schematic acoustic or cable routing, no calibrated field, loss, phase or propagation model",
+  "verification": {
+    "distancesComputedFromCoordinates": true,
+    "physicalApparatusBuilt": false,
+    "physicalMeasurementClaimed": false
+  }
+}

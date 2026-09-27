@@ -1,0 +1,60 @@
+{
+  "id": "R3",
+  "title": "Separate a reference from one recorded channel",
+  "frozenAt": "2026-09-27T02:03:37.393817+00:00",
+  "status": "frozen_before_production",
+  "predecessor": {
+    "id": "R2B",
+    "reviewPath": "research/sound-lab-v4/reviews/R2-review.json",
+    "reviewSHA256": "b0e6f40e09e5bce0c33b1eba94ae5dc295cfa076af9bf1d546ec95611e725a24"
+  },
+  "incomingEvidence": "R2B exact bounds only apply to supplied positive envelopes; reviewer requires testing practical mono extraction before using them. External measured RIR bytes remain unavailable after network approval cancellation.",
+  "question": "Can fixed-frequency short-block harmonic regression separate a target and pilot in generated mono PCM, and can its rank/conditioning gate reject collisions?",
+  "evidenceType": "synthetic_generated_mono_PCM",
+  "model": {
+    "duration_s": 1,
+    "sampleRate_Hz": 8000,
+    "blockSamples": 64,
+    "targetFrequency_Hz": 500,
+    "referenceFrequency_Hz": 1000,
+    "targetAlpha_per_s": 4,
+    "sharedBeta_per_s": 2,
+    "targetAmplitude_FS": 0.2,
+    "referenceAmplitude_FS": 0.05,
+    "targetPhase_rad": 0.3,
+    "referencePhase_rad": 0.7,
+    "PCM": "signed16",
+    "design": "four columns cos/sin at both declared frequencies; ordinary least squares separately for each nonoverlapping block",
+    "amplitude": "sqrt(cos_coefficient^2+sin_coefficient^2) for each channel",
+    "rateFit": "OLS log-amplitude versus block-center physical seconds, centers between .05 and .95 inclusive",
+    "primaryFixture": "smooth exponential amplitudes within each block",
+    "exactControl": "piecewise constant carrier amplitudes equal analytic envelope at block center; this control isolates extraction from within-block model error"
+  },
+  "controls": [
+    "smooth common-gain full frequency separation",
+    "piecewise-constant exact-model positive control",
+    "bounded additive digital noise uniformly within +/-1e-4 FS before PCM quantization fixed seed; report effect separately",
+    "frequency collision reference=500Hz: rank2 in parameter domain4, explicit kernel witness, no separated correction",
+    "near collision reference=505Hz: reject if condition exceeds10; report condition and raw unconstrained diagnostic without identified correction"
+  ],
+  "acceptance": {
+    "nominalPCMCorrectedAlphaAbsoluteError_per_s": 0.05,
+    "exactBlockAmplitudeAbsoluteError_FS": 0.0001,
+    "smoothEnvelopeRelativeErrorReportRequired": true,
+    "rankRequired": 4,
+    "maximumDesignCondition": 10,
+    "collisionKernelResidualTolerance": 1e-10,
+    "rankOrConditionFailureWithholdsCorrection": true
+  },
+  "falsifier": "Nominal reconstruction exceeds tolerance, collision is admitted, or a smooth-envelope fit error is falsely claimed to be bounded solely by digital quantization/noise.",
+  "claimCeiling": "Finite generated mono-fixture extraction at known frequencies under stated window and condition gate; no arbitrary-audio mode discovery, physical witness validation, or empirical envelope-error bound.",
+  "sources": [
+    "V4-W3C-CAPTURE",
+    "V4-SEAGCNET2026"
+  ],
+  "producer": "/root/coder",
+  "reviewer": "/root/skeptic",
+  "advisor": "/root/advisor",
+  "loopA": "Execute mono PCM extraction with exact-block and smooth controls; preserve model-mismatch diagnostics.",
+  "loopB": "Independently decode and project mono samples, verify rank and collision witnesses, challenge frequency/window model."
+}

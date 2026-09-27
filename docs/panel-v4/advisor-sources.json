@@ -1,0 +1,75 @@
+[
+  {
+    "id": "V4-W3C-CAPTURE",
+    "title": "Media Capture and Streams",
+    "url": "https://www.w3.org/TR/2025/CRD-mediacapture-streams-20251009/",
+    "sourceType": "primary_technical_specification",
+    "version": "Candidate Recommendation Draft 2025-10-09",
+    "accessed": "2026-09-27",
+    "sectionsRead": [
+      "4.3.5 AGC capability entries",
+      "4.3.7 settings",
+      "4.3.8 audio properties",
+      "5 sources/sinks transformation note"
+    ],
+    "readingDepth": "selected full-text sections, not entire specification",
+    "claim": "Capture APIs distinguish supported controls from active settings and expose controls for signal processing. These metadata do not measure physical calibration.",
+    "relevance": "Log the acquisition chain; never infer common gain or stable source from an API setting alone."
+  },
+  {
+    "id": "V4-SEAGCNET2026",
+    "title": "SE-AGCNet: An End-to-End Framework for Joint Speech Enhancement and Loudness Control in Meeting Scenarios",
+    "url": "https://arxiv.org/html/2606.25959v1",
+    "sourceType": "modern_primary_research_preprint",
+    "version": "v1 2026-06-24",
+    "accessed": "2026-09-27",
+    "sectionsRead": [
+      "abstract",
+      "2 proposed model",
+      "2.1 speech enhancement",
+      "2.2.1 architecture",
+      "2.2.2 normalization"
+    ],
+    "readingDepth": "selected full-text methods; results and code not independently reproduced",
+    "claim": "This proposed speech-processing architecture transforms time-frequency magnitude and phase; scalar shared gain is therefore a model assumption, not a universal description of processing.",
+    "relevance": "Require differential-gain and unstable-reference adversaries. This paper does not establish a particular phone uses the method."
+  },
+  {
+    "id": "V4-FEYNMAN-ELECTRICAL",
+    "title": "Feynman Lectures I.23 Electrical resonance",
+    "url": "https://www.feynmanlectures.caltech.edu/I_23.html",
+    "sourceType": "primary_author_textbook",
+    "sectionsRead": [
+      "23-3 electrical resonance, equations23.14\u201323.19 and Table23-1"
+    ],
+    "readingDepth": "selected full-text section",
+    "claim": "The lumped RLC model and electrical/mechanical correspondence are established; voltage magnification is not source-free energy.",
+    "relevance": "Electrical state and impedance model; no priority claim."
+  },
+  {
+    "id": "V4-MIT-ENERGY",
+    "title": "Electromagnetic Fields and Energy chapter11 introduction",
+    "url": "https://web.mit.edu/6.013_book/www/chapter11/11.0.html",
+    "sourceType": "primary_author_textbook",
+    "sectionsRead": [
+      "chapter11 introduction circuit energy conservation"
+    ],
+    "readingDepth": "selected full-text introduction",
+    "claim": "Electrical power divides into stored-energy change and resistor dissipation.",
+    "relevance": "Independent source/storage/load boundary."
+  },
+  {
+    "id": "V4-FEYNMAN-INDUCTION",
+    "title": "Feynman Lectures II.17, Inductance and magnetic energy",
+    "url": "https://www.feynmanlectures.caltech.edu/II_17.html",
+    "sourceType": "primary_author_textbook",
+    "sectionsRead": [
+      "17-6 mutual inductance",
+      "17-7 self inductance",
+      "17-8 energy, especially17.37\u201317.43"
+    ],
+    "readingDepth": "selected full-text sections",
+    "claim": "Fixed-current force requires including source work; differentiating field energy with an unqualified minus sign can produce a wrong force sign.",
+    "relevance": "Source-inclusive moving-inductance reconstruction; exact modern linear L(z) model is this project fixture, not the source apparatus."
+  }
+]

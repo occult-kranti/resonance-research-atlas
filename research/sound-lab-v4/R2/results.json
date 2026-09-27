@@ -1,0 +1,64 @@
+{
+  "id": "R2",
+  "round": 2,
+  "title": "A correction needs a full uncertainty budget",
+  "status": "executed_pending_review",
+  "evidenceType": "synthetic_model",
+  "question": "Can bounded positive envelope observations produce a rigorous slope interval, and how do stated reference/drift limits change the physical-alpha interval?",
+  "finding": "Precise envelopes give a narrow contrast box, but stated reference and gain uncertainty add 1.3 s\u207b\u00b9 to its width; missing bounds withhold a physical interval.",
+  "metrics": {
+    "baseContrastInterval_per_s": [
+      3.992272885858592,
+      4.007741570021777
+    ],
+    "basePhysicalInterval_per_s": [
+      3.342272885858592,
+      4.657741570021777
+    ],
+    "systematicWidthIncrease_per_s": 1.3000000000000003,
+    "noErrorPointMaxError_per_s": 0.0,
+    "endpointAttainmentMaxError_per_s": 8.881784197001252e-16,
+    "withinBoundCoverageCount": 128,
+    "withinBoundTrials": 128,
+    "outOfBudgetPhysicalInterval_per_s": [
+      4.142724933235303,
+      5.457289200896124
+    ],
+    "outOfBudgetMissesTrueAlpha": true,
+    "floorWithheld": true,
+    "zeroReferenceWithheld": true,
+    "missingSystematicWithheld": true
+  },
+  "controls": [
+    {
+      "control": "out-of-budget differential gain",
+      "outcome": "true alpha excluded as expected"
+    },
+    {
+      "control": "one sample at error floor",
+      "outcome": "whole-window interval withheld"
+    }
+  ],
+  "checks": {
+    "noErrorIdentity": true,
+    "endpointsAttained": true,
+    "allInBoundCovered": true,
+    "systematicWidth": true,
+    "floorWholeWindowWithheld": true,
+    "zeroReferenceWithheld": true,
+    "unknownSystematicWithheld": true,
+    "outOfBudgetFailureRetained": true,
+    "nuisanceCornersCovered": true
+  },
+  "producerChecksPassed": true,
+  "limits": [
+    "Deterministic conditional interval arithmetic for provided envelope errors and explicit nuisance bounds; not a confidence interval, measured noise guarantee, or calibrated physical estimate."
+  ],
+  "contractSHA256": "b286306b2044dfc44eb8719266d1615155d48c7122827ca7efc48b3870a8c362",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8"
+  }
+}

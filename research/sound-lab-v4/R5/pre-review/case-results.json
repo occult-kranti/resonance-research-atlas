@@ -1,0 +1,328 @@
+{
+  "null": {
+    "domainDimension": 2,
+    "rank": 2,
+    "nullity": 0,
+    "totalMasses_kg": [
+      0.10500000000000001,
+      0.115,
+      0.125,
+      0.135
+    ],
+    "pairedPolarityObservable_N": [
+      0.0005,
+      0.0005,
+      0.0005,
+      0.0005
+    ],
+    "slope_m_per_s2": -1.4703516182379415e-17,
+    "intercept_N": 0.0005000000000000017,
+    "conditionalSlopeInterval_m_per_s2": [
+      -0.00032000000000001466,
+      0.0003199999999999853
+    ],
+    "physicalGravityInterval_m_per_s2": null,
+    "status": "conditional_slope_only_unknown_mass_bias",
+    "slopeWeights_per_kg": [
+      -30.000000000000004,
+      -10.00000000000001,
+      9.999999999999982,
+      30.000000000000004
+    ],
+    "pairedWorstCaseError_N": 4e-06,
+    "slopeWorstCaseError_m_per_s2": 0.00031999999999999997
+  },
+  "injected": {
+    "domainDimension": 2,
+    "rank": 2,
+    "nullity": 0,
+    "totalMasses_kg": [
+      0.10500000000000001,
+      0.115,
+      0.125,
+      0.135
+    ],
+    "pairedPolarityObservable_N": [
+      -0.0015999999999999999,
+      -0.0018,
+      -0.002,
+      -0.0022
+    ],
+    "slope_m_per_s2": -0.01999999999999996,
+    "intercept_N": 0.0004999999999999952,
+    "conditionalSlopeInterval_m_per_s2": [
+      -0.02031999999999996,
+      -0.019679999999999958
+    ],
+    "physicalGravityInterval_m_per_s2": null,
+    "status": "conditional_slope_only_unknown_mass_bias",
+    "slopeWeights_per_kg": [
+      -30.000000000000004,
+      -10.00000000000001,
+      9.999999999999982,
+      30.000000000000004
+    ],
+    "pairedWorstCaseError_N": 4e-06,
+    "slopeWorstCaseError_m_per_s2": 0.00031999999999999997
+  },
+  "rival": {
+    "domainDimension": 2,
+    "rank": 2,
+    "nullity": 0,
+    "totalMasses_kg": [
+      0.10500000000000001,
+      0.115,
+      0.125,
+      0.135
+    ],
+    "pairedPolarityObservable_N": [
+      -0.0015999999999999999,
+      -0.0018,
+      -0.002,
+      -0.0022
+    ],
+    "slope_m_per_s2": -0.01999999999999996,
+    "intercept_N": 0.0004999999999999952,
+    "conditionalSlopeInterval_m_per_s2": [
+      -0.02031999999999996,
+      -0.019679999999999958
+    ],
+    "physicalGravityInterval_m_per_s2": null,
+    "status": "conditional_slope_only_unknown_mass_bias",
+    "slopeWeights_per_kg": [
+      -30.000000000000004,
+      -10.00000000000001,
+      9.999999999999982,
+      30.000000000000004
+    ],
+    "pairedWorstCaseError_N": 4e-06,
+    "slopeWorstCaseError_m_per_s2": 0.00031999999999999997
+  },
+  "assumed_zero_mass_bias": {
+    "domainDimension": 2,
+    "rank": 2,
+    "nullity": 0,
+    "totalMasses_kg": [
+      0.10500000000000001,
+      0.115,
+      0.125,
+      0.135
+    ],
+    "pairedPolarityObservable_N": [
+      -0.0015999999999999999,
+      -0.0018,
+      -0.002,
+      -0.0022
+    ],
+    "slope_m_per_s2": -0.01999999999999996,
+    "intercept_N": 0.0004999999999999952,
+    "conditionalSlopeInterval_m_per_s2": [
+      -0.02031999999999996,
+      -0.019679999999999958
+    ],
+    "physicalGravityInterval_m_per_s2": [
+      -0.02031999999999996,
+      -0.019679999999999958
+    ],
+    "status": "conditional_physical_interval_under_supplied_mass_bias_bound",
+    "slopeWeights_per_kg": [
+      -30.000000000000004,
+      -10.00000000000001,
+      9.999999999999982,
+      30.000000000000004
+    ],
+    "pairedWorstCaseError_N": 4e-06,
+    "slopeWorstCaseError_m_per_s2": 0.00031999999999999997
+  },
+  "single_mass": {
+    "domainDimension": 2,
+    "rank": 1,
+    "nullity": 1,
+    "totalMasses_kg": [
+      0.10500000000000001,
+      0.10500000000000001,
+      0.10500000000000001,
+      0.10500000000000001
+    ],
+    "pairedPolarityObservable_N": [
+      -0.0015999999999999999,
+      -0.0015999999999999999,
+      -0.0015999999999999999,
+      -0.0015999999999999999
+    ],
+    "slope_m_per_s2": null,
+    "intercept_N": null,
+    "conditionalSlopeInterval_m_per_s2": null,
+    "physicalGravityInterval_m_per_s2": null,
+    "status": "withheld_rank"
+  },
+  "extremes": [
+    {
+      "sign": -1,
+      "slopeError_m_per_s2": -0.0003199999999999384,
+      "eachSupportError_N": [
+        [
+          2e-06,
+          2e-06
+        ],
+        [
+          2e-06,
+          2e-06
+        ],
+        [
+          -2e-06,
+          -2e-06
+        ],
+        [
+          -2e-06,
+          -2e-06
+        ]
+      ],
+      "result": {
+        "domainDimension": 2,
+        "rank": 2,
+        "nullity": 0,
+        "totalMasses_kg": [
+          0.10500000000000001,
+          0.115,
+          0.125,
+          0.135
+        ],
+        "pairedPolarityObservable_N": [
+          -0.0015959999999999998,
+          -0.0017959999999999999,
+          -0.0020039999999999997,
+          -0.002204
+        ],
+        "slope_m_per_s2": -0.02031999999999994,
+        "intercept_N": 0.0005383999999999931,
+        "conditionalSlopeInterval_m_per_s2": [
+          -0.02063999999999994,
+          -0.019999999999999938
+        ],
+        "physicalGravityInterval_m_per_s2": null,
+        "status": "conditional_slope_only_unknown_mass_bias",
+        "slopeWeights_per_kg": [
+          -30.000000000000004,
+          -10.00000000000001,
+          9.999999999999982,
+          30.000000000000004
+        ],
+        "pairedWorstCaseError_N": 4e-06,
+        "slopeWorstCaseError_m_per_s2": 0.00031999999999999997
+      }
+    },
+    {
+      "sign": 1,
+      "slopeError_m_per_s2": 0.00032000000000003206,
+      "eachSupportError_N": [
+        [
+          -2e-06,
+          -2e-06
+        ],
+        [
+          -2e-06,
+          -2e-06
+        ],
+        [
+          2e-06,
+          2e-06
+        ],
+        [
+          2e-06,
+          2e-06
+        ]
+      ],
+      "result": {
+        "domainDimension": 2,
+        "rank": 2,
+        "nullity": 0,
+        "totalMasses_kg": [
+          0.10500000000000001,
+          0.115,
+          0.125,
+          0.135
+        ],
+        "pairedPolarityObservable_N": [
+          -0.0016039999999999997,
+          -0.0018039999999999998,
+          -0.0019960000000000004,
+          -0.002196
+        ],
+        "slope_m_per_s2": -0.01967999999999997,
+        "intercept_N": 0.00046159999999999626,
+        "conditionalSlopeInterval_m_per_s2": [
+          -0.01999999999999997,
+          -0.019359999999999968
+        ],
+        "physicalGravityInterval_m_per_s2": null,
+        "status": "conditional_slope_only_unknown_mass_bias",
+        "slopeWeights_per_kg": [
+          -30.000000000000004,
+          -10.00000000000001,
+          9.999999999999982,
+          30.000000000000004
+        ],
+        "pairedWorstCaseError_N": 4e-06,
+        "slopeWorstCaseError_m_per_s2": 0.00031999999999999997
+      }
+    }
+  ],
+  "contact_loss": {
+    "domainDimension": 2,
+    "rank": 2,
+    "nullity": 0,
+    "totalMasses_kg": [
+      0.10500000000000001,
+      0.115,
+      0.125,
+      0.135
+    ],
+    "pairedPolarityObservable_N": [
+      -0.025516625,
+      -0.0018,
+      -0.002,
+      -0.0022
+    ],
+    "slope_m_per_s2": null,
+    "intercept_N": null,
+    "conditionalSlopeInterval_m_per_s2": null,
+    "physicalGravityInterval_m_per_s2": null,
+    "status": "withheld_contact_loss_or_uncertainty"
+  },
+  "malformed": [
+    {
+      "case": "negative_mass",
+      "rejected": true
+    },
+    {
+      "case": "zero_mass",
+      "rejected": true
+    },
+    {
+      "case": "nonfinite_mass",
+      "rejected": true
+    },
+    {
+      "case": "negative_error",
+      "rejected": true
+    },
+    {
+      "case": "infinite_error",
+      "rejected": true
+    },
+    {
+      "case": "nonfinite_contrast",
+      "rejected": true
+    },
+    {
+      "case": "wrong_shape",
+      "rejected": true
+    },
+    {
+      "case": "negative_bias_bound",
+      "rejected": true
+    }
+  ],
+  "seed": 2026092705
+}

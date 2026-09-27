@@ -1,0 +1,35 @@
+{
+  "resonant": {
+    "currentPeak_A": 0.2,
+    "capacitorPeak_V": 2.0,
+    "voltageGain": 2.0,
+    "sourceMeanPower_W": 0.1,
+    "loadMeanPower_W": 0.08000000000000002,
+    "internalMeanPower_W": 0.020000000000000004,
+    "capacitorMeanRealPower_W": 0.0,
+    "capacitorReactivePower_var": -0.2,
+    "capacitorApparentPower_VA": 0.2
+  },
+  "off_resonance": {
+    "currentPeak_A": 0.06324555320336758,
+    "capacitorPeak_V": 1.2649110640673518,
+    "voltageGain": 1.2649110640673518,
+    "sourceMeanPower_W": 0.009999999999999998,
+    "loadMeanPower_W": 0.007999999999999998,
+    "internalMeanPower_W": 0.0019999999999999996,
+    "capacitorMeanRealPower_W": 1.734723475976807e-18,
+    "capacitorReactivePower_var": -0.039999999999999994,
+    "capacitorApparentPower_VA": 0.04
+  },
+  "stronger_resistance": {
+    "currentPeak_A": 0.1,
+    "capacitorPeak_V": 1.0,
+    "voltageGain": 1.0,
+    "sourceMeanPower_W": 0.05,
+    "loadMeanPower_W": 0.020000000000000004,
+    "internalMeanPower_W": 0.030000000000000006,
+    "capacitorMeanRealPower_W": 0.0,
+    "capacitorReactivePower_var": -0.05,
+    "capacitorApparentPower_VA": 0.05
+  }
+}

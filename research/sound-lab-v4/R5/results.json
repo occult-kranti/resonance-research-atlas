@@ -1,0 +1,80 @@
+{
+  "id": "R5",
+  "round": 5,
+  "title": "Which observations could identify a gravity-like change?",
+  "status": "executed_pending_review",
+  "evidenceType": "synthetic_force_observations_with_injected_model_deformation",
+  "question": "Can paired-support and polarity-averaged observations across known masses recover a deliberately injected common acceleration change under a constant-bias model, and what exact rival still prevents an empirical gravity identification?",
+  "finding": "Paired supports and four masses recover a deliberately injected acceleration-like slope, but an exact mass-proportional ordinary bias reproduces every observation; unknown bias prevents a gravity conclusion.",
+  "metrics": {
+    "nullRecoveredSlope_m_per_s2": -1.4703516182379415e-17,
+    "injectedRecoveredSlope_m_per_s2": -0.01999999999999996,
+    "injectedRecoveredIntercept_N": 0.0004999999999999952,
+    "conditionalSlopeInterval_m_per_s2": [
+      -0.02032000000099996,
+      -0.01967999999899996
+    ],
+    "worstCaseSlopeHalfwidth_m_per_s2": 0.00031999999999999997,
+    "numericalOutwardPadding_m_per_s2": 1e-12,
+    "extremalSlopeErrors_m_per_s2": [
+      -0.0003199999999999384,
+      0.00032000000000003206
+    ],
+    "boundedRealizationsCovered": 128,
+    "boundedRealizationsTotal": 128,
+    "sameIndividualObservationRivalMaxDifference_N": 2.168404344971009e-19,
+    "singleMassRank": 1,
+    "fourMassRank": 2,
+    "expandedRank": 2,
+    "expandedNullity": 1,
+    "expandedKernelResidual": 0.0,
+    "unknownMassBiasPhysicalGravityInterval": null,
+    "polarityAveragedSinglePanNullContrast_N": -0.0018,
+    "contactLossStatus": "withheld_contact_loss_or_uncertainty",
+    "malformedCasesRejected": 8
+  },
+  "controls": [
+    {
+      "control": "mass-proportional ordinary bias",
+      "outcome": "exact same individual force observations"
+    },
+    {
+      "control": "single mass",
+      "outcome": "rank one: slope withheld"
+    },
+    {
+      "control": "current polarity alone",
+      "outcome": "even magnetic support remains"
+    },
+    {
+      "control": "loss of static contact",
+      "outcome": "static slope withheld"
+    }
+  ],
+  "checks": {
+    "noiselessInjectionRecovered": true,
+    "nullRecovered": true,
+    "sameReadoutRival": true,
+    "kernelResiduals": true,
+    "extremeErrorsAttainBound": true,
+    "extremeIntervalsStrictlyContainTruth": true,
+    "all128Covered": true,
+    "unknownMassBiasWithholds": true,
+    "singleMassWithholds": true,
+    "injectionConditionalIntervalExcludesZero": true,
+    "contactLossWithheld": true,
+    "malformedInputsRejected": true
+  },
+  "producerChecksPassed": true,
+  "limits": [
+    "A prospective identifying design for a stipulated two-parameter force model plus an exact nonidentifiability counterexample. No actual support readings, sensitivity demonstration, new force, or changed gravity."
+  ],
+  "contractSHA256": "13bac9d954a1b64e303779f7c34eb7fd679ebea07e828a8d1fef1e870c4433e8",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8"
+  },
+  "domain": "gravity_claim_identifiability"
+}

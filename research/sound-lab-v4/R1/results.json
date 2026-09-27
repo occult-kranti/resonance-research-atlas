@@ -1,0 +1,85 @@
+{
+  "id": "R1",
+  "round": 1,
+  "title": "A simultaneous reference can identify common gain drift",
+  "status": "executed_pending_review",
+  "evidenceType": "synthetic_model",
+  "question": "Under a shared scalar exponential acquisition gain, does a nondecaying simultaneous reference identify the target decay, and which physically different rival still survives?",
+  "finding": "A stable shared-gain witness recovers the stipulated decay; differential gain and reference drift retain a one-per-second bias.",
+  "metrics": {
+    "analyticIdentityMaxError_per_s": 1.7763568394002505e-15,
+    "commonGainMaxCorrectedError_per_s": 3.0829483944394553e-05,
+    "naiveAlphaBeta2_per_s": 1.9999932435009313,
+    "correctedAlphaBeta2_per_s": 3.99999213420858,
+    "differentialGainBias_per_s": -0.999994971695751,
+    "unstableReferenceBias_per_s": -0.999994971695751,
+    "zeroReferenceCorrection": null,
+    "differentialAndUnstablePCMIdentical": true,
+    "singleChannelRank": 1,
+    "sharedGainRank": 2
+  },
+  "controls": [
+    {
+      "case": "differential_gain",
+      "beta_target_per_s": 2,
+      "beta_reference_per_s": 1,
+      "true_reference_decay_per_s": 0,
+      "target_log_slope_per_s": -1.9999932435009313,
+      "reference_log_slope_per_s": 1.0000117848033176,
+      "naive_alpha_per_s": 1.9999932435009313,
+      "corrected_alpha_per_s": 3.000005028304249,
+      "expected_corrected_per_s": 3,
+      "true_target_alpha_per_s": 4,
+      "rawSHA256": "757cfc10bd661cae0eb15c6aa8923142e02555405e4a24f6690b28cdea90b5dc",
+      "correction_status": "conditional_estimate"
+    },
+    {
+      "case": "unstable_reference",
+      "beta_target_per_s": 2,
+      "beta_reference_per_s": 2,
+      "true_reference_decay_per_s": 1,
+      "target_log_slope_per_s": -1.9999932435009313,
+      "reference_log_slope_per_s": 1.0000117848033176,
+      "naive_alpha_per_s": 1.9999932435009313,
+      "corrected_alpha_per_s": 3.000005028304249,
+      "expected_corrected_per_s": 3,
+      "true_target_alpha_per_s": 4,
+      "rawSHA256": "757cfc10bd661cae0eb15c6aa8923142e02555405e4a24f6690b28cdea90b5dc",
+      "correction_status": "conditional_estimate"
+    },
+    {
+      "case": "zero_reference",
+      "beta_target_per_s": 2,
+      "beta_reference_per_s": 2,
+      "true_reference_decay_per_s": 0,
+      "target_log_slope_per_s": -1.9999932435009313,
+      "reference_log_slope_per_s": null,
+      "naive_alpha_per_s": 1.9999932435009313,
+      "corrected_alpha_per_s": null,
+      "expected_corrected_per_s": null,
+      "true_target_alpha_per_s": 4,
+      "rawSHA256": "c59b548e459d7931129add2a8e7e5fd02a411c4248af86167be11b1ed168466c",
+      "correction_status": "withheld_zero_reference"
+    }
+  ],
+  "checks": {
+    "analyticIdentity": true,
+    "PCMCorrection": true,
+    "differentialRivalRetainsBias": true,
+    "unstableReferenceRetainsBias": true,
+    "zeroReferenceWithheld": true,
+    "rankAndKernels": true,
+    "rawDecodeExact": true
+  },
+  "producerChecksPassed": true,
+  "limits": [
+    "Conditional parameter recovery in a stipulated shared-gain model and a implementable recording witness proposal; no calibrated material damping or physical result."
+  ],
+  "contractSHA256": "43a52ae1d69d5dfdd76118465d78019eeb592cf2791dca0a1f63f3192b4b225a",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8"
+  }
+}

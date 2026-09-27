@@ -1,0 +1,239 @@
+{
+  "active_focus": "electricity, magnetism, and antigravity claim discrimination",
+  "ranking_basis": "Discriminatory value per material and measurement burden, updated after user EM steering; not probabilities of truth or completed experiments.",
+  "hypotheses": [
+    {
+      "id": "V4-EM-H1",
+      "rank": 1,
+      "title": "Electrical resonance changes amplitude and phase while preserving a complete energy budget",
+      "theory": "A passive lumped circuit moves energy between fields and dissipates resistance loss.",
+      "inspiration": "Tesla source/load apparatus descriptions and established electrical resonance.",
+      "model": "W_in=Δ(0.5 L I²+0.5 C Vc²)+∫R I²dt+W_load for the declared fixed-parameter circuit.",
+      "rival": "Incomplete time windows, sign mistakes, current/voltage channel skew or uncounted source/initial energy produce apparent excess.",
+      "observable": "Signed instantaneous power, integrated joules, endpoint stored energy and residual as time step shrinks.",
+      "control": "Source-off decay, known added resistance, phase/skew adversary, nonzero initial energy and held-out integration resolution.",
+      "materials": "Simulation first; optional current-limited low-voltage source, resistor, inductor, capacitor and synchronized voltage/current logging.",
+      "falsifier": "A claimed excess collapses under complete accounting; a model fails if a calibrated residual exceeds its predeclared uncertainty.",
+      "novelty_status": "Established conservation exercise, not a new energy source.",
+      "sources": [
+        "V4-FEYNMAN-ELECTRICAL",
+        "V4-MIT-ENERGY",
+        "V4-EM-TESLA-RADIANT"
+      ],
+      "status": "Active source recommendation; numerical execution belongs to advisor ledger"
+    },
+    {
+      "id": "V4-EM-H2",
+      "rank": 2,
+      "title": "Motion-dependent inductance exchanges source energy with field energy and mechanical work",
+      "theory": "A linear lossless magnetic constitutive model with L(z) has a force obtained from magnetic coenergy at fixed current.",
+      "inspiration": "Tesla source/load boundary and current force-metrology requirements.",
+      "model": "v=R I+L dI/dt+I(dL/dz)zdot; Fz=0.5 I² dL/dz. Hence vI−RI²=d(0.5LI²)/dt+Fz zdot.",
+      "rival": "Omitting motional back-emf or treating fixed-current coenergy as fixed-flux energy doubles or changes the inferred work.",
+      "observable": "Voltage/current/position work integrals and independently differentiated force; force is even under I reversal in this specific model.",
+      "control": "Reverse motion/current separately, source-off, fixed-position and zero-gradient cases; finite-difference force check.",
+      "materials": "Simulation; later a low-voltage coil, constrained moving core, position readout and calibrated force gauge.",
+      "falsifier": "An omitted-term variant fails closure while the complete model converges; parity alone cannot identify gravity change.",
+      "novelty_status": "Standard electromechanics applied to a transparent counterexample.",
+      "sources": [
+        "V4-MIT-ENERGY",
+        "V4-EM-TAJMAR2024"
+      ],
+      "status": "Prospective R4 candidate; assumptions exclude hysteresis/saturation/unknown permanent bias"
+    },
+    {
+      "id": "V4-EM-H3",
+      "rank": 3,
+      "title": "An apparent weight change can be ordinary lift or interaction with the source support",
+      "theory": "A scale senses support force; magnetic force on a sample can alter its reading without changing gravitational acceleration.",
+      "inspiration": "Diamagnetic levitation experiments and steady-field null studies.",
+      "model": "N=m g−Fmag,z for the sample; include the source reaction in the complete supported system. A separately characterized weakly magnetic witness adds information on g only within its coupling bounds.",
+      "rival": "Thermal drift, lead forces, induced magnetic response, electrostatic pickup and source support outside the weighed boundary.",
+      "observable": "Sample/source support forces, field gradient, reference response and all-run null distribution.",
+      "control": "Independent support/reaction witness, move source versus sample, matched heating, current reversal, sample swap and blinded order.",
+      "materials": "Simulation first; later magnet/coil, nonmagnetic stand, scale/force sensor and optical position reference.",
+      "falsifier": "A gravity-only attribution fails when signal tracks susceptibility/geometry or cancels with the source reaction; unresolved residual remains unresolved.",
+      "novelty_status": "Measurement-design hypothesis, not proof of antigravity.",
+      "sources": [
+        "V4-EM-GRAPHITE2024",
+        "V4-EM-TAJMAR2024",
+        "V4-EM-NASA2004"
+      ],
+      "status": "Active R5 candidate; no measured force or gravity result in this lane"
+    },
+    {
+      "id": "V4-EM-H4",
+      "rank": 4,
+      "title": "Magnetic levitation stability has testable ordinary stiffness and damping",
+      "theory": "Static diamagnetism and rotating-magnet stabilization have different restoring-force and dissipative mechanisms.",
+      "inspiration": "2024 graphite resonators and2025 rotating-field levitation.",
+      "model": "Linearize declared Fmag(z)−mg near an equilibrium, or integrate gravity+dipole torque+inertia with a driven source.",
+      "rival": "Unmodeled air damping, image scale/parallax, finite magnet geometry or phase aliasing.",
+      "observable": "Equilibrium position, small-displacement stiffness, amplitude-dependent frequency and loss.",
+      "control": "Geometry variation, independent optical scale, stationary-source and no-gradient limits.",
+      "materials": "Simulation is cheapest; stationary contained magnets plus pre-cut graphite for a later qualitative demonstration.",
+      "falsifier": "A proposed model fails to predict withheld equilibrium/stability changes within declared approximation error.",
+      "novelty_status": "Established magnetic lift; a good model benchmark, not gravity cancellation.",
+      "sources": [
+        "V4-EM-GRAPHITE2024",
+        "V4-EM-ROTATION2025",
+        "V4-EM-MAGPYLIB"
+      ],
+      "status": "Secondary priority; no exposed high-speed magnet prototype selected"
+    },
+    {
+      "id": "V4-EM-H5",
+      "rank": 5,
+      "title": "A proposed asymmetric electrostatic force needs the full momentum boundary",
+      "theory": "For a closed apparatus, partial surface forces are insufficient; include all electrodes, power supply, field momentum and environment.",
+      "inspiration": "Buhler/Aurigema patent claims, bounded against NASA gas-force observations.",
+      "model": "In a static isolated model, closed-surface Maxwell-stress flux accounts for total electromagnetic force; external walls or gas can exchange momentum.",
+      "rival": "Ion wind, leakage, cable reaction, chamber attraction, thermal outgassing and numerical boundary truncation.",
+      "observable": "Closed versus partial force integral, dependence on wall distance and gas nuisance, measured detection threshold.",
+      "control": "Enlarge numerical boundary, include return electrode/source, reverse geometry and make matched-heat dummy.",
+      "materials": "Electrostatic simulation/document review only at this stage.",
+      "falsifier": "A putative isolated thrust vanishes when omitted surfaces or external momentum are included; any surviving residual requires independent calibrated data.",
+      "novelty_status": "Claim audit; the patent is not independent performance evidence.",
+      "sources": [
+        "V4-EM-BUHLER-PATENT",
+        "V4-EM-NASA2004",
+        "V4-EM-TAJMAR2024"
+      ],
+      "status": "Unselected high-voltage hardware; no validated extraordinary model"
+    },
+    {
+      "id": "V4-EM-H6",
+      "rank": 6,
+      "title": "A cavity-induced material change is a different claim from gravity change or net generated work",
+      "theory": "Material phase observables, mechanical force and usable work require separate measurements and models.",
+      "inspiration": "2026 NbSe2 primary abstract surfaced by a fringe research-log lead.",
+      "model": "Track transition temperature separately from a closed energy or force budget; no cross-domain implication is assumed.",
+      "rival": "Sample variation, geometry/calibration changes or overinterpretation of a materials result as a propulsion result.",
+      "observable": "Reproduced transition curve and specified control geometry, then separately measured force/work if claimed.",
+      "control": "Read full methods, retain same-device controls and resolve abstract percentage inconsistency before numerical reuse.",
+      "materials": "Document review; cryogenic THz equipment exceeds least-material priority.",
+      "falsifier": "A transition shift alone cannot identify an added force or net delivered energy; each stronger hypothesis needs its own falsifiable prediction.",
+      "novelty_status": "Current primary lead, abstract-only; no replication or new theory in this project.",
+      "sources": [
+        "V4-EM-NBSE2-ABSTRACT2026",
+        "V4-EM-FRINGE-LOG"
+      ],
+      "status": "Parked; not an antigravity experiment"
+    }
+  ],
+  "sound_hypotheses": [
+    {
+      "id": "V4-H1",
+      "rank": 1,
+      "title": "The measured decay may include changing acquisition gain",
+      "theory": "A physical exponential envelope multiplied by time-varying gain has a different apparent slope.",
+      "inspiration": "Tesla’s explicit source/load distinction; current AGC engineering; v3 gain-identifiability gap.",
+      "model": "s(t)=g(t) A exp(-alpha*t); stable reference r(t)=g(t) R. With shared gain and constant R, d(log r)/dt-d(log s)/dt=alpha.",
+      "rival": "The reference itself drifts or receives different processing, so cancellation is biased.",
+      "observable": "Signal and reference log-envelope slopes in s^-1, witness mismatch and held-out residual.",
+      "control": "Stable same-chain reference, gain-change positive control, reference-drift and frequency-dependent-gain failures.",
+      "materials": "Synthetic files first; later one recorder, sound source and independently characterized reference path.",
+      "falsifier": "Correction fails outside frozen tolerance when an independently measured same-chain stable witness should apply.",
+      "novelty_status": "Standard common-mode cancellation; project contribution is falsifiable boundary testing, not a new law.",
+      "sources": [
+        "V4-TESLA-GENERATOR"
+      ],
+      "status": "Recommended; actual v4 contract/ledger decides execution"
+    },
+    {
+      "id": "V4-H2",
+      "rank": 2,
+      "title": "A room or resonator may contain several observable modes",
+      "theory": "The microphone receives a weighted sum of damped modes, reflections and sensor filtering.",
+      "inspiration": "Newton’s competing-cause method; v3 total-transfer ambiguity; measured UPV room data.",
+      "model": "y(t)=sum_j a_j exp(-alpha_j*t) cos(omega_j*t+phi_j)+noise, after the declared source/receiver filter.",
+      "rival": "A single intrinsic decay is claimed from a convenient fit window.",
+      "observable": "Window/band sensitivity, held-out prediction, multiple spatial records and residual structure.",
+      "control": "Single-mode positive control; two-mode beat control; source-off noise and repeated unchanged placement.",
+      "materials": "Existing WAV files; later inert resonator, padded support, recorder and marked positions.",
+      "falsifier": "A prespecified single-mode model consistently predicts independent windows/positions within calibrated uncertainty, weakening the need for the added mode over that range.",
+      "novelty_status": "Established modal acoustics; useful contribution is a tested estimator-rejection boundary.",
+      "sources": [
+        "V4-UPV-PAPER2026",
+        "V4-PYROOM-RT60"
+      ],
+      "status": "Proposed; external RIR payload was not acquired"
+    },
+    {
+      "id": "V4-H3",
+      "rank": 3,
+      "title": "Clock mismatch can look like acoustic change",
+      "theory": "Playback and record clocks define different time maps, altering a recovered sweep response.",
+      "inspiration": "Known metrology rather than a privileged frequency interpretation.",
+      "model": "Measured sample time t_r=a*t+b, with dimensionless rate a and offset b in seconds; account for interpolation error.",
+      "rival": "The fitted frequency or decay shift belongs to the resonator.",
+      "observable": "Reference pulse timing, fitted rate ratio, corrected and uncorrected response.",
+      "control": "Shared clock versus known injected drift; independent timing witness; nonlinear-drift failure.",
+      "materials": "Software resampling first; a synchronized audio loopback only if equipment supports it.",
+      "falsifier": "An independent timing witness excludes the drift needed to explain the observed change.",
+      "novelty_status": "Bryan et al.2010 already develop clock compensation; no priority claim.",
+      "sources": [
+        "V4-BRYAN-CLOCK2010"
+      ],
+      "status": "Proposed"
+    },
+    {
+      "id": "V4-H4",
+      "rank": 4,
+      "title": "Visible sound patterns depend on the apparatus as well as frequency",
+      "theory": "Boundary conditions, fill depth, forcing and illumination affect a liquid or plate pattern.",
+      "inspiration": "Cymatics/sacred-geometry discourse translated into a controlled mode-selection question.",
+      "model": "Forced bounded-wave or shallow-fluid model with declared geometry; response may be subharmonic rather than equal to drive.",
+      "rival": "A single frequency uniquely identifies one universal shape or a biological signature.",
+      "observable": "Repeatable pattern descriptors under a fixed camera pipeline; drive/response frequencies measured separately.",
+      "control": "Same-frequency depth/geometry intervention, return condition, source-off baseline, fixed lighting and camera rate.",
+      "materials": "Future water vessel and isolated low-level mechanical drive; numerical geometry comparison first. No high-power levitator needed.",
+      "falsifier": "Claim of universal frequency-only pattern fails if controlled boundary/depth changes alter the pattern beyond repeatability.",
+      "novelty_status": "Established driven-wave principle; no genetic or therapeutic inference from geometry.",
+      "sources": [
+        "V4-FARADAY2026",
+        "V4-CYMASCOPE-FAQ"
+      ],
+      "status": "Lower-priority proposal; no current physical video"
+    },
+    {
+      "id": "V4-H5",
+      "rank": 5,
+      "title": "An alchemical name constrains candidates but does not identify a sample",
+      "theory": "Textual names and visual changes form a many-to-one observation map over possible compounds and phases.",
+      "inspiration": "Selected Newton notebook and scholarly decoding alternatives.",
+      "model": "Candidate set C(text,context); observation map f:C→features. An independent witness must separate remaining candidates.",
+      "rival": "Every planetary sign or colour maps to one pure modern element.",
+      "observable": "Documented passage alternatives; reference elemental/phase features and unresolved equivalence classes.",
+      "control": "Hold out passages; include ambiguous names and intentionally duplicated measurement channels.",
+      "materials": "Digital manuscripts, curated reference data and ordinary computation; no toxic chemical reproduction.",
+      "falsifier": "A proposed unique identity is invalidated by another chemically plausible candidate matching all admitted observations.",
+      "novelty_status": "Source curation and inverse-problem demonstration; not a new element or transmutation.",
+      "sources": [
+        "V4-NEWTON-NOTEBOOK",
+        "V4-NEWTON-GLOSSARY"
+      ],
+      "status": "Dictionary delivered; no historical sample assayed"
+    },
+    {
+      "id": "V4-H6",
+      "rank": 6,
+      "title": "A suspected boundary mechanism can fail without establishing an exotic replacement",
+      "theory": "Specific acoustic geometry can be tested and rejected within a bounded apparatus.",
+      "inspiration": "NASA’s explicit failed wall-resonance explanation; ancient-levitation rumor lead.",
+      "model": "Predict force/response under a defined boundary intervention with complete source energy and ordinary coupling.",
+      "rival": "An unexplained residual is assigned directly to gravity change or source-free energy.",
+      "observable": "A predeclared force or pressure contrast with nuisance bounds.",
+      "control": "Mechanism-disabled reference, matched thermal/input-power conditions and complete null outcomes.",
+      "materials": "Paper/data analysis only in this low-material program; no high-power ultrasound build.",
+      "falsifier": "An ordinary calibrated model explains the claimed residual; alternatively a purported exotic model fails its quantitative distinct prediction.",
+      "novelty_status": "No distinct extraordinary prediction has been supplied; retain as an unselected lead.",
+      "sources": [
+        "V4-NASA-WALL1980",
+        "V4-REDDIT-CYMATICS-LEAD"
+      ],
+      "status": "Unselected; insufficient quantitative extraordinary model"
+    }
+  ],
+  "sound_history_status": "Preserved pre-steering shortlist; active focus changed by user to electricity/magnetism/antigravity."
+}

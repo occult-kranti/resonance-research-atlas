@@ -1,0 +1,680 @@
+{
+  "program": "Sound checkpoint, then electricity, magnetism and gravity-claim discrimination",
+  "date": "2026-09-27",
+  "status": "completed_five_adaptive_rounds_ten_loops",
+  "provenance": {
+    "advisor": "/root/advisor",
+    "producer": "/root/coder",
+    "reviewer": "/root/skeptic",
+    "sourceResearcher": "/root/sources",
+    "interface": "/root/design",
+    "apparatus": "/root/apparatus",
+    "independence": "Separate model agents and independent calculations; correlated model-family authorship, not human peer review or historical-person participation."
+  },
+  "roundsRequired": 5,
+  "loopsRequired": 10,
+  "reviews": [
+    {
+      "round": 1,
+      "title": "A simultaneous reference can identify common gain drift",
+      "question": "Under a shared scalar exponential acquisition gain, does a nondecaying simultaneous reference identify the target decay, and which physically different rival still survives?",
+      "scope": "Known stable reference, ideal separated channels, shared scalar gain, physical-time premise. Generated PCM16, not physical recording.",
+      "withheld": [
+        "Reference stability and shared gain are premises, not identified from corrected residuals.",
+        "Differential gain or unstable reference restores a nontrivial kernel; exact same-PCM examples with alpha 4 and 5 per second were executed.",
+        "The two channels already separate the signals; a one-microphone decomposition is not demonstrated.",
+        "Generated stereo PCM and digital full scale are not measured pressure, physical damping or energy.",
+        "No noise coverage or empirical calibration threshold was established."
+      ],
+      "metrics": {
+        "analyticIdentityMaxError_per_s": 1.7763568394002505e-15,
+        "commonGainMaxCorrectedError_per_s": 3.0829483944394553e-05,
+        "naiveAlphaBeta2_per_s": 1.9999932435009313,
+        "correctedAlphaBeta2_per_s": 3.99999213420858,
+        "differentialGainBias_per_s": -0.999994971695751,
+        "unstableReferenceBias_per_s": -0.999994971695751,
+        "zeroReferenceCorrection": null,
+        "differentialAndUnstablePCMIdentical": true,
+        "singleChannelRank": 1,
+        "sharedGainRank": 2
+      },
+      "contractPath": "docs/panel-v4/contracts/R1.json",
+      "resultsPath": "research/sound-lab-v4/R1/results.json",
+      "reviewPath": "research/sound-lab-v4/reviews/R1-review.json",
+      "figurePaths": [
+        "research/sound-lab-v4/R1/figure.svg"
+      ],
+      "contractSHA256": "43a52ae1d69d5dfdd76118465d78019eeb592cf2791dca0a1f63f3192b4b225a",
+      "resultSHA256": "92117fb3c393a5941cd79548da81fc83b8a599a45601bce867a558e8928a8224",
+      "reviewSHA256": "134df9f184543f1a0eb9c17414b940ed6c5d348de1a74857128137f89c1b0b23",
+      "incomingEvidence": "v3 S5A condition-linked gain/damping ambiguity",
+      "evidenceType": "synthetic_model_and_generated_PCM",
+      "id": "R1A",
+      "sequence": 1,
+      "loop": "A",
+      "status": "completed_producer",
+      "finding": "A stable shared-gain witness recovers the stipulated decay; differential gain and reference drift retain a one-per-second bias.",
+      "nextDecision": "R1B: independent rank/kernel, quantized-file and different-alpha rival checks",
+      "sources": [
+        "V4-W3C-CAPTURE",
+        "V4-SEAGCNET2026"
+      ],
+      "predecessor": {
+        "id": "v3-checkpoint",
+        "sourceRevision": "29b47397c40672c006b23e0de96c12c5a7a82d24"
+      }
+    },
+    {
+      "round": 1,
+      "title": "A simultaneous reference can identify common gain drift",
+      "question": "Under a shared scalar exponential acquisition gain, does a nondecaying simultaneous reference identify the target decay, and which physically different rival still survives?",
+      "scope": "Known stable reference, ideal separated channels, shared scalar gain, physical-time premise. Generated PCM16, not physical recording.",
+      "withheld": [
+        "Reference stability and shared gain are premises, not identified from corrected residuals.",
+        "Differential gain or unstable reference restores a nontrivial kernel; exact same-PCM examples with alpha 4 and 5 per second were executed.",
+        "The two channels already separate the signals; a one-microphone decomposition is not demonstrated.",
+        "Generated stereo PCM and digital full scale are not measured pressure, physical damping or energy.",
+        "No noise coverage or empirical calibration threshold was established."
+      ],
+      "metrics": {
+        "analyticIdentityMaxError_per_s": 1.7763568394002505e-15,
+        "commonGainMaxCorrectedError_per_s": 3.0829483944394553e-05,
+        "naiveAlphaBeta2_per_s": 1.9999932435009313,
+        "correctedAlphaBeta2_per_s": 3.99999213420858,
+        "differentialGainBias_per_s": -0.999994971695751,
+        "unstableReferenceBias_per_s": -0.999994971695751,
+        "zeroReferenceCorrection": null,
+        "differentialAndUnstablePCMIdentical": true,
+        "singleChannelRank": 1,
+        "sharedGainRank": 2
+      },
+      "contractPath": "docs/panel-v4/contracts/R1.json",
+      "resultsPath": "research/sound-lab-v4/R1/results.json",
+      "reviewPath": "research/sound-lab-v4/reviews/R1-review.json",
+      "figurePaths": [
+        "research/sound-lab-v4/R1/figure.svg"
+      ],
+      "contractSHA256": "43a52ae1d69d5dfdd76118465d78019eeb592cf2791dca0a1f63f3192b4b225a",
+      "resultSHA256": "92117fb3c393a5941cd79548da81fc83b8a599a45601bce867a558e8928a8224",
+      "reviewSHA256": "134df9f184543f1a0eb9c17414b940ed6c5d348de1a74857128137f89c1b0b23",
+      "incomingEvidence": "v3 S5A condition-linked gain/damping ambiguity",
+      "evidenceType": "synthetic_model_and_generated_PCM",
+      "id": "R1B",
+      "sequence": 2,
+      "loop": "B",
+      "status": "accepted_narrow",
+      "finding": "Given known stable reference, separated channels, physical-time premise and common scalar gain, slope difference identifies target amplitude decay in the finite synthetic model.",
+      "independentMetrics": {
+        "maximumIndependentRecoveryError_per_s": 0.00016642971286895403
+      },
+      "nextDecision": "R2: calculate an explicit conditional uncertainty budget including reference and differential gain; no physical interval for unknown nuisance bounds.",
+      "sources": [
+        "V4-W3C-CAPTURE",
+        "V4-SEAGCNET2026"
+      ],
+      "predecessor": {
+        "id": "R1A",
+        "resultsPath": "research/sound-lab-v4/R1/results.json",
+        "resultSHA256": "92117fb3c393a5941cd79548da81fc83b8a599a45601bce867a558e8928a8224"
+      }
+    },
+    {
+      "round": 2,
+      "title": "A correction needs a full uncertainty budget",
+      "question": "Can bounded positive envelope observations produce a rigorous slope interval, and how do stated reference/drift limits change the physical-alpha interval?",
+      "scope": "Supplied positive envelope error boxes with declared reference/drift bounds. Not a statistical confidence interval.",
+      "withheld": [
+        "This is deterministic interval arithmetic, not a confidence interval or an empirical coverage claim.",
+        "The supplied envelope-error guarantee does not follow from a recorded waveform, an AGC setting or a low residual.",
+        "A physical-alpha interpretation also assumes a single exponential, shared physical time and stated valid nuisance budgets.",
+        "The retained out-of-budget counterexample excludes true alpha; nominal width cannot compensate for a false bound.",
+        "The finite engineering ranges in these fixtures do not verify overflow behavior for arbitrary floating-point magnitudes."
+      ],
+      "metrics": {
+        "baseContrastInterval_per_s": [
+          3.992272885858592,
+          4.007741570021777
+        ],
+        "basePhysicalInterval_per_s": [
+          3.342272885858592,
+          4.657741570021777
+        ],
+        "systematicWidthIncrease_per_s": 1.3000000000000003,
+        "noErrorPointMaxError_per_s": 0.0,
+        "endpointAttainmentMaxError_per_s": 8.881784197001252e-16,
+        "withinBoundCoverageCount": 128,
+        "withinBoundTrials": 128,
+        "outOfBudgetPhysicalInterval_per_s": [
+          4.142724933235303,
+          5.457289200896124
+        ],
+        "outOfBudgetMissesTrueAlpha": true,
+        "floorWithheld": true,
+        "zeroReferenceWithheld": true,
+        "missingSystematicWithheld": true
+      },
+      "contractPath": "docs/panel-v4/contracts/R2.json",
+      "resultsPath": "research/sound-lab-v4/R2/results.json",
+      "reviewPath": "research/sound-lab-v4/reviews/R2-review.json",
+      "figurePaths": [
+        "research/sound-lab-v4/R2/figure.svg"
+      ],
+      "contractSHA256": "b286306b2044dfc44eb8719266d1615155d48c7122827ca7efc48b3870a8c362",
+      "resultSHA256": "98d70869a6c0a50144e6ef38dc2c6deda441d2917c463729aee3050222a4b6c3",
+      "reviewSHA256": "b0e6f40e09e5bce0c33b1eba94ae5dc295cfa076af9bf1d546ec95611e725a24",
+      "incomingEvidence": "R1B requires explicit reference and differential-gain uncertainty",
+      "evidenceType": "synthetic_positive_envelope_observations",
+      "predecessor": {
+        "id": "R1B",
+        "reviewPath": "research/sound-lab-v4/reviews/R1-review.json",
+        "reviewSHA256": "134df9f184543f1a0eb9c17414b940ed6c5d348de1a74857128137f89c1b0b23"
+      },
+      "id": "R2A",
+      "sequence": 3,
+      "loop": "A",
+      "status": "completed_producer",
+      "finding": "Precise envelopes give a narrow contrast box, but stated reference and gain uncertainty add 1.3 s\u207b\u00b9 to its width; missing bounds withhold a physical interval.",
+      "nextDecision": "R2B: independent exhaustive interval endpoints, coverage and malformed-input checks",
+      "sources": [
+        "V4-W3C-CAPTURE",
+        "V4-SEAGCNET2026"
+      ]
+    },
+    {
+      "round": 2,
+      "title": "A correction needs a full uncertainty budget",
+      "question": "Can bounded positive envelope observations produce a rigorous slope interval, and how do stated reference/drift limits change the physical-alpha interval?",
+      "scope": "Supplied positive envelope error boxes with declared reference/drift bounds. Not a statistical confidence interval.",
+      "withheld": [
+        "This is deterministic interval arithmetic, not a confidence interval or an empirical coverage claim.",
+        "The supplied envelope-error guarantee does not follow from a recorded waveform, an AGC setting or a low residual.",
+        "A physical-alpha interpretation also assumes a single exponential, shared physical time and stated valid nuisance budgets.",
+        "The retained out-of-budget counterexample excludes true alpha; nominal width cannot compensate for a false bound.",
+        "The finite engineering ranges in these fixtures do not verify overflow behavior for arbitrary floating-point magnitudes."
+      ],
+      "metrics": {
+        "baseContrastInterval_per_s": [
+          3.992272885858592,
+          4.007741570021777
+        ],
+        "basePhysicalInterval_per_s": [
+          3.342272885858592,
+          4.657741570021777
+        ],
+        "systematicWidthIncrease_per_s": 1.3000000000000003,
+        "noErrorPointMaxError_per_s": 0.0,
+        "endpointAttainmentMaxError_per_s": 8.881784197001252e-16,
+        "withinBoundCoverageCount": 128,
+        "withinBoundTrials": 128,
+        "outOfBudgetPhysicalInterval_per_s": [
+          4.142724933235303,
+          5.457289200896124
+        ],
+        "outOfBudgetMissesTrueAlpha": true,
+        "floorWithheld": true,
+        "zeroReferenceWithheld": true,
+        "missingSystematicWithheld": true
+      },
+      "contractPath": "docs/panel-v4/contracts/R2.json",
+      "resultsPath": "research/sound-lab-v4/R2/results.json",
+      "reviewPath": "research/sound-lab-v4/reviews/R2-review.json",
+      "figurePaths": [
+        "research/sound-lab-v4/R2/figure.svg"
+      ],
+      "contractSHA256": "b286306b2044dfc44eb8719266d1615155d48c7122827ca7efc48b3870a8c362",
+      "resultSHA256": "98d70869a6c0a50144e6ef38dc2c6deda441d2917c463729aee3050222a4b6c3",
+      "reviewSHA256": "b0e6f40e09e5bce0c33b1eba94ae5dc295cfa076af9bf1d546ec95611e725a24",
+      "incomingEvidence": "R1B requires explicit reference and differential-gain uncertainty",
+      "evidenceType": "synthetic_positive_envelope_observations",
+      "predecessor": {
+        "id": "R2A",
+        "resultsPath": "research/sound-lab-v4/R2/results.json",
+        "resultSHA256": "98d70869a6c0a50144e6ef38dc2c6deda441d2917c463729aee3050222a4b6c3"
+      },
+      "id": "R2B",
+      "sequence": 4,
+      "loop": "B",
+      "status": "accepted_narrow",
+      "finding": "For fixed times and strictly positive supplied amplitude-error boxes, monotonic logs and linear OLS weights yield exact box endpoints. Explicit absolute nuisance bounds widen the contrast; absent bounds withhold a physical-alpha interval.",
+      "nextDecision": "R3: test actual one-channel extraction from generated PCM, with spectral collision/rank gates. External data remains unavailable.",
+      "sources": [
+        "V4-W3C-CAPTURE",
+        "V4-SEAGCNET2026"
+      ]
+    },
+    {
+      "round": 3,
+      "title": "Electrical voltage gain is not net energy gain",
+      "domain": "electricity_and_magnetic_storage",
+      "question": "Can an electrically resonant circuit show capacitor voltage amplification and source-off load work while its complete source/storage/loss budget remains passive?",
+      "scope": "Ideal lumped RLC with series loop closed when source voltage is set to zero; signed electrical work and separately integrated losses.",
+      "withheld": [
+        "A finite lumped linear simulation is not hardware calibration, empirical overunity testing or a proof about every electrical device.",
+        "Source off means ideal source voltage set to zero while the series loop remains closed; opening a physical switch would change this model.",
+        "Source waveform is sine starting at zero, stated explicitly in producer report.",
+        "Inductance/capacitance are constant here; moving geometry would add mechanical work and require a different boundary.",
+        "Numerical closure tolerance is not measurement uncertainty."
+      ],
+      "metrics": {
+        "resonantVoltageGain": 2.0000019770305784,
+        "offResonanceVoltageGain": 1.2648746173061156,
+        "strongerResistanceVoltageGain": 1.0000000000005282,
+        "finestMaxEnergyResidual_J": 2.3995251582139415e-09,
+        "finestNormalizedResidual": 4.078615662811925e-07,
+        "coarsestMaxEnergyResidual_J": 3.8357474335670716e-08,
+        "sourceWork_J": 0.005883185268208463,
+        "loadWork_J": 0.004706548193803746,
+        "internalLoss_J": 0.0011766370484509365,
+        "finalStoredEnergy_J": 2.588517389031323e-11,
+        "sourceOffLoadWork_J": 0.00016000001045452916,
+        "sourceOffStoredEnergyReleased_J": 0.0002000000131200098,
+        "wrongOmittedStorageSurplus_J": 0.00020000001306816144,
+        "correctSourceOffClosure_J": 5.1848363926895735e-14,
+        "chargedDischargeLoadWork_J": 3.999999999013282e-05,
+        "chargedDischargeInputWork_J": 0.0,
+        "capacitorMeanRealPower_W": 0.0,
+        "capacitorApparentPower_VA": 0.2,
+        "zeroStateMaxAbs": 0.0
+      },
+      "contractPath": "docs/panel-v4/contracts/R3.json",
+      "resultsPath": "research/sound-lab-v4/R3/results.json",
+      "reviewPath": "research/sound-lab-v4/reviews/R3-review.json",
+      "figurePaths": [
+        "research/sound-lab-v4/R3/figure.svg"
+      ],
+      "contractSHA256": "a3219ed5e845d945827e83e6d2edbe4138b5408d4de11ed4f7743c955127015d",
+      "resultSHA256": "446b8b5f91da461c6633d349560a73188e3a7bd73a8d7a8f33e59d178c51d574",
+      "reviewSHA256": "82231e637d0806af710675656620600fd557714ef933e9420f6495e2654da780",
+      "incomingEvidence": "R2B required explicit complete nuisance budgets; subsequent user steering selected electricity/magnetism/antigravity and parked acoustic R3 before admission. Earlier atlas mechanical passivity was already known; new target is electrical readout and source-off boundary error.",
+      "evidenceType": "synthetic_SI_circuit_simulation",
+      "predecessor": {
+        "id": "R2B",
+        "reviewPath": "research/sound-lab-v4/reviews/R2-review.json",
+        "reviewSHA256": "b0e6f40e09e5bce0c33b1eba94ae5dc295cfa076af9bf1d546ec95611e725a24"
+      },
+      "id": "R3A",
+      "sequence": 5,
+      "loop": "A",
+      "status": "completed_producer",
+      "finding": "The capacitor approaches twice the source voltage while signed input work closes the energy budget; source-off load work is released storage, and reactive VA is not real power.",
+      "nextDecision": "R3B: independent matrix solution and quadrature, phasor and omitted-storage controls",
+      "sources": [
+        "V4-FEYNMAN-ELECTRICAL",
+        "V4-MIT-ENERGY"
+      ]
+    },
+    {
+      "round": 3,
+      "title": "Electrical voltage gain is not net energy gain",
+      "domain": "electricity_and_magnetic_storage",
+      "question": "Can an electrically resonant circuit show capacitor voltage amplification and source-off load work while its complete source/storage/loss budget remains passive?",
+      "scope": "Ideal lumped RLC with series loop closed when source voltage is set to zero; signed electrical work and separately integrated losses.",
+      "withheld": [
+        "A finite lumped linear simulation is not hardware calibration, empirical overunity testing or a proof about every electrical device.",
+        "Source off means ideal source voltage set to zero while the series loop remains closed; opening a physical switch would change this model.",
+        "Source waveform is sine starting at zero, stated explicitly in producer report.",
+        "Inductance/capacitance are constant here; moving geometry would add mechanical work and require a different boundary.",
+        "Numerical closure tolerance is not measurement uncertainty."
+      ],
+      "metrics": {
+        "resonantVoltageGain": 2.0000019770305784,
+        "offResonanceVoltageGain": 1.2648746173061156,
+        "strongerResistanceVoltageGain": 1.0000000000005282,
+        "finestMaxEnergyResidual_J": 2.3995251582139415e-09,
+        "finestNormalizedResidual": 4.078615662811925e-07,
+        "coarsestMaxEnergyResidual_J": 3.8357474335670716e-08,
+        "sourceWork_J": 0.005883185268208463,
+        "loadWork_J": 0.004706548193803746,
+        "internalLoss_J": 0.0011766370484509365,
+        "finalStoredEnergy_J": 2.588517389031323e-11,
+        "sourceOffLoadWork_J": 0.00016000001045452916,
+        "sourceOffStoredEnergyReleased_J": 0.0002000000131200098,
+        "wrongOmittedStorageSurplus_J": 0.00020000001306816144,
+        "correctSourceOffClosure_J": 5.1848363926895735e-14,
+        "chargedDischargeLoadWork_J": 3.999999999013282e-05,
+        "chargedDischargeInputWork_J": 0.0,
+        "capacitorMeanRealPower_W": 0.0,
+        "capacitorApparentPower_VA": 0.2,
+        "zeroStateMaxAbs": 0.0
+      },
+      "contractPath": "docs/panel-v4/contracts/R3.json",
+      "resultsPath": "research/sound-lab-v4/R3/results.json",
+      "reviewPath": "research/sound-lab-v4/reviews/R3-review.json",
+      "figurePaths": [
+        "research/sound-lab-v4/R3/figure.svg"
+      ],
+      "contractSHA256": "a3219ed5e845d945827e83e6d2edbe4138b5408d4de11ed4f7743c955127015d",
+      "resultSHA256": "446b8b5f91da461c6633d349560a73188e3a7bd73a8d7a8f33e59d178c51d574",
+      "reviewSHA256": "82231e637d0806af710675656620600fd557714ef933e9420f6495e2654da780",
+      "incomingEvidence": "R2B required explicit complete nuisance budgets; subsequent user steering selected electricity/magnetism/antigravity and parked acoustic R3 before admission. Earlier atlas mechanical passivity was already known; new target is electrical readout and source-off boundary error.",
+      "evidenceType": "synthetic_SI_circuit_simulation",
+      "predecessor": {
+        "id": "R3A",
+        "resultsPath": "research/sound-lab-v4/R3/results.json",
+        "resultSHA256": "446b8b5f91da461c6633d349560a73188e3a7bd73a8d7a8f33e59d178c51d574"
+      },
+      "id": "R3B",
+      "sequence": 6,
+      "loop": "B",
+      "status": "accepted_narrow",
+      "finding": "The specified passive lumped RLC circuit has capacitor voltage gain2 at resonance, positive source-off load work from initial storage, and a closed signed energy budget. Reactive apparent power is not mean real power.",
+      "nextDecision": "R4: include moving-inductance source and mechanical work; test ordinary even-in-current force and unchanged gravity.",
+      "sources": [
+        "V4-FEYNMAN-ELECTRICAL",
+        "V4-MIT-ENERGY"
+      ]
+    },
+    {
+      "round": 4,
+      "title": "Magnetic support force needs source and mechanical work",
+      "domain": "magnetism_and_electromechanics",
+      "question": "Does a prescribed moving inductance yield an even-in-current upward force and smaller support reading while full electrical/field/mechanical energy still closes with unchanged g?",
+      "scope": "Positive L(z), prescribed motion, maintained current and source-inclusive field/mechanical energy; static contact forces use unchanged g.",
+      "withheld": [
+        "L(z) is a supplied finite-domain model, not a measured coil geometry.",
+        "The motion is prescribed; free dynamics, mechanical stage work and a moved load gravitational potential are not solved.",
+        "Static one-pan reduction assumes reaction support outside that pan. The independently derived complete static support sum cancels internal force only within the relative-coordinate model.",
+        "External fields, leads, heating, buoyancy and dynamic/field momentum remain possible measurement channels outside this model.",
+        "Current-even force is not a gravity identifier. No hardware, levitation or gravity change was measured."
+      ],
+      "metrics": {
+        "upwardForce_N": 0.0020000000000000005,
+        "sourceWork_J": 0.04007999958876605,
+        "fieldEnergyIncrease_J": 4.0000000000000024e-05,
+        "mechanicalWork_J": 3.999979438303027e-05,
+        "jouleLoss_J": 0.04000000000000001,
+        "finestMaxClosureResidual_J": 2.0561698871324197e-10,
+        "coarsestMaxClosureResidual_J": 3.2899222304760833e-09,
+        "finestClosedFormTermError_J": 4.112339566098022e-10,
+        "forceCoenergyDerivativeError_N": 4.384947266400374e-15,
+        "currentReversalForceDifference_N": 0.0,
+        "wrongFixedCurrentForce_N": -0.0020000000000043854,
+        "wrongForceBudgetResidual_J": 7.999958876613034e-05,
+        "fixedFluxMechanicalWork_J": 3.333315913004061e-05,
+        "fixedFluxFieldEnergyChange_J": -3.333333333333332e-05,
+        "fixedFluxMaxClosureResidual_J": 1.7420329271439737e-10,
+        "fixedFluxForceDerivativeError_N": 1.3567727670527052e-13,
+        "normalForce_N": 0.00780665,
+        "indicatedMass_kg": 0.0007960567574044144,
+        "unchangedGravity_m_per_s2": 9.80665
+      },
+      "contractPath": "docs/panel-v4/contracts/R4.json",
+      "resultsPath": "research/sound-lab-v4/R4/results.json",
+      "reviewPath": "research/sound-lab-v4/reviews/R4-review.json",
+      "figurePaths": [
+        "research/sound-lab-v4/R4/figure.svg"
+      ],
+      "contractSHA256": "2b0be2bdb3b561f08c031773f7810a991e4fcf30ba12ec94228e4851b55f95be",
+      "resultSHA256": "e974a5a4098964afa26dfddbf99c1921b1ae69e601097b9f76191d206b4a0da2",
+      "reviewSHA256": "732eeb29781628dea062a1e0ede143f96119e5961045960eb7971a520f4ec2de",
+      "incomingEvidence": "R3B required motion-dependent source work and mechanical energy",
+      "evidenceType": "synthetic_SI_electromechanical_model",
+      "predecessor": {
+        "id": "R3B",
+        "reviewPath": "research/sound-lab-v4/reviews/R3-review.json",
+        "reviewSHA256": "82231e637d0806af710675656620600fd557714ef933e9420f6495e2654da780"
+      },
+      "id": "R4A",
+      "sequence": 7,
+      "loop": "A",
+      "status": "completed_producer",
+      "finding": "A 2 mN upward magnetic force reduces a 1 g pan indication with unchanged gravity; maintained-current source work supplies both field-energy increase and mechanical work.",
+      "nextDecision": "R4B: independent coenergy/flux derivative, energy and stator reaction checks",
+      "sources": [
+        "V4-FEYNMAN-INDUCTION",
+        "V4-EM-TAJMAR2024"
+      ]
+    },
+    {
+      "round": 4,
+      "title": "Magnetic support force needs source and mechanical work",
+      "domain": "magnetism_and_electromechanics",
+      "question": "Does a prescribed moving inductance yield an even-in-current upward force and smaller support reading while full electrical/field/mechanical energy still closes with unchanged g?",
+      "scope": "Positive L(z), prescribed motion, maintained current and source-inclusive field/mechanical energy; static contact forces use unchanged g.",
+      "withheld": [
+        "L(z) is a supplied finite-domain model, not a measured coil geometry.",
+        "The motion is prescribed; free dynamics, mechanical stage work and a moved load gravitational potential are not solved.",
+        "Static one-pan reduction assumes reaction support outside that pan. The independently derived complete static support sum cancels internal force only within the relative-coordinate model.",
+        "External fields, leads, heating, buoyancy and dynamic/field momentum remain possible measurement channels outside this model.",
+        "Current-even force is not a gravity identifier. No hardware, levitation or gravity change was measured."
+      ],
+      "metrics": {
+        "upwardForce_N": 0.0020000000000000005,
+        "sourceWork_J": 0.04007999958876605,
+        "fieldEnergyIncrease_J": 4.0000000000000024e-05,
+        "mechanicalWork_J": 3.999979438303027e-05,
+        "jouleLoss_J": 0.04000000000000001,
+        "finestMaxClosureResidual_J": 2.0561698871324197e-10,
+        "coarsestMaxClosureResidual_J": 3.2899222304760833e-09,
+        "finestClosedFormTermError_J": 4.112339566098022e-10,
+        "forceCoenergyDerivativeError_N": 4.384947266400374e-15,
+        "currentReversalForceDifference_N": 0.0,
+        "wrongFixedCurrentForce_N": -0.0020000000000043854,
+        "wrongForceBudgetResidual_J": 7.999958876613034e-05,
+        "fixedFluxMechanicalWork_J": 3.333315913004061e-05,
+        "fixedFluxFieldEnergyChange_J": -3.333333333333332e-05,
+        "fixedFluxMaxClosureResidual_J": 1.7420329271439737e-10,
+        "fixedFluxForceDerivativeError_N": 1.3567727670527052e-13,
+        "normalForce_N": 0.00780665,
+        "indicatedMass_kg": 0.0007960567574044144,
+        "unchangedGravity_m_per_s2": 9.80665
+      },
+      "contractPath": "docs/panel-v4/contracts/R4.json",
+      "resultsPath": "research/sound-lab-v4/R4/results.json",
+      "reviewPath": "research/sound-lab-v4/reviews/R4-review.json",
+      "figurePaths": [
+        "research/sound-lab-v4/R4/figure.svg"
+      ],
+      "contractSHA256": "2b0be2bdb3b561f08c031773f7810a991e4fcf30ba12ec94228e4851b55f95be",
+      "resultSHA256": "e974a5a4098964afa26dfddbf99c1921b1ae69e601097b9f76191d206b4a0da2",
+      "reviewSHA256": "732eeb29781628dea062a1e0ede143f96119e5961045960eb7971a520f4ec2de",
+      "incomingEvidence": "R3B required motion-dependent source work and mechanical energy",
+      "evidenceType": "synthetic_SI_electromechanical_model",
+      "predecessor": {
+        "id": "R4A",
+        "resultsPath": "research/sound-lab-v4/R4/results.json",
+        "resultSHA256": "e974a5a4098964afa26dfddbf99c1921b1ae69e601097b9f76191d206b4a0da2"
+      },
+      "id": "R4B",
+      "sequence": 8,
+      "loop": "B",
+      "status": "accepted_narrow",
+      "finding": "In the declared linear-inductance prescribed-path model, maintained current supplies both field-energy increase and mechanical work. The 2mN ordinary upward magnetic force reduces a separately supported 1g test-pan indication with g unchanged and survives current reversal.",
+      "nextDecision": "R5: paired supports and polarity across masses, injected common-acceleration positivecontrol, and exact mass-proportionalbias rival.",
+      "sources": [
+        "V4-FEYNMAN-INDUCTION",
+        "V4-EM-TAJMAR2024"
+      ]
+    },
+    {
+      "round": 5,
+      "title": "Which observations could identify a gravity-like change?",
+      "domain": "gravity_claim_identifiability",
+      "question": "Can paired-support and polarity-averaged observations across known masses recover a deliberately injected common acceleration change under a constant-bias model, and what exact rival still prevents an empirical gravity identification?",
+      "scope": "Synthetic contemporaneous static support contrasts, paired polarity and known masses; injected common acceleration identified only under constant even-bias model.",
+      "withheld": [
+        "Injected delta_g is a hypothetical shared model deformation, not an observed anomaly or proposed new force law.",
+        "Known calibration, simultaneous supports, common static g and mass/polarity-independent even bias are premises.",
+        "The expanded inverse has domain3, rank2, nullity1, kernel(1,0,-1); repeating the same readout cannot resolve it.",
+        "The2microN support bound is supplied, not measured detector sensitivity.",
+        "The1e-12 numerical guard is tested on these finite fixtures and is not a universal floating-point enclosure certificate.",
+        "External fields, thermal/mass-correlated drift, electrostatic forces, air motion, leads and real apparatus calibration remain unresolved empirical channels."
+      ],
+      "metrics": {
+        "nullRecoveredSlope_m_per_s2": -1.4703516182379415e-17,
+        "injectedRecoveredSlope_m_per_s2": -0.01999999999999996,
+        "injectedRecoveredIntercept_N": 0.0004999999999999952,
+        "conditionalSlopeInterval_m_per_s2": [
+          -0.02032000000099996,
+          -0.01967999999899996
+        ],
+        "worstCaseSlopeHalfwidth_m_per_s2": 0.00031999999999999997,
+        "numericalOutwardPadding_m_per_s2": 1e-12,
+        "extremalSlopeErrors_m_per_s2": [
+          -0.0003199999999999384,
+          0.00032000000000003206
+        ],
+        "boundedRealizationsCovered": 128,
+        "boundedRealizationsTotal": 128,
+        "sameIndividualObservationRivalMaxDifference_N": 2.168404344971009e-19,
+        "singleMassRank": 1,
+        "fourMassRank": 2,
+        "expandedRank": 2,
+        "expandedNullity": 1,
+        "expandedKernelResidual": 0.0,
+        "unknownMassBiasPhysicalGravityInterval": null,
+        "polarityAveragedSinglePanNullContrast_N": -0.0018,
+        "contactLossStatus": "withheld_contact_loss_or_uncertainty",
+        "malformedCasesRejected": 8
+      },
+      "contractPath": "docs/panel-v4/contracts/R5.json",
+      "resultsPath": "research/sound-lab-v4/R5/results.json",
+      "reviewPath": "research/sound-lab-v4/reviews/R5-review.json",
+      "figurePaths": [
+        "research/sound-lab-v4/R5/figure.svg"
+      ],
+      "contractSHA256": "13bac9d954a1b64e303779f7c34eb7fd679ebea07e828a8d1fef1e870c4433e8",
+      "resultSHA256": "fd40b74b930277957a1f382794f40094cc625246779ff77f257251e9f707afe5",
+      "reviewSHA256": "c1405ba946777fe1a795dfd81caaf54baa802c3a04efb4abb5ac6452414f90ce",
+      "incomingEvidence": "R4B independently verified stator reaction and selected paired supports, polarity, mass variation and a retained mass-proportional bias kernel.",
+      "evidenceType": "synthetic_force_observations_with_injected_model_deformation",
+      "repair": {
+        "failureReviewPath": "research/sound-lab-v4/reviews/R5-review-prerepair.json",
+        "failureReviewSHA256": "0a26e6301b643ce5987b23696e06662217503a366fdc29c32189a1225e81c024",
+        "prerepairManifestSHA256": "4db761d46ba35999dbdb3ade9b767f319b0c02bd4d1aae2fe5279531cd4acc28",
+        "repairedManifestSHA256": "8d5450f56bdef45542a72cc00a7317aa5e2d2d11f6752f3f9e79578b964981be",
+        "originalEndpointExclusion_m_per_s2": 3.122502256758253e-17,
+        "scope": "Numerical outward padding only; frozen model/contract and theoretical bound unchanged."
+      },
+      "id": "R5A",
+      "sequence": 9,
+      "loop": "A",
+      "status": "completed_producer",
+      "finding": "Paired supports and four masses recover a deliberately injected acceleration-like slope, but an exact mass-proportional ordinary bias reproduces every observation; unknown bias prevents a gravity conclusion.",
+      "nextDecision": "R5B: independent error-box vertices, raw rival, rank/kernel and strict endpoint checks; preserve and repair the inward-rounding failure.",
+      "sources": [
+        "V4-EM-TAJMAR2024",
+        "V4-FEYNMAN-INDUCTION"
+      ],
+      "predecessor": {
+        "id": "R4B",
+        "reviewPath": "research/sound-lab-v4/reviews/R4-review.json",
+        "reviewSHA256": "732eeb29781628dea062a1e0ede143f96119e5961045960eb7971a520f4ec2de"
+      }
+    },
+    {
+      "round": 5,
+      "title": "Which observations could identify a gravity-like change?",
+      "domain": "gravity_claim_identifiability",
+      "question": "Can paired-support and polarity-averaged observations across known masses recover a deliberately injected common acceleration change under a constant-bias model, and what exact rival still prevents an empirical gravity identification?",
+      "scope": "Synthetic contemporaneous static support contrasts, paired polarity and known masses; injected common acceleration identified only under constant even-bias model.",
+      "withheld": [
+        "Injected delta_g is a hypothetical shared model deformation, not an observed anomaly or proposed new force law.",
+        "Known calibration, simultaneous supports, common static g and mass/polarity-independent even bias are premises.",
+        "The expanded inverse has domain3, rank2, nullity1, kernel(1,0,-1); repeating the same readout cannot resolve it.",
+        "The2microN support bound is supplied, not measured detector sensitivity.",
+        "The1e-12 numerical guard is tested on these finite fixtures and is not a universal floating-point enclosure certificate.",
+        "External fields, thermal/mass-correlated drift, electrostatic forces, air motion, leads and real apparatus calibration remain unresolved empirical channels."
+      ],
+      "metrics": {
+        "nullRecoveredSlope_m_per_s2": -1.4703516182379415e-17,
+        "injectedRecoveredSlope_m_per_s2": -0.01999999999999996,
+        "injectedRecoveredIntercept_N": 0.0004999999999999952,
+        "conditionalSlopeInterval_m_per_s2": [
+          -0.02032000000099996,
+          -0.01967999999899996
+        ],
+        "worstCaseSlopeHalfwidth_m_per_s2": 0.00031999999999999997,
+        "numericalOutwardPadding_m_per_s2": 1e-12,
+        "extremalSlopeErrors_m_per_s2": [
+          -0.0003199999999999384,
+          0.00032000000000003206
+        ],
+        "boundedRealizationsCovered": 128,
+        "boundedRealizationsTotal": 128,
+        "sameIndividualObservationRivalMaxDifference_N": 2.168404344971009e-19,
+        "singleMassRank": 1,
+        "fourMassRank": 2,
+        "expandedRank": 2,
+        "expandedNullity": 1,
+        "expandedKernelResidual": 0.0,
+        "unknownMassBiasPhysicalGravityInterval": null,
+        "polarityAveragedSinglePanNullContrast_N": -0.0018,
+        "contactLossStatus": "withheld_contact_loss_or_uncertainty",
+        "malformedCasesRejected": 8
+      },
+      "contractPath": "docs/panel-v4/contracts/R5.json",
+      "resultsPath": "research/sound-lab-v4/R5/results.json",
+      "reviewPath": "research/sound-lab-v4/reviews/R5-review.json",
+      "figurePaths": [
+        "research/sound-lab-v4/R5/figure.svg"
+      ],
+      "contractSHA256": "13bac9d954a1b64e303779f7c34eb7fd679ebea07e828a8d1fef1e870c4433e8",
+      "resultSHA256": "fd40b74b930277957a1f382794f40094cc625246779ff77f257251e9f707afe5",
+      "reviewSHA256": "c1405ba946777fe1a795dfd81caaf54baa802c3a04efb4abb5ac6452414f90ce",
+      "incomingEvidence": "R4B independently verified stator reaction and selected paired supports, polarity, mass variation and a retained mass-proportional bias kernel.",
+      "evidenceType": "synthetic_force_observations_with_injected_model_deformation",
+      "repair": {
+        "failureReviewPath": "research/sound-lab-v4/reviews/R5-review-prerepair.json",
+        "failureReviewSHA256": "0a26e6301b643ce5987b23696e06662217503a366fdc29c32189a1225e81c024",
+        "prerepairManifestSHA256": "4db761d46ba35999dbdb3ade9b767f319b0c02bd4d1aae2fe5279531cd4acc28",
+        "repairedManifestSHA256": "8d5450f56bdef45542a72cc00a7317aa5e2d2d11f6752f3f9e79578b964981be",
+        "originalEndpointExclusion_m_per_s2": 3.122502256758253e-17,
+        "scope": "Numerical outward padding only; frozen model/contract and theoretical bound unchanged."
+      },
+      "id": "R5B",
+      "sequence": 10,
+      "loop": "B",
+      "status": "accepted_narrow",
+      "finding": "Under the specified static two-parameter model, paired support/polarity observations across known masses identify a deliberately injected acceleration-like slope and constant bias. A mass-proportional ordinary bias exactly reproduces all raw observations, preventing empirical gravity identification without an independent bound.",
+      "independentMetrics": {
+        "errorVerticesChecked": 65536,
+        "theoreticalErrorHalfwidth_m_per_s2": 0.00032,
+        "numericalOutwardPadding_m_per_s2": 1e-12
+      },
+      "nextDecision": "STOP: no sixth research round. Future empirical work requires an independently characterized readout or bound distinguishing common acceleration from mass-proportional bias.",
+      "sources": [
+        "V4-EM-TAJMAR2024",
+        "V4-FEYNMAN-INDUCTION"
+      ],
+      "predecessor": {
+        "id": "R5A",
+        "resultsPath": "research/sound-lab-v4/R5/results.json",
+        "resultSHA256": "fd40b74b930277957a1f382794f40094cc625246779ff77f257251e9f707afe5"
+      }
+    }
+  ],
+  "empiricalBoundary": "No own physical recording, calibrated material damping, hardware energy gain or changed gravity established. All accepted numerical inputs are synthetic. Public UPV metadata acquired but no acoustic payload; no external measured-data reanalysis completed.",
+  "roadmapPath": "docs/panel-v4/roadmap-v4.md",
+  "completedRounds": 5,
+  "completedLoops": 10,
+  "scopeAmendments": [
+    {
+      "id": "PIVOT-EM",
+      "after": "R2B",
+      "reason": "User explicitly redirected focus to electricity, magnetism and antigravity.",
+      "parkedContractPath": "docs/panel-v4/contracts/parked-sound-R3.json",
+      "parkedContractSHA256": "54b3ec6223280506cc80ba327cbe4fd41cb77648692f3db4cdd3ee2e952dbaeb",
+      "parkedProducerPath": "research/sound-lab-v4/parked-sound-R3",
+      "disposition": "Producer and exploratory checks only; no reviewer admission; excluded from completed authorized round/loop count.",
+      "newContractPath": "docs/panel-v4/contracts/R3.json"
+    }
+  ],
+  "reportPath": "docs/panel-v4/advisor-review.md",
+  "stopDecision": "R5B accepted after preserved endpoint repair; exactly five rounds/ten loops complete. Parked acoustic R3 excluded. No sixth round selected.",
+  "nextAuthorized": "STOP research; publication and future roadmap gates are separate.",
+  "sourceLedgerBindings": {
+    "docs/panel-v4/advisor-sources.json": "de1e169a0f2adc4f8d31a237b9e6af1f940da9efd1c993e690c95f2fa4a6c486",
+    "data/sources-v4.json": "fad925d4a4eb7edae6413655a3c59e23875314b648bfd39ef69242b5ba0f7f15"
+  },
+  "finalDocumentBindings": {
+    "docs/panel-v4/checkpoint.md": "ec1e3033213a190571e6b7e0e823f1591941c6c22f7192990f12b2a3c26caba8",
+    "docs/panel-v4/panel-log.md": "59a396d2af52b7966a494dcc2fa4029935009fdd95bd2ccf5262c30ca512d281",
+    "docs/panel-v4/advisor-review.md": "8d3d57eb97ea8a6a1ece03a6b9cb3eff1f4b62ba49ccd12c362f70d9a0349919",
+    "docs/panel-v4/roadmap-v4.md": "a901442ea00f3c7ac251c7b64692413eec71ea0c0f3ba62c18abcf75fe3159c6",
+    "docs/panel-v4/derivations.md": "6d0a9f31b581c2a64b95f74c8fca7565e63fa4c38537b87af2aa0a7af8163981",
+    "research/sound-lab-v4/README.md": "196684128b84205ff362bd92459c0d423bab03ec5e3586144231c12342502a46",
+    "research/sound-lab-v4/protocol.md": "79f2fbd438f21efefb137372591322f1ac45cf504893129ae58f39037e04a1b2",
+    "research/sound-lab-v4/summaries.json": "2f71f03359c3145c43b7f9f4c49cd07466583ed553b624303fb0eab0e6caac98"
+  }
+}

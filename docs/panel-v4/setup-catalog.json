@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "empiricalBoundary": "All apparatus is proposed and unbuilt. Geometry is not a physical measurement or a calibration.",
+  "coordinateFile": "assets/sound-lab-v4/apparatus-coordinates.json",
+  "generator": "scripts/render_apparatus_v4.py",
+  "entries": [
+    {
+      "id": "v4-phone-witness-plan",
+      "kind": "dimensioned SVG apparatus plan",
+      "title": "Two phones, one mixed recording",
+      "file": "assets/sound-lab-v4/phone-witness-plan.svg",
+      "alt": "Proposed top-view sound bench on a 100 by 70 centimetre table: empty bowl on a soft pad, recording phone microphone 20 centimetres from the bowl rim, pilot phone speaker 35 centimetres from that microphone, and pencil eraser for a gentle tap. All ports are 8 centimetres above the table.",
+      "caption": "Proposed and unbuilt. A phone records the combined pilot and tap sound. R1's ideal separated-channel recovery does not establish mono separation, stable source amplitude or intrinsic material damping. Dimensions are proposed placements in centimetres.",
+      "experiment": "reference"
+    },
+    {
+      "id": "v4-phone-witness-3d",
+      "kind": "deterministic 3D geometry render",
+      "title": "Least-material bench in three dimensions",
+      "file": "assets/sound-lab-v4/phone-witness-3d.png",
+      "alt": "Numerically rendered bowl, soft support, pencil eraser, recording phone and upright pilot phone with metre axes and dashed acoustic connectors. Devices stand on supports with their ports unobstructed.",
+      "caption": "Deterministic geometry from declared metre coordinates; not a photograph or observed apparatus. Dashed connectors are signal routes, not simulated sound fields. Use the dimensioned SVG for placement.",
+      "experiment": "reference"
+    },
+    {
+      "id": "v4-dual-channel-plan",
+      "kind": "dimensioned SVG apparatus plan",
+      "title": "Optional source-monitor channel",
+      "file": "assets/sound-lab-v4/dual-channel-plan.svg",
+      "alt": "Proposed top view of a bowl and sample microphone with a second microphone 8 centimetres from the pilot speaker; both microphones connect by separate analogue cables to a two-input recorder. Rim-to-sample distance is 20 centimetres and pilot-to-sample distance is 35 centimetres.",
+      "caption": "Proposed optional upgrade. Two inputs share a sampling clock; equal gain, stable source amplitude and isolated signals remain unproven. A source monitor constrains source drift only after its own response is characterized. No hardware purchase is required by the least-material proposal.",
+      "experiment": "tap"
+    },
+    {
+      "id": "v4-dual-channel-3d",
+      "kind": "deterministic 3D geometry render",
+      "title": "Two-channel observation in three dimensions",
+      "file": "assets/sound-lab-v4/dual-channel-3d.png",
+      "alt": "Numerically rendered bowl on a pad, two microphones on low stands, pilot phone, gentle tapper and two-input recorder with separate cable routes. Axes are in metres; all geometry is proposed.",
+      "caption": "Proposed geometry only. Extra observations can expose source or acquisition changes, but they do not establish intrinsic damping. Shared clock does not imply shared gain. No measurements were made.",
+      "experiment": "tap"
+    },
+    {
+      "id": "v4-electric-energy",
+      "kind": "exact SVG circuit and measurement-boundary diagram",
+      "title": "Series RLC: source, load and stored energy",
+      "file": "assets/sound-lab-v4/electrical-energy-boundary.svg",
+      "alt": "Closed series circuit with isolated source, series current probe, one-ohm internal resistor, ten-millihenry inductor, one-hundred-microfarad capacitor and four-ohm load. Differential voltage probes connect across source, capacitor and load; a synchronized known-bandwidth recorder is specified. Values are from the synthetic R3 contract.",
+      "caption": "Exact R3 model topology; a physical measurement arrangement is proposed and unbuilt. Voltage gain can exceed one while source work closes against load heat, internal loss and storage change. Probe symbols indicate waveform acquisition, not slow-meter readings; real sensor loading and bandwidth need characterization.",
+      "experiment": "electric"
+    },
+    {
+      "id": "v4-magnetic-force-plan",
+      "kind": "dimensioned SVG apparatus and force diagram",
+      "title": "Magnetic force changes contact force",
+      "file": "assets/sound-lab-v4/magnetic-force-plan.svg",
+      "alt": "Proposed side elevation: a steel test piece rests on a balance pan and a small permanent magnet is fixed eight centimetres above it on a separate off-balance support. A force diagram shows upward normal and magnetic forces, downward weight and the opposite reaction carried by the magnet support.",
+      "caption": "Proposed ordinary-force control, no physical measurements. The permanent-magnet arrangement is a qualitative illustration, separate from the R4 hypothetical variable-inductance model. In static contact N equals mg minus magnetic force. The instrument may itself respond to the magnet; a reading change is not evidence that gravity changed.",
+      "experiment": "magnetic"
+    },
+    {
+      "id": "v4-magnetic-force-3d",
+      "kind": "deterministic 3D geometry render",
+      "title": "Magnet, balance and external reaction support",
+      "file": "assets/sound-lab-v4/magnetic-force-3d.png",
+      "alt": "Numerically rendered balance on a level support, contacting steel test piece, small overhead permanent magnet held by a separate stand, gap ruler and manual logbook. Axes are metres; the nominal air gap is eight centimetres. Nothing levitates.",
+      "caption": "Proposed geometry, not a photograph or quantitative magnet simulation. The external stand carries the opposite magnetic reaction; scale-field response and common-table vibration remain confounds. No gravity change or antigravity device is demonstrated.",
+      "experiment": "magnetic"
+    },
+    {
+      "id": "v4-magnetic-work",
+      "kind": "exact SVG electromechanical model boundary",
+      "title": "Magnetic storage and mechanical work",
+      "file": "assets/sound-lab-v4/magnetic-work-boundary.svg",
+      "alt": "Closed maintained-current circuit with a five-ohm resistor and hypothetical variable inductance linked to a prescribed two-centimetre mechanical motion. The diagram includes source power, resistive heat, field energy and mechanical work. A separate static test-mass calculation fixes gravity.",
+      "caption": "R4 analytic model schematic, not measured apparatus. The current is 0.2 A, the hypothetical inductance law is 0.01 plus 0.1z henries, and the imposed motion takes 0.2 s. Magnetic storage and mechanical output each receive 40 microjoules from the source. This is separate from the qualitative permanent-magnet bench.",
+      "experiment": "magnetic"
+    }
+  ],
+  "electromagneticCoordinateFile": "assets/sound-lab-v4/electromagnetic-coordinates.json",
+  "electromagneticGenerator": "scripts/render_electromagnetic_v4.py"
+}

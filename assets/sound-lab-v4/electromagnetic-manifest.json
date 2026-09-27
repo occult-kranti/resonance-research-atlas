@@ -1,0 +1,11 @@
+{
+  "generatorSha256": "2d62e397dbfea71247de5d030a8a64588ed07930885c1b33fd3bff91a473cb48",
+  "dependencySha256": "8e5954d33b7c61201c5a04aa1a647f716d1d603e9bf1f5163477d33c7da3d669",
+  "filesSha256": {
+    "electrical-energy-boundary.svg": "5ae38232d30b81491cc0016c1d126c6051d2645bd88337d8dbbc9b46359e77f2",
+    "magnetic-force-plan.svg": "f618e6d385eec51efede5779cc556f36643e5800d288173f3ebb99a30cf9c348",
+    "magnetic-force-3d.png": "4f145800bff9efe875e1f8b2a9711f4b972c0b47ae126c445d870697d2cd6725",
+    "magnetic-work-boundary.svg": "d5359beef032676a7498e98e9218b609a95cb44a01127c9695682eda4bf3ed60",
+    "electromagnetic-coordinates.json": "0ad3bae7d98b3bac456f51d1851fa04af2bf089534250cb7f623338bcc0503e1"
+  }
+}

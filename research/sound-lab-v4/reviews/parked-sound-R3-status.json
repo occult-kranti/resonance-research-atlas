@@ -1,0 +1,16 @@
+{
+  "status": "exploratory_unadmitted_user_pivot",
+  "recordedAt": "2026-09-27T02:06:58.384157+00:00",
+  "reason": "User steered remaining rounds to electricity, magnetism and antigravity before acoustic R3 admission. These checks are not an accepted round or additional counted loop.",
+  "originalPaths": {
+    "check_r3.py": "parked-sound-R3-check.py",
+    "R3-independent-checks.json": "parked-sound-R3-independent-checks.json"
+  },
+  "checksCompletedBeforePause": true,
+  "reviewVerdictIssued": false,
+  "note": "Original checker bytes retain the original R3 path. Producer artifacts are relocated separately to parked-sound-R3; this preserved checker records the actual original execution rather than silently changing its hash.",
+  "files": {
+    "parked-sound-R3-check.py": "f24f0372381535d85b52b6997b496d718a37e4ecc9a63b605acb9f8411c15c63",
+    "parked-sound-R3-independent-checks.json": "8cd0a83efbe7135ce754dc1381ba887b07c0d83fc607db097ac2a115830a6e99"
+  }
+}

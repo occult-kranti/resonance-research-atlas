@@ -1,0 +1,66 @@
+{
+  "id": "R2",
+  "title": "A correction needs a full uncertainty budget",
+  "frozenAt": "2026-09-27T01:59:27.906422+00:00",
+  "status": "frozen_before_production",
+  "predecessor": {
+    "id": "R1B",
+    "reviewPath": "research/sound-lab-v4/reviews/R1-review.json",
+    "reviewSHA256": "134df9f184543f1a0eb9c17414b940ed6c5d348de1a74857128137f89c1b0b23"
+  },
+  "incomingEvidence": "R1B admits only known stable shared-gain recovery; exact different-alpha PCM rivals survive. The skeptic requires uncertainty that does not silently omit reference/systematic error.",
+  "question": "Can bounded positive envelope observations produce a rigorous slope interval, and how do stated reference/drift limits change the physical-alpha interval?",
+  "evidenceType": "synthetic_positive_envelope_observations_not_extracted_microphone_data",
+  "model": {
+    "time_s": {
+      "start": 0,
+      "stop": 1,
+      "count": 21
+    },
+    "targetAmplitude_FS": 0.2,
+    "referenceAmplitude_FS": 0.05,
+    "targetAlpha_per_s": 4,
+    "betaTarget_per_s": 2,
+    "betaReference_per_s": 2,
+    "referenceAlpha_per_s": 0,
+    "observation": "positive envelope amplitudes with a supplied absolute error bound; extraction error not measured here",
+    "amplitudeErrorBound_FS": 0.0001,
+    "slopeWeights": "w_i=(t_i-mean(t))/sum_j(t_j-mean(t))^2",
+    "contrast": "sum_i w_i [log(a_reference_i)-log(a_target_i)]",
+    "logBounds": "log(a_observed-delta) to log(a_observed+delta), only if every lower endpoint > 0"
+  },
+  "systematicPremises": {
+    "absoluteReferenceDecayBound_per_s": 0.25,
+    "absoluteDifferentialGainBound_per_s": 0.4,
+    "physicalAlphaInterval": "slopeContrastInterval widened by referenceDecayBound+differentialGainBound",
+    "unknownBoundPolicy": "withhold any physical-alpha interval if either bound missing; still report recorded-channel contrast interval"
+  },
+  "controls": [
+    "no-error point envelopes include alpha4 to 1e-12",
+    "independent deterministic observation errors inside box with 128 fixed-seed realizations",
+    "construct exact extremal log-box choices following weight signs and reach interval endpoints",
+    "floor case set one observed target amplitude<=delta: withhold whole frozen-window log interval; do not silently delete sample",
+    "zero reference rejected",
+    "unknown systematic bound withholds physical interval",
+    "stated differential beta_r-beta_s=.8 outside .4 budget: narrow interval need not cover alpha; explicitly retain failure"
+  ],
+  "acceptance": {
+    "endpointIdentityTolerance_per_s": 1e-10,
+    "allWithinBoundCoverageRequired": true,
+    "extremalEndpointsAttained": true,
+    "floorAndUnknownWithholdingRequired": true,
+    "systematicWidthIncrease_per_s": 1.3,
+    "widthTolerance_per_s": 1e-10
+  },
+  "falsifier": "An in-bound realization escapes the calculated interval, extremal log box fails to attain endpoints, or missing nuisance bounds produce a physical interval.",
+  "claimCeiling": "Deterministic conditional interval arithmetic for provided envelope errors and explicit nuisance bounds; not a confidence interval, measured noise guarantee, or calibrated physical estimate.",
+  "sources": [
+    "V4-W3C-CAPTURE",
+    "V4-SEAGCNET2026"
+  ],
+  "producer": "/root/coder",
+  "reviewer": "/root/skeptic",
+  "advisor": "/root/advisor",
+  "loopA": "Execute interval arithmetic and supplied-error synthetic controls.",
+  "loopB": "Independent exact-weight/interval derivation and counterexample tests; admit only conditional bounds."
+}

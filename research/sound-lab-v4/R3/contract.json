@@ -1,0 +1,71 @@
+{
+  "id": "R3",
+  "title": "Electrical voltage gain is not net energy gain",
+  "domain": "electricity_and_magnetic_storage",
+  "frozenAt": "2026-09-27T02:08:22.249245+00:00",
+  "status": "frozen_before_production",
+  "predecessor": {
+    "id": "R2B",
+    "reviewPath": "research/sound-lab-v4/reviews/R2-review.json",
+    "reviewSHA256": "b0e6f40e09e5bce0c33b1eba94ae5dc295cfa076af9bf1d546ec95611e725a24"
+  },
+  "scopeRevision": "User steering to electricity, magnetism and antigravity after R2. Acoustic R3 producer/check artifacts parked without review/admission and excluded from authorized count.",
+  "incomingEvidence": "Electrical continuation of explicit witness/budget principles; earlier atlas round1 already established passive mechanical energy accounting. New target is electrical readout and source-off boundary errors, not novelty of conservation.",
+  "question": "Can an electrically resonant circuit show capacitor voltage amplification and source-off load work while its complete source/storage/loss budget remains passive?",
+  "evidenceType": "synthetic_SI_circuit_simulation",
+  "model": {
+    "equations": [
+      "dq/dt=I",
+      "L dI/dt=u(t)-(R_internal+R_load)I-q/C"
+    ],
+    "L_H": 0.01,
+    "C_F": 0.0001,
+    "R_internal_ohm": 1,
+    "R_load_ohm": 4,
+    "sourcePeak_V": 1,
+    "driveAngularFrequency_rad_per_s": 1000,
+    "drivePeriods": 10,
+    "sourceOffPeriods": 5,
+    "initialCharge_C": 0,
+    "initialCurrent_A": 0,
+    "timeResolution_samples_per_period": [
+      100,
+      200,
+      400
+    ],
+    "storedEnergy_J": "0.5 L I^2+q^2/(2C)",
+    "sourceWork_J": "integral u(t) I(t) dt, signed",
+    "loadWork_J": "integral R_load I(t)^2 dt",
+    "internalLoss_J": "integral R_internal I(t)^2 dt",
+    "closure": "W_source = Delta E + W_load + W_internal"
+  },
+  "computation": "Integrate q,I only with a high-accuracy solver; independently integrate sampled electrical powers with trapezoidal quadrature. Do not integrate work as the same solver state used to assert closure. Split or exactly align source-off boundary.",
+  "controls": [
+    "resonant driven10periods then source-off5periods: voltage gain >1.5 during late driven cycles while full energy closes",
+    "off-resonance omega=500rad/s comparison with same1V amplitude, report gain/load power",
+    "source-off initially charged C at1V: zero source input but positive load work equals released initial energy minus internal loss",
+    "wrong boundary calculation excludes stored energy and displays apparent source-off surplus; full boundary removes it",
+    "steady-state phasor control: capacitor mean real power0 but Vc_rms I_rms >0; do not call reactive VA watts",
+    "zero source and zero initial state remain zero",
+    "stronger totalR=10ohm lowers resonant voltage gain"
+  ],
+  "acceptance": {
+    "finestNormalizedEnergyResidualMax": 0.0005,
+    "quadratureRefinementRequired": "closure residual at400samples/period < residual at100samples/period unless already below1e-10 J",
+    "phasorCapacitorMeanRealPowerAbs_W": 1e-10,
+    "resonantVoltageGainMinimum": 1.5,
+    "zeroStateMaxAbs": 1e-12,
+    "positiveSourceOffLoadWorkRequired": true
+  },
+  "falsifier": "Complete energy budget does not converge within tolerance, or voltage/VA/source-off output is interpreted as energy production.",
+  "claimCeiling": "Known lumped passive circuit model and demonstrated accounting/readout counterexamples; no physical device, overunity, gravitational effect or circuit-component calibration.",
+  "sources": [
+    "V4-FEYNMAN-ELECTRICAL",
+    "V4-MIT-ENERGY"
+  ],
+  "producer": "/root/coder",
+  "reviewer": "/root/skeptic",
+  "advisor": "/root/advisor",
+  "loopA": "Execute circuit, electrical readouts and intentional omitted-storage control.",
+  "loopB": "Independent phasor/closed-form or alternate integration checks and energy boundary attack before admission."
+}
