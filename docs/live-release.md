@@ -33,3 +33,14 @@ Live browser checks verified the overview/source load, the dream journal and met
 After the user completed sign-in, the standalone repository was created and GitHub Pages was configured with Actions. Baseline commit `c3aa2c695478aadca9a8a1b0f63e86405a3c6c55` deployed successfully in [run 36279210133](https://github.com/occult-kranti/resonance-research-atlas/actions/runs/36279210133). Browser inspection verified the fully loaded six-round atlas at https://occult-kranti.github.io/resonance-research-atlas/ .
 
 The nanoparticle extension has a separate release record; the checks and revisions above describe the original integrated release, not its later changes.
+
+## Five additional rounds and NanoLab — 27 September 2026
+
+The [nanoparticle extension](https://occult-kranti.github.io/resonance-research-atlas/#nanoparticles) and [OpenSync NanoLab](https://occult-kranti.github.io/brainwave_opensync/nano-lab) are deployed. The original six rounds, including the dreams/perception session, remain available. The complete [extension verification record](nanoparticle-release-verification.md) includes source revisions, successful Actions runs, browser observations, download-capture limitations and screenshots.
+
+| Target | Functional source revision | Successful deployment |
+| --- | --- | --- |
+| Standalone atlas | `36e3dcbe76be4a396c0fdbf94665b7ec4f915f97` | [36281001436](https://github.com/occult-kranti/resonance-research-atlas/actions/runs/36281001436) |
+| OpenSync with integrated atlas | `5bc616344881eaa9a5418304b535f8f8b3426170` | [36281166038](https://github.com/occult-kranti/brainwave_opensync/actions/runs/36281166038) |
+
+The extension contains 79 source records, five accepted model-agent review rounds, 30 parameterized production checks, six historical measurement plates, two apparatus diagrams, reproducible data/audio artifacts and a generated setup concept. The application passes 1,156 tests. These are digital-model and software results; physical experiments and clinical or metaphysical claims remain untested.
