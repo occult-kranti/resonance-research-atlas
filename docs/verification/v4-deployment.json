@@ -1,0 +1,26 @@
+{
+  "verifiedAt": "2026-09-27",
+  "atlas": {
+    "commit": "dbae62ad0825aae4065758c5fafa5a3bb0774f0d",
+    "workflowRun": 36289171183,
+    "conclusion": "success",
+    "liveURL": "https://occult-kranti.github.io/resonance-research-atlas/sound-lab/field-notes.html",
+    "visible": "10 loop records, 5 accepted reviews, 29 source records",
+    "desktopViewportWidth": 1363,
+    "documentWidth": 1348,
+    "interactionChecks": [
+      "Below resonance preset changes value",
+      "Magnetic setup selection changes measurement boundary"
+    ],
+    "screenshot": "docs/verification/v4-desktop.jpg"
+  },
+  "vessels": {
+    "commit": "9249e3d4596cd4f20575120f635ab2073371d18c",
+    "workflowRun": 36288938513,
+    "conclusion": "success",
+    "liveURL": "https://occult-kranti.github.io/resonant-vessels/research-continuation.html",
+    "visible": "Five admitted rounds, explicit synthetic and proposed status"
+  },
+  "mobileRenderedInspection": "Not performed; supplied browser API has no viewport resize control. Responsive CSS and DOM checks are separate.",
+  "scope": "No physical experiment validation; documentation-only evidence commit follows deployed source."
+}
